@@ -23,7 +23,7 @@ links:
     - title: Try here
       icon: play
       brand: true
-      url: https://app.scribble.live/
+      url: https://app.scribbler.live/
   footer:
     - title: GitHub
       icon: github
