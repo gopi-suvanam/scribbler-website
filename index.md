@@ -5,63 +5,44 @@ disable_anchors: true
 description: Notebook tool for experimenting in JavaScript
 ---
 
-A Jekyll theme inspired by Bootstrap's official documentation theme from a few years back. This theme started off by stealing all of Bootstrap Docs' CSS and being used in [mistic100's theme](https://github.com/mistic100/jekyll-bootstrap-doc). This theme has since be rewritten from scratch and remains solely inspired by the original design.
+Notebook tool for experimentation in JavaScript. Overview:
+- Easy to use javascript experimentation tool.
+- Runs without backend (node.js/npm/pip install/ngnix etc etc). I call this a "nodeless" app for two reasons - 1. it does not require node and npm to use.. 2. it does not require a server (I didnt want to use the word "serverless" as that word has been polluted by Amazon).
+- Can be loaded from the web (i.e. behind a webserver) or from the file system (certain features like WebRTC might require a server)
+- UI is similar/close to Jupyter Notebook (for the sake familiarity for python developers). Has a minimalistic UI to put focus on user generated code/content.
+- It is light-weight as it uses minimal external libraries for styling : Codemirror for formatting the code area and Pico CSS for styling.
+- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. More libaries/modules can be easily loaded using load_script or import_module functions.
 
-> I've never seen a more mediocre theme it actually hurts my insides.
->
-> ~ _Anonymous_, 2020
-
-This theme is designed for writing documentation websites instead of having large unmaintainable README files or several markdown files inside of a folder in a repository.
 
 <div class="row">
 <div class="col-lg-6" markdown="1">
 
-## Installation
+## Fetting Started
 {:.mt-lg-0}
 
-This theme is designed to work both as a Gem or as a remote theme, meaning we officially support GitHub Pages.
-
-### Gem
-
-Add this line to your Jekyll site's Gemfile:
-
-```ruby
-gem "jekyll-docs-theme"
-```
-
-And then enable and use the theme in your Jekyll site via its `_config.yml`.
-
-```yaml
-theme: jekyll-docs-theme
-```
-
-### GitHub Pages
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-remote_theme: allejo/jekyll-docs-theme@v{{ site.project.version }}
-```
+1. Clone this repository (git clone or better still - download) on any machine and double-click index.html. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install.
+2. If you want to host the app online, you can put the folder in web directory of the server and use the link to index.html.
+3. You can also try the git-hosted version (without downloading anything) here: [https://decentralized-intelligence.com/jsnb/#](https://gopi-suvanam.github.io/jsnb/#)
+4. A hello-world notebook: [https://decentralized-intelligence.com/jsnb/#/jsnb/examples/Hello-world.jsnb](https://gopi-suvanam.github.io/jsnb/#/jsnb/examples/Hello-world.jsnb)
+5. More examples will be added in the folder examples/ in the repository. Check the [README in that folder](/examples/README.md) for links.
 
 </div>
 <div class="col-lg-6" markdown="1">
 
 ## Features
 {:.mt-lg-0}
-
-Despite being a mediocre theme, we've got a features that we're especially proud of and dedicate a lot of our time to making sure they work as expected.
-
-### Graceful Degradation
-
-This theme uses as little JavaScript as possible. All of our anchors and table of contents are generated at build time. Any features that rely on JavaScript have fallbacks for graceful degradation. It's how the web should be nowadays.
-
-### Heavily Customizable
-
-A lot of parts in these theme consist of empty Jekyll includes that are designed to be overridden by website owners. Inject your custom code easily to any part of the website!
-
-### Dark Mode
-
-We all know that dark mode makes you a better human. This theme supports a dark mode based on each user's preference.
+- The notebook consists of cells. Each cell will have user inputted html/code and an output. There is a menu at the top right corner of the cell (or above the cell in case of smaller screens).
+- There are two types of cells: code and html. The type of cell can be toggled using a switch in the cell menu.
+- To get the output of a cell press play ► button on the cell menu (or Cmd/Ctrl-Enter on keyboard after selecting the cell).
+- For code cells input and output are both shown. For html cells, input is hidden and opens up if you click the output.
+- The cell menu also has buttons for moving the cell up ↑, down ↓, adding a new cell ✛ and deleting the current cell ☓.
+- A notebook can be downloaded as json (has a default extension of .jsnb). IT can be loaded back into the app. The notebook or only the output can also be downloaded as html.
+- A .jsnb file can also be directly loaded into the app by suffixing the url of the file after "#" something like: https://decentralized-intelligence.com/jsnb/#link_to_file.jsnb. The url of the file should be accessible by the browser through GET method.
+- There are two special functions included in the app: show(...) for showing some string in the output box. curr_cell() for getting the element corresponding to the output cell.
+- For adding more functionality import an external library through import(...) or by adding <script> element.
+- D3JS (for data manipulation and charting), Plotly (for plots) and sister project [DI-Libs](https://github.com/gopi-suvanam/di-libs) are preloaded and can be used in the notebooks without seperately loading. They can also be reloaded using reload_script.
+- Keyboard Shortcuts: Several keyboard shortcuts for running/dowloading/adding cells/deleting cells etc. See [DOCS](DOCS.md#keyboard-shortcuts) for details
+- Importing and exporting: Download/Upload, dowload as html/javascript, push to/pull from Github. See [DOCS](DOCS.md#exporting-importing) for details
 
 </div>
 </div>
