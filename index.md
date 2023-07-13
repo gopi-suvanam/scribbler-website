@@ -15,7 +15,8 @@ title: Scribbler
 - UI is similar/close to Jupyter Notebook (for the sake familiarity for python developers).
 - Has a minimalistic UI to put focus on user generated code/content.
 - It is light-weight as it uses minimal external libraries for styling.
-- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. 
+- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage.
+- Thirdparty libraries can be loaded dynamically.
 
 ### Usecases
 Scribbler can be used for:
