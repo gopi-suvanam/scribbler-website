@@ -3,6 +3,7 @@ layout: full
 homepage: true
 disable_anchors: true
 description: Notebook tool for experimenting in JavaScript
+title: Scribbler
 ---
 
 ### Notebook tool for experimentation in JavaScript.
