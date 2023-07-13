@@ -36,8 +36,8 @@ links:
 ui:
   mode: 'auto' # 'auto', 'dark', 'light'
   brand:
-    dark: "#00ceff"
-    light: "#a20000"
+    dark: "#0021ff"
+    light: "#ffde00"
   border_color:
     dark: "#0021FF"
     light: "#ffde00"
