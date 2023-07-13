@@ -47,12 +47,12 @@ ui:
       color1: "#062a48"
       color2: "#304e67"
     light:
-      color1: "#938000"
+      color1: "#ffde00"
       color2: "#faed97"
   masthead:
     color:
-      dark: "#ffde00"
-      light: "#ffde00"
+      dark: "#0021ff"
+      light: "#0021ff"
     align:
       homepage: 'center'
       page: 'left'
