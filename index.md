@@ -7,6 +7,8 @@ title: Scribbler
 ---
 
 ### Notebook tool for experimentation in JavaScript.
+
+![JSNB Screenshot](JSNB Screenshot.png)
 - Easy to use javascript experimentation tool.
 - Runs without backend (node.js/npm/pip install/ngnix etc etc). 
 - Can be loaded from the web (i.e. behind a webserver) or from the file system (certain features like WebRTC might require a server)
@@ -15,16 +17,13 @@ title: Scribbler
 - It is light-weight as it uses minimal external libraries for styling.
 - Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. More libaries/modules can be easily loaded using load_script or import_module functions.
 
-Easy to start:
-    
-    show("Hello World")
-        
-Simple interface for array manipulation and charting:
-    
-    range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
+### Usecases
+Scribbler can be used for:
+- Scientific Computation
+- Data Science/Machine Learning
+- Dashboard Development
+- Experimenting With new Code/Libraries
 
-Great visualization:
-![JSNB Screenshot](JSNB Screenshot.png)
 
 
 
@@ -39,12 +38,16 @@ Great visualization:
 3. You can also try the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
 4. A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb)
 5. More examples will be added in the folder examples/ in the repository. Check the [Samples page](/documentation/samples.html) for links.
-### Usecases
-Scribbler can be used for:
-- Scientific Computation
-- Data Science/Machine Learning
-- Dashboard Development
-- Experimenting With new Code/Libraries
+
+Easy to start:
+    
+    show("Hello World")
+        
+Simple interface for array manipulation and charting:
+    
+    range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
+    
+
   
 </div>
 <div class="col-lg-6" markdown="1">
