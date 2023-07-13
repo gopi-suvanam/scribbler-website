@@ -11,11 +11,11 @@ title: Scribbler
 ![JSNB Screenshot](JSNB Screenshot.png)
 - Easy to use javascript experimentation tool.
 - Runs without backend (node.js/npm/pip install/ngnix etc etc). 
-- Can be loaded from the web (i.e. behind a webserver) or from the file system (certain features like WebRTC might require a server)
+- Can be loaded from the web (i.e. behind a webserver) or from the file system.
 - UI is similar/close to Jupyter Notebook (for the sake familiarity for python developers).
 - Has a minimalistic UI to put focus on user generated code/content.
 - It is light-weight as it uses minimal external libraries for styling.
-- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. More libaries/modules can be easily loaded using load_script or import_module functions.
+- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. 
 
 ### Usecases
 Scribbler can be used for:
@@ -55,7 +55,7 @@ A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb
 {:.mt-lg-0}
 
 ### Cells
-- The notebook consists of cells. Each cell will have user inputted html/code and an output. There is a menu at the top right corner of the cell (or above the cell in case of smaller screens). There are two types of cells: code and html. The type of cell can be toggled using a switch in the cell menu. For code cells input and output are both shown. For html cells, input is hidden and opens up if you click the output.
+The notebook consists of cells. Each cell will have user inputted html/code and an output. There is a menu at the top right corner of the cell (or above the cell in case of smaller screens). There are two types of cells: code and html. The type of cell can be toggled using a switch in the cell menu. For code cells input and output are both shown. For html cells, input is hidden and opens up if you click the output.
 
 ### Actions
 To get the output of a cell press play ► button on the cell menu (or Cmd/Ctrl-Enter on keyboard after selecting the cell). The cell menu also has buttons for moving the cell up ↑, down ↓, adding a new cell ✛ and deleting the current cell ☓.
