@@ -2,17 +2,31 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Notebook tool for experimenting in JavaScript
+description: Simple Interface for Experimenting in JavaScript 
 title: Scribbler
 ---
 
 ### Notebook tool for experimentation in JavaScript.
 - Easy to use javascript experimentation tool.
-- Runs without backend (node.js/npm/pip install/ngnix etc etc). I call this a "nodeless" app for two reasons - 1. it does not require node and npm to use.. 2. it does not require a server (I didnt want to use the word "serverless" as that word has been polluted by Amazon).
+- Runs without backend (node.js/npm/pip install/ngnix etc etc). 
 - Can be loaded from the web (i.e. behind a webserver) or from the file system (certain features like WebRTC might require a server)
-- UI is similar/close to Jupyter Notebook (for the sake familiarity for python developers). Has a minimalistic UI to put focus on user generated code/content.
-- It is light-weight as it uses minimal external libraries for styling : Codemirror for formatting the code area and Pico CSS for styling.
+- UI is similar/close to Jupyter Notebook (for the sake familiarity for python developers).
+- Has a minimalistic UI to put focus on user generated code/content.
+- It is light-weight as it uses minimal external libraries for styling.
 - Comes pre-loaded with Plotly, D3 and DI-Libs for power usage. More libaries/modules can be easily loaded using load_script or import_module functions.
+
+Easy to start:
+    
+    show("Hello World")
+        
+Simple interface for array manipulation and charting:
+    
+    range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
+
+Great visualization:
+
+    
+
 
 <div class="row">
 <div class="col-lg-6" markdown="1">
