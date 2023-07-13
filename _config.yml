@@ -1,14 +1,14 @@
 # name of the software
-name: Jekyll Docs Theme
+name: Scribbler
 
 project:
   version: 1.0.0
-  download_url: https://github.com/allejo/jekyll-docs-theme/releases
+  download_url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
   download_text: Download
 
 license:
   software: MIT License
-  software_url: https://opensource.org/licenses/MIT
+  software_url: https://github.com/gopi-suvanam/scribbler/blob/main/LICENSE
 
   docs: CC BY 3.0
   docs_url: https://creativecommons.org/licenses/by/3.0/
@@ -18,20 +18,20 @@ links:
     - title: GitHub
       icon: github
       brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+      url: https://github.com/gopi-suvanam/scribbler/
   homepage:
     - title: View on GitHub
       icon: github
       brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+      url: https://github.com/gopi-suvanam/scribbler/
   footer:
     - title: GitHub
       icon: github
       brand: true
-      url: https://github.com/allejo/jekyll-docs-theme
+      url: https://github.com/gopi-suvanam/scribbler/
     - title: Issues
       icon: bug
-      url: https://github.com/allejo/jekyll-docs-theme/issues?state=open
+      url: https://github.com/gopi-suvanam/scribbler/issues
 
 ui:
   mode: 'auto' # 'auto', 'dark', 'light'
@@ -59,19 +59,12 @@ ui:
 
 social:
   github:
-    user: allejo
-    repo: jekyll-docs-theme
-  twitter:
-    enabled: false
-    via:
-    hash:
-    account:
-  facebook:
-    enabled: false
-    profileUrl:
+    user: gopi-suvanam
+    repo: scribller
 
-analytics:
-  google: UA-123456-1
+
+#analytics:
+#  google: UA-123456-1
 
 # Build settings
 markdown: kramdown
