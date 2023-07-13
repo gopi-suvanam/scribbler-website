@@ -1,3 +1,5 @@
+License for The theme:
+
 The MIT License (MIT)
 =====================
 
