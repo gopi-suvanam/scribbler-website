@@ -24,8 +24,8 @@ Simple interface for array manipulation and charting:
     range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
 
 Great visualization:
+![JSNB Screenshot](JSNB Screenshot.png)
 
-    
 
 
 <div class="row">
