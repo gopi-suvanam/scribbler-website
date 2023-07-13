@@ -5,18 +5,6 @@ description: Documentation for building and using JavaScript notebooks on Scribb
 ---
 
 
-## TOC
-1. [Installing](#installing)
-2. [Cells](#cells)
-3. [Cell Menu](#cell-menu)
-4. [File Menu](#file-menu)
-5. [Edit Menu](#edit-menu)
-6. [URL Structure](#url-structure)
-7. [Special Functions](#special-functions)
-8. [Keyboard Shortcuts](#keyboard-shortcuts)
-9. [Exporting-Importing](#exporting-importing)
-10. [Using external libraries](#using-external-libraries)
-
 ## Installing
 - The tool does not require any special installation. It can be downloaded/cloned from GitHub and used directly from file system by opening index.html. 
 - The folder can be put behind a websrver to serve statically. There is no requirement of any backend framework (node/python etc). 
