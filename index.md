@@ -33,12 +33,10 @@ Scribbler can be used for:
 ## Getting Started
 {:.mt-lg-0}
 
-1. Clone this repository (git clone or better still - download) on any machine and double-click index.html. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install.
-2. If you want to host the app online, you can put the folder in web directory of the server and use the link to index.html.
-3. You can also try the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
-4. A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb)
-5. More examples will be added in the folder examples/ in the repository. Check the [Samples page](/documentation/samples.html) for links.
+### Installing
+No specific installation is required. Clone this repository (git clone or better still - download) on any machine and double-click index.html. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install. If you want to host the app online, you can put the folder in web directory of the server and use the link to index.html. You can also try the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
 
+### Code 
 Easy to start:
     
     show("Hello World")
@@ -47,7 +45,8 @@ Simple interface for array manipulation and charting:
     
     range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
     
-
+### Example Notebooks
+A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb). More examples are added in the folder examples/ in [Scribbler repository](https://github.com/gopi-suvanam/scribbler). Check the [Samples page](/documentation/samples.html) for links.
   
 </div>
 <div class="col-lg-6" markdown="1">
