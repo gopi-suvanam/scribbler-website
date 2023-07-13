@@ -20,10 +20,10 @@ links:
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
   homepage:
-    - title: View on GitHub
-      icon: github
+    - title: Try here
+      icon: play
       brand: true
-      url: https://github.com/gopi-suvanam/scribbler/
+      url: https://app.scribble.live/
   footer:
     - title: GitHub
       icon: github
