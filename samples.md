@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Samples
-description: Links to Example Notebooks for Scribbler
+title: Gallery
+description: Sample JavaScript Notebooks on Scribbler
 show_in_menu: true
 ---
 
 
-The below notebooks are samples/boilerplates to start experimenting/building. Click on each link to play around with the code.
+The below JavaScript notebooks are samples/boilerplates to start experimenting/building. Click on each link to play around with the code.
 
 ### Introductory Notebooks
 1. [Hello-world for JavaScript Notebook](https://app.scribbler.live/#./examples/Hello-world.jsnb). An introductory notebook with a hello-world example.
@@ -17,7 +17,8 @@ The below notebooks are samples/boilerplates to start experimenting/building. Cl
 ### Graphs/Plotting
 5. [Plotly graphs Example in JavaScript](https://app.scribbler.live/#./examples/Plotly-Example.jsnb). Shows usage of Plotly library for plotting graphs in the browser.
 6. [Using DI-Libs for Plots](https://app.scribbler.live/#./examples/DI-Lib-Plots.jsnb). Plotting graphs suing the library - [di-libs.js](https://decentralized-intelligence.com/di-libs).
-7. [Crypt-Plots](https://app.scribbler.live/#./examples/Crypto-Currency-TimeSeries.jsnb). Plotting crypto-currency timeseries with data from API calls.
+7. [Crypto-Plots](https://app.scribbler.live/#./examples/Crypto-Currency-TimeSeries.jsnb). Plotting crypto-currency timeseries with data from API calls.
+<iframe src="https://app.scribbler.live/sandbox.html#./examples/Crypto-Currency-TimeSeries.jsnb" height="600" width="100%" style="width:100%" allowfullscreen="" frameborder="0"></iframe>
 
 ### P2P and Decentralization
 8. [WebTorrent library](https://app.scribbler.live/#./examples/WebTorrent-Example.jsnb). Using webtorrent for writing and reading files to torrents network in the browser.
@@ -32,21 +33,24 @@ The below notebooks are samples/boilerplates to start experimenting/building. Cl
 ### Simulation
 13. [Monte-Carlo Simulation of AMM - Automated MArket Making](https://app.scribbler.live/#./examples/AMM-Simulation.jsnb). Simulating Automate-Market-Making for assets in a decentralized exchange.
 14. [Simple Simulation Example](https://app.scribbler.live/#./examples/Simple-Simulation.jsnb). Simulation of a physical system - a ball bouncing off four walls.
-15. [Dynamic System Simulation - Bouncing Ball on Moving Boundary](https://app.scribbler.live/#./examples/Dynamic-Simulation.jsnb). Simulation of a physical system - a ball bouncing off four walls but with one of the walls oscillating.
-16. [Option Price Simulation](https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb). 
-17. [Monte-Carlo Simulation of Goals](https://app.scribbler.live/#./examples/Monte-Carlo-Simulation-of-Goals.jsnb). Simulation of football goals and probability of winning.
+15. [Option Price Simulation](https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb). 
+16. [Monte-Carlo Simulation of Goals](https://app.scribbler.live/#./examples/Monte-Carlo-Simulation-of-Goals.jsnb). Simulation of football goals and probability of winning.
+17. [Dynamic System Simulation - Bouncing Ball on Moving Boundary](https://app.scribbler.live/#./examples/Dynamic-Simulation.jsnb). Simulation of a physical system - a ball bouncing off four walls but with one of the walls oscillating.
+<iframe src="https://app.scribbler.live/sandbox.html#./examples/Dynamic-Simulation.jsnb" height="600" width="100%" style="width:100%" allowfullscreen="" frameborder="0"></iframe>
 
 ### Scientific and Mathematical Computation
-18. [Runge-Kutta Method for Differential Equations](https://app.scribbler.live/#./examples/Runge-Kutta-for-Differential-Equations.jsnb). A numerical method for solving ordinary differential equations
-19. [Numerical Recipes in JavaScript](https://app.scribbler.live/#./examples/Numerical-Analysis-Recipes.jsnb). Several numerical methods for solving equations and doing integration.
-20. [Regula Falsi Method for Solving Equations](https://app.scribbler.live/#./examples/Regula-Falsi.jsnb). An ancient method for solving equations. 
-21. [Fibonacci Sequence and Golden Ratio](https://app.scribbler.live/#./examples/Fibonacci-Sequence-Golden-Ratio.jsnb). Convergence of ratio of sebsequent number is Fibonacci series to the Golden Ratio.
-
+18. [Numerical Recipes in JavaScript](https://app.scribbler.live/#./examples/Numerical-Analysis-Recipes.jsnb). Several numerical methods for solving equations and doing integration.
+19. [Regula Falsi Method for Solving Equations](https://app.scribbler.live/#./examples/Regula-Falsi.jsnb). An ancient method for solving equations. 
+20. [Fibonacci Sequence and Golden Ratio](https://app.scribbler.live/#./examples/Fibonacci-Sequence-Golden-Ratio.jsnb). Convergence of ratio of sebsequent number is Fibonacci series to the Golden Ratio.
+21. [Runge-Kutta Method for Differential Equations](https://app.scribbler.live/#./examples/Runge-Kutta-for-Differential-Equations.jsnb). A numerical method for solving ordinary differential equations
+<iframe src="https://app.scribbler.live/#./examples/Runge-Kutta-for-Differential-Equations.jsnb" height="600" width="100%" style="width:100%" allowfullscreen="" frameborder="0"></iframe>
 
 ### Functional Programming and Libraries
 22. [Array Functions in JavaScript](https://app.scribbler.live/#./examples/Array-Functions.jsnb). Array functions in JavaScript help in functional programming and making succinct code without loops.
 23. [Using Underscore.js](https://app.scribbler.live/#./examples/Underscore-JS.jsnb). Underscore.js is a library with utilities in JavaScript. 
 24. [Functional Code for Numerical Analysis](https://app.scribbler.live/#./examples/Numerical-Analysis-Using-Functional-Paradigm.jsnb). Functional code for finding roots, derivative and inverse of functions.
+<iframe src="https://app.scribbler.live/#./examples/Numerical-Analysis-Using-Functional-Paradigm.jsnb" height="600" width="100%" style="width:100%" allowfullscreen="" frameborder="0"></iframe>
 
 ### Machine Learning
 25. [Decentralized ML Using Brain.js](https://app.scribbler.live/#./examples/Decentralized-ML-Model-Storage.jsnb). Machine learming in the browser using Brain.js and storing the model as JSON in the local system. Can be modified to store the model in IPFS/Torrents.
+
