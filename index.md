@@ -9,12 +9,11 @@ title: Scribbler
 ### Experiment in JavaScrip With Ease
 
 ![JSNB Screenshot](JSNB Screenshot.png)
-- It is easy to use javascript experimentation tool.
-- Runs without backend (node.js/npm/pip install/ngnix etc etc). 
-- Can be loaded from the web (i.e. behind a webserver) or from the file system.
-- Has a minimalistic UI to put focus on user generated code/content.
-- It is light-weight as it uses minimal external libraries for styling.
-- Comes pre-loaded with Plotly, D3 and DI-Libs for power usage.
+- Runs without backend. 
+- Can be loaded from the file system.
+- Has a minimalistic UI.
+- Minimal external libraries or frameworks.
+- Comes pre-loaded with Plotly and DI-Libs.
 - Thirdparty libraries can be loaded dynamically.
 
 ### Usecases
