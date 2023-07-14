@@ -22,6 +22,8 @@ title: Scribbler
 > 
 > ~ Anonymous
 
+[Read Our Backstory Here](backstory.html).
+
 ### Usecases
 Scribbler can be used for:
 - Scientific/Mathematical Computation
