@@ -8,7 +8,7 @@ title: Scribbler
 
 ### Experiment in JavaScript With Ease
 
-![JSNB Screenshot](JSNB Screenshot.png)
+<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
 
 
 - Runs without backend. 
