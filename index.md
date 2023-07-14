@@ -6,13 +6,10 @@ description: Simple Interface for Experimenting in JavaScript
 title: Scribbler
 ---
 
-### Experiment in JavaScrip With Ease
+### Experiment in JavaScript With Ease
 
 ![JSNB Screenshot](JSNB Screenshot.png)
 
-> JavaScript is the language that never ceases to surprise you with its quirks and oddities.
-> 
-> ~ Anonymous
 
 - Runs without backend. 
 - Can be loaded from the file system.
@@ -20,6 +17,10 @@ title: Scribbler
 - Minimal external libraries or frameworks.
 - Comes pre-loaded with Plotly and DI-Libs.
 - Thirdparty libraries can be loaded dynamically.
+
+> JavaScript is the language that never ceases to surprise you with its quirks and oddities.
+> 
+> ~ Anonymous
 
 ### Usecases
 Scribbler can be used for:
