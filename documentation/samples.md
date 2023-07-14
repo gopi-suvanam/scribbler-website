@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Samples
+description: Links to Example Notebooks for Scribbler
 ---
 
-## Links to example Notebooks 
- 
+
 The below notebooks are samples/boilerplates to start experimenting/building. Click on each link to play around with the code.
 
 ### Introductory Notebooks
