@@ -32,7 +32,7 @@ The below JavaScript notebooks are samples/boilerplates to start experimenting/b
 12. [Option Price Simulation](https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb). 
 13. [Monte-Carlo Simulation of Goals](https://app.scribbler.live/#./examples/Monte-Carlo-Simulation-of-Goals.jsnb). Simulation of football goals and probability of winning.
 14. [Dynamic System Simulation - Bouncing Ball on Moving Boundary](https://app.scribbler.live/#./examples/Dynamic-Simulation.jsnb). Simulation of a physical system - a ball bouncing off four walls but with one of the walls oscillating.
-<iframe src="https://app.scribbler.live/sandbox.html#./examples/Dynamic-Simulation.jsnb" height="600" width="100%" style="width:100%" allowfullscreen="" frameborder="0"></iframe>
+<iframe src="https://app.scribbler.live/sandbox.html#./examples/Dynamic-Simulation.jsnb" height="600" width="100%" style="width:100%;broder:thin solid black" allowfullscreen="" frameborder="0"></iframe>
 
 ### Scientific and Mathematical Computation
 15. [Numerical Recipes in JavaScript](https://app.scribbler.live/#./examples/Numerical-Analysis-Recipes.jsnb). Several numerical methods for solving equations and doing integration.
