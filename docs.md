@@ -2,6 +2,7 @@
 layout: page
 title: Docs
 description: Documentation for building and using JavaScript notebooks on Scribbler
+show_in_menu: true
 ---
 
 
