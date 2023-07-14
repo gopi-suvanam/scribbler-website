@@ -9,6 +9,11 @@ title: Scribbler
 ### Experiment in JavaScrip With Ease
 
 ![JSNB Screenshot](JSNB Screenshot.png)
+
+> JavaScript is the language that never ceases to surprise you with its quirks and oddities.
+> 
+> ~ Anonymous
+
 - Runs without backend. 
 - Can be loaded from the file system.
 - Has a minimalistic UI.
@@ -36,13 +41,19 @@ Scribbler can be used for:
 No specific installation is required. Clone this repository (git clone or better still - download) on any machine and double-click index.html. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install. If you want to host the app online, you can put the folder in web directory of the server and use the link to index.html. You can also try the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
 
 ### Code 
+
+> JavaScript: The only language where you can write the "Hello world" code in one line or in 1000.
+> 
+> ~ Anonymous
+
 Easy to start:
     
     show("Hello World")
         
 Simple interface for array manipulation and charting:
-    
-    range(0,10,0.01).map(Math.sin).plot() //Plots a sin graph
+
+    //Plots a sin graph
+    range(0,10,0.01).map(Math.sin).plot() 
     
 ### Example Notebooks
 A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb). More examples are added in the folder examples/ in [Scribbler repository](https://github.com/gopi-suvanam/scribbler). Check the [Samples page](/documentation/samples.html) for links.
