@@ -19,7 +19,7 @@ The below JavaScript notebooks are samples/boilerplates to start experimenting/b
 5. [Plotly graphs Example in JavaScript](https://app.scribbler.live/#./examples/Plotly-Example.jsnb). Shows usage of Plotly library for plotting graphs in the browser.
 6. [Using DI-Libs for Plots](https://app.scribbler.live/#./examples/DI-Lib-Plots.jsnb). Plotting graphs suing the library - [di-libs.js](https://decentralized-intelligence.com/di-libs).
 7. [Crypto-Plots](https://app.scribbler.live/#./examples/Crypto-Currency-TimeSeries.jsnb). Plotting crypto-currency timeseries with data from API calls.
-<iframe src="https://app.scribbler.live/sandbox.html#./examples/Crypto-Currency-TimeSeries.jsnb" height="600" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
+<iframe src="https://app.scribbler.live/sandbox.html#./examples/Crypto-Currency-TimeSeries.jsnb" height="600" width="100%;border:thin solid black" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
 
 ### Financial Computation
 8. [Option Pricing using Black-Scholes](https://app.scribbler.live/#./examples/Black-Scholes.jsnb). Pricing options using the famous Black-Scholes formula.
