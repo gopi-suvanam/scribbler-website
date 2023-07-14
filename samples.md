@@ -2,6 +2,7 @@
 layout: page
 title: Samples
 description: Links to Example Notebooks for Scribbler
+show_in_menu: true
 ---
 
 
