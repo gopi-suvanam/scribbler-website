@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Docs for Scribbler
+title: Docs
 description: Documentation for building and using JavaScript notebooks on Scribbler
 ---
 
