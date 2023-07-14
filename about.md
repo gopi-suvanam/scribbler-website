@@ -4,7 +4,7 @@ description: Vision and the Team of Scribbler
 ---
 
 ## Vision
-Our vision is to empowers developers and scientists with a seamless and interactive coding experience, designed to foster creativity, collaboration, and innovation. With intuitive interface, live code execution, and rich multimedia capabilities, we aim to provide a dynamic environment for exploring, experimenting, and documenting experiments in JavaScrip code. We hope to inspire programmers to push the boundaries of their imagination, accelerate their learning, and unlock the true potential of JavaScript through a versatile and user-friendly interface that elevates the joy of coding.
+Our vision is to empower engineers and scientists with a seamless and interactive coding experience, designed to foster creativity, collaboration, and innovation. With intuitive interface, live code execution, and rich multimedia capabilities, we aim to provide a dynamic environment for exploring, experimenting, and documenting experiments using JavaScrip. We hope to inspire programmers to push the boundaries of their imagination, accelerate their learning, and unlock the true potential of JavaScript through a versatile and user-friendly interface that elevates the joy of coding.
 
 ## Team
 <div class="row">
