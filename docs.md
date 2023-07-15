@@ -1,6 +1,7 @@
 ---
 title: Docs for Scribbler
 description: Features and How-to of Scribbler
+show_in_menu: true
 ---
 
 
