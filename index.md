@@ -59,7 +59,7 @@ Simple interface for array manipulation and charting:
     range(0,10,0.01).map(Math.sin).plot() 
     
 ### Example Notebooks
-A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb). More examples are added in the folder examples/ in [Scribbler repository](https://github.com/gopi-suvanam/scribbler). Check the [Samples page](/documentation/samples.html) for links.
+A hello-world notebook: [https://app.scribbler.live/#./examples/Hello-world.jsnb](https://app.scribbler.live/#./examples/Hello-world.jsnb). More examples are added in the folder examples/ in [Scribbler repository](https://github.com/gopi-suvanam/scribbler/tree/main/examples). Check the [Samples page](samples.html) for links.
   
 </div>
 <div class="col-lg-6" markdown="1">
@@ -77,7 +77,7 @@ To get the output of a cell press play ► button on the cell menu (or Cmd/Ctrl-
 A notebook can be downloaded as json (has a default extension of .jsnb). IT can be loaded back into the app. The notebook or only the output can also be downloaded as html.
 
 ### Loading
-A .jsnb file can also be directly loaded into the app by suffixing the url of the file after "#" something like: https://app.scribbler.liv/#link_to_file.jsnb. The url of the file should be accessible by the browser through GET method.
+A .jsnb file can also be directly loaded into the app by suffixing the url of the file after "#" something like: https://app.scribbler.live/#link_to_file.jsnb. The url of the file should be accessible by the browser through GET method.
 
 
 
