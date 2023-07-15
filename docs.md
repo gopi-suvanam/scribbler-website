@@ -1,5 +1,5 @@
 ---
-title: Docs for Scribbler
+title: Docs
 description: Features and How-to of Scribbler
 show_in_menu: true
 ---
