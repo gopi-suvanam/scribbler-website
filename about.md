@@ -19,7 +19,7 @@ Gopi is an entrepreneur in the Fintech and AI/ML space, with a rich experience o
 
 <div class="col-lg-6" markdown="1">
     
-### Vinu Ranganath
+### Vinukumar Ranganath
 {:.mt-lg-0}
 ![Vinu](vinu.jpeg)
 Vinu is an idea person. He has 10+ years of experience in the Enterprise (B2B) and Consumer (B2C) space in multiple roles. He has an MS from the Univertsity of California, Berkley, and a B.Tech degree from the [IIT Madras](https://www.iitm.ac.in/). He has immense experience as a Product Manager, Client servicing, Pre-Sales, Sales, and Programmer. He has worked as a Product Manager in [Zynga Games](https://www.zynga.com/) and Netcore soltions. He enjoys his role as a Product Manager as it is a challenging and fulfilling role. He has also worked in the nonprofit sector (3 years) with a focus on education. His expertise includes setting up pilots (new product/business) and streamlining the process for scale in various industries ranging from internet, mobile, banking, education & engineering.
