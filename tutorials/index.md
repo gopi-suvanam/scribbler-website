@@ -1,6 +1,6 @@
 ---
-title: Wiki
-description: Usecases and Docs
+title: Video Tutorials
+description: How to use Scribbler to make awesome JavaScript Notebooks
 ---
 ## Introduction
 
