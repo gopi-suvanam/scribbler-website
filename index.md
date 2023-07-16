@@ -7,12 +7,13 @@ title: Scribbler
 ---
 
 ### Experiment in JavaScript With Ease
+Scribbler is a tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. Scibbler:
 - Runs without backend. 
 - Can be loaded from the file system.
 - Has a minimalistic UI.
-- Minimal external libraries or frameworks.
+- Uses minimal external libraries or frameworks.
 - Comes pre-loaded with Plotly and DI-Libs.
-- Thirdparty libraries can be loaded dynamically.
+- Can load thirdparty libraries dynamically.
   
 <iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
 
