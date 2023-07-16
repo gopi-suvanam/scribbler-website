@@ -7,29 +7,23 @@ title: Scribbler
 ---
 
 ### Experiment in JavaScript With Ease
-
-<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
-
-
 - Runs without backend. 
 - Can be loaded from the file system.
 - Has a minimalistic UI.
 - Minimal external libraries or frameworks.
 - Comes pre-loaded with Plotly and DI-Libs.
 - Thirdparty libraries can be loaded dynamically.
+  
+<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
+
+
+
 
 > JavaScript is the language that never ceases to surprise you with its quirks and oddities.
 > 
 > ~ Anonymous
 
 [Read Our Backstory Here](backstory.html).
-
-### Usecases
-Scribbler can be used for:
-- Scientific/Mathematical Computation
-- Interactive Data Science/Machine Learning
-- Dashboarding/Charting/Visualization
-- Experimenting With New Code/Libraries
 
 
 
