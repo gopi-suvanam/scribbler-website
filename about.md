@@ -5,7 +5,9 @@ show_in_menu: true
 ---
 
 ## Vision
-Our vision is to empower engineers, developers, and scientists with a seamless and interactive computational experience, designed to foster creativity, collaboration, and innovation. With intuitive interface, live code execution, and rich multimedia capabilities, we aim to provide a dynamic environment for exploring, experimenting, and documenting computation. We hope to inspire the users of Scribbler to push the boundaries of their imagination, accelerate their learning, and unlock the true potential of computation through a versatile and user-friendly interface that elevates the joy of computing.
+Our vision is to empower engineers, developers, and scientists with a seamless and interactive computational experience, designed to foster creativity, collaboration, and innovation. 
+
+With intuitive interface, live code execution, and rich multimedia capabilities, we hope to inspire them to push the boundaries of their imagination, accelerate their learning, and unlock the true potential of computation.
 
 
 ## Team
