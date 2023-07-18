@@ -29,4 +29,9 @@ show_in_menu: true
 <iframe  src="https://www.youtube.com/embed/2UHfFgafIBQ?modestbranding=1" 
     title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
     style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
+
+## Embedding Notebooks
+<iframe  src="https://www.youtube.com/embed/IAKfSyLbLL8?modestbranding=1" 
+    title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
+    style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
     
