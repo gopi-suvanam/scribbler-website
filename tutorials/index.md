@@ -1,6 +1,7 @@
 ---
 title: Video Tutorials
 description: How to use Scribbler to make awesome JavaScript Notebooks
+show_in_menu: true
 ---
 ## Introduction
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jlR_EGqaeqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
