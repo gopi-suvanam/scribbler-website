@@ -4,29 +4,29 @@ description: How to use Scribbler to make awesome JavaScript Notebooks
 show_in_menu: true
 ---
 ## Introduction
-<iframe  src="https://www.youtube.com/embed/jlR_EGqaeqw" 
+<iframe  src="https://www.youtube.com/embed/jlR_EGqaeqw?modestbranding=1" 
     title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
     style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
 
 ## Cells
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uEZ5aYs0zXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/uEZ5aYs0zXY?modestbranding=1" 
+    title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
+    style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
 
 ## Saving and Loading
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SaRPCIb0RJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe  src="https://www.youtube.com/embed/SaRPCIb0RJs?modestbranding=1" 
+    title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
+    style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
+    
 
 ## Plotting
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bSdkB-XFYVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe  src="https://www.youtube.com/embed/bSdkB-XFYVs?modestbranding=1" 
+    title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
+    style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
+    
 ## Loading Libraries
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2UHfFgafIBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-## Embedding 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IAKfSyLbLL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe  src="https://www.youtube.com/embed/2UHfFgafIBQ?modestbranding=1" 
+    title="Scribbler.live Introduction" frameborder="0" allow="web-share" allowfullscreen
+    style="aspect-ratio: 16 / 9;width: 100%;"></iframe>
+    
