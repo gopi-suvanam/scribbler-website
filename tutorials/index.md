@@ -16,6 +16,8 @@ description: How to use Scribbler to make awesome JavaScript Notebooks
 
 ## Plotting
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bSdkB-XFYVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Loading Libraries
 
 ## Embedding 
