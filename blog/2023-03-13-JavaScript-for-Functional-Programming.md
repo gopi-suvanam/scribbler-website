@@ -76,7 +76,7 @@ JavaScript provides several special array functions that offer convenient ways t
 	const inner = outerFunction("User");
 	inner(); // Output: "Hello User! I am in the outer function's scope.
 	
-For more details see: [Closure in JavaScript for Functional Programming](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html).
+For more details see: [Closure in JavaScript for Functional Programming](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html).
 
 **Higher-Order Functions:**
 
@@ -89,7 +89,7 @@ For more details see: [Closure in JavaScript for Functional Programming](/2023/0
     const double = multiplyBy(2);
     console.log(double(5)); // Output: 10
     
-More details on higher order functions is available here: [Higher Order Functions in Functional Programming using JavaScript](/2023/05/26/Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html). These are just a few examples of functional programming in JavaScript. There are many other concepts and techniques that can be used to write functional code.
+More details on higher order functions is available here: [Higher Order Functions in Functional Programming using JavaScript](2023-05-26-Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html). These are just a few examples of functional programming in JavaScript. There are many other concepts and techniques that can be used to write functional code.
 
 
 
