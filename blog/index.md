@@ -1,6 +1,5 @@
 ---
 layout: full
-homepage: true
 disable_anchors: true
 description: Articles on Using Scribbler for Experimenting in JavaScript 
 title: Blog 
