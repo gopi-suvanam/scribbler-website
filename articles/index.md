@@ -5,12 +5,12 @@ disable_anchors: true
 description: Articles onf Using Scribbler for Experimenting in JavaScript 
 title: JavaScript in Scribbler 
 ---
-<ul>
+
   {% for page in site.pages %}
     {% if page.url contains '/articles/' and page.url !='/articles/' %}
-      <li>
+      
         <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-      </li>
+         <p><i>{{page.description}}</i></p>
     {% endif %}
   {% endfor %}
-</ul>
+
