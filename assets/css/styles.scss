@@ -13,6 +13,15 @@ p,a,span{
     line-height: 1.5;
 
 }
+.site-masthead__description{
+    color:#ecc1db;    
+}
+
+.site-masthead__version{
+    color:#ecc1db;    
+}
+
+
 $site-ui-mode: {{ site.ui.mode | default: 'auto' }};
 
 $site-ui-brand-dark: {{ site.ui.brand.dark | default: '#00ceff' }};
