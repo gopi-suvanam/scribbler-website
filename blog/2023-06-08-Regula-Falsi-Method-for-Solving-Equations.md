@@ -35,7 +35,7 @@ Today, the Regula Falsi method holds historical significance as one of the earli
 
 ### JavaScript Code for Regula Falsi Method
 
-Below an example of how you can implement the Regula Falsi method in JavaScript to approximate the root of an equation. You can experiment using the notebook on Scribbler: [Regula Falsi Method](https://app.scribbler.live/#./examples/Regula-Falsi.jsnb){: .jsnb-link} 
+Below an example of how you can implement the Regula Falsi method in JavaScript to approximate the root of an equation. You can experiment using the notebook on Scribbler: [Regula Falsi Method](https://app.scribbler.live/?jsnb=./examples/Regula-Falsi.jsnb){: .jsnb-link} 
 
 	function regulaFalsi(func, a, b, tolerance, maxIterations) {
 	  let c;
