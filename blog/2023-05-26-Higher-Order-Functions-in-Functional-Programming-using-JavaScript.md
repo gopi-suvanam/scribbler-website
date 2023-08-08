@@ -5,7 +5,7 @@ description: Higher-order functions are functions that take other functions as a
 tags: javascript, functional programming
 ---
 
-Higher-order functions are functions that can take other functions as arguments or return functions as results. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows for the creation and manipulation of higher-order functions. We have looked at some of these functions when we talked about [Array functions](/2023/05/23/Array-Function-in-JavaScript.html) and [Closure](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html). This article is part of a series on higher [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html). 
+Higher-order functions are functions that can take other functions as arguments or return functions as results. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows for the creation and manipulation of higher-order functions. We have looked at some of these functions when we talked about [Array functions](2023-05-23-Array-Function-in-JavaScript.html) and [Closure](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html). This article is part of a series on higher [functional programming](2023-03-13-JavaScript-for-Functional-Programming.html). 
 
 ### Uses
 Higher-order functions are used practically in various scenarios to write cleaner, more modular, and reusable code. Here are some practical use cases for higher-order functions:
@@ -69,7 +69,7 @@ Higher-order functions are used practically in various scenarios to write cleane
 	console.log(curryMultiply(2)(3)(4)); // Output: 24
 
 ### Example of Solving Differential Equation using Higher Order Function
-Below an implementation of the [Runge-Kutta method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) (specifically, the fourth-order Runge-Kutta method) in JavaScript. Experiment using this notebook on Scribbler: [Runge-Kutta Method for Differential Equations](https://app.scribbler.live/#./examples/Runge-Kutta-for-Differential-Equations.jsnb){: .jsnb-link} 
+Below an implementation of the [Runge-Kutta method](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods) (specifically, the fourth-order Runge-Kutta method) in JavaScript. Experiment using this notebook on Scribbler: [Runge-Kutta Method for Differential Equations](https://app.scribbler.live/?jsnb=./examples/Runge-Kutta-for-Differential-Equations.jsnb){: .jsnb-link} 
 
 
 	function runge_kutta(dydt, y0, t0, h) {
@@ -105,7 +105,7 @@ This function runge_kutta is a higher-order function that takes and input of a f
 
 
 ### Example of Higher Order Function in Simulation
-Below is an example of a Monte Carlo simulation for football odds calculation using a simple scoring model. Experiment in this notebook: [Monte-Carlo Simulation of Goals](/jsnb/#./examples/Monte-Carlo-Simulation-of-Goals.jsnb){: .jsnb-link} 
+Below is an example of a Monte Carlo simulation for football odds calculation using a simple scoring model. Experiment in this notebook: [Monte-Carlo Simulation of Goals](https://app.scribbler.live/?jsnb=./examples/Monte-Carlo-Simulation-of-Goals.jsnb){: .jsnb-link} 
 
 	// Function to perform Monte Carlo simulation for odds calculation
 	function monte_carlo_simulation( num_simulations, simulate_match) {
@@ -148,7 +148,7 @@ This function takes a variable number of simulations and a function simulateMatc
 	  }
 	}
 
-This returns a function that encapsulates 'Home Team Strength' and 'Away Team Strength' using the [concept of closure](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html). This can be input into the simulation as below:
+This returns a function that encapsulates 'Home Team Strength' and 'Away Team Strength' using the [concept of closure](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html). This can be input into the simulation as below:
 
 	//Output win percentages on where home team is stronger than away team.
 	console.log(monte_carlo_simulation(1000,simulate_match_on_strength(2,1)))
