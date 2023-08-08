@@ -1,6 +1,6 @@
 ---
 title: Higher Order Functions in Functional Programming using JavaScript
-layout: default
+layout: post
 description: Higher-order functions are functions that take other functions as arguments or return them as values. They are an essential part of functional programming, and JavaScript has many built-in higher-order functions, such as forEach, map, filter, reduce.
 tags: javascript, functional programming
 ---
@@ -152,3 +152,5 @@ This returns a function that encapsulates 'Home Team Strength' and 'Away Team St
 
 	//Output win percentages on where home team is stronger than away team.
 	console.log(monte_carlo_simulation(1000,simulate_match_on_strength(2,1)))
+
+
