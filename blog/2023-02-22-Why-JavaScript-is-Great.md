@@ -74,4 +74,4 @@ Here's an example of JavaScript code that uses D3.js to create a bar chart:
 JavaScript is a powerful and dynamic programming language that has become an essential part of modern web development. Its client-side scripting capabilities, cross-platform compatibility, rich libraries and frameworks, ease of use, versatility, and growing demand make it a great choice for developers looking to build fast, responsive, and engaging web applications.
 More important the features of the language, JavaScript is great because of the philosophy it embed: Programming should be easy and code should be accessible to everyone.
 
-You can easily experiment in JavaScript using tool that I'm building called [JavaScript Notebook or simply JSNB](/jsnb/#./examples/Hello-world.jsnb).
+You can easily experiment in JavaScript using [Scribbler](https://app.scribbler.live/#./examples/Hello-world.jsnb).
