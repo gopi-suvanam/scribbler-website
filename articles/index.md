@@ -2,12 +2,12 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Articles onf Using Scribbler for Experimenting in JavaScript 
+description: Articles on Using Scribbler for Experimenting in JavaScript 
 title: JavaScript in Scribbler 
 ---
 
 {% for page in site.pages %}
-  {% if page.url contains '/your-folder/' and page.url != '/your-folder/' %}
+  {% if page.url contains '/articles/' and page.url != '/articles/' %}
     <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
     <p>{{ page.description }}</p>
   {% endif %}
