@@ -80,10 +80,10 @@ JavaScript provides a wide range of features and libraries that can be leveraged
 
 
 This example demonstrates a simple simulation of a bouncing ball using HTML5 canvas and JavaScript. The canvas element is used as a drawing surface, and JavaScript is used to update the position of the ball, redraw it, and handle its bouncing behavior. This is just a basic example, and JavaScript can be used to implement much more complex simulations with advanced graphics, physics, and interactivity depending on the requirements of the simulation.
-You can play with the simulation here on Scribbler: [Bouncing Ball Simulation](https://app.scribbler.live#./examples/Simple-Simulation.jsnb){: .jsnb-link} 
+You can play with the simulation here on Scribbler: [Bouncing Ball Simulation](https://app.scribbler.live/?jsnb=./examples/Simple-Simulation.jsnb){: .jsnb-link} 
 
 This is a simple example. As you can notice the ball moves in the same loop over and over again in this simple simulation. But what if we make it more interesting by moving the border of the box as well. This can create an effect of chaos:
-[Dynamic-Simulation](https://app.scribbler.live/#./examples/Dynamic-Simulation.jsnb){: .jsnb-link} 
+[Dynamic-Simulation](https://app.scribbler.live/?jsnb=./examples/Dynamic-Simulation.jsnb){: .jsnb-link} 
 
 ### Monte-Carlo Simulation
 Monte Carlo simulation is a computational technique that uses random sampling and statistical modeling to simulate and analyze the behavior of complex systems or processes. It is named after the famous Monte Carlo casino in Monaco, known for its games of chance, as the technique relies on random sampling to approximate and estimate outcomes in situations where deterministic solutions are not easily feasible.
@@ -104,7 +104,7 @@ Call option: A call option gives the buyer the right to buy the underlying asset
 Put option: A put option gives the buyer the right to sell the underlying asset at the strike price before the expiration date. If the market price of the underlying asset falls below the strike price, the buyer of the put option can exercise the option and sell the asset at the higher strike price, thereby making a profit.
 
 
-The Black-Scholes model is a mathematical model used in finance to calculate the theoretical price of an option based on various parameters, such as the current stock price, strike price, time to expiration, volatility, and interest rate. A detailed explanation of the formula is given [here](/2023/04/06/Option-Pricing-using-Black-Scholes-in-JavaScript.html).
+The Black-Scholes model is a mathematical model used in finance to calculate the theoretical price of an option based on various parameters, such as the current stock price, strike price, time to expiration, volatility, and interest rate. A detailed explanation of the formula is given [here](2023-04-06-Option-Pricing-using-Black-Scholes-in-JavaScript.html).
 
 It is a common practice in financial analysis to calculate the value of a financial instrument in several scenarios. To test, if JavaScript can do this effectively we generate 10 million scenarios of price movements (using random generators) and price an option in all those scenarios. We then calculate the average value and the distribution of the prices. This code for this is:
 
