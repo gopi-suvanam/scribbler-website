@@ -14,7 +14,7 @@ Some of the key features of Brain.js include:
 - Ability to save and load trained models.
 - Support for transfer learning, where you can use pre-trained models for new tasks.
 
-Brain.js has a large and active community of developers, and there are many examples and tutorials available online to help you get started with the library. Brain.js is an alternative to [Tensforflow.js](/2023/04/11/Machine-learning-in-Javascript-using-TensorflowJS.html).
+Brain.js has a large and active community of developers, and there are many examples and tutorials available online to help you get started with the library. Brain.js is an alternative to [Tensforflow.js](2023-04-11-Machine-learning-in-Javascript-using-TensorflowJS.html).
 
 ### Usecases of Brain.js
 Brain.js can be used in a wide range of machine learning applications, including:
@@ -37,7 +37,7 @@ Health Monitoring: Brain.js can be used to build models that can monitor health 
 
 Overall, Brain.js can be used in any application that requires machine learning and can benefit from the ability to learn and adapt from data.
 
-Experiment in this notebook on Scribbler:[Decentralized ML Modeling Using Brain.js](https://app.scribbler.live/#./examples/Decentralized-ML-Model-Storage.jsnb){: .jsnb-link} 
+Experiment in this notebook on Scribbler:[Decentralized ML Modeling Using Brain.js](https://app.scribbler.live/?jsnb=./examples/Decentralized-ML-Model-Storage.jsnb){: .jsnb-link} 
 
 ### Code examples of Brain.js
 Here's a simple example of how to use a CDN to load Brain.js in browsers by loading the library from a CDN:
@@ -125,7 +125,7 @@ The training part will take a few minutes, so you have to be patient when the da
 Note: The browser environment may have certain limitations and security restrictions when it comes to loading external scripts or accessing local files. Make sure to adjust the code accordingly and consider the security implications of running machine learning code in a browser environment.
 	
 ### Saving and Loading Models
-Usually, model building and using/applying the model does not happen in the same script. Thus there is a need to save the built model and use it in another script/application. [Serialization](/2023/05/27/Serialization-in-Python-JavaScript.html) helps in storing the model and being used in other applications. In Brain.js, this can be done using two functions: toJSON and fromJSON. In the above example, we can store the mode built as a JSON object in a file. 
+Usually, model building and using/applying the model does not happen in the same script. Thus there is a need to save the built model and use it in another script/application. [Serialization](https://decentralized-intelligence.com/2023/05/27/Serialization-in-Python-JavaScript.html) helps in storing the model and being used in other applications. In Brain.js, this can be done using two functions: toJSON and fromJSON. In the above example, we can store the mode built as a JSON object in a file. 
 
 The model can also be stored in a decentralized platform like [IPFS](https://ipfs.tech/):
 	
