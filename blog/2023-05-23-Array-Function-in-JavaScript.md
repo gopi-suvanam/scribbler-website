@@ -5,9 +5,9 @@ description: Some techniques to avoid writing for/while loops in JavaScript for 
 ---
 
 ### Loops vs Array Functions in JavaScript
-Loops are a fundamental programming construct used in many programming languages, including JavaScript. However, in some cases, loops can cause performance issues or lead to unexpected behavior in your code. Hence a [functional style code](/2023/03/13/JavaScript-for-Functional-Programming.html) using array functions can come in handy. Here are some ways to avoid loops in JavaScript:
+Loops are a fundamental programming construct used in many programming languages, including JavaScript. However, in some cases, loops can cause performance issues or lead to unexpected behavior in your code. Hence a [functional style code](2023-03-13-JavaScript-for-Functional-Programming.html) using array functions can come in handy. Here are some ways to avoid loops in JavaScript:
 
-- Use Array Methods: JavaScript provides a variety of array methods that allow you to perform operations on arrays without using loops. For example, you can use map, reduce, filter, and forEach methods to perform common array operations. These are [higher order functions](/2023/05/26/Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html).
+- Use Array Methods: JavaScript provides a variety of array methods that allow you to perform operations on arrays without using loops. For example, you can use map, reduce, filter, and forEach methods to perform common array operations. These are [higher order functions](2023-05-26-Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html).
 
 - Use Recursion: Recursion is a technique where a function calls itself repeatedly until a certain condition is met. Recursion can be used to perform operations that would normally require loops. However, it is important to be careful with recursion as it can cause performance issues or lead to stack overflow errors if not used correctly.
 
@@ -35,7 +35,7 @@ Here are some of the differences between recursion and for loops:
 In general, if the problem you are trying to solve has a natural recursive structure, then using recursion can lead to more elegant and easier to understand code. On the other hand, if you are iterating over a collection or sequence, then using a for loop is generally more efficient and flexible. However, as with any programming problem, the best approach depends on the specific requirements and constraints of the problem.
 
 ### Special Array Functions
-JavaScript provides several special array functions that offer convenient ways to perform common operations on arrays. Here are some commonly used special array functions. Experiment with these using the notebook on Scribbler: [Array Functions](https://app.scribbler.live/#./examples/Array-Functions.jsnb){: .jsnb-link} 
+JavaScript provides several special array functions that offer convenient ways to perform common operations on arrays. Here are some commonly used special array functions. Experiment with these using the notebook on Scribbler: [Array Functions](https://app.scribbler.live/?jsnb=./examples/Array-Functions.jsnb){: .jsnb-link} 
 
 forEach: Executes a provided function once for each array element.
 	
@@ -100,4 +100,4 @@ That being said, it's important to note that modern JavaScript engines are highl
 
 In general, you should focus on writing clean, readable code that is easy to understand and maintain, and only optimize for performance when it's necessary. If you find that performance is becoming an issue, you can always use a performance profiling tool to identify the bottleneck in your code and optimize accordingly.
 
-For more details of performance please check this notebook : [https://decentralized-intelligence.com/jsnb/#./examples/Timing-experiment.jsnb](https://decentralized-intelligence.com/jsnb/#./examples/Timing-experiment.jsnb). In this notebook the method "reduce" works significantly better than the for-loop.
+For more details of performance please check this notebook : [https://app.scribbler.live/#./examples/Timing-experiment.jsnb](https://app.scribbler.live/?jsnb=./examples/Timing-experiment.jsnb). In this notebook the method "reduce" works significantly better than the for-loop.
