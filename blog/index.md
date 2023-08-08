@@ -8,7 +8,7 @@ show_in_menu: true
 ---
 
 {% for page in site.pages %}
-{% if page.url contains '/articles/' and page.url != '/articles/' %}
+{% if page.url contains '/blog/' and page.url != '/blog/' %}
 <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 <p>{{ page.description }}</p>
 {% endif %}
