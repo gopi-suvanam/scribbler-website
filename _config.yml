@@ -76,3 +76,6 @@ exclude:
   - LICENSE.md
   - README.md
   - screenshot.png
+
+plugins:
+  - jekyll-sitemap
