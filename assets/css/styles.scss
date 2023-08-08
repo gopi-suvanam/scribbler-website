@@ -5,6 +5,14 @@ h1, h2, h3, h4, h5, h6, p, a, span, div, article,textarea, td{
 	font-family: "EB Garamond", Garamond, "Times New Roman", serif;
 }
 
+p,a,span{
+
+    color: #0b0404;
+    font-family: "EB Garamond",Garamond,"Times New Roman",serif;
+    font-size: 1.3125em;
+    line-height: 1.5;
+
+}
 $site-ui-mode: {{ site.ui.mode | default: 'auto' }};
 
 $site-ui-brand-dark: {{ site.ui.brand.dark | default: '#00ceff' }};
