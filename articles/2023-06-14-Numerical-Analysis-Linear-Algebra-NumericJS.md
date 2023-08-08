@@ -39,7 +39,7 @@ Numeric.js provides various mathematical functions, including trigonometric, exp
 
 For numeric functions in numeric.js, x can be a scalar number or an array.
 
-[Matrix Operations and Linear Algebra](/jsnb/#./examples/Matrix-Operations-Linear-Algebra.jsnb):
+[Matrix Operations and Linear Algebra](https://app.scribbler.live/#./examples/Matrix-Operations-Linear-Algebra.jsnb):
 Numeric.js allows you to perform various matrix operations, such as matrix addition, subtraction, multiplication, and inversion.
 
 	const A = [[1, 2], [3, 4]];
@@ -63,7 +63,7 @@ You can solve linear systems of equations using the numeric.solve() function.
 	// x = [2, -1]
 
 
-[Eigenvalues and Eigenvectors](/jsnb/#./examples/Eigen-Decomposition.jsnb):
+[Eigenvalues and Eigenvectors](https://app.scribbler.live/#./examples/Eigen-Decomposition.jsnb):
 Numeric.js allows you to compute eigenvalues and eigenvectors of a matrix using the numeric.eig() function
 
 	const A = [[2, -1], [4, 3]];
@@ -72,7 +72,7 @@ Numeric.js allows you to compute eigenvalues and eigenvectors of a matrix using 
 	// lambda = [4, 1]
 	// E = [[0.707, 0.447], [0.707, -0.894]]
 
-[Singular Value Decomposition (SVD)](/jsnb/#./examples/Singular-Value-Decomposition.jsnb):
+[Singular Value Decomposition (SVD)](https://app.scribbler.live/#./examples/Singular-Value-Decomposition.jsnb):
 Numeric.js provides SVD functionality through the numeric.svd() function.
 
 	const A = [[1, 2], [3, 4], [5, 6]];
@@ -82,7 +82,7 @@ Numeric.js provides SVD functionality through the numeric.svd() function.
 	// S = [9.525, 0.514]
 	// V = [[-0.619, -0.785], [-0.785, 0.619]]
 
-[Cubic Spline Interpolation Interpolation](/jsnb/#./examples/Cubic-Spline-Interpolation.jsnb):
+[Cubic Spline Interpolation Interpolation](https://app.scribbler.live/#./examples/Cubic-Spline-Interpolation.jsnb):
 Numeric.js supports spline interpolation, using the numeric.spline() function. Cubic spline interpolation is a commonly used method for smooth interpolation between data points.
 
 
