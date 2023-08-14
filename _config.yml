@@ -20,10 +20,10 @@ links:
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
   homepage:
-    - title: Go To App
+    - title: Use Scribbler
       icon: play
       brand: true
-      url: https://app.scribbler.live/
+      url: https://app.scribbler.live/#./examples/Hello-world.jsnb
   footer:
     - title: GitHub
       icon: github
