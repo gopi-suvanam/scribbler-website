@@ -20,7 +20,7 @@ links:
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
   homepage:
-    - title: Open Scribbler
+    - title: Try Now
       icon: play
       brand: true
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
