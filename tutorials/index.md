@@ -1,5 +1,5 @@
 ---
-title: Video Tutorials
+title: Tutorials
 description: How to use Scribbler to make awesome JavaScript Notebooks
 show_in_menu: true
 ---
