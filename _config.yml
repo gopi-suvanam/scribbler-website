@@ -1,6 +1,6 @@
 # name of the software
 name: Scribbler
-
+baseurl: scribbler.live
 project:
   version: 1.0.0
   download_url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
