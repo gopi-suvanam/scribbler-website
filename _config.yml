@@ -1,5 +1,5 @@
 # name of the software
-name: Scribbler - JavaScript Notebook
+name: Scribbler
 baseurl: ""
 description: JavaScript Notebook in the Browser for Easy Experimentation
 project:
