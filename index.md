@@ -3,7 +3,7 @@ layout: full
 homepage: true
 disable_anchors: true
 description: Simple Interface for Experimenting in JavaScript 
-title: Scribbler
+title: Scribbler - JavaScript Notebook
 ---
 
 ### Experiment in JavaScript With Ease
