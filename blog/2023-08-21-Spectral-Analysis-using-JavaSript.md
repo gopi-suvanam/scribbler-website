@@ -34,7 +34,7 @@ One of the primary applications of DSP is **spectral analysis**, which involves 
 A **spectrogram** is a visual representation of the frequency content of a signal or sound as it varies over time. It is a two-dimensional representation that displays how the energy or amplitude of different frequencies in a signal changes over successive time intervals. Spectrograms are commonly used in fields such as audio processing, speech analysis, music analysis, and various scientific and engineering applications.
 
 
-A good library for DSP in JavaScript is here: (https://github.com/corbanbrook/dsp.js/)[https://github.com/corbanbrook/dsp.js/]. This provides the basic tools for DSP inclduing FFT. Here is a sample code for generating spectogram from an Audio Buffer using the FFT class from the library:
+A good library for DSP in JavaScript is here: [https://github.com/corbanbrook/dsp.js/](https://github.com/corbanbrook/dsp.js/). This provides the basic tools for DSP inclduing FFT. Here is a sample code for generating spectogram from an Audio Buffer using the FFT class from the library:
 
       const audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
 
@@ -56,4 +56,6 @@ A good library for DSP in JavaScript is here: (https://github.com/corbanbrook/ds
 
         spectrogram.push(magnitudes);
       }
-  A complete code including the visualization of the spectrogram is available in the notebook: [Spectral Analysis](https://app.scribbler.live/#./examples/spectral-analysis.jsnb). 
+
+
+A complete code including the visualization of the spectrogram is available in the notebook: [Spectral Analysis](https://app.scribbler.live/#./examples/spectral-analysis.jsnb). 
