@@ -8,8 +8,6 @@ title: Scribbler - JavaScript Notebook
 
 ### Experiment in JavaScript With Ease
 Scribbler is a tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
-
-Scibbler:
 - Runs without backend. 
 - Can be loaded from the file system.
 - Has a minimalistic UI.
