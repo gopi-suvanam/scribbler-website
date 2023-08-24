@@ -1,5 +1,5 @@
 # JavaScript using [Scribbler](https://scribbler.live)
-This is a document for planning out a short course on using JavaScript in Scibbler. Audience is someone who wants to learn JavaScript in an interactive way. As the classes are conducted the linkes will be posted here.
+This is a document for planning out a short course on using JavaScript in Scibbler. Audience is people who want to learn JavaScript in an interactive way. As the classes are conducted the links will be posted here.
 
 ## Session 0: Introduction (15 minutes + 5min qna)
 - Brief overview of the masterclass agenda and goals.
