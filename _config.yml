@@ -20,7 +20,7 @@ links:
       icon: twitter
       brand: true
       url: https://twitter.com/intent/tweet?text=Checkout%20the%20awesome%20JavaScript%20notebook%20tool%3A%20Scribbler%20(https%3A%2F%2Fscribbler.live)
-    - title: GitHub
+    - title: ''
       icon: github
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
