@@ -9,8 +9,7 @@ This is a document for planning out a short course on using JavaScript in Scibbl
 ### Overview of Scribbler:
 - Features and functionalities of the Scribbler platform.
 - How to access and use the interactive code editor.
-- Live Coding Demonstration:
-- Write and execute real-time JavaScript code snippets.
+- Live Coding Demonstration: Write and execute real-time JavaScript code snippets.
 - Brief HTML elements
 - Q&A and Conclusion (15 minutes + 5min qna)
 
