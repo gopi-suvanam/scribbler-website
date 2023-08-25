@@ -27,7 +27,7 @@ links:
   homepage:
     - title: Try Now
       icon: play
-      brand: true
+      brand: false
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
   footer:
     - title: GitHub
