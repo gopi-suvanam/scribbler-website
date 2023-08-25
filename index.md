@@ -26,6 +26,8 @@ Scribbler is a tool to experiment in JavaScript for scientific computation/new c
 
 [Read Our Backstory Here](backstory.html).
 
+[Participate in Discussion/Ask Questions/Answer Queries Here](https://github.com/gopi-suvanam/scribbler/discussions).
+
 
 
 
