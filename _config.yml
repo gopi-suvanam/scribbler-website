@@ -27,7 +27,7 @@ links:
       icon: play
       brand: false
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
-    - title: Follow on Github
+    - title: Star Us On Github
       icon: github
       brand: true
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
