@@ -2,7 +2,7 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Simple Interface for Experimenting in JavaScript 
+description: Simple Interface for Experimenting in JavaScript. Developed for Open Source using Open Source.
 title: Scribbler - JavaScript Notebook
 ---
 
