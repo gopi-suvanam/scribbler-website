@@ -1,7 +1,7 @@
 # name of the software
 name: Scribbler
 baseurl: ""
-description: JavaScript Notebook in the Browser for Easy Experimentation
+description: JavaScript Notebook in the Browser for Easy Experimentation. <br>Developed for Open Source using Open Source.
 project:
   version: 1.0.0
   download_url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
