@@ -30,7 +30,7 @@ links:
     - title: Star Us On Github
       icon: github
       brand: true
-      url: https://app.scribbler.live/#./examples/Hello-world.jsnb
+      url: https://github.com/gopi-suvanam/scribbler/
   footer:
     - title: GitHub
       icon: github
