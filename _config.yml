@@ -23,7 +23,7 @@ links:
       url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
       #https://github.com/gopi-suvanam/scribbler/
   homepage:
-    - title: Try Now
+    - title: Use Now (No login)
       icon: play
       brand: false
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
