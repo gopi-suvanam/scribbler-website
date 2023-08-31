@@ -15,7 +15,7 @@ Scribbler is a tool to experiment in JavaScript for scientific computation/new c
 - Comes pre-loaded with Plotly and DI-Libs.
 - Can load thirdparty libraries dynamically.
   
-<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
+![Scribbler Screenshot](Scribbler-SS.png)
 
 
 
