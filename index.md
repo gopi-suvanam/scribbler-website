@@ -2,7 +2,7 @@
 layout: full
 homepage: true
 disable_anchors: true
-description: Simple Interface for Experimenting in JavaScript 
+description: Simple Interface for Experimenting in JavaScript. Developed for Open Source using Open Source.
 title: Scribbler - JavaScript Notebook
 ---
 
@@ -15,7 +15,7 @@ Scribbler is a tool to experiment in JavaScript for scientific computation/new c
 - Comes pre-loaded with Plotly and DI-Libs.
 - Can load thirdparty libraries dynamically.
   
-<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
+![Scribbler Screenshot](Scribbler-SS.png)
 
 
 
@@ -25,6 +25,8 @@ Scribbler is a tool to experiment in JavaScript for scientific computation/new c
 > ~ Anonymous
 
 [Read Our Backstory Here](backstory.html).
+
+[Participate in Discussion/Ask Questions/Answer Queries Here](https://github.com/gopi-suvanam/scribbler/discussions).
 
 
 

@@ -1,11 +1,11 @@
 # name of the software
 name: Scribbler
 baseurl: ""
-description: JavaScript Notebook in the Browser for Easy Experimentation
-project:
-  version: 1.0.0
-  download_url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
-  download_text: Download
+description: JavaScript Notebook in the Browser for Easy Experimentation.
+#project:
+#  version: 1.0.0
+#  download_url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
+#  download_text: Download
 
 license:
   software: MIT License
@@ -16,15 +16,21 @@ license:
 
 links:
   header:
-    - title: GitHub
+    - title: ''
+      icon: download
+      #github
+      brand: false
+      url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
+      #https://github.com/gopi-suvanam/scribbler/
+  homepage:
+    - title: Start Now (No Login)
+      icon: play
+      brand: false
+      url: https://app.scribbler.live/#./examples/Hello-world.jsnb
+    - title: Star Us On Github
       icon: github
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
-  homepage:
-    - title: Try Now
-      icon: play
-      brand: true
-      url: https://app.scribbler.live/#./examples/Hello-world.jsnb
   footer:
     - title: GitHub
       icon: github
