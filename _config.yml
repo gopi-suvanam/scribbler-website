@@ -16,19 +16,19 @@ license:
 
 links:
   header:
-    - title: 'Play'
+    - title: ''
       icon: play
       #github
       brand: false
       url: https://app.scribbler.live
       #https://github.com/gopi-suvanam/scribbler/
-    - title: 'Github'
+    - title: ''
       icon: github
       #github
       brand: true
       url: https://github.com/gopi-suvanam/scribbler/
       #https://github.com/gopi-suvanam/scribbler/
-   - title: 'Download'
+    - title: ''
       icon: download
       #github
       brand: false
