@@ -11,20 +11,11 @@ blogfeed: true
 
 
 
-<ul>
-  {% for post in paginator.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </li>
-  {% endfor %}
-</ul>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% endif %}
-</div>
+  {% for post in paginator.posts %}
+
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+  {% endfor %}
+
 
