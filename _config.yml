@@ -86,6 +86,9 @@ collections:
   blog:
     output: true
     permalink: /blog/:title
+    
+collections_dir: blog
+destination: ./blog
 
 #analytics:
 #  google: UA-123456-1
