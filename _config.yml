@@ -82,6 +82,10 @@ social:
     user: gopi-suvanam
     repo: scribbler
 
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title
 
 #analytics:
 #  google: UA-123456-1
