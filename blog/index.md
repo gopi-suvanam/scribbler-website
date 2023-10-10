@@ -4,12 +4,29 @@ disable_anchors: true
 description: Articles on Using Scribbler for Experimenting in JavaScript 
 title: Blog 
 show_in_menu: true
+pagination:
+  enabled: true
+  collection: blog  # Specify the collection to use
+  per_page: 10      # Number of posts per page
 ---
 
-{% for page in site.pages %}
-{% if page.url contains '/blog/' and page.url != '/blog/' %}
-<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-<p>{{ page.description }}</p>
-{% endif %}
-{% endfor %}
+
+
+<ul>
+  {% for post in paginator.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.date | date: "%B %d, %Y" }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
 
