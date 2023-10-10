@@ -4,10 +4,7 @@ disable_anchors: true
 description: Articles on Using Scribbler for Experimenting in JavaScript 
 title: Blog 
 show_in_menu: true
-pagination:
-  enabled: true
-  collection: blog  # Specify the collection to use
-  per_page: 10      # Number of posts per page
+
 blogfeed: true
 
 ---
