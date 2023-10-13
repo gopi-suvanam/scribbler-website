@@ -87,13 +87,7 @@ pagination:
   per_page: 3
 
   
-collections:
-  blog:
-    output: true
-    permalink: /blog/:title
-    
-collections_dir: _posts
-destination: ./blog
+
 
 #analytics:
 #  google: UA-123456-1
