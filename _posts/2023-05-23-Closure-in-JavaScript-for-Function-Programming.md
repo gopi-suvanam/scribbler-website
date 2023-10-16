@@ -4,7 +4,7 @@ layout: post
 description: Closure is an important feature available in JavaScript to do functional style programming. There are many practial applications of closure including in mathematical computations, UI experince, machine learning etc.
 ---
 
-In JavaScript, a closure is created when a function is defined within another function and the inner function uses variables declared in the outer function's scope chain. This is a core concept of [functional programming](2023-03-13-JavaScript-for-Functional-Programming.html).
+In JavaScript, a closure is created when a function is defined within another function and the inner function uses variables declared in the outer function's scope chain. This is a core concept of [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html).
 
 The inner function can still access the variables of the outer function, even after the outer function has returned. This allows for more flexible and powerful functions as they can maintain a reference to variables that are no longer in scope.
 
@@ -58,11 +58,11 @@ We, will create an encapsulated power function:
 		return x=>x^k;
 	} //The power_k returns a function that encapsulates k using closure.
 
-We, will calculate the sequence of powers using the [Array function map](2023-05-23/Array-Function-in-JavaScript.html):
+We, will calculate the sequence of powers using the [Array function map](/2023/05/23/Array-Function-in-JavaScript.html):
 	const k=3;
 	const powers= population.map(power_k(3))
 
-We, can define mean using [Array function reduce](2023-05-23-Array-Function-in-JavaScript.html):
+We, can define mean using [Array function reduce](/2023/05/23/Array-Function-in-JavaScript.html):
 
 	mean = function(arr){
 		const sum = arr.reduce((accumulator, num) => {
@@ -81,7 +81,7 @@ Now that we have the power function and mean function defined, we can easily cal
 	
 There are several interesting uses of such closure. A more sophisticated example could be where one wants to simulate the behavior of gas with fixed volume and mass but varying temperature. Then the behavior can be enclosed as a function of temperature with the volume and mass encapsulated as data.
 
-A detailed discussion higher order function with an example involving closure is in this article: [Higher Order Functions in Functional Programming using JavaScript](2023-05-26-Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html).
+A detailed discussion higher order function with an example involving closure is in this article: [Higher Order Functions in Functional Programming using JavaScript](/2023/05/26/Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html).
 	
 
 
