@@ -36,8 +36,7 @@ JavaScript is a versatile and popular programming language, and many prime numbe
 
 1. **Trial Division**:
 	- This is the simplest prime-checking algorithm and is relatively easy to implement in JavaScript. You can loop through all numbers less than the given number and check for divisibility.
-
-	```
+    ```
  	function isPrime(n) {
 		if (n <= 1) return false;
 		if (n <= 3) return true;
