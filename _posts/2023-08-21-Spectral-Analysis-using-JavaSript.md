@@ -3,7 +3,7 @@ title: Spectral Analysis in JavaScript
 layout: post
 description: Spectral Analysis is a powerful tool used to solve scientific and engineering problems. JavaScript provides the toolkit to do this easily.
 ---
-[Jump to Scribbler Notebook(https://app.scribbler.live/#./examples/spectral-analysis.jsnb)
+[Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/spectral-analysis.jsnb)
 ## What is Spectral Analysis
 Spectral analysis is a powerful technique used in various fields to study and understand the frequency components of a signal or data. It involves analyzing the frequency domain representation of a signal to extract information about its constituent frequencies, amplitudes, and phases. Spectral analysis is widely used for several reasons:
 
