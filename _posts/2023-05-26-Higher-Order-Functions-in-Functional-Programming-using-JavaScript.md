@@ -5,7 +5,7 @@ description: Higher-order functions are functions that take other functions as a
 tags: javascript, functional programming
 ---
 
-Higher-order functions are functions that can take other functions as arguments or return functions as results. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows for the creation and manipulation of higher-order functions. We have looked at some of these functions when we talked about [Array functions](2023-05-23-Array-Function-in-JavaScript.html) and [Closure](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html). This article is part of a series on higher [functional programming](2023-03-13-JavaScript-for-Functional-Programming.html). 
+Higher-order functions are functions that can take other functions as arguments or return functions as results. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows for the creation and manipulation of higher-order functions. We have looked at some of these functions when we talked about [Array functions](/2023/05/23/Array-Function-in-JavaScript.html) and [Closure](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html). This article is part of a series on higher [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html). 
 
 ### Uses
 Higher-order functions are used practically in various scenarios to write cleaner, more modular, and reusable code. Here are some practical use cases for higher-order functions:
@@ -148,7 +148,7 @@ This function takes a variable number of simulations and a function simulateMatc
 	  }
 	}
 
-This returns a function that encapsulates 'Home Team Strength' and 'Away Team Strength' using the [concept of closure](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html). This can be input into the simulation as below:
+This returns a function that encapsulates 'Home Team Strength' and 'Away Team Strength' using the [concept of closure](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html). This can be input into the simulation as below:
 
 	//Output win percentages on where home team is stronger than away team.
 	console.log(monte_carlo_simulation(1000,simulate_match_on_strength(2,1)))
