@@ -61,7 +61,7 @@ Z is a random variable from a normal distribution with mean 0 and standard devia
 5. Take the average of the discounted payoffs to obtain the option price.
 
 ### Using JavaScript
-Below an example implementation of this method in JavaScript (it does 100k simulated paths).You can play around with the code on Scribbler: [JavaScript Notebook for Option Pricing using Monte-Carlo Simulation](https://app.scribbler.live/#./examples/Option-Pricing-MC.jsnb){: .jsnb-link} 
+Below an example implementation of this method in JavaScript (it does 100k simulated paths).You can play around with the code on Scribbler: [JavaScript Notebook for Option Pricing using Monte-Carlo Simulation](https://app.scribbler.live/?jsnb=./examples/Option-Pricing-MC.jsnb){: .jsnb-link} 
 
 	function optionPriceMC(strike, expiration, volatility, riskFreeRate, spot, simulations) {
 	  let totalPayoff = 0;
