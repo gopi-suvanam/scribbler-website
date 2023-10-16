@@ -90,4 +90,4 @@ Black-Scholes price can be obtained using the code:
 The above code not only gives the price of the option but also gives "greeks" i.e. sensitivities of the prices to various factors. The above code is part of the library <a href="https://github.com/gopi-suvanam/di-libs/"> Di-Libs </a>. 
 
 Black-Scholes formula makes certain assumptions including the assumption of geometric Brownian motion of the underlying price. If some of the assumption are not valid then there may not be a closed-form solution. In that case, numeric methods like Monte-Carlo simulation will have to be used. There is a followup article on Option Pricing using simulation here: [Option Pricing using Simulation
-](2023-05-04-Monte-Carlo-Simulation-for-Option-Pricing.html)
+](/2023/05/04/Monte-Carlo-Simulation-for-Option-Pricing.html)
