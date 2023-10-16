@@ -7,7 +7,7 @@ layout: post
 [Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Underscore-JS.jsnb)
 ### What is Underscore JS?
 
-[Underscore.js](https://underscorejs.org/) is a popular JavaScript library that provides a set of utility functions and [functional programming](2023-03-13-JavaScript-for-Functional-Programming.html) helpers. It is designed to enhance the functionality and flexibility of JavaScript code and simplify common programming tasks. Underscore.js offers a wide range of functions, including array and object manipulation, iteration and iteration control, function composition, data manipulation, and more. It is often used in web development projects to streamline code, improve readability, and increase productivity. Some key features of Underscore.js include:
+[Underscore.js](https://underscorejs.org/) is a popular JavaScript library that provides a set of utility functions and [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html) helpers. It is designed to enhance the functionality and flexibility of JavaScript code and simplify common programming tasks. Underscore.js offers a wide range of functions, including array and object manipulation, iteration and iteration control, function composition, data manipulation, and more. It is often used in web development projects to streamline code, improve readability, and increase productivity. Some key features of Underscore.js include:
 
 - Collection Functions: Underscore.js provides a rich set of functions for working with arrays and objects, such as each, map, filter, reduce, groupBy, and pluck. These functions simplify common tasks like iterating over collections, transforming data, filtering values, and aggregating results.
 
