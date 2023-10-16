@@ -4,9 +4,8 @@ layout: post
 description: Enumerating prime numers is very important in the fields of mathematics and computer science. There are several algorithms to this and they can be easilt implmented in JavaScript.
 ---
 
-### Algorithms for Generating Prime Numbers
-
 [Jump to Scribbler Notebook](https://app.scribbler.live/#?examples/Enumerating_Primes.jsnb)
+### Algorithms for Generating Prime Numbers
 
 There are several algorithms for generating prime numbers. Some of the most common and efficient ones include:
 
