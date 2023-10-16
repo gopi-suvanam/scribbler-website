@@ -9,7 +9,7 @@ TensorFlow.js allows you to load pre-trained models or train new models using a 
 
 One of the significant advantages of TensorFlow.js is that it allows machine learning models to run locally in the browser, without the need for a server or internet connection. This enables you to build applications that are faster, more responsive, and more private than traditional client-server architectures.
 
-TensorFlow.js provides a convenient way for developers to build machine learning applications in JavaScript, making it more accessible to a broader range of developers and use cases. [Brain.js is an alternative to TensorFlow.js](2023-04-30-Machine-Learning-in-JavaScript-using-Brainjs.html).
+TensorFlow.js provides a convenient way for developers to build machine learning applications in JavaScript, making it more accessible to a broader range of developers and use cases. [Brain.js is an alternative to TensorFlow.js](/2023/04/30/Machine-Learning-in-JavaScript-using-Brainjs.html).
 
 ### Installing and Loading Tensorflow.js
 To install TensorFlow.js, you can use npm (the Node.js package manager) with the following command:
