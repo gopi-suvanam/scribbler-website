@@ -87,7 +87,7 @@ pagination:
   per_page: 3
 
   
-
+paginate_path: "blog/page:num/"
 
 #analytics:
 #  google: UA-123456-1
