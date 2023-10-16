@@ -44,7 +44,7 @@ In conclusion, JavaScript can be used for functional programming by leveraging i
 Here are code some examples of functional programming in JavaScript:
 
 **Array functions:**
-JavaScript provides several special array functions that offer convenient ways to perform common operations on arrays. More detials in this post: [Funtional Style Code in JavaScript using Array Functions](2023-05-23-Array-Function-in-JavaScript.html)
+JavaScript provides several special array functions that offer convenient ways to perform common operations on arrays. More detials in this post: [Funtional Style Code in JavaScript using Array Functions](/2023/05/23/Array-Function-in-JavaScript.html)
 
     //map function
     const numbers = [1, 2, 3, 4, 5];
@@ -76,7 +76,7 @@ JavaScript provides several special array functions that offer convenient ways t
 	const inner = outerFunction("User");
 	inner(); // Output: "Hello User! I am in the outer function's scope.
 	
-For more details see: [Closure in JavaScript for Functional Programming](2023-05-23-Closure-in-JavaScript-for-Function-Programming.html).
+For more details see: [Closure in JavaScript for Functional Programming](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html).
 
 **Higher-Order Functions:**
 
@@ -89,7 +89,7 @@ For more details see: [Closure in JavaScript for Functional Programming](2023-05
     const double = multiplyBy(2);
     console.log(double(5)); // Output: 10
     
-More details on higher order functions is available here: [Higher Order Functions in Functional Programming using JavaScript](2023-05-26-Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html). These are just a few examples of functional programming in JavaScript. There are many other concepts and techniques that can be used to write functional code.
+More details on higher order functions is available here: [Higher Order Functions in Functional Programming using JavaScript](/2023/05/26/Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html). These are just a few examples of functional programming in JavaScript. There are many other concepts and techniques that can be used to write functional code.
 
 
 
