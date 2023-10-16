@@ -4,7 +4,7 @@ description: Numerical analysis in JavaScript allows researchers, scientists, an
 layout: post
 tags: javascript
 ---
-
+[Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Numerical-Analysis-Recipes.jsnb)
 ### What is Numerical Analysis?
 Numerical analysis is a branch of mathematics and computer science that focuses on developing algorithms and methods for solving mathematical problems using numerical approximations and computational techniques. It deals with the study, design, analysis, and implementation of numerical algorithms to obtain solutions to mathematical problems that may be too complex or impossible to solve analytically.
 
