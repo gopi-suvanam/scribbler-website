@@ -84,10 +84,10 @@ social:
 
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 10
 
-  
-paginate_path: "blog/page:num/"
+paginate: 10
+paginate_path: ./blog/page:num/
 
 #analytics:
 #  google: UA-123456-1
