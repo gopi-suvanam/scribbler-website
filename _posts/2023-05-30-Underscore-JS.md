@@ -4,7 +4,7 @@ description: Underscore JS provides several utilites and functions for quick dev
 tags: javascript
 layout: post
 ---
-
+[Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Underscore-JS.jsnb)
 ### What is Underscore JS?
 
 [Underscore.js](https://underscorejs.org/) is a popular JavaScript library that provides a set of utility functions and [functional programming](2023-03-13-JavaScript-for-Functional-Programming.html) helpers. It is designed to enhance the functionality and flexibility of JavaScript code and simplify common programming tasks. Underscore.js offers a wide range of functions, including array and object manipulation, iteration and iteration control, function composition, data manipulation, and more. It is often used in web development projects to streamline code, improve readability, and increase productivity. Some key features of Underscore.js include:
