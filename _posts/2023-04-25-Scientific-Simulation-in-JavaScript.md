@@ -104,7 +104,7 @@ Call option: A call option gives the buyer the right to buy the underlying asset
 Put option: A put option gives the buyer the right to sell the underlying asset at the strike price before the expiration date. If the market price of the underlying asset falls below the strike price, the buyer of the put option can exercise the option and sell the asset at the higher strike price, thereby making a profit.
 
 
-The Black-Scholes model is a mathematical model used in finance to calculate the theoretical price of an option based on various parameters, such as the current stock price, strike price, time to expiration, volatility, and interest rate. A detailed explanation of the formula is given [here](2023-04-06-Option-Pricing-using-Black-Scholes-in-JavaScript.html).
+The Black-Scholes model is a mathematical model used in finance to calculate the theoretical price of an option based on various parameters, such as the current stock price, strike price, time to expiration, volatility, and interest rate. A detailed explanation of the formula is given [here](/2023/04/06/Option-Pricing-using-Black-Scholes-in-JavaScript.html).
 
 It is a common practice in financial analysis to calculate the value of a financial instrument in several scenarios. To test, if JavaScript can do this effectively we generate 10 million scenarios of price movements (using random generators) and price an option in all those scenarios. We then calculate the average value and the distribution of the prices. This code for this is:
 
@@ -141,7 +141,7 @@ It is a common practice in financial analysis to calculate the value of a financ
 	prices.dist().transpose().plot('scatter')
 
 This code uses the libraries [DI-Libs](/di-libs/). For playing around with the code use this notebook on Scribbler:
-[https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb](https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb){: .jsnb-link} 
+[https://app.scribbler.live/?jsnb=./examples/Black-Scholes-Simulation.jsnb](https://app.scribbler.live/?jsnb=./examples/Black-Scholes-Simulation.jsnb){: .jsnb-link} 
 
 
 
