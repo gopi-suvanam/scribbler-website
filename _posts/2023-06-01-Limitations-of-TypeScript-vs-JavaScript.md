@@ -6,7 +6,7 @@ tags: javascript
 ---
 
 ### Limitations of TypeScript
-TypeScript has gained significant popularity in recent years as a statically-typed superset of [JavaScript](2023-02-22-Why-JavaScript-is-Great.html). While it offers several advantages, it is essential to recognize that TypeScript may not be the best choice for every project or development scenario. In this article, we will delve into some of the reasons why TypeScript may be considered worse than JavaScript in many aspects. Disclaimer: This is a pure opinion article.
+TypeScript has gained significant popularity in recent years as a statically-typed superset of [JavaScript](/2023/02/22/Why-JavaScript-is-Great.html). While it offers several advantages, it is essential to recognize that TypeScript may not be the best choice for every project or development scenario. In this article, we will delve into some of the reasons why TypeScript may be considered worse than JavaScript in many aspects. Disclaimer: This is a pure opinion article.
 
 #### Complexity and Learning Curve:
 One of the drawbacks of TypeScript is its increased complexity compared to JavaScript. TypeScript introduces new syntax, concepts, and additional tooling requirements, which can be overwhelming for developers who are new to the language. This steeper learning curve can slow down the development process and hinder team productivity, particularly in small-scale projects or when working with less experienced developers.
