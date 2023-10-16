@@ -1,17 +1,19 @@
 ---
-layout:default
-title: Blog
-description: Articles on developing JavaScript Notebooks for scientific computation, experimentation, machine learning, artifical intelligence etc
+layout: default
 pagination:
   enabled: true
   per_page: 10
-show_in_menu:true
+permalink: /blog/index.html
+
 ---
 
 
-    {% for post in paginator.posts %}
-       
-            <span class="list_title"> <a  href="{{ post.url }}> {{ post.title }} </a> </span><br>
+testing4.. paginator.posts
 
-      
-    {% endfor %}
+  {% for post in site.posts %}
+
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+  {% endfor %}
+
+done
