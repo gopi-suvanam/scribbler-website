@@ -3,7 +3,7 @@ title: Option Pricing in JavaScript using Black-Scholes Formula
 layout: post
 description: Black-Scholes is a closed-form solution to option pricing and can easily be implemented in JavaScript for web-app development or experimetnation.
 ---
-
+[Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Black-Scholes.jsnb)
 ### Options in Finance
 In finance, an option is a financial contract between two parties, where the buyer of the option has the right, but not the obligation, to buy or sell an underlying asset at a predetermined price and time in the future. The underlying asset can be a stock, index, commodity, or currency, and the predetermined price is called the strike price or exercise price.
 
