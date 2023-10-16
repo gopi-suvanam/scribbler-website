@@ -35,47 +35,44 @@ The choice of algorithm depends on the specific requirements of your application
 JavaScript is a versatile and popular programming language, and many prime number generation algorithms can be implemented in it. Here are some prime number generation algorithms that are relatively easy to implement in JavaScript:
 
 1. **Trial Division**:
-   - This is the simplest prime-checking algorithm and is relatively easy to implement in JavaScript. You can loop through all numbers less than the given number and check for divisibility.
+	- This is the simplest prime-checking algorithm and is relatively easy to implement in JavaScript. You can loop through all numbers less than the given number and check for divisibility.
 
-	function isPrime(n) {
-	  if (n <= 1) return false;
-	  if (n <= 3) return true;
-	
-	  if (n % 2 === 0 || n % 3 === 0) return false;
-	
-	  for (let i = 5; i * i <= n; i += 6) {
-	    if (n % i === 0 || n % (i + 2) === 0) return false;
-	  }
-	
-	  return true;
+	```
+ 	function isPrime(n) {
+		if (n <= 1) return false;
+		if (n <= 3) return true;
+		
+		if (n % 2 === 0 || n % 3 === 0) return false;
+		
+		for (let i = 5; i * i <= n; i += 6) {
+		if (n % i === 0 || n % (i + 2) === 0) return false;
+		}
+		
+		return true;
 	}
-
-
 2. **Sieve of Eratosthenes**:
    - Implementing the Sieve of Eratosthenes in JavaScript is relatively straightforward. You create an array to mark off multiples of primes.
-
-	function sieveOfEratosthenes(n) {
-	  const primes = [];
-	  const sieve = new Array(n + 1).fill(true);
-	  
-	  for (let p = 2; p * p <= n; p++) {
-	    if (sieve[p]) {
-	      for (let i = p * p; i <= n; i += p) {
-	        sieve[i] = false;
-	      }
-	    }
-	  }
-	  
-	  for (let i = 2; i <= n; i++) {
-	    if (sieve[i]) {
-	      primes.push(i);
-	    }
-	  }
-	  
-	  return primes;
-	}
-
-
+	```
+    function sieveOfEratosthenes(n) {
+      const primes = [];
+      const sieve = new Array(n + 1).fill(true);
+      
+      for (let p = 2; p * p <= n; p++) {
+        if (sieve[p]) {
+          for (let i = p * p; i <= n; i += p) {
+            sieve[i] = false;
+          }
+        }
+      }
+      
+      for (let i = 2; i <= n; i++) {
+        if (sieve[i]) {
+          primes.push(i);
+        }
+      }
+      
+      return primes;
+    }
 3. **Sieve of Sundaram**:
    - The Sieve of Sundaram can also be implemented in JavaScript with ease. It marks off numbers of the form `i + j + 2ij` where `i`, `j`, and `i + j + 2ij` are less than or equal to `n`.
 
