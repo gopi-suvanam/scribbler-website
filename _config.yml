@@ -16,6 +16,12 @@ license:
 
 links:
   header:
+    - title: 'Blog'
+      #icon: play
+      #github
+      brand: false
+      url: https://scribbler.live/blog/
+      
     - title: ''
       icon: play
       #github
