@@ -1,7 +1,7 @@
 ---
 title: Generating Prime Numbers in JavaScript
 layout: post
-description: Enumerating prime numers is very important in the fields of mathematics and computer science. There are several algorithms to do this and they can be easily implmented in JavaScript.
+description: Enumerating prime numers is very important in the fields of mathematics and computer science. There are several algorithms to do this and they can be easily implemented in JavaScript.
 ---
 
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=examples/Enumerating_Primes.jsnb)
