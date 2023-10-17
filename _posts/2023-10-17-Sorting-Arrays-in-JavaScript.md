@@ -25,28 +25,30 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 - The pass through the list is repeated until no swaps are needed, indicating that the list is sorted. 
 - It has a time complexity of O(n^2) in the worst and average cases, making it inefficient for large lists, but it is easy to understand and implement. 
 - It's not commonly used in practice for large datasets due to its poor time complexity.
-
-	function bubbleSort(arr) {
-	    let n = arr.length;
-	    let swapped;
-	    do {
-	        swapped = false;
-	        for (let i = 0; i < n - 1; i++) {
-	            if (arr[i] > arr[i + 1]) {
-	                // Swap arr[i] and arr[i + 1]
-	                let temp = arr[i];
-	                arr[i] = arr[i + 1];
-	                arr[i + 1] = temp;
-	                swapped = true;
-	            }
-	        }
-	    } while (swapped);
-	    return arr;
-	}
-
-	const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
-	const sortedArray = bubbleSort(unsortedArray);
-	console.log(sortedArray);
+    
+```
+    function bubbleSort(arr) {
+        let n = arr.length;
+        let swapped;
+        do {
+            swapped = false;
+            for (let i = 0; i < n - 1; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    // Swap arr[i] and arr[i + 1]
+                    let temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    swapped = true;
+                }
+            }
+        } while (swapped);
+        return arr;
+    }
+    
+    const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
+    const sortedArray = bubbleSort(unsortedArray);
+    console.log(sortedArray);
+```
 
 ### Quick Sort
 
@@ -56,7 +58,7 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 - The sub-arrays are then sorted recursively.
 - The pivot selection and partitioning process make it very efficient for average-case sorting, with an average time complexity of O(n log n).
 - However, in the worst case (e.g., if the pivot is always the smallest or largest element), it can degrade to O(n^2).
-
+```
 	function quickSort(arr) {
 	    if (arr.length <= 1) return arr;
 	    
@@ -78,7 +80,7 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 	const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
 	const sortedArray = quickSort(unsortedArray);
 	console.log(sortedArray);
-
+```
 
 
 ### Merge Sort
@@ -88,7 +90,7 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 - This process continues until there is only one sub-list remaining, which is the sorted list.
 - It has a stable time complexity of O(n log n) in the worst, average, and best cases, making it a consistent and efficient sorting algorithm.
 - It requires additional memory to store the sub-lists during the merging process, which can be a drawback in resource-constrained environments.
-
+```
 	function mergeSort(arr) {
 	    if (arr.length <= 1) {
 	        return arr;
@@ -126,7 +128,7 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 	const unsortedArray = [64, 34, 25, 12, 22, 11, 90];
 	const sortedArray = mergeSort(unsortedArray);
 	console.log(sortedArray);
-
+```
 
 In this code:
 
