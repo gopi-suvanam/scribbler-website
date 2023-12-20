@@ -67,7 +67,7 @@ ui:
   mode: 'auto' # 'auto', 'dark', 'light'
   brand:
     dark: "#00ceff"
-    light: "blue"
+    light: "#00a7ff"
   border_color:
     dark: "#5f5f5f"
     light: "#dee2e6"
