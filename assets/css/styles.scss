@@ -13,7 +13,7 @@ p,a,span, li, td{
 
 }
 .site-masthead__description{
-    color:#fff;    
+    color:#ecc1db;    
 }
 
 .site-masthead__version{
@@ -24,7 +24,7 @@ p,a,span, li, td{
 $site-ui-mode: {{ site.ui.mode | default: 'auto' }};
 
 $site-ui-brand-dark: {{ site.ui.brand.dark | default: '#00ceff' }};
-$site-ui-brand-light: {{ site.ui.brand.light | default: '#00ceff' }};
+$site-ui-brand-light: {{ site.ui.brand.light | default: '#a20000' }};
 
 $site-ui-border-color-dark: {{ site.ui.border_color.dark | default: '#5f5f5f' }};
 $site-ui-border-color-light: {{ site.ui.border_color.light | default: '#dee2e6' }};
@@ -61,4 +61,3 @@ $site-ui-masthead-color-light: {{ site.ui.masthead.color.light | default: '#fff'
 // Utilities
 @import 'utilities/colors';
 @import 'utilities/js';
-
