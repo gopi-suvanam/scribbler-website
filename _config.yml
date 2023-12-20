@@ -67,7 +67,7 @@ ui:
   mode: 'auto' # 'auto', 'dark', 'light'
   brand:
     dark: "#00ceff"
-    light: "#00a7ff"
+    light: "#a20000"
   border_color:
     dark: "#5f5f5f"
     light: "#dee2e6"
@@ -77,8 +77,8 @@ ui:
       color1: "#062a48"
       color2: "#304e67"
     light:
-      color1: "#062a48"
-      color2: "#304e67"
+      color1: "#080331"
+      color2: "#673051"
   masthead:
     color:
       dark: "#fff"
