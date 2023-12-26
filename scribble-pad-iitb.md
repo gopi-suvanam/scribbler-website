@@ -44,7 +44,7 @@ Award ceremony to announce winners and distribute prizes.
 Closing remarks, thank-you messages, and reflections on the hackathon.
 Networking session: Participants, mentors, and judges engage in virtual networking, discussions, and exchanging contacts.
 
-### Suugested Themes
+### Suggested Themes
 - Machine Learning
 - Generative AI Applications
 - Decentralization and Crypto
