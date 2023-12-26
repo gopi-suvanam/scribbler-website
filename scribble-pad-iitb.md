@@ -59,6 +59,9 @@ Networking session: Participants, mentors, and judges engage in virtual networki
 - Some basic know-how of HTML and CSS is an added advantage
 - Ability to work in small teams to develop code quickly
 - Creativity and skill to innovate
+- Go through [Scribbler](https://app.scribbler.live),[Docs](/docs.html), [toturials](/tutorials/), and the [gallery](samples.html).
+- Join the hackathon discord channel: [https://discord.com/invite/uxNSsWunwU](https://discord.com/invite/uxNSsWunwU)
 
 
 ### Apply
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetd09Lde09WcK1Kr6okorjSS_ZJxaX85D7OYA6s0uQYgIk8Q/viewform?embedded=true" width="640" height="1048" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
