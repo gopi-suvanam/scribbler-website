@@ -7,6 +7,10 @@ show_in_menu: false
 
 ### Dates: 13-Jan-2023 to 21-Jan-2023
 
+### 🚀 Welcome to the JavaScript Innovation Challenge! 🌐
+
+Embark on an exhilarating journey into the world of JavaScript innovation where coding prowess, creativity, and collaboration converge in an immersive  hackathon experience! From aspiring developers to seasoned tech enthusiasts, join us for an exciting 9-day adventure packed with innovation, problem-solving, and cutting-edge projects. Unleash your coding genius, explore the endless possibilities of JavaScript frameworks and libraries, and push the boundaries of web development using Scribbler. Get ready to ideate, collaborate, and code your way to victory in an electrifying celebration of innovation and technological brilliance!
+
 ### Agenda
 
 #### Day 1: Launch and Team Formation
@@ -41,7 +45,13 @@ Closing remarks, thank-you messages, and reflections on the hackathon.
 Networking session: Participants, mentors, and judges engage in virtual networking, discussions, and exchanging contacts.
 
 ### Suugested Themes
-
+- Machine Learning
+- Generative AI Applications
+- Decentralization and Crypto
+- Scientific Computing
+- Dashboarding
+- AR/VR, Image processing
+- Audio processing
 
 ### Pre-requisites
 - Understanding of basics of JavaScript
@@ -49,5 +59,6 @@ Networking session: Participants, mentors, and judges engage in virtual networki
 - Some basic know-how of HTML and CSS is an added advantage
 - Ability to work in small teams to develop code quickly
 - Creativity and skill to innovate
+
 
 ### Apply
