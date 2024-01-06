@@ -1,5 +1,5 @@
 ---
-title: Scribble-Pad - JS Hackathon 
+title: Scribble-Pad @ IIT-B - JS Hackathon 
 description: Hackathon for JavaScript using Scribbler 
 show_in_menu: false
 ---
@@ -14,27 +14,24 @@ Embark on an exhilarating journey into the world of JavaScript innovation where 
 ### Agenda
 
 #### Day 1: Launch and Team Formation
-1. Launch Workshop (Day 1 - Morning)
-Opening ceremony: Welcome address, hackathon overview, and introduction to sponsors, mentors, and judges.
-Announcement of hackathon themes or challenges.
-Introduction to the virtual platform/tool used for communication.
-2. Team Formation and Idea Pitches (Day 1 - Afternoon)
+1. Launch Workshop (Day 1 - Afternon)
+Opening ceremony: Hackathon overview, training on Scribbler tool, idea suggestions.
+2. Team Formation (Day 1 - Afternoon)
 Participants register, form teams, or find collaborators.
-Idea pitches: Teams present their project ideas and form teams based on interests and skills.
 
-#### Days 2-7: Project Planning and Development
-3. Project Planning (Days 2-3)
-Teams work on project planning, defining goals, and creating project roadmaps.
-Online workshops or webinars on JavaScript concepts, frameworks, or tools.
-4. Coding and Development (Days 4-7)
+#### Days 2-8: Project Planning and Development
+3. Learning & Project Planning (Days 2-3)
+Teams leanrn freatures of Scribbler and work on project planning, defining goals, and creating project roadmaps.
+Online workshops or QnA sessions on Scribbler, JavaScript concepts, frameworks, or tools.
+4. Coding and Development (Days 4-8)
 Teams start coding and developing their projects.
 Virtual office hours for mentors to provide guidance and assistance to teams.
 Regular check-ins and progress updates.
 
-#### Day 8-9: Submission and Presentations
-6. Submission Deadline (Day 8 - Evening)
+#### Day 9: Submission and Presentations
+6. Submission Deadline (Day 9 - Noon)
 Submission deadline for project uploads or repositories.
-7. Project Presentations (Day 19 - Afternoon)
+7. Project Presentations (Day 9 - Afternoon)
 Teams present their projects virtually to judges and participants.
 Q&A sessions and feedback from judges.
 8. Judging and Awards (Day 9 - Evening)
