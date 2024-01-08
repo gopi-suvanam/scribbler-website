@@ -56,4 +56,4 @@ Networking session: Participants, mentors, and judges engage in virtual networki
 - Join the hackathon discord channel: [https://discord.com/invite/uxNSsWunwU](https://discord.com/invite/uxNSsWunwU)
 
 ### Submissions
-Final submissions will be in the folder [notebooks](/notebooks) of this repository.
+Final submissions will be in the folder [notebooks](./notebooks) of this repository.
