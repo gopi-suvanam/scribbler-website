@@ -23,10 +23,10 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 [Participate in Discussion/Ask Questions/Answer Queries Here](https://github.com/gopi-suvanam/scribbler/discussions).
 
 <div class="row">
-<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">Gallery</button></div>
+<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">[Gallery](samples.html)</button></div>
 
-<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">App</button></div>
-<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">Discord</button></div>
+<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">[Application](https://app.scribble.live)</button></div>
+<div class="col-lg-4 col-xs-12" markdown="1"> <button style="width:200px;height:200px;border-radius:100px;margin:auto">[Discord](https://discord.com/invite/uxNSsWunwU)</button></div>
 
     
 
