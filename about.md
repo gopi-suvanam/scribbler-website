@@ -9,6 +9,9 @@ Our vision is to empower engineers, developers, and scientists with a seamless a
 
 With intuitive interface, live code execution, and rich multimedia capabilities, we hope to inspire them to push the boundaries of their imagination, accelerate their learning, and unlock the true potential of computation.
 
+[Read Our Backstory Here](backstory.html).
+
+[Participate in Discussion/Ask Questions/Answer Queries Here](https://github.com/gopi-suvanam/scribbler/discussions).
 
 ## Team
 <div class="row">
