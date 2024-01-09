@@ -18,9 +18,7 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 > 
 > ~ Anonymous
 
-[Read Our Backstory Here](backstory.html).
 
-[Participate in Discussion/Ask Questions/Answer Queries Here](https://github.com/gopi-suvanam/scribbler/discussions).
 
 <div class="row" style="marging:10px">
 
