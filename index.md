@@ -14,6 +14,7 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 - Easy to use with a minimalistic UI.
 - Can load thirdparty libraries dynamically.
 </div>
+    
 <div class="col-lg-6" markdown="1">
 - Ctrl-Enter for running the cell.
 - Alt/Option-enter for inserting new cell.
