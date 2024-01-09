@@ -42,18 +42,14 @@ links:
       url: https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip
       #https://github.com/gopi-suvanam/scribbler/
   homepage:
-    - title: Join Discord
-      icon: discord
-      brand: true
-      url: https://discord.com/invite/uxNSsWunwU
     - title: Start (No Login)
       icon: play
       brand: false
       url: https://app.scribbler.live/#./examples/Hello-world.jsnb
-    - title: Source Code
-      icon: github
+    - title: Join Discord
+      icon: discord
       brand: true
-      url: https://github.com/gopi-suvanam/scribbler/
+      url: https://discord.com/invite/uxNSsWunwU
   footer:
     - title: GitHub
       icon: github
