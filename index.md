@@ -21,6 +21,8 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 - Alt/Option-enter for inserting new cell.
 - Toggle "code" to "html" for html content.
 </div>
+</div>
+
 ![Scribbler Screenshot](Scribbler-SS.png)
 
 > JavaScript is the language that never ceases to surprise you with its quirks and oddities.
