@@ -85,7 +85,9 @@ A notebook can be downloaded as json (has a default extension of .jsnb). IT can 
 ### Loading
 A .jsnb file can also be directly loaded into the app by suffixing the url of the file after "#" something like: https://app.scribbler.live/#link_to_file.jsnb. The url of the file should be accessible by the browser through GET method.
 </div>
----
+
+</div>
+
 ## Team
 <div class="row">
 <div class="col-lg-6" markdown="1">
@@ -109,6 +111,4 @@ Vinu is an idea person. He has 10+ years of experience in the Enterprise (B2B) a
 
 
 
-</div>
-</div>
 
