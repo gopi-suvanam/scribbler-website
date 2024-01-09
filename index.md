@@ -7,9 +7,10 @@ title: Scribbler - JavaScript Notebook
 ---
 
 ### Experiment in JavaScript With Ease
+
+Scribbler is a browser-based tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
 <div class="row">
 <div class="col-lg-6" markdown="1">
-Scribbler is a browser-based tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
 - Runs without backend. Can be loaded from the file system.
 - Easy to use with a minimalistic UI.
 - Can load thirdparty libraries dynamically.
