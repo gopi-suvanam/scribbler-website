@@ -1,7 +1,7 @@
 # name of the software
 name: Scribbler
 baseurl: ""
-theme: jekyll-theme-dinky
+theme: jekyll-theme-architect
 description: JavaScript Notebook in the Browser for Easy Experimentation.
 #project:
 #  version: 1.0.0
