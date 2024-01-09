@@ -26,16 +26,16 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 
 <div class="col-lg-4 col-xs-12" > 
     <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#5f1e52">
-    <a href="https://app.scribbler.live">Application</a></button></div>
+    <a style="color:white !important" href="https://app.scribbler.live">Application</a></button></div>
     
 <div class="col-lg-4 col-xs-12" > 
     <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#5f1e52">
-        <a href="samples.html"> Gallery</a></button>
+        <a style="color:white !important" href="samples.html"> Gallery</a></button>
 </div>
 
 <div class="col-lg-4 col-xs-12" > 
     <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#5f1e52">
-    <a href="https://discord.com/invite/uxNSsWunwU">Discord</a></button></div>
+    <a style="color:white !important" href="https://discord.com/invite/uxNSsWunwU">Discord</a></button></div>
 
 </div>
 
