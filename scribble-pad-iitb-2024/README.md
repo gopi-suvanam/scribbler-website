@@ -1,5 +1,10 @@
+---
+title: Scribble-Pad - JS Innovation Challenge Hackathon 
+description: Hackathon for JavaScript using Scribbler 
+show_in_menu: false
+---
 
-# Scribble-Pad JS Hackathon
+# Scribble-Pad @ IIT-B
 
 ### Dates: 13-Jan-2023 to 21-Jan-2023
 
