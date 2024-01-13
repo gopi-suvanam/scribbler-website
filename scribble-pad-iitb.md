@@ -14,30 +14,29 @@ Embark on an exhilarating journey into the world of JavaScript innovation where 
 ### Agenda
 
 #### Day 1: Launch and Team Formation
-1. Launch Workshop (Day 1 - Afternon)
+**Launch Workshop (Day 1 - Afternon)**
 Opening ceremony: Hackathon overview, training on Scribbler tool, idea suggestions.
-2. Team Formation (Day 1 - Afternoon)
+**Team Formation (Day 1 - Afternoon)**
 Participants register, form teams, or find collaborators.
 
-#### Days 2-8: Project Planning and Development
-3. Learning & Project Planning (Days 2-3)
-Teams leanrn freatures of Scribbler and work on project planning, defining goals, and creating project roadmaps.
+#### Days 2-3: Project Planning 
+Teams learning freatures of Scribbler and work on project planning, defining goals, and creating project roadmaps.
 Online workshops or QnA sessions on Scribbler, JavaScript concepts, frameworks, or tools.
-4. Coding and Development (Days 4-8)
+#### Days 4-8: Coding and Development (Days 4-8)
 Teams start coding and developing their projects.
 Virtual office hours for mentors to provide guidance and assistance to teams.
 Regular check-ins and progress updates.
 
 #### Day 9: Submission and Presentations
-6. Submission Deadline (Day 9 - Noon)
+**Submission Deadline (Day 9 - Noon)**
 Submission deadline for project uploads or repositories.
-7. Project Presentations (Day 9 - Afternoon)
+**Project Presentations (Day 9 - Afternoon)**
 Teams present their projects virtually to judges and participants.
 Q&A sessions and feedback from judges.
-8. Judging and Awards (Day 9 - Evening)
+**Judging and Awards (Day 9 - Evening)**
 Judges evaluate projects based on set criteria.
 Award ceremony to announce winners and distribute prizes.
-9. Closing and Networking (Day 9 - Late Evening)
+**Closing and Networking (Day 9 - Late Evening)**
 Closing remarks, thank-you messages, and reflections on the hackathon.
 Networking session: Participants, mentors, and judges engage in virtual networking, discussions, and exchanging contacts.
 
