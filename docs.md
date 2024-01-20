@@ -6,17 +6,12 @@ show_in_menu: true
 
 
 ## Installation
-### Download
-One of the standout features of Scribbler.Live is its hassle-free setup. Users can conveniently download or clone the tool directly from GitHub and immediately start using it by opening the index.html file from the file system. This eliminates the need for any intricate installation processes, making it easily accessible to anyone.
-
-### Hosting Behind a Web Server
-Scribbler provides the flexibility to host the tool behind a web server, enabling static serving of the folder. This means that users can effortlessly put the tool behind a web server to serve it statically, without any requirement for a backend framework such as Node.js or Python. By leveraging the simplicity of static serving, Scribbler ensures smooth and efficient usage.
-
-### Enhanced Functionality with WebRTC and Blockchain
-While Scribbler can be used directly from the file system, it's worth noting that some external libraries and features, like WebRTC and Blockchain wallets, work optimally when the tool is hosted behind a server and served through HTTP rather than the file:/// protocol. Hosting Scribbler through a web server enhances its capabilities, enabling seamless integration with these advanced features.
 
 ### GitHub Pages Hosted Version
 Scribbler also offers a convenient option through GitHub Pages. Users can access the hosted version of the tool at https://app.scribbler.live, where they can enjoy all the features and benefits without the need for self-hosting. This allows for easy sharing and collaboration, making Scribbler a versatile tool for various team sizes and locations.
+
+### Download
+One of the standout features of Scribbler.Live is its hassle-free setup. Users can conveniently download or clone the tool directly from GitHub and immediately start using it by hosting the folder in webserver and opening the link. This eliminates the need for any intricate installation processes, making it easily accessible to anyone. This means that users can effortlessly put the tool behind a web server to serve it statically, without any requirement for a backend framework such as Node.js or Python. By leveraging the simplicity of static serving, Scribbler ensures smooth and efficient usage.
 
 ## Cells
 ### Cell Types and Structure
@@ -32,14 +27,13 @@ In code cells, the output block displays the result of the last evaluated expres
 To provide insight into the execution sequence and time taken, code cells feature a status indicator in the output block. The status displays a number indicating the order in which the cell was executed and the time it took to run. In case of an error, the status block remains blank, offering a quick indication that further investigation may be necessary.
 
 ### HTML Cell Editing and Execution
-HTML cells allow users to create rich and interactive content using HTML markup. To edit the HTML, users can double-click on the output of the cell, enabling direct modifications. The output of HTML is updated when the cell is "played" or when the user clicks outside the cell. This workflow ensures that the content stays up to date and reflects any edits made. HTML cells can have <style> tags also inside them.
+HTML cells allow users to create rich and interactive content using HTML markup. To edit the HTML, users can double-click on the output of the cell, enabling direct modifications. The output of HTML is updated when the cell is "played". This workflow ensures that the content stays up to date and reflects any edits made. HTML cells can have <style> tags also inside them.
 
 ### Manipulating Cells
 Scribbler provides flexibility in managing cells within the notebook. Users can easily add, delete, and rearrange cells to customize the flow and structure of their code. This feature allows for an iterative development process, facilitating experimentation and refining ideas.
 
 ### Accessing HTML Elements
 A powerful capability of Scribbler is the ability to access elements created in HTML cells from code cells. This can be achieved using JavaScript methods such as document.getElementById or document.querySelector. Additionally, users can leverage the popular jQuery library by loading or importing it into the notebook, granting access to convenient $() syntax (refer to "Using external libraries").
-
 
 ## Cell Menu
 Located conveniently in the corner of each cell, the cell-menu provides a wide array of options to streamline workflow and maximize productivity. By understanding and leveraging these operations, users can tailor their notebook to their specific needs and preferences.
@@ -58,11 +52,17 @@ To adapt the notebook's structure and accommodate evolving requirements, the cel
 
 ## File Menu - Loaing and Saving
 
+### Saving Notebooks in Browser
+To preserve the current work, users can save the notebook in the Browser storage. By selecting the "Save" option from File menu, the current notebook is saved in the Browser. This capability enables easy backup and persistency across sessions. Note that if Browser data is cleared the notebooks will be deleted as well.
+
+### Opening Notebooks From the Browser
+Scribbler allows users to open a notebook saved in the browsers through the File->Open menu.
+
 ### Downloading Notebooks as .jsnb Files
 To preserve and share their current work, users can download the notebook as a .jsnb file. By selecting the "Download" option, the current notebook is saved as a .jsnb file on the local machine. This capability enables easy backup, offline access, and sharing with others.
 
 ### Opening Local .jsnb Files
-Scribbler allows users to open .jsnb files directly from their local machines. By selecting the "Open" option, users can browse their file system and choose the desired .jsnb file. This functionality simplifies the process of accessing existing notebooks and fosters a smooth workflow.
+Scribbler allows users to open .jsnb files directly from their local machines. By selecting the "Load" option, users can browse their file system and choose the desired .jsnb file. This functionality simplifies the process of accessing existing notebooks and fosters a smooth workflow.
 
 ### GitHub Integration:
 Scribbler offers seamless integration with GitHub. Users can load a file from a GitHub repository or push a file to a GitHub repository directly from the notebook interface. Upon selecting the GitHub option, an authentication dialogue will appear, requesting an access token, username/owner name, repository, and file path. It's important to note that the access token is not stored in the backend and is solely used for authenticating GitHub API calls. This integration simplifies collaboration, version control, and enables efficient teamwork.
