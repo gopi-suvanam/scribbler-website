@@ -22,7 +22,7 @@
     },
     {
       "code": "// Variable declaration\nlet message;\n// Assigning a value to the variable\nmessage = \"Hello, Variables!\"; \n// Displaying the message\nconsole.log(message);\nshow(message)",
-      "status": "[32]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Hello, Variables! <br>",
       "type": "code"
     },
@@ -57,8 +57,8 @@
       "type": "html"
     },
     {
-      "code": "let x = 10;\nlet y = 5;\nlet sum = x + y;\nconsole.log(\"Sum:\", sum);\nshow(\"Sum:\", sum);",
-      "status": "[34]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let x = 10;\nlet y = 5;\nlet total = x + y;\nconsole.log(\"Sum:\", total);\nshow(\"Sum:\", total);",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Sum: 15 <br>",
       "type": "code"
     },
@@ -69,9 +69,9 @@
       "type": "html"
     },
     {
-      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x is greater than y:\", x>y);\nshow(\"Is x is less  than y:\", x<y);\nshow(\"Is x is equal to y:\", x=y);",
-      "status": "[35]<br><span style=\"font-size:8px\">3ms<span></span></span>",
-      "output": "Is x is greater than y: false <br>Is x is less  than y: true <br>Is x is equal to y: 15 <br>",
+      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x greater than y:\", x>y);\nshow(\"Is x less  than y:\", x<y);\nshow(\"Is x equal to y:\", x=y);",
+      "status": "[2]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Is x greater than y: false <br>Is x less  than y: true <br>Is x equal to y: 15 <br>",
       "type": "code"
     },
     {
@@ -105,8 +105,8 @@
       "type": "html"
     },
     {
-      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of x\nshow(z); //Shows the value of x",
-      "status": "[36]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of z\nshow(z); //Shows the value of z",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "1 <br>",
       "type": "code"
     },
@@ -117,14 +117,14 @@
       "type": "html"
     },
     {
-      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total);\n",
-      "status": "[37]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total); //Expected to show 15\n",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Sum: 510 <br>",
       "type": "code"
     },
     {
-      "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y)",
-      "status": "[38]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y) //Expected to show false",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Is x greater than y? true <br>",
       "type": "code"
     },
@@ -135,9 +135,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "type": "html"
     }
   ],
