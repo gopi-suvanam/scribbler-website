@@ -75,9 +75,9 @@
       "type": "code"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
       "type": "html"
     }
   ],

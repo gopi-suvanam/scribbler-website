@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "name": "Lesson 2: Variables and Data Types",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "status": "",
+      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
+      "status": "",
+      "output": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
+      "type": "html"
+    },
+    {
+      "code": "// Variable declaration\nlet message;\n// Assigning a value to the variable\nmessage = \"Hello, Variables!\"; \n// Displaying the message\nconsole.log(message);\nshow(message)",
+      "status": "[32]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Hello, Variables! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Data Types</h2>\nJavaScript supports various data types, including:\n\nString: Represents textual data and is enclosed in single ('') or double (\"\") quotes.\n\n<pre>let greeting = \"Hello, World!\";</pre>\nNumber: Represents numeric values, both integers and floating-point numbers.\n<pre>let num = 42;</pre>\nBoolean: Represents a logical entity and can have two values: true or false.\n<pre>let isJavaScriptFun = true;</pre>\nUndefined: Represents a variable that has been declared but not assigned a value.\n<pre>let undefinedVariable;</pre>\nNull: Represents the intentional absence of any object value.\n<pre>let nullValue = null;</pre>\n",
+      "status": "",
+      "output": "<h2>Data Types</h2>\nJavaScript supports various data types, including:\n\nString: Represents textual data and is enclosed in single ('') or double (\"\") quotes.\n\n<pre>let greeting = \"Hello, World!\";</pre>\nNumber: Represents numeric values, both integers and floating-point numbers.\n<pre>let num = 42;</pre>\nBoolean: Represents a logical entity and can have two values: true or false.\n<pre>let isJavaScriptFun = true;</pre>\nUndefined: Represents a variable that has been declared but not assigned a value.\n<pre>let undefinedVariable;</pre>\nNull: Represents the intentional absence of any object value.\n<pre>let nullValue = null;</pre>\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (euality),!= (inequality), < (less than),  > (greater than), <= (less than or equal to), >= (greater than or equal to).</li>\n\t<li>Logical operators: && (and), || (or), ! (not).</li>\n</ul>\nLet's explore basic operations you can perform with variables:",
+      "status": "",
+      "output": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (euality),!= (inequality), &lt; (less than),  &gt; (greater than), &lt;= (less than or equal to), &gt;= (greater than or equal to).</li>\n\t<li>Logical operators: &amp;&amp; (and), || (or), ! (not).</li>\n</ul>\nLet's explore basic operations you can perform with variables:",
+      "type": "html"
+    },
+    {
+      "code": "<h3>String Concatenation</h3>\nIn this example, we concatenate two strings, firstName and lastName, to create a full name.",
+      "status": "",
+      "output": "<h3>String Concatenation</h3>\nIn this example, we concatenate two strings, firstName and lastName, to create a full name.",
+      "type": "html"
+    },
+    {
+      "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\nlet fullName = firstName + \" \" + lastName;\nconsole.log(\"Full Name:\", fullName);\nshow(\"Full Name:\", fullName)",
+      "status": "[33]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Full Name: John Doe <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Mathematical Operations</h3>\n\nHere, we perform a simple addition operation on two numeric variables, <i>x</i> and <i>y</i>. Feel free to change the code and experiment.",
+      "status": "",
+      "output": "<h3>Mathematical Operations</h3>\n\nHere, we perform a simple addition operation on two numeric variables, <i>x</i> and <i>y</i>. Feel free to change the code and experiment.",
+      "type": "html"
+    },
+    {
+      "code": "let x = 10;\nlet y = 5;\nlet sum = x + y;\nconsole.log(\"Sum:\", sum);\nshow(\"Sum:\", sum);",
+      "status": "[34]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Sum: 15 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Comparison Operations</h3>\nHere, we perform a simple comparison of two numeric variables, <i>x</i> and <i>y</i>.",
+      "status": "",
+      "output": "<h3>Comparison Operations</h3>\nHere, we perform a simple comparison of two numeric variables, <i>x</i> and <i>y</i>.",
+      "type": "html"
+    },
+    {
+      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x is greater than y:\", x>y);\nshow(\"Is x is less  than y:\", x<y);\nshow(\"Is x is equal to y:\", x=y);",
+      "status": "[35]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Is x is greater than y: false <br>Is x is less  than y: true <br>Is x is equal to y: 15 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'let' Keyword</h3>\nThe key word the let is used to define a variable in JavaScript. let is block-scoped, which means it is limited to the block where it is defined. A block of code is defined segregeated using curly brackets in JavaScript({}). Variables defined using let cannot be accessed outside the scope. A variable declared using <i>let</i> outside any block will be a global variable.",
+      "status": "",
+      "output": "<h3>'let' Keyword</h3>\nThe key word the let is used to define a variable in JavaScript. let is block-scoped, which means it is limited to the block where it is defined. A block of code is defined segregeated using curly brackets in JavaScript({}). Variables defined using let cannot be accessed outside the scope. A variable declared using <i>let</i> outside any block will be a global variable.",
+      "type": "html"
+    },
+    {
+      "code": "{\n  let z=1;\n}\nconsole.log(z); //Throws undefined error\nshow(z);",
+      "status": "[-]",
+      "output": "<p class=\"error\">z is not defined</p>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are alos block-scoped.\n",
+      "status": "",
+      "output": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are alos block-scoped.\n",
+      "type": "html"
+    },
+    {
+      "code": "const pi = 3.14;\npi = 3.14159; // Error: Assignment to a constant variable",
+      "status": "[-]",
+      "output": "<p class=\"error\">Assignment to constant variable.</p>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has some unique scoping behaviors that differ from let and const. Variables declared with var have function scope, meaning they are accessible throughout the entire function in which they are declared, regardless of block statements.",
+      "status": "",
+      "output": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has some unique scoping behaviors that differ from let and const. Variables declared with var have function scope, meaning they are accessible throughout the entire function in which they are declared, regardless of block statements.",
+      "type": "html"
+    },
+    {
+      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of x\nshow(z); //Shows the value of x",
+      "status": "[36]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "1 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error? Also correct the error in the next cell where we are comparing two numbers.",
+      "status": "",
+      "output": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error? Also correct the error in the next cell where we are comparing two numbers.",
+      "type": "html"
+    },
+    {
+      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total);\n",
+      "status": "[37]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Sum: 510 <br>",
+      "type": "code"
+    },
+    {
+      "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y)",
+      "status": "[38]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Is x greater than y? true <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\nVariables are containers for storing data values.\nJavaScript supports various data types, including strings, numbers, booleans, undefined, and null.\nBasic operations include string concatenation and mathematical operations.\nIn the next lesson, we'll explore control flow and conditional statements. Stay tuned!",
+      "status": "",
+      "output": "<h2>Summary</h2>\nVariables are containers for storing data values.\nJavaScript supports various data types, including strings, numbers, booleans, undefined, and null.\nBasic operations include string concatenation and mathematical operations.\nIn the next lesson, we'll explore control flow and conditional statements. Stay tuned!",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\" target=\"_blank\">Introduction to Node.js</a></li>\n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
