@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "name": "Lesson 1: Introduction to JavaScript<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "status": "",
+      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Introduction to JavaScript: Lesson 1 of 10</h1>",
+      "status": "",
+      "output": "<h1>Introduction to JavaScript: Lesson 1 of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Overview</h2>\n\nWelcome to the world of JavaScript! In this lesson, we'll introduce the basics of JavaScript, its role in web development, and the environments where it can be executed. This text can be edited by double-clicking and clicking play button.\n\n<h3> What is JavaScript?</h3>\n\nJavaScript is a versatile programming language primarily used for creating interactive and dynamic content on websites. It allows you to manipulate and control the behavior of web pages, enhancing the overall user experience.\n\n<h3>Execution Environments</h3>\n\nJavaScript can be executed in different environments, with the two main ones being Browser and server. It's essential to distinguish between the browser and Node.js environments:\n<ol>\n<li> <b>Browser Environment:</b> JavaScript is commonly used in web browsers to enhance the functionality of web pages. It can interact with HTML and CSS to create dynamic and responsive user interfaces. To access this environment there is no need to install anything other than a web-brower.</li>\n  <li><b>Node.js Environment (node.js):</b>  JavaScript can also be executed outside of the browser using several server side enrivornments, most popular of them being Node.js. This environment enables JavaScript to be used for server-side development, allowing you to build scalable and efficient web applications. </li>\n\t</ol>\n\nIn this lesson, we'll focus on understanding the basics of JavaScript within the browser environment. We will use Scribbler tool to experiment and learn JavaScript.",
+      "status": "",
+      "output": "<h2> Overview</h2>\n\nWelcome to the world of JavaScript! In this lesson, we'll introduce the basics of JavaScript, its role in web development, and the environments where it can be executed. This text can be edited by double-clicking and clicking play button.\n\n<h3> What is JavaScript?</h3>\n\nJavaScript is a versatile programming language primarily used for creating interactive and dynamic content on websites. It allows you to manipulate and control the behavior of web pages, enhancing the overall user experience.\n\n<h3>Execution Environments</h3>\n\nJavaScript can be executed in different environments, with the two main ones being Browser and server. It's essential to distinguish between the browser and Node.js environments:\n<ol>\n<li> <b>Browser Environment:</b> JavaScript is commonly used in web browsers to enhance the functionality of web pages. It can interact with HTML and CSS to create dynamic and responsive user interfaces. To access this environment there is no need to install anything other than a web-brower.</li>\n  <li><b>Node.js Environment (node.js):</b>  JavaScript can also be executed outside of the browser using several server side enrivornments, most popular of them being Node.js. This environment enables JavaScript to be used for server-side development, allowing you to build scalable and efficient web applications. </li>\n\t</ol>\n\nIn this lesson, we'll focus on understanding the basics of JavaScript within the browser environment. We will use Scribbler tool to experiment and learn JavaScript.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
+      "status": "",
+      "output": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
+      "type": "html"
+    },
+    {
+      "code": "// Welcome message\nlet greeting = \"Hello, Scribbler!\";\nconsole.log(greeting); //This is a standard JavaScript method that output the above message to the log of the Browser. To see the log \nshow(greeting);\n// Basic arithmetic\nlet num1 = 10;\nlet num2 = 5;\nlet sum = num1 + num2;\nconsole.log(\"Sum:\", sum);\nshow(\"Sum\",sum)",
+      "status": "[1]<br><span style=\"font-size:8px\">7ms<span></span></span>",
+      "output": "Hello, Scribbler! <br>Sum 15 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Explanation</h2>\nIn the example above, we declare a variable greeting and use <i>console.log</i>  to display a welcome message. \nAdditionally, we perform basic arithmetic operations with variables <i>num1</i> and <i>num2</i>, calculating their sum. \n<h3>console.log in JavaScript</h3>\nIn JavaScript, console.log is a method used to print messages, variables, or any information to the browser's console. The console is a developer tool that allows you to see output, debug code, and inspect the runtime behavior of your JavaScript programs. If you are running JavaScript in a browser environment (like Chrome, Firefox, Edge, or Safari), you can open the browser's developer tools. To do this:\n<ol>\n<li>  Right-click on the page and select \"Inspect Element\" or press Ctrl + Shift + I (Windows/Linux) or Cmd + Opt + I (Mac) to open the Developer Tools.</li>\n<li>Go to the \"Console\" tab within the Developer Tools.</li>\n</ol>\n<h3>show() Function</h3>\nInstead of seeing the message in the log, Scribbler also provides a function show to see the output immediately. Note that <i>show</i> is not a generic JavaScript function and is a feature of Scribbler. Most JavaScript environments including Browsers and node.js will have console.log.\n<h3>Experiment</h3>\nIn the next cell we have a snippet of a code. It does not work as expected. Can you modify it to say hello to you. Please note strings can be in double quotes or single quotes. Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
+      "status": "",
+      "output": "<h2>Explanation</h2>\nIn the example above, we declare a variable greeting and use <i>console.log</i>  to display a welcome message. \nAdditionally, we perform basic arithmetic operations with variables <i>num1</i> and <i>num2</i>, calculating their sum. \n<h3>console.log in JavaScript</h3>\nIn JavaScript, console.log is a method used to print messages, variables, or any information to the browser's console. The console is a developer tool that allows you to see output, debug code, and inspect the runtime behavior of your JavaScript programs. If you are running JavaScript in a browser environment (like Chrome, Firefox, Edge, or Safari), you can open the browser's developer tools. To do this:\n<ol>\n<li>  Right-click on the page and select \"Inspect Element\" or press Ctrl + Shift + I (Windows/Linux) or Cmd + Opt + I (Mac) to open the Developer Tools.</li>\n<li>Go to the \"Console\" tab within the Developer Tools.</li>\n</ol>\n<h3>show() Function</h3>\nInstead of seeing the message in the log, Scribbler also provides a function show to see the output immediately. Note that <i>show</i> is not a generic JavaScript function and is a feature of Scribbler. Most JavaScript environments including Browsers and node.js will have console.log.\n<h3>Experiment</h3>\nIn the next cell we have a snippet of a code. It does not work as expected. Can you modify it to say hello to you. Please note strings can be in double quotes or single quotes. Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
+      "type": "html"
+    },
+    {
+      "code": "let my_name;\nconsole.log(\"Hello!\",my_name);\nshow(\"Hello!\",my_name);",
+      "status": "[6]<br><span style=\"font-size:8px\">7ms<span></span></span>",
+      "output": "Hello! undefined <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
