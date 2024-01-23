@@ -51,6 +51,30 @@
       "type": "code"
     },
     {
+      "code": "<h2>Some Fundamental Points</h2>\n<h3>Curly Brackets '{}'</h3>\nIn JavaScript, curly brackets {} are used to define blocks of code. A block is a collection of statements grouped together. It is important to note that code inside curly brackets forms a block scope. Remember to always close a bracket at the end of the block.\n<pre>\n  function exampleFunction() {\n  // Start of block\n  let variableInsideBlock = \"I am inside the block\";\n  // End of block\n}\n// variableInsideBlock is not accessible here\n</pre>\n<h3>Comments</h3>\nComments in JavaScript are used to provide explanatory notes within the code. Single-line comments start with //, and multi-line comments are enclosed between /* and */.\n  <pre>\n\t// This is a single-line comment\n\n/*\n  This is a multi-line comment\n  spanning multiple lines\n*/\n\n\t</pre>\n<h3>Case Sensitivity</h3>\nJavaScript is case-sensitive. This means that variableName and VariableName are treated as different variables.\n<h3>Semicolons ';'</h3>\nSemicolons are used to terminate statements in JavaScript. While they are optional in some cases, including them is considered good practice.\n<h3>Variables</h3>\nVariables are used to store and manage data. Declare variables using <i>var</i>,<i> let</i>, or <i>const</i>. Use const for values that won't change and let for variables that may be reassigned.\n<h3>Data Types</h3>\nJavaScript has dynamic typing, allowing variables to hold values of any data type. Common data types include string, number, boolean, object, null, and undefined. More about this in the next lesson.\n\n<h3>Experiment</h3>\nEach of the next few cells has an error. Check the code and modify so that the total of <i>x</i> and <i>y</i> is shown.",
+      "status": "",
+      "output": "<h2>Some Fundamental Points</h2>\n<h3>Curly Brackets '{}'</h3>\nIn JavaScript, curly brackets {} are used to define blocks of code. A block is a collection of statements grouped together. It is important to note that code inside curly brackets forms a block scope. Remember to always close a bracket at the end of the block.\n<pre>  function exampleFunction() {\n  // Start of block\n  let variableInsideBlock = \"I am inside the block\";\n  // End of block\n}\n// variableInsideBlock is not accessible here\n</pre>\n<h3>Comments</h3>\nComments in JavaScript are used to provide explanatory notes within the code. Single-line comments start with //, and multi-line comments are enclosed between /* and */.\n  <pre>\t// This is a single-line comment\n\n/*\n  This is a multi-line comment\n  spanning multiple lines\n*/\n\n\t</pre>\n<h3>Case Sensitivity</h3>\nJavaScript is case-sensitive. This means that variableName and VariableName are treated as different variables.\n<h3>Semicolons ';'</h3>\nSemicolons are used to terminate statements in JavaScript. While they are optional in some cases, including them is considered good practice.\n<h3>Variables</h3>\nVariables are used to store and manage data. Declare variables using <i>var</i>,<i> let</i>, or <i>const</i>. Use const for values that won't change and let for variables that may be reassigned.\n<h3>Data Types</h3>\nJavaScript has dynamic typing, allowing variables to hold values of any data type. Common data types include string, number, boolean, object, null, and undefined. More about this in the next lesson.\n\n<h3>Experiment</h3>\nEach of the next few cells has an error. Check the code and modify so that the total of <i>x</i> and <i>y</i> is shown.",
+      "type": "html"
+    },
+    {
+      "code": "{\n  let x=1;\n  let y=2;\n  let total=x+y;\n  show(total)",
+      "status": "[-]",
+      "output": "<p class=\"error\">Unexpected end of input</p>",
+      "type": "code"
+    },
+    {
+      "code": "let x=1;\nlet y=2;\nlet total=x+y;\nshow(Total);",
+      "status": "[-]",
+      "output": "<p class=\"error\">Total is not defined</p>",
+      "type": "code"
+    },
+    {
+      "code": "let x=1;\nlet y=2;\n//let total=x+y;\nshow(total);",
+      "status": "[-]",
+      "output": "<p class=\"error\">total is not defined</p>",
+      "type": "code"
+    },
+    {
       "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
       "status": "",
       "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://scribbler.live\">Back to Course</a></li>\n<li><a href=\"https://app.scribbler.live\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Introduction to Node.js</a></li>\n  </ul>",
