@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "name": "Lesson 3: Control Flow",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "status": "",
+      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Control Flow: Conditional Statements and Loops - Lesson 3 of 10</h1>   ",
+      "status": "",
+      "output": "<h1>Control Flow: Conditional Statements and Loops - Lesson 3 of 10</h1>   ",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Overview</h2>\n\nIn <a href=\"?jsnb=\">Lesson 2</a>, we covered variables, data types, and basic operations. Now, let's delve into control flow, which involves making decisions in your JavaScript code and executing different blocks of code based on those decisions.\n\n<h2>Conditional Statements</h2>\n\n<h3>`if` Statement</h3>\n\nThe `if` statement is used to execute a block of code if a specified condition is true. The if statement is a fundamental building block in programming that allows you to make decisions in your code. It enables you to execute a block of code conditionally, based on whether a specified condition evaluates to true.\n<br>\nSyntax:\n\n<pre>\nif (condition) {\n  // Code to be executed if the condition is true\n} else {\n  // Code to be executed if the condition is false\n}\n\n</pre>\n\n<h3>Explanation</h3>\n<b>Condition:</b> The expression within the parentheses after the if keyword is the condition. It must evaluate to either true or false. Conditions can involve logical operators (&&, ||, !) to create more complex expressions.<br>\n<b>Code Block (if true):</b> If the condition is true, the code inside the curly braces immediately following the if statement will be executed.<br>\n<b>else Block (optional):</b> The else block is optional. If the condition in the if statement is false, the code inside the else block will be executed. Note that the else block is optional. If it is not specified it is skipped.\n<h3>Example</h3>\nIn the below example we will take a variable called temperature and depending on its value we will display whether the day is hot or not. <b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.",
+      "status": "",
+      "output": "<h2>Overview</h2>\n\nIn <a href=\"?jsnb=\">Lesson 2</a>, we covered variables, data types, and basic operations. Now, let's delve into control flow, which involves making decisions in your JavaScript code and executing different blocks of code based on those decisions.\n\n<h2>Conditional Statements</h2>\n\n<h3>`if` Statement</h3>\n\nThe `if` statement is used to execute a block of code if a specified condition is true. The if statement is a fundamental building block in programming that allows you to make decisions in your code. It enables you to execute a block of code conditionally, based on whether a specified condition evaluates to true.\n<br>\nSyntax:\n\n<pre>if (condition) {\n  // Code to be executed if the condition is true\n} else {\n  // Code to be executed if the condition is false\n}\n\n</pre>\n\n<h3>Explanation</h3>\n<b>Condition:</b> The expression within the parentheses after the if keyword is the condition. It must evaluate to either true or false. Conditions can involve logical operators (&amp;&amp;, ||, !) to create more complex expressions.<br>\n<b>Code Block (if true):</b> If the condition is true, the code inside the curly braces immediately following the if statement will be executed.<br>\n<b>else Block (optional):</b> The else block is optional. If the condition in the if statement is false, the code inside the else block will be executed. Note that the else block is optional. If it is not specified it is skipped.\n<h3>Example</h3>\nIn the below example we will take a variable called temperature and depending on its value we will display whether the day is hot or not. <b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.",
+      "type": "html"
+    },
+    {
+      "code": "let temperature = 25;\n\nif (temperature > 30) {\n  console.log(\"It's a hot day!\"); //This works in most JavaScript environments\n  show(\"It's a hot day!\"); //This works only in Scribbler\n} else {\n  console.log(\"It's not too hot today.\");\n  show(\"It's not too hot today.\");\n}",
+      "status": "[6]<br><span style=\"font-size:8px\">8ms<span></span></span>",
+      "output": "It's not too hot today. <br>",
+      "type": "code"
+    },
+    {
+      "code": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures",
+      "status": "",
+      "output": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures",
+      "type": "html"
+    },
+    {
+      "code": "let hour = 14;\n\nif (hour < 12) {\n  show(\"Good morning!\");\n} else {\n  if (hour < 18) {\n    show(\"Good afternoon!\");\n  } else {\n    show(\"Good evening!\");\n  }\n}\n",
+      "status": "[7]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Good afternoon! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>`else if` Statement</h3>\n\nYou can use the `else if` statement to check multiple conditions in sequence. You can have multiple else if blocks to check multiple conditions.",
+      "status": "",
+      "output": "<h3>`else if` Statement</h3>\n\nYou can use the `else if` statement to check multiple conditions in sequence. You can have multiple else if blocks to check multiple conditions.",
+      "type": "html"
+    },
+    {
+      "code": "let time = 14;\n\nif (time < 12) {\n  show(\"Good morning!\"); //Outside Scribbler use console.log and other standard functions instead of show\n} else if (time < 18) {\n  show(\"Good afternoon!\");\n} else {\n  show(\"Good evening!\");\n}",
+      "status": "[8]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Good afternoon! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements.\n",
+      "status": "",
+      "output": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Math and Plotting</h2>\nYou can use all JS functionality in a sandboxed environment easily. Next cell shows illustrates use of array function and plotting of a chart.",
+      "status": "",
+      "output": "<h2> Math and Plotting</h2>\nYou can use all JS functionality in a sandboxed environment easily. Next cell shows illustrates use of array function and plotting of a chart.",
+      "type": "code"
+    },
+    {
+      "code": "let day = \"Wednesday\";\n\nswitch (day) {\n  case \"Monday\":\n    show(\"It's the beginning of the week.\");\n    break;\n  case \"Wednesday\":\n    show(\"It's the middle of the week.\");\n    break;\n  default:\n    show(\"It's another day.\");\n}",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "It's the middle of the week. <br>",
+      "type": "code"
+    },
+    {
+      "code": "\n<h2>Loops</h2>\nLoops are crucial in programming because they allow you to execute a block of code repeatedly, providing a mechanism for automation and efficiency. Loops enable the repetition of a specific task or set of tasks without duplicating code. This is essential for handling situations where the same operation needs to be performed multiple times.\n<h3>`for` Loop</h3>\n\nThe `for` loop is used to repeatedly execute a block of code for a specified number of iterations. The for loop is used when you know in advance how many times you want to repeat a block of code. It has a concise syntax that combines initialization, condition checking, and iteration in a single line.\n<br>\nSyntax:\n<pre>\nfor (initialization; condition; iteration) {\n  // Code to be executed in each iteration\n}</pre>\n\n<strong>Initialization:</strong> Executed once at the beginning. It typically initializes a counter variable.<br>\n<strong>Condition:</strong> Checked before each iteration. If true, the loop continues; if false, the loop exits.<br>\n<strong>Iteration:</strong> Executed after each iteration. Typically increments or decrements the counter variable.<br>\n\n\n<h3>Example</h3>\nIn the example below we will print numbers starting from 0 to 4 in a loop. Please feel free to change the code and experiment.",
+      "status": "",
+      "output": "\n<h2>Loops</h2>\nLoops are crucial in programming because they allow you to execute a block of code repeatedly, providing a mechanism for automation and efficiency. Loops enable the repetition of a specific task or set of tasks without duplicating code. This is essential for handling situations where the same operation needs to be performed multiple times.\n<h3>`for` Loop</h3>\n\nThe `for` loop is used to repeatedly execute a block of code for a specified number of iterations. The for loop is used when you know in advance how many times you want to repeat a block of code. It has a concise syntax that combines initialization, condition checking, and iteration in a single line.\n<br>\nSyntax:\n<pre>for (initialization; condition; iteration) {\n  // Code to be executed in each iteration\n}</pre>\n\n<strong>Initialization:</strong> Executed once at the beginning. It typically initializes a counter variable.<br>\n<strong>Condition:</strong> Checked before each iteration. If true, the loop continues; if false, the loop exits.<br>\n<strong>Iteration:</strong> Executed after each iteration. Typically increments or decrements the counter variable.<br>\n\n\n<h3>Example</h3>\nIn the example below we will print numbers starting from 0 to 4 in a loop. Please feel free to change the code and experiment.",
+      "type": "html"
+    },
+    {
+      "code": "for (let i = 0; i < 5; i=i+1) {\n  console.log(\"Iteration:\", i);\n  show(\"Iteration:\",i);\n}",
+      "status": "[11]<br><span style=\"font-size:8px\">4ms<span></span></span>",
+      "output": "Iteration: 0 <br>Iteration: 1 <br>Iteration: 2 <br>Iteration: 3 <br>Iteration: 4 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Explanation:</h3>\n<b>Initialization (let i = 0;):</b> Initializes the loop counter variable i to 0 before the loop starts.<br>\n<b>Condition (i < 5;):</b> Checks if the condition is true. If true, the loop continues; if false, the loop exits.<br>\n<b>Code Block:</b> The block of code inside the curly braces {} is executed in each iteration.<br>\n<b>Iteration (i=i+1):</b> Increments the loop counter variable i by 1 after each iteration. The expression i=i+1 can also be abbreiviated as i++;",
+      "status": "",
+      "output": "<h3>Explanation:</h3>\n<b>Initialization (let i = 0;):</b> Initializes the loop counter variable i to 0 before the loop starts.<br>\n<b>Condition (i &lt; 5;):</b> Checks if the condition is true. If true, the loop continues; if false, the loop exits.<br>\n<b>Code Block:</b> The block of code inside the curly braces {} is executed in each iteration.<br>\n<b>Iteration (i=i+1):</b> Increments the loop counter variable i by 1 after each iteration. The expression i=i+1 can also be abbreiviated as i++;",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Nested for Loops:</h3>\nfor loops can be nested inside each other for more complex looping structures. In the example below we will loop <i>i</i> from 0 to 2 and <i>j</i> from o to 1.",
+      "status": "",
+      "output": "<h3>Nested for Loops:</h3>\nfor loops can be nested inside each other for more complex looping structures. In the example below we will loop <i>i</i> from 0 to 2 and <i>j</i> from o to 1.",
+      "type": "html"
+    },
+    {
+      "code": "for (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 2; j++) {\n    console.log(\"i:\", i, \"j:\", j);\n    show(\"i:\", i, \"j:\", j);\n  }\n}",
+      "status": "[12]<br><span style=\"font-size:8px\">5ms<span></span></span>",
+      "output": "i: 0 j: 0 <br>i: 0 j: 1 <br>i: 1 j: 0 <br>i: 1 j: 1 <br>i: 2 j: 0 <br>i: 2 j: 1 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>`while` Loop</h3>\n\nUnlike for loop that iterates through a set of steps, the `while` loop continues to execute a block of code while a specified condition is true.\nIn the example below, we will iterate backwards from 3 to 0.",
+      "status": "",
+      "output": "<h3>`while` Loop</h3>\n\nUnlike for loop that iterates through a set of steps, the `while` loop continues to execute a block of code while a specified condition is true.\n",
+      "type": "html"
+    },
+    {
+      "code": "let counter = 3;\nwhile (counter > 0) {\n  console.log(\"Counter:\", counter);\n  show(\"Counter:\", counter);\n  \n  counter=counter-1;\n}\nshow(\"Finished loops, counter=\",counter);",
+      "status": "[18]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "Counter: 3 <br>Counter: 2 <br>Counter: 1 <br>Finished loops, counter= 0 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.",
+      "status": "",
+      "output": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.",
+      "type": "html"
+    },
+    {
+      "code": "let x = 1;\n\ndo {\n  show(\"Value of x:\", x);\n  x++;\n} while (x < 4);\nshow(\"Finished loops, x=\",x);\n",
+      "status": "[21]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Value of x: 1 <br>Value of x: 2 <br>Value of x: 3 <br>Finished loops, x= 4 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Using Logical Operators</h2>\nLogical operators - && (and), || (or) , ! (not) - can be used to create more complex conditions within an if statement or while statement. For example to check if a `day` is a weekend we could use:\n<pre>\nlet isWeekend = (day === \"Saturday\" || day === \"Sunday\");</pre>\nHere, the condition (day === \"Saturday\" || day === \"Sunday\") checks if the day is either Saturday or Sunday, making isWeekend true if the day is a weekend.\n\n",
+      "status": "",
+      "output": "<h2>Using Logical Operators</h2>\nLogical operators - &amp;&amp; (and), || (or) , ! (not) - can be used to create more complex conditions within an if statement or while statement. For example to check if a `day` is a weekend we could use:\n<pre>let isWeekend = (day === \"Saturday\" || day === \"Sunday\");</pre>\nHere, the condition (day === \"Saturday\" || day === \"Sunday\") checks if the day is either Saturday or Sunday, making isWeekend true if the day is a weekend.\n\n",
+      "type": "html"
+    },
+    {
+      "code": "let day = \"Saturday\";\nlet isWeekend = (day === \"Saturday\" || day === \"Sunday\");\n\nif (isWeekend) {\n  show(\"It's the weekend!\");\n} else {\n  show(\"It's a weekday.\");\n}",
+      "status": "[24]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "It's the weekend! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Experiments</h2>\n",
+      "status": "",
+      "output": "<h2>Experiments</h2>\n",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Write your code in within the comments to do the same. Note a person is teenager if the age is greater than or eaul to 13 and less than or equal to 19.",
+      "status": "",
+      "output": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Write your code in within the comments to do the same. Note a person is teenager if the age is greater than or eaul to 13 and less than or equal to 19.",
+      "type": "html"
+    },
+    {
+      "code": "let age=17;\nlet comment=\"Not sure if the person is teenager\";\n//Write your code below to modify the varriable `comment`\n\n\n\n//End of your code\nshow(comment)",
+      "status": "[29]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Not sure if the person is teenager <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell write code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10). Put the value in the variable `sum` and check if you got it right.",
+      "status": "",
+      "output": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell write code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10). Put the value in the variable `sum` and check if you got it right.",
+      "type": "html"
+    },
+    {
+      "code": "let sum=0;\n//Write your code below\n\n\n\n\n//End of your code\nif(sum==55){\n  show(\"You have got it right\");\n}else{\n  show(\"Please try again\");\n}",
+      "status": "[30]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Please try again <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\n\n<ul>\n<li>Conditional statements (`if`, `else if`, `switch`) allow you to make decisions in your code.</li>\n<li>Loops (`for`, `while`, `do-while`) help you execute a block of code repeatedly.</li>\n</ul>\nIn the next lesson, we'll explore functions, which are essential for organizing and reusing code. Stay tuned!",
+      "status": "",
+      "output": "<h2>Summary</h2>\n\n<ul>\n<li>Conditional statements (`if`, `else if`, `switch`) allow you to make decisions in your code.</li>\n<li>Loops (`for`, `while`, `do-while`) help you execute a block of code repeatedly.</li>\n</ul>\nIn the next lesson, we'll explore functions, which are essential for organizing and reusing code. Stay tuned!",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
