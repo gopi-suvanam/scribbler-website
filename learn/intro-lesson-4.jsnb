@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "name": "Lesson 4: Functions",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "status": "",
+      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>### Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>\nfunction greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\n</h3>Function Invocation</h3>\n\nTo execute a function, you need to invoke (call) it:\n\n<pre>\ngreet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
+      "status": "",
+      "output": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>### Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>function greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\nFunction Invocation\n\nTo execute a function, you need to invoke (call) it:\n\n<pre>greet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
+      "type": "html"
+    },
+    {
+      "code": "\nfunction greet() {\n  console.log(\"Hello, world!\");\n  show(\"Hello, world!\");\n}\ngreet();\n",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Hello, world! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>",
+      "status": "",
+      "output": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>",
+      "type": "html"
+    },
+    {
+      "code": "function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n  show(\"Hello, \" + name + \"!\");\n  \n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Hello, Alice! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>\nfunction addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>",
+      "status": "",
+      "output": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>",
+      "type": "html"
+    },
+    {
+      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nshow(\"Sum:\", sum); // Outputs: Sum: 10",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Sum: 10 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Scope and Function Scope</h2>\n\n<h3>Global Scope</h3>\n\nVariables declared outside any function have global scope, making them accessible throughout the entire program.\n\n<pre>let globalVar = \"I am global\";\n\nfunction exampleFunction() {\n  console.log(globalVar); // Outputs: I am global\n}\nexampleFunction()\n</pre>\n\n<h3>Local Scope</h3>\n\nVariables declared inside a function have local scope and are only accessible within that function.\n\n<pre>function exampleFunction() {\n  let localVar = \"I am local\";\n  console.log(localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nconsole.log(localVar); // ReferenceError: localVar is not defined</pre>\n\n",
+      "status": "",
+      "output": "<h2>Scope and Function Scope</h2>\n\n<h3>Global Scope</h3>\n\nVariables declared outside any function have global scope, making them accessible throughout the entire program.\n\n<pre>let globalVar = \"I am global\";\n\nfunction exampleFunction() {\n  console.log(globalVar); // Outputs: I am global\n}\nexampleFunction()\n</pre>\n\n<h3>Local Scope</h3>\n\nVariables declared inside a function have local scope and are only accessible within that function.\n\n<pre>function exampleFunction() {\n  let localVar = \"I am local\";\n  console.log(localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nconsole.log(localVar); // ReferenceError: localVar is not defined</pre>\n\n",
+      "type": "html"
+    },
+    {
+      "code": "let globalVar = \"I am global\";\n\nfunction exampleFunction() {\n  show(globalVar); // Outputs: I am global\n}\nexampleFunction()",
+      "status": "[9]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "I am global <br>",
+      "type": "code"
+    },
+    {
+      "code": "function exampleFunction() {\n  let localVar = \"I am local\";\n  show(\"Inside the dunction:\",localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nshow(localVar); // ReferenceError: localVar is not defined",
+      "status": "[-]",
+      "output": "Inside the dunction: I am local <br><p class=\"error\">localVar is not defined</p>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>More Examples</h2>\nLet's explore more examples where functions take inputs (parameters) and perform various tasks. These examples demonstrate how functions can take inputs (parameters) to perform specific tasks, providing flexibility and reusability in your JavaScript code.",
+      "status": "",
+      "output": "<h2>More Examples</h2>\nLet's explore more examples where functions take inputs (parameters) and perform various tasks. These examples demonstrate how functions can take inputs (parameters) to perform specific tasks, providing flexibility and reusability in your JavaScript code.",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Example 1: Simple Addition</h3>\nThis example function takes two variables and returns the sum of the variables.\n",
+      "status": "",
+      "output": "<h3>Example 1: Simple Addition</h3>\nThis example function takes two variables and returns the sum of the variables.\n",
+      "type": "html"
+    },
+    {
+      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(5, 3);\nshow(\"Sum:\", sum); ",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Sum: 8 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Example 2: Greeting with Custom Message</h3>\nThis example function takes a message and the name of a person and returns a message incorporating the name.",
+      "status": "",
+      "output": "<h3>Example 2: Greeting with Custom Message</h3>\nThis example function takes a message and the name of a person and returns a message incorporating the name.",
+      "type": "html"
+    },
+    {
+      "code": "function greet(message, name) {\n  show(message + \", \" + name + \"!\");\n}\n\ngreet(\"Good morning\", \"Alice\"); // Outputs: Good morning, Alice!\ngreet(\"Hello\", \"Bob\"); // Outputs: Hello, Bob!\n",
+      "status": "[14]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Good morning, Alice! <br>Hello, Bob! <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Example 3: Finding the Maximum of Two Numbers</h3>\n",
+      "status": "",
+      "output": "<h3>Example 3: Finding the Maximum of Two Numbers</h3>\n",
+      "type": "html"
+    },
+    {
+      "code": "function findMax(num1, num2) {\n  if(num1 > num2){\n\treturn  num1;\n  }else{\n\treturn num2;\n  }\n}\n\nlet maximum = findMax(12, 8);\nshow(\"Maximum:\", maximum); ",
+      "status": "[15]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Maximum: 12 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Example 4: Calculating Area of a Rectangle</h3>",
+      "status": "",
+      "output": "<h3>Example 4: Calculating Area of a Rectangle</h3>",
+      "type": "html"
+    },
+    {
+      "code": "function calculateRectangleArea(length, width) {\n  return length * width;\n}\n\nlet area = calculateRectangleArea(5, 10);\nshow(\"Rectangle Area:\", area);",
+      "status": "[18]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "Rectangle Area: 50 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  x % y gives the reminder after dividen x by y.",
+      "status": "",
+      "output": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  x % y gives the reminder after dividen x by y.",
+      "type": "html"
+    },
+    {
+      "code": "function isEven(number) {\n  return number % 2 === 0; //% is reminder\n}\n\nshow(\"Is 10 even?\", isEven(10)); \nshow(\"Is 7 even?\", isEven(7));  ",
+      "status": "[21]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "Is 10 even? true <br>Is 7 even? false <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Example 6: Calculating Sum of First n numbers</h3>\nIn this example we will calculate the sum first `n` numbers using functions and a for loop. The `n` can be changed and revaluated.",
+      "status": "",
+      "output": "<h3>Example 6: Calculating Sum of First n numbers</h3>\nIn this example we will calculate the sum first `n` numbers using functions and a for loop. The `n` can be changed and revaluated.",
+      "type": "html"
+    },
+    {
+      "code": "function sumFirstN(n){\n  let sum =0;\n  for(let i=1;i<=n;i++){\n  \tsum=sum+i;\n  }\n  return sum;\n}\nshow(\"Sum of first 10 numbers:\",sumFirstN(10));\nshow(\"Sum of first 100 numbers:\",sumFirstN(100));\nshow(\"Sum of first 1000 numbers:\",sumFirstN(1000));\n",
+      "status": "[22]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "Sum of first 10 numbers: 55 <br>Sum of first 100 numbers: 5050 <br>Sum of first 1000 numbers: 500500 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Experiment</h2>\nTry to build a function that calculates the sum of even numbers only in the first `n` numbers. You will have to combine the concepts of function, for loop, if statement and the operator % to do that.",
+      "status": "",
+      "output": "<h2>Experiment</h2>\nTry to build a function that calculates the sum of even numbers only in the first `n` numbers. You will have to combine the concepts of function, for loop, if statement and the operator % to do that.",
+      "type": "html"
+    },
+    {
+      "code": "function sumOfEvenNumbers(n){\n\n  //Write your code here, including the return statement\n\n  //End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
+      "status": "[28]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\n<ul>\n  <li>Functions are reusable blocks of code.</li>\n <li>They can take parameters as input and return a value using the `return` statement.</li>\n <li>Variables inside functions have local scope, while those declared outside have global scope.</li>\n <li>Functions promote code organization, modularity, and reusability.</li>\n</ul>\nIn the next lesson, we'll explore more advanced topics, including arrays and objects in JavaScript. Stay tuned!\n",
+      "status": "",
+      "output": "<h2>Summary</h2>\n<ul>\n  <li>Functions are reusable blocks of code.</li>\n <li>They can take parameters as input and return a value using the `return` statement.</li>\n <li>Variables inside functions have local scope, while those declared outside have global scope.</li>\n <li>Functions promote code organization, modularity, and reusability.</li>\n</ul>\nIn the next lesson, we'll explore more advanced topics, including arrays and objects in JavaScript. Stay tuned!\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 5: Arrays and Objects</a></li>\n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 5: Arrays and Objects</a></li>\n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
