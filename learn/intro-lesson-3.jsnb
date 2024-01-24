@@ -63,14 +63,8 @@
       "type": "html"
     },
     {
-      "code": "<h2> Math and Plotting</h2>\nYou can use all JS functionality in a sandboxed environment easily. Next cell shows illustrates use of array function and plotting of a chart.",
-      "status": "",
-      "output": "<h2> Math and Plotting</h2>\nYou can use all JS functionality in a sandboxed environment easily. Next cell shows illustrates use of array function and plotting of a chart.",
-      "type": "code"
-    },
-    {
       "code": "let day = \"Wednesday\";\n\nswitch (day) {\n  case \"Monday\":\n    show(\"It's the beginning of the week.\");\n    break;\n  case \"Wednesday\":\n    show(\"It's the middle of the week.\");\n    break;\n  default:\n    show(\"It's another day.\");\n}",
-      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "It's the middle of the week. <br>",
       "type": "code"
     },
@@ -82,7 +76,7 @@
     },
     {
       "code": "for (let i = 0; i < 5; i=i+1) {\n  console.log(\"Iteration:\", i);\n  show(\"Iteration:\",i);\n}",
-      "status": "[11]<br><span style=\"font-size:8px\">4ms<span></span></span>",
+      "status": "[2]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "Iteration: 0 <br>Iteration: 1 <br>Iteration: 2 <br>Iteration: 3 <br>Iteration: 4 <br>",
       "type": "code"
     },
@@ -100,19 +94,19 @@
     },
     {
       "code": "for (let i = 0; i < 3; i++) {\n  for (let j = 0; j < 2; j++) {\n    console.log(\"i:\", i, \"j:\", j);\n    show(\"i:\", i, \"j:\", j);\n  }\n}",
-      "status": "[12]<br><span style=\"font-size:8px\">5ms<span></span></span>",
+      "status": "[3]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "i: 0 j: 0 <br>i: 0 j: 1 <br>i: 1 j: 0 <br>i: 1 j: 1 <br>i: 2 j: 0 <br>i: 2 j: 1 <br>",
       "type": "code"
     },
     {
       "code": "<h3>`while` Loop</h3>\n\nUnlike for loop that iterates through a set of steps, the `while` loop continues to execute a block of code while a specified condition is true.\nIn the example below, we will iterate backwards from 3 to 0.",
       "status": "",
-      "output": "<h3>`while` Loop</h3>\n\nUnlike for loop that iterates through a set of steps, the `while` loop continues to execute a block of code while a specified condition is true.\n",
+      "output": "<h3>`while` Loop</h3>\n\nUnlike for loop that iterates through a set of steps, the `while` loop continues to execute a block of code while a specified condition is true.\nIn the example below, we will iterate backwards from 3 to 0.",
       "type": "html"
     },
     {
       "code": "let counter = 3;\nwhile (counter > 0) {\n  console.log(\"Counter:\", counter);\n  show(\"Counter:\", counter);\n  \n  counter=counter-1;\n}\nshow(\"Finished loops, counter=\",counter);",
-      "status": "[18]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Counter: 3 <br>Counter: 2 <br>Counter: 1 <br>Finished loops, counter= 0 <br>",
       "type": "code"
     },
@@ -124,7 +118,7 @@
     },
     {
       "code": "let x = 1;\n\ndo {\n  show(\"Value of x:\", x);\n  x++;\n} while (x < 4);\nshow(\"Finished loops, x=\",x);\n",
-      "status": "[21]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Value of x: 1 <br>Value of x: 2 <br>Value of x: 3 <br>Finished loops, x= 4 <br>",
       "type": "code"
     },
@@ -136,7 +130,7 @@
     },
     {
       "code": "let day = \"Saturday\";\nlet isWeekend = (day === \"Saturday\" || day === \"Sunday\");\n\nif (isWeekend) {\n  show(\"It's the weekend!\");\n} else {\n  show(\"It's a weekday.\");\n}",
-      "status": "[24]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "It's the weekend! <br>",
       "type": "code"
     },
@@ -154,7 +148,7 @@
     },
     {
       "code": "let age=17;\nlet comment=\"Not sure if the person is teenager\";\n//Write your code below to modify the varriable `comment`\n\n\n\n//End of your code\nshow(comment)",
-      "status": "[29]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Not sure if the person is teenager <br>",
       "type": "code"
     },
@@ -166,7 +160,7 @@
     },
     {
       "code": "let sum=0;\n//Write your code below\n\n\n\n\n//End of your code\nif(sum==55){\n  show(\"You have got it right\");\n}else{\n  show(\"Please try again\");\n}",
-      "status": "[30]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "status": "[8]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Please try again <br>",
       "type": "code"
     },
