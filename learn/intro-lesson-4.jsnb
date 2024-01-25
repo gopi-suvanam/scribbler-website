@@ -63,7 +63,7 @@
       "type": "code"
     },
     {
-      "code": "function exampleFunction() {\n  let localVar = \"I am local\";\n  show(\"Inside the dunction:\",localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nshow(localVar); // ReferenceError: localVar is not defined",
+      "code": "function exampleFunction() {\n  let localVar = \"I am local\";\n  show(\"Inside the function:\",localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nshow(localVar); // ReferenceError: localVar is not defined",
       "status": "[-]",
       "output": "Inside the dunction: I am local <br><p class=\"error\">localVar is not defined</p>",
       "type": "code"
