@@ -1,5 +1,5 @@
 .navbar-custom {
-    @include theme(background-color,(
+    @include themer(background-color,(
         'dark':'#252525',
     'light':'#ffcd08'
         ));
