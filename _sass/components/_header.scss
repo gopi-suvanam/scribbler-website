@@ -1,7 +1,7 @@
 .navbar-custom {
     @include themer(background-color,(
         'dark':#252525,
-    'light':#ffcd08
+    'light':#fede02
         ));
     a {
         border-bottom: 0;
