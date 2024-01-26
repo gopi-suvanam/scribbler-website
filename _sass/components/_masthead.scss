@@ -1,5 +1,8 @@
 .site-masthead {
-    
+    @include themer(color, (
+        'dark': $site-ui-masthead-color-dark,
+        'light': $site-ui-masthead-color-light,
+    ));
 
     position: relative;
 
