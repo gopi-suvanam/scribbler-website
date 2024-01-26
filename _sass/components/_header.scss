@@ -1,7 +1,7 @@
 .navbar-custom {
     @include theme(background-color,(
-        'dark':'#252525';
-    'light':'#ffcd08';
+        'dark':'#252525',
+    'light':'#ffcd08'
         ));
     a {
         border-bottom: 0;
