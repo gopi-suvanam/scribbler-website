@@ -77,8 +77,8 @@ ui:
       color2: "#ffcd08"
   masthead:
     color:
-      dark: "#fff"
-      light: "#fff"
+      dark: "#ffcd08"
+      light: "#555"
     align:
       homepage: 'center'
       page: 'left'
