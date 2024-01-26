@@ -6,6 +6,11 @@
         'light': #fede02 !important,
     ));
 
+    @include themer(color, (
+        'dark': #fede02 !important,
+        'light': #555 !important
+    ));
+
     padding-top:70px !important;
     
     padding-bottom:70px  !important;
