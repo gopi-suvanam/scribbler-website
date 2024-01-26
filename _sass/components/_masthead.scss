@@ -4,6 +4,12 @@
         'light': $site-ui-masthead-color-light,
     ));
 
+    @include themer(background-color, (
+        'dark': unset,
+        'light': #fede02 !important,
+    ));
+
+    
     position: relative;
 
     &::after {
