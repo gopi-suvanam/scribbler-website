@@ -39,9 +39,12 @@
     ));
     @include themer(color, (
         'dark': $site-ui-masthead-color-dark,
-        'light': $site-ui-masthead-color-light,
+        'light': white,
     ));
 
+    @include themer(bakground-color, (
+        'light': #999999,
+    ));
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
