@@ -79,7 +79,7 @@ ui:
       trianglify: false
   masthead:
     color:
-      dark: "#ffcd08"
+      dark: "#fede02"
       light: "#555"
     align:
       homepage: 'center'
