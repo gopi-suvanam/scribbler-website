@@ -56,7 +56,7 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 {:.mt-lg-0}
 
 ### Installing
-No specific installation is required. [Download](https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip) or clone the [Github repo](https://github.com/gopi-suvanam/scribbler/) on any machine and open the index.html in the browser. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install. To host the app online, put the folder in web directory of the server and use the link to index.html. You can also use the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
+No specific installation is required. You can use the git-hosted version (without downloading anything) here: [https://app.scribbler.live/](https://app.scribbler.live/). Alternatively, you can [download](https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip) or clone the [Github repo](https://github.com/gopi-suvanam/scribbler/) on any machine and host it in webserver. To host the app online, put the folder in web directory of the server and use the link to index.html. That's it. No no npm, no node, no pip install, no apt-get install. 
 
 ### Hello-World
 
