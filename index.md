@@ -10,17 +10,17 @@ title: Scribbler - JavaScript Notebook
 
 Scribbler is a browser-based tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
 <div class="row">
-    <div class="col-lg-6" markdown="1">
-    - Runs without backend. Can be loaded from the file system.
-    - Easy to use with a minimalistic UI.
-    - Can load thirdparty libraries dynamically.
-    </div>
-    
-    <div class="col-lg-6" markdown="1">
-    - Ctrl-Enter for running the cell.
-    - Alt/Option-enter for inserting new cell.
-    - Toggle "code" to "html" for html content.
-    </div>
+<div class="col-lg-6" markdown="1">
+- Runs without backend. Can be loaded from the file system.
+- Easy to use with a minimalistic UI.
+- Can load thirdparty libraries dynamically.
+</div>
+
+<div class="col-lg-6" markdown="1">
+- Ctrl-Enter for running the cell.
+- Alt/Option-enter for inserting new cell.
+- Toggle "code" to "html" for html content.
+</div>
 </div>
 
 ![Scribbler Screenshot](Scribbler-SS.png)
