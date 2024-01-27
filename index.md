@@ -6,7 +6,7 @@ description: Simple Interface for Experimenting in JavaScript. Developed for Ope
 title: Scribbler - JavaScript Notebook
 ---
 
-### Experiment in JavaScript With Ease
+## Experiment in JavaScript With Ease
 
 Scribbler is a browser-based tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
 <div class="row">
