@@ -39,7 +39,7 @@
     ));
     @include themer(color, (
         'dark': $site-ui-masthead-color-dark,
-        'light': white,
+        'light': #555,
     ));
 
     @include themer(bakground-color, (
