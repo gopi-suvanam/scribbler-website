@@ -22,9 +22,9 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 - Toggle "code" to "html" for html content.
 </div>
 </div>
-<div style="margin:auto;width:100%">
+<p  aligm="center">
 ![Scribbler Screenshot](Scribbler-SS.png)
-</div>
+</p>
 
 > JavaScript is the language that never ceases to surprise you with its quirks and oddities.
 > 
