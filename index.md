@@ -53,6 +53,10 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 <div class="row">
 <div class="col-lg-6" markdown="1">
 
+<div style="text-align:center">
+<h1>Explore and experiment with JavaScript, get instant output to text and iterate.</h1>
+</div>
+
 ## Getting Started
 {:.mt-lg-0}
 
