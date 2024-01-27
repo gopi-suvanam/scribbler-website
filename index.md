@@ -22,8 +22,9 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 - Toggle "code" to "html" for html content.
 </div>
 </div>
-
+<div style="margin:auto">
 ![Scribbler Screenshot](Scribbler-SS.png)
+</div>
 
 > JavaScript is the language that never ceases to surprise you with its quirks and oddities.
 > 
@@ -33,16 +34,16 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 
 <div class="row" style="marging:10px">
 
-<div class="col-lg-4 col-xs-12" > 
-    <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
+<div class="col-lg-4 col-xs-12" style="text-align: center;"> 
+    <button style="width:200px;height:200px;border-radius:100px;margin:30px;color:white !important;background-color:#fede02">
     <a style="color:#555 !important" href="https://app.scribbler.live">Try Scribbler</a></button></div>
     
-<div class="col-lg-4 col-xs-12" > 
+<div class="col-lg-4 col-xs-12"  style="text-align: center;" > 
     <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
         <a style="color:#555 !important" href="samples.html">Explore Gallery</a></button>
 </div>
 
-<div class="col-lg-4 col-xs-12" > 
+<div class="col-lg-4 col-xs-12"   style="text-align: center;"> 
     <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
     <a style="color:#555 !important" href="https://discord.com/invite/uxNSsWunwU">Join Discord</a></button></div>
 
