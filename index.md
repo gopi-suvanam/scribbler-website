@@ -48,14 +48,14 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
     <a style="color:#555 !important" href="https://discord.com/invite/uxNSsWunwU">Join Discord</a></button></div>
 
 </div>
-
+<div style="text-align:center;width:100%">
+<h1>Explore and experiment with JavaScript, get instant output to text and iterate.</h1>
+</div>
 
 <div class="row">
 <div class="col-lg-6" markdown="1">
 
-<div style="text-align:center">
-<h1>Explore and experiment with JavaScript, get instant output to text and iterate.</h1>
-</div>
+
 
 ## Getting Started
 {:.mt-lg-0}
