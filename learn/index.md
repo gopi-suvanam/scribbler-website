@@ -1,6 +1,6 @@
 ---
 title: Learn Foundations of JavaScript in 10 Easy Lessons
-description: This is course in JavaScript in 10 lessons with easy to use interactive workbooks.
+description: This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.
 show_in_menu: false
 ---
 
