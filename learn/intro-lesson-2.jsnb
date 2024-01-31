@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "code": "\n<div class=\"container\" style=\"text-align:center;bakground-color:darkblue;color:#fede02;background-image:url(https://scribbler.live/dark-banner.svg)\">\n        <br><h1  style=\"color:#fede02\">Learn Foundations of JavaScript in 10 Easy Lessons \n\n</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#fede02\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "status": "",
-      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "output": "\n<div class=\"container\" style=\"text-align:center;bakground-color:darkblue;color:#fede02;background-image:url(https://scribbler.live/dark-banner.svg)\">\n        <br><h1 style=\"color:#fede02\">Learn Foundations of JavaScript in 10 Easy Lessons \n\n</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#fede02\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "type": "html"
     },
     {
@@ -33,9 +33,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (euality),!= (inequality), < (less than),  > (greater than), <= (less than or equal to), >= (greater than or equal to).</li>\n\t<li>Logical operators: && (and), || (or), ! (not).</li>\n</ul>\nLet's explore basic operations you can perform with variables:",
+      "code": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (equality),!= (inequality), < (less than),  > (greater than), <= (less than or equal to), >= (greater than or equal to).</li>\n\t<li>Logical operators: && (and), || (or), ! (not).</li>\n</ul>\nNote: for cehcking equality we have to use double eqault to symbol (==). Single `=` is for assigning a value to a variable.\nLet's explore basic operations you can perform with variables:",
       "status": "",
-      "output": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (euality),!= (inequality), &lt; (less than),  &gt; (greater than), &lt;= (less than or equal to), &gt;= (greater than or equal to).</li>\n\t<li>Logical operators: &amp;&amp; (and), || (or), ! (not).</li>\n</ul>\nLet's explore basic operations you can perform with variables:",
+      "output": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (equality),!= (inequality), &lt; (less than),  &gt; (greater than), &lt;= (less than or equal to), &gt;= (greater than or equal to).</li>\n\t<li>Logical operators: &amp;&amp; (and), || (or), ! (not).</li>\n</ul>\nNote: for cehcking equality we have to use double eqault to symbol (==). Single `=` is for assigning a value to a variable.\nLet's explore basic operations you can perform with variables:",
       "type": "html"
     },
     {
@@ -69,9 +69,9 @@
       "type": "html"
     },
     {
-      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x greater than y:\", x>y);\nshow(\"Is x less  than y:\", x<y);\nshow(\"Is x equal to y:\", x=y);",
-      "status": "[2]<br><span style=\"font-size:8px\">3ms<span></span></span>",
-      "output": "Is x greater than y: false <br>Is x less  than y: true <br>Is x equal to y: 15 <br>",
+      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x greater than y:\", x>y);\nshow(\"Is x less  than y:\", x<y);\nshow(\"Is x equal to y:\", x==y);",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Is x greater than y: false <br>Is x less  than y: true <br>Is x equal to y: false <br>",
       "type": "code"
     },
     {
@@ -81,15 +81,27 @@
       "type": "html"
     },
     {
-      "code": "{\n  let z=1;\n}\nconsole.log(z); //Throws undefined error\nshow(z);",
+      "code": "{//This is start of a block\n  let z=1;\n} //This is end of a block. z is defined in the block. Hence it is accessible only inside the block.\nconsole.log(z); //Throws undefined error\nshow(z);",
       "status": "[-]",
       "output": "<p class=\"error\">z is not defined</p>",
       "type": "code"
     },
     {
-      "code": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are alos block-scoped.\n",
+      "code": "For the above code to work either the `show(z)`  has to be inside the curly brackets (i.e. {...}) or the `let x=1;` has to be outside the brackets. Make this correction and run the cell again to test if it works. It should be noted that blocks can be nested i.e. you can have blocks within blocks. The variables can be redefined in nexted blocks with different values",
       "status": "",
-      "output": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are alos block-scoped.\n",
+      "output": "For the above code to work either the `show(z)`  has to be inside the curly brackets (i.e. {...}) or the `let x=1;` has to be outside the brackets. Make this correction and run the cell again to test if it works. It should be noted that blocks can be nested i.e. you can have blocks within blocks. The variables can be redefined in nexted blocks with different values",
+      "type": "html"
+    },
+    {
+      "code": "let i=100;\n{\n  let i=1;\n  {\n\tlet i=2;\n\tshow(\"Inside the inner block, value of i is:\",i);\n  }\n  show(\"Inside the outer block, value of i is:\",i);\n}\nshow(\"Outside the blocks value of i is:\",i);",
+      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Inside the inner block, value of i is: 2 <br>Inside the outer block, value of i is: 1 <br>Outside the blocks value of i is: 100 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are also block-scoped. Remember block is a piece of code that is between two curly brackets (i.e {...}).\n",
+      "status": "",
+      "output": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are also block-scoped. Remember block is a piece of code that is between two curly brackets (i.e {...}).\n",
       "type": "html"
     },
     {
@@ -97,6 +109,12 @@
       "status": "[-]",
       "output": "<p class=\"error\">Assignment to constant variable.</p>",
       "type": "code"
+    },
+    {
+      "code": "To correct the above please use <pre>let pi=3.14</pre> instead of <pre> const pi=3.14</pre>\n Please make this correction and run the cell to see if it works.",
+      "status": "",
+      "output": "To correct the above please use <pre>let pi=3.14</pre> instead of <pre> const pi=3.14</pre>\n Please make this correction and run the cell to see if it works.",
+      "type": "html"
     },
     {
       "code": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has some unique scoping behaviors that differ from let and const. Variables declared with var have function scope, meaning they are accessible throughout the entire function in which they are declared, regardless of block statements.",
@@ -111,21 +129,51 @@
       "type": "code"
     },
     {
-      "code": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error? Also correct the error in the next cell where we are comparing two numbers.",
+      "code": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error?",
       "status": "",
-      "output": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error? Also correct the error in the next cell where we are comparing two numbers.",
+      "output": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error?",
       "type": "html"
     },
     {
       "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total); //Expected to show 15\n",
-      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Sum: 510 <br>",
       "type": "code"
+    },
+    {
+      "code": "Correct the error in the next cell where we are comparing two numbers.",
+      "status": "",
+      "output": "Correct the error in the next cell where we are comparing two numbers.",
+      "type": "html"
     },
     {
       "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y) //Expected to show false",
       "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Is x greater than y? true <br>",
+      "type": "code"
+    },
+    {
+      "code": "Correct in the next cell where we are checking if the two numbers are same or not.",
+      "status": "",
+      "output": "Correct in the next cell where we are checking if the two numbers are same or not.",
+      "type": "html"
+    },
+    {
+      "code": "let x=20;\nlet y=20;\nshow(\"Is x same as y?: \",x=y);",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Is x same as y?:  20 <br>",
+      "type": "code"
+    },
+    {
+      "code": "In the next cell we are calculating the sum of two variables and displaying. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "status": "",
+      "output": "In the next cell we are calculating the sum of two variables and displaying. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "type": "html"
+    },
+    {
+      "code": "let x=20;\nlet y=30;\n//Writing the code to calculate the sum\n{ \n  let total =20+30;\n}\nshow(\"The sum of x and y is:\",total);",
+      "status": "[-]",
+      "output": "<p class=\"error\">total is not defined</p>",
       "type": "code"
     },
     {
