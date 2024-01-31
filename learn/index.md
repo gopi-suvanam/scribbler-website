@@ -1,10 +1,10 @@
 ---
-title: Learn JavaScript in 10 Easy Lessons
-description: This is course in JavaScript in 10 lessons with easy to use interactive workbooks.
+title: Learn Foundations of JavaScript in 10 Easy Lessons
+description: This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.
 show_in_menu: false
 ---
 
-# JavaScript Basics Lesson Plan
+
 
 ## Lesson 1: Introduction to JavaScript
 - Overview of JavaScript and its role in web development

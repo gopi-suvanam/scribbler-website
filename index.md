@@ -6,7 +6,7 @@ description: Simple Interface for Experimenting in JavaScript. Developed for Ope
 title: Scribbler - JavaScript Notebook
 ---
 
-### Experiment in JavaScript With Ease
+## Experiment in JavaScript With Ease
 
 Scribbler is a browser-based tool to experiment in JavaScript for scientific computation/new code development/visualization/data science. 
 <div class="row">
@@ -15,15 +15,16 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 - Easy to use with a minimalistic UI.
 - Can load thirdparty libraries dynamically.
 </div>
-    
+
 <div class="col-lg-6" markdown="1">
 - Ctrl-Enter for running the cell.
 - Alt/Option-enter for inserting new cell.
 - Toggle "code" to "html" for html content.
 </div>
 </div>
-
-![Scribbler Screenshot](Scribbler-SS.png)
+<div style="margin:30px">
+<img src='Scribbler-SS.png' style="margin:auto;"/>
+</div>
 
 > JavaScript is the language that never ceases to surprise you with its quirks and oddities.
 > 
@@ -33,30 +34,34 @@ Scribbler is a browser-based tool to experiment in JavaScript for scientific com
 
 <div class="row" style="marging:10px">
 
-<div class="col-lg-4 col-xs-12" > 
-    <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
-    <a style="color:white !important" href="https://app.scribbler.live">Try Scribbler</a></button></div>
+<div class="col-lg-4 col-xs-12" style="text-align: center;"> 
+    <button style="width:200px;height:200px;border-radius:100px;margin:30px;color:white !important;background-color:#fede02">
+    <a style="color:#555 !important" href="https://app.scribbler.live">Try Scribbler</a></button></div>
     
-<div class="col-lg-4 col-xs-12" > 
-    <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
-        <a style="color:white !important" href="samples.html">Explore Gallery</a></button>
+<div class="col-lg-4 col-xs-12"  style="text-align: center;" > 
+    <button style="width:200px;height:200px;border-radius:100px;margin:30px;color:white !important;background-color:#fede02">
+        <a style="color:#555 !important" href="samples.html">Explore Gallery</a></button>
 </div>
 
-<div class="col-lg-4 col-xs-12" > 
-    <button style="width:200px;height:200px;border-radius:100px;margin:auto;color:white !important;background-color:#fede02">
-    <a style="color:white !important" href="https://discord.com/invite/uxNSsWunwU">Join Discord</a></button></div>
+<div class="col-lg-4 col-xs-12"   style="text-align: center;"> 
+    <button style="width:200px;height:200px;border-radius:100px;margin:30px;color:white !important;background-color:#fede02">
+    <a style="color:#555 !important" href="https://discord.com/invite/uxNSsWunwU">Join Discord</a></button></div>
 
 </div>
-
+<div style="text-align:center;width:100%">
+<h1>Explore and experiment with JavaScript, get instant output to text and iterate.</h1>
+</div>
 
 <div class="row">
 <div class="col-lg-6" markdown="1">
+
+
 
 ## Getting Started
 {:.mt-lg-0}
 
 ### Installing
-No specific installation is required. [Download](https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip) or clone the [Github repo](https://github.com/gopi-suvanam/scribbler/) on any machine and open the index.html in the browser. That's it. No Ngnix, no npm, no node, no pip install, no apt-get install. To host the app online, put the folder in web directory of the server and use the link to index.html. You can also use the git-hosted version (without downloading anything) here: [https://app.scribbler.live/#](https://app.scribbler.live/#)
+No specific installation is required. You can use the git-hosted version (without downloading anything) here: [https://app.scribbler.live/](https://app.scribbler.live/). Alternatively, you can [download](https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip) or clone the [Github repo](https://github.com/gopi-suvanam/scribbler/) on any machine and host it in webserver. To host the app online, put the folder in web directory of the server and use the link to index.html. That's it. No no npm, no node, no pip install, no apt-get install. 
 
 ### Hello-World
 
