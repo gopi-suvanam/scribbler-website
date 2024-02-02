@@ -15,7 +15,7 @@ show_in_menu: false
 - Exploring different data types (string, number, boolean)
 - Basic variable operations and string concatenation
 
-## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb">Lesson 3: Control Flow<a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb">Lesson 3: Control Flow<a>
 - Introduction to conditional statements (if, else if, else)
 - Using logical operators (&&, ||, !)
 - Writing and understanding loops (for, while)
