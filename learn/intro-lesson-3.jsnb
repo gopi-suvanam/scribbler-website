@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "code": "\n<div class=\"container\" style=\"text-align:center;bakground-color:darkblue;color:#fede02;margin:-8px;background-image:url(https://scribbler.live/dark-banner.svg)\">\n        <br><h1  style=\"color:#fede02\">Learn Foundations of JavaScript in 10 Easy Lessons \n\n</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#fede02\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "status": "",
-      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "output": "\n<div class=\"container\" style=\"/* width: 110%; */text-align:center;bakground-color:darkblue;color:#fede02;/* margin: -20px; */background-image:url(https://scribbler.live/dark-banner.svg)\">\n        <br><h1 style=\"color:#fede02\">Learn Foundations of JavaScript in 10 Easy Lessons \n\n</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#fede02\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "type": "html"
     },
     {
@@ -33,9 +33,15 @@
       "type": "code"
     },
     {
-      "code": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures",
+      "code": "<h3>Experiment</h3>\nIn the above example in the first line change the temperature to another value - let's say 35 - and check what happens.",
       "status": "",
-      "output": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures",
+      "output": "<h3>Experiment</h3>\nIn the above example in the first line change the temperature to another value - let's say 35 - and check what happens.",
+      "type": "html"
+    },
+    {
+      "code": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures. In the below example we will give a greeting based on the hour of the day. Please change the value and press play button to check what happens.",
+      "status": "",
+      "output": "<b>Nested if Statements:</b><br>\nif statements can be nested within each other to create more complex decision structures. In the below example we will give a greeting based on the hour of the day. Please change the value and press play button to check what happens.",
       "type": "html"
     },
     {
@@ -51,15 +57,15 @@
       "type": "html"
     },
     {
-      "code": "let time = 14;\n\nif (time < 12) {\n  show(\"Good morning!\"); //Outside Scribbler use console.log and other standard functions instead of show\n} else if (time < 18) {\n  show(\"Good afternoon!\");\n} else {\n  show(\"Good evening!\");\n}",
-      "status": "[8]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "Good afternoon! <br>",
+      "code": "let hour = 19;\n\nif (hour < 12) {\n  show(\"Good morning!\"); //Outside Scribbler use console.log and other standard functions instead of show\n} else if (hour < 18) {\n  show(\"Good afternoon!\");\n} else {\n  show(\"Good evening!\");\n}",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Good evening! <br>",
       "type": "code"
     },
     {
-      "code": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements.\n",
+      "code": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements. In the below example we will check the value of the day of the week and display a message based on that. Currently the code works only with the first letter of the day is capital. Can you change it to make it work for small letters as well?\n",
       "status": "",
-      "output": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements.\n",
+      "output": "<h3>`switch` Statement</h3>\nThe `switch` statement provides an alternative to a series of `else if` statements. In the below example we will check the value of the day of the week and display a message based on that. Currently the code works only with the first letter of the day is capital. Can you change it to make it work for small letters as well?\n",
       "type": "html"
     },
     {
@@ -129,8 +135,8 @@
       "type": "html"
     },
     {
-      "code": "let day = \"Saturday\";\nlet isWeekend = (day === \"Saturday\" || day === \"Sunday\");\n\nif (isWeekend) {\n  show(\"It's the weekend!\");\n} else {\n  show(\"It's a weekday.\");\n}",
-      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let day = \"Saturday\";\nlet isWeekend = (day == \"Saturday\" || day == \"Sunday\");\n\nif (isWeekend) {\n  show(\"It's the weekend!\");\n} else {\n  show(\"It's a weekday.\");\n}",
+      "status": "[1]<br><span style=\"font-size:8px\">5ms<span></span></span>",
       "output": "It's the weekend! <br>",
       "type": "code"
     },
@@ -141,26 +147,26 @@
       "type": "html"
     },
     {
-      "code": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Write your code in within the comments to do the same. Note a person is teenager if the age is greater than or eaul to 13 and less than or equal to 19.",
+      "code": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Edit the code in within the comments to do the same. (Press play button ► to run the code after changing). Note a person is teenager if the age is greater than or equal to 13 and less than or equal to 19. Change the value of `age` in line 1 to various values and test if the code is working.",
       "status": "",
-      "output": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Write your code in within the comments to do the same. Note a person is teenager if the age is greater than or eaul to 13 and less than or equal to 19.",
+      "output": "<h3>Try conditional statements and boolean operators</h3>\nIn the next cell we want to check if a person is teenager. Edit the code in within the comments to do the same. (Press play button ► to run the code after changing). Note a person is teenager if the age is greater than or equal to 13 and less than or equal to 19. Change the value of `age` in line 1 to various values and test if the code is working.",
       "type": "html"
     },
     {
-      "code": "let age=17;\nlet comment=\"Not sure if the person is teenager\";\n//Write your code below to modify the varriable `comment`\n\n\n\n//End of your code\nshow(comment)",
-      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
-      "output": "Not sure if the person is teenager <br>",
+      "code": "let age=20;\nlet comment=\"Not sure if the person is teenager\";\n//Change the code below to modify the variable `comment`\n\nif(age<13){\n  comment=\"...\";\n}else if(age<20){\n  comment=\"...\";\n}else{\n  comment=\"...\";\n}\n\n//End of your test\nshow(comment)",
+      "status": "[13]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "... <br>",
       "type": "code"
     },
     {
-      "code": "<h3>Try loops</h3>\nIn the next cell write code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10) using `for` loop. Put the value in the variable `sum` and check if you got it right. Do it again with `while` loop as well.",
+      "code": "<h3>Try loops</h3>\nIn the next cell, there is an error in the code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10) using `for` loop. Correct the error and check if you got it right. Try to replicate the same code in `while` loop.",
       "status": "",
-      "output": "<h3>Try loops</h3>\nIn the next cell write code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10) using `for` loop. Put the value in the variable `sum` and check if you got it right. Do it again with `while` loop as well.",
+      "output": "<h3>Try loops</h3>\nIn the next cell, there is an error in the code within the comments to calculate sum of first ten numebrs (i.e. 1 to 10) using `for` loop. Correct the error and check if you got it right. Try to replicate the same code in `while` loop.",
       "type": "html"
     },
     {
-      "code": "let sum=0;\n//Write your code below\n\n\n\n\n//End of your code\nif(sum==55){\n  show(\"You have got it right\");\n}else{\n  show(\"Please try again\");\n}",
-      "status": "[8]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let sum=0;\n//Chck the code below\nfor(let i=0;i<10;i++){\n  sum=sum+i;\n}\n//End of test\nif(sum==55){\n  show(\"You have got it right\");\n}else{\n  show(\"Please try again\");\n}",
+      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Please try again <br>",
       "type": "code"
     },
@@ -171,9 +177,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 4: Functions\n  </a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a  target=\"_blank\">Lesson 4: Functions\n  </a> Coming soon</li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 4: Functions\n  </a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a target=\"_blank\">Lesson 4: Functions\n  </a> Coming soon</li>\n  </ul>",
       "type": "html"
     }
   ],

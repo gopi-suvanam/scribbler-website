@@ -117,9 +117,9 @@
       "type": "html"
     },
     {
-      "code": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has some unique scoping behaviors that differ from let and const. Variables declared with var have function scope, meaning they are accessible throughout the entire function in which they are declared, regardless of block statements.",
+      "code": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has  unique scoping behaviors that differ from let and const. \nVariables declared with in side a block can be accessed outside the block too. Below are two examples how this changes behvariour.  There could be specific use cases for `var` but you dont have to worry about them and as a best practice it is recommended to use `let` in stead of `var`.",
       "status": "",
-      "output": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has some unique scoping behaviors that differ from let and const. Variables declared with var have function scope, meaning they are accessible throughout the entire function in which they are declared, regardless of block statements.",
+      "output": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has  unique scoping behaviors that differ from let and const. \nVariables declared with in side a block can be accessed outside the block too. Below are two examples how this changes behvariour.  There could be specific use cases for `var` but you dont have to worry about them and as a best practice it is recommended to use `let` in stead of `var`.",
       "type": "html"
     },
     {
@@ -165,9 +165,9 @@
       "type": "code"
     },
     {
-      "code": "In the next cell we are calculating the sum of two variables and displaying. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "code": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
       "status": "",
-      "output": "In the next cell we are calculating the sum of two variables and displaying. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "output": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
       "type": "html"
     },
     {
@@ -183,9 +183,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "type": "html"
     }
   ],

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "Lesson 1: Introduction to JavaScript<br>",
+    "name": "Lesson 2: Variables and Data Types",
     "language_info": {
       "name": "JavaScipt",
       "version": "8.0"
@@ -15,105 +15,177 @@
       "type": "html"
     },
     {
-      "code": "<h1>Introduction to JavaScript: Lesson 1 of 10</h1>",
+      "code": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
       "status": "",
-      "output": "<h1>Introduction to JavaScript: Lesson 1 of 10</h1>",
+      "output": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
       "type": "html"
     },
     {
-      "code": "<h2> Overview</h2>\n\nWelcome to the world of JavaScript! In this lesson, we'll introduce the basics of JavaScript, its role in web development, and the environments where it can be executed. This text can be edited by double-clicking and clicking play button.\n\n<h3> What is JavaScript?</h3>\n\nJavaScript is a versatile programming language primarily used for creating interactive and dynamic content on websites. It allows you to manipulate and control the behavior of web pages, enhancing the overall user experience.\n<br>\nIn this lesson, we'll focus on understanding the basics of JavaScript within the browser environment. We will use Scribbler tool to experiment and learn JavaScript.",
-      "status": "",
-      "output": "<h2> Overview</h2>\n\nWelcome to the world of JavaScript! In this lesson, we'll introduce the basics of JavaScript, its role in web development, and the environments where it can be executed. This text can be edited by double-clicking and clicking play button.\n\n<h3> What is JavaScript?</h3>\n\nJavaScript is a versatile programming language primarily used for creating interactive and dynamic content on websites. It allows you to manipulate and control the behavior of web pages, enhancing the overall user experience.\n<br>\nIn this lesson, we'll focus on understanding the basics of JavaScript within the browser environment. We will use Scribbler tool to experiment and learn JavaScript.",
-      "type": "html"
-    },
-    {
-      "code": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
-      "status": "",
-      "output": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
-      "type": "html"
-    },
-    {
-      "code": "// Welcome message\nlet greeting = \"Hello, Scribbler!\";\nconsole.log(greeting); //This is a standard JavaScript method that output the above message to the log of the Browser. \nshow(greeting); //This is a Scribbler specific function that shows the result below\n",
-      "status": "[1]<br><span style=\"font-size:8px\">7ms<span></span></span>",
-      "output": "Hello, Scribbler! <br>Sum 15 <br>",
-      "type": "code"
-    },
-    {
-      "code": "Let's now look at how to do a basic arithmetic cacluations. \nPlease feel free to edit and run to experiment. Click the play button (►) after editing to see the output.",
-      "status": "",
-      "output": "Let's now look at how to do a basic arithmetic cacluations. \nPlease feel free to edit and run to experiment. Click the play button (►) after editing to see the output.",
-      "type": "html"
-    },
-    {
-      "code": "// Basic arithmetic\nlet num1 = 10;\nlet num2 = 5;\nlet sum = num1 + num2;\nconsole.log(\"Sum:\", sum);\nshow(\"Sum\",sum)",
-      "status": "[1]<br><span style=\"font-size:8px\">3ms<span></span></span>",
-      "output": "Sum 15 <br>",
-      "type": "code"
-    },
-    {
-      "code": "<h2>Explanation</h2>\nIn the examples above, we declare a variable <i>greeting</i> and use <i>console.log</i>  to display a welcome message. \nAdditionally, we perform basic arithmetic operations with variables <i>num1</i> and <i>num2</i>, calculating their sum. \n<h3>console.log in JavaScript</h3>\nIn JavaScript, console.log is a method used to print messages, variables, or any information to the browser's console. The console is a developer tool that allows you to see output, debug code, and inspect the runtime behavior of your JavaScript programs. If you are running JavaScript in a browser environment (like Chrome, Firefox, Edge, or Safari), you can open the browser's developer tools. To do this:\n<ol>\n<li>  Right-click on the page and select \"Inspect Element\" or press Ctrl + Shift + I (Windows/Linux) or Cmd + Opt + I (Mac) to open the Developer Tools.</li>\n<li>Go to the \"Console\" tab within the Developer Tools.</li>\n</ol>\n<h3>show() Function</h3>\nInstead of seeing the message in the log, Scribbler also provides a function <i>show</i> to see the output immediately. Note that <i>show</i> is not a generic JavaScript function and is a feature of Scribbler. Most JavaScript environments including Browsers and node.js will have console.log.\n",
-      "status": "",
-      "output": "<h2>Explanation</h2>\nIn the examples above, we declare a variable <i>greeting</i> and use <i>console.log</i>  to display a welcome message. \nAdditionally, we perform basic arithmetic operations with variables <i>num1</i> and <i>num2</i>, calculating their sum. \n<h3>console.log in JavaScript</h3>\nIn JavaScript, console.log is a method used to print messages, variables, or any information to the browser's console. The console is a developer tool that allows you to see output, debug code, and inspect the runtime behavior of your JavaScript programs. If you are running JavaScript in a browser environment (like Chrome, Firefox, Edge, or Safari), you can open the browser's developer tools. To do this:\n<ol>\n<li>  Right-click on the page and select \"Inspect Element\" or press Ctrl + Shift + I (Windows/Linux) or Cmd + Opt + I (Mac) to open the Developer Tools.</li>\n<li>Go to the \"Console\" tab within the Developer Tools.</li>\n</ol>\n<h3>show() Function</h3>\nInstead of seeing the message in the log, Scribbler also provides a function <i>show</i> to see the output immediately. Note that <i>show</i> is not a generic JavaScript function and is a feature of Scribbler. Most JavaScript environments including Browsers and node.js will have console.log.\n",
-      "type": "html"
-    },
-    {
-      "code": "<h3>Experiment</h3>\nIn the next cell we have a snippet of a code. It does not work as expected. Can you modify it to say hello to you?<br> <br>\n  Please note strings like names etc. can be in double quotes  (like \"Scribbler\") or single quotes (like 'Scribbler'). Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
-      "status": "",
-      "output": "<h3>Experiment</h3>\nIn the next cell we have a snippet of a code. It does not work as expected. Can you modify it to say hello to you?<br> <br>\n  Please note strings like names etc. can be in double quotes  (like \"Scribbler\") or single quotes (like 'Scribbler'). Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
-      "type": "html"
-    },
-    {
-      "code": "let myName;\nconsole.log(\"Hello!\",myName);\nshow(\"Hello!\",myName);",
+      "code": "// Variable declaration\nlet message;\n// Assigning a value to the variable\nmessage = \"Hello, Variables!\"; \n// Displaying the message\nconsole.log(message);\nshow(message)",
       "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "Hello! undefined <br>",
+      "output": "Hello, Variables! <br>",
       "type": "code"
     },
     {
-      "code": "In the next can you add code to show the porduct of `x` and `y`? Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
+      "code": "<h2>Data Types</h2>\nJavaScript supports various data types, including:\n\nString: Represents textual data and is enclosed in single ('') or double (\"\") quotes.\n\n<pre>let greeting = \"Hello, World!\";</pre>\nNumber: Represents numeric values, both integers and floating-point numbers.\n<pre>let num = 42;</pre>\nBoolean: Represents a logical entity and can have two values: true or false.\n<pre>let isJavaScriptFun = true;</pre>\nUndefined: Represents a variable that has been declared but not assigned a value.\n<pre>let undefinedVariable;</pre>\nNull: Represents the intentional absence of any object value.\n<pre>let nullValue = null;</pre>\n",
       "status": "",
-      "output": "In the next can you add code to show the porduct of `x` and `y`? Click the play button (►) after editing to see the output (you can also press Cmd/Cntrl-Enter).",
+      "output": "<h2>Data Types</h2>\nJavaScript supports various data types, including:\n\nString: Represents textual data and is enclosed in single ('') or double (\"\") quotes.\n\n<pre>let greeting = \"Hello, World!\";</pre>\nNumber: Represents numeric values, both integers and floating-point numbers.\n<pre>let num = 42;</pre>\nBoolean: Represents a logical entity and can have two values: true or false.\n<pre>let isJavaScriptFun = true;</pre>\nUndefined: Represents a variable that has been declared but not assigned a value.\n<pre>let undefinedVariable;</pre>\nNull: Represents the intentional absence of any object value.\n<pre>let nullValue = null;</pre>\n",
       "type": "html"
     },
     {
-      "code": "let x=1;\nlet y=2;\n",
+      "code": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (equality),!= (inequality), < (less than),  > (greater than), <= (less than or equal to), >= (greater than or equal to).</li>\n\t<li>Logical operators: && (and), || (or), ! (not).</li>\n</ul>\nNote: for cehcking equality we have to use double eqault to symbol (==). Single `=` is for assigning a value to a variable.\nLet's explore basic operations you can perform with variables:",
       "status": "",
-      "output": "",
-      "type": "code"
-    },
-    {
-      "code": "<h2>Some Fundamental Points</h2>\n<h3>Curly Brackets '{}'</h3>\nIn JavaScript, curly brackets {} are used to define blocks of code. A block is a collection of statements grouped together. It is important to note that code inside curly brackets forms a block scope. Remember to always close a bracket at the end of the block.\n<pre>\n  function exampleFunction() {\n  // Start of block\n  let variableInsideBlock = \"I am inside the block\";\n  // End of block\n}\n// variableInsideBlock is not accessible here\n</pre>\n<h3>Comments</h3>\nComments in JavaScript are used to provide explanatory notes within the code. Single-line comments start with //, and multi-line comments are enclosed between /* and */.\n  <pre>\n\t// This is a single-line comment\n\n/*\n  This is a multi-line comment\n  spanning multiple lines\n*/\n\n\t</pre>\n<h3>Case Sensitivity</h3>\nJavaScript is case-sensitive. This means that variableName and VariableName are treated as different variables.\n<h3>Semicolons ';'</h3>\nSemicolons are used to terminate statements in JavaScript. While they are optional in some cases, including them is considered good practice.\n<h3>Variables</h3>\nVariables are used to store and manage data. Declare variables using <i>var</i>,<i> let</i>, or <i>const</i>. Use const for values that won't change and let for variables that may be reassigned.\n<h3>Data Types</h3>\nJavaScript has dynamic typing, allowing variables to hold values of any data type. Common data types include string, number, boolean, object, null, and undefined. More about this in the next lesson.\n\n<h3>Experiment</h3>\nEach of the next few cells has an error. Check the code and modify so that the total of <i>x</i> and <i>y</i> is shown.",
-      "status": "",
-      "output": "<h2>Some Fundamental Points</h2>\n<h3>Curly Brackets '{}'</h3>\nIn JavaScript, curly brackets {} are used to define blocks of code. A block is a collection of statements grouped together. It is important to note that code inside curly brackets forms a block scope. Remember to always close a bracket at the end of the block.\n<pre>  function exampleFunction() {\n  // Start of block\n  let variableInsideBlock = \"I am inside the block\";\n  // End of block\n}\n// variableInsideBlock is not accessible here\n</pre>\n<h3>Comments</h3>\nComments in JavaScript are used to provide explanatory notes within the code. Single-line comments start with //, and multi-line comments are enclosed between /* and */.\n  <pre>\t// This is a single-line comment\n\n/*\n  This is a multi-line comment\n  spanning multiple lines\n*/\n\n\t</pre>\n<h3>Case Sensitivity</h3>\nJavaScript is case-sensitive. This means that variableName and VariableName are treated as different variables.\n<h3>Semicolons ';'</h3>\nSemicolons are used to terminate statements in JavaScript. While they are optional in some cases, including them is considered good practice.\n<h3>Variables</h3>\nVariables are used to store and manage data. Declare variables using <i>var</i>,<i> let</i>, or <i>const</i>. Use const for values that won't change and let for variables that may be reassigned.\n<h3>Data Types</h3>\nJavaScript has dynamic typing, allowing variables to hold values of any data type. Common data types include string, number, boolean, object, null, and undefined. More about this in the next lesson.\n\n<h3>Experiment</h3>\nEach of the next few cells has an error. Check the code and modify so that the total of <i>x</i> and <i>y</i> is shown.",
+      "output": "<h2>Basic Variable Operations</h2>\nOperators are used to perform transfomations on variables:\n<ul>\n\t<li>String operators: + (concatenation).</li>\n\t<li>Arithmetic operators: + (addition), - (subtraction), * (multiplication), / (division), %. </li>\n\t<li>Comparison operators: == (equality),!= (inequality), &lt; (less than),  &gt; (greater than), &lt;= (less than or equal to), &gt;= (greater than or equal to).</li>\n\t<li>Logical operators: &amp;&amp; (and), || (or), ! (not).</li>\n</ul>\nNote: for cehcking equality we have to use double eqault to symbol (==). Single `=` is for assigning a value to a variable.\nLet's explore basic operations you can perform with variables:",
       "type": "html"
     },
     {
-      "code": "{\n  let x=1;\n  let y=2;\n  let total=x+y;\n  show(total)",
-      "status": "[-]",
-      "output": "<p class=\"error\">Unexpected end of input</p>",
+      "code": "<h3>String Concatenation</h3>\nIn this example, we concatenate two strings, firstName and lastName, to create a full name.",
+      "status": "",
+      "output": "<h3>String Concatenation</h3>\nIn this example, we concatenate two strings, firstName and lastName, to create a full name.",
+      "type": "html"
+    },
+    {
+      "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\nlet fullName = firstName + \" \" + lastName;\nconsole.log(\"Full Name:\", fullName);\nshow(\"Full Name:\", fullName)",
+      "status": "[33]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Full Name: John Doe <br>",
       "type": "code"
     },
     {
-      "code": "let x=1;\nlet y=2;\nlet total=x+y;\nshow(Total);",
-      "status": "[-]",
-      "output": "<p class=\"error\">Total is not defined</p>",
+      "code": "<h3>Mathematical Operations</h3>\n\nHere, we perform a simple addition operation on two numeric variables, <i>x</i> and <i>y</i>. Feel free to change the code and experiment.",
+      "status": "",
+      "output": "<h3>Mathematical Operations</h3>\n\nHere, we perform a simple addition operation on two numeric variables, <i>x</i> and <i>y</i>. Feel free to change the code and experiment.",
+      "type": "html"
+    },
+    {
+      "code": "let x = 10;\nlet y = 5;\nlet total = x + y;\nconsole.log(\"Sum:\", total);\nshow(\"Sum:\", total);",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Sum: 15 <br>",
       "type": "code"
     },
     {
-      "code": "let x=1;\nlet y=2;\n//let total=x+y;\nshow(total);",
+      "code": "<h3>Comparison Operations</h3>\nHere, we perform a simple comparison of two numeric variables, <i>x</i> and <i>y</i>.",
+      "status": "",
+      "output": "<h3>Comparison Operations</h3>\nHere, we perform a simple comparison of two numeric variables, <i>x</i> and <i>y</i>.",
+      "type": "html"
+    },
+    {
+      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x greater than y:\", x>y);\nshow(\"Is x less  than y:\", x<y);\nshow(\"Is x equal to y:\", x==y);",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Is x greater than y: false <br>Is x less  than y: true <br>Is x equal to y: false <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'let' Keyword</h3>\nThe key word the let is used to define a variable in JavaScript. let is block-scoped, which means it is limited to the block where it is defined. A block of code is defined segregeated using curly brackets in JavaScript({}). Variables defined using let cannot be accessed outside the scope. A variable declared using <i>let</i> outside any block will be a global variable.",
+      "status": "",
+      "output": "<h3>'let' Keyword</h3>\nThe key word the let is used to define a variable in JavaScript. let is block-scoped, which means it is limited to the block where it is defined. A block of code is defined segregeated using curly brackets in JavaScript({}). Variables defined using let cannot be accessed outside the scope. A variable declared using <i>let</i> outside any block will be a global variable.",
+      "type": "html"
+    },
+    {
+      "code": "{//This is start of a block\n  let z=1;\n} //This is end of a block. z is defined in the block. Hence it is accessible only inside the block.\nconsole.log(z); //Throws undefined error\nshow(z);",
+      "status": "[-]",
+      "output": "<p class=\"error\">z is not defined</p>",
+      "type": "code"
+    },
+    {
+      "code": "For the above code to work either the `show(z)`  has to be inside the curly brackets (i.e. {...}) or the `let x=1;` has to be outside the brackets. Make this correction and run the cell again to test if it works. It should be noted that blocks can be nested i.e. you can have blocks within blocks. The variables can be redefined in nexted blocks with different values",
+      "status": "",
+      "output": "For the above code to work either the `show(z)`  has to be inside the curly brackets (i.e. {...}) or the `let x=1;` has to be outside the brackets. Make this correction and run the cell again to test if it works. It should be noted that blocks can be nested i.e. you can have blocks within blocks. The variables can be redefined in nexted blocks with different values",
+      "type": "html"
+    },
+    {
+      "code": "let i=100;\n{\n  let i=1;\n  {\n\tlet i=2;\n\tshow(\"Inside the inner block, value of i is:\",i);\n  }\n  show(\"Inside the outer block, value of i is:\",i);\n}\nshow(\"Outside the blocks value of i is:\",i);",
+      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Inside the inner block, value of i is: 2 <br>Inside the outer block, value of i is: 1 <br>Outside the blocks value of i is: 100 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are also block-scoped. Remember block is a piece of code that is between two curly brackets (i.e {...}).\n",
+      "status": "",
+      "output": "<h3>'const' Keyword</h3>\nThe const keyword is used to declare constants, whose values cannot be reassigned once defined. Constants are also block-scoped. Remember block is a piece of code that is between two curly brackets (i.e {...}).\n",
+      "type": "html"
+    },
+    {
+      "code": "const pi = 3.14;\npi = 3.14159; // Error: Assignment to a constant variable",
+      "status": "[-]",
+      "output": "<p class=\"error\">Assignment to constant variable.</p>",
+      "type": "code"
+    },
+    {
+      "code": "To correct the above please use <pre>let pi=3.14</pre> instead of <pre> const pi=3.14</pre>\n Please make this correction and run the cell to see if it works.",
+      "status": "",
+      "output": "To correct the above please use <pre>let pi=3.14</pre> instead of <pre> const pi=3.14</pre>\n Please make this correction and run the cell to see if it works.",
+      "type": "html"
+    },
+    {
+      "code": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has  unique scoping behaviors that differ from let and const. \nVariables declared with in side a block can be accessed outside the block too. Below are two examples how this changes behvariour.  There could be specific use cases for `var` but you dont have to worry about them and as a best practice it is recommended to use `let` in stead of `var`.",
+      "status": "",
+      "output": "<h3>'var' Keyword</h3>\nIn JavaScript, the var keyword is one of the original ways to declare variables. However, it has  unique scoping behaviors that differ from let and const. \nVariables declared with in side a block can be accessed outside the block too. Below are two examples how this changes behvariour.  There could be specific use cases for `var` but you dont have to worry about them and as a best practice it is recommended to use `let` in stead of `var`.",
+      "type": "html"
+    },
+    {
+      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of z\nshow(z); //Shows the value of z",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "1 <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error?",
+      "status": "",
+      "output": "<h2>Experiment</h2>\nThe code below is expected to calculate the sum of two numbers. Can you correct the error?",
+      "type": "html"
+    },
+    {
+      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total); //Expected to show 15\n",
+      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Sum: 510 <br>",
+      "type": "code"
+    },
+    {
+      "code": "Correct the error in the next cell where we are comparing two numbers.",
+      "status": "",
+      "output": "Correct the error in the next cell where we are comparing two numbers.",
+      "type": "html"
+    },
+    {
+      "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y) //Expected to show false",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Is x greater than y? true <br>",
+      "type": "code"
+    },
+    {
+      "code": "Correct in the next cell where we are checking if the two numbers are same or not.",
+      "status": "",
+      "output": "Correct in the next cell where we are checking if the two numbers are same or not.",
+      "type": "html"
+    },
+    {
+      "code": "let x=20;\nlet y=20;\nshow(\"Is x same as y?: \",x=y);",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Is x same as y?:  20 <br>",
+      "type": "code"
+    },
+    {
+      "code": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "status": "",
+      "output": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "type": "html"
+    },
+    {
+      "code": "let x=20;\nlet y=30;\n//Writing the code to calculate the sum\n{ \n  let total =20+30;\n}\nshow(\"The sum of x and y is:\",total);",
       "status": "[-]",
       "output": "<p class=\"error\">total is not defined</p>",
       "type": "code"
     },
     {
-      "code": "\n<h1>Execution Environments</h1>\n\nJavaScript can be executed in different environments, with the two main ones being Browser and server. It's essential to distinguish between the browser and Node.js environments:\n<ol>\n<li> <b>Browser Environment:</b> JavaScript is commonly used in web browsers to enhance the functionality of web pages. It can interact with HTML and CSS to create dynamic and responsive user interfaces. To access this environment there is no need to install anything other than a web-brower.</li>\n  <li><b>Node.js Environment (node.js):</b>  JavaScript can also be executed outside of the browser using several server side enrivornments, most popular of them being <a href='https://nodejs.org/en/learn/getting-started/introduction-to-nodejs'>Node.js</a>. This environment enables JavaScript to be used for server-side development, allowing you to build scalable and efficient web applications. </li>\n\t</ol>\n",
+      "code": "<h2>Summary</h2>\nVariables are containers for storing data values.\nJavaScript supports various data types, including strings, numbers, booleans, undefined, and null.\nBasic operations include string concatenation and mathematical operations.\nIn the next lesson, we'll explore control flow and conditional statements. Stay tuned!",
       "status": "",
-      "output": "\n<h1>Execution Environments</h1>\n\nJavaScript can be executed in different environments, with the two main ones being Browser and server. It's essential to distinguish between the browser and Node.js environments:\n<ol>\n<li> <b>Browser Environment:</b> JavaScript is commonly used in web browsers to enhance the functionality of web pages. It can interact with HTML and CSS to create dynamic and responsive user interfaces. To access this environment there is no need to install anything other than a web-brower.</li>\n  <li><b>Node.js Environment (node.js):</b>  JavaScript can also be executed outside of the browser using several server side enrivornments, most popular of them being <a href=\"https://nodejs.org/en/learn/getting-started/introduction-to-nodejs\">Node.js</a>. This environment enables JavaScript to be used for server-side development, allowing you to build scalable and efficient web applications. </li>\n\t</ol>\n",
+      "output": "<h2>Summary</h2>\nVariables are containers for storing data values.\nJavaScript supports various data types, including strings, numbers, booleans, undefined, and null.\nBasic operations include string concatenation and mathematical operations.\nIn the next lesson, we'll explore control flow and conditional statements. Stay tuned!",
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-2.jsnb\" target=\"_blank\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Functions for Modular Code</a></li>\n  \n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n\t<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb\" target=\"_blank\">Lesson 1: Introduction\n  </a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-2.jsnb\" target=\"_blank\">Lesson 2: Variables and Data Types</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Functions for Modular Code</a></li>\n  \n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3: Control Flow and Conditional Satements\n  </a></li>\n  </ul>",
       "type": "html"
     }
   ],
