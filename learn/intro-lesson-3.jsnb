@@ -117,9 +117,9 @@
       "type": "code"
     },
     {
-      "code": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.",
+      "code": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.\n<br>\n  Please note that sometimes if the ondition to end the loop is not met, the loop can continue to be run for ever. This is called as an <i>infinite loop</i>. In such cases the code will hang and the browser will become unresponsive and you will have to close it.",
       "status": "",
-      "output": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.",
+      "output": "<h3>`do-while` Loop</h3>\nThe `do-while` loop is similar to the `while` loop, but it checks the constraint after executing a block of code. It always executes the block of code at least once.\nIn the example below we loop from 1 to 3.\n<br>\n  Please note that sometimes if the ondition to end the loop is not met, the loop can continue to be run for ever. This is called as an <i>infinite loop</i>. In such cases the code will hang and the browser will become unresponsive and you will have to close it.",
       "type": "html"
     },
     {
@@ -153,9 +153,9 @@
       "type": "html"
     },
     {
-      "code": "let age=20;\nlet comment=\"Not sure if the person is teenager\";\n//Change the code below to modify the variable `comment`\n\nif(age<13){\n  comment=\"...\";\n}else if(age<20){\n  comment=\"...\";\n}else{\n  comment=\"...\";\n}\n\n//End of your test\nshow(comment)",
-      "status": "[13]<br><span style=\"font-size:8px\">0ms<span></span></span>",
-      "output": "... <br>",
+      "code": "let age=20;\nlet comment;\n//Change the code below to modify the variable `comment`\n\nif(age<13){\n  comment=\"...\";\n}else if(age<20){\n  comment=\"...\";\n}else{\n  comment=\"...\";\n}\n\n//End of your test\nshow(\"checking if the person is a teenager\",comment)\n",
+      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "checking if the person is a teenager ... <br>",
       "type": "code"
     },
     {
