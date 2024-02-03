@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n        <br><h1  style=\"color:#555\">Scribbler: JavaScript Notebook </h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        Simple Interface for Experimenting in JavaScript. Built for Open Source using Open Source.\n    </p><br></div>",
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n        <br>  <h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.</p>\n<br></div>",
       "status": "",
-      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n        <br><h1 style=\"color:#555\">Scribbler: JavaScript Notebook </h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        Simple Interface for Experimenting in JavaScript. Built for Open Source using Open Source.\n    </p><br></div>",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n        <br>  <h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.</p>\n<br></div>",
       "type": "html"
     },
     {
