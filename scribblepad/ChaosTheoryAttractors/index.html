@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Plotter</title>
+    <style>
+        #headerDiv {
+            display: flex;
+        }
+        #firstCanvas{
+            border: 1px solid black;
+            background-color: black;
+
+
+        }
+        .myBut{
+            left: 100px;
+            top: 100px;
+            z-index: 100;
+            background-color:beige;
+
+        }
+        .myBut:hover{
+            transform: scale(1.07);
+        }
+        #labelSpan{
+            margin-left: 20px;
+            margin-right: 5px;
+            margin-top: 3px;
+            color:beige;
+        }
+        #mainContainer{
+            background-color: black;
+        }
+        body{
+            margin:0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = 'mainContainer'>
+    <div id = 'headerDiv'>
+        <button class= 'myBut' id="but1" type="button">Fast Forward</button>
+        <button class= 'myBut' id="but2" type="button" >Speed up</button>
+        <button class= 'myBut' id="but3" type="button" >Normal</button>
+        <button class= 'myBut' id="but4" type="button" >Slow down</button>
+        <button class= 'myBut' id="but5" type="button" >Clear </button>
+        <button class= 'myBut' id="but6" type="button" >New</button>
+        <span id="labelSpan"> Attractors: </span>
+        <button class= 'myBut' id="but7" type="button" >Chen </button>
+        <button class= 'myBut' id="but8" type="button" >Lorenz</button>
+        <button class= 'myBut' id="but9" type="button" >Halvorsen</button>
+
+    
+    </div>
+    </div>
+    <canvas id="firstCanvas">
+    </canvas>
+    <script src="script.js"></script>
+</body>
+</html>
