@@ -5,7 +5,7 @@ layout: post
 ---
 
 ## Scribble Pad @ IIT-B
-In the third week of January, the tech community at [IIT-Bombay](https://www.iitb.ac.in/) came together for a dynamic and inspiring event - Scribble Pad, a hackathon centered around JavaScript and leveraging the interactive notebook tool, Scribbler. The event showcased a plethora of innovative projects that spanned the realms of web development, graphics, game design, mathematics, and artificial intelligence.
+In the second week of January, the tech community at [IIT-Bombay](https://www.iitb.ac.in/) came together for a dynamic and inspiring event - Scribble Pad, a hackathon centered around JavaScript and leveraging the interactive notebook tool, Scribbler. The event showcased a plethora of innovative projects that spanned the realms of web development, graphics, game design, mathematics, and artificial intelligence.
 
 The Scribble Pad hackathon wasn't just a gathering of tech enthusiasts; it was a vibrant celebration of creativity and innovation. The participants, numbering close to 40, brought a contagious energy to the event, fueled by their passion for coding and an eagerness to explore the endless possibilities that JavaScript and Scribbler had to offer. The projects demonstrated the versatility of JavaScript in addressing a wide array of challenges and opportunities.
 
