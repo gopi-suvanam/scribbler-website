@@ -51,7 +51,20 @@ Hackathons like Scribble Pad play a crucial role in strengthening the coding com
 
 The diversity of projects presented at Scribble Pad acted as an inspiration for participants to explore new domains and broaden their skill sets. The hackathon, in essence, acted as a microcosm of the coding world, where diverse talents converge to create something greater than the sum of its parts.
 
+## Judges: The Pillars of Evaluation and Inspiration
+
+In the vibrant tapestry of the Scribble Pad Hackathon, the role of our distinguished judges - Girish Nair, Rishi Patel, and Shridhar Parasuraman - cannot be overstated. These individuals brought a wealth of experience, keen insights, and a discerning eye to the event, contributing significantly to its success. 
+
+**Girish Nair:** With an illustrious career in the tech industry, Girish Nair brought a wealth of knowledge and a keen understanding of innovation to the judging panel. His thoughtful evaluations and constructive feedback provided participants with not just a judgment of their work but a mentorship opportunity. Girish Nair's presence as a judge elevated the hackathon experience, inspiring participants to reach new heights.
+
+**Shridhar Parasuraman:**
+An expert at the intersection of technology and innovation, Shridhar Parasuraman brought a unique perspective to the judging panel. Shridhar Parasuraman's insightful assessments left a lasting impact, encouraging participants to embrace the challenges and opportunities presented by the tech landscape.
+
+**Rishi Patel:** Rishi Patel's role as a judge added a layer of technical prowess to the evaluation process. His meticulous attention to detail and passion for cutting-edge technologies enriched the feedback provided to participants. 
+
 ## WnCC: Architects of Technical Brilliance**
 
-The [Web and Coding Committee (WnCC)](https://itc.gymkhana.iitb.ac.in/wncc/) of IIT-B deserves accolades for their technical prowess and organizational acumen. From conceptualizing the event to overseeing its seamless execution, WnCC demonstrated an unparalleled commitment to promoting technical excellence within the community. Their passion for coding and dedication to creating a platform for participants to shine were evident in every aspect of Scribble Pad.
+The [Web and Coding Committee (WnCC)](https://itc.gymkhana.iitb.ac.in/wncc/) of IIT-B deserves accolades for their technical prowess and organizational acumen. From conceptualizing the event to overseeing its seamless execution, WnCC demonstrated an unparalleled commitment to promoting technical excellence within the community. Their passion for coding and dedication to creating a platform for participants to shine were evident in every aspect of Scribble Pad. A special thanks to Ishan, Sivesh and the whole WnCC team for organizing this event.
+
+
 
