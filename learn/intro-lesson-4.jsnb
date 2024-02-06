@@ -9,9 +9,9 @@
   "jsnbversion": "v0.1",
   "cells": [
     {
-      "code": "<img style=\"width:100%\" src='images/banner.png'></img>",
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "status": "",
-      "output": "<img style=\"width:100%\" src=\"images/banner.png\">",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
       "type": "html"
     },
     {
@@ -153,9 +153,21 @@
       "type": "html"
     },
     {
-      "code": "function sumOfEvenNumbers(n){\n\n  //Write your code here, including the return statement\n\n  //End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
+      "code": "function sumOfEvenNumbers(n){\nlet sum=0;\n  \nfor(let i=1;i<=100;i=i+1){\n  //Write your code here, to update the sum\n}\n  //Write your code here to return the sum\n  \n  //End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
       "status": "[28]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>",
+      "type": "code"
+    },
+    {
+      "code": "The code below is not working as expected. Please correct and try.",
+      "status": "",
+      "output": "The code below is not working as expected. Please correct and try.",
+      "type": "html"
+    },
+    {
+      "code": "let x=1;\nlet y=2;\n\nfunction greaterNumber(num1,num2){\n  if(x>y) {\n\t\treturn x;\n  }\n  else{\n\treturn y;\n  }\n}\n\nshow(\"Greater number between 1 and 2 is:\")\nshow(greaterNumber(1,2));  //This shows correctly\n\n\nshow(\"Greater number between 10 and 100 is:\")\nshow(greaterNumber(10,100)); //This is incorrect. Please change the code in the funciton to make this work.",
+      "status": "[15]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Greater number between: 10 100 <br>2 <br>",
       "type": "code"
     },
     {
