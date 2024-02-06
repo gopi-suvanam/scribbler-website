@@ -20,7 +20,7 @@ show_in_menu: false
 - Using logical operators (&&, ||, !)
 - Writing and understanding loops (for, while)
 
-## Lesson 4: Functions (Coming soon...)
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb"> Lesson 4: Functions</a>
 - Defining and calling functions
 - Parameters and return values
 - Scope and the difference between global and local variables
