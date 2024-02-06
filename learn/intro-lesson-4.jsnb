@@ -15,9 +15,9 @@
       "type": "html"
     },
     {
-      "code": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>### Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>\nfunction greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\n</h3>Function Invocation</h3>\n\nTo execute a function, you need to invoke (call) it:\n\n<pre>\ngreet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
+      "code": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/#https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>\nfunction greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\n</h3>Function Invocation</h3>\n\nTo execute a function, you need to use it:\n\n<pre>\ngreet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
       "status": "",
-      "output": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>### Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>function greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\nFunction Invocation\n\nTo execute a function, you need to invoke (call) it:\n\n<pre>greet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
+      "output": "<h1>Functions: Lesson 4 of 10 in Introduction to JavaScript</h1>\n<h2>Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/#https://scribbler.live/learn/intro-lesson-3.jsnb\" target=\"_blank\">Lesson 3</a>, we explored control flow using conditional statements and loops. Now, let's shift our focus to functions, a crucial concept in JavaScript for organizing code, promoting reusability, and enhancing modularity.\n\n<h2>Functions in JavaScript</h2>\n\n<h3> What is a Function?</h3>\n\nA function is a reusable block of code that performs a specific task or calculates a value. Functions help break down complex programs into smaller, manageable pieces.\n\n<h3>Function Declaration</h3>\n\nThe basic syntax for declaring a function is as follows:\n\n<pre>function greet() {\n  console.log(\"Hello, world!\");\n}</pre>\n\nFunction Invocation\n\nTo execute a function, you need to use it:\n\n<pre>greet(); // Outputs: Hello, world! </pre>\n\n<b>Important note</b>: Scribbler uses <i>show</i> function to display the text. This is not a standard JavaScript function. <i>console.log</i> is a standard JavaScript function that prints the text in the console of the environment.\n",
       "type": "html"
     },
     {
@@ -27,21 +27,21 @@
       "type": "code"
     },
     {
-      "code": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>",
+      "code": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>\n\nRemember `show` is a Scribbler function in other environments you can use console.log.\nIn the code below, why dont you use your name instead of \"Alice\" and see if it works. Press play (►) button or Ctrl-Enter for running the code in the cell.",
       "status": "",
-      "output": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>",
+      "output": "<h3>Parameters and Arguments</h3>\n\nFunctions can accept parameters, allowing them to receive input values. Arguments are the actual values passed to the function when it is called.\n\n<pre>function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!</pre>\n\nRemember `show` is a Scribbler function in other environments you can use console.log.\nIn the code below, why dont you use your name instead of \"Alice\" and see if it works. Press play (►) button or Ctrl-Enter for running the code in the cell.",
       "type": "html"
     },
     {
-      "code": "function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n  show(\"Hello, \" + name + \"!\");\n  \n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!",
+      "code": "function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n  show(\"Hello, \" + name + \"!\"); \n  \n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!",
       "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Hello, Alice! <br>",
       "type": "code"
     },
     {
-      "code": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>\nfunction addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>",
+      "code": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>\nfunction addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>\n\nIn the cells below change the values of numbers in line number 5 and see if it works.",
       "status": "",
-      "output": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>",
+      "output": "<h3>Return Statement</h3>\n\nA function can return a value using the `return` statement. The returned value can be used elsewhere in your code.\n\n<pre>function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nconsole.log(\"Sum:\", sum); // Outputs: Sum: 10</pre>\n\nIn the cells below change the values of numbers in line number 5 and see if it works.",
       "type": "html"
     },
     {
@@ -87,6 +87,18 @@
       "type": "code"
     },
     {
+      "code": "In the above cell bellow can you write the missing part of the code to make a function for multiplying to numbers?",
+      "status": "",
+      "output": "In the above cell bellow can you write the missing part of the code to make a function for multiplying to numbers?",
+      "type": "html"
+    },
+    {
+      "code": "function multiplyNumbers(a, b) {\n //Write your code here\n  \n}\n\nlet product = multiplyNumbers(5, 3);\nif(product==15){\n  show(\"Great it worked!\")\n}else{\n  show(\"Please try again..\");\n}",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Please try again.. <br>",
+      "type": "code"
+    },
+    {
       "code": "<h3>Example 2: Greeting with Custom Message</h3>\nThis example function takes a message and the name of a person and returns a message incorporating the name.",
       "status": "",
       "output": "<h3>Example 2: Greeting with Custom Message</h3>\nThis example function takes a message and the name of a person and returns a message incorporating the name.",
@@ -123,14 +135,14 @@
       "type": "code"
     },
     {
-      "code": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  x % y gives the reminder after dividen x by y.",
+      "code": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  \n  <br>x % y gives the reminder after dividen x by y. and `==` is used to check if two values are equal. This operator gives a boolean value i.e. true or false.",
       "status": "",
-      "output": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  x % y gives the reminder after dividen x by y.",
+      "output": "<h3>Example 5: Checking if a Number is Even</h3>\nIn this example we will check if a number is even or odd. For this we will use an arithmetic operator '%'.  \n  <br>x % y gives the reminder after dividen x by y. and `==` is used to check if two values are equal. This operator gives a boolean value i.e. true or false.",
       "type": "html"
     },
     {
-      "code": "function isEven(number) {\n  return number % 2 === 0; //% is reminder\n}\n\nshow(\"Is 10 even?\", isEven(10)); \nshow(\"Is 7 even?\", isEven(7));  ",
-      "status": "[21]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "function isEven(number) {\n  let reminder=number % 2;\n  let isEven = (reminder==0);\n  return isEven; //% is reminder\n}\n\nshow(\"Is 10 even?\", isEven(10)); \nshow(\"Is 7 even?\", isEven(7));  ",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Is 10 even? true <br>Is 7 even? false <br>",
       "type": "code"
     },
@@ -153,10 +165,16 @@
       "type": "html"
     },
     {
-      "code": "function sumOfEvenNumbers(n){\nlet sum=0;\n  \nfor(let i=1;i<=100;i=i+1){\n  //Write your code here, to update the sum\n}\n  //Write your code here to return the sum\n  \n  //End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
+      "code": "function sumOfEvenNumbers(n){\n  let sum=0;\n\n  for(let i=1;i<=100;i=i+1){\n\t//Write your code here, to update the sum\n  }\n\t//Write your code here to return the sum\n\n\t//End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
       "status": "[28]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>",
       "type": "code"
+    },
+    {
+      "code": "<details>\n  <summary><h3>Click for Solution</h3>Copy this code in the above cell and see if it works.\n</summary>\n  <pre id='solution1'>\nfunction sumOfEvenNumbers(n){\nlet sum=0;\n  \nfor(let i=1;i<=100;i=i+1){\n  if(i%2==2){\n\tsum=sum+i;\n  }\n}\n  return sum;\n}\n<pre>\n</details>\n",
+      "status": "",
+      "output": "<details>\n  <summary><h3>Click for Solution</h3>Copy this code in the above cell and see if it works.\n</summary>\n  <pre id=\"solution1\">function sumOfEvenNumbers(n){\nlet sum=0;\n  \nfor(let i=1;i&lt;=100;i=i+1){\n  if(i%2==2){\n\tsum=sum+i;\n  }\n}\n  return sum;\n}\n<pre></pre></pre></details>\n",
+      "type": "html"
     },
     {
       "code": "The code below is not working as expected. Please correct and try.",
@@ -166,9 +184,15 @@
     },
     {
       "code": "let x=1;\nlet y=2;\n\nfunction greaterNumber(num1,num2){\n  if(x>y) {\n\t\treturn x;\n  }\n  else{\n\treturn y;\n  }\n}\n\nshow(\"Greater number between 1 and 2 is:\")\nshow(greaterNumber(1,2));  //This shows correctly\n\n\nshow(\"Greater number between 10 and 100 is:\")\nshow(greaterNumber(10,100)); //This is incorrect. Please change the code in the funciton to make this work.",
-      "status": "[15]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "Greater number between: 10 100 <br>2 <br>",
+      "status": "[5]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Greater number between 1 and 2 is: <br>2 <br>Greater number between 10 and 100 is: <br>2 <br>",
       "type": "code"
+    },
+    {
+      "code": "<details>\n  <summary><h3>Click for Solution</h3>\n</summary>\nHint: use `num1` and `num2` instead of `x` and `y` inside the function.\n  <pre id='solution1'>\nfunction greaterNumber(num1,num2){\n  if(num1>num2) {\n\t\treturn num1;\n  }\n  else{\n\treturn num2;\n  }\n}\n<pre>\n</details>\n",
+      "status": "",
+      "output": "<details>\n  <summary><h3>Click for Solution</h3>\n</summary>\nHint: use `num1` and `num2` instead of `x` and `y` inside the function.\n  <pre id=\"solution1\">function greaterNumber(num1,num2){\n  if(num1&gt;num2) {\n\t\treturn num1;\n  }\n  else{\n\treturn num2;\n  }\n}\n<pre></pre></pre></details>\n",
+      "type": "html"
     },
     {
       "code": "<h2>Summary</h2>\n<ul>\n  <li>Functions are reusable blocks of code.</li>\n <li>They can take parameters as input and return a value using the `return` statement.</li>\n <li>Variables inside functions have local scope, while those declared outside have global scope.</li>\n <li>Functions promote code organization, modularity, and reusability.</li>\n</ul>\nIn the next lesson, we'll explore more advanced topics, including arrays and objects in JavaScript. Stay tuned!\n",
@@ -177,9 +201,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 5: Arrays and Objects</a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"\" target=\"_blank\">Lesson 5: Arrays</a></li>\n  <li><a href=\"\" target=\"_blank\">Lesson 6: Objects</a></li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live?jsnb=\" target=\"_blank\">Lesson 5: Arrays and Objects</a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"\" target=\"_blank\">Lesson 5: Arrays</a></li>\n  <li><a href=\"\" target=\"_blank\">Lesson 6: Objects</a></li>\n  </ul>",
       "type": "html"
     }
   ],
