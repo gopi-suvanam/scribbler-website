@@ -1,5 +1,5 @@
 ---
-title: Unleashing Creativity and Innovation - Recap of the Scribble Pad Hackathon on JavaScript with Scribbler
+title: Recap of the Scribble Pad Hackathon on JavaScript with Scribbler
 description: Scribble Pad hackathon on JavaScript at IIT-B provided an immersive experience for participants and organizers by providing an opportunity to experiment with various ideas in browser based JavaScript computation.
 layout: post
 ---
