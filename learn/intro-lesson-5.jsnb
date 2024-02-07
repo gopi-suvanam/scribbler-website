@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "name": "Lesson 5: Objects in JavaScript<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "status": "",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Objects: Lesson 5 of 10</h1>",
+      "status": "",
+      "output": "<h1>Objects: Lesson 5 of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Overview</h2>\n\nIn JavaScript, an object is a versatile data structure that allows you to store and organize data in the form of key-value pairs. This key-value pairing makes objects a powerful tool for representing real-world entities and their attributes.\n\n\n\n<h3>Definition</h3>\n\nObjects are containers for named values, called properties, and functions, called methods. These properties and methods are organized in key-value pairs inside curly braces `{}`.\n\n<pre>\n  let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\n</pre>\nIn this example, `person` is an object with properties such as `name`, `age`, and `isStudent`.\n\n<h3>Accessing and Modifying Object Properties</h3>\n\nYou can access and modify object properties using the dot notation or square brackets. For example to access the name of a person defined above, we could use:<code> person.name</code> or <code>person['name']</code>\n",
+      "status": "",
+      "output": "<h2>Overview</h2>\n\nIn JavaScript, an object is a versatile data structure that allows you to store and organize data in the form of key-value pairs. This key-value pairing makes objects a powerful tool for representing real-world entities and their attributes.\n\n\n\n<h3>Definition</h3>\n\nObjects are containers for named values, called properties, and functions, called methods. These properties and methods are organized in key-value pairs inside curly braces `{}`.\n\n<pre>  let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\n</pre>\nIn this example, `person` is an object with properties such as `name`, `age`, and `isStudent`.\n\n<h3>Accessing and Modifying Object Properties</h3>\n\nYou can access and modify object properties using the dot notation or square brackets. For example to access the name of a person defined above, we could use:<code> person.name</code> or <code>person['name']</code>\n",
+      "type": "html"
+    },
+    {
+      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\nlet personName = person.name; // Accessing property by key using dot notation\nshow(\"Person's Name:\", personName); // Outputs: Person's Name: John\n\nshow(\"Person's Age:\", person['age']); // Outputs: Updated Age: 31\nperson.age = 31; // Modifying property value\nshow(\"Updated Age:\", person['age']); // Outputs: Updated Age: 31",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Person's Name: John <br>Person's Age: 30 <br>Updated Age: 31 <br>",
+      "type": "code"
+    },
+    {
+      "code": "In the cell below, we want to check if a person is student or not. \nThe property \"isStudent\" is a boolean property (i.e. it takes value of `true` and `false`) of the object `person`. Can you correct the code to make it work properly?",
+      "status": "",
+      "output": "In the cell below, we want to check if a person is student or not. \nThe property \"isStudent\" is a boolean property (i.e. it takes value of `true` and `false`) of the object `person`. Can you correct the code to make it work properly?",
+      "type": "html"
+    },
+    {
+      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\n\nif(true){ //Modify this line to make work\n  show(\"The person is a student\");\n}else{\n    show(\"The person is not a student\");\n}",
+      "status": "[6]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "The person is a student <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The functon can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</car>",
+      "status": "",
+      "output": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The functon can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</code>",
+      "type": "html"
+    },
+    {
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    show(\"Engine started!\");\n  }\n};\n\ncar.start(); // Outputs: Engine started!\ncar.stop(); //Gives error. Please add this function to the object to make it work.",
+      "status": "[-]",
+      "output": "Engine started! <br><p class=\"error\">car.stop is not a function</p>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Combining Objects</h3>\n\nObjects can be combined to create more complex data structures. In the below code, the `grades` property of the `student` object is itself an object containing subject-specific grades. <br>\n The code shows Math grade for the student but throws error for English and Science grades. Please correct the code to make it work.",
+      "status": "",
+      "output": "<h3>Combining Objects</h3>\n\nObjects can be combined to create more complex data structures. In the below code, the `grades` property of the `student` object is itself an object containing subject-specific grades. <br>\n The code shows Math grade for the student but throws error for English and Science grades. Please correct the code to make it work.",
+      "type": "html"
+    },
+    {
+      "code": "let student = {\n  name: \"Alice\",\n  age: 20,\n  grades: {\n    math: 90,\n    english: 85,\n    science: 92\n  }\n};\n\nshow(\"Name of student:\",student.name);\nshow(\"Math grade of student:\",student.grades.math)\nshow(\"Math grade of student:\",student.english)\nshow(\"Math grade of student:\",student.science)",
+      "status": "[13]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Name of student: Alice <br>Math grade of student: 90 <br>Math grade of student: undefined <br>Math grade of student: undefined <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamycally add the property \"makingYear\" to the car?",
+      "status": "",
+      "output": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamycally add the property \"makingYear\" tothe car and print it.",
+      "type": "html"
+    },
+    {
+      "code": "\nlet propertyName = \"color\";\nlet car = {\n  brand: \"Ford\",\n};\ncar[propertyName]='Blue';\nshow(\"Car Color:\", car.color); // Outputs: Car Color: Blue\n/*Please add code below to add makingYear to the car and test it */\n\nshow(\"Car Making Year:\", car.makingYear); // Testing\n",
+      "status": "[22]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Car Color: Blue <br>Car Making Year: undefined <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>`this` Keyword</h2>\n\nIn JavaScript, the `this` keyword plays a crucial role, especially within the context of objects. Understanding how `this` works is essential for creating dynamic and flexible code when dealing with object-oriented programming.\n\n<br>The `this` keyword refers to the current object within which it is used. It allows methods to access and modify the properties of the object to which they belong.\n<br>In the below example, `this.brand` and `this.model` refer to the properties of the `car` object.",
+      "status": "",
+      "output": "<h2>`this` Keyword</h2>\n\nIn JavaScript, the `this` keyword plays a crucial role, especially within the context of objects. Understanding how `this` works is essential for creating dynamic and flexible code when dealing with object-oriented programming.\n\n<br>The `this` keyword refers to the current object within which it is used. It allows methods to access and modify the properties of the object to which they belong.\n<br>Here, `this.brand` and `this.model` refer to the properties of the `car` object.",
+      "type": "html"
+    },
+    {
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    show(\"Starting the \" + this.brand + \" \" + this.model + \"!\");\n  }\n};\n\ncar.start(); \n",
+      "status": "[23]<br><span style=\"font-size:8px\">4ms<span></span></span>",
+      "output": "Starting the Toyota Camry! <br>",
+      "type": "code"
+    },
+    {
+      "code": "You can use `this` keyword to update the properties of the object as well. \nIn the below example we will update the property \"status\", which indicates whether the car is running or stopped.\n<br>\n  Can you add code to the function `stop` so that the status of the car gets updated to \"stopped\" when it is called.",
+      "status": "",
+      "output": "You can use `this` keyword to update the properties of the object as well. \nIn the below example we will update the property \"status\", which indicates whether the car is running or stopped.\n<br>\n  Can you add code to the function `stop` so that the status of the car gets updated to \"stopped\" when it is called.",
+      "type": "html"
+    },
+    {
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  status:\"stopped\",\n  start: function() {\n    this.status=\"running\"\n  },\n  stop: function() {\n    //Add your code here\n  },\n};\n\nshow(\"Status of the car:\",car.status);\ncar.start(); \nshow(\"Checking again.. Status of the car:\",car.status);\ncar.stop(); \nshow(\"Checking once more.. Status of the car:\",car.status);",
+      "status": "[28]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Status of the car: stopped <br>Checking again.. Status of the car: running <br>Checking once more.. Status of the car: running <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Experiment</h2>\nBelow is an object called `calculator`. It has two numbers as properties: num1 and num2. The calculator also has two methods: `add` and `multiply`. \nThere multiply method does not work as expected, please correct and test.",
+      "status": "",
+      "output": "<h2>Experiment</h2>\nBelow is an object called `calculator`. It has two numbers as properties: num1 and num2. The calculator also has two methods: `add` and `multiply`. \nThere multiply method does not work as expected, please correct and test.",
+      "type": "html"
+    },
+    {
+      "code": "let calculator={\n  num1:undefined,\n  num2:undefined,\n  add:function(){\n\tconst total = this.num1+this.num2;\n\treturn total;\n  },\n  multiply: function(){\n \t\tconst product = num1+num2;\n\n  }\n}\n\n//There is error in below code. please check and correct\ncalculator.num1=1;\ncalculator.num2=2;\nlet total  = calculator.add(); \nshow(\"Total of the numbers is:\",total);\nlet product  = calculator.multiply();\nshow(\"Product of the numbers is:\",product);",
+      "status": "[-]",
+      "output": "Total of the numbers is: 3 <br><p class=\"error\">num1 is not defined</p>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\n<ul>\n<li>Objects are versatile data structures in JavaScript.</li>\n<li>They consist of key-value pairs representing properties and methods.</li>\n<li>Objects can be nested and combined to create complex data structures.</li>\n<li>Dynamic property names allow flexibility in working with objects.</li>\n<li>The `this` keyword is used within object methods to refer to the object itself.</li>\n  <li> It allows methods to access and modify the properties of the object dynamically.</li>\n</ul>\nIn the next lesson, Lesson 6, we'll shift our focus to Arrays and explore various array methods for efficient data manipulation. Stay tuned!\n",
+      "status": "",
+      "output": "<h2>Summary</h2>\n<ul>\n<li>Objects are versatile data structures in JavaScript.</li>\n<li>They consist of key-value pairs representing properties and methods.</li>\n<li>Objects can be nested and combined to create complex data structures.</li>\n<li>Dynamic property names allow flexibility in working with objects.</li>\n<li>The `this` keyword is used within object methods to refer to the object itself.</li>\n  <li> It allows methods to access and modify the properties of the object dynamically.</li>\n</ul>\nIn the next lesson, Lesson 6, we'll shift our focus to Arrays and explore various array methods for efficient data manipulation. Stay tuned!\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
