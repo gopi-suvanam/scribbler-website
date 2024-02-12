@@ -201,16 +201,40 @@
       "type": "code"
     },
     {
-      "code": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within thoserows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n<br>\n Array can also contain objects and vice-verse. These complex structures are beyond the scope of this introductory course but you can play around with the code below to learn about them. ",
+      "code": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within thoserows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n",
       "status": "",
-      "output": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within thoserows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n<br>\n Array can also contain objects and vice-verse. These complex structures are beyond the scope of this introductory course but you can play around with the code below to learn about them. ",
+      "output": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within thoserows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n",
       "type": "html"
     },
     {
-      "code": "let marksOfStudens=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nlet englishMarks=[];\nmarksOfStudens.forEach(function(student){\n  englishMarks.push(student.english);\n})\n\nshow(\"English marks of students:\",englishMarks);\n//Why dont you print maths marks as science marks as well?",
+      "code": "<h2>Complex Nested Structures</h2>\nAn array can also contain objects and vice-verse. For example in the code below, marks of students are stored as objects inside an array. One can loop through each student record and extract the marks.",
+      "status": "",
+      "output": "<h2>Complex Nested Structures</h2>\nAn array can also contain objects and vice-verse. For example in the code below, marks of students are stored as objects inside an array. One can loop through each student record and extract the marks.",
+      "type": "html"
+    },
+    {
+      "code": "let marksOfStudens=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nlet englishMarks=[];\nmarksOfStudens.forEach(function(studentRecord){\n  englishMarks.push(studentRecord.english);\n})\n\nshow(\"English marks of students:\",englishMarks);\n//Why dont you print maths marks as science marks as well?",
       "status": "[50]<br><span style=\"font-size:8px\">4ms<span></span></span>",
       "output": "English marks of students: [\n  100,\n  90,\n  80\n] <br>",
       "type": "code"
+    },
+    {
+      "code": "Like, objects inside and array, one can have arrays inside an object. \nFor example instead of storing marks of each student as a record in an array,\n  one can store marks of each student for a subject as property of an object. Below example shows this\n<pre>\nlet subjectMarks={\n  english:[100,90,80],\n  maths:[75,85,70],\n  science:[80,75,85]\n}\n</pre>\nThe previous structure (student wise records) can be coverted to this structure (object with subject-wise marks) by looping through the array:",
+      "status": "",
+      "output": "Like, objects inside and array, one can have arrays inside an object. \nFor example instead of storing marks of each student as a record in an array,\n  one can store marks of each student for a subject as property of an object. Below example shows this\n<pre>let subjectMarks={\n  english:[100,90,80],\n  maths:[75,85,70],\n  science:[80,75,85]\n}\n</pre>\nThe previous structure (student wise records) can be coverted to this structure (object with subject-wise marks) by looping through the array:",
+      "type": "html"
+    },
+    {
+      "code": "let subjectMarks={\nenglish:[], maths:[],science:[]\n};\nlet marksOfStudens=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nmarksOfStudens.forEach(function (studentRecord){\n  subjectMarks.english.push(studentRecord.english);\n   subjectMarks.maths.push(studentRecord.maths);\n   subjectMarks.science.push(studentRecord.science);\n});\n\nshow(\"Subject-wise marks:\",subjectMarks);\n",
+      "status": "[1]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Subject-wise marks: {\n  \"english\": [\n    100,\n    90,\n    80\n  ],\n  \"maths\": [\n    75,\n    85,\n    70\n  ],\n  \"science\": [\n    80,\n    75,\n    85\n  ]\n} <br>",
+      "type": "code"
+    },
+    {
+      "code": "Further nesting is also possible, i.e one can have arrays/objects within arrays/objects within arrays/objects.. so on.. \nBut such complex structures are beyond the scope of this course.",
+      "status": "",
+      "output": "Further nesting is also possible, i.e one can have arrays/objects within arrays/objects within arrays/objects.. so on.. \nBut such complex structures are beyond the scope of this course.",
+      "type": "html"
     },
     {
       "code": "<h2>Summary</h2>\n<ul>\n<li>Arrays are ordered lists that store multiple values.</li>\n<li>Array elements are accessed using indexes, and modifications can be made directly.</li>\n<li> JavaScript provides several built-in array methods for manipulation, such as `push`, `pop`, `shift`, `unshift`, `splice`, `slice`, `concat`, `forEach` and `map`.</li>\n<li>Utilizing array methods enhances code readability and efficiency.</li>\n</ul>\nIn the next few lessons, we'll explore more advanced JavaScript concepts, including asynchronous programming and working with the Document Object Model (DOM) to modify the HTML page dynamically. Stay tuned!\n\n",
