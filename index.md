@@ -107,7 +107,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
 
             <div class="col-lg-3" >
                 <h3>Simple Interface to do Experiments</h3>
-            </div
+            </div>
             <div class="col-lg-9">
                 <ul>
                 <li>Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.</li>
