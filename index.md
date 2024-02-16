@@ -104,27 +104,54 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
 
 
 <div class="row" markdown="1">
-
-## Need for a Simple Interface to do Experiments
-- Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.
-- Existing solutions lack the ability to be freely downloaded or embedded elsewhere, unlike Jupyter Notebook or Google Colabs for Python.
-- Scribbler was developed as an open-source, backend-free solution, enabling JavaScript experimentation without requiring Node.js or a server.
-
-## Notebook Without Backend
-- Scribbler aims to be a "nodeless" app, usable directly in the browser without additional backend technologies.
+<table>
+    <tbody>
+        <tr>
+            <td>
+                ## Need for a Simple Interface to do Experiments
+            </td>
+            <td>
+                - Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.
+                - Existing solutions lack the ability to be freely downloaded or embedded elsewhere, unlike Jupyter Notebook or Google Colabs for Python.
+                - Scribbler was developed as an open-source, backend-free solution, enabling JavaScript experimentation without requiring Node.js or a server.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ## Notebook Without Backend
+            </td>
+            <td>
+               - Scribbler aims to be a "nodeless" app, usable directly in the browser without additional backend technologies.
 - This simplicity allows for easy hosting on platforms like GitHub Pages, eliminating the need for server hosting.
 - JavaScript's efficiency in running in the browser ensures smooth operation of Scribbler without the need for backend code.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ## Use Cases
+            </td>
+            <td>
+               The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including:
 
-## Use Cases
-The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including:
+            - Scientific simulations
+            - Decentralized computing and finance 
+            - Numerical analysis
+            - Charting tools
+            - Interactive data science and machine learning experiments
+            - Generative AI
+            - Financial applications
 
-- Scientific simulations
-- Decentralized computing and finance 
-- Numerical analysis
-- Charting tools
-- Interactive data science and machine learning experiments
-- Generative AI
-- Financial applications
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
 
 
 
