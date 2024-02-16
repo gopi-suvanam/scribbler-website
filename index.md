@@ -111,6 +111,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
                 <h3>Need for a Simple Interface to do Experiments</h3>
             </td>
             <td >
+                
                 - Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.
                 - Existing solutions lack the ability to be freely downloaded or embedded elsewhere, unlike Jupyter Notebook or Google Colabs for Python.
                 - Scribbler was developed as an open-source, backend-free solution, enabling JavaScript experimentation without requiring Node.js or a server.
@@ -130,7 +131,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
             <td >
                 <h3>Use Cases</h3>
             </td>
-            <td markdown="1">
+            <td >
                The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
             - Scientific simulations
             - Decentralized computing and finance 
