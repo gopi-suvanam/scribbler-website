@@ -108,7 +108,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
     <tbody>
         <tr>
             <td >
-                <h2>Need for a Simple Interface to do Experiments</h2>
+                <h3>Need for a Simple Interface to do Experiments</h3>
             </td>
             <td >
                 - Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.
@@ -118,7 +118,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
         </tr>
         <tr>
             <td >
-                <h2>Notebook Without Backend</h2>
+                <h3>Notebook Without Backend</h3>
             </td>
             <td >
                - Scribbler aims to be a "nodeless" app, usable directly in the browser without additional backend technologies.
@@ -128,7 +128,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
         </tr>
         <tr>
             <td >
-                <h2>Use Cases</h2>
+                <h3>Use Cases</h3>
             </td>
             <td markdown="1">
                The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
