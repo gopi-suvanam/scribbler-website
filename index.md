@@ -115,46 +115,39 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
         </ul>
     </div>
 </div>
-
-    <div class="row"  style="background-color:#2d4c6c;color: #dedede;">
-        <div class="col-lg-3">
-                <h3>Notebook Without Backend</h3>
-        </div>
-        <div class="col-lg-9" >
-            <ul>
+<div class="row"  style="background-color:#2d4c6c;color: #dedede;">
+    <div class="col-lg-3">
+        <h3>Notebook Without Backend</h3>
+    </div>
+    <div class="col-lg-9" >
+        <ul>
            <li>Scribbler aims to be a "nodeless" app, usable directly in the browser without additional backend technologies.</li>
-            <li>This simplicity allows for easy hosting on platforms like GitHub Pages, eliminating the need for server hosting.</li>
-            <li>JavaScript's efficiency in running in the browser ensures smooth operation of Scribbler without the need for backend code.</li>
-            </ul>
-        </div>
+           <li>This simplicity allows for easy hosting on platforms like GitHub Pages, eliminating the need for server hosting.</li>
+           <li>JavaScript's efficiency in running in the browser ensures smooth operation of Scribbler without the need for backend code.</li>
+        </ul>
     </div>
-    <div class="row"  style="background-color:#2d4c6c;color: #dedede;">
-        <div class="col-lg-3" >
-            <h3>Wide Range of Use Cases</h3>
-         </div>
-        <div class="col-lg-9" ">
-           The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
-            <ul>
-        <li>Scientific simulations</li>
-        <li>Decentralized computing and finance </li>
-        <li>Numerical analysis</li>
-        <li>Charting tools</li>
-        <li>Interactive data science and machine learning experiments</li>
-        <li>Generative AI</li>
-        <li>Financial applications</li>
-            </ul>
-         </div>
-    </div>
-
-
-
-
-
-
+</div>
+<div class="row"  style="background-color:#2d4c6c;color: #dedede;">
+    <div class="col-lg-3" >
+        <h3>Wide Range of Use Cases</h3>
+     </div>
+    <div class="col-lg-9" ">
+       The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
+        <ul>
+            <li>Scientific simulations</li>
+            <li>Decentralized computing and finance </li>
+            <li>Numerical analysis</li>
+            <li>Charting tools</li>
+            <li>Interactive data science and machine learning experiments</li>
+            <li>Generative AI</li>
+            <li>Financial applications</li>
+        </ul>
+     </div>
+</div>
 
 <div class="row"  style="background-color:#2d4c6c;color: #dedede;">
-To engage with the Scribbler community and explore its potential further, individuals are invited to participate in events like the Yellow Scribes Hackathon.
-<br>Happy experimenting!
+    To engage with the Scribbler community and explore its potential further, individuals are invited to participate in events like the Yellow Scribes Hackathon.
+    <br>Happy experimenting!
 </div>
 
 
