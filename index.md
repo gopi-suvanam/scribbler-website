@@ -103,12 +103,12 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
 </div>
 
 
-<div class="row" markdown="1" style="background-color:#2d4c6c;color: #dedede;">
+<div class="row" style="background-color:#2d4c6c;color: #dedede;">
 
-            <div class="col-lg-3" markdown="1">
+            <div class="col-lg-3" >
                 <h3>Simple Interface to do Experiments</h3>
             </div
-            <div class="col-lg-9" markdown="1">
+            <div class="col-lg-9">
                 <ul>
                 <li>Scribbler addresses the need for a JavaScript experimentation interface similar to Jupyter Notebook for Python.</li>
                 <li>Existing solutions lack the ability to be freely downloaded or embedded elsewhere, unlike Jupyter Notebook or Google Colabs for Python.</li>
@@ -117,11 +117,11 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
             </div>
 </div>
 
-    <div class="row" markdown="1" style="background-color:#2d4c6c;color: #dedede;">
-        <div class="col-lg-3" markdown="1">
+    <div class="row"  style="background-color:#2d4c6c;color: #dedede;">
+        <div class="col-lg-3">
                 <h3>Notebook Without Backend</h3>
             </div>
-            <div class="col-lg-9" markdown="1">
+            <div class="col-lg-9" >
                 <ul>
                <li>Scribbler aims to be a "nodeless" app, usable directly in the browser without additional backend technologies.</li>
                 <li>This simplicity allows for easy hosting on platforms like GitHub Pages, eliminating the need for server hosting.</li>
@@ -129,11 +129,11 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
                 </ul>
             </div>
         </div>
-        <div class="row" markdown="1" style="background-color:#2d4c6c;color: #dedede;">
-            <div class="col-lg-3" markdown="1">
+        <div class="row"  style="background-color:#2d4c6c;color: #dedede;">
+            <div class="col-lg-3" >
                 <h3>Wide Range of Use Cases</h3>
              </div>
-            <div class="col-lg-9" markdown="1">
+            <div class="col-lg-9" ">
                The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
                 <ul>
             <li>Scientific simulations</li>
