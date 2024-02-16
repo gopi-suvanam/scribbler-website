@@ -108,7 +108,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
     <tbody>
         <tr>
             <td >
-                <h3>Need for a Simple Interface to do Experiments</h3>
+                <h3>Simple Interface to do Experiments</h3>
             </td>
             <td >
                 <ul>
@@ -132,7 +132,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
         </tr>
         <tr>
             <td >
-                <h3>Use Cases</h3>
+                <h3>Wide Range of Use Cases</h3>
             </td>
             <td >
                The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
