@@ -1,7 +1,7 @@
 ---
 title: About
 description: Vision and the Team of Scribbler
-show_in_menu: true
+show_in_menu: false
 ---
 
 ## Vision
