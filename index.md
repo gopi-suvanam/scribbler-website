@@ -131,8 +131,8 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
     <div class="col-lg-3" >
         <h3>Wide Range of Use Cases</h3>
      </div>
-    <div class="col-lg-9" ">
-       The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
+    <div class="col-lg-9" >
+        The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
         <ul>
             <li>Scientific simulations</li>
             <li>Decentralized computing and finance </li>
