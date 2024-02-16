@@ -131,8 +131,7 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
                 <h2>Use Cases</h2>
             </td>
             <td markdown="1">
-               The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including:
-
+               The versatility of JavaScript and its extensive library ecosystem opens up limitless possibilities for Scribbler's applications, including.
             - Scientific simulations
             - Decentralized computing and finance 
             - Numerical analysis
@@ -140,7 +139,6 @@ A .jsnb file can also be directly loaded into the app by suffixing the url of th
             - Interactive data science and machine learning experiments
             - Generative AI
             - Financial applications
-
             </td>
         </tr>
     </tbody>
