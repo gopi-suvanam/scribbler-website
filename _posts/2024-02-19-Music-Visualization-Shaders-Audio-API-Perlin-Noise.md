@@ -3,7 +3,7 @@ title: Music Visualization with Shaders, Web Audio API and Perlin Noise
 description: Using WebGL we generate visualization of audio in nice animation of Perlin Noise. We also show how GPU can be used from browser for high performance computation.
 layout: post
 ---
-This is a guest post by Kaustav Prasad. Kausatv is a final year B.Tech. student majoring in Engineering Physics with a minor in Computer Science at IIT Bombay. He is passionate about Scientific Computing, Fundamental Physics, and applying AI and Data Science to problems in healthcare and society. You can reach out to him at: [Linkedin](https://www.linkedin.com/in/kaustavprasad/). You can check his open work at [his GitHub profile](https://github.com/Anomaly42). 
+This is a guest post by Kaustav Prasad. Kaustav is a final year B.Tech. student majoring in Engineering Physics with a minor in Computer Science at IIT Bombay. He is passionate about Scientific Computing, Fundamental Physics, and applying AI and Data Science to problems in healthcare and society. You can reach out to him at: [Linkedin](https://www.linkedin.com/in/kaustavprasad/). You can check his open work at [his GitHub profile](https://github.com/Anomaly42). 
 
 The current article is on a project is has submitted as part of [Scribble Pad Hackathon](https://scribbler.live/2024/02/05/Scribble-Pad-IIT-B-Recap.html). The notebook can be accessed at: [https://github.com/Anomaly42/Scribbler_JavaScript_Hackathon_Submission](https://github.com/Anomaly42/Scribbler_JavaScript_Hackathon_Submission).
 
