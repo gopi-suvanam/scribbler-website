@@ -37,7 +37,7 @@ Now here's the idea: we will take an audio clip, extract the weights of the diff
 
 First, we obtain the audio clip: I am using the Deezer API to extract a 30 second preview of "Paint the Town Red". This method can of course be extended to multiple songs you can switch between.We can now process and plot the frequency weights in a nice visualization:
 
-![Frequency Distribution](https://scribbler.live/scribblepad/ss/fig2.jpeg)
+![Frequency Distribution](https://scribbler.live/scribblepad/ss/fig3.jpeg)
 Fig 2: Visualization of the frequency distribution of the audio at a given time.
 
 
@@ -46,7 +46,7 @@ We now extract parameters from the frequency weights, by first binning the frequ
 
 Of course, there is enormous potential for tweaking within this visualizer. One could look for different Perlin Noise inputs to achieve other forms of organic visualizations, or even interact with the visualizer by adding the mouse position as another parameter.
 
-![Music Visualization Idle](https://scribbler.live/scribblepad/ss/fig3.jpeg)
+![Music Visualization Idle](https://scribbler.live/scribblepad/ss/fig2.jpeg)
 Fig 3: The music visualizer in its idle state, as a dull red, lava lamp-like fluid.
 
 ![Visualization in Action](https://scribbler.live/scribblepad/ss/fig4.jpeg)
