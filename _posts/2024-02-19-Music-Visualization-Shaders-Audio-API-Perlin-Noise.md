@@ -4,7 +4,7 @@ description: Using WebGL we generate visualization of audio in nice animation of
 layout: post
 ---
 # Music Visualization with Shaders, Web Audio API and Perlin Noise
-_Artcle by [Kaustav](#about-author)_
+_Article by [Kaustav](#about-author)_
 
 
 
