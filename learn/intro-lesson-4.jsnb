@@ -201,9 +201,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"\" target=\"_blank\">Lesson 5: Arrays</a></li>\n  <li><a href=\"\" target=\"_blank\">Lesson 6: Objects</a></li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5: Objects</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb\" target=\"_blank\">Lesson 6: Arrays Part A</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb\" target=\"_blank\">Lesson 6: Arrays Part B</a></li>\n\n\t</ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"\" target=\"_blank\">Lesson 5: Arrays</a></li>\n  <li><a href=\"\" target=\"_blank\">Lesson 6: Objects</a></li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5: Objects</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb\" target=\"_blank\">Lesson 6: Arrays Part A</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb\" target=\"_blank\">Lesson 6: Arrays Part B</a></li>\n\n\t</ul>",
       "type": "html"
     }
   ],
