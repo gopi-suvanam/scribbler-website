@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "name": "Lesson 6b: Arrays and Array Methods<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "status": "",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Arrays and Array Methods: Lesson 6 (Part B) of 10</h1>",
+      "status": "",
+      "output": "<h1>Arrays and Array Methods: Lesson 6 (Part B) of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Overview</h2>\n\nIn <a href='https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb' target='_blank'>Lesson 6 - Part A</a>, we explored introduction to arrays and a few array methods. In this part we will delve deeper into array methods. We will also look at nested arrays.\n",
+      "status": "",
+      "output": "<h2> Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb\" target=\"_blank\">Lesson 6 - Part A</a>, we explored introduction to arrays and a few array methods. In this part we will delve deeper into array methods. We will also look at nested arrays.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Array Methods</h2>\n\nContinuing from the previous part, let's explore a few more of array methods:\n<ol>\n<li>`splice` for adding and removing elements at the a specific position</li>\n<li>`slice` for getting a sub-segment of an array</li>\n\n<li>`map` for creating a new array after applying a function on each element</li>\n\n</ol>\nLet us look at these in more detail with examples.",
+      "status": "",
+      "output": "<h2>Array Methods</h2>\n\nContinuing from the previous part, let's explore a few more of array methods:\n<ol>\n<li>`splice` for adding and removing elements at the a specific position</li>\n<li>`slice` for getting a sub-segment of an array</li>\n\n<li>`map` for creating a new array after applying a function on each element</li>\n\n</ol>\nLet us look at these in more detail with examples.",
+      "type": "html"
+    },
+    {
+      "code": "<h3>1. `splice`</h3>\n- `splice`: Adds or removes elements from an array at a specified index.\n<br>For removing elements splice takes two parameters: start index and number of elements to remove. \n<br>For adding elements it takes the above parameters and a list of elements to be added. \n<br>In the example below, we removed second and third elements. We also replace them with three new elements.",
+      "status": "",
+      "output": "<h3>1. `splice`</h3>\n- `splice`: Adds or removes elements from an array at a specified index.\n<br>For removing elements splice takes two parameters: start index and number of elements to remove. \n<br>For adding elements it takes the above parameters and a list of elements to be added. \n<br>In the example below, we removed second and third elements. We also replace them with three new elements.",
+      "type": "html"
+    },
+    {
+      "code": "// Removing elements\nlet fruits = [\"apple\", \"banana\", \"orange\", \"grape\"];\nfruits.splice(1, 2);\nshow(\"Fruits after removal:\", fruits); // Outputs: Fruits after removal: [\"apple\", \"grape\"]\n\n// Adding elements\nfruits = [\"apple\", \"banana\", \"orange\", \"grape\"]; //reassigning values\nfruits.splice(1, 2, \"kiwi\", \"pear\",\"mango\"); \nshow(\"Fruits after addition:\", fruits); // Outputs: Fruits after addition: [\"apple\", \"kiwi\", \"pear\", \"grape\"]",
+      "status": "[29]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Fruits after removal: [\n  \"apple\",\n  \"grape\"\n] <br>Fruits after addition: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>2. `slice`</h3>\n\n- `slice`: Returns a narrow subset portion of an array into a new array.\n<br>For example in the above array in stead of removing the second and third element you want to just get the second and third element in an array you could use slice.\n<br>Slices takes two inputs: \n<br>1. Index of start element (note: array indices start at 0 in JavaScript)\n<br>2. Index of end element. End element is not included in the sliced array.\n<br>The original array is not modified. \nNote: while splice takes start index and number of elements as inputs, splice takes start and end indices of the array as inputs.",
+      "status": "",
+      "output": "<h3>2. `slice`</h3>\n\n- `slice`: Returns a narrow subset portion of an array into a new array.\n<br>For example in the above array in stead of removing the second and third element you want to just get the second and third element in an array you could use slice.\n<br>Slices takes two inputs: \n<br>1. Index of start element (note: array indices start at 0 in JavaScript)\n<br>2. Index of end element. End element is not included in the sliced array.\n<br>The original array is not modified. \nNote: while splice takes start index and number of elements as inputs, splice takes start and end indices of the array as inputs.",
+      "type": "html"
+    },
+    {
+      "code": "let fruits=[ \"apple\", \"kiwi\", \"pear\", \"mango\", \"grape\" ];\nshow(\"Original array before slicing:\",fruits);\nlet someFruits=fruits.slice(1,4);\nshow(\"Original array after slicing:\",fruits);\nshow(\"Sliced array:\",someFruits);",
+      "status": "[32]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "Original array before slicing: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>Original array after slicing: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>Sliced array: [\n  \"kiwi\",\n  \"pear\",\n  \"mango\"\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "In the example below, there are two arrays. Each of them contains a list of names. \nCan you replace the second, third and fourth elements of second array with the second, third and fourth elements of the first array?",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "let array1=['Joss','John','Jay','Joe','Jeet'];\nlet array2=['Jane','Jill','Janu','Jassica','June'];\n//Step 1: get second, third, fourth elements of array1 using the functions `array.slice`\n\n//Step 2: insert these in place of second, third, and fourth elements of array2 using `array.splice`\n\n//Finally test if it worked:\nshow(array2)",
+      "status": "[33]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "[\n  \"Jane\",\n  \"Jill\",\n  \"Janu\",\n  \"Jassica\",\n  \"June\"\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "The array below has numbers from 1 to 10. Split them into two arrays of 1 to 5 and 5 to 10 using the function slice. \nThen combine them back to form the original array.\n",
+      "status": "",
+      "output": "The array below has numbers from 1 to 10. Split them into two arrays of 1 to 5 and 5 to 10 using the function slice. \nThen combine them back to form the original array.\n",
+      "type": "html"
+    },
+    {
+      "code": "let numbers=[1,2,3,4,5,6,7,8,9,10];\n//Step 1: get first five numbers in an array using slice\n\n//Step 2: get last five numbers in an array using slice\n\n//Step 3: concatenate them into an array\n\n//Finally, test if it worked by showing the array\n",
+      "status": "[1]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "<h3>3. `map`</h3>\n- `map`: Creates a new array by applying a provided function to every element in the calling array.\n<br>`map` works similar to forEach, except that it returns a new array. The `map` method is powerful for transforming each element in an array based on a provided function. It returns a new array with the results, leaving the original array unchanged.\n\n<br>The example below doubles each number in the `numbers` array using the `map` method.",
+      "status": "",
+      "output": "<h3>3. `map`</h3>\n- `map`: Creates a new array by applying a provided function to every element in the calling array.\n<br>`map` works similar to forEach, except that it returns a new array. The `map` method is powerful for transforming each element in an array based on a provided function. It returns a new array with the results, leaving the original array unchanged.\n\n<br>The example below doubles each number in the `numbers` array using the `map` method.",
+      "type": "html"
+    },
+    {
+      "code": "// Doubling each element using map\nlet numbers = [1, 2, 3, 4, 5];\nlet doubledNumbers = numbers.map(\n  function(num) {\n  return num * 2;\n}\n);\n\nshow(\"Original Numbers:\", numbers); // Outputs: Original Numbers: [1, 2, 3, 4, 5]\nshow(\"Doubled Numbers:\", doubledNumbers); // Outputs: Doubled Numbers: [2, 4, 6, 8, 10]\n",
+      "status": "[30]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Original Numbers: [\n  1,\n  2,\n  3,\n  4,\n  5\n] <br>Doubled Numbers: [\n  2,\n  4,\n  6,\n  8,\n  10\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "In the code below we want to check if each element is an even number. We have defined a function that checks if a number is even. \nUse it on the array 'numbers' and see if it works. Change the array to test the code.",
+      "status": "",
+      "output": "In the code below we want to check if each element is an even number. We have defined a function that checks if a number is even. \nUse it on the array 'numbers' and see if it works. Change the array to test the code.",
+      "type": "html"
+    },
+    {
+      "code": "function checkEven(num){\n  return num%2==0;\n}\nlet numbers=[1,2,3,4,5,6];\n//Use map to apply the checkEven function to each of the numbers in the above array and show the output\n",
+      "status": "[41]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Nested Arrays and Objects</h2>\nIn JavaScript, arrays can contain elements of any data type, including other arrays. When an array contains another array as one of its elements, it's called a nested array. Nested arrays allow you to create multidimensional data structures, which can be useful for representing complex data or organizing related data.\n<pre>\n  let matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\n </pre>\nIn this example, matrix is a nested array containing three inner arrays, each representing a row of a matrix. This structure creates a two-dimensional array.\nTo access elements in a nested array, you use multiple square brackets to navigate through the levels of nesting. For example, to access the element 5 in the matrix array:\n<pre>\nlet number = matrix[1][1];\nconsole.log(number); // Outputs: 5\n</pre>\nYou can use nested loops to iterate over elements in a nested array. For example, to log all elements in the matrix array:",
+      "status": "",
+      "output": "<h2>Nested Arrays and Objects</h2>\nIn JavaScript, arrays can contain elements of any data type, including other arrays. When an array contains another array as one of its elements, it's called a nested array. Nested arrays allow you to create multidimensional data structures, which can be useful for representing complex data or organizing related data.\n<pre>  let matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\n </pre>\nIn this example, matrix is a nested array containing three inner arrays, each representing a row of a matrix. This structure creates a two-dimensional array.\nTo access elements in a nested array, you use multiple square brackets to navigate through the levels of nesting. For example, to access the element 5 in the matrix array:\n<pre>let number = matrix[1][1];\nconsole.log(number); // Outputs: 5\n</pre>\nYou can use nested loops to iterate over elements in a nested array. For example, to log all elements in the matrix array:",
+      "type": "html"
+    },
+    {
+      "code": "let matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\nmatrix.forEach(function (row){\n  row.forEach(function (num){\n\tshow(num);\n  })\n})",
+      "status": "[44]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "1 <br>2 <br>3 <br>4 <br>5 <br>6 <br>7 <br>8 <br>9 <br>",
+      "type": "code"
+    },
+    {
+      "code": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within those rows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n",
+      "status": "",
+      "output": "\nThis nested loop iterates over each inner array (row) in the matrix array and then iterates over each element within those rows, showing each element to the console. Nested arrays provide a flexible way to represent and work with multidimensional data structures in JavaScript, allowing for complex data organization and manipulation. \n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Complex Nested Structures</h2>\nAn array can also contain objects and vice-verse. For example in the code below, marks of students are stored as objects inside an array. One can loop through each student record and extract the marks.",
+      "status": "",
+      "output": "<h2>Complex Nested Structures</h2>\nAn array can also contain objects and vice-verse. For example in the code below, marks of students are stored as objects inside an array. One can loop through each student record and extract the marks.",
+      "type": "html"
+    },
+    {
+      "code": "let marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nlet englishMarks=[];\nmarksOfStudents.forEach(function(studentRecord){\n  englishMarks.push(studentRecord.english);\n})\n\nshow(\"English marks of students:\",englishMarks);\n//Why don't you print maths marks as science marks as well?\n\n",
+      "status": "[32]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "English marks of students: [\n  100,\n  90,\n  80\n] <br>",
+      "type": "code"
+    },
+    {
+      "code": "Like, objects inside and array, one can have arrays inside an object. \nFor example instead of storing marks of each student as a record in an array,\n  one can store marks of each student for a subject as property of an object. Below example shows this\n<pre>\nlet subjectMarks={\n  english:[100,90,80],\n  maths:[75,85,70],\n  science:[80,75,85]\n}\n</pre>\nThe previous structure (student wise records) can be converted to this structure (object with subject-wise marks) by looping through the array:",
+      "status": "",
+      "output": "Like, objects inside and array, one can have arrays inside an object. \nFor example instead of storing marks of each student as a record in an array,\n  one can store marks of each student for a subject as property of an object. Below example shows this\n<pre>let subjectMarks={\n  english:[100,90,80],\n  maths:[75,85,70],\n  science:[80,75,85]\n}\n</pre>\nThe previous structure (student wise records) can be converted to this structure (object with subject-wise marks) by looping through the array:",
+      "type": "html"
+    },
+    {
+      "code": "let subjectMarks={\nenglish:[], maths:[],science:[]\n};\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nmarksOfStudents.forEach(function (studentRecord){\n  subjectMarks.english.push(studentRecord.english);\n   subjectMarks.maths.push(studentRecord.maths);\n   subjectMarks.science.push(studentRecord.science);\n});\n\nshow(\"Subject-wise marks:\",subjectMarks);\n",
+      "status": "[31]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Subject-wise marks: {\n  \"english\": [\n    100,\n    90,\n    80\n  ],\n  \"maths\": [\n    75,\n    85,\n    70\n  ],\n  \"science\": [\n    80,\n    75,\n    85\n  ]\n} <br>",
+      "type": "code"
+    },
+    {
+      "code": "Further nesting is also possible, i.e one can have arrays/objects within arrays/objects within arrays/objects.. so on.. \nBut such complex structures are beyond the scope of this course.",
+      "status": "",
+      "output": "Further nesting is also possible, i.e one can have arrays/objects within arrays/objects within arrays/objects.. so on.. \nBut such complex structures are beyond the scope of this course.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Summary</h2>\n<ul>\n<li> JavaScript provides several built-in array methods for manipulation, such as `push`, `pop`, `shift`, `unshift`, `splice`, `slice`, `concat`, `forEach` and `map`.</li>\n<li>Utilizing array methods enhances code readability and efficiency.</li>\n</ul>\nIn the next few lessons, we'll explore more advanced JavaScript concepts, including asynchronous programming and working with the Document Object Model (DOM) to modify the HTML page dynamically. Stay tuned!\n\n",
+      "status": "",
+      "output": "<h2>Summary</h2>\n<ul>\n<li> JavaScript provides several built-in array methods for manipulation, such as `push`, `pop`, `shift`, `unshift`, `splice`, `slice`, `concat`, `forEach` and `map`.</li>\n<li>Utilizing array methods enhances code readability and efficiency.</li>\n</ul>\nIn the next few lessons, we'll explore more advanced JavaScript concepts, including asynchronous programming and working with the Document Object Model (DOM) to modify the HTML page dynamically. Stay tuned!\n\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5: Objects</a></li>\n\t <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6 Part A: Arrays and Array Methods</a></li>\n  \n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5: Objects</a></li>\n\t <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6 Part A: Arrays and Array Methods</a></li>\n  \n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}

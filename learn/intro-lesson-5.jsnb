@@ -45,9 +45,9 @@
       "type": "code"
     },
     {
-      "code": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The functon can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</car>",
+      "code": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The function can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</car>",
       "status": "",
-      "output": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The functon can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</code>",
+      "output": "<h3>Object Methods/Functions</h3>\n\nObjects can also contain methods, which are functions stored as object properties: In the below  example, `start` is a method of the `car` object. \n<br>Can you add a function called \"stop\" in the object`car`. The function can just show the message \"Engine stopped\". You can test it by using the code <code>car.stop()</code>",
       "type": "html"
     },
     {
@@ -69,9 +69,9 @@
       "type": "code"
     },
     {
-      "code": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamycally add the property \"makingYear\" to the car?",
+      "code": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamically add the property \"makingYear\" to the car and show it?",
       "status": "",
-      "output": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamycally add the property \"makingYear\" tothe car and print it.",
+      "output": "<h3>Dynamic Property Names</h3>\n\nYou can use variables as property names in objects.\n<br>\nIn this example, the `propertyName` variable is used to dynamically set the property name of the `car` object. Can you dynamically add the property \"makingYear\" to the car and show it?",
       "type": "html"
     },
     {
@@ -123,9 +123,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\" target=\"_blank\">Lesson 4: Functions for Modular Code</a></li>\n  <li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb\" target=\"_blank\">Lesson 6: Arrays</a></li>\n  \n  </ul>",
       "type": "html"
     }
   ],
