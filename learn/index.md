@@ -25,15 +25,17 @@ show_in_menu: false
 - Parameters and return values
 - Scope and the difference between global and local variables
 
-## Lesson 5: Arrays (Coming soon...)
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb"> Lesson 5: Objects </a>
+- Understanding objects and their properties
+- Creating and manipulating objects
+- Using methods within objects
+
+
+## Lesson 6: Arrays - <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Part A</a> and <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
 - Introduction to arrays and their declaration
 - Accessing and modifying array elements
 - Iterating through arrays using loops
 
-## Lesson 6: Objects (Coming soon...)
-- Understanding objects and their properties
-- Creating and manipulating objects
-- Using methods within objects
 
 ## Lesson 7: DOM Manipulation (Coming soon...)
 - Overview of the Document Object Model (DOM)
