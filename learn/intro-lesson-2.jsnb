@@ -15,14 +15,14 @@
       "type": "html"
     },
     {
-      "code": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
+      "code": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n  <br>\n  Note: scrib.show is a Scribbler function. For other environments you have to use specific functions of those environments. `console.log` prints the value in the console of the browser.",
       "status": "",
-      "output": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n\n",
+      "output": "<h1>Variables and Data Types: Lesson 2 of 10</h1>\n\n<h2>Overview</h2>\n\nIn Lesson 1, we introduced JavaScript and executed simple code snippets. Now, let's dive deeper into the concept of variables and different data types in JavaScript.\n\n\nA variable is a container for storing data values. In JavaScript, you can declare variables using the `let`, `const`, or `var` keywords. For this lesson, we'll primarily use `let`.\n\n<h3>Example Code</h3>\nIn the example below, we declare a variable <i>message</i>, assign the string \"Hello, Variables!\" to it, and then use console.log to display the message in the console.\n  <br>\n  Note: scrib.show is a Scribbler function. For other environments you have to use specific functions of those environments. `console.log` prints the value in the console of the browser.",
       "type": "html"
     },
     {
-      "code": "// Variable declaration\nlet message;\n// Assigning a value to the variable\nmessage = \"Hello, Variables!\"; \n// Displaying the message\nconsole.log(message);\nshow(message)",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "// Variable declaration\nlet message;\n// Assigning a value to the variable\nmessage = \"Hello, Variables!\"; \n// Displaying the message\nconsole.log(message);\nscrib.show(message)",
+      "status": "[1]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Hello, Variables! <br>",
       "type": "code"
     },
@@ -45,8 +45,8 @@
       "type": "html"
     },
     {
-      "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\nlet fullName = firstName + \" \" + lastName;\nconsole.log(\"Full Name:\", fullName);\nshow(\"Full Name:\", fullName)",
-      "status": "[33]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\nlet fullName = firstName + \" \" + lastName;\nconsole.log(\"Full Name:\", fullName);\nscrib.show(\"Full Name:\", fullName)",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Full Name: John Doe <br>",
       "type": "code"
     },
@@ -57,8 +57,8 @@
       "type": "html"
     },
     {
-      "code": "let x = 10;\nlet y = 5;\nlet total = x + y;\nconsole.log(\"Sum:\", total);\nshow(\"Sum:\", total);",
-      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let x = 10;\nlet y = 5;\nlet total = x + y;\nconsole.log(\"Sum:\", total);\nscrib.show(\"Sum:\", total);",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Sum: 15 <br>",
       "type": "code"
     },
@@ -69,8 +69,8 @@
       "type": "html"
     },
     {
-      "code": "let x = 10;\nlet y = 15;\nshow(\"Is x greater than y:\", x>y);\nshow(\"Is x less  than y:\", x<y);\nshow(\"Is x equal to y:\", x==y);",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let x = 10;\nlet y = 15;\nscrib.show(\"Is x greater than y:\", x>y);\nscrib.show(\"Is x less  than y:\", x<y);\nscrib.show(\"Is x equal to y:\", x==y);",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Is x greater than y: false <br>Is x less  than y: true <br>Is x equal to y: false <br>",
       "type": "code"
     },
@@ -81,7 +81,7 @@
       "type": "html"
     },
     {
-      "code": "{//This is start of a block\n  let z=1;\n} //This is end of a block. z is defined in the block. Hence it is accessible only inside the block.\nconsole.log(z); //Throws undefined error\nshow(z);",
+      "code": "{//This is start of a block\n  let z=1;\n} //This is end of a block. z is defined in the block. Hence it is accessible only inside the block.\nconsole.log(z); //Throws undefined error\nscrib.show(z);",
       "status": "[-]",
       "output": "<p class=\"error\">z is not defined</p>",
       "type": "code"
@@ -93,8 +93,8 @@
       "type": "html"
     },
     {
-      "code": "let i=100;\n{\n  let i=1;\n  {\n\tlet i=2;\n\tshow(\"Inside the inner block, value of i is:\",i);\n  }\n  show(\"Inside the outer block, value of i is:\",i);\n}\nshow(\"Outside the blocks value of i is:\",i);",
-      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let i=100;\n{\n  let i=1;\n  {\n\tlet i=2;\n\tscrib.show(\"Inside the inner block, value of i is:\",i);\n  }\n  scrib.show(\"Inside the outer block, value of i is:\",i);\n}\nscrib.show(\"Outside the blocks value of i is:\",i);",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Inside the inner block, value of i is: 2 <br>Inside the outer block, value of i is: 1 <br>Outside the blocks value of i is: 100 <br>",
       "type": "code"
     },
@@ -123,8 +123,8 @@
       "type": "html"
     },
     {
-      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of z\nshow(z); //Shows the value of z",
-      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "{\n  var z=1;\n}\nconsole.log(z); //Shows the value of z\nscrib.show(z); //Shows the value of z",
+      "status": "[6]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "1 <br>",
       "type": "code"
     },
@@ -135,8 +135,8 @@
       "type": "html"
     },
     {
-      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nshow(\"Sum:\", total); //Expected to show 15\n",
-      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let num1 = 5;\nlet num2 = \"10\";\nlet total = num1 + num2;\nscrib.show(\"Sum:\", total); //Expected to show 15\n",
+      "status": "[7]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Sum: 510 <br>",
       "type": "code"
     },
@@ -147,8 +147,8 @@
       "type": "html"
     },
     {
-      "code": "let x='5';\nlet y='10';\nshow(\"Is x greater than y?\",x>y) //Expected to show false",
-      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let x='5';\nlet y='10';\nscrib.show(\"Is x greater than y?\",x>y) //Expected to show false",
+      "status": "[8]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Is x greater than y? true <br>",
       "type": "code"
     },
@@ -159,19 +159,19 @@
       "type": "html"
     },
     {
-      "code": "let x=20;\nlet y=20;\nshow(\"Is x same as y?: \",x=y);",
-      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let x=20;\nlet y=20;\nscrib.show(\"Is x same as y?: \",x=y);",
+      "status": "[9]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Is x same as y?:  20 <br>",
       "type": "code"
     },
     {
-      "code": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "code": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?\n",
       "status": "",
-      "output": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?",
+      "output": "In the next cell we are calculating the sum of two variables and displaying the total. There is an error stopping the result to be displayed. Can you correct and play it?\n",
       "type": "html"
     },
     {
-      "code": "let x=20;\nlet y=30;\n//Writing the code to calculate the sum\n{ \n  let total =20+30;\n}\nshow(\"The sum of x and y is:\",total);",
+      "code": "let x=20;\nlet y=30;\n//Writing the code to calculate the sum\n{ \n  let total =20+30;\n}\nscrib.show(\"The sum of x and y is:\",total);",
       "status": "[-]",
       "output": "<p class=\"error\">total is not defined</p>",
       "type": "code"

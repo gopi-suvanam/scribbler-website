@@ -27,14 +27,14 @@
       "type": "html"
     },
     {
-      "code": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
+      "code": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n<br>\n  Please note that scrib.show is a Scribbler function for showing an output in the cell. Whereas, console.log is a generic function across various JavaScript environments. The output of console.log is shown in the console of the environment (browser or terminal).",
       "status": "",
-      "output": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n",
+      "output": "<h2>Writing Simple JavaScript Code</h2>\n\nLet's start by writing and executing some basic JavaScript code. For this, we'll use the next cell. Please feel free to edit and run to experiment. Click the play button (►) after editing to see the output.\n<br>\n  Please note that scrib.show is a Scribbler function for showing an output in the cell. Whereas, console.log is a generic function across various JavaScript environments. The output of console.log is shown in the console of the environment (browser or terminal).",
       "type": "html"
     },
     {
-      "code": "// Welcome message\nlet greeting = \"Hello, Scribbler!\";\nconsole.log(greeting); //This is a standard JavaScript method that output the above message to the log of the Browser. \nshow(greeting); //This is a Scribbler specific function that shows the result below\n",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "// Welcome message\nlet greeting = \"Hello, Scribbler!\";\nconsole.log(greeting); //This is a standard JavaScript method that output the above message to the log of the Browser. \nscrib.show(greeting); //This is a Scribbler specific function that shows the result below\n",
+      "status": "[4]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Hello, Scribbler! <br>",
       "type": "code"
     },
@@ -45,9 +45,9 @@
       "type": "html"
     },
     {
-      "code": "// Basic arithmetic\nlet num1 = 10;\nlet num2 = 5;\nlet sum = num1 + num2;\nconsole.log(\"Sum:\", sum);\nshow(\"Sum:\",sum)",
-      "status": "[1]<br><span style=\"font-size:8px\">3ms<span></span></span>",
-      "output": "Sum 15 <br>",
+      "code": "// Basic arithmetic\nlet num1 = 10;\nlet num2 = 5;\nlet sum = num1 + num2;\nconsole.log(\"Sum:\", sum);\nscrib.show(\"Sum:\",sum)",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "Sum: 15 <br>",
       "type": "code"
     },
     {
@@ -63,8 +63,8 @@
       "type": "html"
     },
     {
-      "code": "let myName;\nconsole.log(\"Hello!\",myName);\nshow(\"Hello!\",myName);",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let myName;\nconsole.log(\"Hello!\",myName);\nscrib.show(\"Hello!\",myName);",
+      "status": "[6]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Hello! undefined <br>",
       "type": "code"
     },
@@ -75,7 +75,7 @@
       "type": "html"
     },
     {
-      "code": "let x=1;\nlet y=2;\n\n//Write code here\n\nshow(\"Product of the numbers is:\",product)",
+      "code": "let x=1;\nlet y=2;\n\n//Write code here\n\nscrib.show(\"Product of the numbers is:\",product)",
       "status": "[-]",
       "output": "<p class=\"error\">product is not defined</p>",
       "type": "code"
@@ -93,19 +93,19 @@
       "type": "html"
     },
     {
-      "code": "{\n  let x=1;\n  let y=2;\n  let total=x+y;\n  show(total)",
+      "code": "{\n  let x=1;\n  let y=2;\n  let total=x+y;\n  scrib.show(total)",
       "status": "[-]",
       "output": "<p class=\"error\">Unexpected end of input</p>",
       "type": "code"
     },
     {
-      "code": "let x=1;\nlet y=2;\nlet total=x+y;\nshow(Total);",
+      "code": "let x=1;\nlet y=2;\nlet total=x+y;\nscrib.show(Total);",
       "status": "[-]",
       "output": "<p class=\"error\">Total is not defined</p>",
       "type": "code"
     },
     {
-      "code": "let x=1;\nlet y=2;\n//let total=x+y;\nshow(total);",
+      "code": "let x=1;\nlet y=2;\n//let total=x+y;\nscrib.show(total);",
       "status": "[-]",
       "output": "<p class=\"error\">total is not defined</p>",
       "type": "code"

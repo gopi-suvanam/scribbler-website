@@ -21,14 +21,14 @@
       "type": "html"
     },
     {
-      "code": "<h2> Overview</h2>\n\nIn <a href='https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb' target='_blank'>Lesson 5</a>, we explored objects and the dynamic nature of the `this` keyword within the context of objects. Now, let's shift our focus to arrays, which are versatile data structures that allow you to store and manipulate collections of values. Additionally, we'll delve into various array methods for efficient data manipulation.\n\n<h3>Introduction to Arrays</h3>\n\nArrays are ordered lists that can hold multiple values of different data types. They are created using square brackets `[]`.\n\n<pre>\nlet fruits = [\"Apple\", \"Banana\", \"Orange\"];\n</pre>\n\n<h3>Accessing and Modifying Array Elements</h3>\n\nArray elements are accessed using indexes, and modifications can be made directly to the elements. Index of arrays in JavaScript start at 0 (not 1). So the first element is index by 0. The next by 1, so on and so forth.\n<pre>\nlet firstFruit = fruits[0]; // Accessing the first element (index 0)\n\nfruits[1] = \"Grapes\"; // Modifying the second element\n</pre>\n<h3>Types of Elements</h3>\nArrays can contain any type of elements. They can have strings, numbers, null values, mixed types, objects, and even other arrays. The array below has mixed types if elements.\n<pre>\nlet marks = [50, 60, \"Unknown\", \"Absent\",100];\n</pre>\n<h3>Example</h3>\nIn the example below, try to modify the third element (referred by the index 2) to Grapes and then show it in the output. <br><b>Note:</b> `show` is a Scribbler function. in other environments you can use console.log.\n\n",
+      "code": "<h2> Overview</h2>\n\nIn <a href='https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb' target='_blank'>Lesson 5</a>, we explored objects and the dynamic nature of the `this` keyword within the context of objects. Now, let's shift our focus to arrays, which are versatile data structures that allow you to store and manipulate collections of values. Additionally, we'll delve into various array methods for efficient data manipulation.\n\n<h3>Introduction to Arrays</h3>\n\nArrays are ordered lists that can hold multiple values of different data types. They are created using square brackets `[]`.\n\n<pre>\nlet fruits = [\"Apple\", \"Banana\", \"Orange\"];\n</pre>\n\n<h3>Accessing and Modifying Array Elements</h3>\n\nArray elements are accessed using indexes, and modifications can be made directly to the elements. Index of arrays in JavaScript start at 0 (not 1). So the first element is index by 0. The next by 1, so on and so forth.\n<pre>\nlet firstFruit = fruits[0]; // Accessing the first element (index 0)\n\nfruits[1] = \"Grapes\"; // Modifying the second element\n</pre>\n<h3>Types of Elements</h3>\nArrays can contain any type of elements. They can have strings, numbers, null values, mixed types, objects, and even other arrays. The array below has mixed types if elements.\n<pre>\nlet marks = [50, 60, \"Unknown\", \"Absent\",100];\n</pre>\n<h3>Example</h3>\nIn the example below, try to modify the third element (referred by the index 2) to Grapes and then show it in the output. <br><b>Note:</b> `scrib.show` is a Scribbler function. in other environments you can use console.log.\n\n",
       "status": "",
-      "output": "<h2> Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5</a>, we explored objects and the dynamic nature of the `this` keyword within the context of objects. Now, let's shift our focus to arrays, which are versatile data structures that allow you to store and manipulate collections of values. Additionally, we'll delve into various array methods for efficient data manipulation.\n\n<h3>Introduction to Arrays</h3>\n\nArrays are ordered lists that can hold multiple values of different data types. They are created using square brackets `[]`.\n\n<pre>let fruits = [\"Apple\", \"Banana\", \"Orange\"];\n</pre>\n\n<h3>Accessing and Modifying Array Elements</h3>\n\nArray elements are accessed using indexes, and modifications can be made directly to the elements. Index of arrays in JavaScript start at 0 (not 1). So the first element is index by 0. The next by 1, so on and so forth.\n<pre>let firstFruit = fruits[0]; // Accessing the first element (index 0)\n\nfruits[1] = \"Grapes\"; // Modifying the second element\n</pre>\n<h3>Types of Elements</h3>\nArrays can contain any type of elements. They can have strings, numbers, null values, mixed types, objects, and even other arrays. The array below has mixed types if elements.\n<pre>let marks = [50, 60, \"Unknown\", \"Absent\",100];\n</pre>\n<h3>Example</h3>\nIn the example below, try to modify the third element (referred by the index 2) to Grapes and then show it in the output. <br><b>Note:</b> `show` is a Scribbler function. in other environments you can use console.log.\n\n",
+      "output": "<h2> Overview</h2>\n\nIn <a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-5.jsnb\" target=\"_blank\">Lesson 5</a>, we explored objects and the dynamic nature of the `this` keyword within the context of objects. Now, let's shift our focus to arrays, which are versatile data structures that allow you to store and manipulate collections of values. Additionally, we'll delve into various array methods for efficient data manipulation.\n\n<h3>Introduction to Arrays</h3>\n\nArrays are ordered lists that can hold multiple values of different data types. They are created using square brackets `[]`.\n\n<pre>let fruits = [\"Apple\", \"Banana\", \"Orange\"];\n</pre>\n\n<h3>Accessing and Modifying Array Elements</h3>\n\nArray elements are accessed using indexes, and modifications can be made directly to the elements. Index of arrays in JavaScript start at 0 (not 1). So the first element is index by 0. The next by 1, so on and so forth.\n<pre>let firstFruit = fruits[0]; // Accessing the first element (index 0)\n\nfruits[1] = \"Grapes\"; // Modifying the second element\n</pre>\n<h3>Types of Elements</h3>\nArrays can contain any type of elements. They can have strings, numbers, null values, mixed types, objects, and even other arrays. The array below has mixed types if elements.\n<pre>let marks = [50, 60, \"Unknown\", \"Absent\",100];\n</pre>\n<h3>Example</h3>\nIn the example below, try to modify the third element (referred by the index 2) to Grapes and then show it in the output. <br><b>Note:</b> `scrib.show` is a Scribbler function. in other environments you can use console.log.\n\n",
       "type": "html"
     },
     {
-      "code": "let fruits = [\"Apple\", \"Banana\", \"Orange\"];\n\nlet firstFruit = fruits[0]; // Accessing the first element (index 0)\nconsole.log(\"First Fruit:\", firstFruit); // Outputs: First Fruit: Apple\nshow(firstFruit)\nfruits[1] = \"Grapes\"; // Modifying the second element\nshow(\"Updated Fruits:\", fruits); // Outputs: Updated Fruits: [\"Apple\", \"Grapes\", \"Orange\"]\n/* Write your code below to update last fruit and show it */\n",
-      "status": "[16]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "let fruits = [\"Apple\", \"Banana\", \"Orange\"];\n\nlet firstFruit = fruits[0]; // Accessing the first element (index 0)\nconsole.log(\"First Fruit:\", firstFruit); // Outputs: First Fruit: Apple\nscrib.show(firstFruit)\nfruits[1] = \"Grapes\"; // Modifying the second element\nscrib.show(\"Updated Fruits:\", fruits); // Outputs: Updated Fruits: [\"Apple\", \"Grapes\", \"Orange\"]\n/* Write your code below to update last fruit and show it */\n",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Apple <br>Updated Fruits: [\n  \"Apple\",\n  \"Grapes\",\n  \"Orange\"\n] <br>",
       "type": "code"
     },
@@ -39,8 +39,8 @@
       "type": "html"
     },
     {
-      "code": "function compareFirstTwoElements(myArray){\n  if (myArray[0]==myArray[1]){\n\tshow(\"They are the same\");\n  }else{\n\tshow(\"They are not the same\");\n  }\n}\nlet testArray = [1,1];\ncompareFirstTwoElements(testArray);\n//Test this code by changing the testArray to following values:\n//[1,2]\n//['a','b']\n//['a','a']\n//['a','a','b']\n//[1,'1']\n//[1,'2',3]",
-      "status": "[17]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "function compareFirstTwoElements(myArray){\n  if (myArray[0]==myArray[1]){\n\tscrib.show(\"They are the same\");\n  }else{\n\tscrib.show(\"They are not the same\");\n  }\n}\nlet testArray = [1,1];\ncompareFirstTwoElements(testArray);\n//Test this code by changing the testArray to following values:\n//[1,2]\n//['a','b']\n//['a','a']\n//['a','a','b']\n//[1,'1']\n//[1,'2',3]",
+      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "They are the same <br>",
       "type": "code"
     },
@@ -57,8 +57,8 @@
       "type": "html"
     },
     {
-      "code": "let colors = [\"red\", \"blue\", \"green\"];\n\ncolors.push(\"yellow\"); // Adds \"yellow\" to the end\nshow(\"Updated Colors:\", colors); // Outputs: Updated Colors: [\"red\", \"blue\", \"green\", \"yellow\"]\n\nlet removedColor = colors.pop(); // Removes the last element (\"yellow\")\nshow(\"Removed Color:\", removedColor); // Outputs: Removed Color: yellow\n",
-      "status": "[18]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let colors = [\"red\", \"blue\", \"green\"];\n\ncolors.push(\"yellow\"); // Adds \"yellow\" to the end\nscrib.show(\"Updated Colors:\", colors); // Outputs: Updated Colors: [\"red\", \"blue\", \"green\", \"yellow\"]\n\nlet removedColor = colors.pop(); // Removes the last element (\"yellow\")\nscrib.show(\"Removed Color:\", removedColor); // Outputs: Removed Color: yellow\n",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Updated Colors: [\n  \"red\",\n  \"blue\",\n  \"green\",\n  \"yellow\"\n] <br>Removed Color: yellow <br>",
       "type": "code"
     },
@@ -69,8 +69,8 @@
       "type": "html"
     },
     {
-      "code": "let colors = [\"red\", \"blue\", \"green\"];\n//Pop the last color and check how the array shows\n\nshow(\"colors after  popping a color\",colors) //This should show [\"red\",\"blue\"]\n//Push purple color and check how the array shows\n\n\nshow(\"colors after pushing purple\",colors) //This should show [\"red\",\"blue\",\"purple\"]",
-      "status": "[19]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "let colors = [\"red\", \"blue\", \"green\"];\n//Pop the last color and check how the array shows\n\nscrib.show(\"colors after  popping a color\",colors) //This should show [\"red\",\"blue\"]\n//Push purple color and check how the array shows\n\n\nscrib.show(\"colors after pushing purple\",colors) //This should show [\"red\",\"blue\",\"purple\"]",
+      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "colors after  popping a color [\n  \"red\",\n  \"blue\",\n  \"green\"\n] <br>colors after pushing purple [\n  \"red\",\n  \"blue\",\n  \"green\"\n] <br>",
       "type": "code"
     },
@@ -81,8 +81,8 @@
       "type": "html"
     },
     {
-      "code": "let evens=[];\nfor(let num=1;num<=10;num=num+1){\n  if(num % 2==0){\n\tevens.push(num);\n  }\n}\nshow(\"Even numbers:\",evens)",
-      "status": "[20]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let evens=[];\nfor(let num=1;num<=10;num=num+1){\n  if(num % 2==0){\n\tevens.push(num);\n  }\n}\nscrib.show(\"Even numbers:\",evens)",
+      "status": "[5]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Even numbers: [\n  2,\n  4,\n  6,\n  8,\n  10\n] <br>",
       "type": "code"
     },
@@ -93,8 +93,8 @@
       "type": "html"
     },
     {
-      "code": "let numbers = [2, 3, 4];\n\nnumbers.unshift(1); // Adds 1 to the beginning\nshow(\"Updated Numbers:\", numbers); // Outputs: Updated Numbers: [1, 2, 3, 4]\n\nlet removedNumber = numbers.shift(); // Removes the first element (1)\nshow(\"Removed Number:\", removedNumber); // Outputs: Removed Number: 1",
-      "status": "[21]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let numbers = [2, 3, 4];\n\nnumbers.unshift(1); // Adds 1 to the beginning\nscrib.show(\"Updated Numbers:\", numbers); // Outputs: Updated Numbers: [1, 2, 3, 4]\n\nlet removedNumber = numbers.shift(); // Removes the first element (1)\nscrib.show(\"Removed Number:\", removedNumber); // Outputs: Removed Number: 1",
+      "status": "[8]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Updated Numbers: [\n  1,\n  2,\n  3,\n  4\n] <br>Removed Number: 1 <br>",
       "type": "code"
     },
@@ -105,8 +105,8 @@
       "type": "html"
     },
     {
-      "code": "let numbers = [2, 3, 4];\nlet poppedNumber=numbers.pop()\nshow(\"Popped number:\",poppedNumber);\nnumbers.unshift(poppedNumber);\nshow(\"numbers after popping and unshifting:\",numbers) \n//Now remove the first number using shift and add it at the end using numbers.push. Write code below and test.\n\n\nshow(\"Testing.. numbers after shifting and pushing:\",numbers) \n//After you do the above steps, you should be back to original array of [2,3,4]",
-      "status": "[22]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let numbers = [2, 3, 4];\nlet poppedNumber=numbers.pop()\nscrib.show(\"Popped number:\",poppedNumber);\nnumbers.unshift(poppedNumber);\nscrib.show(\"numbers after popping and unshifting:\",numbers) \n//Now remove the first number using shift and add it at the end using numbers.push. Write code below and test.\n\n\nscrib.show(\"Testing.. numbers after shifting and pushing:\",numbers) \n//After you do the above steps, you should be back to original array of [2,3,4]",
+      "status": "[9]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Popped number: 4 <br>numbers after popping and unshifting: [\n  4,\n  2,\n  3\n] <br>Testing.. numbers after shifting and pushing: [\n  4,\n  2,\n  3\n] <br>",
       "type": "code"
     },
@@ -117,8 +117,8 @@
       "type": "html"
     },
     {
-      "code": "let arr1 = [1, 2, 3];\nlet arr2 = [4, 5, 6];\n\nlet mergedArray = arr1.concat(arr2);\nshow(\"Merged Array:\", mergedArray); ",
-      "status": "[23]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let arr1 = [1, 2, 3];\nlet arr2 = [4, 5, 6];\n\nlet mergedArray = arr1.concat(arr2);\nscrib.show(\"Merged Array:\", mergedArray); ",
+      "status": "[10]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Merged Array: [\n  1,\n  2,\n  3,\n  4,\n  5,\n  6\n] <br>",
       "type": "code"
     },
@@ -129,14 +129,14 @@
       "type": "html"
     },
     {
-      "code": "let numbers = [1, 2, 3, 4, 5];\n\nnumbers.forEach(\n  function (num) {\n  show(num * 2); //Prints the doubled numbers\n}\n);\n\n",
-      "status": "[24]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "code": "let numbers = [1, 2, 3, 4, 5];\n\nnumbers.forEach(\n  function (num) {\n  scrib.show(num * 2); //Prints the doubled numbers\n}\n);\n\n",
+      "status": "[11]<br><span style=\"font-size:8px\">3ms<span></span></span>",
       "output": "2 <br>4 <br>6 <br>8 <br>10 <br>",
       "type": "code"
     },
     {
-      "code": "let numbers = [1, 2, 3, 4, 5];\n function double(num) {\n  show(num * 2); //Prints the doubled numbers\n}\nnumbers.forEach(double);\n",
-      "status": "[25]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "code": "let numbers = [1, 2, 3, 4, 5];\n function double(num) {\n  scrib.show(num * 2); //Prints the doubled numbers\n}\nnumbers.forEach(double);\n",
+      "status": "[12]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "2 <br>4 <br>6 <br>8 <br>10 <br>",
       "type": "code"
     },
@@ -147,8 +147,8 @@
       "type": "html"
     },
     {
-      "code": "let numbers = [1, 2, 3, 4, 5];\nlet sum=0;\nnumbers.forEach(function (num) {\n  /* Write the code in the next line to update sum */\n  \n});\n\nshow(\"Sum is:\",sum);\nif(sum==15){\n  show(\"It worked!!!\")\n}else{\n  show(\"Try again please\")\n}",
-      "status": "[28]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let numbers = [1, 2, 3, 4, 5];\nlet sum=0;\nnumbers.forEach(function (num) {\n  /* Write the code in the next line to update sum */\n  \n});\n\nscrib.show(\"Sum is:\",sum);\nif(sum==15){\n  scrib.show(\"It worked!!!\")\n}else{\n  scrib.show(\"Try again please\")\n}",
+      "status": "[14]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Sum is: 0 <br>Try again please <br>",
       "type": "code"
     },

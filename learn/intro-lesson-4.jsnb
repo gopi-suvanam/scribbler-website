@@ -21,8 +21,8 @@
       "type": "html"
     },
     {
-      "code": "\nfunction greet() {\n  console.log(\"Hello, world!\");\n  show(\"Hello, world!\");\n}\ngreet();\n",
-      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "\nfunction greet() {\n  console.log(\"Hello, world!\");\n  scrib.show(\"Hello, world!\");\n}\ngreet();\n",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Hello, world! <br>",
       "type": "code"
     },
@@ -33,8 +33,8 @@
       "type": "html"
     },
     {
-      "code": "function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n  show(\"Hello, \" + name + \"!\"); \n  \n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!",
-      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "function greetWithName(name) {\n  console.log(\"Hello, \" + name + \"!\");\n  scrib.show(\"Hello, \" + name + \"!\"); \n  \n}\n\ngreetWithName(\"Alice\"); // Outputs: Hello, Alice!",
+      "status": "[3]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Hello, Alice! <br>",
       "type": "code"
     },
@@ -45,8 +45,8 @@
       "type": "html"
     },
     {
-      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nshow(\"Sum:\", sum); // Outputs: Sum: 10",
-      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(3, 7);\nscrib.show(\"Sum:\", sum); // Outputs: Sum: 10",
+      "status": "[4]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Sum: 10 <br>",
       "type": "code"
     },
@@ -57,15 +57,15 @@
       "type": "html"
     },
     {
-      "code": "let globalVar = \"I am global\";\n\nfunction exampleFunction() {\n  show(globalVar); // Outputs: I am global\n}\nexampleFunction()",
-      "status": "[9]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let globalVar = \"I am global\";\n\nfunction exampleFunction() {\n  scrib.show(globalVar); // Outputs: I am global\n}\nexampleFunction()",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "I am global <br>",
       "type": "code"
     },
     {
-      "code": "function exampleFunction() {\n  let localVar = \"I am local\";\n  show(\"Inside the function:\",localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nshow(localVar); // ReferenceError: localVar is not defined",
+      "code": "function exampleFunction() {\n  let localVar = \"I am local\";\n  show(\"Inside the function:\",localVar);\n}\n\nexampleFunction(); // Outputs: I am local\nscrib.show(localVar); // ReferenceError: localVar is not defined",
       "status": "[-]",
-      "output": "Inside the dunction: I am local <br><p class=\"error\">localVar is not defined</p>",
+      "output": "<span style=\"color:orange\">Warning! show() is being deprecated. Use scrib.show().</span> <br>Inside the function: I am local <br><p class=\"error\">localVar is not defined</p>",
       "type": "code"
     },
     {
@@ -81,8 +81,8 @@
       "type": "html"
     },
     {
-      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(5, 3);\nshow(\"Sum:\", sum); ",
-      "status": "[10]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "function addNumbers(a, b) {\n  return a + b;\n}\n\nlet sum = addNumbers(5, 3);\nscrib.show(\"Sum:\", sum); ",
+      "status": "[7]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Sum: 8 <br>",
       "type": "code"
     },
@@ -93,8 +93,8 @@
       "type": "html"
     },
     {
-      "code": "function multiplyNumbers(a, b) {\n //Write your code here\n  \n}\n\nlet product = multiplyNumbers(5, 3);\nif(product==15){\n  show(\"Great it worked!\")\n}else{\n  show(\"Please try again..\");\n}",
-      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "function multiplyNumbers(a, b) {\n //Write your code here\n  \n}\n\nlet product = multiplyNumbers(5, 3);\nif(product==15){\n  scrib.show(\"Great it worked!\")\n}else{\n  scrib.show(\"Please try again..\");\n}",
+      "status": "[9]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Please try again.. <br>",
       "type": "code"
     },
@@ -105,8 +105,8 @@
       "type": "html"
     },
     {
-      "code": "function greet(message, name) {\n  show(message + \", \" + name + \"!\");\n}\n\ngreet(\"Good morning\", \"Alice\"); // Outputs: Good morning, Alice!\ngreet(\"Hello\", \"Bob\"); // Outputs: Hello, Bob!\n",
-      "status": "[14]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "function greet(message, name) {\n  scrib.show(message + \", \" + name + \"!\");\n}\n\ngreet(\"Good morning\", \"Alice\"); // Outputs: Good morning, Alice!\ngreet(\"Hello\", \"Bob\"); // Outputs: Hello, Bob!\n",
+      "status": "[10]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Good morning, Alice! <br>Hello, Bob! <br>",
       "type": "code"
     },
@@ -117,8 +117,8 @@
       "type": "html"
     },
     {
-      "code": "function findMax(num1, num2) {\n  if(num1 > num2){\n\treturn  num1;\n  }else{\n\treturn num2;\n  }\n}\n\nlet maximum = findMax(12, 8);\nshow(\"Maximum:\", maximum); ",
-      "status": "[15]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "function findMax(num1, num2) {\n  if(num1 > num2){\n\treturn  num1;\n  }else{\n\treturn num2;\n  }\n}\n\nlet maximum = findMax(12, 8);\nscrib.show(\"Maximum:\", maximum); ",
+      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Maximum: 12 <br>",
       "type": "code"
     },
@@ -129,8 +129,8 @@
       "type": "html"
     },
     {
-      "code": "function calculateRectangleArea(length, width) {\n  return length * width;\n}\n\nlet area = calculateRectangleArea(5, 10);\nshow(\"Rectangle Area:\", area);",
-      "status": "[18]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "function calculateRectangleArea(length, width) {\n  return length * width;\n}\n\nlet area = calculateRectangleArea(5, 10);\nscrib.show(\"Rectangle Area:\", area);",
+      "status": "[12]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Rectangle Area: 50 <br>",
       "type": "code"
     },
@@ -141,8 +141,8 @@
       "type": "html"
     },
     {
-      "code": "function isEven(number) {\n  let reminder=number % 2;\n  let isEven = (reminder==0);\n  return isEven; //% is reminder\n}\n\nshow(\"Is 10 even?\", isEven(10)); \nshow(\"Is 7 even?\", isEven(7));  ",
-      "status": "[4]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "function isEven(number) {\n  let reminder=number % 2;\n  let isEven = (reminder==0);\n  return isEven; //% is reminder\n}\n\nscrib.show(\"Is 10 even?\", isEven(10)); \nscrib.show(\"Is 7 even?\", isEven(7));  ",
+      "status": "[14]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Is 10 even? true <br>Is 7 even? false <br>",
       "type": "code"
     },
@@ -153,8 +153,8 @@
       "type": "html"
     },
     {
-      "code": "function sumFirstN(n){\n  let sum =0;\n  for(let i=1;i<=n;i++){\n  \tsum=sum+i;\n  }\n  return sum;\n}\nshow(\"Sum of first 10 numbers:\",sumFirstN(10));\nshow(\"Sum of first 100 numbers:\",sumFirstN(100));\nshow(\"Sum of first 1000 numbers:\",sumFirstN(1000));\n",
-      "status": "[22]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "function sumFirstN(n){\n  let sum =0;\n  for(let i=1;i<=n;i++){\n  \tsum=sum+i;\n  }\n  return sum;\n}\nscrib.show(\"Sum of first 10 numbers:\",sumFirstN(10));\nscrib.show(\"Sum of first 100 numbers:\",sumFirstN(100));\nscrib.show(\"Sum of first 1000 numbers:\",sumFirstN(1000));\n",
+      "status": "[16]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Sum of first 10 numbers: 55 <br>Sum of first 100 numbers: 5050 <br>Sum of first 1000 numbers: 500500 <br>",
       "type": "code"
     },
@@ -165,8 +165,8 @@
       "type": "html"
     },
     {
-      "code": "function sumOfEvenNumbers(n){\n  let sum=0;\n\n  for(let i=1;i<=100;i=i+1){\n\t//Write your code here, to update the sum\n  }\n\t//Write your code here to return the sum\n\n\t//End of code\n}\n\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nshow(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
-      "status": "[28]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "function sumOfEvenNumbers(n){\n  let sum=0;\n\n  for(let i=1;i<=100;i=i+1){\n\t//Write your code here, to update the sum\n  }\n\t//Write your code here to return the sum\n\n\t//End of code\n}\n\nscrib.show(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(10)) //this should print 30\nscrib.show(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(100)) //this should print 2550\nscrib.show(\"Sum of even numbers less than 100 is:\",sumOfEvenNumbers(1000)) //this should print 250500\n\n",
+      "status": "[17]<br><span style=\"font-size:8px\">2ms<span></span></span>",
       "output": "Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>Sum of even numbers less than 100 is: undefined <br>",
       "type": "code"
     },
@@ -183,8 +183,8 @@
       "type": "html"
     },
     {
-      "code": "let x=1;\nlet y=2;\n\nfunction greaterNumber(num1,num2){\n  if(x>y) {\n\t\treturn x;\n  }\n  else{\n\treturn y;\n  }\n}\n\nshow(\"Greater number between 1 and 2 is:\")\nshow(greaterNumber(1,2));  //This shows correctly\n\n\nshow(\"Greater number between 10 and 100 is:\")\nshow(greaterNumber(10,100)); //This is incorrect. Please change the code in the funciton to make this work.",
-      "status": "[5]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "code": "let x=1;\nlet y=2;\n\nfunction greaterNumber(num1,num2){\n  if(x>y) {\n\t\treturn x;\n  }\n  else{\n\treturn y;\n  }\n}\n\nscrib.show(\"Greater number between 1 and 2 is:\")\nscrib.show(greaterNumber(1,2));  //This shows correctly\n\n\nscrib.show(\"Greater number between 10 and 100 is:\")\nscrib.show(greaterNumber(10,100)); //This is incorrect. Please change the code in the funciton to make this work.",
+      "status": "[18]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Greater number between 1 and 2 is: <br>2 <br>Greater number between 10 and 100 is: <br>2 <br>",
       "type": "code"
     },

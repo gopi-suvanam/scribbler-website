@@ -39,8 +39,8 @@
       "type": "html"
     },
     {
-      "code": "// Removing elements\nlet fruits = [\"apple\", \"banana\", \"orange\", \"grape\"];\nfruits.splice(1, 2);\nshow(\"Fruits after removal:\", fruits); // Outputs: Fruits after removal: [\"apple\", \"grape\"]\n\n// Adding elements\nfruits = [\"apple\", \"banana\", \"orange\", \"grape\"]; //reassigning values\nfruits.splice(1, 2, \"kiwi\", \"pear\",\"mango\"); \nshow(\"Fruits after addition:\", fruits); // Outputs: Fruits after addition: [\"apple\", \"kiwi\", \"pear\", \"grape\"]",
-      "status": "[29]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "// Removing elements\nlet fruits = [\"apple\", \"banana\", \"orange\", \"grape\"];\nfruits.splice(1, 2);\nscrib.show(\"Fruits after removal:\", fruits); // Outputs: Fruits after removal: [\"apple\", \"grape\"]\n\n// Adding elements\nfruits = [\"apple\", \"banana\", \"orange\", \"grape\"]; //reassigning values\nfruits.splice(1, 2, \"kiwi\", \"pear\",\"mango\"); \nscrib.show(\"Fruits after addition:\", fruits); // Outputs: Fruits after addition: [\"apple\", \"kiwi\", \"pear\", \"grape\"]",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Fruits after removal: [\n  \"apple\",\n  \"grape\"\n] <br>Fruits after addition: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>",
       "type": "code"
     },
@@ -51,8 +51,8 @@
       "type": "html"
     },
     {
-      "code": "let fruits=[ \"apple\", \"kiwi\", \"pear\", \"mango\", \"grape\" ];\nshow(\"Original array before slicing:\",fruits);\nlet someFruits=fruits.slice(1,4);\nshow(\"Original array after slicing:\",fruits);\nshow(\"Sliced array:\",someFruits);",
-      "status": "[32]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "code": "let fruits=[ \"apple\", \"kiwi\", \"pear\", \"mango\", \"grape\" ];\nscrib.show(\"Original array before slicing:\",fruits);\nlet someFruits=fruits.slice(1,4);\nscrib.show(\"Original array after slicing:\",fruits);\nscrib.show(\"Sliced array:\",someFruits);",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Original array before slicing: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>Original array after slicing: [\n  \"apple\",\n  \"kiwi\",\n  \"pear\",\n  \"mango\",\n  \"grape\"\n] <br>Sliced array: [\n  \"kiwi\",\n  \"pear\",\n  \"mango\"\n] <br>",
       "type": "code"
     },
@@ -63,8 +63,8 @@
       "type": "code"
     },
     {
-      "code": "let array1=['Joss','John','Jay','Joe','Jeet'];\nlet array2=['Jane','Jill','Janu','Jassica','June'];\n//Step 1: get second, third, fourth elements of array1 using the functions `array.slice`\n\n//Step 2: insert these in place of second, third, and fourth elements of array2 using `array.splice`\n\n//Finally test if it worked:\nshow(array2)",
-      "status": "[33]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "let array1=['Joss','John','Jay','Joe','Jeet'];\nlet array2=['Jane','Jill','Janu','Jassica','June'];\n//Step 1: get second, third, fourth elements of array1 using the functions `array.slice`\n\n//Step 2: insert these in place of second, third, and fourth elements of array2 using `array.splice`\n\n//Finally test if it worked:\nscrib.show(array2)",
+      "status": "[4]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "[\n  \"Jane\",\n  \"Jill\",\n  \"Janu\",\n  \"Jassica\",\n  \"June\"\n] <br>",
       "type": "code"
     },
@@ -87,8 +87,8 @@
       "type": "html"
     },
     {
-      "code": "// Doubling each element using map\nlet numbers = [1, 2, 3, 4, 5];\nlet doubledNumbers = numbers.map(\n  function(num) {\n  return num * 2;\n}\n);\n\nshow(\"Original Numbers:\", numbers); // Outputs: Original Numbers: [1, 2, 3, 4, 5]\nshow(\"Doubled Numbers:\", doubledNumbers); // Outputs: Doubled Numbers: [2, 4, 6, 8, 10]\n",
-      "status": "[30]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "// Doubling each element using map\nlet numbers = [1, 2, 3, 4, 5];\nlet doubledNumbers = numbers.map(\n  function(num) {\n  return num * 2;\n}\n);\n\nscrib.show(\"Original Numbers:\", numbers); // Outputs: Original Numbers: [1, 2, 3, 4, 5]\nscrib.show(\"Doubled Numbers:\", doubledNumbers); // Outputs: Doubled Numbers: [2, 4, 6, 8, 10]\n",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Original Numbers: [\n  1,\n  2,\n  3,\n  4,\n  5\n] <br>Doubled Numbers: [\n  2,\n  4,\n  6,\n  8,\n  10\n] <br>",
       "type": "code"
     },
@@ -111,8 +111,8 @@
       "type": "html"
     },
     {
-      "code": "let matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\nmatrix.forEach(function (row){\n  row.forEach(function (num){\n\tshow(num);\n  })\n})",
-      "status": "[44]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "let matrix = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\nmatrix.forEach(function (row){\n  row.forEach(function (num){\n\tscrib.show(num);\n  })\n})",
+      "status": "[6]<br><span style=\"font-size:8px\">6ms<span></span></span>",
       "output": "1 <br>2 <br>3 <br>4 <br>5 <br>6 <br>7 <br>8 <br>9 <br>",
       "type": "code"
     },
@@ -129,8 +129,8 @@
       "type": "html"
     },
     {
-      "code": "let marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nlet englishMarks=[];\nmarksOfStudents.forEach(function(studentRecord){\n  englishMarks.push(studentRecord.english);\n})\n\nshow(\"English marks of students:\",englishMarks);\n//Why don't you print maths marks as science marks as well?\n\n",
-      "status": "[32]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nlet englishMarks=[];\nmarksOfStudents.forEach(function(studentRecord){\n  englishMarks.push(studentRecord.english);\n})\n\nscrib.show(\"English marks of students:\",englishMarks);\n//Why don't you print maths marks as science marks as well?\n\n",
+      "status": "[7]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "English marks of students: [\n  100,\n  90,\n  80\n] <br>",
       "type": "code"
     },
@@ -141,8 +141,8 @@
       "type": "html"
     },
     {
-      "code": "let subjectMarks={\nenglish:[], maths:[],science:[]\n};\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nmarksOfStudents.forEach(function (studentRecord){\n  subjectMarks.english.push(studentRecord.english);\n   subjectMarks.maths.push(studentRecord.maths);\n   subjectMarks.science.push(studentRecord.science);\n});\n\nshow(\"Subject-wise marks:\",subjectMarks);\n",
-      "status": "[31]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let subjectMarks={\nenglish:[], maths:[],science:[]\n};\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n\nmarksOfStudents.forEach(function (studentRecord){\n  subjectMarks.english.push(studentRecord.english);\n   subjectMarks.maths.push(studentRecord.maths);\n   subjectMarks.science.push(studentRecord.science);\n});\n\nscrib.show(\"Subject-wise marks:\",subjectMarks);\n",
+      "status": "[8]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Subject-wise marks: {\n  \"english\": [\n    100,\n    90,\n    80\n  ],\n  \"maths\": [\n    75,\n    85,\n    70\n  ],\n  \"science\": [\n    80,\n    75,\n    85\n  ]\n} <br>",
       "type": "code"
     },

@@ -27,7 +27,7 @@
       "type": "html"
     },
     {
-      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\nlet personName = person.name; // Accessing property by key using dot notation\nshow(\"Person's Name:\", personName); // Outputs: Person's Name: John\n\nshow(\"Person's Age:\", person['age']); // Outputs: Updated Age: 31\nperson.age = 31; // Modifying property value\nshow(\"Updated Age:\", person['age']); // Outputs: Updated Age: 31",
+      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\nlet personName = person.name; // Accessing property by key using dot notation\nscrib.show(\"Person's Name:\", personName); // Outputs: Person's Name: John\n\nscrib.show(\"Person's Age:\", person['age']); // Outputs: Updated Age: 31\nperson.age = 31; // Modifying property value\nscrib.show(\"Updated Age:\", person['age']); // Outputs: Updated Age: 31",
       "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Person's Name: John <br>Person's Age: 30 <br>Updated Age: 31 <br>",
       "type": "code"
@@ -39,7 +39,7 @@
       "type": "html"
     },
     {
-      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\n\nif(true){ //Modify this line to make work\n  show(\"The person is a student\");\n}else{\n    show(\"The person is not a student\");\n}",
+      "code": "let person = {\n  name: \"John\",\n  age: 30,\n  isStudent: false\n};\n\nif(true){ //Modify this line to make work\n  scrib.show(\"The person is a student\");\n}else{\n    scrib.show(\"The person is not a student\");\n}",
       "status": "[6]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "The person is a student <br>",
       "type": "code"
@@ -51,7 +51,7 @@
       "type": "html"
     },
     {
-      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    show(\"Engine started!\");\n  }\n};\n\ncar.start(); // Outputs: Engine started!\ncar.stop(); //Gives error. Please add this function to the object to make it work.",
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    scrib.show(\"Engine started!\");\n  }\n};\n\ncar.start(); // Outputs: Engine started!\ncar.stop(); //Gives error. Please add this function to the object to make it work.",
       "status": "[-]",
       "output": "Engine started! <br><p class=\"error\">car.stop is not a function</p>",
       "type": "code"
@@ -63,7 +63,7 @@
       "type": "html"
     },
     {
-      "code": "let student = {\n  name: \"Alice\",\n  age: 20,\n  grades: {\n    math: 90,\n    english: 85,\n    science: 92\n  }\n};\n\nshow(\"Name of student:\",student.name);\nshow(\"Math grade of student:\",student.grades.math)\nshow(\"Math grade of student:\",student.english)\nshow(\"Math grade of student:\",student.science)",
+      "code": "let student = {\n  name: \"Alice\",\n  age: 20,\n  grades: {\n    math: 90,\n    english: 85,\n    science: 92\n  }\n};\n\nscrib.show(\"Name of student:\",student.name);\nscrib.show(\"Math grade of student:\",student.grades.math)\nscrib.show(\"Math grade of student:\",student.english)\nscrib.show(\"Math grade of student:\",student.science)",
       "status": "[13]<br><span style=\"font-size:8px\">3ms<span></span></span>",
       "output": "Name of student: Alice <br>Math grade of student: 90 <br>Math grade of student: undefined <br>Math grade of student: undefined <br>",
       "type": "code"
@@ -75,8 +75,8 @@
       "type": "html"
     },
     {
-      "code": "\nlet propertyName = \"color\";\nlet car = {\n  brand: \"Ford\",\n};\ncar[propertyName]='Blue';\nshow(\"Car Color:\", car.color); // Outputs: Car Color: Blue\n/*Please add code below to add makingYear to the car and test it */\n\nshow(\"Car Making Year:\", car.makingYear); // Testing\n",
-      "status": "[22]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "\nlet propertyName = \"color\";\nlet car = {\n  brand: \"Ford\",\n};\ncar[propertyName]='Blue';\nscrib.show(\"Car Color:\", car.color); // Outputs: Car Color: Blue\n/*Please add code below to add makingYear to the car and test it */\n\nscrib.show(\"Car Making Year:\", car.makingYear); // Testing\n",
+      "status": "[1]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "Car Color: Blue <br>Car Making Year: undefined <br>",
       "type": "code"
     },
@@ -87,8 +87,8 @@
       "type": "html"
     },
     {
-      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    show(\"Starting the \" + this.brand + \" \" + this.model + \"!\");\n  }\n};\n\ncar.start(); \n",
-      "status": "[23]<br><span style=\"font-size:8px\">4ms<span></span></span>",
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  start: function() {\n    scrib.show(\"Starting the \" + this.brand + \" \" + this.model + \"!\");\n  }\n};\n\ncar.start(); \n",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Starting the Toyota Camry! <br>",
       "type": "code"
     },
@@ -99,8 +99,8 @@
       "type": "html"
     },
     {
-      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  status:\"stopped\",\n  start: function() {\n    this.status=\"running\"\n  },\n  stop: function() {\n    //Add your code here\n  },\n};\n\nshow(\"Status of the car:\",car.status);\ncar.start(); \nshow(\"Checking again.. Status of the car:\",car.status);\ncar.stop(); \nshow(\"Checking once more.. Status of the car:\",car.status);",
-      "status": "[28]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "let car = {\n  brand: \"Toyota\",\n  model: \"Camry\",\n  status:\"stopped\",\n  start: function() {\n    this.status=\"running\"\n  },\n  stop: function() {\n    //Add your code here\n  },\n};\n\nscrib.show(\"Status of the car:\",car.status);\ncar.start(); \nscrib.show(\"Checking again.. Status of the car:\",car.status);\ncar.stop(); \nscrib.show(\"Checking once more.. Status of the car:\",car.status);",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "Status of the car: stopped <br>Checking again.. Status of the car: running <br>Checking once more.. Status of the car: running <br>",
       "type": "code"
     },
@@ -111,7 +111,7 @@
       "type": "html"
     },
     {
-      "code": "let calculator={\n  num1:undefined,\n  num2:undefined,\n  add:function(){\n\tconst total = this.num1+this.num2;\n\treturn total;\n  },\n  multiply: function(){\n \t\tconst product = num1+num2;\n\n  }\n}\n\n//There is error in below code. please check and correct\ncalculator.num1=1;\ncalculator.num2=2;\nlet total  = calculator.add(); \nshow(\"Total of the numbers is:\",total);\nlet product  = calculator.multiply();\nshow(\"Product of the numbers is:\",product);",
+      "code": "let calculator={\n  num1:undefined,\n  num2:undefined,\n  add:function(){\n\tconst total = this.num1+this.num2;\n\treturn total;\n  },\n  multiply: function(){\n \t\tconst product = num1+num2;\n\n  }\n}\n\n//There is an error in below code. please check and correct\ncalculator.num1=1;\ncalculator.num2=2;\nlet total  = calculator.add(); \nscrib.show(\"Total of the numbers is:\",total);\nlet product  = calculator.multiply();\nscrib.show(\"Product of the numbers is:\",product);",
       "status": "[-]",
       "output": "Total of the numbers is: 3 <br><p class=\"error\">num1 is not defined</p>",
       "type": "code"
