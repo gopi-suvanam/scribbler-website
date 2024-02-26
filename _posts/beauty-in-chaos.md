@@ -48,6 +48,7 @@ It's so different than drawing a line. Here we're just drawing multiple lines- t
 
 ![Stuff](https://wikimedia.org/api/rest_v1/media/math/render/svg/7928004d58943529a7be774575a62ca436a82a7f)
 The above are differential equations for the lorenz attractor. As for the constants, these are the ones I use!
+
 ```python
 
 # dadb stands for da/db
@@ -65,11 +66,10 @@ dzdt = (x, y, z) => {
 
 
 Here is the Chen attractor:
-\<chenAttractor Picture>
+![Chen Attractor](/scribblepad/ChaosTheoryAttractors/images/ChenAttractor.png)
 
 And here is the Lorenz attractor!
-<\Butterfly attractor picture>
-
+![Lorenz Attractor](/scribblepad/ChaosTheoryAttractors/images/LorenzAttractor.png)
 
 
 ## Use: How to interact with the website!
@@ -86,7 +86,6 @@ Go ahead! Try the website! Click the link and link on Lorenz!
 
 
 >## About Author
->
+><img src='/scribblepad/ChaosTheoryAttractors/images/samanth.jpeg' style="height:250px"></img>
 >Samanth Martis a First-year BTech undergraduate in Aerospace Engineering in IIT Bombay! He is a huge fan of code and loves to try out new things to satisfy that curiosity! Fun fact, He had only known Javascript for a month before he wrote this program! Three websites and many Canvas Artworks later, he is now learning WebGl for 3D rendering and Unity Game Engine in the goal of making 'cool' simulations that will get even the most uninterested person to say 'hmm, not bad'.
 >Check out his [Github](https://github.com/Sam-MARTis)! There are many more cool repos there! Ex: [Fractal Generator!](https://sam-martis.github.io/Fractal-Generator/) Reach out to him on [Linkedin](https://www.linkedin.com/in/samanth-martis-5309ab293/)
-\<MyImage>
