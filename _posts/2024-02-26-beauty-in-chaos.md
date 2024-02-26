@@ -1,7 +1,7 @@
 
 # Beauty in chaors
 This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live).
-<br> This is a guestpost by [Samanth Martis](#about-author).
+<br> This is a guest post by [Samanth Martis](#about-author).
 ## Introduction!
 
 We aim to generate some popular chaos-attractors on a website using an html5 canvas! No external libraries, no frameworks, just pure simple javascript! We plot a dynamic equation as it's state changes over time, tracing were it has been to be beautiful patterns!
