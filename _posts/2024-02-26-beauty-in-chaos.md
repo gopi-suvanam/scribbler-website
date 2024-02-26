@@ -24,7 +24,7 @@ In one word, canvas. In two words, HTML5 Canvas (HTML is 4 words but who's count
 The html canvas is used to render graphics and animations. There are also entire games running just on a canvas.
 But we go nowhere near that level of complexity. This project is DECIEVINGLY simple. 
 
-Me can generate simple lines as shown in the figure:
+We can generate simple lines as shown in the figure:
 \<image1>
 
 We can also change direction and draw lines again!
