@@ -1,7 +1,7 @@
 
 # Beauty in chaors
 This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live).
-<br> This is a guestpost by [Samanth Martis](#about-author).
+<br> This is a guest post by [Samanth Martis](#about-author).
 ## Introduction!
 
 We aim to generate some popular chaos-attractors on a website using an html5 canvas! No external libraries, no frameworks, just pure simple javascript! We plot a dynamic equation as it's state changes over time, tracing were it has been to be beautiful patterns!
@@ -24,7 +24,7 @@ In one word, canvas. In two words, HTML5 Canvas (HTML is 4 words but who's count
 The html canvas is used to render graphics and animations. There are also entire games running just on a canvas.
 But we go nowhere near that level of complexity. This project is DECIEVINGLY simple. 
 
-Me can generate simple lines as shown in the figure:
+We can generate simple lines as shown in the figure:
 \<image1>
 
 We can also change direction and draw lines again!
@@ -86,6 +86,7 @@ Go ahead! Try the website! Click the link and link on Lorenz!
 
 
 >## About Author
-><img src='/scribblepad/ChaosTheoryAttractors/images/samanth.jpeg' style="height:250px"></img>
+><img src='/scribblepad/ChaosTheoryAttractors/images/samanth.jpeg' style="height:250px"/>
 >Samanth Martis a First-year BTech undergraduate in Aerospace Engineering in IIT Bombay! He is a huge fan of code and loves to try out new things to satisfy that curiosity! Fun fact, He had only known Javascript for a month before he wrote this program! Three websites and many Canvas Artworks later, he is now learning WebGl for 3D rendering and Unity Game Engine in the goal of making 'cool' simulations that will get even the most uninterested person to say 'hmm, not bad'.
+>
 >Check out his [Github](https://github.com/Sam-MARTis)! There are many more cool repos there! Ex: [Fractal Generator!](https://sam-martis.github.io/Fractal-Generator/) Reach out to him on [Linkedin](https://www.linkedin.com/in/samanth-martis-5309ab293/)
