@@ -86,6 +86,7 @@ Go ahead! Try the website! Click the link and link on Lorenz!
 
 
 >## About Author
-><img src='/scribblepad/ChaosTheoryAttractors/images/samanth.jpeg' style="height:250px"></img>
+><img src='/scribblepad/ChaosTheoryAttractors/images/samanth.jpeg' style="height:250px"/>
 >Samanth Martis a First-year BTech undergraduate in Aerospace Engineering in IIT Bombay! He is a huge fan of code and loves to try out new things to satisfy that curiosity! Fun fact, He had only known Javascript for a month before he wrote this program! Three websites and many Canvas Artworks later, he is now learning WebGl for 3D rendering and Unity Game Engine in the goal of making 'cool' simulations that will get even the most uninterested person to say 'hmm, not bad'.
+>
 >Check out his [Github](https://github.com/Sam-MARTis)! There are many more cool repos there! Ex: [Fractal Generator!](https://sam-martis.github.io/Fractal-Generator/) Reach out to him on [Linkedin](https://www.linkedin.com/in/samanth-martis-5309ab293/)
