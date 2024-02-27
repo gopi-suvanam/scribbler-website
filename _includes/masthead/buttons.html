@@ -1,3 +1,11 @@
+{% if page.start_link %}
+<div class="mt-4 mb-0">
+    <a
+    href="{{ page.start_link }}"
+    class="site-masthead__button mx-2 mb-2">Start Here (No Login)</a>
+</div>
+
+{% else %}
 
 <div class="mt-4 mb-0">
     {% if site.project.download_url %}
@@ -21,6 +29,7 @@
         %}
     {% endfor %}
 </div>
+{% endif %}
 
 {% if site.project.version %}
     <p class="site-masthead__version my-0">
