@@ -1,5 +1,9 @@
+---
+title: Beauty in Chaos
+description: We aim to generate some popular chaos-attractors on the browser using an html5 canvas in JavaScript.
+layout: post
+---
 
-# Beauty in chaors
 This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live).
 <br> This is a guest post by [Samanth Martis](#about-author).
 ## Introduction!
@@ -24,11 +28,42 @@ In one word, canvas. In two words, HTML5 Canvas (HTML is 4 words but who's count
 The html canvas is used to render graphics and animations. There are also entire games running just on a canvas.
 But we go nowhere near that level of complexity. This project is DECIEVINGLY simple. 
 
-We can generate simple lines as shown in the figure:
-\<image1>
+We can generate a line with just a few lines of javascript code!
 
-We can also change direction and draw lines again!
-\<image2>
+```Javascript
+let canvas = document.getElementById("firstCanvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let context = canvas.getContext("2d");
+// Dont worry about the above stuff. It's just necessary code to get the canvas running!
+
+//This is actual drawing part!
+context.beginPath();
+context.strokeStyle = "red";
+context.lineWidth = 1;
+context.moveTo(100, 100);
+context.lineTo(200, 100);
+context.stroke();
+```
+
+Now, adding a new line is as simple as adding another line of code! The possibilities after this are endless! 
+```Javascript
+let canvas = document.getElementById("firstCanvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let context = canvas.getContext("2d");
+// Dont worry about the above stuff. It's just necessary code to get the canvas running!
+
+//This is actual drawing part!
+context.beginPath();
+context.strokeStyle = "red";
+context.lineWidth = 1;
+context.moveTo(100, 100);
+context.lineTo(200, 100);
+context.lineTo(300, 200);
+context.stroke();
+
+```
 
 Thats it! We're done!
 No really, that's all you need to know!
@@ -80,7 +115,7 @@ You can find all needed instructions on the github repository!
 
 As of the writing of this article, there are 3 chaos attractors (increased from the 2 that were present during the project demonstration). There will be many more in the future as I learn newer ways to render them!
 
-Go ahead! Try the website! Click the link and link on Lorenz!
+Go ahead! Try the website! Click the link and click on Lorenz!
 
 
 
