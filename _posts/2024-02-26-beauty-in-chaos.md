@@ -30,7 +30,7 @@ But we go nowhere near that level of complexity. This project is DECIEVINGLY sim
 
 We can generate a line with just a few lines of javascript code!
 
-```Javascript
+```javascript
 let canvas = document.getElementById("firstCanvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -47,7 +47,7 @@ context.stroke();
 ```
 
 Now, adding a new line is as simple as adding another line of code! The possibilities after this are endless! 
-```Javascript
+```javascript
 let canvas = document.getElementById("firstCanvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -84,7 +84,7 @@ It's so different than drawing a line. Here we're just drawing multiple lines- t
 ![Stuff](https://wikimedia.org/api/rest_v1/media/math/render/svg/7928004d58943529a7be774575a62ca436a82a7f)
 The above are differential equations for the lorenz attractor. As for the constants, these are the ones I use!
 
-```python
+```javascript
 
 # dadb stands for da/db
 dxdt = (x, y, z) => {
