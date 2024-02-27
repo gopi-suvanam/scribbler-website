@@ -134,14 +134,13 @@ The get_dom() function is a shorthand notation for window.getElementById. It all
 ### scrib.waitForDom(id)
 The wait_for_dom() function is an asynchronous version of get_dom(). It allows users to wait for a specific DOM element to become available and resolves to the element once it is accessible. This is particularly useful when a DOM element is being created asynchronously by another activity. Users can utilize wait_for_dom() in combination with promises or within async functions to ensure proper synchronization and handling of DOM elements.
 
-### scrib.loadDile()
+### scrib.loadFile()
 The load_file() function opens the file browser and resolves to the contents of a selected file. This function enables users to read and access the contents of files directly within the notebook. By leveraging load_file(), users can seamlessly integrate external data or leverage the content of external files within their notebooks. The function is asynchronous and resolves to the contents of the file. 
 
 ### scrib.loadScript(url)
 The load_script() function is used to load an external JavaScript file from a specified URL. For example, users can load libraries such as jQuery by calling load_script("https://code.jquery.com/jquery-3.6.3.min.js"). This capability allows users to incorporate additional functionality or external libraries into their notebook environment effortlessly. The function by default loads the script asynchronously. To load the script synchronously use: load_script(url,false).
 
-### import_module(module, features)
-The import_module() function is used to load an ES6 module from a specified file location. Users can specify the module location with the "module" parameter and define the desired features using a dictionary called "features". The keys within the "features" dictionary are loaded from the module and exposed globally, allowing users to access and utilize specific functionalities. This function enhances the modularity and extensibility of Scribbler.
+
 
 ## Keyboard Shortcuts
 These shortcuts work when a code cell is in focus:
