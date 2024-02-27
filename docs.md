@@ -7,11 +7,12 @@ show_in_menu: true
 
 ## Installation
 
-### GitHub Pages Hosted Version
-Scribbler also offers a convenient option through GitHub Pages. Users can access the hosted version of the tool at https://app.scribbler.live, where they can enjoy all the features and benefits without the need for self-hosting. This allows for easy sharing and collaboration, making Scribbler a versatile tool for various team sizes and locations.
 
 ### Download
 One of the standout features of Scribbler.Live is its hassle-free setup. Users can conveniently download or clone the tool directly from GitHub and immediately start using it by hosting the folder in webserver and opening the link. This eliminates the need for any intricate installation processes, making it easily accessible to anyone. This means that users can effortlessly put the tool behind a web server to serve it statically, without any requirement for a backend framework such as Node.js or Python. By leveraging the simplicity of static serving, Scribbler ensures smooth and efficient usage.
+
+### GitHub Pages Hosted Version
+Scribbler also offers a convenient option of usage through GitHub Pages. Users can access the hosted version of the tool at https://app.scribbler.live, where they can enjoy all the features and benefits without the need for self-hosting. This allows for easy sharing and collaboration, making Scribbler a versatile tool for various team sizes and locations.
 
 ## Cells
 ### Cell Types and Structure
