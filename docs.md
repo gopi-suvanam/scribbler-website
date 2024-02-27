@@ -126,19 +126,22 @@ These are some inbuilt functions of Scribbler to make coding simple.
 The scrib.show() function is a powerful tool that displays an object in the output cell. It is important to note that when using scrib.show(), the displayed content should not be excessively large to avoid truncation. This function allows users to visualize and inspect objects conveniently within the notebook environment.
 
 ### scrib.currCell()
-The curr_cell() function returns the element corresponding to the output of the current code cell. It provides users with direct access to the output element, enabling further customization or manipulation as needed. It's worth noting that these functions may behave differently when called from within asynchronous code due to the asynchronous nature of their execution.
+The scrib.currCell() function returns the element corresponding to the output of the current code cell. It provides users with direct access to the output element, enabling further customization or manipulation as needed. It's worth noting that these functions may behave differently when called from within asynchronous code due to the asynchronous nature of their execution.
 
 ### scrib.getDom(id):
-The get_dom() function is a shorthand notation for window.getElementById. It allows users to access DOM elements easily by providing the element's ID. By leveraging get_dom(), users can retrieve specific elements and interact with them within their code cells.
+The get_dscrib.getDomom() function is a shorthand notation for window.getElementById. It allows users to access DOM elements easily by providing the element's ID. By leveraging get_dom(), users can retrieve specific elements and interact with them within their code cells.
 
 ### scrib.waitForDom(id)
-The wait_for_dom() function is an asynchronous version of get_dom(). It allows users to wait for a specific DOM element to become available and resolves to the element once it is accessible. This is particularly useful when a DOM element is being created asynchronously by another activity. Users can utilize wait_for_dom() in combination with promises or within async functions to ensure proper synchronization and handling of DOM elements.
+The scrib.waitForDom() function is an asynchronous version of get_dom(). It allows users to wait for a specific DOM element to become available and resolves to the element once it is accessible. This is particularly useful when a DOM element is being created asynchronously by another activity. Users can utilize wait_for_dom() in combination with promises or within async functions to ensure proper synchronization and handling of DOM elements.
 
-### scrib.loadFile()
+### scrib.uploadFile()
 The load_file() function opens the file browser and resolves to the contents of a selected file. This function enables users to read and access the contents of files directly within the notebook. By leveraging load_file(), users can seamlessly integrate external data or leverage the content of external files within their notebooks. The function is asynchronous and resolves to the contents of the file. 
 
+### scrib.downloadString()
+The downloadString function provides an easy way to download a string as a file. It takes three parameters: 1. string to be downloaded. 2. exportName - the name of the file. 3. char_set - the character set (utf-8 etc).
+
 ### scrib.loadScript(url)
-The load_script() function is used to load an external JavaScript file from a specified URL. For example, users can load libraries such as jQuery by calling load_script("https://code.jquery.com/jquery-3.6.3.min.js"). This capability allows users to incorporate additional functionality or external libraries into their notebook environment effortlessly. The function by default loads the script asynchronously. To load the script synchronously use: load_script(url,false).
+The scrib.uploadFile() function is used to load an external JavaScript file from a specified URL. For example, users can load libraries such as jQuery by calling load_script("https://code.jquery.com/jquery-3.6.3.min.js"). This capability allows users to incorporate additional functionality or external libraries into their notebook environment effortlessly. The function by default loads the script asynchronously. To load the script synchronously use: load_script(url,false).
 
 
 
