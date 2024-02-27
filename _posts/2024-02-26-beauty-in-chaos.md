@@ -1,6 +1,6 @@
 ---
 title: Beauty in Chaos
-description: We aim to generate some popular chaos-attractors on the browser using an html5 canvas in JavaScript.
+description: We bring the beauty of chaos and strange-attractors to the browser using an html5 canvas and JavaScript.
 layout: post
 ---
 
