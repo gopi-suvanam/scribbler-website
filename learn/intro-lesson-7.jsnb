@@ -111,7 +111,7 @@
       "type": "html"
     },
     {
-      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Create new element\nlet newElement = document.createElement('img');\n//Assign a source for the image\nnewElement.src='https://app.scribbler.live/images/logo2.png';\n//Now append this to the \"my-div\" element using appendChild and see if it takes affect.\n",
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Create new element\nlet newElement = document.createElement('img');\n//Assign a source for the image\nnewElement.src='https://app.scribbler.live/images/logo2.png';\n//Now append this to the \"my-div\" element using element.appendChild and see if it takes affect.\n\n//Write your code above and press play button.",
       "status": "[19]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "https://app.scribbler.live/images/logo2.png <br>",
       "type": "code"
