@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "name": "Lesson 7: Document Object Model (DOM)<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "status": "",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Introduction to the Document Object Model (DOM): Lesson 7 of 10</h1>",
+      "status": "",
+      "output": "<h1>Introduction to the Document Object Model (DOM): Lesson 7 of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Overview</h2>\n\nThe Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree-like structure, where each node represents a part of the document.\n\n<h3>What are DOM Elements?</h3>\nIn web development, DOM elements are the building blocks of web pages. DOM stands for Document Object Model, which is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree-like structure, where each node represents a part of the document.\n<br>\nDOM elements are the individual components or parts of an HTML document. Each HTML element, such as `&lt;div&gt;`, `&lt;p&gt;`, `&lt;h1&gt;`, `&lt;img&gt;`, etc., is considered a DOM element. These elements can contain attributes (like id, class, src, href, etc.) and may also contain text or other elements as their children.\n<h3>Characteristics of DOM Elements</h3>\n<ol>\n<li><b>Unique Identifier</b>: Each DOM element can have a unique identifier known as the `id` attribute. This identifier should be unique within the entire document.\n</li>\n<li><b>Classes</b>: DOM elements can belong to one or more classes, which are specified using the `class` attribute. Classes are often used to group similar elements together for styling or JavaScript manipulation.\n</li>\n<li><b>Attributes</b>: Apart from `id` and `class`, DOM elements can have various other attributes depending on the element type. For example, an `&lt;img&gt;` element might have a `src` attribute to specify the image file path, or an `&lt;a&gt;` element might have an `href` attribute to specify the URL it links to.\n</li>\n<li><b>Hierarchy</b>: DOM elements are organized in a hierarchical structure, where some elements contain other elements. For example, a `&lt;div&gt;` element might contain several `&lt;p&gt;` elements, and each `&lt;p&gt;` element might contain text or other elements.\n</li>\n<li>Events</b>: DOM elements can respond to user interactions, such as clicks, mouse movements, keyboard input, etc., through event handling. JavaScript allows you to attach event listeners to DOM elements to execute code in response to these interactions.\n</ol>",
+      "status": "",
+      "output": "<h2> Overview</h2>\n\nThe Document Object Model (DOM) is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree-like structure, where each node represents a part of the document.\n\n<h3>What are DOM Elements?</h3>\nIn web development, DOM elements are the building blocks of web pages. DOM stands for Document Object Model, which is a programming interface for web documents. It represents the structure of HTML and XML documents as a tree-like structure, where each node represents a part of the document.\n<br>\nDOM elements are the individual components or parts of an HTML document. Each HTML element, such as `&lt;div&gt;`, `&lt;p&gt;`, `&lt;h1&gt;`, `&lt;img&gt;`, etc., is considered a DOM element. These elements can contain attributes (like id, class, src, href, etc.) and may also contain text or other elements as their children.\n<h3>Characteristics of DOM Elements</h3>\n<ol>\n<li><b>Unique Identifier</b>: Each DOM element can have a unique identifier known as the `id` attribute. This identifier should be unique within the entire document.\n</li>\n<li><b>Classes</b>: DOM elements can belong to one or more classes, which are specified using the `class` attribute. Classes are often used to group similar elements together for styling or JavaScript manipulation.\n</li>\n<li><b>Attributes</b>: Apart from `id` and `class`, DOM elements can have various other attributes depending on the element type. For example, an `&lt;img&gt;` element might have a `src` attribute to specify the image file path, or an `&lt;a&gt;` element might have an `href` attribute to specify the URL it links to.\n</li>\n<li><b>Hierarchy</b>: DOM elements are organized in a hierarchical structure, where some elements contain other elements. For example, a `&lt;div&gt;` element might contain several `&lt;p&gt;` elements, and each `&lt;p&gt;` element might contain text or other elements.\n</li>\n<li>Events: DOM elements can respond to user interactions, such as clicks, mouse movements, keyboard input, etc., through event handling. JavaScript allows you to attach event listeners to DOM elements to execute code in response to these interactions.\n</li></ol>",
+      "type": "html"
+    },
+    {
+      "code": "\n<div >\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Double-Click on this to see the HTML code. Please change the content and press play button to see the output.</p>\n    <img src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n",
+      "status": "",
+      "output": "\n<div>\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Double-Click on this to see the HTML code. Please change the content and press play button to see the output.</p>\n    <img src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n",
+      "type": "html"
+    },
+    {
+      "code": "<b>In this example:</b>\n<ul>\n<li>The `&lt;div&gt;` element with `id=\"container\"` and `class=\"main-container\"` is a DOM element.</li>\n<li>The `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;img&gt;`, and `&lt;a&gt;` elements inside the `&lt;div&gt;` are also DOM elements.</li>\n<li>Each of these elements can be manipulated using JavaScript for various purposes like changing content, styling, adding behavior, etc.</li>\n</ul>\nUnderstanding DOM elements and how to manipulate them is crucial for web development, as it allows developers to create dynamic and interactive web pages. We will discuss on how to use JavaScript to access and manipulate DOM elements. Details of styling and other aspects are beyond the scope of this introductory course.",
+      "status": "",
+      "output": "<b>In this example:</b>\n<ul>\n<li>The `&lt;div&gt;` element with `id=\"container\"` and `class=\"main-container\"` is a DOM element.</li>\n<li>The `&lt;h1&gt;`, `&lt;p&gt;`, `&lt;img&gt;`, and `&lt;a&gt;` elements inside the `&lt;div&gt;` are also DOM elements.</li>\n<li>Each of these elements can be manipulated using JavaScript for various purposes like changing content, styling, adding behavior, etc.</li>\n</ul>\nUnderstanding DOM elements and how to manipulate them is crucial for web development, as it allows developers to create dynamic and interactive web pages. We will discuss on how to use JavaScript to access and manipulate DOM elements. Details of styling and other aspects are beyond the scope of this introductory course.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Selecting DOM Elements</h2>\nIn JavaScript, accessing DOM elements is a fundamental part of web development, enabling developers to interact with and manipulate the content and structure of web pages dynamically. One of the most commonly used methods to select DOM elements is `getElementById()`, which allows developers to target specific elements by their unique ID attribute.\n<br>\n <b>getElementById:</b> This method retrieves an element from the DOM based on its unique ID attribute. IDs are unique identifiers assigned to HTML elements, and each ID should be unique within the entire document.\n<pre>\n   // Example usage of getElementById\nvar element = document.getElementById('myElementId');\n</pre>\n- In the example above, getElementById() is called with the argument 'myElementId', which is the ID of the element we want to select.\n<br> - The method returns a reference to the element with the specified ID, which is stored in the variable element.\n<br>- If no element with the specified ID is found, the method returns null.\n",
+      "status": "",
+      "output": "<h2>Selecting DOM Elements</h2>\nIn JavaScript, accessing DOM elements is a fundamental part of web development, enabling developers to interact with and manipulate the content and structure of web pages dynamically. One of the most commonly used methods to select DOM elements is `getElementById()`, which allows developers to target specific elements by their unique ID attribute.\n<br>\n <b>getElementById:</b> This method retrieves an element from the DOM based on its unique ID attribute. IDs are unique identifiers assigned to HTML elements, and each ID should be unique within the entire document.\n<pre>   // Example usage of getElementById\nvar element = document.getElementById('myElementId');\n</pre>\n- In the example above, getElementById() is called with the argument 'myElementId', which is the ID of the element we want to select.\n<br> - The method returns a reference to the element with the specified ID, which is stored in the variable element.\n<br>- If no element with the specified ID is found, the method returns null.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>\nlet element_content=element.innerHTML;\n\n</pre>\n\nThis changes the content inside an element.\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>\nelement.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element. //Also be written like this: \n <pre>\nelement['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>\nelement.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>\nvar newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
+      "status": "",
+      "output": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>let element_content=element.innerHTML;\n\n</pre>\n\nThis changes the content inside an element.\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>element.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element. //Also be written like this: \n <pre>element['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>element.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>var newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Experiment: Changing Text and Color </h2>\n\nLet's create an example where we change the text and color of an element. In the next cell there is a div with a short text. The id of the element is \"my-div\".\nusing the getElementById let us acces this element in JavaScript and manipluate this element. Experiment and play the cells after the next one to see how to manipulate the cells.",
+      "status": "",
+      "output": "<h2>Experiment: Changing Text and Color </h2>\n\nLet's create an example where we change the text and color of an element. In the next cell there is a div with a short text. The id of the element is \"my-div\".\nusing the getElementById let us acces this element in JavaScript and manipluate this element. Experiment and play the cells after the next one to see how to manipulate the cells.",
+      "type": "html"
+    },
+    {
+      "code": "<div id=\"my-div\">\n  This is a sample element.\n</div>",
+      "status": "",
+      "output": "<div id=\"my-div\">\n  This is a sample element.\n</div>",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now let us alert it\nlet elementContent=element.innerHTML;\nalert(elementContent);\n",
+      "status": "[6]<br><span style=\"font-size:8px\">30.279s<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "Why don't you change the content of the element and see if takes affect?",
+      "status": "",
+      "output": "Why don't you change the content of the element and see if takes affect?",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\nlet newConent=\"This is new conent\";\n//Now chnage the content of the element below by assigning this value to the innerHTML of the element.\n\n//Write code above and press play button.",
+      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "Let us change the font color using element.style.color",
+      "status": "",
+      "output": "Let us change the font color using element.style.color",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now chnage the font color of the element  to 'red'\n\n//Write code above and press play button.You can check if the color changed by scrolling up.",
+      "status": "[12]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "Let us change the background color using element.style.['background-color']. \nNote: element.style.background-color does not work because of the hiphen `-` ",
+      "status": "",
+      "output": "Let us change the background color using element.style.['background-color']. \nNote: element.style.background-color does not work because of the hiphen `-` ",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now chnage the backrgound color of the element  to 'green'\n\n//Write code above and press play button. You can check if the color changed by scrolling up.",
+      "status": "[16]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "In the experiment below, let us create a new element of image type and append it to the above \"my-div\" element.",
+      "status": "",
+      "output": "In the experiment below, let us create a new element of image type and append it to the above \"my-div\" element.",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Create new element\nlet newElement = document.createElement('img');\n//Assign a source for the image\nnewElement.src='https://app.scribbler.live/images/logo2.png';\n//Now append this to the \"my-div\" element using appendChild and see if it takes affect.\n",
+      "status": "[19]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "https://app.scribbler.live/images/logo2.png <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\nDOM manipulation is a fundamental aspect of web development with JavaScript. Understanding how to select and manipulate DOM elements allows you to create dynamic and interactive web pages. Practice manipulating DOM elements to become proficient in web development. In the next lesson we will go into details of another aspect of accessing web development called events.",
+      "status": "",
+      "output": "<h2>Summary</h2>\nDOM manipulation is a fundamental aspect of web development with JavaScript. Understanding how to select and manipulate DOM elements allows you to create dynamic and interactive web pages. Practice manipulating DOM elements to become proficient in web development. In the next lesson we will go into details of another aspect of accessing web development called events.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-8.jsnb\" target=\"_blank\">Lesson 8: Events and Event Handling</a></li>\n  \n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-8.jsnb\" target=\"_blank\">Lesson 8: Events and Event Handling</a></li>\n  \n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
