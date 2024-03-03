@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "name": "Lesson 8: Events and Event Handlers<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "status": "",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Events and Handlers: Lesson 8 of 10</h1>",
+      "status": "",
+      "output": "<h1>Events and Handlers: Lesson 8 of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Overview</h2>\n\nEvents and event handlers are fundamental concepts in JavaScript that allow developers to create interactive and dynamic web applications. In this lesson, we'll explore how to work with events and event handlers in JavaScript, understanding how to respond to user actions such as clicks, key presses, and mouse movements.\n\n<h3>What are Events?</h3>\nEvents are actions or occurrences that happen in the browser, triggered by user interactions or system events. Examples of events include clicking on an element, submitting a form, hovering over an element, pressing a key, etc.\n<h3>Introduction to Event Handlers</h3>\nEvent handlers are JavaScript functions that are executed in response to specific events. They define what should happen when a particular event occurs. Here are some common events that you can handle in JavaScript:\n<br>- `click`: Occurs when the element is clicked.\n<br>- `mouseover` / `mouseout`: Occurs when the mouse pointer enters / leaves the element.\n<br>- `keydown` / `keyup`: Occurs when a key is pressed / released while the element has focus.\n<br>- `change`: Occurs when the value of an element is changed.\n<br>- `submit`: Occurs when a form is submitted.",
+      "status": "",
+      "output": "<h2> Overview</h2>\n\nEvents and event handlers are fundamental concepts in JavaScript that allow developers to create interactive and dynamic web applications. In this lesson, we'll explore how to work with events and event handlers in JavaScript, understanding how to respond to user actions such as clicks, key presses, and mouse movements.\n\n<h3>What are Events?</h3>\nEvents are actions or occurrences that happen in the browser, triggered by user interactions or system events. Examples of events include clicking on an element, submitting a form, hovering over an element, pressing a key, etc.\n<h3>Introduction to Event Handlers</h3>\nEvent handlers are JavaScript functions that are executed in response to specific events. They define what should happen when a particular event occurs. Here are some common events that you can handle in JavaScript:\n<br>- `click`: Occurs when the element is clicked.\n<br>- `mouseover` / `mouseout`: Occurs when the mouse pointer enters / leaves the element.\n<br>- `keydown` / `keyup`: Occurs when a key is pressed / released while the element has focus.\n<br>- `change`: Occurs when the value of an element is changed.\n<br>- `submit`: Occurs when a form is submitted.",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Handling Events</h3>\nTo take an action when an event occurs, we have to use event handlers. Event handlers are JavaScript functions that are executed in response to specific events. They define what should happen when a particular event occurs. For example you can listen to an event called \"click\" and execute a code when tha happens using this code:\n<br>\n Step 1:  Get the button element\n\n<pre>\nlet  button = document.getElementById('my-button');\n</pre>\nStep 2: Define a function to respond to a click event\n<pre>\nfunction buttonClick(){\n  alert('Button clicked!');\n}\n </pre>\nStep 3: Add an event listener for the 'click' event and call the function\n<pre>\nbutton.addEventListener('click',buttonClick);\n </pre>\nWe will define the button in the next cell. In the subsequent cell, we will write code to add a listener to the `click` event. \n<br>First, click the button in the next cell. You will notice that nothing happens as the `click` event is not handled. Now, make sure you run the subsequent cell by clicking the play button. Once done, click the button in the next cell to see the effect.",
+      "status": "",
+      "output": "<h3>Handling Events</h3>\nTo take an action when an event occurs, we have to use event handlers. Event handlers are JavaScript functions that are executed in response to specific events. They define what should happen when a particular event occurs. For example you can listen to an event called \"click\" and execute a code when tha happens using this code:\n<br>\n Step 1:  Get the button element\n\n<pre>let  button = document.getElementById('my-button');\n</pre>\nStep 2: Define a function to respond to a click event\n<pre>function buttonClick(){\n  alert('Button clicked!');\n}\n </pre>\nStep 3: Add an event listener for the 'click' event and call the function\n<pre>button.addEventListener('click',buttonClick);\n </pre>\nWe will define the button in the next cell. In the subsequent cell, we will write code to add a listener to the `click` event. \n<br>First, click the button in the next cell. You will notice that nothing happens as the `click` event is not handled. Now, make sure you run the subsequent cell by clicking the play button. Once done, click the button in the next cell to see the effect.",
+      "type": "html"
+    },
+    {
+      "code": "    <button id=\"my-button\">Click Me!</button>\n",
+      "status": "",
+      "output": "    <button id=\"my-button\">Click Me!</button>\n",
+      "type": "html"
+    },
+    {
+      "code": "//Ge the button element \nlet button = document.getElementById('my-button');\n//Define the handler\nfunction buttonClick(){\n  alert('Button clicked!');\n}\n// Add an event listener for the 'click' event\nbutton.addEventListener('click', buttonClick);\nscrib.show(\"The handler for the click event has been added. Now, click the button above.\")\n",
+      "status": "[3]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Explanation</h3>\n- We have a button element with the id `my-button`.\n<br>- We use JavaScript to select the button element using `getElementById()`.\n<br>- We add an event listener to the button using `addEventListener()`. We specify the event type ('click') and provide a callback function that will be executed when the button is clicked.\n<br>- Inside the callback function, we use `alert()` to display a simple alert message when the button is clicked.\n",
+      "status": "",
+      "output": "<h3>Explanation</h3>\n- We have a button element with the id `my-button`.\n<br>- We use JavaScript to select the button element using `getElementById()`.\n<br>- We add an event listener to the button using `addEventListener()`. We specify the event type ('click') and provide a callback function that will be executed when the button is clicked.\n<br>- Inside the callback function, we use `alert()` to display a simple alert message when the button is clicked.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Experiment</h2>\nThe addEventListener can be added to any element and it can listen to various events like `click`,`change`, `mouseover`,`mouseout`, `keydown`,`keyup` etc. Let us write code to copy text written in an input to another element by listening to the `change` event.\n<br>\n In the next cell, we will have an input element (id='my-input') and an output div (id='my-output') Let us copy the contents of my-input to my-output whenever the input value changes.\n <br>\n   Play the code in the cell after the next cell for the listener to work.",
+      "status": "",
+      "output": "<h2>Experiment</h2>\nThe addEventListener can be added to any element and it can listen to various events like `click`,`change`, `mouseover`,`mouseout`, `keydown`,`keyup` etc. Let us write code to copy text written in an input to another element by listening to the `change` event.\n<br>\n In the next cell, we will have an input element (id='my-input') and an output div (id='my-output') Let us copy the contents of my-input to my-output whenever the input value changes.",
+      "type": "html"
+    },
+    {
+      "code": "<input type='text' id='my-input'/>\n  <div id='my-output'>No input yet...</div>",
+      "status": "",
+      "output": "<input type=\"text\" id=\"my-input\">\n  <div id=\"my-output\">kkkkkks</div>",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet input = document.getElementById(\"my-input\");\nlet output=document.getElementById(\"my-output\");\n//Now let us create a function to handle change event\nfunction inputChange(){\n let inputValue=input.value;\n  output.innerHTML=inputValue;\n}\n//Let us add this handler to the change event of input\ninput.addEventListener('change',inputChange);\nscrib.show(\"Listener is now added. Type something in the above cell and click outside the input box\")",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "Notice that the change event is called only when the typing is finished and you click outside the input. \nIf you want to continuously show the input value in the output div, you will have to use keyup or keydown events. Unlike `change` event, `keydown` event is activated whenever a key is pressed on the keyboard. `keyup` is activated whenever a pressed key is released on the keyboard.\nLet us try in the next few cells.",
+      "status": "",
+      "output": "Notice that the change event is called only when the typing is finished and you click outside the input. \nIf you want to continuously show the input value in the output div, you will have to use keyup or keydown events. Unlike `change` event, `keydown` event is activated whenever a key is pressed on the keyboard. `keyup` is activated whenever a pressed key is released on the keyboard.\nLet us try in the next few cells.",
+      "type": "html"
+    },
+    {
+      "code": "<input type='text' id='my-input2'/>\n  <div id='my-output2'>No input yet...</div>",
+      "status": "",
+      "output": "<input type=\"text\" id=\"my-input2\">\n  <div id=\"my-output2\">No input yet...</div>",
+      "type": "html"
+    },
+    {
+      "code": "//Get the element\nlet input = document.getElementById(\"my-input2\");\nlet output=document.getElementById(\"my-output2\");\n//Now let us create a function to handle change event\nfunction inputChange(){\n let inputValue=input.value;\n  output.innerHTML=inputValue;\n}\n//Let us add this handler to the change event of input\ninput.addEventListener('keyup',inputChange);\nscrib.show(\"Listener is now added. Type something in the above cell and click outside the input box\")",
+      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">A will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "status": "",
+      "output": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">A will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "type": "html"
+    },
+    {
+      "code": "//Step 1: Get the input element\n\n//Step 2: Get the button element\n\n//Step 3: Write a function to alert the value of the input\n\n\n\n//Step 4: Attach the function to the event `click` of the button element\n\n\n//Write the code above and press play button to run it. Enter a value in the input above and click the above button to check if works.",
+      "status": "[13]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript.",
+      "status": "",
+      "output": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-7.jsnb\" target=\"_blank\">Lesson 7:  DOM Elements</a></li>\n  \n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-7.jsnb\" target=\"_blank\">Lesson 7:  DOM Elements</a></li>\n  \n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
