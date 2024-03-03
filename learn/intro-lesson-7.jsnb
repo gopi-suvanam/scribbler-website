@@ -117,9 +117,9 @@
       "type": "code"
     },
     {
-      "code": "<h2>Interactive Elements</h2>\nThere are some elements that are specifically designed for interactive with the user. There include: input, button, and select. Input DOM helps enter various types of inputs including text, password, file, checkbox etc. Buttons allow users to click and initiate an activity. Select element allows users to select a value from a drop down.\n<br>In the example below we will look at accessing the input value from a text. In the next lesson we will look at buttons. You can learn about other input types and DOMs once you master these.\n<br>The next cell has a text input with the id \"my-input\". Enter a value in it. We will access the value in the code in the subsequent cell.",
+      "code": "<h2>Interactive Elements</h2>\nThere are some elements that are specifically designed for interactive with the user. There include: input, button, and select. Input DOM helps enter various types of inputs including text, password, file, checkbox etc. Buttons allow users to click and initiate an activity. Select element allows users to select a value from a drop down.\n<br>In the example below we will look at accessing the input value from a text. In the next lesson we will look at buttons. You can learn about other input types and DOMs once you master these.\n<br>The next cell has a text input with the id \"my-input\". Enter a value in it. We will access the value in the code in the subsequent cell. The value of an input element is accessed through `element.value`.",
       "status": "",
-      "output": "<h2>Interactive Elements</h2>\nThere are some elements that are specifically designed for interactive with the user. There include: input, button, and select. Input DOM helps enter various types of inputs including text, password, file, checkbox etc. Buttons allow users to click and initiate an activity. Select element allows users to select a value from a drop down.\n<br>In the example below we will look at accessing the input value from a text. In the next lesson we will look at buttons. You can learn about other input types and DOMs once you master these.\n<br>The next cell has a text input with the id \"my-input\". Enter a value in it. We will access the value in the code in the subsequent cell.",
+      "output": "<h2>Interactive Elements</h2>\nThere are some elements that are specifically designed for interactive with the user. There include: input, button, and select. Input DOM helps enter various types of inputs including text, password, file, checkbox etc. Buttons allow users to click and initiate an activity. Select element allows users to select a value from a drop down.\n<br>In the example below we will look at accessing the input value from a text. In the next lesson we will look at buttons. You can learn about other input types and DOMs once you master these.\n<br>The next cell has a text input with the id \"my-input\". Enter a value in it. We will access the value in the code in the subsequent cell. The value of an input element is accessed through `element.value`.",
       "type": "html"
     },
     {
@@ -130,8 +130,8 @@
     },
     {
       "code": "let input=document.getElementById(\"my-input\");\nscrib.show(\"My input is:\",input.value)",
-      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "My input is:  <br>",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "My input is: 123 <br>",
       "type": "code"
     },
     {
