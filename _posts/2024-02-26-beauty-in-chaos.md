@@ -4,7 +4,7 @@ description: We bring the beauty of chaos and strange-attractors to the browser 
 layout: post
 ---
 
-This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live).
+This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live?jsnb=https://scribbler.live/scribblepad/ChaosTheoryAttractors/ChaosPlotter.jsnb).
 <br> This is a guest post by [Samanth Martis](#about-author).
 ## Introduction!
 
