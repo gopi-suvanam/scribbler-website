@@ -87,9 +87,9 @@
       "type": "code"
     },
     {
-      "code": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">A will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "code": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
       "status": "",
-      "output": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">A will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "output": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
       "type": "html"
     },
     {
