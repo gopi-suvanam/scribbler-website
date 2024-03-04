@@ -99,9 +99,9 @@
       "type": "code"
     },
     {
-      "code": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript.",
+      "code": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. This lesson gives a flavour of events and handlers. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript. ",
       "status": "",
-      "output": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript.",
+      "output": "<h2>Summary</h2>\nUnderstanding events and event handlers is essential for creating interactive and user-friendly web applications. By listening for and responding to user actions, developers can create engaging user experiences and enhance the functionality of their websites. This lesson gives a flavour of events and handlers. Practice experimenting with different events and event handlers to become comfortable with event-driven programming in JavaScript. ",
       "type": "html"
     },
     {
