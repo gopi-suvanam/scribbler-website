@@ -45,9 +45,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>\nlet element_content=element.innerHTML;\n\n</pre>\n\nThis changes the content inside an element.\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>\nelement.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element. //Also be written like this: \n <pre>\nelement['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>\nelement.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>\nvar newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
+      "code": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>\nlet element_content=element.innerHTML;\n\n</pre>\n\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>\nelement.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element.This can also be written like this: \n <pre>\nelement['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>\nelement.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>\nvar newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
       "status": "",
-      "output": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>let element_content=element.innerHTML;\n\n</pre>\n\nThis changes the content inside an element.\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>element.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element. //Also be written like this: \n <pre>element['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>element.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>var newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
+      "output": "<h2>Manipulating DOM Elements</h2>\nOnce you have selected DOM elements, you can manipulate them in various ways using JavaScript:\n\n<ol>\n  <li><b>Accessing Content</b>: You can access the content of an element using the `innerHTML` property.\n<pre>let element_content=element.innerHTML;\n\n</pre>\n\n</li>\n<li><b>Changing Content</b>: You can change the content of an element using the `innerHTML` property.\n<pre>element.innerHTML = 'New content';\n\n</pre>\n\nThis changes the content inside an element.This can also be written like this: \n <pre>element['innerHTML'] = 'New content'; \n</pre>\nRemember objects from lesson 3?\n</li>\n<li><b>Changing Styles</b>: You can change the CSS styles of an element using the `style` property.\n<pre>element.style.color = 'red';\n</pre>\nThis changes the font color of the element.\n</li>\n\n<li><b>Creating New Elements</b>: You can create new elements using the `createElement` method and append them to the document.\n<pre>var newElement = document.createElement('div');\nelement.appendChild(newElement);\n</pre>\nThis adds a new element inside the element.\n</li>\n</ol>\nThere are several other parameters that can be changed using JavaScript. Including: height, width, background-color, src (for images), and href (for links).\n",
       "type": "html"
     },
     {
@@ -57,9 +57,9 @@
       "type": "html"
     },
     {
-      "code": "<div id=\"my-div\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
+      "code": "<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
       "status": "",
-      "output": "<div id=\"my-div\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
+      "output": "<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
       "type": "html"
     },
     {
@@ -75,8 +75,8 @@
       "type": "html"
     },
     {
-      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\nlet newConent=\"This is new conent\";\n//Now chnage the content of the element below by assigning this value to the innerHTML of the element.\n\n//Write code above and press play button.",
-      "status": "[11]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\nlet newContent=\"This is new content\";\n//Now change the content of the element below by assigning this value to the innerHTML of the element.\n\n//Write code above and press play button.",
+      "status": "[1]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "",
       "type": "code"
     },
@@ -87,8 +87,8 @@
       "type": "html"
     },
     {
-      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now chnage the font color of the element  to 'red'\n\n//Write code above and press play button.You can check if the color changed by scrolling up.",
-      "status": "[12]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now change the font color of the element  to 'red'\n\n//Write code above and press play button.You can check if the color changed by scrolling up.",
+      "status": "[2]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "",
       "type": "code"
     },
@@ -99,8 +99,8 @@
       "type": "html"
     },
     {
-      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now chnage the backrgound color of the element  to 'green'\n\n//Write code above and press play button. You can check if the color changed by scrolling up.",
-      "status": "[16]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now change the background color of the element  to 'green'\n\n//Write code above and press play button. You can check if the color changed by scrolling up.",
+      "status": "[5]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "",
       "type": "code"
     },
@@ -130,8 +130,8 @@
     },
     {
       "code": "let input=document.getElementById(\"my-input\");\nscrib.show(\"My input is:\",input.value)",
-      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
-      "output": "My input is: 123 <br>",
+      "status": "[6]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "My input is:  <br>",
       "type": "code"
     },
     {
