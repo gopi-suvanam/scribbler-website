@@ -59,13 +59,13 @@
     {
       "code": "<input type='text' id='my-input'/>\n  <div id='my-output'>No input yet...</div>",
       "status": "",
-      "output": "<input type=\"text\" id=\"my-input\">\n  <div id=\"my-output\">kkkkkks</div>",
+      "output": "<input type=\"text\" id=\"my-input\">\n  <div id=\"my-output\">No input yet...</div>",
       "type": "html"
     },
     {
       "code": "//Get the element\nlet input = document.getElementById(\"my-input\");\nlet output=document.getElementById(\"my-output\");\n//Now let us create a function to handle change event\nfunction inputChange(){\n let inputValue=input.value;\n  output.innerHTML=inputValue;\n}\n//Let us add this handler to the change event of input\ninput.addEventListener('change',inputChange);\nscrib.show(\"Listener is now added. Type something in the above cell and click outside the input box\")",
-      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
-      "output": "",
+      "status": "[5]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "Listener is now added. Type something in the above cell and click outside the input box <br>",
       "type": "code"
     },
     {
@@ -87,9 +87,9 @@
       "type": "code"
     },
     {
-      "code": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "code": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the value  of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
       "status": "",
-      "output": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the avlue of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
+      "output": "In this cell, we have an input and a button. Right now, clicking the button does not do anything. \nLet us add listener to the button which will take the value  of the input and alert when the button is clicked. The id of the input is \"test-input\" and the id of the button is \"test-button\".\n<input type=\"text\" id=\"test-input\">\n  <button id=\"test-button\">I will alert the value of above input</button>\n\nFollow the steps in the next cell and finish the code to make the button work properly.",
       "type": "html"
     },
     {
