@@ -32,18 +32,18 @@ start_link: https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-
 - Using methods within objects
 
 
-## Lesson 6: Arrays - <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Part A</a> and <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Lesson 6: Arrays -  Part A,&nbpsp;</a>&nbsp;<a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
 - Introduction to arrays and their declaration
 - Accessing and modifying array elements
 - Iterating through arrays using loops
 
 
-## Lesson 7: DOM Manipulation (Coming soon...)
+## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-7.jsnb" >Lesson 7: DOM Manipulation </a>
 - Overview of the Document Object Model (DOM)
 - Selecting and modifying HTML elements with JavaScript
 - Handling user events (click, input)
 
-## Lesson 8: Events and Event Handling (Coming soon...)
+## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-8.jsnb"> Lesson 8: Events and Event Handling </a>
 - Introduction to event listeners
 - Responding to different events (click, keypress, etc.)
 - Practical examples of event handling
