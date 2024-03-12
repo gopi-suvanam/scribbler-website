@@ -39,7 +39,11 @@
                                 class="nav-link"
                                 href="{{ p.url | relative_url }}"
                             >
-                                {{ p.title }}
+                                {% if p.nav_text %}
+                                  {{p.nav_text}}
+                                {% else %}
+                                    {{ p.title }}
+                                {% endif %}
                             </a>
                         </li>
                     {% endif %}
