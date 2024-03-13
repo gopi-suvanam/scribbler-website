@@ -2,6 +2,7 @@
 title: Regula Falsi Method for Solving Equations 
 description: Regula Falsi method, also known as the false position method, is a numerical method used to find the root of an equation within a given interval. It is one of the oldes and easily implmentable method.
 layout: post
+start_link: https://app.scribbler.live/?jsnb=./examples/Regula-Falsi.jsnb
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Regula-Falsi.jsnb)
 ### What is Regula-Falsi Method?
