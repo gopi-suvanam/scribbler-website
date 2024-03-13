@@ -2,6 +2,7 @@
 title: Option Pricing in JavaScript using Black-Scholes Formula
 layout: post
 description: Black-Scholes is a closed-form solution to option pricing and can easily be implemented in JavaScript for web-app development or experimetnation.
+start_link: https://app.scribbler.live/?jsnb=./examples/Black-Scholes.jsnb
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Black-Scholes.jsnb)
 ### Options in Finance
