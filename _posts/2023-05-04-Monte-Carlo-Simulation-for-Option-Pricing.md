@@ -4,7 +4,7 @@ layout: post
 description: Monte-Carlo simulation can be used to price financial options and the code can be implemented in any programming language including Python and JavaScript.
 start_link: https://app.scribbler.live/?jsnb=./examples/Option-Pricing-MC.jsnb
 ---
-[Jump to Scribbler Notebook](https://app.scribbler.live/jsnb=./examples/Option-Pricing-MC.jsnb)
+[Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Option-Pricing-MC.jsnb)
 ### Option Pricing
 
 We have looked at [Monte-Carlo simulation](/2023/04/25/Scientific-Simulation-in-JavaScript.html) and pricing of options using [Black-Scholes formula](/2023/04/06/Option-Pricing-using-Black-Scholes-in-JavaScript.html). In this article we look at option pricing using Monte-Carlo simulation. This is a useful technique especially if the option being priced has some exotic/structured terms or if the underlying financial factors do not follow Brownian motion. 
