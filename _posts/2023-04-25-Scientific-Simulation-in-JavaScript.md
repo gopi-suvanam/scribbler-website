@@ -2,8 +2,9 @@
 title: Scientific Simulation in JavaScript
 layout: post
 description: Scientific simulation requires running several scenarios of a function call - ideal use-case for JavaScript.
+start_link: https://app.scribbler.live/?jsnb=./examples/Dynamic-Simulation.jsnb
 ---
-[Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Black-Scholes-Simulation.jsnb)
+
 ### What is Scientific Simulation
 Scientific simulation refers to the use of computer-based models or algorithms to mimic real-world phenomena or systems in a controlled and virtual environment. It involves creating a computational representation of a physical or abstract system and using it to simulate and analyze its behavior under different conditions or scenarios. Scientific simulations are widely used in various fields of science, such as physics, chemistry, biology, environmental science, and engineering, to study complex systems, make predictions, test hypotheses, and gain insights that may be difficult or expensive to obtain through experimentation alone.
 

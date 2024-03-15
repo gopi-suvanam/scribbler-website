@@ -2,8 +2,9 @@
 title: Using Brain.js for Machine Learning
 layout: post
 description: Brain.js is a popular open-source JavaScript library for building neural networks useful for solving a wide range of problems.
+start_link: https://app.scribbler.live/?jsnb=./examples/Decentralized-ML-Model-Storage.jsnb
 ---
-[Jump to Scribbler Notebook](https://app.scribbler.live/#./examples/Decentralized-ML-Model-Storage.jsnb)
+[Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Decentralized-ML-Model-Storage.jsnb)
 ## About Brain.js
 Brain.js is a popular open-source JavaScript library for building neural networks. It is designed to be easy to use and provides a simple API for creating and training various types of neural networks, including feedforward networks, recurrent networks, and convolutional networks.
 

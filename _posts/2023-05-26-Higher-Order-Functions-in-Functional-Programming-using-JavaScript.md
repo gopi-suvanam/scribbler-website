@@ -3,6 +3,7 @@ title: Higher Order Functions in Functional Programming using JavaScript
 layout: post
 description: Higher-order functions are functions that take other functions as arguments or return them as values. They are an essential part of functional programming, and JavaScript has many built-in higher-order functions, such as forEach, map, filter, reduce.
 tags: javascript, functional programming
+start_link: https://app.scribbler.live/?jsnb=./examples/Numerical-Analysis-Using-Functional-Paradigm.jsnb
 ---
 
 Higher-order functions are functions that can take other functions as arguments or return functions as results. In JavaScript, functions are first-class citizens, which means they can be treated like any other value. This allows for the creation and manipulation of higher-order functions. We have looked at some of these functions when we talked about [Array functions](/2023/05/23/Array-Function-in-JavaScript.html) and [Closure](/2023/05/23/Closure-in-JavaScript-for-Function-Programming.html). This article is part of a series on higher [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html). 
