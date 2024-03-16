@@ -25,9 +25,9 @@ There are several usecases where JavaScript can be used in Scribbler to produce 
 
 
 ## Advanced Features for Advanced Learners
-For more advanced learners, Scribbler offers advanced features such as integration with external libraries, support for server-side JavaScript with Node.js, and access to APIs for web development and data manipulation. These features empower users to build real-world projects, experiment with cutting-edge technologies, and take their JavaScript skills to the next level.
+For more advanced learners, Scribbler offers advanced features such as integration with external libraries, and access to APIs for web development and data manipulation. These features empower users to build real-world projects, experiment with cutting-edge technologies, and take their JavaScript skills to the next level.
 
 See the documentation for more details: [Scribbler Docs](https://scribbler.live/docs.html)
 
-## Conclusion
+## Go for it!
 In conclusion, Scribbler is a powerful and versatile online tool for learning JavaScript online. Its interactive learning environment, rich features, and collaborative capabilities make it an ideal choice for beginners and experienced coders alike. Whether you're looking to master the fundamentals of JavaScript or explore advanced concepts and techniques, Scribbler provides the tools and resources you need to succeed. So why wait? Start your JavaScript journey with Scribbler today and unlock your full coding potential!
