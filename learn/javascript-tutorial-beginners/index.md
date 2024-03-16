@@ -1,13 +1,13 @@
 ---
-title: JavaScript Tutorial for Beginners
-description: Learn Foundations of JavaScript in 10 Easy Lessons
+title: JavaScript Tutorial - A Course for Beginners
+description: Learn Foundations of JavaScript through a course of 10 Easy Lessons
 show_in_menu: false
 start_link: https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb
 nav_text: Learn
 ---
 
 # Tutorial Contents
-This tutorial is for learning JavaScript through easy to use notebooks. Each notebook will identify once concept of JavaScript and teach it using live code, examples, and experiments. 
+This course/tutorial is for learning JavaScript through easy to use notebooks. Each notebook will identify once concept of JavaScript and teach it using live code, examples, and experiments. 
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb">Lesson 1: Introduction to JavaScript</a>
 - Overview of JavaScript and its role in web development
