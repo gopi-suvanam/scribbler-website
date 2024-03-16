@@ -20,7 +20,7 @@ This is a free course/tutorial for learning JavaScript through easy lessons. Eac
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb">Lesson 3: Control Flow<a>
 - Introduction to conditional statements (if, else if, else)
-- Using logical operators (&&, ||, !)
+- Using logical operators 
 - Writing and understanding loops (for, while)
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb"> Lesson 4: Functions</a>
