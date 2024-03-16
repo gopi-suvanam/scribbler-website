@@ -4,7 +4,7 @@ description: How to use Scribbler to make awesome JavaScript Notebooks
 show_in_menu: true
 ---
 ## JavaScript Tutorial for Beginners
-<a href="https://scribbler.live/learn/javascript-tutorial-beginners/" target="_blank">JavaScript Tutoral for Beginners</a>
+Click here: <a href="https://scribbler.live/learn/javascript-tutorial-beginners/" target="_blank">JavaScript Tutoral for Beginners</a>
 - Learn JavaScript in 10 Easy Lessons
 - Use the notebooks to see live code and experiment
 - Go through hands on examples
