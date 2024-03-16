@@ -7,7 +7,7 @@ nav_text: Learn
 ---
 
 # Tutorial Contents
-This is a free course/tutorial for learning JavaScript through easy to use notebooks. Each notebook will identify once concept of JavaScript and teach it using live code, examples, and experiments. 
+This is a free course/tutorial for learning JavaScript through easy to use notebooks. Each notebook will identify once concept of JavaScript and teach it using live code, examples, and experiments. No login or subscription required. Just click on each lesson and start learning!
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb">Lesson 1: Introduction to JavaScript</a>
 - Overview of JavaScript and its role in web development
