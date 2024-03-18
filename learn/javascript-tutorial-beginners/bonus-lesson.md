@@ -30,6 +30,10 @@ Let's start by setting up the HTML structure for our web application. We'll incl
             border: 1px solid #ccc;
         }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
 </head>
 
 
