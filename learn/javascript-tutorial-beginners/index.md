@@ -50,12 +50,15 @@ This is a free course/tutorial for learning JavaScript through easy lessons. Eac
 - Responding to different events (click, keypress, etc.)
 - Practical examples of event handling
 
-## Lesson 9: Asynchronous JavaScript (Coming soon...)
+## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-9.jsnb"> Lesson 9: Error Handling and Asynchronous JavaScript </a>
+- Using try...catch for error handling
 - Understanding asynchronous programming
-- Event loop
-- Introduction to Promises
 
-## Lesson 10: Putting it All Together (Coming soon...)
+## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-10.jsnb"> Lesson 10: Scripts, Modules and APIS</a>
+- Load external scripts and modules
+- Fetch external data using APIs
+
+## <a href="https://scribbler.live/learn/javascript-tutorial-beginners/bonus-lesson">Bonus Lesson: Putting it All Together</a>
 - Applying the knowledge gained to a small project
-
+- Build a crypt-currency plotter using user input, an API, and Plotly library
 
