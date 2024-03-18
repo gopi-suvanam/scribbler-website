@@ -4,7 +4,9 @@ layout: post
 description: The is a bonus lesson on JavaScript tutorial. It helps you build a small web-application from scratch.
 ---
 ## Introduction
-In this bonus lesson, we'll put together everything we've learned so far to create a dynamic web application for charting cryptocurrency prices using a public, free API. We'll use Plotly3.js to create a chart for an input crypto-currency. This lesson is the last of the tutorial : [JavaScript Tutorial for Beginners](https://scribbler.live/learn/javascript-tutorial-beginners/)
+In this bonus lesson, we'll put together everything we've learned so far to create a dynamic web application for charting cryptocurrency prices using a public, free API. We'll use Plotly.js to create a chart for an input crypto-currency. This lesson is the last of the tutorial : [JavaScript Tutorial for Beginners](https://scribbler.live/learn/javascript-tutorial-beginners/)
+
+
 
 ## HTML Structure:
 
