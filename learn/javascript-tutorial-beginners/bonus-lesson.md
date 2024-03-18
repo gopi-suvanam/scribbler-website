@@ -33,8 +33,8 @@ Let's start by setting up the HTML structure for our web application. We'll incl
 
 <body>
     <h1>Cryptocurrency Price Chart</h1>
-    <label for="cryptoSymbol">Enter Cryptocurrency Symbol (e.g., BTC, ETH):</label>
-    <input type="text" id="cryptoSymbol" placeholder="BTC">
+    <label for="cryptoSymbol">Enter Cryptocurrency Symbol (e.g., bitcoin, ethereum):</label>
+    <input type="text" id="cryptoSymbol" >
     <button id="loadButton">Load Chart</button>
     
     <div id="chart"></div>
