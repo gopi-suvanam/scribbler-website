@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "name": "Lesson 9: Error Handling and Asynchronous Functions",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1  style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "status": "",
+      "output": "<div style=\"text-align:center;background-color:#fede02;color:#555;margin:-10px;margin-left:-20px;margin-right:-20px;\">\n\n        <br><h1 style=\"color:#555\">Learn Foundations of JavaScript in 10 Easy Lessons</h1>\n<p class=\"site-masthead__description mb-0\" style=\"color:#555\">\n        This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.\n    </p><br></div>",
+      "type": "html"
+    },
+    {
+      "code": "<h1>Error Handling and Asynchronous Functions: Lesson 9 of 10</h1>",
+      "status": "",
+      "output": "<h1>Error Handling and Asynchronous Functions: Lesson 9 of 10</h1>",
+      "type": "html"
+    },
+    {
+      "code": "<h2> Overview</h2>\n\nIn JavaScript, error handling is crucial for gracefully managing unexpected situations that may arise during program execution. Additionally, with the rise of asynchronous programming, it's essential to understand how to handle errors in asynchronous functions effectively. In this lesson, we'll explore error handling using `try...catch` blocks and managing asynchronous operations using promises with `.then()` and `.catch()`.\n",
+      "status": "",
+      "output": "<h2> Overview</h2>\n\nIn JavaScript, error handling is crucial for gracefully managing unexpected situations that may arise during program execution. Additionally, with the rise of asynchronous programming, it's essential to understand how to handle errors in asynchronous functions effectively. In this lesson, we'll explore error handling using `try...catch` blocks and managing asynchronous operations using promises with `.then()` and `.catch()`.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Handling Errors</h3>\n The `try...catch` statement allows you to handle runtime errors gracefully by attempting to execute a block of code and catching any exceptions that may occur. The syntax is simple. It constitutes of two blocks: try and catch.\n <pre>\n  try {\n         // Code to be executed\n     } catch (error) {\n         // Code to handle the error\n     }\n</pre>\nHere's how it works:\n<br>1. try block: The code that you want to monitor for errors is placed within the try block. If an error occurs within this block, JavaScript immediately jumps to the catch block.\n<br>2. catch block: This block is executed when an error occurs within the try block. It allows you to handle the error gracefully. You can specify what action to take, log the error, or provide a fallback behavior.\n<h3>Behaviour</h3>\n -If the try block encounters an error, the control will immediately jump to the catch block.\n <br>-The error object is caught and stored in the error variable, which you can then use to access information about the error (e.g., error.message).\n <br>-If there's no error, the code inside the try block runs as expected.\n<br>Below is a code that tries to access a property of a an object that is not defined. Let us see how try...catch can handle this.",
+      "status": "",
+      "output": "<h3>Handling Errors</h3>\n The `try...catch` statement allows you to handle runtime errors gracefully by attempting to execute a block of code and catching any exceptions that may occur. The syntax is simple. It constitutes of two blocks: try and catch.\n <pre>  try {\n         // Code to be executed\n     } catch (error) {\n         // Code to handle the error\n     }\n</pre>\nHere's how it works:\n<br>1. try block: The code that you want to monitor for errors is placed within the try block. If an error occurs within this block, JavaScript immediately jumps to the catch block.\n<br>2. catch block: This block is executed when an error occurs within the try block. It allows you to handle the error gracefully. You can specify what action to take, log the error, or provide a fallback behavior.\n<h3>Behaviour</h3>\n -If the try block encounters an error, the control will immediately jump to the catch block.\n <br>-The error object is caught and stored in the error variable, which you can then use to access information about the error (e.g., error.message).\n <br>-If there's no error, the code inside the try block runs as expected.\n<br>Below is a code that tries to access a property of a an object that is not defined. Let us see how try...catch can handle this.",
+      "type": "html"
+    },
+    {
+      "code": "try {\n  // Trying to access a property of an undefined variable\n  let undefinedVariable;\n  console.log(undefinedVariable.property);\n} catch (error) {\n  // Error handling\n  scrib.show('An error occurred:', error.message);\n}\n",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "An error occurred: Cannot read properties of undefined (reading 'property') <br>",
+      "type": "code"
+    },
+    {
+      "code": "Here is another example. ",
+      "status": "",
+      "output": "Here is another example:",
+      "type": "html"
+    },
+    {
+      "code": "try {\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n  //Trying to acces English marks of 3rd student:\n  let englishMarks=marksOfStudents[5].english;\n scrib.show(englishMarks)\n\n} catch (error) {\n  // Error handling\n  scrib.show('An error occurred:', error.message);\n}\n",
+      "status": "[2]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "An error occurred: Cannot read properties of undefined (reading 'english') <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[4] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
+      "status": "",
+      "output": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[4] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
+      "type": "html"
+    },
+    {
+      "code": "try {\n\t  let names=[{\n\t\tfirstName:'Scibbler',\n\t\tlastName:'live'\n\t  }]\n\t  scrib.show(\"First name:\",name[1].firstName+name[1].lastName);\n\n\t  let numbers=[1,2,3,4,5];\n\t  scrib.show(\"First number:\",numbers(0));\n\n\t  for(let i=0;i<5;i=i+1){\n\t   scrib.show(number[i]); \n}\n} catch (error) {\n\t  // Error handling\n\t  scrib.show('An error occurred:', error.message);\n}\n",
+      "status": "[3]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "An error occurred: Cannot read properties of undefined (reading 'firstName') <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Asynchronous Programming</h2>\nAsynchronous programming in JavaScript allows you to execute multiple tasks concurrently without blocking the execution of other code. It is a programming paradigm commonly used in web development to handle tasks that may take time to complete, such as fetching data from a server, reading files, or performing computations.\n<br>   - Asynchronous operations in JavaScript often return an object called 'Promise'  to handle their results.\n<br>   - Promises have `.then()` and `.catch()` methods for handling success and error conditions respectively.\n <br>  - `.then()` is used to handle the resolved value of a promise.\n <br> -`.catch()` is used to handle any errors that occur during promise execution.\n <br>- Example:\n<pre>\n     asyncFunction()\n         .then(result => {\n             // Handle success\n             console.log('Result:', result);\n         })\n         .catch(error => {\n             // Handle error\n             console.error('Error:', error);\n         });\n</pre>\nWe will see how to use asynchronous function, but defining a function that returns a promise is beyond the scope of this course.\n",
+      "status": "",
+      "output": "<h2>Asynchronous Programming</h2>\nAsynchronous programming in JavaScript allows you to execute multiple tasks concurrently without blocking the execution of other code. It is a programming paradigm commonly used in web development to handle tasks that may take time to complete, such as fetching data from a server, reading files, or performing computations.\n<br>   - Asynchronous operations in JavaScript often return an object called 'Promise'  to handle their results.\n<br>   - Promises have `.then()` and `.catch()` methods for handling success and error conditions respectively.\n <br>  - `.then()` is used to handle the resolved value of a promise.\n <br> -`.catch()` is used to handle any errors that occur during promise execution.\n <br>- Example:\n<pre>     asyncFunction()\n         .then(result =&gt; {\n             // Handle success\n             console.log('Result:', result);\n         })\n         .catch(error =&gt; {\n             // Handle error\n             console.error('Error:', error);\n         });\n</pre>\nWe will see how to use asynchronous function, but defining a function that returns a promise is beyond the scope of this course.\n",
+      "type": "html"
+    },
+    {
+      "code": "<h3>Asynchronous Fetch</h3>\nOne popular Promise function in JavaScript is fetch(). It's commonly used to make network requests to fetch resources from a server. One commonly used URL  for testing purposes is the JSONPlaceholder. It provides fake object data for testing and prototyping. Here's an example of how fetch() is typically used:",
+      "status": "",
+      "output": "<h3>Asynchronous Fetch</h3>\nOne popular Promise function in JavaScript is fetch(). It's commonly used to make network requests to fetch resources from a server. One commonly used URL  for testing purposes is the JSONPlaceholder. It provides fake object data for testing and prototyping. Here's an example of how fetch() is typically used:",
+      "type": "html"
+    },
+    {
+      "code": "fetch('https://jsonplaceholder.typicode.com/users') \n  .then(response => {\n \t\tscrib.show(\"Got a response\");\n  })\n .catch(error => {\n    // Error handling\n    scrib.show('There was a problem with the fetch operation');\n  });\n",
+      "status": "[1]<br><span style=\"font-size:8px\">8ms<span></span></span>",
+      "output": "{} <br>Got a response <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h3>Explanation</h3>\nIn the above example, we check if we get a reponse from the link. If we do not get a response, we will show that it failed. \nIn the next lesson, we will learn how to use the reponse. Note that while the data is being fetched, the other parts of the UI are not blocked and other code and user interactions continue to be executed.\n<h3>Experiment</h3>\nIn the cell below, we have made some changes in the input of fetch (the URL). Please correct and make sure the data is fetched (you need to have a keen eye to spot the error :)",
+      "status": "",
+      "output": "<h3>Explanation</h3>\nIn the above example, we check if we get a reponse from the link. If we do not get a response, we will show that it failed. \nIn the next lesson, we will learn how to use the reponse. Note that while the data is being fetched, the other parts of the UI are not blocked and other code and user interactions continue to be executed.\n<h3>Experiment</h3>\nIn the cell below, we have made some changes in the input of fetch (the URL). Please correct and make sure the data is fetched (you need to have a keen eye to spot the error :)",
+      "type": "html"
+    },
+    {
+      "code": "fetch('https://jsonplaceholder.typicode.corn/users') \n  .then(response => {\n \t\tscrib.show(\"Got a response\");\n  })\n .catch(error => {\n    // Error handling\n    scrib.show('There was a problem with the fetch operation');\n  });\n",
+      "status": "[42]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "{} <br>There was a problem with the fetch operation <br>",
+      "type": "code"
+    },
+    {
+      "code": "<h2>Summary</h2>\n   - Understanding error handling techniques such as `try...catch` and asynchronous error handling with promises is essential for writing robust JavaScript code, especially in applications with asynchronous operations.\n <br>- Practice using `try...catch` blocks and handling errors in asynchronous functions to improve your error handling skills and create more reliable JavaScript applications.",
+      "status": "",
+      "output": "<h2>Summary</h2>\n   - Understanding error handling techniques such as `try...catch` and asynchronous error handling with promises is essential for writing robust JavaScript code, especially in applications with asynchronous operations.\n <br>- Practice using `try...catch` blocks and handling errors in asynchronous functions to improve your error handling skills and create more reliable JavaScript applications.",
+      "type": "html"
+    },
+    {
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-10.jsnb\" target=\"_blank\">Lesson 10:  Scripts, Modules and APIs</a></li>\n  \n  </ul>",
+      "status": "",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live#\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n  <li><a href=\"https://scribbler.live/learn\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-10.jsnb\" target=\"_blank\">Lesson 10:  Scripts, Modules and APIs</a></li>\n  \n  </ul>",
+      "type": "html"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
