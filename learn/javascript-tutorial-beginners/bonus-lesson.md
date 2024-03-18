@@ -1,6 +1,6 @@
 ---
 title: Bonus Lesson - Putting it All Together
-layout: default
+layout: post
 description: The is a bonus lesson on JavaScript tutorial. It helps you build a small web-application from scratch.
 ---
 ## Introduction
