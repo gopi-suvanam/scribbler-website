@@ -83,7 +83,7 @@ function drawGraph(){
     })
     .then(data => {
         // Process data
-            const cryptoSymbol = document.getElementById('cryptoSymbol').value.toUpperCase();
+            const cryptoSymbol = document.getElementById('cryptoSymbol').value.toLowerCase();
    	    const prices = [];
             const timestamps = [];
         //Run a loop across the price points and extract the time and price
