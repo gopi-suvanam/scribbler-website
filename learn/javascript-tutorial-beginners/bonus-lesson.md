@@ -117,13 +117,13 @@ function drawGraph(){
 
 ```
 
-Add the below line to the script file for attaching the function to the click event of the 
+Add the below line to the script file for attaching the function to the click event of the button.
 
 ```
 document.getElementById('loadButton').addEventListener('click', drawGraph);
 ```
 
-Copey the above two pieces of code into a tect and editor and save this file as script.js in the same folder where you have saved index.html. Now double click and open index.html in the browser. Enter "bitcoin" in the input field and click the "Load Chart" button. Voila! You have your first web-app ready. 
+Copy the above two pieces of code into a tect and editor and save this file as script.js in the same folder where you have saved index.html. Now double click and open index.html in the browser. Enter "bitcoin" in the input field and click the "Load Chart" button. Voila! You have your first web-app ready. 
 
 ## Explanation
 Explanation:
