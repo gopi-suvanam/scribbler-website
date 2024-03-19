@@ -39,21 +39,21 @@
       "type": "code"
     },
     {
-      "code": "Here is another example. ",
+      "code": "<h3>Explanation</h3>\nIn the above example, we get an error because we are trying to access the property of an object that has not been defined yet. The error message shows the error and it can be rectified. `try...catch` can be used for debugging code. It can also be used to catch unexpected errors while an application is running. This is to ensure an application runs even when there are errors while usage.\n<br>Here is another example. ",
       "status": "",
-      "output": "Here is another example:",
+      "output": "<h3>Explanation</h3>\nIn the above example, we get an error because we are trying to access the property of an object that has not been defined yet. The error message shows the error and it can be rectified. `try...catch` can be used for debugging code. It can also be used to catch unexpected errors while an application is running. This is to ensure an application runs even when there are errors while usage.\n<br>Here is another example. ",
       "type": "html"
     },
     {
-      "code": "try {\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n  //Trying to acces English marks of 3rd student:\n  let englishMarks=marksOfStudents[5].english;\n scrib.show(englishMarks)\n\n} catch (error) {\n  // Error handling\n  scrib.show('An error occurred:', error.message);\n}\n",
-      "status": "[2]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "code": "try {\nlet marksOfStudents=[\n  { english:100,maths:75,science:80},\n  { english:90,maths:85,science:75},\n  { english:80,maths:70,science:85}\n  ];\n  //Trying to acces English marks of 3rd student:\n  let englishMarks=marksOfStudents[3].english;\n scrib.show(englishMarks)\n\n} catch (error) {\n  // Error handling\n  scrib.show('An error occurred:', error.message);\n}\n",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
       "output": "An error occurred: Cannot read properties of undefined (reading 'english') <br>",
       "type": "code"
     },
     {
-      "code": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[4] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
+      "code": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[2] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
       "status": "",
-      "output": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[4] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
+      "output": "<h3>Experiment</h3>\nThe above error happens because arrays in JavaScript have  indices starting from 0 and not 1. To correct it you will have to use marksOfStudents[2] in line number 8. Can you change the code and check if it works?\n<br>The below cell has a series of errors in the try block. Correct one by one after checking the error message.",
       "type": "html"
     },
     {
