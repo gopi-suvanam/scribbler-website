@@ -10,7 +10,7 @@ In this bonus lesson, we'll put together everything we've learned so far to crea
 
 ## HTML Structure:
 
-Let's start by setting up the HTML structure for our web application. We'll include input fields for selecting the cryptocurrency symbol (e.g., BTC, ETH) and a container for displaying the chart.
+Let's start by setting up the HTML structure for our web application. We'll include input fields for selecting the cryptocurrency symbol (e.g., bitcoin,ethereum etc) and a container for displaying the chart.
 
 ```html
 <!DOCTYPE html>
@@ -50,20 +50,23 @@ Let's start by setting up the HTML structure for our web application. We'll incl
 </html>
 ```
 
-Save this file as index.html.
+Copy the above code into text editor and save it as index.html.
 
 ## JavaScript (script.js):
 
-First creat a function that fetches the data for a particular currency. We will use the following concepts discussed during the course:
+To generate the graph and display, we will create a function that fetches the data for a particular currency. We will attach it to the click event of the "Load Chart" button.
+
+We will use the following concepts discussed during the course:
+
 1. `document.getElementById` to get the name of the crypt-currency from input
 2. `fetch` for getting data from API
-3. `reponose.json` for converting the API output to an object.
+3. `response.json` for converting the API output to an object.
 4. `.then` for asynchronous process.
-5. `.forEach` for running a loo[
+5. `.forEach` for running a loop
 6. `.push` for pushing a value into an array
 7. `.addEventListener` to attach a function to a click event
 
-We will also use a special function Date to convert a timestamp to a date and we will use Plotly.newPlot - a function to plot data into a chart.
+We will also use a special function Date to convert a timestamp to a date and we will use Plotly.newPlot - a function to plot data into a chart. This comes in the library Plotly loaded in the HTML above.
 
 ```javascript
 
@@ -119,7 +122,7 @@ Add the below line to the script file for attaching the function to the click ev
 document.getElementById('loadButton').addEventListener('click', drawGraph);
 ```
 
-Save this file as script.js in the same folder where you have save index.html. Now double click and open index.html in the browser. Enter "bitcoin" in the input field and click the "Load Chart" button. Voila! You have your first web-app ready. 
+Copey the above two pieces of code into a tect and editor and save this file as script.js in the same folder where you have saved index.html. Now double click and open index.html in the browser. Enter "bitcoin" in the input field and click the "Load Chart" button. Voila! You have your first web-app ready. 
 
 ## Explanation
 Explanation:
