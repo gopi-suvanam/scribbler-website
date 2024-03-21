@@ -189,5 +189,14 @@ These algorithms use [Higher Order Functions](/2023/05/26/Higher-Order-Functions
 You can experiment with Runge-Kutta Method in this notebook on Scribbler: [Runge-Kutta Method for Differential Equations](https://app.scribbler.live/?jsnb=./examples/Runge-Kutta-for-Differential-Equations.jsnb). 
 
 
+## Summary
+Learning numerical analysis in JavaScript can empower you to perform complex numerical computations, build interactive web applications. JavaScript can provide an environment where scientific computation can be done on the browser. This is great for interactive science. Numerical analysis tools can help solve complex scientific problems using code. This can help scientists ease out their workflows.
+
+
+
+
+
+
+
 
 
