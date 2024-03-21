@@ -38,7 +38,6 @@ Speech Recognition: Brain.js can be used to build models that can recognize spee
 
 Health Monitoring: Brain.js can be used to build models that can monitor health data, such as heart rate and blood pressure, and predict potential health issues.
 
-Overall, Brain.js can be used in any application that requires machine learning and can benefit from the ability to learn and adapt from data.
 
 Experiment in this notebook on Scribbler:[Decentralized ML Modeling Using Brain.js](https://app.scribbler.live/?jsnb=./examples/Decentralized-ML-Model-Storage.jsnb){: .jsnb-link} 
 
