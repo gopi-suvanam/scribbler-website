@@ -42,13 +42,13 @@ Health Monitoring: Brain.js can be used to build models that can monitor health 
 Experiment in this notebook on Scribbler:[Decentralized ML Modeling Using Brain.js](https://app.scribbler.live/?jsnb=./examples/Decentralized-ML-Model-Storage.jsnb){: .jsnb-link} 
 
 ## Brain.js vs Tensorflow.js
-Certainly! Let's compare **Brain.js** and **TensorFlow.js** in terms of their features and use cases:
-    - Brain.js:
-        - High-Level Abstraction: Brain.js is designed to be more high-level, abstracting away many details of machine learning. This makes it easier for developers who are new to machine learning.
-        - JavaScript-Centric: It is specifically written for JavaScript users, so its syntax is more familiar and user-friendly for web developers.
-    - TensorFlow.js: 
-        - Ecosystem and Versatility: TensorFlow.js is part of the larger TensorFlow ecosystem. It allows you to convert existing TensorFlow and Keras models into formats usable by TensorFlow.js. It's versatile and well-maintained across different platforms.
-        - Python-Centri: Tensorflow is Python centric and most of its users are Python developers.
+Although Tensorflow.js is more popular, brain.js jas its own advanages. 
+- Brain.js:
+    - High-Level Abstraction: Brain.js is designed to be more high-level, abstracting away many details of machine learning. This makes it easier for developers who are new to machine learning.
+    - JavaScript-Centric: It is specifically written for JavaScript users, so its syntax is more familiar and user-friendly for web developers.
+- TensorFlow.js: 
+    - Ecosystem and Versatility: TensorFlow.js is part of the larger TensorFlow ecosystem. It allows you to convert existing TensorFlow and Keras models into formats usable by TensorFlow.js. It's versatile and well-maintained across different platforms.
+    - Python-Centri: Tensorflow is Python centric and most of its users are Python developers.
 
 ## Code examples of Brain.js
 Here's a simple example of how to use a CDN to load Brain.js in browsers by loading the library from a CDN:
