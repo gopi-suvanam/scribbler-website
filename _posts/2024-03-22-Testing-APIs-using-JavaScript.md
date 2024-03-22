@@ -2,7 +2,7 @@
 title: Testing APIs using JavaScript
 description: JavaScript can be used in Scribbler easily to test REST APIs easily. JS can handle various methods (GET, POST etc) and authenitcation mechanisms.
 layout: post
-start_link: https://app.scribbler.live/jsnb=./examples/API-Testing.jsnb
+start_link: https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb
 ---
 ## JavaScript for Testing APIs
 JavaScript is useful for API testing for several reasons:
@@ -44,7 +44,7 @@ Testing APIs in Scribbler involves using JavaScript to make HTTP requests to the
    - Output the results of the API tests in the Scribbler notebook.
    - Display relevant information such as response data, status codes, and any errors encountered during testing.
    - Use scrib.show to present the test results clearly.
-You can use this notebook to start experimenting: [Scribbler Notebook for API Testing](https://app.scribbler.live/jsnb=./examples/API-Testing.jsnb).
+You can use this notebook to start experimenting: [Scribbler Notebook for API Testing](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
 
 ## Example Code for API Testing in JavaScript
 Here's an example code snippet demonstrating how to test a hypothetical API endpoint that returns information about a user:
@@ -162,4 +162,4 @@ In this example:
 - If an error occurs during the request, it is caught and logged to the console.
 
 
-By following this process and using JavaScript to make API requests, you can effectively perform API testing in Scribbler. Remember to replace the example API URL with the actual URL of the API you want to test. Jump to the notebook to start experimenting: [here](https://app.scribbler.live/jsnb=./examples/API-Testing.jsnb).
+By following this process and using JavaScript to make API requests, you can effectively perform API testing in Scribbler. Remember to replace the example API URL with the actual URL of the API you want to test. Jump to the notebook to start experimenting: [here](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
