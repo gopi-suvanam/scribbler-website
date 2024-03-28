@@ -28,6 +28,7 @@ Creational patterns focus on object creation mechanisms, providing flexibility i
    - *Module Pattern:* Encapsulates code within modules, preventing pollution of the global namespace and promoting information hiding.
    - *Factory Pattern:* Defines an interface for creating objects but allows subclasses to alter the type of objects that will be created.
    - *Singleton Pattern:* Ensures a class has only one instance and provides a global point of access to it.
+
 #### Constructor Pattern:
 ```javascript
 function Person(name, age) {
