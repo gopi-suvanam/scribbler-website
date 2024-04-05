@@ -4,9 +4,7 @@ description: Features and How-to of Scribbler
 show_in_menu: true
 ---
 
-
 ## Installation
-
 
 ### Download
 One of the standout features of Scribbler.Live is its hassle-free setup. Users can conveniently download or clone the tool directly from GitHub and immediately start using it by hosting the folder in webserver and opening the link. This eliminates the need for any intricate installation processes, making it easily accessible to anyone. This means that users can effortlessly put the tool behind a web server to serve it statically, without any requirement for a backend framework such as Node.js or Python. By leveraging the simplicity of static serving, Scribbler ensures smooth and efficient usage.
@@ -139,19 +137,19 @@ The scrib.show() function is a powerful tool that displays an object in the outp
 The scrib.currCell() function returns the element corresponding to the output of the current code cell. It provides users with direct access to the output element, enabling further customization or manipulation as needed. It's worth noting that these functions may behave differently when called from within asynchronous code due to the asynchronous nature of their execution.
 
 ### scrib.getDom(id):
-The get_dscrib.getDomom() function is a shorthand notation for window.getElementById. It allows users to access DOM elements easily by providing the element's ID. By leveraging get_dom(), users can retrieve specific elements and interact with them within their code cells.
+The scrib.getDom() function is a shorthand notation for window.getElementById. It allows users to access DOM elements easily by providing the element's ID. By leveraging scrib.getDom(), users can retrieve specific elements and interact with them within their code cells.
 
 ### scrib.waitForDom(id)
-The scrib.waitForDom() function is an asynchronous version of get_dom(). It allows users to wait for a specific DOM element to become available and resolves to the element once it is accessible. This is particularly useful when a DOM element is being created asynchronously by another activity. Users can utilize wait_for_dom() in combination with promises or within async functions to ensure proper synchronization and handling of DOM elements.
+The scrib.waitForDom() function is an asynchronous version of scrib.getDom(). It allows users to wait for a specific DOM element to become available and resolves to the element once it is accessible. This is particularly useful when a DOM element is being created asynchronously by another activity. Users can utilize scrib.waitForDom() in combination with promises or within async functions to ensure proper synchronization and handling of DOM elements.
 
 ### scrib.uploadFile()
-The load_file() function opens the file browser and resolves to the contents of a selected file. This function enables users to read and access the contents of files directly within the notebook. By leveraging load_file(), users can seamlessly integrate external data or leverage the content of external files within their notebooks. The function is asynchronous and resolves to the contents of the file. 
+The scrib.uploadFile() function opens the file browser and resolves to the contents of a selected file. This function enables users to read and access the contents of files directly within the notebook. By leveraging scrib.uploadFile(), users can seamlessly integrate external data or leverage the content of external files within their notebooks. The function is asynchronous and resolves to the contents of the file. 
 
 ### scrib.downloadString()
 The downloadString function provides an easy way to download a string as a file. It takes three parameters: 1. string to be downloaded. 2. exportName - the name of the file. 3. char_set - the character set (utf-8 etc).
 
 ### scrib.loadScript(url)
-The scrib.uploadFile() function is used to load an external JavaScript file from a specified URL. For example, users can load libraries such as jQuery by calling load_script("https://code.jquery.com/jquery-3.6.3.min.js"). This capability allows users to incorporate additional functionality or external libraries into their notebook environment effortlessly. The function by default loads the script asynchronously. To load the script synchronously use: load_script(url,false).
+The scrib.uploadFile() function is used to load an external JavaScript file from a specified URL. For example, users can load libraries such as jQuery by calling scrib.loadScript("https://code.jquery.com/jquery-3.6.3.min.js"). This capability allows users to incorporate additional functionality or external libraries into their notebook environment effortlessly. The function by default loads the script asynchronously. To load the script synchronously use: scrib.loadScript(url,false).
 
 
 
@@ -175,21 +173,16 @@ Ctrl-O: Load a jsnb from local machine
 
 ## Using External Libraries
 
-Scribbler provides the flexibility to leverage external libraries, enhancing the functionality and empowering users to access a wide range of resources. We will explore two specially built functions for utilizing external libraries: load_script() and import_module(). Additionally, we will discuss the dynamic import feature of ES6 modules and highlight the preloaded libraries D3 and Plotlyjs, along with the DI-Labs sister project. By leveraging these capabilities, users can expand the capabilities of their notebooks, access powerful data manipulation and visualization tools, and tap into a vast ecosystem of libraries and resources.
+Scribbler provides the flexibility to leverage external libraries, enhancing the functionality and empowering users to access a wide range of resources. We will explore two specially built functions for utilizing external libraries: scrib.loadScript(). Additionally, we will discuss the dynamic import feature of ES6 modules and highlight the preloaded libraries D3 and Plotlyjs, along with the DI-Labs sister project. By leveraging these capabilities, users can expand the capabilities of their notebooks, access powerful data manipulation and visualization tools, and tap into a vast ecosystem of libraries and resources.
 
-### Loading Scripts with load_script()
-The load_script() function is designed to load external scripts into interactive notebooks. By providing the URL of the desired script, such as load_script("https://code.jquery.com/jquery-3.6.3.min.js") to load JQuery, users can effortlessly incorporate libraries and functionality into their notebooks. This function simplifies the process of integrating external resources, enabling users to harness the power of popular JavaScript libraries.
-
-### Importing ES6 Modules with import_module()
-The import_module() function offers a convenient way to load ES6 modules within interactive notebooks. Users can specify the module's file location as the "module" parameter and define the desired features using a dictionary called "features". The keys within the "features" dictionary are loaded from the module and exposed globally, allowing users to access and utilize specific functionalities. This capability enhances the modularity and extensibility of interactive notebooks, enabling seamless integration of ES6 modules.
+### Loading Scripts with scrib.loadScript()
+The scrib.loadScript() function is designed to load external scripts into interactive notebooks. By providing the URL of the desired script, such as scrib.loadScript("https://code.jquery.com/jquery-3.6.3.min.js") to load JQuery, users can effortlessly incorporate libraries and functionality into their notebooks. This function simplifies the process of integrating external resources, enabling users to harness the power of popular JavaScript libraries.
 
 ### Dynamic Import with ES6 Modules
 Interactive notebooks also support the dynamic import feature of ES6 modules. Users can utilize the import() function to load modules dynamically, specifying the URL of the module to be loaded. For example, import("https://unpkg.com/jquery@3.3.1/dist/jquery.min.js") loads the JQuery library dynamically into the notebook. This feature provides flexibility and on-demand loading of modules, enabling users to access specific functionalities when needed.
 
 ### Preloaded Libraries and DI-Labs
 D3 and Plotlyjs libraries are preloaded in Scribbler, offering powerful data visualization capabilities. Additionally, the DI-Labs sister project provides an easy-to-use interface for working with data, including plotting, array manipulation, and scientific computing. Users can explore the provided example at https://decentralized-intelligence.com/jsnb/#/jsnb/examples/AMM-Simulation.jsnb to gain insights into the potential of DI-Labs and its integration within interactive notebooks.
-
-
 
 
 
