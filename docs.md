@@ -14,6 +14,10 @@ One of the standout features of Scribbler.Live is its hassle-free setup. Users c
 ### GitHub Pages Hosted Version
 Scribbler also offers a convenient option of usage through GitHub Pages. Users can access the hosted version of the tool at https://app.scribbler.live, where they can enjoy all the features and benefits without the need for self-hosting. This allows for easy sharing and collaboration, making Scribbler a versatile tool for various team sizes and locations.
 
+## Sandboxed Environment
+- The Scribbler notebook operates within a sandboxed iframe environment. This restricts certain functionalities, such as accessing specific browser APIs, external resources where CORS (Cross-Origin Resource Sharing) is restricted, and cookies.
+- To enable these features, click on the icon ⤯ located at the top-right corner above the notebook. Upon confirmation, the notebook will reload without the sandbox, granting access to the restricted functionalities.
+
 ## Cells
 ### Cell Types and Structure
 At the heart of interactive notebooks lies the concept of cells. The entire notebook is divided into cells, each serving a specific purpose. There are two primary cell types: HTML and code (JavaScript). HTML cells allow for the creation of dynamic content using HTML markup, while code cells are designed for executing JavaScript code.
@@ -106,17 +110,23 @@ GitHub files can be loaded using a shorter notation: "github:user-name/repo/path
 ### Sharing and Collaboration
 When a file is loaded from or pushed to GitHub, the URL updates to reflect the loaded file's path. This updated URL can be shared with others, simplifying collaboration. By sharing the URL, collaborators can easily access the notebook and work together seamlessly.
 
-### Embedding
+## Embedding
 The link with the anchor tag and file path can be embedded in other applications/websites directly using iframe. For example to embed the Hello-world notebook one can use the code: 
-	
+```html
 	<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
-	
+```
 This displays the menu, code input and the output. If you want to see only the output use this code instead:
-	
-	<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0" sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups"></iframe>
-	
-This runs the notebook in a sandboxed environment. Note: if you want the code of the notebook to run when the notebook is loaded in the embedded page, click "Run the code when the file is loaded" in Edit->Options menu.
-
+```html
+	<iframe src="https://app.scribbler.live/sandbox.html#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0" sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups"></iframe>
+```
+- To embed a notebook directly from GitHub, use the following syntax:
+```html
+<iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=github:user/repository/path-to-file"></iframe>
+```
+- Please exercise caution and embed a notebook in your page only if you trust its content and source.
+- You can also use `sandbox="allow-scripts"` to embed the notebook in a sandboxed environment.
+This runs the notebook in a sandboxed environment.
+- If you want the code of the notebook to run when the notebook is loaded in the embedded page, click "Run the code when the file is loaded" in Edit->Options menu.
 
 ## Special Functions
 
@@ -161,23 +171,7 @@ Ctrl-G: Import from/Push to GitHub
 Ctrl-S: Download the jsnb to local machine
 Ctrl-O: Load a jsnb from local machine
 
-## Sandboxed Environment
-- The Scribbler notebook operates within a sandboxed iframe environment. This restricts certain functionalities, such as accessing specific browser APIs, external resources where CORS (Cross-Origin Resource Sharing) is restricted, and cookies.
-- To enable these features, click on the icon ⤯ located at the top-right corner above the notebook. Upon confirmation, the notebook will reload without the sandbox, granting access to the restricted functionalities.
 
-## Embedding Notebooks
-- Scribbler notebooks can be seamlessly embedded as iframes within other web pages.
-- To embed a notebook, utilize the following code snippet:
-```html
-<iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=link-to-the-notebook-file"></iframe>
-```
-- Replace "link-to-the-notebook-file" with the path of the desired notebook file.
-- To embed a notebook directly from GitHub, use the following syntax:
-```html
-<iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=github:user/repository/path-to-file"></iframe>
-```
-- Please exercise caution and embed a notebook in your page only if you trust its content and source.
-- You can also use `sandbox="allow-scripts"` to embed the notebook in a sandboxed environment.
 
 ## Using External Libraries
 
