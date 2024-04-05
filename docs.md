@@ -161,6 +161,24 @@ Ctrl-G: Import from/Push to GitHub
 Ctrl-S: Download the jsnb to local machine
 Ctrl-O: Load a jsnb from local machine
 
+## Sandboxed Environment
+- The Scribbler notebook operates within a sandboxed iframe environment. This restricts certain functionalities, such as accessing specific browser APIs, external resources where CORS (Cross-Origin Resource Sharing) is restricted, and cookies.
+- To enable these features, click on the icon ⤯ located at the top-right corner above the notebook. Upon confirmation, the notebook will reload without the sandbox, granting access to the restricted functionalities.
+
+## Embedding Notebooks
+- Scribbler notebooks can be seamlessly embedded as iframes within other web pages.
+- To embed a notebook, utilize the following code snippet:
+```html
+<iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=link-to-the-notebook-file"></iframe>
+```
+- Replace "link-to-the-notebook-file" with the path of the desired notebook file.
+- To embed a notebook directly from GitHub, use the following syntax:
+```html
+<iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=github:user/repository/path-to-file"></iframe>
+```
+- Please exercise caution and embed a notebook in your page only if you trust its content and source.
+- You can also use `sandbox="allow-scripts"` to embed the notebook in a sandboxed environment.
+
 ## Using External Libraries
 
 Scribbler provides the flexibility to leverage external libraries, enhancing the functionality and empowering users to access a wide range of resources. We will explore two specially built functions for utilizing external libraries: load_script() and import_module(). Additionally, we will discuss the dynamic import feature of ES6 modules and highlight the preloaded libraries D3 and Plotlyjs, along with the DI-Labs sister project. By leveraging these capabilities, users can expand the capabilities of their notebooks, access powerful data manipulation and visualization tools, and tap into a vast ecosystem of libraries and resources.
