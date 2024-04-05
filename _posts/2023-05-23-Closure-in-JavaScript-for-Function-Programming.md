@@ -2,7 +2,7 @@
 title: Closure in JavaScript for Functional Programming
 layout: post
 description: Closure is an important feature available in JavaScript to do functional style programming. There are many practial applications of closure including in mathematical computations, UI experince, machine learning etc.
-start_link: https://app.scribbler.live/#./examples/Closure-in-JavaScript.jsnb
+start_link: https://app.scribbler.live/?jsnb=./examples/Closure-in-JavaScript.jsnb
 ---
 
 ## Closures in JavaScript
@@ -49,7 +49,7 @@ Here's an example:
 	const inner = outerFunction("User");
 	inner(); // Output: "Hello User! I am in the outer function's scope."
 	
-In this example, the outerFunction returns the innerFunction. The innerFunction maintains a reference to the outerVariable, which is no longer in scope when the innerFunction is executed. Nonetheless, because of the closure, the innerFunction is still able to access the outerVariable and log its value. You can play around with this example and other in this notebook: [JavaScript Notebook for Closures](https://app.scribbler.live/#./examples/Closure-in-JavaScript.jsnb)
+In this example, the outerFunction returns the innerFunction. The innerFunction maintains a reference to the outerVariable, which is no longer in scope when the innerFunction is executed. Nonetheless, because of the closure, the innerFunction is still able to access the outerVariable and log its value. You can play around with this example and other in this notebook: [JavaScript Notebook for Closures](https://app.scribbler.live/?jsnb=./examples/Closure-in-JavaScript.jsnb)
 
 ## More Examples of Closures
 
