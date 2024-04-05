@@ -12,9 +12,6 @@ One of the standout features of Scribbler.Live is its hassle-free setup. Users c
 ### GitHub Pages Hosted Version
 Scribbler also offers a convenient option of usage through GitHub Pages. Users can access the hosted version of the tool at https://app.scribbler.live, where they can enjoy all the features and benefits without the need for self-hosting. This allows for easy sharing and collaboration, making Scribbler a versatile tool for various team sizes and locations.
 
-## Sandboxed Environment
-- The Scribbler notebook operates within a sandboxed iframe environment. This restricts certain functionalities, such as accessing specific browser APIs, external resources where CORS (Cross-Origin Resource Sharing) is restricted, and cookies.
-- To enable these features, click on the icon ⤯ located at the top-right corner above the notebook. Upon confirmation, the notebook will reload without the sandbox, granting access to the restricted functionalities.
 
 ## Cells
 ### Cell Types and Structure
@@ -78,6 +75,10 @@ In scenarios where only the output of the notebook is required, users can downlo
 
 ### Downloading Code as a JavaScript File
 For users who wish to extract the code in their notebooks, Scribbler offers the option to download the code as a single JavaScript file. By selecting the "Download as JS" option, the code in cells is saved as a standalone JavaScript file. This capability facilitates code reuse, archiving, and further development outside the notebook environment.
+
+### Sandboxed Environment
+- The Scribbler notebook operates within a sandboxed iframe environment. This restricts certain functionalities, such as accessing specific browser APIs, external resources where CORS (Cross-Origin Resource Sharing) is restricted, and cookies.
+- To enable these features, click on the icon ⤯ located at the top-right corner above the notebook. Upon confirmation, the notebook will reload without the sandbox, granting access to the restricted functionalities.
 
 ## Edit Menu
 ### Inserting Code Cells
