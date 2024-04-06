@@ -2,13 +2,18 @@
 title: Closure in JavaScript for Functional Programming
 layout: post
 description: Closure is an important feature available in JavaScript to do functional style programming. There are many practial applications of closure including in mathematical computations, UI experince, machine learning etc.
+start_link: https://app.scribbler.live/?jsnb=./examples/Closure-in-JavaScript.jsnb
 ---
+
+## Closures in JavaScript
+JavaScript closures stand as one of the language's most powerful and often misunderstood features. They provide a means of encapsulating variables within a function's scope, even after the function has finished executing. In this article, we'll explore the concept of closures in depth, understand how they work, and showcase practical examples to illustrate their utility.
+
 
 In JavaScript, a closure is created when a function is defined within another function and the inner function uses variables declared in the outer function's scope chain. This is a core concept of [functional programming](/2023/03/13/JavaScript-for-Functional-Programming.html).
 
 The inner function can still access the variables of the outer function, even after the outer function has returned. This allows for more flexible and powerful functions as they can maintain a reference to variables that are no longer in scope.
 
-### Role of Closure
+## Role of Closure
 Closures play a significant role in functional programming. Functional programming is a programming paradigm that emphasizes the use of pure functions, immutability, and higher-order functions. Higher-order functions are functions that can take other functions as arguments or return functions as their results.
 
 Closures are used to create higher-order functions that can generate new functions based on their inputs. In functional programming, these higher-order functions are often used to transform data or to create new functions that have specific behaviors based on the input data.
@@ -17,7 +22,7 @@ Closures are also used to create private variables and functions. By encapsulati
 
 Closures can also be used to implement currying, which is the process of transforming a function that takes multiple arguments into a series of functions that each take a single argument. This technique can make functions more modular and easier to reuse.
 
-### Importance of Closure
+## Importance of Closure
 
 Closures are important in JavaScript because they provide a way to create private variables and functions in a function.
 
@@ -28,7 +33,7 @@ Closures are also used extensively in functional programming to create higher-or
 Additionally, closures can help to reduce memory usage by allowing variables and functions to be garbage collected once they are no longer in use.
 
 
-### Example of Closure in JavaScript
+### How Closures Work
 Here's an example:
 
 	function outerFunction(name) {
@@ -44,7 +49,52 @@ Here's an example:
 	const inner = outerFunction("User");
 	inner(); // Output: "Hello User! I am in the outer function's scope."
 	
-In this example, the outerFunction returns the innerFunction. The innerFunction maintains a reference to the outerVariable, which is no longer in scope when the innerFunction is executed. Nonetheless, because of the closure, the innerFunction is still able to access the outerVariable and log its value.
+In this example, the outerFunction returns the innerFunction. The innerFunction maintains a reference to the outerVariable, which is no longer in scope when the innerFunction is executed. Nonetheless, because of the closure, the innerFunction is still able to access the outerVariable and log its value. You can play around with this example and other in this notebook: [JavaScript Notebook for Closures](https://app.scribbler.live/?jsnb=./examples/Closure-in-JavaScript.jsnb)
+
+## More Examples of Closures
+
+### Example 1: Creating Private Variables
+
+```javascript
+function createCounter() {
+    let count = 0;
+
+    return function() {
+        return ++count;
+    };
+}
+
+const counter = createCounter();
+console.log(counter()); // Output: 1
+console.log(counter()); // Output: 2
+```
+
+In this example, `createCounter()` returns a function that increments a private `count` variable each time it's called. The `count` variable remains inaccessible from outside the `createCounter()` function, demonstrating encapsulation via closures.
+
+### Example 2: Implementing Memoization
+
+```javascript
+function memoize(func) {
+    const cache = {};
+
+    return function(...args) {
+        const key = JSON.stringify(args);
+        if (!cache[key]) {
+            cache[key] = func(...args);
+        }
+        return cache[key];
+    };
+}
+
+const expensiveCalculation = memoize(function(n) {
+    console.log('Performing expensive calculation...');
+    return n * n;
+});
+
+console.log(expensiveCalculation(5)); // Output: Performing expensive calculation... 25
+console.log(expensiveCalculation(5)); // Output: 25 (result retrieved from cache)
+```
+
 
 ### Practical Use: Moments (statistics)
 
@@ -68,7 +118,7 @@ We, can define mean using [Array function reduce](/2023/05/23/Array-Function-in-
 		const sum = arr.reduce((accumulator, num) => {
 		  return accumulator + num;
 		}, 0);
-		return sum.arr.length
+		return sum/arr.length
 		
 	}
 Finally, the k'th moment is:
@@ -77,7 +127,7 @@ Finally, the k'th moment is:
 	
 Now that we have the power function and mean function defined, we can easily calculate any moment in a single line. For example, if you want 5th moment, you can do so in a single line:
 	
-	console.log(mean(population.map(power_k(5))) //Output 5.333333333333333
+	console.log(mean(population.map(power_k(5)))) //Output 5.333333333333333
 	
 There are several interesting uses of such closure. A more sophisticated example could be where one wants to simulate the behavior of gas with fixed volume and mass but varying temperature. Then the behavior can be enclosed as a function of temperature with the volume and mass encapsulated as data.
 

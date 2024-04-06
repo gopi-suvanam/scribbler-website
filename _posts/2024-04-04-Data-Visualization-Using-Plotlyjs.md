@@ -2,7 +2,7 @@
 title: Elevating Data Visualization using Plotly.js
 description: Plotly.js emerges as a powerful tool for creating compelling data visualizations on the web. We explore creating bar chart, line chart, scatter plot, and heatmap using Plotly.js in html.
 layout: post
-start_link: https://app.scribbler.live/#./examples/Plotly-Example.jsnb
+start_link: https://app.scribbler.live/?jsnb=./examples/Plotly-Example.jsnb
 ---
 
 ## Introducing Plotly.js
@@ -44,7 +44,7 @@ In this setup, we utilize the dynamic import statement to load Plotly.js asynchr
 
 ## Exploring Plotly.js Capabilities
 
-Plotly.js offers an extensive array of chart types and customization options. You can explore some of these charts in the notebook: [Plotly Example Notebook](https://app.scribbler.live/#./examples/Plotly-Example.jsnb). Note that Scribbler comes pre-loaded with Plotly, so you don't have to load it separately.
+Plotly.js offers an extensive array of chart types and customization options. You can explore some of these charts in the notebook: [Plotly Example Notebook](https://app.scribbler.live/?jsnb=./examples/Plotly-Example.jsnb). Note that Scribbler comes pre-loaded with Plotly, so you don't have to load it separately.
 
 Let's explore a few examples:
 
@@ -142,4 +142,4 @@ const layout = {
 Plotly.newPlot('chart', data, layout);
 ```
 
-To play around with the charts use the notebook: [Plotly Example Notebook](https://app.scribbler.live/#./examples/Plotly-Example.jsnb).
+To play around with the charts use the notebook: [Plotly Example Notebook](https://app.scribbler.live/?jsnb=./examples/Plotly-Example.jsnb).
