@@ -26,6 +26,8 @@ Below are a few examples of numerical analysis techniques implemented in JavaScr
 
 These algorithms use [Higher Order Functions](/2023/05/26/Higher-Order-Functions-in-Functional-Programming-using-JavaScript.html) in a [functional programming paradigm](/2023/03/13/JavaScript-for-Functional-Programming.html).
 
+Also check out: [Numeric.js for Numerical Analysis and Linear Algebra in JavaScript](https://scribbler.live/2023/06/14/Numerical-Analysis-Linear-Algebra-NumericJS.html) and [Exploring Numerical Methods for Integration Using JavaScript](https://scribbler.live/2024/04/06/Numerical-Integration-in-JavaScript.html).
+
 #### [Bisection Method](https://en.wikipedia.org/wiki/Bisection_method) for Finding Solution to an Equation
 
 	function bisectionMethod(func, a, b, tolerance) {
