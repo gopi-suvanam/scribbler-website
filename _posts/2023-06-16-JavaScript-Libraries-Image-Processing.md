@@ -5,7 +5,7 @@ description: JavaScript ecosystem has a slew of powerful libraries for image pro
 tags: javascript
 ---
 
-There are several JavaScript libraries available for image processing. Here are some popular ones:
+There are several JavaScript libraries available for image processing. In another article we will look at how to use canvas API for processing images in HTML5 here: [HTML5 Image Editing with JavaScript](https://scribbler.live/2024/04/05/HTML5-Image-Editing-JavaScript.html). Here are some popular libraries to explore image processing in JS:
 
 1. Canvas API: The built-in <canvas> element in HTML5 provides a powerful API for image manipulation, including pixel-level access and transformation functions.
    - Project Link: [Canvas API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
