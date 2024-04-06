@@ -8,7 +8,9 @@ start_link: https://app.scribbler.live/?jsnb=./examples/Numerical-Integration.js
 ## Introduction to Numerical Integration
 Integration is a fundamental concept in mathematics and is widely used in various fields, including physics, engineering, and data analysis. Numerical methods for integration provide techniques to approximate the definite integral of a function when analytical solutions are difficult or impossible to obtain. 
 
-Numerical methods for integration play a crucial role in approximating definite integrals, especially for functions without analytical solutions. JavaScript provides a versatile platform for implementing these methods, enabling researchers, engineers, and developers to perform numerical integration in various applications. By understanding and implementing these methods, one can gain insights into the behavior of functions and solve real-world problems that involve integration.
+We have looked at various numerical methods in this article: [Numerical Analysis in JavaScript for Scientific/Mathematical Computation](https://scribbler.live/2023/06/07/Numerical-Analysis-in-JavaScript-for-Scientific-Computing.html). Here we look at numerical methods specific to integration.
+
+Numerical methods for integration play a crucial role in approximating definite integrals, especially for functions without analytical solutions. JavaScript provides a versatile platform for implementing these methods, enabling researchers, engineers, and developers to perform numerical integration in various applications. By understanding and implementing these methods, one can gain insights into the behavior of functions and solve real-world problems that involve integration. 
 
 Each numerical integration rule employs a different strategy for approximating the integral, with varying levels of accuracy and computational complexity. Understanding the logic behind these rules helps in selecting the appropriate method for different functions and integration tasks.
 
