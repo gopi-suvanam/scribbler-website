@@ -118,7 +118,7 @@ The Newton-Raphson method is a versatile and efficient technique for finding roo
 
 - *Fixed-Point Iteration*: Iterative method that transforms an equation into a fixed-point problem, often used for solving nonlinear equations.
 
-- *Regula Falsi (False Position) Method*: An improvement over the bisection method that uses a linear interpolation to estimate the root.
+- *[Regula Falsi (False Position) Method](https://scribbler.live/2023/06/08/Regula-Falsi-Method-for-Solving-Equations.html)*: An improvement over the bisection method that uses a linear interpolation to estimate the root.
 
 - *Root-finding Algorithms*: Various algorithms like Brent's method and Brent-Dekker method, which combine the robustness of the bisection method with the efficiency of the secant method.
 
