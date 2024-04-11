@@ -1,12 +1,13 @@
 ---
-title: Learn Foundations of JavaScript in 10 Easy Lessons
-description: This is a course in foundations of JavaScript in 10 lessons with easy to use interactive workbooks.
+title: Free JavaScript Tutorial - A Course for Beginners
+description: Learn Foundations of JavaScript through a course of 10 Easy Lessons
 show_in_menu: false
 start_link: https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb
-
+nav_text: Learn
 ---
 
-
+# Tutorial Contents
+This is a free course/tutorial for learning JavaScript through easy lessons. Each lesson will identify once concept of JavaScript and teach it using live code, examples, and experiments. No login or subscription required. Just click on each lesson and start learning!
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-1.jsnb">Lesson 1: Introduction to JavaScript</a>
 - Overview of JavaScript and its role in web development
@@ -19,7 +20,7 @@ start_link: https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-3.jsnb">Lesson 3: Control Flow<a>
 - Introduction to conditional statements (if, else if, else)
-- Using logical operators (&&, ||, !)
+- Using logical operators 
 - Writing and understanding loops (for, while)
 
 ## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb"> Lesson 4: Functions</a>
@@ -33,28 +34,31 @@ start_link: https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-
 - Using methods within objects
 
 
-## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Lesson 6: Arrays -  Part A,&nbpsp;</a>&nbsp;<a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Lesson 6: Arrays -  Part A</a>, <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
 - Introduction to arrays and their declaration
 - Accessing and modifying array elements
 - Iterating through arrays using loops
 
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-7.jsnb" >Lesson 7: DOM Manipulation </a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-7.jsnb" >Lesson 7: DOM Manipulation </a>
 - Overview of the Document Object Model (DOM)
 - Selecting and modifying HTML elements with JavaScript
 - Handling user events (click, input)
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-8.jsnb"> Lesson 8: Events and Event Handling </a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-8.jsnb"> Lesson 8: Events and Event Handling </a>
 - Introduction to event listeners
 - Responding to different events (click, keypress, etc.)
 - Practical examples of event handling
 
-## Lesson 9: Asynchronous JavaScript (Coming soon...)
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-9.jsnb"> Lesson 9: Error Handling and Asynchronous JavaScript </a>
+- Using try...catch for error handling
 - Understanding asynchronous programming
-- Event loop
-- Introduction to Promises
 
-## Lesson 10: Putting it All Together (Coming soon...)
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-10.jsnb"> Lesson 10: Scripts, Modules and APIS</a>
+- Load external scripts and modules
+- Fetch external data using APIs
+
+## <a href="https://scribbler.live/learn/javascript-tutorial-beginners/bonus-lesson">Bonus Lesson: Putting it All Together</a>
 - Applying the knowledge gained to a small project
-
+- Build a crypt-currency plotter using user input, an API, and Plotly library
 
