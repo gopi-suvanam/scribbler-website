@@ -1,6 +1,6 @@
 ---
-title:  Underscore.js vs. Lodash - a Comparison of JavaScript Utility Libraries
-description: In this article, we delve into the world of JavaScript utility libraries by comparing two popular choices: Underscore.js and Lodash. Through code examples and practical insights, this article aims to equip JavaScript developers with the knowledge to make informed decisions when choosing between Underscore.js and Lodash 
+title:  A Conparison of Underscore.js and Lodash, JavaScript Utility Libraries
+description: In this article, we delve into the world of JavaScript utility libraries by comparing two popular choices- Underscore.js and Lodash. Through code examples and practical insights, this article aims to equip JavaScript developers with the knowledge to make informed decisions when choosing between Underscore.js and Lodash 
 layout: post
 ---
 
@@ -43,7 +43,7 @@ Underscore.js and Lodash are both popular JavaScript utility libraries that prov
 
 ## Loading Underscore.js in a Browser:
 
-You can load Underscore.js directly from a CDN (Content Delivery Network) or include a local copy in your HTML file.
+You can load Underscore.js directly from a CDN (Content Delivery Network) or include a local copy in your HTML file. You can experiment with Underscore in this notebook: [Underscore JS Notebook](https://app.scribbler.live/?jsnb=./examples/Underscore-JS.jsnb)
 
 ### Option 1: Loading from CDN (Content Delivery Network)
 
