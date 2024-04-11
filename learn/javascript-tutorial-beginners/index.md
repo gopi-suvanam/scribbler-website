@@ -34,27 +34,27 @@ This is a free course/tutorial for learning JavaScript through easy lessons. Eac
 - Using methods within objects
 
 
-## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Lesson 6: Arrays -  Part A,&nbpsp;</a>&nbsp;<a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6a.jsnb"> Lesson 6: Arrays -  Part A</a>, <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-6b.jsnb"> Part B</a>
 - Introduction to arrays and their declaration
 - Accessing and modifying array elements
 - Iterating through arrays using loops
 
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-7.jsnb" >Lesson 7: DOM Manipulation </a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-7.jsnb" >Lesson 7: DOM Manipulation </a>
 - Overview of the Document Object Model (DOM)
 - Selecting and modifying HTML elements with JavaScript
 - Handling user events (click, input)
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-8.jsnb"> Lesson 8: Events and Event Handling </a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-8.jsnb"> Lesson 8: Events and Event Handling </a>
 - Introduction to event listeners
 - Responding to different events (click, keypress, etc.)
 - Practical examples of event handling
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-9.jsnb"> Lesson 9: Error Handling and Asynchronous JavaScript </a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-9.jsnb"> Lesson 9: Error Handling and Asynchronous JavaScript </a>
 - Using try...catch for error handling
 - Understanding asynchronous programming
 
-## <a href="https://app.scribbler.live/#github:gopi-suvanam/scribbler-website/learn/intro-lesson-10.jsnb"> Lesson 10: Scripts, Modules and APIS</a>
+## <a href="https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-10.jsnb"> Lesson 10: Scripts, Modules and APIS</a>
 - Load external scripts and modules
 - Fetch external data using APIs
 
