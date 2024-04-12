@@ -2,6 +2,7 @@
 title:  A Conparison of Underscore.js and Lodash, JavaScript Utility Libraries
 description: In this article, we delve into the world of JavaScript utility libraries by comparing two popular choices- Underscore.js and Lodash. Through code examples and practical insights, this article aims to equip JavaScript developers with the knowledge to make informed decisions when choosing between Underscore.js and Lodash 
 layout: post
+start_link: https://app.scribbler.live/?jsnb=./examples/Lodash.jsnb
 ---
 
 ## Underscore.js and Lodash
