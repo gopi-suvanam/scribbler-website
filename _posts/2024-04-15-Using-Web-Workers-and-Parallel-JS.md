@@ -1,7 +1,7 @@
 ---
 title: Using Web Workers and Paralle.js for Parallel Computing in JavaScript
 layout: post
-desctiption: This article discussed leveraging Web Workkers for parallel programming. It also gives examples of using Paralle.js library.
+description: This article discussed leveraging Web Workkers for parallel programming. It also gives examples of using Paralle.js library.
 start_link: https://app.scribbler.live/?jsnb=./examples/Parallel-JS-Examples.jsnb
 ---
 
