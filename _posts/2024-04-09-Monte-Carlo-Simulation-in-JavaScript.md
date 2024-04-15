@@ -1,6 +1,6 @@
 ---
 title: A Guide to Monte Carlo Simulation with JavaScript Examples
-description: We look at hoe to use Monte Carlo simulation for solving various scientific and computation problems in JavaScript.
+description: We look at how to use Monte Carlo simulation for solving various scientific and computation problems in JavaScript.
 layout: post
 start_link: https://app.scribbler.live/#github:gopi-suvanam/scribbler/examples/Monte-Carlo-Simulation.jsnb
 ---
