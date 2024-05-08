@@ -1,5 +1,5 @@
 ---
-title: Power of Machine Learning in the Browser with Pretrained TensorFlow.js Models
+title: Power of AI in the Browser with Pretrained TensorFlow.js Models
 description: TensorFlow.js empowers web developers to harness the full potential of machine learning directly within the browser environment. With its support for both model training and inference, developers can create powerful AI-driven applications without the need for extensive backend infrastructure.
 layout: post
 start_link:  https://app.scribbler.live/?jsnb=./examples/Tensorflow-Pretrained.jsnb
@@ -22,6 +22,9 @@ The use of machine learning in the browser opens up a world of possibilities for
 3. *Reduced Server Load*: Offloading computation to client devices reduces the load on servers, leading to more scalable applications.
   
 4. *Cross-Platform Compatibility*: TensorFlow.js runs in all modern web browsers, as well as in Node.js environments, making it accessible across a wide range of platforms.
+
+In earlier articles we have looked at [Machine Learning in Javascript Using Tensoflow.js](https://scribbler.live/2023/04/11/Machine-learning-in-Javascript-using-TensorflowJS.html) and [Using Brain.js for Machine Learning
+](https://scribbler.live/2023/04/30/Machine-Learning-in-JavaScript-using-Brainjs.html). In this article we will look at how to use pretrained models from Tensorflow.js to build AI applications in the browser.
 
 ## Getting Started
 
