@@ -1,6 +1,6 @@
 ---
 title:  Curve Fitting and Interpolation Techniques in JavaScript
-desctiption: Curve fitting and interpolation techniques are powerful tools for analyzing and modeling data in JavaScript. Whether you're working with linear interpolation, polynomial interpolation, or cubic spline interpolation, there are libraries and methods available to suit your needs. 
+description: Curve fitting and interpolation techniques are powerful tools for analyzing and modeling data in JavaScript. Whether you're working with linear interpolation, polynomial interpolation, or cubic spline interpolation, there are libraries and methods available to suit your needs. 
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Curve-Fitting.jsnb
 layout: post
 ---
