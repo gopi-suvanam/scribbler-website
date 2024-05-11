@@ -2,7 +2,7 @@
 title: Exploring Differential Equations Solving with JavaScript
 description: Solving differential equations with JavaScript opens up a world of possibilities for developers to tackle complex problems in science, engineering, and other fields. By leveraging numerical algorithms and libraries like numeric.js, developers can simulate dynamic systems, analyze trends, and make predictions based on mathematical models.
 layout: post
-start_link: https://app.scribbler.live/?jsnb=%3E./examples/Solving-ODEs.jsnb
+start_link: https://app.scribbler.live/?jsnb=./examples/Solving-ODEs.jsnb
 ---
 
 ## Introduction to Differential Equations
