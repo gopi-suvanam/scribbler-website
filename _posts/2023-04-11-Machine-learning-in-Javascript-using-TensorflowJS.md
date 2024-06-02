@@ -2,7 +2,7 @@
 title: Machine Learning in Javascript Using Tensoflow.js
 layout: post
 description: Tensorflow.js is a powerful tool for doing maching learning in JavaScript. 
-categories: AI-ML, Libraries
+categories: [AI-ML, Libraries]
 ---
 Tensorflowjs is a powerful tool for doing maching learning in JavaScript. Earlier we have looked at how we can do machine learning in JavaScript. We will deep dive into a specific library: Tensorflow.js. TensorFlow.js is a JavaScript library for training and deploying machine learning models in the browser and on Node.js. It is an open-source project developed by Google that allows developers to build and train machine learning models using JavaScript, without needing to use other programming languages or frameworks.
 
