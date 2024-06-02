@@ -11,6 +11,7 @@ title: Categories
     {% capture category_name %}{{ category | first }}{% endcapture %}
 
     <h3 ><a href="/categories/{{category_name}}">{{ category_name }}</a></h3>
+    <p>  {{ site.pages | where: "category",  category_name | first.content }}</p>
   </div>
 {% endfor %}
 <h3 ><a href="/categories/Others">Miscellaneous</a></h3>
