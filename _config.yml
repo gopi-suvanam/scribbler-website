@@ -114,3 +114,8 @@ exclude:
 
 plugins:
   - jekyll-sitemap
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:date/:title/
