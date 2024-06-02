@@ -2,7 +2,7 @@
 title: Accessing ChatGPT-4 in JavaScript Through OpenAI APIs
 layout: post
 description: GPT-4, the model behind ChatGPT can be accessed in JavaScript through an API for making natural language applications.
-categories: JavaScript, AI-ML
+categories: [JavaScript, AI-ML]
 ---
 
 ### Get Access to GPT-4
