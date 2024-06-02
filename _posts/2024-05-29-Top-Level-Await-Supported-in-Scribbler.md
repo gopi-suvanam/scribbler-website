@@ -3,7 +3,7 @@ title: Enhancing Scribbler with Top-Level Await Support
 description: The support for top-level `await` in Scribbler JavaScript notebooks is a powerful enhancement that significantly improves the flexibility and usability of the tool.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Top-Level-Await.jsnb
-categories: Scribbler, JavaScript
+categories: [Scribbler, JavaScript]
 ---
 ## Implementing Top-Level Await in Scribbler
 _Implemented by [Dhruv Chaturvedi](#credits)_
