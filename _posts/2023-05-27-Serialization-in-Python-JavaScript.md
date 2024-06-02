@@ -2,7 +2,7 @@
 title: Serialization of Objects - Preserving Data Across Boundaries, Examples in Python and JavaScript
 layout: post
 description: Serialization is a fundamental concept in computer science and software development that involves the conversion of complex data structures or objects into a format that can be easily stored, transmitted, or reconstructed. JavaScript and Python provide useful functionality for this.
-tags: JavaScript, Python
+categories: JavaScript
 ---
 
 ### What is Serialization?
