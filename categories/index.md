@@ -14,9 +14,8 @@ title: Categories
 
     {% assign page1 = site.pages | where: "category",category_name| first %}
 
-    ## Description for Page 1
     
-    {{ page1.description }}
+    <h4>{{ page1.description }}</h4>
     
   </div>
 {% endfor %}
