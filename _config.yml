@@ -119,3 +119,9 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:date/:title/
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      permalink: /:year/:month/:date/:title/
