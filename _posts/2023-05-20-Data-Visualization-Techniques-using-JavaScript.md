@@ -2,6 +2,7 @@
 title: Data Visualization Techniques using JavaScript
 description: There are several data visualization techniques that can be used to represent and communicate data effectively. These techniques can be used through JavaScript libraries.
 layout: post
+categories: DataScience
 ---
 
 There are several data visualization techniques that can be used to represent and communicate data effectively. Below are some commonly used techniques. These examples use the libraries: [D3.js](https://d3js.org/), [chart.js](https://www.chartjs.org/), [vis.js](https://visjs.org/) and [Plotly.js](https://plotly.com/javascript/).
