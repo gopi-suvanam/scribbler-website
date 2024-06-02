@@ -14,7 +14,7 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
        <ul>
       {% for post in category[1] %}
             <li>
-              <b ><a href="{{ post.url }}">{{ post.title }}</a>
+              <b ><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;•&nbsp;
               {% if post.start_link %}
                 <a href="{{ post.start_link }}" >Jump to Code</a>&nbsp;•&nbsp;
               {% endif %}
@@ -34,7 +34,7 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
     {% for post in uncategorized_posts %}
 
            <li>
-            <b><a href="{{ post.url }}">{{ post.title }}</a>
+            <b><a href="{{ post.url }}">{{ post.title }}</a>&nbsp;•&nbsp;
 
             {% if post.start_link %}
               <a href="{{ post.start_link }}" >Jump to Code</a>&nbsp;•&nbsp;
