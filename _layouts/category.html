@@ -12,6 +12,9 @@ layout: default
                 <li>
 
                   <b><a href="{{ post.url }}">{{ post.title }}</a></b><br><p>{{post.description}}</p>
+                    {% if post.start_link %}
+                      <a href="{{ post.start_link }}" class="btn btn-secondary">Jump to Code</a>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>
