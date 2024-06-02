@@ -3,6 +3,7 @@ title: Option Pricing using Simulation
 layout: post
 description: Monte-Carlo simulation can be used to price financial options and the code can be implemented in any programming language including Python and JavaScript.
 start_link: https://app.scribbler.live/?jsnb=./examples/Option-Pricing-MC.jsnb
+categories: Financial, Scientific
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Option-Pricing-MC.jsnb)
 ### Option Pricing
