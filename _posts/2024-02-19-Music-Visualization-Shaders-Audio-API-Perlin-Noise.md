@@ -2,6 +2,7 @@
 title: Music Visualization with Shaders, Web Audio API and Perlin Noise
 description: Using WebGL we generate visualization of audio in nice animation of Perlin Noise. We also show how GPU can be used from browser for high performance computation.
 layout: post
+categories: Scientific
 ---
 # Music Visualization with Shaders, Web Audio API and Perlin Noise
 _Article by [Kaustav](#about-author)_
