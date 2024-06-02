@@ -29,7 +29,7 @@ disable_anchors: true
 <div class="card" style="width: 18rem;">
           <div class="card-body">
             {% capture category_name %}{{ category | first }}{% endcapture %}
-            <h5 class="card-title"><a href="/categories/Others"></a>Miscellaneous</h5>
+            <h5 class="card-title"><a href="/categories/Others">Miscellaneous</a></h5>
              {% assign page1 = site.pages | where: "category",category_name| first %}
 
             <p class="card-text">Uncategorized articles on Scribbler</p>
