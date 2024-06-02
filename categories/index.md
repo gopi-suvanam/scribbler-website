@@ -15,7 +15,7 @@ disable_anchors: true
           <h5 class="card-title"><a href="/categories/{{category_name}}">{{ category_name }}</a></h5>
           {% assign page1 = site.pages | where: "category",category_name| first %}
 
-            <p class="card-text">{{ page1.description }}</p>
+            <p class="card-text"><a href="/categories/{{category_name}}">{{ page1.description }}</a></p>
         </div>
       </div>
     </div>
