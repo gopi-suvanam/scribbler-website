@@ -120,5 +120,6 @@ defaults:
     scope:
       path: "_posts"
     values:
-      permalink: /:year/:month/:date/:title/
+      permalink: /:year/:month/:day/:title.html
+
 
