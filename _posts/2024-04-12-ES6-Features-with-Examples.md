@@ -3,6 +3,7 @@ title: A Guide to Exploring JavaScript ES6 Features
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/ES6-Examples.jsnb
 description: JavaScript ES6 has introduced several new features that makes coding in JavaScript more readable and modular. This article exaplins a few the feature using examples like let, const, arrow functions, templates, classes, destructuring etc.
+categories: JavaScript
 ---
 
 ## What is ES6
