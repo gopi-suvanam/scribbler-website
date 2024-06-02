@@ -2,6 +2,7 @@
 title: Why JavaScript is a Great Programming Language
 layout: post
 description: JavaScript is a forgiving and developer friendly language that ecnourages openness and simplicity.
+categories: JavaScript
 ---
 JavaScript is a dynamic and versatile programming language that has taken the web development world by storm. It has become an essential part of modern web development, and for good reason. In this article, we will explore why JavaScript is great and why it has become such a popular choice for developers around the world.
 1. Client-side scripting: One of the most significant advantages of JavaScript is that it is a client-side scripting language. This means that it runs on the client's browser rather than the server, which makes it faster and more responsive. It allows for real-time user interaction without requiring a page refresh, which provides a better user experience.
