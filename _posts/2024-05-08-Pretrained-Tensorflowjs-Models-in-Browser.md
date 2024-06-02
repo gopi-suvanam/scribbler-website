@@ -3,6 +3,7 @@ title: Power of AI in the Browser with Pretrained TensorFlow.js Models
 description: TensorFlow.js empowers web developers to harness the full potential of machine learning directly within the browser environment. With its support for both model training and inference, developers can create powerful AI-driven applications without the need for extensive backend infrastructure.
 layout: post
 start_link:  https://app.scribbler.live/?jsnb=./examples/Tensorflow-Pretrained.jsnb
+categories: AI-Ml, Libraries
 ---
 
 ## What is TensorFlow.js?
