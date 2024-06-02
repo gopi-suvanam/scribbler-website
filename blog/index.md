@@ -1,4 +1,3 @@
-test
 ---
 layout: full
 title: Articles on JavaScript and Scribbler
