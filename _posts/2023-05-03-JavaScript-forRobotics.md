@@ -2,6 +2,7 @@
 title: JavaScript for Robotics
 layout: post
 description: JavaScript is a versatile programming language that can be used in a wide range of applications, including robotics.
+categories: JavaScript
 ---
 
 JavaScript is a versatile programming language that can be used in a wide range of applications, including robotics. Here are a few ways you can use JavaScript in robotics:
