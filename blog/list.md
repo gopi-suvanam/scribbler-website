@@ -30,8 +30,9 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
   <h2>Miscellaneous</h2>
   <div class="row">
     {% assign uncategorized_posts = site.posts | where: "categories", empty %}
-    {% for post in uncategorized_posts %}
        <ul>
+    {% for post in uncategorized_posts %}
+
            <li>
             <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5><br>
             <a href="{{ post.url }}" >Read More</a>
