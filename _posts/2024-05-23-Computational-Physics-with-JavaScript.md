@@ -3,6 +3,7 @@ title: Computational Physics with JavaScript
 description: JavaScript, with its accessibility and powerful visualization capabilities, is a valuable tool for computational physics, especially in educational contexts and interactive web applications. 
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler/examples/Phsyics-Visualization.jsnb
 layout: post
+categories: Scientific
 ---
 
 ## Why JavaScript for Computational Physics?
