@@ -6,8 +6,8 @@ permalink: /categories/
 disable_anchors: true
 ---
 
+<div>
 {% for category in site.categories %}
-
 
       <div class="card" style="width: 18rem;">
           <div class="card-body">
@@ -38,4 +38,4 @@ disable_anchors: true
         </div>
         
 
-
+</div>
