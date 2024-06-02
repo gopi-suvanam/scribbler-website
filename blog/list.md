@@ -14,11 +14,12 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
        <ul>
       {% for post in category[1] %}
             <li>
-              <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+              <b ><a href="{{ post.url }}">{{ post.title }}</a>
               {% if post.start_link %}
                 <a href="{{ post.start_link }}" >Jump to Code</a>&nbsp;•&nbsp;
               {% endif %}
               <a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
+              </b>
             </li>
       {% endfor %}
       </ul>
@@ -33,13 +34,14 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
     {% for post in uncategorized_posts %}
 
            <li>
-            <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <b><a href="{{ post.url }}">{{ post.title }}</a>
 
             {% if post.start_link %}
               <a href="{{ post.start_link }}" >Jump to Code</a>&nbsp;•&nbsp;
             {% endif %}
               <a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
             </li>
+            </b>
       {% endfor %}
       </ul>
   </div>
