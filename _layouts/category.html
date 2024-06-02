@@ -11,10 +11,12 @@ layout: default
                 {% for post in site.categories[page.category] %}
                 <li>
 
-                  <b><a href="{{ post.url }}">{{ post.title }}</a></b><br><p>{{post.description}}</p>
+                  <b><a href="{{ post.url }}">{{ post.title }}</a></b>
                     {% if post.start_link %}
                       <a href="{{ post.start_link }}" class="btn btn-secondary">Jump to Code</a>
                     {% endif %}
+                    <br><p>{{post.description}}</p>
+                    
                 </li>
                 {% endfor %}
             </ul>
