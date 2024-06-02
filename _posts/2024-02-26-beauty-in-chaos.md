@@ -2,6 +2,7 @@
 title: Beauty in Chaos
 description: We bring the beauty of chaos and strange-attractors to the browser using an html5 canvas and JavaScript.
 layout: post
+categories: Scientific
 ---
 
 This project has been submitted as an entry to [Scribble Pad Hackthon](https://scribbler.live). Check out the notebook [here](https://app.scribbler.live?jsnb=https://scribbler.live/scribblepad/ChaosTheoryAttractors/ChaosPlotter.jsnb).
