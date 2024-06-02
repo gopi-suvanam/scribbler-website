@@ -2,6 +2,7 @@
 layout: post
 title : Javascript is Ideal for fog computing
 description: Fog computing is a pardigm where computation happens on several local devices rather than on cloud. JavaScript is a good programmin langauge for implementing fog computing frameworks.
+categories: JavaScript
 ---
 
 Fog computing is eventually going to replace pure play cloud computing as computing power becomes ubiquitous. The number of IoT enabled devices is growing exponentially and cloud infrastructure cannot match the growth. Also cloud, with the internet overhead, is not ideal for certain applications.
