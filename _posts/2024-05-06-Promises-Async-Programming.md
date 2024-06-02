@@ -3,6 +3,7 @@ title: Mastering Promises and Async Programming in JavaScript
 description: Promises are a powerful tool for managing asynchronous operations in JavaScript. By understanding how promises work and how to use them effectively, you can write more readable and maintainable asynchronous code. 
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Promise-Examples.jsnb
+categories: JavaScript
 ---
 ## What are Promises?
 
