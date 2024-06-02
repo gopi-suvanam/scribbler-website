@@ -6,7 +6,7 @@ layout: default
     <div class="row">
         <main class="col-md-9 layout-page__main">
             
-            <a href='/blog/'>Blog</a>><a href="/categories/{{ page.category }}">{{ page.category }}</a>
+            <a href='/blog/'>Blog</a>><a href="/categories/{{ page.category }}"&nbsp;&nbsp;>&nbsp;&nbsp;{{ page.category }}</a>
             <ul>
                 {% for post in site.categories[page.category] %}
                 <li>
