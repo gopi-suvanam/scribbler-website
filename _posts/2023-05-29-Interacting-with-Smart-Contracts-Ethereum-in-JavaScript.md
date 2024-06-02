@@ -2,6 +2,7 @@
 title: Interacting with Smart Contracts of Ethereum in JavaScript
 layout: post
 description: Web3.js is a library that can be used to interact with Smart Contracts on Ethereum using JavaScript in the Browser. This helps build DApps (Decentralized Applications) on top of Ethereum.
+categories: Decentralization
 ---
 
 ### Smart Contracts and Ethereum
