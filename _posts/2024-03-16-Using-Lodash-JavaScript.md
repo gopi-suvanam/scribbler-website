@@ -3,6 +3,7 @@ title: Unleashing the Power of Lodash to Simplify JavaScript Development
 description: Lodash is a popular JavaScript utility library that provides a collection of functions to help developers write concise and efficient code. It offers a wide range of utility functions, including ones for data manipulation, functional programming, and simplifying common tasks.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Lodash.jsnb
+categories: Libraries
 ---
 
 
