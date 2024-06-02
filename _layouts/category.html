@@ -2,9 +2,16 @@
 layout: default
 ---
 
-<h1>Posts in category: {{ page.category }}</h1>
-<ul>
-    {% for post in site.categories[page.category] %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+<div class="container">
+    <div class="row">
+        <main class="col-md-9 layout-page__main">
+            
+            <h1>Posts in category: {{ page.category }}</h1>
+            <ul>
+                {% for post in site.categories[page.category] %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </main>
+    </div>
+</div>
