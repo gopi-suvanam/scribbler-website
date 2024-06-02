@@ -2,7 +2,7 @@
 title: JavaScript Augmented Reality Frameworks and Libraries
 layout: post
 description: JavaScript has several frameworks and libraries for AR with different functionalities and features. 
-tags: javascript
+categories: [XR, Libraries]
 ---
 
 JavaScript augmented reality (AR) frameworks and libraries provide developers with tools and resources to create AR experiences using JavaScript.
