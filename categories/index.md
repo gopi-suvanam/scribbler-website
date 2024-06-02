@@ -22,12 +22,20 @@ disable_anchors: true
 
 
 
-    
-
- 
-
 
 {% endfor %}
-<h3 ><a href="/categories/Others">Miscellaneous</a></h3>
+<h3 ><a href="/categories/Others"></a></h3>
+
+<div class="card" style="width: 18rem;">
+          <div class="card-body">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <h5 class="card-title"><a href="/categories/Others"></a></h5>
+             {% assign page1 = site.pages | where: "category",category_name| first %}
+
+            <p class="card-text">Uncategorized articles on Scribbler</p>
+            
+          </div>
+        </div>
+        
 </div>
 
