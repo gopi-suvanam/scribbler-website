@@ -1,7 +1,8 @@
 ---
 title: Scribbler vs. Competitors - A Comprehensive Comparison
 layout: post
-description: While tools like Observable, Zeppelin, nteract, JSNotebook, CodePen, and JSFiddle each have their strengths, Scribbler's minimalistic approach is particularly appealing for users who need a straightforward, web-based JavaScript notebook.  
+description: While tools like Observable, Zeppelin, nteract, JSNotebook, CodePen, and JSFiddle each have their strengths, Scribbler's minimalistic approach is particularly appealing for users who need a straightforward, web-based JavaScript notebook.
+categories: Scribbler
 ---
 
 In the world of JavaScript notebooks, several tools offer diverse functionalities aimed at different types of users, from data scientists to developers to educators. Among these, Scribbler stands out for its simplicity and ease of use, providing a streamlined experience for users who need to write, run, and share JavaScript code without unnecessary complexity. This article explores how Scribbler compares to its competition, focusing on its user-friendly approach and simplicity.
