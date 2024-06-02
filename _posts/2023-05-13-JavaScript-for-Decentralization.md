@@ -2,6 +2,7 @@
 title: JavaScript for Decentralization
 layout: post
 description: JavaScript is an important tool for decentralization because it enables developers to build decentralized applications (dApps) that can run directly on users' devices.
+categories: Decentralization
 ---
 Being a blog on decentralization, a large number of articles in this blog discuss computation in JavaScript. That is essentially because JavaScript is a key component of decentralization, because it enables developers to build decentralized applications (dApps) that can run directly on users' devices, without the need for a centralized server or intermediary. One of the key features of decentralization is the elimination of centralized control and ownership. With decentralized applications, users can interact directly with one another and share data without the need for a centralized intermediary to mediate their interactions. This is made possible through the use of blockchain, P2P, and other technologies, which allow for secure, decentralized record-keeping and consensus mechanisms. 
 
