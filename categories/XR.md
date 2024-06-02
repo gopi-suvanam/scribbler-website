@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Scribbler articles on XR
+title: Scribbler Articles on XR
 category: XR
-description: "Immerse yourself in the world of Extended Reality (XR) with insights and innovations in Augment Reality (AR), Virtual Reality(VR), and Mulit-Reality (MR) using JavaScript."
+description: "Experiment with Extended Reality (XR) with tools and libraries in Augment Reality (AR), Virtual Reality(VR), and Mulit-Reality (MR) using JavaScript."
 ---
