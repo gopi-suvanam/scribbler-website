@@ -3,6 +3,7 @@ title: Elevating Data Visualization using Plotly.js
 description: Plotly.js emerges as a powerful tool for creating compelling data visualizations on the web. We explore creating bar chart, line chart, scatter plot, and heatmap using Plotly.js in html.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Plotly-Example.jsnb
+categories: DataScience
 ---
 
 ## Introducing Plotly.js
