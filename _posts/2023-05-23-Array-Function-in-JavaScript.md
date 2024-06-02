@@ -3,7 +3,7 @@ title: Funtional Style Code in JavaScript using Array Functions
 layout: post
 description: Some techniques to avoid writing for/while loops in JavaScript for readability and performance using Array functions like map, reduce, and forEach. These are second order functions and are helpful in writing functional style code.
 start_link: https://app.scribbler.live/?jsnb=./examples/Array-Functions.jsnb
-categories: FunctionalProgramming, JavaScript
+categories: [Functional-Programming, JavaScript]
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Array-Functions.jsnb)
 ### Loops vs Array Functions in JavaScript
