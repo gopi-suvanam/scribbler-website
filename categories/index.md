@@ -5,7 +5,7 @@ description: Explore various aspects of JavaScript like AI/ML, JavaScript featur
 permalink: /categories/
 disable_anchors: true
 ---
-<div id="archives">
+
 {% for category in site.categories %}
 
 
@@ -37,5 +37,5 @@ disable_anchors: true
           </div>
         </div>
         
-</div>
+
 
