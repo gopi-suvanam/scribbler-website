@@ -2,6 +2,7 @@
 title: Text Classification in JavaScript
 layout: post
 description: Several text classification usecases can be easily implemented in JavaScript using a plathora of libraries.
+categories: MachineLearning
 ---
 Text classification is a big component of AI/ML. Here are a few examples of text classification use cases that can be implemented in JavaScript:
 
