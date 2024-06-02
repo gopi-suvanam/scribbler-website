@@ -2,7 +2,7 @@
 layout: post
 title: Machine Learning in JavaScript
 description: Python has been the main language for machine learning but JavaScript is good alternative especially for decentralized machine learning.
-categories: MachineLearning
+categories: AI-ML, Libraries
 ---
 
 Machine learning in JavaScript could be a powerful paradign for building [decentralized AI systems](/2023/02/25/Decentralized-Artificial-Intelligence.html). JavaScript is a [versatile programming langauge](/2023/02/22/Why-JavaScript-is-Great.html) and it is ideal especially for [edge computing](/2023/01/14/JavaScript-Ideal-For-Fog-Computing.html).This article highlights how machine learning can be done in JavaScript using simple code. 
