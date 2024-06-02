@@ -3,6 +3,7 @@ title: Spectral Analysis in JavaScript
 layout: post
 description: Spectral Analysis is a powerful tool used to solve scientific and engineering problems. JavaScript provides the toolkit to do this easily.
 start_link: https://app.scribbler.live/?jsnb=./examples/spectral-analysis.jsnb
+categories: Scientific
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/spectral-analysis.jsnb)
 ## What is Spectral Analysis
