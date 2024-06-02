@@ -6,17 +6,26 @@ permalink: /categories/
 ---
 <div id="archives">
 {% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
 
-    <h3 ><a href="/categories/{{category_name}}">{{ category_name }}</a></h3>
 
-    {% assign page1 = site.pages | where: "category",category_name| first %}
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <h5 class="card-title"><a href="/categories/{{category_name}}">{{ category_name }}</a></h5>
+             {% assign page1 = site.pages | where: "category",category_name| first %}
+
+            <p class="card-text">{{ page1.description }}</p>
+            
+          </div>
+        </div>
+
+
 
     
-    <h4>{{ page1.description }}</h4>
-    
-  </div>
+
+ 
+
+
 {% endfor %}
 <h3 ><a href="/categories/Others">Miscellaneous</a></h3>
 </div>
