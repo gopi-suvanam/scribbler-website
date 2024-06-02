@@ -2,6 +2,7 @@
 title: 10 Engaging JavaScript Projects for Beginners to Enhance Skills and Creativity
 description: Explore 10 captivating JavaScript projects tailored for beginners, designed to reinforce fundamental concepts and ignite creativity. From building a to-do list app to crafting a drawing tool, these projects offer hands-on experience in DOM manipulation, API integration, and interactive web development.
 layout: post
+categories: JavaScript
 ---
 
 ## Introduction to JS Projects
