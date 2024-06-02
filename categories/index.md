@@ -13,5 +13,6 @@ title: Categories
     <h3 ><a href="{{category_name}}">{{ category_name }}</a></h3>
   </div>
 {% endfor %}
+<h3 ><a href="Others">Miscellaneous</a></h3>
 </div>
 
