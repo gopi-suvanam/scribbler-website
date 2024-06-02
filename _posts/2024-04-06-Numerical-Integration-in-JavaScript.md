@@ -3,6 +3,7 @@ title: Exploring Numerical Methods for Integration Using JavaScript
 layout: post
 description: In this article, we'll explore several numerical methods for integration and implement them using JavaScript. We will look at Reimann Sum, Trapezoidal Rule and Simpson's rule.
 start_link: https://app.scribbler.live/?jsnb=./examples/Numerical-Integration.jsnb
+categories: Scientific
 ---
 
 ## Introduction to Numerical Integration
