@@ -25,7 +25,7 @@ disable_anchors: true
       <div class="card mb-4">
         <div class="card-body">
             <h5 class="card-title"><a href="/categories/Others">Miscellaneous</a></h5>
-            <p class="card-text">Uncategorized articles on Scribbler</p>
+            <p class="card-text"><a href="/categories/Others">Uncategorized articles on Scribbler</a></p>
         </div>
       </div>
     </div>
