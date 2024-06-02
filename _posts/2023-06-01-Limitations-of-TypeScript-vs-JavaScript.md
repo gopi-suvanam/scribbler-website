@@ -2,7 +2,7 @@
 title: Limitations of TypeScript vs JavaScript
 layout: post
 description: TypeScript has gained significant popularity in recent years as a statically-typed superset of JavaScript. While it offers several advantages, it is essential to recognize that TypeScript may not be the best choice for many projects or development scenarios. 
-tags: javascript
+categories: JavaScript
 ---
 
 ### Limitations of TypeScript
