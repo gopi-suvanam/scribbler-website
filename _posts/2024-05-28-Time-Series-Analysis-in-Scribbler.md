@@ -3,6 +3,7 @@ title: How to Use Scribbler for Time Series Analysis in Data Science Projects
 layout: post
 description:  Scribbler is an excellent tool for performing time series analysis in data science projects. You can load, analyze, and visualize time series data directly in your browser and you can apply advanced statistical models like ARIMA for forecasting. 
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/time-series.jsnb
+categories: Scribbler, DataScience
 ---
 
 Scribbler is a powerful notebook tool that allows you to run JavaScript and HTML code in the browser, making it an excellent platform for time series analysis in data science projects. In this article, we'll explore how to use Scribbler to perform time series analysis, including loading data from an external source and conducting basic analysis.
