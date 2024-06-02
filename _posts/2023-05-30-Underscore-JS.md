@@ -1,7 +1,7 @@
 ---
 title: How to Use Underscore JS in JavaScript
 description: Underscore JS provides several utilites and functions for quick development in JavaScript. 
-categories: JavaScript, Libraries
+categories: [JavaScript, Libraries]
 layout: post
 start_link: https://app.scribbler.live/#./examples/Underscore-JS.jsnb
 ---
