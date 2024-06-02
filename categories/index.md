@@ -17,7 +17,7 @@ title: Categories
     {% for post in site.categories[category_name] %}
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-      <a href="https://github.com/gopi-suvanam/scribbler-website/blob/master{{page.path}}">Edit</a>
+      <a href="https://github.com/gopi-suvanam/scribbler-website/blob/master/{{post.path}}">Edit</a>
       </h4>
       
     </article>
