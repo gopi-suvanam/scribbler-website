@@ -3,6 +3,7 @@ title: Interactive Maps in JavaScript with Leaflet.js
 description: Leaflet.js provides a powerful and flexible framework for creating interactive maps on the web. With its simple API and extensive documentation, developers can easily integrate maps into their web applications and provide users with engaging and informative experiences. 
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Leaflet-js-Maps-Example.jsnb
+categories: Libraries
 ---
 
 ## Introduction to Maps in JavaScript
