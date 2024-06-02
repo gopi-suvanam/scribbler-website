@@ -3,6 +3,8 @@ title: Scientific Simulation in JavaScript
 layout: post
 description: Scientific simulation requires running several scenarios of a function call - ideal use-case for JavaScript.
 start_link: https://app.scribbler.live/?jsnb=./examples/Dynamic-Simulation.jsnb
+categories: Scientific
+
 ---
 
 ### What is Scientific Simulation
