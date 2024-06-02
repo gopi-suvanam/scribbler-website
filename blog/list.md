@@ -14,12 +14,12 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
        <ul>
       {% for post in category[1] %}
             <li>
-              <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5><br>
+              <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
               <a href="{{ post.url }}" >Read More</a>
               {% if post.start_link %}
                 &nbsp;•&nbsp;<a href="{{ post.start_link }}" >Jump to Code</a>
               {% endif %}
-              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a><br>
+              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
             </li>
       {% endfor %}
       </ul>
@@ -34,12 +34,12 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
     {% for post in uncategorized_posts %}
 
            <li>
-            <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5><br>
+            <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
             <a href="{{ post.url }}" >Read More</a>
             {% if post.start_link %}
               &nbsp;•&nbsp;<a href="{{ post.start_link }}" >Jump to Code</a>
             {% endif %}
-              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a><br>
+              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
             </li>
       {% endfor %}
       </ul>
