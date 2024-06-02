@@ -3,6 +3,7 @@ title: Web Audio API for Interactive Sound Applications in JavaScript
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Web-Audio-API.jsnb
 description: The Web Audio API represents a groundbreaking technology that empowers developers to push the boundaries of creativity in web development. With its rich set of features and intuitive API, the possibilities for creating interactive sound applications are virtually limitless.
+categories: JavaScript
 ---
 
 ## Introduction to Web Audio API 
