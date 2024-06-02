@@ -3,6 +3,7 @@ title: Understanding the Essence of JavaScript Design Patterns
 description: Design patterns play an important role in development, especially in the case of JavaScript. We look at a few patterns in this article.
 layout: post
 start_link: https://app.scribbler.live#./examples/Design-Patterns.jsnb
+categories: JavaScript
 ---
 
 ## Introduction to Design Patterns
