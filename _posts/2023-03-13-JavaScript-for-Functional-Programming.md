@@ -2,6 +2,7 @@
 layout: post
 title: JavaScript for Functional Programming
 description: Turns out, JavaScript is in fact ideal for functional programming.
+categories: JavaScript, FunctionalProgramming
 --- 
 I've always loved functional programming. It is a paradigm that emphasizes the use of functions as the primary building blocks of software. In functional programming, functions are treated as first-class citizens, meaning that they can be used just like any other data type, such as integers, strings, or objects. Functions are defined to take input arguments and produce output values, and they are designed to avoid any side effects or state changes. There are several languages for writing pure functional programming. But given that Python and JavaScript are very popular languages, it is useful to do functional programming in one of these languages. JavaScript especially is interesting for this purpose as it is [widely used and available everywhere](/2023/02/22/Why-JavaScript-is-Great.html). Turns out, JavaScript is in fact ideal for functional programming.
 
