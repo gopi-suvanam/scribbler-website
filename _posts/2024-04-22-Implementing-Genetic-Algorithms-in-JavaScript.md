@@ -3,6 +3,7 @@ title: A Practical Guide to Implementing Genetic Algorithms in JavaScript
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Genetic-Algorithm.jsnb
 description: This article includes detailed explanations of genetic algorithm concepts, step-by-step implementation using JavaScript, and practical examples to demonstrate how genetic algorithms can be used to solve complex optimization tasks.
+categories: Scientific
 ---
 
 ## What is a Genetic Algorithm?
