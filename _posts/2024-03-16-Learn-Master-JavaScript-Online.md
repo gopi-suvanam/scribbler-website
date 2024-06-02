@@ -4,6 +4,7 @@ description: Scribbler is an online tool to learn and master JavaScript through 
 layout: post
 show_in_menu: false
 start_link: https://scribbler.live/learn/javascript-tutorial-beginners/
+categories: Scribbler
 ---
 
 ## Online JavaScript
