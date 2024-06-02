@@ -2,7 +2,7 @@
 title: Numerical Analysis in JavaScript for Scientific/Mathematical Computation
 description: Numerical analysis in JavaScript allows researchers, scientists, and engineers to tackle complex problems by formulating them as computational tasks and finding approximate solutions using numerical algorithms and techniques. JavaScript can be used to implement Bisection Method, Newton's Method, Euler's Method, Simpson's Rule, Gaussian Elimination and Runge-Kutta Method.
 layout: post
-tags: javascript
+categories: Scientific
 start_link: https://app.scribbler.live/?jsnb=./examples/Numerical-Analysis-Recipes.jsnb
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Numerical-Analysis-Recipes.jsnb)
