@@ -3,6 +3,7 @@ title: Understanding Gradient Descent with Examples in JavaScript
 description: Learn how to implement gradient descent for optimizing functions using JavaScript. This article provides a step-by-step guide, code examples, and an exercise to apply gradient descent in a JavaScript notebook environment for numerical optimization tasks.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Gradient-Descent.jsnb
+categories: Scientific
 ---
 
 ## What is Gradient Descent?
