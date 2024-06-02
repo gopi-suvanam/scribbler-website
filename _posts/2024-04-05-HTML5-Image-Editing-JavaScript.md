@@ -3,6 +3,7 @@ title: HTML5 Image Editing with JavaScript
 description: This article explores the dynamic fusion of HTML5 and JavaScript for image editing directly within the browser, demonstrating practical examples ranging from applying filters like grayscale and sepia to cropping and scaling images. 
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/HTML5-Image-Processing.jsnb
+categories: XR
 ---
 
 ## Introduction to HTML5 Image Editing
