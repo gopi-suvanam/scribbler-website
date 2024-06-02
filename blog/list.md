@@ -13,12 +13,12 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
     <div class="row">
       {% for post in category[1] %}
         
-              <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+              <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5><br>
               <a href="{{ post.url }}" >Read More</a>
               {% if post.start_link %}
                 &nbsp;•&nbsp;<a href="{{ post.start_link }}" >Jump to Code</a>
               {% endif %}
-              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
+              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a><br>
 
       {% endfor %}
     </div>
@@ -30,12 +30,12 @@ description: Articles on JavaScript and Scribbler across various sub-topics incl
     {% assign uncategorized_posts = site.posts | where: "categories", empty %}
     {% for post in uncategorized_posts %}
 
-            <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+            <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5><br>
             <a href="{{ post.url }}" >Read More</a>
             {% if post.start_link %}
               &nbsp;•&nbsp;<a href="{{ post.start_link }}" >Jump to Code</a>
             {% endif %}
-              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a>
+              &nbsp;•&nbsp;<a href="https://github.com/gopi-suvanam/scribbler-website/edit/master/{{ post.path }}">&#9998;</a><br>
 
     {% endfor %}
   </div>
