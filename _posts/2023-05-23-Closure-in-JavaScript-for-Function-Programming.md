@@ -3,7 +3,7 @@ title: Closure in JavaScript for Functional Programming
 layout: post
 description: Closure is an important feature available in JavaScript to do functional style programming. There are many practial applications of closure including in mathematical computations, UI experince, machine learning etc.
 start_link: https://app.scribbler.live/?jsnb=./examples/Closure-in-JavaScript.jsnb
-categories: FunctionalProgramming, JavaScript
+categories: [Functional-Programming, JavaScript]
 ---
 
 ## Closures in JavaScript
