@@ -2,7 +2,6 @@
 layout: full
 title: Articles on JavaScript and Scribbler
 description: Explore various aspects of JavaScript like AI/ML, JavaScript features, Functional Programming, XR, Financial and Scientific calculations, Decentralization, and DataScience.
-permalink: /categories/
 disable_anchors: true
 ---
 <div class="container">
