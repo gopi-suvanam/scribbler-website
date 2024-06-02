@@ -3,7 +3,7 @@ title: Sorting Arrays in JavaScript
 description: We discuss alogorithms (code in JavaScript) for sorting - the process of arranging elements of an array in a numerically order.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Sorting_Arrays_in_JavaScript.jsnb
-categories: Scientific, JavaScript
+categories: [Scientific, JavaScript]
 ---
 [Jump to Scribbler Notebook](https://app.scribbler.live/?jsnb=./examples/Sorting_Arrays_in_JavaScript.jsnb)
 
