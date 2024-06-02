@@ -24,7 +24,6 @@ disable_anchors: true
 
 
 {% endfor %}
-<h3 ><a href="/categories/Others"></a></h3>
 
 <div class="card" style="width: 18rem;">
           <div class="card-body">
