@@ -3,6 +3,7 @@ title: Guide to the Newton-Raphson Method with JavaScript Code
 description: This comprehensive guide provides insights into the historical context, applications, advantages, limitations, and practical implementation of the Newton-Raphson method. Experiment with the provided JavaScript code and adapt it to solve specific equations or functions of interest.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Numerical-Analysis-Recipes.jsnb
+categories: Scientific
 ---
 
 ## Introduction to Newton-Raphson Method
