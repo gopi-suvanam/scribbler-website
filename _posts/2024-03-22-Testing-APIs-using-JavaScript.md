@@ -3,6 +3,7 @@ title: Testing APIs using JavaScript
 description: JavaScript can be used in Scribbler easily to test REST APIs easily. JS can handle various methods (GET, POST etc) and authenitcation mechanisms.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb
+categories: JavaScript, Sribbler
 ---
 ## JavaScript for Testing APIs
 JavaScript is useful for API testing for several reasons:
