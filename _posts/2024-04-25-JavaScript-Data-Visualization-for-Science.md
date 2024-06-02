@@ -3,6 +3,7 @@ title: Using JavaScript for Data Visualization in Scientific Applications
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Plotly-Example.jsnb
 description: Explore the power of JavaScript and Plotly.js for data visualization in scientific research, showcasing interactive examples across climate science, genetics, healthcare, astronomy, and more.
+categories: DataScience
 ---
 ## Introduction to Data Visualization in JavaScript
 JavaScript is a versatile tool for creating interactive and insightful data visualizations in scientific applications. In this article, we explore how to harness the power of JavaScript, specifically using the Plotly.js library, to visualize complex scientific data and demonstrate its applications in various scientific domains.
