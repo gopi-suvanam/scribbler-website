@@ -1,7 +1,7 @@
 ---
 title: Numeric.js for Numerical Analysis and Linear Algebra in JavaScript
 layout: post
-categories: Libraries, Scientific
+categories: [Libraries, Scientific]
 description: Numeric.js is a JavaScript library that provides a range of numerical computing and linear algebra/matrix computing functionalities.
 start_link: https://app.scribbler.live/?jsnb=./examples/Matrix-Operations-Linear-Algebra.jsnb
 ---
