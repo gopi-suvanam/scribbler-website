@@ -5,36 +5,36 @@ description: Explore various aspects of JavaScript like AI/ML, JavaScript featur
 permalink: /categories/
 disable_anchors: true
 ---
-
-<div>
-{% for category in site.categories %}
-
-      <div class="card" style="width: 18rem;">
-          <div class="card-body">
+<div class="container">
+  <div class="row">
+    {% for category in site.categories %}
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
             {% capture category_name %}{{ category | first }}{% endcapture %}
-            <h5 class="card-title"><a href="/categories/{{category_name}}">{{ category_name }}</a></h5>
-             {% assign page1 = site.pages | where: "category",category_name| first %}
+          <h5 class="card-title"><a href="/categories/{{category_name}}">{{ category_name }}</a></h5>
+          {% assign page1 = site.pages | where: "category",category_name| first %}
 
             <p class="card-text">{{ page1.description }}</p>
-            
-          </div>
         </div>
+      </div>
+    </div>
+    {% endfor %}
 
-
-
-
-{% endfor %}
-
-<div class="card" style="width: 18rem;">
-          <div class="card-body">
-            {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-body">
             <h5 class="card-title"><a href="/categories/Others">Miscellaneous</a></h5>
-             {% assign page1 = site.pages | where: "category",category_name| first %}
-
             <p class="card-text">Uncategorized articles on Scribbler</p>
-            
-          </div>
         </div>
-        
-
+      </div>
+    </div>
+    
+  </div>
 </div>
+
+
+
+
+     
+
