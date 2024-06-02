@@ -3,6 +3,7 @@ title: Most Useful JavaScript Libraries for Scientific Research
 description: JavaScript is a versatile language for various usecases including scientific computation, AI, and machine learning. This article lists a few very useful libraries for scientific computation.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Matrix-Operations-Linear-Algebra.jsnb
+categories: Scientific
 ---
 
 JavaScript has become a powerful platform for scientific computation and machine learning, offering a range of tools and libraries that enable researchers to perform complex analyses, numerical computations, and machine learning tasks directly in the browser. In this article, we'll explore a few JavaScript tools and libraries specifically tailored for scientific research in the domains of computation and machine learning.
