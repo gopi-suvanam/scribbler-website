@@ -3,7 +3,7 @@ title: Accessing the Camera from JavaScript for XR Applications
 layout: post
 description: Accessing the camera in JavaScript is a fundamental step in developing XR applications. Using the `getUserMedia` API, you can integrate real-time camera data into your applications, enabling a wide range of interactive and immersive experiences. 
 categories: XR
-start-link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Accessing-Camera.jsnb
+start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Accessing-Camera.jsnb
 ---
 
 ## Accessing Camera
