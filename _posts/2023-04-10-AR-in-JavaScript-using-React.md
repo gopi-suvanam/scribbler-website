@@ -19,6 +19,8 @@ Performance: JavaScript and React have high performance and can handle complex c
 
 Overall, JavaScript and React are ideal for creating AR experiences because they offer a powerful and flexible platform that can run on a wide range of devices and can be easily integrated with other web technologies.
 
+For accessing camera using JavaScript check the article: [Accessing the Camera from JavaScript for XR Applications](https://scribbler.live/2024/06/18/Accessing-Camera-for-XR.html). Also for more libraries on XR, check out: [JavaScript Libraries for Image Processing](https://scribbler.live/2023/06/16/JavaScript-Libraries-Image-Processing.html).
+
 ### Steps for Creating AR in JS
 There are several libraries and frameworks available for creating augmented reality (AR) experiences in JavaScript using React. Here are the steps you can follow to get started:
 
