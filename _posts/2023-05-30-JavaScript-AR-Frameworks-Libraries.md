@@ -22,6 +22,8 @@ Frameworks and libraries are essential for AR development for several reasons:
 
 - Rapid Prototyping and Iteration: With the help of AR frameworks and libraries, developers can quickly prototype and iterate on their AR ideas. The pre-built components and functionality provided by these tools accelerate the development process, allowing developers to experiment, test, and refine their AR applications more efficiently. This agility is particularly beneficial in fast-paced development cycles.
 
+For accessing camera using JavaScript check the article: [Accessing the Camera from JavaScript for XR Applications](https://scribbler.live/2024/06/18/Accessing-Camera-for-XR.html). For deploying XR in react check: [Augmented Reality (AR) in JavaScript using React](https://scribbler.live/2023/04/10/AR-in-JavaScript-using-React.html).
+
 ### Popular AR Frameworks and Libararies
 In an earlier post, we have looked at one example of using [AR in React through JavaScript](/2023/04/10/AR-in-JavaScript-using-React.html). There are several other libraries and frameworks though. Here are some popular JavaScript AR frameworks and libraries:
 
