@@ -5,7 +5,9 @@ description: Explore various aspects of JavaScript like AI/ML, JavaScript featur
 disable_anchors: true
 ---
 
+## [List of all articles](list)
 
+## Browse Categories
 <div class="container">
   <div class="row">
     {% for category in site.categories %}
