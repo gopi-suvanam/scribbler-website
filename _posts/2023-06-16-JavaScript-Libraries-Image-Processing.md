@@ -171,7 +171,7 @@ const Jimp = require('jimp');
 	});
 
 
-### Applications of JavaScript Libraries for Image Processing
+## Applications of JavaScript Libraries for Image Processing
 
 1. **Photo Editing Applications**:
    - **Filters and Effects**: Apply various filters (e.g., grayscale, blur, sharpen) and effects to images in real-time.
