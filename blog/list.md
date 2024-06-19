@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog Posts by Category
+title: List of Posts by Category
 description: Articles on JavaScript and Scribbler across various sub-topics incliding AI/ML, XR, Scientific Computing, and Financial Computing.
 ---
 
