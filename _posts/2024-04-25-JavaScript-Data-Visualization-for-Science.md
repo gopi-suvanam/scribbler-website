@@ -57,7 +57,7 @@ Use this notebook for experimenting in Plotly: [JavaScript Notebook with Plotly 
 
 ## Deep Scientific Applications
 
-Certainly! Here are more detailed use cases and examples of how JavaScript, particularly with Plotly.js, can be applied for data visualization in scientific applications across various domains:
+Here are more detailed use cases and examples of how JavaScript, particularly with Plotly.js, can be applied for data visualization in scientific applications across various domains:
 
 ### 1. *Climate Science and Environmental Research*
 - *Use Case*: Visualizing Climate Model Outputs
