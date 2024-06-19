@@ -86,7 +86,7 @@ In this example:
 - We count the number of points falling inside the unit circle (centered at the origin with radius 1).
 - The estimated value of π is calculated as the ratio of points inside the circle to the total number of samples.
 
-Certainly! Let's expand the JavaScript code examples to include additional Monte Carlo simulations demonstrating different applications. Below are two more examples: one for estimating the area under a curve using Monte Carlo integration and another for simulating a simple game of dice.
+Let's expand the JavaScript code examples to include additional Monte Carlo simulations demonstrating different applications. Below are two more examples: one for estimating the area under a curve using Monte Carlo integration and another for simulating a simple game of dice.
 
 ### Example 2: Monte Carlo Integration for Area Estimation
 
