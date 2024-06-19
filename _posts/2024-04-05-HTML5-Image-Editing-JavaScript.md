@@ -124,3 +124,37 @@ OpenCV.js is a JavaScript port of the popular OpenCV library, a computer vision 
 Fabric.js is primarily a canvas library for creating interactive graphics and visualizations, but it also includes features for working with images. Developers can use Fabric.js to load, manipulate, and render images on the canvas, making it suitable for building custom image editing interfaces and applications.
 
 We have looked at a detailed list of these libraries in an earlier article: [JavaScript Libraries for Image Processing](https://scribbler.live/2023/06/16/JavaScript-Libraries-Image-Processing.html)
+
+## Applications of HTML5 Image Editing
+
+1. **Photo Editing Tools**:
+   - **Basic Edits**: Crop, resize, and rotate images.
+   - **Filters and Effects**: Apply filters like grayscale, sepia, and blur.
+
+2. **Graphic Design Software**:
+   - **Layer Management**: Handle multiple image layers and blend modes.
+   - **Drawing Tools**: Provide brushes, shapes, and text insertion.
+
+3. **Online Meme Generators**:
+   - **Text Overlay**: Add customizable text to images.
+   - **Sticker Addition**: Include predefined stickers or user-uploaded images.
+
+4. **Interactive Applications**:
+   - **Annotating**: Markup images with arrows, highlights, and comments.
+   - **Image Collages**: Combine multiple images into a single canvas.
+
+5. **E-commerce Platforms**:
+   - **Product Customization**: Allow customers to personalize products with images and text.
+   - **Virtual Try-Ons**: Enable users to visualize products, like clothing or accessories, on their own images.
+
+6. **Educational Tools**:
+   - **Visual Tutorials**: Create step-by-step guides with interactive image edits.
+   - **Homework Annotations**: Teachers and students can annotate and submit images of homework.
+
+7. **Social Media Integrations**:
+   - **Profile Picture Editors**: Customize profile images with frames and effects.
+   - **Story Creators**: Edit and enhance images for stories and posts.
+
+8. **Game Development**:
+   - **Sprite Creation**: Design and edit sprites for games.
+   - **Map Editing**: Modify and enhance game maps and backgrounds.
