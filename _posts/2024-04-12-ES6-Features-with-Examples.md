@@ -617,7 +617,7 @@ console.log(email); // Output: alice@example.com
 Destructuring assignment is a powerful feature in JavaScript that enhances readability and efficiency by simplifying the extraction of values from arrays and objects. Whether dealing with function parameters, API responses, or nested data structures, destructuring provides a concise and expressive way to work with data. By mastering this feature, developers can write cleaner, more maintainable JavaScript code.
 ___
 
-## 5. ## Understanding Spread and Rest Operators in JavaScript
+## 5. Understanding Spread and Rest Operators in JavaScript
 
 The spread and rest operators, introduced in ECMAScript 6 (ES6), are versatile and powerful tools for working with arrays, objects, and function arguments in JavaScript. They enable more concise and readable code, making it easier to manage collections of data and function parameters. In this article, we'll explore the differences between the spread and rest operators, and how to use them effectively.
 
