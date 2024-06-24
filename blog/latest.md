@@ -1,7 +1,7 @@
 ---
 layout: default
-title: List of Posts by Category
-description: Articles on JavaScript and Scribbler across various sub-topics incliding AI/ML, XR, Scientific Computing, and Financial Computing.
+title: Latest Posts from Scribbler
+description: Latest articles on JavaScript and Scribbler across various sub-topics incliding AI/ML, XR, Scientific Computing, and Financial Computing.
 ---
 
 
