@@ -5,7 +5,7 @@ description: Explore various aspects of JavaScript like AI/ML, JavaScript featur
 disable_anchors: true
 ---
 
-## [List of all articles](list)
+## [List of all articles](list) • [Latest Articles](https://scribbler.live/blog/latest)
 
 ## Browse Categories
 <div class="container">
