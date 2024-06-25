@@ -283,7 +283,8 @@ function drawPendulum() {
   requestAnimationFrame(drawPendulum);
 }
 
-drawPendulum();```
+drawPendulum();
+```
 
 These examples illustrate the potential of JavaScript in simulations, but the possibilities are vast. As the ecosystem grows and technologies evolve, JavaScript is set to play an increasingly significant role in the field of scientific computation.
 
