@@ -5,6 +5,7 @@ layout: post
 start_link: https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb
 categories: [JavaScript, Scribbler]
 ---
+
 ## JavaScript for Testing APIs
 JavaScript is useful for API testing for several reasons:
 
@@ -165,7 +166,438 @@ In this example:
 
 By following this process and using JavaScript to make API requests, you can effectively perform API testing in Scribbler. Remember to replace the example API URL with the actual URL of the API you want to test. Jump to the notebook to start experimenting: [here](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
 
-### Applications of Testing APIs using JavaScript
+
+## HTTP Methods in Fetch 
+
+ One of the fundamental aspects of making fetch requests is specifying the HTTP method. Different HTTP methods serve different purposes and understanding how to use them effectively is crucial for any web developer. In this article, we will explore the various HTTP methods you can use with the Fetch API, and how to apply them in different scenarios.
+
+### 1. Overview of HTTP Methods
+
+HTTP methods, also known as verbs, define the type of action to be performed on a resource. The most commonly used methods are:
+
+- **GET**: Retrieve data from a server.
+- **POST**: Send data to a server to create a resource.
+- **PUT**: Update an existing resource on a server.
+- **DELETE**: Remove a resource from a server.
+- **PATCH**: Partially update a resource on a server.
+- **OPTIONS**: Describe the communication options for the target resource.
+- **HEAD**: Same as GET, but it only retrieves the headers, not the body of the response.
+
+### 2. Using HTTP Methods with Fetch
+
+The Fetch API allows you to specify the HTTP method through the `method` property in the options object. Here’s a closer look at how each method is used.
+
+#### a. GET Method
+
+The `GET` method is used to request data from a specified resource. It is the default method for fetch requests and typically does not require an options object unless custom headers or other settings are needed.
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### b. POST Method
+
+The `POST` method is used to send data to the server, often resulting in the creation of a new resource. You must include the `method` property set to `'POST'` and usually a `body` containing the data to be sent.
+
+```javascript
+fetch('https://api.example.com/data', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ key: 'value' })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### c. PUT Method
+
+The `PUT` method is used to update a resource on the server. Similar to `POST`, it requires a `method` property and a `body`.
+
+```javascript
+fetch('https://api.example.com/data/1', {
+  method: 'PUT',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ key: 'newValue' })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### d. DELETE Method
+
+The `DELETE` method removes a resource from the server. This method usually does not require a body.
+
+```javascript
+fetch('https://api.example.com/data/1', {
+  method: 'DELETE'
+})
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    console.log('Resource deleted');
+  })
+  .catch(error => console.error('Error:', error));
+```
+
+#### e. PATCH Method
+
+The `PATCH` method is used for partial updates to a resource. It works similarly to `PUT` but only modifies specific fields.
+
+```javascript
+fetch('https://api.example.com/data/1', {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ key: 'updatedValue' })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### f. OPTIONS Method
+
+The `OPTIONS` method is used to describe the communication options for the target resource. It is less commonly used directly in client-side applications but can be useful for CORS (Cross-Origin Resource Sharing) preflight requests.
+
+```javascript
+fetch('https://api.example.com/data', {
+  method: 'OPTIONS'
+})
+  .then(response => {
+    // Handle the response, which typically contains allowed methods and headers
+    console.log(response.headers.get('Allow'));
+  })
+  .catch(error => console.error('Error:', error));
+```
+
+#### g. HEAD Method
+
+The `HEAD` method is similar to `GET`, but it only retrieves the headers of the resource, not the body. This can be useful for checking if a resource exists or getting metadata.
+
+```javascript
+fetch('https://api.example.com/data', {
+  method: 'HEAD'
+})
+  .then(response => {
+    console.log(response.headers);
+  })
+  .catch(error => console.error('Error:', error));
+```
+
+
+Understanding and using the appropriate HTTP method is crucial for effective interaction with APIs and web servers. The Fetch API, with its modern syntax and promise-based handling, simplifies the process of making HTTP requests in JavaScript. By leveraging the correct HTTP methods, you can create, read, update, and delete resources efficiently, enhancing the functionality and responsiveness of your web applications. It should be noted that not all methods may be supported by all APIs. Most APIs support GET and POST at the least.
+
+
+## Headers in Fetch API
+
+Another key aspect of using the Fetch API effectively is understanding and utilizing HTTP headers. Headers allow you to pass additional information with your requests and responses, making them essential for tasks like authentication, content negotiation, and more. In this article, we will explore how to use headers with the Fetch API, why they are important, and common use cases.
+
+
+HTTP headers are key-value pairs sent between the client and server in an HTTP request or response. They provide essential information about the request or response, such as the content type, length, encoding, and more.
+
+### Using Headers in Fetch
+
+When making a fetch request, you can specify headers using the `headers` property in the options object. The `headers` property accepts an object or an instance of the `Headers` class.
+
+#### a. Setting Headers with an Object
+
+The simplest way to set headers is to pass an object with key-value pairs:
+
+```javascript
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer your-token-here'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### b. Using the Headers Class
+
+The `Headers` class provides methods to manage headers more dynamically:
+
+```javascript
+const myHeaders = new Headers();
+myHeaders.append('Content-Type', 'application/json');
+myHeaders.append('Authorization', 'Bearer your-token-here');
+
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: myHeaders
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+### Commonly Used Headers
+
+Here are some common headers you might use in fetch requests:
+
+- **Content-Type**: Indicates the media type of the resource or the data being sent. Common values include `application/json`, `application/x-www-form-urlencoded`, and `multipart/form-data`.
+
+- **Authorization**: Used to pass credentials for authenticating a user. Common schemes include `Bearer` tokens and `Basic` authentication.
+
+- **Accept**: Informs the server about the types of data the client can process. For example, `application/json` or `text/html`.
+
+- **Cache-Control**: Directs caching mechanisms. Common values include `no-cache`, `no-store`, and `max-age`.
+
+- **User-Agent**: Provides information about the client software. This can be useful for server-side logging and analytics.
+
+- **Referer**: Indicates the URL of the resource from which the request originated.
+
+### Practical Examples
+
+#### a. Fetching JSON Data
+
+When fetching JSON data, setting the `Content-Type` and `Accept` headers ensures proper handling of the data format:
+
+```javascript
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### b. Sending Form Data
+
+When sending form data, use the appropriate `Content-Type`:
+
+```javascript
+const formData = new FormData();
+formData.append('username', 'john');
+formData.append('password', 'secret');
+
+fetch('https://api.example.com/login', {
+  method: 'POST',
+  body: formData,
+  headers: {
+    'Content-Type': 'multipart/form-data'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+#### c. Authentication with Bearer Token
+
+When authenticating with a Bearer token, include the `Authorization` header:
+
+```javascript
+fetch('https://api.example.com/protected', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer your-token-here'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+### Handling Response Headers
+
+You can also read response headers using the `Headers` object returned by the `response`:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    console.log(response.headers.get('Content-Type'));
+    console.log(response.headers.get('Date'));
+    return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+```
+
+
+HTTP headers play a crucial role in making effective and secure network requests with the Fetch API. By understanding and utilizing headers correctly, you can manage content types, authentication, caching, and more. Whether you are fetching data, sending data, or handling responses, headers provide the necessary context to ensure smooth communication between the client and server. Mastering the use of headers in the Fetch API is an essential skill for any web developer, enabling you to build robust and efficient web applications. Right headers to use can be obtained from the documentation of the API being accessed.
+
+## Error Handling in Fetch - Best Practices for Testing REST APIs
+
+When interacting with REST APIs using the Fetch API in JavaScript, effective error handling is crucial to ensure your application behaves reliably and gracefully. Error handling involves anticipating and managing various scenarios where things may go wrong, such as network issues, server errors, or incorrect data formats. In this article, we will explore best practices for error handling while testing REST APIs using the Fetch API.
+
+### Understanding Fetch API Basics
+
+The Fetch API provides a modern, promise-based interface for making network requests. Here’s a quick recap of its basic usage:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    // Handle successful response
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle network errors or exceptions
+    console.error('Error:', error);
+  });
+```
+
+### Common Types of Errors
+
+When testing REST APIs, errors can occur due to various reasons:
+
+- **Network Errors**: These occur when there is a problem with the network connection, such as timeouts or DNS failures.
+- **HTTP Errors**: These are errors returned by the server, typically indicated by HTTP status codes (e.g., 404 for Not Found, 500 for Internal Server Error).
+- **JSON Parsing Errors**: These occur when attempting to parse JSON data from the response body that is malformed or not in the expected format.
+
+### Handling Network Errors
+
+Network errors can be caught using the `catch` block in your fetch chain. This includes errors like network timeout or DNS resolution failures:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('Network error:', error);
+  });
+```
+
+### Handling HTTP Errors
+
+HTTP errors are those where the server responds with a non-successful status code (e.g., 404, 500). You can check for `response.ok` or handle specific status codes:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      if (response.status === 404) {
+        throw new Error('Resource not found');
+      } else {
+        throw new Error('Server error: ' + response.status);
+      }
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('HTTP error:', error);
+  });
+```
+
+### Handling JSON Parsing Errors
+
+When parsing JSON from the response body, errors can occur if the data is not valid JSON. You should handle these errors to prevent crashes in your application:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('JSON parsing error:', error);
+  });
+```
+
+### Logging and Debugging
+
+Logging errors and responses is crucial for debugging and understanding the flow of your application. Use `console.log` or more advanced logging frameworks to track errors effectively:
+
+```javascript
+fetch('https://api.example.com/data')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Data received:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+```
+
+### Retrying Requests
+
+In some cases, you may want to retry requests if they fail due to network issues or transient errors. Implementing retry logic with exponential backoff can improve the reliability of your application:
+
+```javascript
+function fetchDataWithRetry(url, maxRetries = 3) {
+  let retries = 0;
+
+  function fetchWithRetry() {
+    return fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+        if (retries < maxRetries) {
+          retries++;
+          console.log(`Retrying (${retries}/${maxRetries})...`);
+          return fetchWithRetry();
+        } else {
+          throw new Error('Max retries exceeded');
+        }
+      });
+  }
+
+  return fetchWithRetry();
+}
+
+fetchDataWithRetry('https://api.example.com/data')
+  .then(data => {
+    console.log('Data received:', data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+```
+
+Error handling is a critical aspect of testing REST APIs with the Fetch API in JavaScript. By anticipating and handling network errors, HTTP errors, and JSON parsing errors, you can create more robust and reliable applications. Implementing logging and debugging techniques further enhances your ability to diagnose and fix issues. Remember to consider retrying requests in case of transient errors to improve the resilience of your application. With these best practices in mind, you can effectively manage errors and deliver a seamless user experience when interacting with REST APIs.
+
+
+
+## Applications of Testing APIs using JavaScript
 
 1. **Automated Integration Testing**:
    - **Continuous Integration/Continuous Deployment (CI/CD)**: Integrate API tests into CI/CD pipelines to ensure new code doesn't break existing functionality.
