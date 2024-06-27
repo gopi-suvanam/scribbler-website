@@ -300,7 +300,7 @@ Also these notebooks contain the code:
 
 ___
 
-## Machine Using JavaScript - Unlocking AI in the Browser
+## Machine Learning Using JavaScript - Unlocking AI in the Browser
 
 Machine learning (ML) has traditionally been dominated by languages such as Python and frameworks like TensorFlow and PyTorch. However, JavaScript is rapidly emerging as a viable option for machine learning, thanks to its ubiquity in web development and powerful libraries like TensorFlow.js. This article explores the capabilities of JavaScript in machine learning and provides practical code examples to demonstrate its potential.
 
@@ -1269,11 +1269,11 @@ For more advanced financial calculations check out these articles and notebooks:
 3. [Option Pricing in JavaScript using Black-Scholes Formula](https://scribbler.live/2023/04/06/Option-Pricing-using-Black-Scholes-in-JavaScript.html)
 4. [Black-Scholes - JavaScript Notebook](https://app.scribbler.live/?jsnb=./examples/Black-Scholes.jsnb)
 ___
-### Robotics and Control Systems with JavaScript
+## Robotics and Control Systems with JavaScript
 
 Robotics and control systems involve the design, construction, operation, and use of robots and automated systems to perform tasks in various fields, from manufacturing and healthcare to space exploration and entertainment. JavaScript, primarily known for web development, has also found its place in robotics and control systems, enabling the development of intelligent systems that can interact with the physical world. This article explores the application of JavaScript in robotics and control systems and provides practical examples to illustrate its usage.
 
-#### Why Use JavaScript for Robotics and Control Systems?
+### Why Use JavaScript for Robotics and Control Systems?
 
 1. **Web Integration**: JavaScript can be seamlessly integrated with web technologies, allowing for remote monitoring, control, and visualization of robots and systems through web browsers.
    
