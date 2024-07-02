@@ -2,7 +2,7 @@
 title: Implementing Reinforcement Learning in JavaScript
 layout: post
 description: In this article, we've implemented a simple reinforcement learning algorithm using Q-Learning in JavaScript with TensorFlow.js. While this is a basic example, it demonstrates the potential of using JavaScript for RL tasks, especially for web-based applications.
-categories: AI
+categories: AI-ML
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Reinforcement-Learning.jsnb
 ---
 
