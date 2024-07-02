@@ -8,7 +8,7 @@ categories: Financial
 
 Financial risk management is a crucial aspect of any financial institution, aiming to identify, analyze, and mitigate risks associated with financial activities. With the advent of modern web technologies, JavaScript has become a powerful language for developing financial tools due to its flexibility, extensive libraries, and ability to run both on the client and server sides. This article explores how to implement financial risk management tools using JavaScript.
 
-### Understanding Financial Risk Management
+## Understanding Financial Risk Management
 
 Financial risk management involves identifying potential risks, measuring their impact, and devising strategies to manage or mitigate these risks. The primary types of financial risks include:
 
@@ -19,7 +19,7 @@ Financial risk management involves identifying potential risks, measuring their 
 
 Effective financial risk management tools help organizations monitor and manage these risks, ensuring financial stability and compliance with regulatory requirements.
 
-### Why JavaScript?
+## Why JavaScript?
 
 JavaScript offers several advantages for developing financial risk management tools:
 
@@ -28,7 +28,7 @@ JavaScript offers several advantages for developing financial risk management to
 3. **Real-time Data Handling**: JavaScript excels at handling real-time data, essential for monitoring financial markets and risks.
 4. **Community Support**: A large and active developer community provides extensive resources, tutorials, and support.
 
-### Key Components of a Financial Risk Management Tool
+## Key Components of a Financial Risk Management Tool
 
 1. **Data Collection and Integration**: Collecting and integrating data from various sources, such as market data feeds, financial statements, and transaction records.
 2. **Risk Assessment Models**: Implementing mathematical and statistical models to assess different types of risks.
@@ -37,9 +37,9 @@ JavaScript offers several advantages for developing financial risk management to
 
 Use this notebook for experimentation: [Financial Risk Management Calculations  in JavaScript ](https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Financial-Risk-Management.jsnb)
 
-### Implementing the Tool
+## Implementing the Tool
 
-#### 1. Data Collection and Integration
+### 1. Data Collection and Integration
 
 Using JavaScript, you can integrate data from various APIs and data sources. For example, using `fetch` to retrieve market data from an external API:
 
@@ -58,7 +58,7 @@ async function fetchMarketData(url) {
 }
 ```
 
-#### 2. Risk Assessment Models
+### 2. Risk Assessment Models
 
 JavaScript libraries like `math.js` and `simple-statistics` can be used to implement risk assessment models. For example, calculating Value at Risk (VaR):
 
@@ -75,7 +75,7 @@ let VaR = calculateVaR(returns, 0.95);
 console.log(`Value at Risk (95% confidence level): ${VaR}`);
 ```
 
-#### 3. Visualization
+### 3. Visualization
 
 Plotly.js is a powerful library for creating interactive data visualizations. Here’s an example of creating a simple line chart to visualize market data:
 
@@ -118,7 +118,7 @@ Plotly.js is a powerful library for creating interactive data visualizations. He
 </html>
 ```
 
-### Credit Risk Calculation
+## Credit Risk Calculation
 
 Credit risk is the risk of a counterparty defaulting on a financial obligation. One common method for estimating credit risk is using the probability of default (PD) and the exposure at default (EAD). The Loss Given Default (LGD) is also considered.
 
@@ -138,7 +138,7 @@ let expectedLoss = calculateExpectedLoss(PD, EAD, LGD);
 console.log(`Expected Loss: $${expectedLoss}`);
 ```
 
-### Liquidity Risk Calculation
+## Liquidity Risk Calculation
 
 Liquidity risk is the risk of not being able to meet short-term financial obligations. A common measure is the liquidity coverage ratio (LCR), which ensures that financial institutions have enough high-quality liquid assets (HQLA) to cover net cash outflows over a 30-day period.
 
@@ -157,7 +157,7 @@ let LCR = calculateLCR(HQLA, netCashOutflows);
 console.log(`Liquidity Coverage Ratio: ${LCR}%`);
 ```
 
-### Full Implementation with Visualization
+## Full Implementation with Visualization
 
 Combining all the previous sections, here's a complete example of a simple web application that collects data, calculates financial risk metrics, and visualizes market data using Plotly.js.
 
