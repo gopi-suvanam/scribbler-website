@@ -27,14 +27,14 @@
       "type": "html"
     },
     {
-      "code": "<button id=\"addTaskBtn\">Add Task</button>\n    <ul id=\"taskList\">\n        <!-- Tasks will be appended here -->\n    </ul>",
+      "code": "<input type='text' id='task-input' placeholder=\"Task\"></input>\n<button id=\"addTaskBtn\">Add Task</button>\n    <ul id=\"taskList\">\n        <!-- Tasks will be appended here -->\n    </ul>",
       "status": "",
-      "output": "<button id=\"addTaskBtn\">Add Task</button>\n    <ul id=\"taskList\">\n        <!-- Tasks will be appended here -->\n    </ul>",
+      "output": "<input type=\"text\" id=\"task-input\" placeholder=\"Task\">\n<button id=\"addTaskBtn\">Add Task</button>\n    <ul id=\"taskList\">\n        <!-- Tasks will be appended here -->\n    </ul>",
       "type": "html"
     },
     {
       "code": "//JavaScript Code  (with Bugs)\n\n\ndocument.getElementById('addTaskBtn').addEventListener('click', function() {\n    var taskInput = document.getElementById('taskInput').value;\n    if (taskInput !== \"\") {\n        var taskList = document.getElementById('taskList');\n        var li = document.createElement('li');\n        li.textContent = taskInput;\n        taskList.appendChild(li);\n        document.getElementById('taskInput').value = \"\"; // Clear input\n    } else {\n        alert(\"Task cannot be empty!\");\n    }\n});\n\ndocument.getElementById('taskList').addEventListener('click', function(e) {\n    if (e.target.tagName === 'LI') {\n        e.target.remove(); // Remove task on click\n    }\n});\n",
-      "status": "[1]<br><span style=\"font-size:8px\">6ms<span></span></span>",
+      "status": "[1]<br><span style=\"font-size:8px\">0ms<span></span></span>",
       "output": "",
       "type": "code"
     }
