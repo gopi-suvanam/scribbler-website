@@ -3,7 +3,7 @@ title: Lazy Evaluation Techniques in JavaScript
 description: Lazy evaluation can be a powerful tool for optimizing performance and managing resource-intensive operations in JavaScript. By using generators, closures, higher-order functions, and promises, developers can implement lazy evaluation techniques to defer computation and handle large data sets more efficiently.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Lazy-Evaluation.jsnb
-categories: [Functional,JavaScript]
+categories: [Functional-Programming,JavaScript]
 ---
 
 ## What is Lazy Evaluation?
