@@ -5,6 +5,7 @@ layout: post
 start_link: https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb
 categories: [JavaScript, Scribbler]
 ---
+Jump to the examples using this notebook: [Notebook for API testing using JavaScript](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
 
 ## JavaScript for Testing APIs
 JavaScript is useful for API testing for several reasons:
