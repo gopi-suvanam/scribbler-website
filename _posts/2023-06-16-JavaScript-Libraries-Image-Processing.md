@@ -6,7 +6,8 @@ categories: [Libraries, XR]
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Image-Libraries.jsnb
 ---
 
-There are several JavaScript libraries available for image processing. In another section we will look at how to use canvas API for processing images in HTML5 here: [HTML5 Image Editing with JavaScript](https://scribbler.live/2024/04/05/HTML5-Image-Editing-JavaScript.html). 
+There are several JavaScript libraries available for image processing. Start experimenting with them using this notebook: [JavaScript Notebook for Image Processing Libraries](https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Image-Libraries.jsnb).
+In another aritcle we look at how to use canvas API for processing images in HTML5 here: [HTML5 Image Editing with JavaScript](https://scribbler.live/2024/04/05/HTML5-Image-Editing-JavaScript.html). 
 
 ## List of Libraries for Image Processing
 Here are some popular libraries to explore image processing in JS:
