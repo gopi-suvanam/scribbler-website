@@ -1,7 +1,7 @@
 ---
 title: Scribbler - A JavaScript Notebook Tool as an Alternative to MATLAB
 layout: post
-categories: [Scribbler,JavaScript]
+categories: [Scribbler,JavaScript,Scientific]
 description: Scribbler offers a versatile, accessible, and cost-effective alternative to MATLAB. With its JavaScript environment, support for open-source libraries, built-in array utilities, and Plotly charting integration, Scribbler caters to a wide range of computational and data visualization needs.
 ---
 
