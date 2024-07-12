@@ -85,7 +85,7 @@ While both curve fitting and interpolation aim to represent data accurately, the
 
 JavaScript, with its extensive libraries and tools, offers a powerful environment for performing data analysis tasks such as curve fitting and interpolation. In this article, we'll explore how to implement these techniques using JavaScript, focusing on practical examples.
 
-## Linear Regression
+## Linear Regression Code in JavaScript
 
 For curve fitting in JavaScript, we can use libraries like [Regression.js](https://github.com/Tom-Alexander/regression-js) to simplify the process.
 
@@ -148,7 +148,7 @@ The code snippet utilizes the `regression` library, likely `regression-js`, to p
    - `predict`: Assigns the predicted `y` value to the variable `predict`.
 
 
-## Linear Interpolation
+## Linear Interpolation Code in JavaScript
 
 For interpolation, we can use various methods. Here, we'll implement a simple linear interpolation function.
 
@@ -225,7 +225,7 @@ The JavaScript function `linearInterpolation` performs linear interpolation on a
    - If the given `x` value is outside the range of the `x` values in `data`, the function returns `null`. This is handled by the final `return null;` statement after the loop.
 
 
-## Polynomial Regression
+## Polynomial Regression Code in JavaScript
 Polynomial interpolation involves fitting a polynomial function to a set of data points. In JavaScript, we can use libraries like `polynomial-regression` to perform polynomial interpolation.
 
 ```html
@@ -261,7 +261,7 @@ console.log(equation)
 
 
 
-## Cubic Spline Interpolation
+## Cubic Spline Interpolation Code in JavaScript
 Cubic spline interpolation is a method for interpolating data points using piecewise cubic polynomials. In JavaScript, we can use libraries like `spline-js` to perform cubic spline interpolation. For more indepth analysis on cubic spline look at: [Cubic Spline Interpolation](https://app.scribbler.live/#./examples/Cubic-Spline-Interpolation.jsnb).
 
 ```html
