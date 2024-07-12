@@ -12,7 +12,7 @@ HTML5 image editing refers to the use of HTML5 technologies, including its new e
 
 ### Key Components
 
-1. **<canvas> Element:**
+1. **Canvas Element:**
    - The HTML5 `<canvas>` element is a drawable region in HTML code that allows for rendering graphics, including images, on the fly.
    - It provides a scripting API to draw shapes, text, images, and other objects dynamically.
 
