@@ -916,6 +916,7 @@ Below is an example of a basic AR experience using ARCore and ARKit to place a v
 
 2. **Creating the AR Experience:**
    - Use ARCore's APIs to detect planes and place virtual objects.
+     
    ```java
    // Initialize ARCore session and configure plane detection
    Session session = new Session(this);
@@ -936,12 +937,14 @@ Below is an example of a basic AR experience using ARCore and ARKit to place a v
 **ARKit (iOS):**
 
 1. **Setting Up ARKit:**
+
    - Add ARKit framework to your Xcode project.
    ```swift
    import ARKit
    ```
 
 2. **Creating the AR Experience:**
+
    - Use ARKit's APIs to detect planes and place virtual objects.
    ```swift
    // Initialize AR session and configure plane detection
