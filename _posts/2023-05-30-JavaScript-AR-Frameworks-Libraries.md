@@ -906,70 +906,67 @@ Below is an example of a basic AR experience using ARCore and ARKit to place a v
 
 **ARCore (Android):**
 
-1. **Setting Up ARCore:**
-   - Add ARCore dependencies to your Android project.
-   ```gradle
-   dependencies {
-       implementation 'com.google.ar:core:1.23.0'
-   }
-   ```
+1. **Setting Up ARCore:** Add ARCore dependencies to your Android project.
 
-2. **Creating the AR Experience:**
-   - Use ARCore's APIs to detect planes and place virtual objects.
+```gradle
+dependencies {
+   implementation 'com.google.ar:core:1.23.0'
+}
+```
+
+2. **Creating the AR Experience:** Use ARCore's APIs to detect planes and place virtual objects.
      
-   ```java
-   // Initialize ARCore session and configure plane detection
-   Session session = new Session(this);
-   Config config = new Config(session);
-   config.setPlaneFindingMode(Config.PlaneFindingMode.HORIZONTAL);
-   session.configure(config);
+```java
+// Initialize ARCore session and configure plane detection
+Session session = new Session(this);
+Config config = new Config(session);
+config.setPlaneFindingMode(Config.PlaneFindingMode.HORIZONTAL);
+session.configure(config);
 
-   // Detect planes and place virtual objects
-   for (Plane plane : session.getAllTrackables(Plane.class)) {
-       if (plane.getTrackingState() == TrackingState.TRACKING) {
-           Pose pose = plane.getCenterPose();
-           Anchor anchor = session.createAnchor(pose);
-           // Place virtual object at the anchor position
-       }
+// Detect planes and place virtual objects
+for (Plane plane : session.getAllTrackables(Plane.class)) {
+   if (plane.getTrackingState() == TrackingState.TRACKING) {
+       Pose pose = plane.getCenterPose();
+       Anchor anchor = session.createAnchor(pose);
+       // Place virtual object at the anchor position
    }
+}
    ```
 
 **ARKit (iOS):**
 
-1. **Setting Up ARKit:**
+1. **Setting Up ARKit:** Add ARKit framework to your Xcode project.
 
-   - Add ARKit framework to your Xcode project.
-   ```swift
-   import ARKit
-   ```
+```swift
+import ARKit
+```
 
-2. **Creating the AR Experience:**
+2. **Creating the AR Experience:**Use ARKit's APIs to detect planes and place virtual objects.
 
-   - Use ARKit's APIs to detect planes and place virtual objects.
-   ```swift
-   // Initialize AR session and configure plane detection
-   let configuration = ARWorldTrackingConfiguration()
-   configuration.planeDetection = [.horizontal]
-   arView.session.run(configuration)
+```swift
+// Initialize AR session and configure plane detection
+let configuration = ARWorldTrackingConfiguration()
+configuration.planeDetection = [.horizontal]
+arView.session.run(configuration)
 
-   // Detect planes and place virtual objects
-   func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-       guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-       let planeNode = createPlaneNode(with: planeAnchor)
-       node.addChildNode(planeNode)
-   }
+// Detect planes and place virtual objects
+func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+   guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
+   let planeNode = createPlaneNode(with: planeAnchor)
+   node.addChildNode(planeNode)
+}
 
-   func createPlaneNode(with anchor: ARPlaneAnchor) -> SCNNode {
-       let geometry = SCNPlane(width: CGFloat(anchor.extent.x), height: CGFloat(anchor.extent.z))
-       let material = SCNMaterial()
-       material.diffuse.contents = UIColor.transparentBlue
-       geometry.materials = [material]
-       let planeNode = SCNNode(geometry: geometry)
-       planeNode.position = SCNVector3(anchor.center.x, 0, anchor.center.z)
-       planeNode.eulerAngles.x = -.pi / 2
-       return planeNode
-   }
-   ```
+func createPlaneNode(with anchor: ARPlaneAnchor) -> SCNNode {
+   let geometry = SCNPlane(width: CGFloat(anchor.extent.x), height: CGFloat(anchor.extent.z))
+   let material = SCNMaterial()
+   material.diffuse.contents = UIColor.transparentBlue
+   geometry.materials = [material]
+   let planeNode = SCNNode(geometry: geometry)
+   planeNode.position = SCNVector3(anchor.center.x, 0, anchor.center.z)
+   planeNode.eulerAngles.x = -.pi / 2
+   return planeNode
+}
+```
 
 ### Applications of ARCore and ARKit
 
