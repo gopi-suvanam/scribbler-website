@@ -149,7 +149,6 @@ Note that this is not an exhaustive list, and new libraries are being developed 
 ## Overview of Simple-statistics
 **Simple-statistics** is a JavaScript library designed for performing a range of statistical calculations with ease. It provides functions for descriptive statistics, probability distributions, hypothesis testing, and more. The library is aimed at simplifying the implementation of statistical methods and making them easily accessible in JavaScript projects.
 
-
 1. **Descriptive Statistics**
 
    Simple-statistics offers functions to compute various descriptive statistics such as mean, median, mode, variance, and standard deviation.
@@ -260,7 +259,6 @@ Note that this is not an exhaustive list, and new libraries are being developed 
 
 Math.js is a powerful and comprehensive mathematics library for JavaScript. It provides a wide range of mathematical functions, constants, and utilities for performing complex calculations and handling mathematical data. Here’s an overview of the key classes and functions in Math.js, along with code snippets demonstrating their usage. 
 
-### Summary of Features
 1. **Basic Math Operations**
 
    Math.js supports standard mathematical operations such as addition, subtraction, multiplication, and division.
@@ -375,7 +373,6 @@ Math.js is a powerful and comprehensive mathematics library for JavaScript. It p
 ## Overview of NumJS
 NumJS is a JavaScript library for numerical computing and linear algebra, similar to NumPy in Python. It provides a range of functions and utilities for mathematical operations, array manipulation, and linear algebra tasks. Here’s an overview of the key classes and functions in NumJS, along with code snippets demonstrating their usage.
 
-### Overview of NumJS
 
 1. **Basic Array Operations**
 
@@ -487,7 +484,6 @@ NumJS is a JavaScript library for numerical computing and linear algebra, simila
 
 Statistics.js is a JavaScript library designed to perform various statistical operations. It provides functions for descriptive statistics, probability distributions, and other common statistical tasks. Here’s an overview of the key functions in Statistics.js, along with code snippets demonstrating their usage.
 
-### Overview of Statistics.js
 
 1. **Descriptive Statistics**
 
@@ -570,7 +566,6 @@ Statistics.js is a JavaScript library designed to perform various statistical op
 ## Overview of SciJs
 SciJS is a JavaScript library designed for scientific computing and numerical analysis. It offers functionality similar to scientific computing libraries in other languages, such as SciPy in Python. SciJS provides tools for numerical operations, linear algebra, and more advanced scientific computations.
 
-### Overview of SciJS
 
 1. **Basic Array Operations**
 
@@ -677,7 +672,6 @@ SciJS is a JavaScript library designed for scientific computing and numerical an
 ## Overview of JStat
 JStat is a JavaScript library that provides functions for statistical analysis and probability distributions. It is designed for performing a wide range of statistical operations, making it a valuable tool for data analysis and scientific computing in JavaScript.
 
-### Overview of JStat
 
 1. **Descriptive Statistics**
 
@@ -790,7 +784,6 @@ JStat is a JavaScript library that provides functions for statistical analysis a
 ## Overview of Bayes.js
 **Bayes.js** is a JavaScript library designed for implementing Bayesian inference and probabilistic models. It simplifies the application of Bayesian methods, making it easier to work with probability distributions, Bayesian networks, and other related statistical techniques in JavaScript. This library is useful for tasks involving prediction, classification, and decision-making based on probabilistic reasoning.
 
-### Overview of Bayes.js
 
 1. **Bayesian Inference**
 
@@ -1046,7 +1039,7 @@ JStat is a JavaScript library that provides functions for statistical analysis a
    console.log(`Mean: ${mean}`); // Output: Mean: 5
    console.log(`Variance: ${variance}`); // Output: Variance: 4
    ```
-### Overview of Matrix.js
+## Overview of Matrix.js
 
 **Matrix.js** is a JavaScript library designed for matrix operations and linear algebra. It provides a range of functionalities to perform operations on matrices, including addition, subtraction, multiplication, inversion, and various matrix decompositions. Matrix.js is particularly useful for tasks involving mathematical computations, machine learning, and data analysis where matrix manipulations are required.
 
@@ -1158,7 +1151,7 @@ JStat is a JavaScript library that provides functions for statistical analysis a
    console.log('LU Decomposition:', lu);
    ```
 
-### Overview of Prob.js
+## Overview of Prob.js
 
 **Prob.js** is a JavaScript library designed for probabilistic programming and statistical analysis. It provides functionalities for working with probability distributions, performing probabilistic inference, and modeling uncertainty. Prob.js is useful for tasks that involve statistical analysis, simulations, and decision-making based on probabilistic reasoning.
 
@@ -1240,7 +1233,7 @@ JStat is a JavaScript library that provides functions for statistical analysis a
    console.log('Standard Deviation:', stdDev);
    ```
 
-### Overview of Stats.js
+## Overview of Stats.js
 
 **Stats.js** is a lightweight JavaScript library designed for real-time statistical analysis and visualization. It provides simple, efficient tools for monitoring performance metrics, such as frame rates and memory usage, in web applications. Stats.js is particularly useful for developers who need to track performance or visualize data in real time during the development and debugging process.
 
@@ -1353,7 +1346,7 @@ Here's a complete example of how to set up and use Stats.js in a web application
 </html>
 ```
 
-### Overview of Lodash-stat
+## Overview of Lodash-stat
 
 **Lodash-stat** is an extension of the popular Lodash utility library, focusing specifically on statistical operations and mathematical functions. It brings a set of useful statistical methods that complement the core Lodash functions, enabling more advanced data manipulation and analysis directly in JavaScript. This library is ideal for developers who require both utility and statistical capabilities in their projects.
 
