@@ -1,7 +1,7 @@
 ---
 title: Statistical Libraries in JavaScript
 layout: post
-description:
+description: A list of libraries in JavaScript for performing statistical analysis in the browser or in the backend.
 categories: [Scientific,Libraries]
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Statistical-Analysis.jsnb
 ---
