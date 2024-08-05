@@ -26,20 +26,20 @@ In code cells, the output block displays the result of the last evaluated expres
 ### Status Indicators for Code Cells
 To provide insight into the execution sequence and time taken, code cells feature a status indicator in the output block. The status displays a number indicating the order in which the cell was executed and the time it took to run. In case of an error, the status block remains blank, offering a quick indication that further investigation may be necessary.
 
-### HTML Cell Editing and Execution
-HTML cells allow users to create rich and interactive content using HTML markup. To edit the HTML, users can double-click on the output of the cell, enabling direct modifications. The output of HTML is updated when the cell is "played". This workflow ensures that the content stays up to date and reflects any edits made. HTML cells can have <style> tags also inside them.
+### Doc Cell Editing and Execution
+Doc cells allow users to create rich and interactive content using HTML markup or markdown. To edit the doc cell, users can double-click on the output of the cell, enabling direct modifications. The output of doc cells is updated when the cell is "played". This workflow ensures that the content stays up to date and reflects any edits made. Doc cells can have <style> tags also inside them.
 
 ### Manipulating Cells
 Scribbler provides flexibility in managing cells within the notebook. Users can easily add, delete, and rearrange cells to customize the flow and structure of their code. This feature allows for an iterative development process, facilitating experimentation and refining ideas.
 
 ### Accessing HTML Elements
-A powerful capability of Scribbler is the ability to access elements created in HTML cells from code cells. This can be achieved using JavaScript methods such as document.getElementById or document.querySelector. Additionally, users can leverage the popular jQuery library by loading or importing it into the notebook, granting access to convenient $() syntax (refer to "Using external libraries").
+A powerful capability of Scribbler is the ability to access HTML elements created in dec cells from code cells. This can be achieved using JavaScript methods such as document.getElementById or document.querySelector. Additionally, users can leverage the popular jQuery library by loading or importing it into the notebook, granting access to convenient $() syntax (refer to "Using external libraries").
 
 ## Cell Menu
 Located conveniently in the corner of each cell, the cell-menu provides a wide array of options to streamline workflow and maximize productivity. By understanding and leveraging these operations, users can tailor their notebook to their specific needs and preferences.
 
 ### Toggling Cell Types
-One of the primary functions of the cell-menu is the ability to toggle the cell type between code and HTML. This feature empowers users to switch seamlessly between writing and executing JavaScript code and creating dynamic HTML content. By simply toggling to the desired cell type from the cell-menu, users can adapt their notebook to accommodate different coding and content creation tasks.
+One of the primary functions of the cell-menu is the ability to toggle the cell type between code and doc. This feature empowers users to switch seamlessly between writing and executing JavaScript code and creating dynamic HTML content. By simply toggling to the desired cell type from the cell-menu, users can adapt their notebook to accommodate different coding and content creation tasks.
 
 ### Running/Playing Cells
 The cell-menu includes a "play" button (►) that enables users to execute the code within a code cell or display the rendered HTML content. By clicking this button, users can quickly and effortlessly run the code or view the generated output, facilitating an interactive and iterative development process. This real-time feedback loop enhances debugging and ensures accurate results. A cell can also be played using the keyboard shortcuts - Shift-Enter or Cntrl-Enter.
@@ -84,11 +84,11 @@ For users who wish to extract the code in their notebooks, Scribbler offers the 
 ### Inserting Code Cells
 To add additional code blocks to the notebook, users can insert a blank code-type cell at the end of the current notebook. This feature empowers users to continue their coding workflow and experiment with new code snippets. By selecting the "Insert Code Cell" option, a new code cell is added, ready for users to write and execute JavaScript code.
 
-### Inserting HTML Cells
-By selecting the "Insert HTML Cell" option, a blank HTML-type cell is inserted at the end of the current notebook. This feature provides users with the flexibility to add rich media, interactive elements, or structured content to their notebooks.
+### Inserting Doc Cells
+By selecting the "Insert Doc Cell" option, a blank Doc-type cell is inserted at the end of the current notebook. This feature provides users with the flexibility to add rich media, interactive elements, or structured content to their notebooks.
 
 ### Inserting Style Cells
-To enhance the visual presentation and styling of HTML content within the notebook, users can insert a style cell. This unique cell type consists of a blank HTML-type cell with <style> tags already included. By selecting the "Insert Style Cell" option, users can effortlessly add a style cell at the end of the current notebook. This feature enables users to apply custom styles, modify existing styles, or create CSS rules specifically tailored to their notebook's content.
+To enhance the visual presentation and styling of HTML content within the notebook, users can insert a style cell. This unique cell type consists of a blank Doc-type cell with <style> tags already included. By selecting the "Insert Style Cell" option, users can effortlessly add a style cell at the end of the current notebook. This feature enables users to apply custom styles, modify existing styles, or create CSS rules specifically tailored to their notebook's content.
 
 ### Options
 You can open options dialogue box to edit the options of the notebook. Currently you can set "Run the code when the file is loaded". If this is clicked, when the notebook is opened all the code cells in the notbook are played as soon as the notebook is loaded. This is useful when building an interactive application using Scribbler.
