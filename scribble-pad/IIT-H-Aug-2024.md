@@ -6,12 +6,14 @@ description: Scribble Pad is an opportunity to learn, innovate, and showcase you
 
 We are excited to announce Scribble Pad, an innovative hackathon focused on JavaScript, organized by IIT-Hyderabad. This week-long event, from 18th August to 25th August, is designed to empower students with hands-on experience in JavaScript while working on cutting-edge projects using Scribbler, a browser-based JavaScript notebook tool.
 
+Join our Discord Channel for updates: [Discord Invite](https://discord.com/invite/yZEXCHmPk8).
+
 **Key Dates to Remember:**
 
-- **18th August:** Virtual Workshop on JavaScript
-- **20th August:** Team Formation
-- **24th August:** Submission of Projects
-- **25th August:** Demo Day and Awards Ceremony
+- **18th August (9PM to 1030PM):** Virtual Workshop on JavaScript at 9PM. **Watchout this space for link of the workshop.**
+- **20th August (Midnight):** Team Formation
+- **24th August (Midnight):** Submission of Projects
+- **25th August (2PM to 5PM):** Demo Day and Awards Ceremony. 
 
 ## What is Scribble Pad?
 
@@ -55,4 +57,4 @@ Scribble Pad is a unique opportunity for students to dive deep into JavaScript p
 ## How to Register
 
 Stay tuned for registration details, which will be announced soon. In the meantime, start thinking about potential project ideas, find your teammates, and get ready to dive into an exciting week of coding and creativity.
-Join the Discord channel here: [IIT-H Scribble Pad](https://discord.com/channels/1143427972469104673/1273660604221100032).
+Join the Discord channel here: [IIT-H Scribble Pad](https://discord.com/invite/yZEXCHmPk8).
