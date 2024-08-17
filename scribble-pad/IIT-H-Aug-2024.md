@@ -9,6 +9,8 @@ We are excited to announce Scribble Pad, an innovative hackathon focused on Java
 Join our Discord Channel for updates: [Discord Invite](https://discord.com/invite/yZEXCHmPk8).
 Join our workshop on introduction to JavaScript and Scribbler tomorrow!!
 
+### Keep checking this page for further details!!!
+
 **Key Dates to Remember:**
 
 - **18th August (9PM to 1030PM):** Virtual Workshop on JavaScript at 9PM. **Watchout this space for link of the workshop.**
