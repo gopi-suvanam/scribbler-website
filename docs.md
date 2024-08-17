@@ -115,10 +115,12 @@ The link with the anchor tag and file path can be embedded in other applications
 	<iframe src="https://app.scribbler.live/#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0"></iframe>
 ```
 This displays the menu, code input and the output. If you want to see only the output use this code instead:
+
 ```html
 	<iframe src="https://app.scribbler.live/sandbox.html#./examples/Hello-world.jsnb" height="400" width="100%" style="width:100%;border: thin solid black;" allowfullscreen="" frameborder="0" sandbox="allow-scripts allow-top-navigation-by-user-activation allow-popups"></iframe>
 ```
-- To embed a notebook directly from GitHub, use the following syntax:
+To embed a notebook directly from GitHub, use the following syntax:
+
 ```html
 <iframe id="sandbox" style="width:100%;height:100%" src ="https://app.scribbler.live/sandbox.html?jsnb=github:user/repository/path-to-file"></iframe>
 ```
