@@ -64,5 +64,6 @@ Scribble Pad is a unique opportunity for students to dive deep into JavaScript p
 
 ## How to Register
 
-Stay tuned for registration details, which will be announced soon. In the meantime, start thinking about potential project ideas, find your teammates, and get ready to dive into an exciting week of coding and creativity.
+Use this link to register your team:  https://forms.gle/QHtsZhyB34QwdAuD9
+
 Join the Discord channel here: [IIT-H Scribble Pad](https://discord.com/invite/yZEXCHmPk8).
