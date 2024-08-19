@@ -133,7 +133,6 @@ function filterData() {
     document.getElementById('mean-filtered').innerHTML= filteredData.mean();
 }
 
-</script>
 ```
 
 In this example, users can input a threshold value, and the script filters the dataset based on that input, demonstrating how Scribbler can create interactive data tools. 
@@ -155,7 +154,6 @@ Since Scribbler is a JavaScript environment, you can import TensorFlow.js just l
 ```javascript
 let src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs";
 await import(src);
-
 ```
 
 ### Step 2: Create Simulated Data
