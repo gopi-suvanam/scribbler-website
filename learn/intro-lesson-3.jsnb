@@ -177,9 +177,9 @@
       "type": "html"
     },
     {
-      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a  target=\"_blank\">Lesson 4: Functions\n  </a> Coming soon</li>\n  </ul>",
+      "code": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a  target=\"_blank\" href='https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb'>Lesson 4: Functions\n  </a> </li>\n  </ul>",
       "status": "",
-      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n\t<li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a target=\"_blank\">Lesson 4: Functions\n  </a> Coming soon</li>\n  </ul>",
+      "output": "<h2>Learn More</h2>\n<ul>\n  <li><a href=\"https://app.scribbler.live\" target=\"_blank\">Blank Notebook for Experimentation</a></li>\n    <li><a href=\"https://app.scribbler.live/#./examples/Alternating-Sequence.jsnb\" target=\"_blank\">Complex mathematical series using `for` loop</a></li>\n  <li><a href=\"https://scribbler.live\" target=\"_blank\">Back to Course Contents</a></li>\n<li><a target=\"_blank\" href=\"https://app.scribbler.live/?jsnb=https://scribbler.live/learn/intro-lesson-4.jsnb\">Lesson 4: Functions\n  </a> </li>\n  </ul>",
       "type": "html"
     }
   ],
