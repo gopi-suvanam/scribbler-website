@@ -1,5 +1,5 @@
 ---
-title: Scribbler Use-Cases
+title: Use-Cases
 description: Scribbler provides a range of functionalities that can be helpful for scientific computation, data science, dashboarding, experimentation, testing, rapid prototyping, and learning.
 layout: page
 show_in_menu: true
