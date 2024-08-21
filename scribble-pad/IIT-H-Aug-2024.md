@@ -15,7 +15,7 @@ We are excited to announce Scribble Pad, an innovative hackathon focused on Java
 **Key Dates to Remember:**
 
 - **18th August (9PM to 1030PM):** Virtual Workshop on JavaScript at 9PM. 
-- **20th August (Midnight):** Team Formation. **[Link for registration](https://forms.gle/QHtsZhyB34QwdAuD9)**
+- **20th August (Midnight):** Team Formation. 
 - **24th August (Midnight):** Submission of Projects
 - **25th August (2PM to 5PM):** Demo Day and Awards Ceremony. 
 
@@ -58,8 +58,3 @@ Scribble Pad is a unique opportunity for students to dive deep into JavaScript p
 4. **Demo Day and Awards on 25th August:**
    - The hackathon will culminate in a demo day on the 25th of August, where teams will present their projects to a panel of judges. The best projects will be recognized and awarded prizes in an awards ceremony following the demos.
 
-## How to Register
-
-Use this link to register your team:  https://forms.gle/QHtsZhyB34QwdAuD9
-
-Join the Discord channel here: [IIT-H Scribble Pad](https://discord.com/invite/yZEXCHmPk8).
