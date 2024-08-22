@@ -12,7 +12,16 @@ We are excited to announce Scribble Pad, an innovative hackathon focused on Java
 
 ### Keep checking this page for further details!!!
 
-**Key Dates to Remember:**
+## Guidelines for Submissions
+- Deadline is **24th Midnight**
+- Demos will be at 2PM 25th  (we will share the location)
+- Final submission will be a **notebook built on scribbler** (named with extension .jsnb) **uploaded to github**.
+- The notebook should **focus on JavaScript**
+- We encourage using open source libraries
+- Criteria for judging will be: depth of code, lack of bugs/seamless running of the notebook, demo and explanation, use of external open source libraries and browser APIs
+
+
+**Key Dates :**
 
 - **18th August (9PM to 1030PM):** Virtual Workshop on JavaScript at 9PM. 
 - **20th August (Midnight):** Team Formation. 
