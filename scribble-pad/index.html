@@ -1,4 +1,10 @@
 <html>
+  <head>
+    <title>Sample Notebooks List - Scribble Pad</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Browse through a list of sample JavaScript notebooks from Scribble Pad Hackathons using Scribbler, a powerful JavaScript notebook platform.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
   <body>
     <script>
       (async () => {
@@ -6,7 +12,7 @@
         const data = await response.json();
         let htmlString = '<ul>';
         const scribblerURL = "https://app.scribbler.live";
-        const exampleURL="https://examples.scribbler.live/";
+        const exampleURL="https://scribbler.live/";
         for (let file of data) {
           if(file.name.includes(".jsnb") )
           htmlString += `<li><a href="${scribblerURL+"?jsnb="+exampleURL+file.path}">${file.name.replaceAll("-"," ").replaceAll("_","").replace(".jsnb","")}</a></li>`;
@@ -16,7 +22,7 @@
         document.getElementById('list').innerHTML = htmlString;
       })()
     </script>
-    <h1>List of Sample Notebooks</h1>
+    <h1>List of Sample Notebooks from Scribble Pad Hackathon</h1>
     <div id='list'></div>
   <body>
 </html>
