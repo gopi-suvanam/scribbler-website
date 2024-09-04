@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "name": "Script Glider<br>",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<h1 style = \"text-align: center\"> Script Glider </h1>\n<h5 style = \"text-align: center;\" > The aim of this game is to get as many points as possible while not crashing the glider onto the groud. Pressing the correct letter which completes the given word will make a gust of wind come which will push the glider up. </h5>",
+      "status": "",
+      "output": "<h1 style=\"text-align: center\"> Script Glider </h1>\n<h5 style=\"text-align: center;\"> The aim of this game is to get as many points as possible while not crashing the glider onto the groud. Pressing the correct letter which completes the given word will make a gust of wind come which will push the glider up. </h5>",
+      "type": "html"
+    },
+    {
+      "code": "<h3> Please run the code block below ---------------------------------------------------------------------------------------------------↓</h3>",
+      "status": "",
+      "output": "<h3> Please run the code block below ---------------------------------------------------------------------------------------------------↓</h3>",
+      "type": "html"
+    },
+    {
+      "code": "worker.run(7); // Load the pdf extractor\nworker.run(9); // Load the Images\nworker.run(11); // Load the play function\nscrib.show(\"\");",
+      "status": "[3]<br><span style=\"font-size:8px\">2ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "<h3 style = \"text-align : center;\"> Please select a file for extracting 5 letter words to use them in the game. </h3> <p style = \"text-align : center;\"> Please wait a moment before clicking play </p>",
+      "status": "",
+      "output": "<h3 style=\"text-align : center;\"> Please select a file for extracting 5 letter words to use them in the game. </h3> <p style=\"text-align : center;\"> Please wait a moment before clicking play </p>",
+      "type": "html"
+    },
+    {
+      "code": "<input type=\"file\" id=\"pdf-input\">",
+      "status": "",
+      "output": "<input type=\"file\" id=\"pdf-input\">",
+      "type": "html"
+    },
+    {
+      "code": "<div style = \"display: flex; justify-content: center;\"> <button onclick = \"playGame()\">Play</button> </div>",
+      "status": "",
+      "output": "<div style=\"display: flex; justify-content: center;\"> <button onclick=\"playGame()\">Play</button> </div>",
+      "type": "html"
+    },
+    {
+      "code": "<style>\n  .con{\n    display: flex;\n    justify-content: center;\n    border-radius: 0.3em;\n  }\n    .box{\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: 3em;\n      height: 3em;\n      margin : 0.3em;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      background-color: #ffff00;\n      border: 0.07em solid #404040;\n      border-radius: 0.3em;\n      text-align: center;\n      font-size: 1.5em;\n      color : #000000;\n\t  user-select : none;\n    }\n\t.score{\n\t  display: flex;\n      justify-content: center;\n      align-items: center;\n      width: 5em;\n      height: 3em;\n      margin : 0.3em;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      background-color: #D0F2EF;\n      border: 0.07em solid #404040;\n      border-radius: 0.3em;\n      text-align: center;\n      font-size: 1.5em;\n      color : #000000;\n\t  user-select : none;\n\t}\n</style>\n  <div id = \"container\" class = \"con\">\n\t<div class = \"box\"><strong id = \"t0\">A</strong></div>\n\t<div class = \"box\"><strong id = \"t1\">B</strong></div>\n\t<div class = \"box\"><strong id = \"t2\">C</strong></div>\n\t<div class = \"box\"><strong id = \"t3\">D</strong></div>\n\t<div class = \"box\"><strong id = \"t4\">E</strong></div>\n\t<div class = \"score\"><strong id = \"sText\">Score : 0</strong></div>\n  </div>\n<div style = \"text-align:center;\">\n  <canvas id='canvas' width = \"1000px\" height = \"600px\"></canvas>\n</div>",
+      "status": "",
+      "output": "<style>\n  .con{\n    display: flex;\n    justify-content: center;\n    border-radius: 0.3em;\n  }\n    .box{\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: 3em;\n      height: 3em;\n      margin : 0.3em;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      background-color: #ffff00;\n      border: 0.07em solid #404040;\n      border-radius: 0.3em;\n      text-align: center;\n      font-size: 1.5em;\n      color : #000000;\n\t  user-select : none;\n    }\n\t.score{\n\t  display: flex;\n      justify-content: center;\n      align-items: center;\n      width: 5em;\n      height: 3em;\n      margin : 0.3em;\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      background-color: #D0F2EF;\n      border: 0.07em solid #404040;\n      border-radius: 0.3em;\n      text-align: center;\n      font-size: 1.5em;\n      color : #000000;\n\t  user-select : none;\n\t}\n</style>\n  <div id=\"container\" class=\"con\">\n\t<div class=\"box\"><strong id=\"t0\">M</strong></div>\n\t<div class=\"box\"><strong id=\"t1\">O</strong></div>\n\t<div class=\"box\"><strong id=\"t2\">?</strong></div>\n\t<div class=\"box\"><strong id=\"t3\">E</strong></div>\n\t<div class=\"box\"><strong id=\"t4\">S</strong></div>\n\t<div class=\"score\"><strong id=\"sText\">Score : 0</strong></div>\n  </div>\n<div style=\"text-align:center;\">\n  <canvas id=\"canvas\" width=\"1000px\" height=\"600px\"></canvas>\n</div>",
+      "type": "html"
+    },
+    {
+      "code": "await scrib.loadScript(\"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js\");\ndocument.getElementById('pdf-input').addEventListener('change', handleFileSelect);\n\nasync function handleFileSelect(event) {\n  scrib.show(\"The processing started\");\n    const file = event.target.files[0];\n    if (file) {\n        try {\n            const arrayBuffer = await file.arrayBuffer();\n            const pdf = await pdfjsLib.getDocument({\n                data: arrayBuffer\n            }).promise;\n\n            let textContent = '';\n            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {\n                const page = await pdf.getPage(pageNum);\n                const text = await page.getTextContent();\n                text.items.forEach(item => {\n                    textContent += item.str + ' ';\n                });\n            }\n\n            // Extract 5-letter words and convert them to lowercase\n            const fiveLetterWords = extractFiveLetterWords(textContent);\n            const lowerCaseWords = fiveLetterWords.map(word => word.toLowerCase());\n\n            // Remove duplicates by converting to a Set and then back to an array\n            const uniqueFiveLetterWords = [...new Set(lowerCaseWords)];\n\t\t  \twindow.words = uniqueFiveLetterWords;\n\t\t  \tscrib.show(\"Processing completed\");\n        } catch (error) {\n            console.error('Error processing PDF:', error);\n        }\n    }\n}\n\nfunction extractFiveLetterWords(text) {\n    const fiveLetterWords = text.match(/\\b[a-zA-Z]{5}\\b/g) || []; //Regex Expression. So don't try too hard :)\n    return fiveLetterWords;\n}",
+      "status": "[4]<br><span style=\"font-size:8px\">161ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "let textIds = [ ]  // The array which stores ids of the Text / Letter boxes\nfor(let i = 0; i < 5; i++){\n  textIds[i] = document.getElementById(\"t\" + i);\n}\n\nlet scoreText = document.getElementById(\"sText\");\nscoreText.innerHTML = \"Score : 0\"; //Set the score to zero\n\nwindow.replaceIndex = 0;\nwindow.score = 0;\n\nfunction updateText(){\n  window.word = [...words[Math.ceil(Math.random() * (words.length - 1))].toUpperCase()]; //Convert string to character array since strings are immutable in Js\n  replaceIndex = Math.floor(Math.random() * 4);\n  word[replaceIndex] = '?';\n  for(let i = 0; i < 5; i++){\n\ttextIds[i].innerHTML = word[i];\n  }\n}\n\nupdateText(); //Update the previous test-text \n\nfunction checkInput(event){\n  //TODO: Logic execution when mouse is on canvas.\n  let check = window.word;\n  check[replaceIndex] = event.key;\n  if(words.includes(check.join(\"\").toLowerCase())){\n\tupdateText();\n\tif(plane.y > 10){\n\t\tplane.y = plane.y - 20; //Increase the height of plane\n\t}\n\tscore++;\n\tscoreText.innerHTML = \"Score : \" + score;\n\t//console.log(score);\n  }\n}\nconst body = document.querySelector(\"body\");\nbody.addEventListener('keypress',checkInput);",
+      "status": "[6]<br><span style=\"font-size:8px\">0ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "window.thornImg = new Image();\nthornImg.src = \"https://github.com/ShivaVarun-Adicherla/Word-Machine/blob/main/g184.png?raw=true\"; scrib.show(\"\"); //Load the image from Github",
+      "status": "[1]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": " <br>",
+      "type": "code"
+    },
+    {
+      "code": "window.cvs = document.getElementById('canvas');\nlet render = cvs.getContext(\"2d\");\n\nwindow.plane = {\n    x: 0,\n    y: 0,\n    scale: .85,\n    color: \"#ffff00\",\n    shape: new Path2D(\"M 0.72684682,59.183 C 1.4618468,58.173 2.6468468,57.594 3.9778468,57.594 H 18.522847 c 1.927,0 4.11,1.167 5.19,2.776 l 14.257,21.224 H 163.24585 c 9.84,-10e-4 25.681,15.869 25.681,25.726 0,10.291 -14.489,10.291 -21.452,10.291 -0.784,0 -40.414,-0.018 -40.414,-0.018 l -85.159003,13.612 c -0.534,0.085 -1.155,0.128 -1.847,0.128 -1.104,0 -2.215,-0.113 -3.046,-0.31 l -4.78,-1.131 c -2.469,-0.584 -2.718,-2.327 -2.736,-2.847 -0.018,-0.521 0.113,-2.275 2.536,-3.027 l 20.733,-6.426 h -30.559 -0.453 c -2.182,0 -4.328,-1.554 -4.993,-3.614 L 0.21384682,62.773 c -0.411,-1.269 -0.224,-2.579 0.513,-3.59 z M 158.68585,102.593 c 5.042,0 20.167,0 20.167,0 0,0 2.167,0.021 1.34,-1.423 -0.564,-0.984 -1.255,-2.2 -1.653,-2.723 -3.938,-5.188 -7.688,-9.563 -11.688,-10.438 -1.773,-0.388 -6.504,-0.387 -8.679,-0.387 -1.083,0 -0.971,1.345 -0.971,1.345 v 12.417 c 0,0.001 -0.225,1.209 1.484,1.209 z m -26.484,-4 c 0,2.209 1.791,4 4,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209,0 -4,1.791 -4,4 z m -18,0 c 0,2.209 1.791,4 4,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209,0 -4,1.791 -4,4 z m -18.000003,0 c 0,2.209 1.791,4 4.000003,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209003,0 -4.000003,1.791 -4.000003,4 z m -18,0 c 0,2.209 1.791,4 4,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209,0 -4,1.791 -4,4 z m -18,0 c 0,2.209 1.791,4 4,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209,0 -4,1.791 -4,4 z m -18,0 c 0,2.209 1.791,4 4,4 h 5 c 2.209,0 4,-1.791 4,-4 v -3 c 0,-2.209 -1.791,-4 -4,-4 h -5 c -2.209,0 -4,1.791 -4,4 z\") // SVG Path from Inkscape\n};\n\nfunction drawPlane() {\n    render.save();\n\n    // Apply transformations and Draw the plane\n    render.translate(plane.x, plane.y);\n    render.scale(plane.scale, plane.scale);\n    render.fillStyle = plane.color;\n    render.fill(plane.shape);\n\n    render.restore();\n}\n\nfunction updatePlane(){ //Update the position of the plane\n  \tplane.y = plane.y + 0.18;\n  if(plane.y > cvs.height -200){\n\t//Call Game Over Function\n\t//bird.y = cvs.height -200; //Temporary Clamp function\n\talert(\"You have lost the game. Your Score is : \" + score + \"\\nPlease refresh this website\");\n  }\n}\n\n//Init all the clouds\nlet cloudArray = [ ];\nfor(i = 0; i < 15; i++){\n  let x = Math.random() * cvs.width;\n  let y = Math.random() * cvs.height/1.5;\n  let depth = Math.random() * 250 +50; // Depth is used to emulate a parallax effect\n  let size = Math.random() * 30 + 40; //The size of cloud. Parallax is also dependent\n  cloudArray.push({ x : x, y : y, depth : depth, size : size});\n}\n\nfunction drawBackground(){\n  \trender.save();\n  \n  \trender.fillstyle = \"#AAFCFF\"; //Draw the background sky\n  \trender.fillRect(0,0,cvs.width,cvs.height);\n  \n  \trender.fillStyle = \"rgb(175, 214, 216)\";\n  \trender.beginPath();\n  \tfor(i = 0; i < 15; i++){\n\t  cloudArray[i].x -= 20 / cloudArray[i].depth ; //Update the position of clouds\n\t  \n\t  if(cloudArray[i].x < -140){\n\t\tcloudArray[i].x = cvs.width + 10;\n\t\tcloudArray[i].y = Math.random() * cvs.height/2;\n\t\tcloudArray[i].depth = Math.random() * 250 +50;\n\t\tcloudArray[i].size = Math.random() * 30 + 40;\n\t  }\n\t  \n\t  render.rect(cloudArray[i].x,cloudArray[i].y,\n\t\t\t\t  cloudArray[i].size * 2/(cloudArray[i].depth * 0.01 + 1),cloudArray[i].size /(cloudArray[i].depth * 0.01 + 1));\n\t}\n  \trender.fill(); //Draw the clouds\n  \n  \trender.restore();\n}\n\nlet positionX = 0; // The offset for the Image (Thorns)\nfunction drawThornGround(){\n  \trender.save();\n  \n  \tpositionX -= 0.3;\n  \tif(positionX < -1000){\n\t  positionX = 0;\n\t}\n  \trender.translate(positionX,0);\n  \trender.drawImage(thornImg,0,cvs.height - 99);\n  \n  \trender.restore();\n}\n\nfunction animate() {\n  \n    render.clearRect(0, 0, cvs.width, cvs.height); // Clear the canvas. (Not required)\n  \tdrawBackground();\n    drawPlane();\n  \tupdatePlane();\n  \tdrawThornGround();\n  \n    requestAnimationFrame(animate);\n}\n\nanimate();\n",
+      "status": "[5]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "function playGame(){ //Convinience Function   (•‿•)\n\n  worker.run(10); // Canvas Update\n  worker.run(8); // Text Update and Check\n}\n\nscrib.show(\"This script ran\");",
+      "status": "[2]<br><span style=\"font-size:8px\">1ms<span></span></span>",
+      "output": "This script ran <br> <br>The processing started <br>Processing completed <br>",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/jsnb",
+  "run_on_load": false
+}
