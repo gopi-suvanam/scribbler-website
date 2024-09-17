@@ -10,7 +10,9 @@ JavaScript's `Promise` API provides powerful tools to handle asynchronous operat
 
 ## What is a Promise?
 
-A `Promise` is an object representing the eventual completion or failure of an asynchronous operation. A promise can have three states:
+A `Promise` is an object representing the eventual completion or failure of an asynchronous operation. Here is a detailed article on Promises - [Mastering Promises and Async Programming in JavaScript](https://scribbler.live/2024/05/06/Promises-Async-Programming.html).
+
+A promise can have three states:
 - **Pending**: The initial state, where the promise has neither been fulfilled nor rejected.
 - **Fulfilled**: The operation completed successfully.
 - **Rejected**: The operation failed.
