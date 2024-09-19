@@ -1,5 +1,5 @@
 ---
-title: Learn and Master JavaScript Online with Scribbler (for free)
+title: Learn and Master JavaScript with Scribbler for Free
 description: Scribbler is an online tool to learn and master JavaScript through experimentation and live code execution.
 layout: post
 show_in_menu: false
