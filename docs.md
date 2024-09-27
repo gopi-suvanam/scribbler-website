@@ -50,6 +50,54 @@ To optimize the organization and flow of the notebook, the cell-menu offers opti
 ### Adding and Deleting Cells
 To adapt the notebook's structure and accommodate evolving requirements, the cell-menu provides options to add new cells or delete existing ones. By selecting the "Add Cell" button (✛), users can easily insert a new cell below the current cell, facilitating the addition of new content or code. Conversely, the "Delete Cell" button (☓) empowers users to remove unnecessary or redundant cells, maintaining a clean and concise notebook structure. Cell can be added using Option/Alt-Enter.
 
+## Documentation and HTML
+
+
+### Markdown Support
+
+If you prefer writing documentation in Markdown, Scribbler Notebook supports this format too! Simply prefix your Markdown text with the magic word //>md. This will render your documentation in Markdown format.
+
+### Magic Words
+
+Scribbler Notebook recognizes the following magic words:
+
+- //>md: Treat the cell content as Markdown
+- //>html: Treat the cell content as HTML
+
+
+These magic words can be used in both documentation cells and code cells.
+
+
+### Using Magic Words in Code Cells
+
+You can also use the magic words in code cells to:
+
+- Render code comments or explanations in Markdown using //>md
+- Embed HTML content, such as tables, images, UI elements etc using //>html
+
+### Example Usage
+
+```
+//>md
+# My Documentation
+This is my documentation in Markdown.
+```
+
+Code Cell with Markdown Comment:
+
+```//>md
+# Code Explanation
+This code does something amazing.
+code snippet here
+```
+
+Code Cell with Embedded HTML:
+
+```
+//>html
+<table><tr><td>Hello World!</td></tr></table>
+```
+
 ## File Menu - Loaing and Saving
 
 ### Saving Notebooks in Browser
