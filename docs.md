@@ -98,7 +98,7 @@ Code Cell with Embedded HTML:
 <table><tr><td>Hello World!</td></tr></table>
 ```
 
-## File Menu - Loaing and Saving
+## File Menu - Loading and Saving
 
 ### Saving Notebooks in Browser
 To preserve the current work, users can save the notebook in the Browser storage. By selecting the "Save" option from File menu, the current notebook is saved in the Browser. This capability enables easy backup and persistency across sessions. Note that if Browser data is cleared the notebooks will be deleted as well.
