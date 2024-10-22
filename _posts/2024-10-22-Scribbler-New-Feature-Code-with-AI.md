@@ -3,7 +3,7 @@ title: Introducing Scribbler's New Feature - Code Smarter with AI
 start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-examples/Scribbler-AI-Intro.jsnb
 description: Use AI in Scribbler to code faster without paying a penny for models/subscription.
 layout: post
-categories: [Scribbler, AI]
+categories: [Scribbler, AI-ML]
 ---
 
 ## Power of AI for Coding
