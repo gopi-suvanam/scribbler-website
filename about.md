@@ -15,6 +15,17 @@ With intuitive interface, live code execution, and rich multimedia capabilities,
 
 ## Team
 <div class="row">
+
+    <div class="col-lg-6" markdown="1">
+
+### Bhargavi Ramadugu
+{:.mt-lg-0}
+![Bhargavi](bhargavi.jpeg)
+Bhargavi is a seasoned strategy and insurtech expert with a proven track record in scaling businesses. She specializes in strategy, consulting, digital innovation, and operations management.
+Bhargavi brings extensive experience from her work with large corporations, nonprofit organizations, and startups. She is passionate about making technology accessible to all. At Scribbler.live, Bhargavi oversees strategy, operations, finance, and partner relationships. She holds an MBA from [ISB](https://www.isb.edu/) and a BE from [OUCE](https://www.uceou.edu/).
+</div>
+
+
 <div class="col-lg-6" markdown="1">
 
 ### Gopi Suvanam
