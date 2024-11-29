@@ -1,5 +1,5 @@
 ---
-title: Using Large Language Models (LLM) in the Browser with WebLLM
+title: WebLLM for Large Language Models (LLM) in the Browser 
 description: With WebLLM, you can bring AI to your web applications without needing a backend, making it a powerful tool for building private, responsive, and portable AI-powered solutions.
 layout: post
 categories: [Libraries,AI-ML]
