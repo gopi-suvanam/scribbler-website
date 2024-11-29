@@ -8,6 +8,8 @@ start_link: https://app.scribbler.live/?jsnb=https://examples.scribbler.live/Web
 
 Running Large Language Models (LLMs) directly in the browser is now possible, thanks to WebLLM, which leverages WebGPU and other modern browser technologies. This brings powerful AI capabilities to client-side applications without the need for a backend, ensuring privacy, low latency, and portability. In this article, we’ll explore how to set up and use WebLLM in a browser-based JavaScript application, including examples of how to run a model, handle chat completions, and enable streaming responses.
 
+An alternative approach to this is to use a cloud service and access an [LLM through an API](https://scribbler.live/2024/11/29/Gemini-AI-Studio-API-in-Scribbler.html).
+
 ## What is WebLLM?
 
 WebLLM allows you to run LLMs directly in the browser using WebGPU. This eliminates the need for cloud-based APIs, reducing latency and ensuring that no data is sent to external servers. WebLLM supports a variety of models, and you can integrate it with any modern browser that supports WebGPU.
