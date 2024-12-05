@@ -3,7 +3,7 @@ title: 6 Applications of Open-Source JavaScript Image Manipulation Libraries
 description: Open-source JavaScript libraries for image manipulation offer powerful capabilities for creating dynamic, feature-rich applications. With modern ES6 imports and CDNs, these libraries are easier than ever to integrate, empowering developers to build innovative tools like editors, filters, and responsive image handlers.
 layout: post
 categories: [XR,Libraries]
-start_link: https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-XR-Examples.jsnb
+start_link: https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-website/Fabric-JS.jsnb
 ---
 
 JavaScript has revolutionized how images are processed directly in the browser, thanks to a plethora of open-source libraries like **JIMP**, **Pica**, and **Fabric.js**. These libraries allow developers to handle image-related tasks such as resizing, filtering, and editing without relying on server-side processing.
@@ -139,4 +139,4 @@ Adding a watermark using **JIMP** via CDN:
 ---
 
 
-Explore these libraries in your next project and unlock the true potential of in-browser image manipulation!
+Explore these libraries in your next project and unlock the true potential of in-browser image manipulation! Experiment using this notebook: [Scribbler Notebook for Fabric.js](https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-website/Fabric-JS.jsnb).
