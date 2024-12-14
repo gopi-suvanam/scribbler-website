@@ -6,7 +6,7 @@ categories: JavaScript
 start_link: https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb
 ---
 
-API testing is a critical part of software quality assurance, ensuring that application endpoints work as expected, even as backend services evolve. In this guide, we’ll explore how to test APIs using vanilla JavaScript (without Node.js) and ES6 syntax. We'll use browser-based APIs like `fetch` and integrate some testing logic directly within the browser or any JavaScript runtime.
+API testing is a critical part of software quality assurance, ensuring that application endpoints work as expected, even as backend services evolve. In this guide, we’ll explore how to test APIs using vanilla JavaScript (without Node.js) and ES6 syntax. We'll use browser-based APIs like `fetch` and integrate some testing logic directly within the browser or any JavaScript runtime. Learning about JavaScript for API testing here: [Testing APIs using JavaScript](https://scribbler.live/2024/03/22/Testing-APIs-using-JavaScript.html).
 
 ---
 
@@ -239,6 +239,6 @@ testFilterPosts(); // Test using mocked data
 
 Testing APIs directly with vanilla JavaScript is lightweight and effective, especially for quick results or when integrating APIs into front-end apps. By leveraging ES6 features, you can write concise and maintainable test scripts that run directly in the browser.
 
-Use this notebook to start testing right away: [Scribbler Notebookt for API Testing in JavaScript](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
+Use this notebook to start testing right away: [Scribbler Notebook for API Testing in JavaScript](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb). Also use Scribbler Notebook right away: [Scribbler Notebook for API Testing](https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb).
 
 Happy Testing! 🎉
