@@ -3,7 +3,7 @@ title: Using Gemini AI Studio API for Generative Language AI with Scribbler
 description: By integrating the Gemini AI Studio API with Scribbler, you unlock the potential of generative language AI in a secure, browser-based environment.
 layout: post
 categories: [AI-ML, Scribbler]
-start_link: [https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/Gemini-Podcast.jsnb](https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/AI-Podcast-Generator.jsnb)
+start_link: https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/AI-Podcast-Generator.jsnb
 ---
 
 The Gemini AI Studio API by Google offers powerful generative language capabilities for applications like content creation, conversational AI, and beyond. Integrating this API with Scribbler, the JavaScript notebook, allows developers to prototype and implement generative AI features efficiently. In this article, we will walk through using the Gemini AI Studio API to generate language outputs, securely manage API keys with [Scribbler’s secrets feature](https://scribbler.live/2024/11/28/Securely-Storing-Secrets-in-Scribbler.html), and create a podcast script example.  
