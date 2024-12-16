@@ -27,10 +27,10 @@
       "type": "html"
     },
     {
-      "code": "\n<div >\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Double-Click on this to see the HTML code. Please change the content and press play button to see the output.</p>\n    <img src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n",
-      "status": "",
-      "output": "\n<div>\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Double-Click on this to see the HTML code. Please change the content and press play button to see the output.</p>\n    <img src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n",
-      "type": "html"
+      "code": "//>html\n<div >\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Please change the content and press play button to see the output.</p>\n    <img style=\"width:100px\" src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n",
+      "status": "[1]<br><span style=\"font-size:8px\">15ms<span></span></span>",
+      "output": "\n<div>\n  <h1>Example of DOM Elements</h1>\n    <p>This is a paragraph. Please change the content and press play button to see the output.</p>\n    <img style=\"width:100px\" src=\"https://app.scribbler.live/images/logo2.png\" alt=\"Logo\">\n    <a href=\"https://scribbler.live\">My Site</a>\n</div>\n <br>",
+      "type": "code"
     },
     {
       "code": "<b>In this example:</b>\n<ul>\n<li>The `&lt;div&gt;` element  is a DOM element. The name \"div\" stands for \"division\" or \"divider.\"</li>\n<li>The `&lt;h1&gt;` (heading),  `&lt;p&gt;` (paragraph), `&lt;img&gt;` (image), and `&lt;a&gt;` (link)  elements inside the `&lt;div&gt;` are also DOM elements.</li>\n<li>Each of these elements can be manipulated using JavaScript for various purposes like changing content, styling, adding behavior, etc.</li>\n</ul>\nUnderstanding DOM elements and how to manipulate them is crucial for web development, as it allows developers to create dynamic and interactive web pages. We will discuss on how to use JavaScript to access and manipulate DOM elements. Details of styling and other aspects are beyond the scope of this introductory course.\n<br>\n  Note: Every HTML cell in Scribbler uses DOM elements. You can double click any of these HTML cells to see the code for the elements.",
@@ -57,10 +57,10 @@
       "type": "html"
     },
     {
-      "code": "<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
-      "status": "",
-      "output": "<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. Double click me to see the code and change text.\n</div>",
-      "type": "html"
+      "code": "//>html\n<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. \n</div>",
+      "status": "[2]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "\n<div id=\"my-div\" style=\"border:thick solid blue;padding:10px\">\n  This is a sample element. \n</div> <br>",
+      "type": "code"
     },
     {
       "code": "//Get the element\nlet element = document.getElementById(\"my-div\");\n//Now let us alert it\nlet elementContent=element.innerHTML;\nscrib.show(elementContent);",
@@ -123,10 +123,10 @@
       "type": "html"
     },
     {
-      "code": "Enter a text below and click the play button of the next cell. \n<input type='text' id='my-input'>\nYou can change the input and press play button again.",
-      "status": "",
-      "output": "Enter a text below and click the play button of the next cell. \n<input type=\"text\" id=\"my-input\">\nYou can change the input and press play button again.",
-      "type": "html"
+      "code": "//>html\nEnter a text below and click the play button of the next cell. \n<input type='text' id='my-input'>\nYou can change the input and press play button again.",
+      "status": "[3]<br><span style=\"font-size:8px\">3ms<span></span></span>",
+      "output": "\nEnter a text below and click the play button of the next cell. \n<input type=\"text\" id=\"my-input\">\nYou can change the input and press play button again. <br>",
+      "type": "code"
     },
     {
       "code": "let input=document.getElementById(\"my-input\");\nscrib.show(\"My input is:\",input.value)",
@@ -138,6 +138,12 @@
       "code": "<h2>Summary</h2>\nDOM manipulation is a fundamental aspect of web development with JavaScript. Understanding how to select and manipulate DOM elements allows you to create dynamic and interactive web pages. Practice manipulating DOM elements to become proficient in web development. In the next lesson we will go into details of another aspect of accessing web development called events.",
       "status": "",
       "output": "<h2>Summary</h2>\nDOM manipulation is a fundamental aspect of web development with JavaScript. Understanding how to select and manipulate DOM elements allows you to create dynamic and interactive web pages. Practice manipulating DOM elements to become proficient in web development. In the next lesson we will go into details of another aspect of accessing web development called events.",
+      "type": "html"
+    },
+    {
+      "code": "<a href=\"https://discord.com/invite/uxNSsWunwU\" target=\"_blank\" role=\"button\" >Join our Discord Server</a>",
+      "status": "",
+      "output": "<a href=\"https://discord.com/invite/uxNSsWunwU\" target=\"_blank\" role=\"button\">Join our Discord Server</a>",
       "type": "html"
     },
     {
