@@ -1284,7 +1284,6 @@ ol {
 
 .button .btn i {
   display: inline-block;
-  margin-right: 5px;
 }
 
 .button .btn:last-child {
@@ -1614,7 +1613,7 @@ ol {
   background-color: transparent;
   border: 2px solid #555;
   color: #555;
-  padding: 12px 30px;
+  padding: 10px 15px;
 }
 
 .header .button .btn:hover {
@@ -1964,9 +1963,8 @@ ol {
 }
 
 .add-list-button .btn i {
-  font-size: 14px;
+  font-size: 20px;
   display: inline-block;
-  margin-right: 5px;
 }
 
 /*======================================
