@@ -1,5 +1,5 @@
 ---
-title:  A Conparison of Underscore.js and Lodash, JavaScript Utility Libraries
+title:  Lodash vs Underscore, Differences Between the Popular JavaScript Utility Libraries
 description: In this article, we delve into the world of JavaScript utility libraries by comparing two popular choices- Underscore.js and Lodash. Through code examples and practical insights, this article aims to equip JavaScript developers with the knowledge to make informed decisions when choosing between Underscore.js and Lodash 
 layout: post
 start_link: https://app.scribbler.live/?jsnb=./examples/Lodash.jsnb
@@ -20,23 +20,17 @@ Underscore.js and Lodash are both popular JavaScript utility libraries that prov
 
 4. *Backward Compatibility*: Lodash is backward-compatible with Underscore.js, meaning most code written for Underscore.js can work with Lodash without modification.
 
-### Differences:
+### Differences Between Underscore.js and Lodash:
 
-1. *Modularity*:
-   - *Underscore.js*: Monolithic library with all functions included in a single file. You use the entire library even if you only need a subset of its features.
-   - *Lodash*: Modular library where functions are organized into separate modules. This allows for more efficient bundling with tools like webpack or browserify.
 
-2. *Performance*:
-   - *Lodash*: Generally faster than Underscore.js due to various optimizations, including lazy evaluation in chaining, specialized implementations, and performance-focused code.
-   - *Underscore.js*: While still performant for many use cases, it may not be as optimized as Lodash in certain scenarios.
+| Feature | Underscore.js | Lodash |
+| --- | --- | --- |
+| Modularity | Single file, all functions included | Separate modules, efficient bundling |
+| Performance | Performant, but may have optimization gaps | Optimized with lazy evaluation, specialized implementations |
+| Additional Features | Basic utility functions | Utilities for strings (e.g., startsWith), deep object cloning (cloneDeep), functional programming (flow, partial) |
+| API Consistency | Less consistent API, steeper learning curve | Consistent and intuitive API, easier to use and remember |
 
-3. *Additional Features*:
-   - *Lodash*: Offers additional utility functions and features beyond Underscore.js, including utilities for working with strings (`startsWith`, `endsWith`, etc.), deep object cloning (`cloneDeep`), and utilities for functional programming (`flow`, `partial`, etc.).
-
-4. *API Consistency*:
-   - *Lodash*: Has a more consistent and intuitive API compared to Underscore.js, making it easier to remember and use function names and parameters.
-
-### Which One to Use?
+### Which One to Use -  Lodash or Underscore?
 
 - *For New Projects*: Consider using Lodash for its modularity, improved performance, and richer feature set.
   
@@ -47,7 +41,7 @@ Underscore.js and Lodash are both popular JavaScript utility libraries that prov
 
 You can load Underscore.js directly from a CDN (Content Delivery Network) or include a local copy in your HTML file. You can experiment with Underscore in this notebook: [Underscore JS Notebook](https://app.scribbler.live/?jsnb=./examples/Underscore-JS.jsnb)
 
-### Option 1: Loading from CDN (Content Delivery Network)
+### Option 1: Loading Underscore.js from CDN (Content Delivery Network)
 
 ```html
 <!-- Load Underscore.js from a CDN -->
