@@ -177,6 +177,13 @@ To embed a notebook directly from GitHub, use the following syntax:
 This runs the notebook in a sandboxed environment.
 - If you want the code of the notebook to run when the notebook is loaded in the embedded page, click "Run the code when the file is loaded" in Edit->Options menu.
 
+## Publishing Notebooks
+First, push the notebook to Github or any other online repo. Now that your notebook is connected to GitHub, click on the Publish button at the top menu. This will generate three published links:
+
+1. Notebook Link: This link allows you to continue editing and updating your notebook. Share this link with collaborators or use it to make further changes to your code.
+2. Published App Link: This link can be used directly as an application in the browser. Share this link with others to showcase your interactive application. Note: This will not give access to secured features like cookies, camera etc. For accessing those you will have to embed the notebook in another html page as an iframe using the embedding code in the next point.
+3. Code Snippet for Embedding: This code snippet can be used to embed your notebook as an iframe in other applications. Simply copy and paste the code into your desired platform to share your interactive content. Build any static html page and embed the notebook inside the html page.
+
 ## Special Functions
 
 These are some inbuilt functions of Scribbler to make coding simple.
