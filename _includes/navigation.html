@@ -18,36 +18,20 @@
 
         <nav class="navbar-collapse collapse" role="navigation" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                {% assign sorted_pages = site.pages | sort: "title" %}
-                {% for p in sorted_pages %}
-                    {% assign is_homepage = false %}
-                    {% if p.homepage == true or p.isHome == true %}
-                        {% assign is_homepage = true %}
-                    {% endif %}
+                <li class="nav-item">
+                    <a href="/Docs" class="nav-link" aria-label="Toggle navigation">Docs</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="/samples.html" class="nav-link" aria-label="Toggle navigation">Gallery</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="/tutorials" class="nav-link" aria-label="Toggle navigation">Tutorials</a>
+                </li> 
 
-                    {% assign show_in_menu = false %}
-                    {% if p.show_in_menu != nil and p.show_in_menu == true %}
-                        {% assign show_in_menu = true %}
-                    {% endif %}
-                    {% if p.hide != nil and p.hide == true %}
-                        {% assign show_in_menu = false %}
-                    {% endif %}
+                <li class="nav-item" style=>
+                    <a href="https://hub.scribbler.live" class="nav-link" aria-label="Toggle navigation">Hub</a>
+                </li> 
 
-                    {% if is_homepage != true and show_in_menu == true and p.title %}
-                        <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                            <a
-                                class="nav-link"
-                                href="{{ p.url | relative_url }}"
-                            >
-                                {% if p.nav_text %}
-                                  {{p.nav_text}}
-                                {% else %}
-                                    {{ p.title }}
-                                {% endif %}
-                            </a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
             </ul>
             <ul class="navbar-nav ml-auto">
                 {% for p in site.links.header %}
