@@ -24,7 +24,7 @@ WebLLM allows you to run LLMs directly in the browser using WebGPU. This elimina
 
 ## Code Exmaples
 
-Let’s walk through how to use WebLLM in a web application.
+Let’s walk through how to use WebLLM in a web application.  [Jump to notebook](https://app.scribbler.live/?jsnb=https://examples.scribbler.live/WebLLM-Experiments.jsnb)
 
 ### Step 1: Include WebLLM via CDN
 
@@ -103,6 +103,8 @@ for await (const chunk of chunks) {
 ```
 
 In this example, the response will be streamed in parts, allowing the browser to display each part of the answer as it’s generated.
+
+ [Jump to notebook](https://app.scribbler.live/?jsnb=https://examples.scribbler.live/WebLLM-Experiments.jsnb)
 
 ## Conclusion
 
