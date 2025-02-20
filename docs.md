@@ -50,6 +50,30 @@ To optimize the organization and flow of the notebook, the cell-menu offers opti
 ### Adding and Deleting Cells
 To adapt the notebook's structure and accommodate evolving requirements, the cell-menu provides options to add new cells or delete existing ones. By selecting the "Add Cell" button (✛), users can easily insert a new cell below the current cell, facilitating the addition of new content or code. Conversely, the "Delete Cell" button (☓) empowers users to remove unnecessary or redundant cells, maintaining a clean and concise notebook structure. Cell can be added using Option/Alt-Enter.
 
+## Variable Scope
+
+In Scribbler, variables declared using let and const are scoped to the same cell. This means that variables declared in one cell are not accessible in other cells, unless explicitly exported or imported.
+
+### Global Variables
+
+To declare global variables in Scribbler, you can use one of the following methods:
+
+Use the window object: window.varName = 'value';
+
+Declare the variable without using let or const: varName = 'value';
+
+Note that global variables can be accessed from any cell in the notebook.
+
+### Top-Level Await
+
+Scribbler supports top-level await, which allows you to use the await keyword outside of an async function. However, this is simulated by incorporating cells with top-level await into an async function internally.
+
+To use top-level await in Scribbler, simply write your code as you would in an async function, using the await keyword to wait for promises to resolve.
+
+### Best Practices
+
+To keep your code organized and maintainable, it's recommended to keep function definitions in separate cells without top-level code. This will help you avoid polluting the global scope and make it easier to reuse functions across your notebook.
+
 ## Documentation and HTML
 
 
