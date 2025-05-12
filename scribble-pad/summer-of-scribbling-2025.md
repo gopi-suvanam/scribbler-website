@@ -130,7 +130,7 @@ Join the community on [Discord](https://join.scribbler.live) or check the [Scrib
 
 ## ✍️ How to Get Started?
 
-1. Create an account on [hub.scribbler.live](https://hub.scribbler.live)
+1. Log into [hub.scribbler.live](https://hub.scribbler.live) using github login.
 2. Form a team and start your project
 3. Explore existing notebooks or [clone a starter notebook](https://github.com/gopi-suvanam/scribbler/tree/main/examples)
 4. Submit by **May 31**
