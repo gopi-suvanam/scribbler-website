@@ -10,7 +10,7 @@ description: Code. Hack. Win. Every idea starts with a Scribble.
 
 We’re thrilled to announce the **Scribbler Hackathon**, a 15-day online event that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
 
-** Watch out this space for more accounements and registration link **
+**Watch out this space for more accounements and registration link**
 
 ---
 
@@ -134,6 +134,7 @@ Join the community on [Discord](https://join.scribbler.live) or check the [Scrib
 2. Form a team and start your project
 3. Explore existing notebooks or [clone a starter notebook](https://github.com/gopi-suvanam/scribbler/tree/main/examples)
 4. Submit by **May 31**
+5. **Watch out this space for more accounements and registration link**
 
 ---
 
