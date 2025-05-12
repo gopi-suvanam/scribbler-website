@@ -36,12 +36,6 @@ Choose any of the following themes for your submission:
 
 ### 🧠 **1. AI (API or In-Browser)**
 
-Perfect — allowing **API-based AI** alongside **browser-based AI** broadens participation while still rewarding cutting-edge work. Here's an updated version of the **AI theme** section reflecting this:
-
----
-
-### 🧠 **1. AI (API or In-Browser)**
-
 Participants can:
 
 * Use **AI APIs** (like OpenAI, Cohere, HuggingFace Inference API, AssemblyAI, etc.)
