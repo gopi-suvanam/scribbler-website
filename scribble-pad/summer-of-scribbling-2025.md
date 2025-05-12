@@ -13,20 +13,33 @@ We’re thrilled to announce the **Scribbler Hackathon**, a 15-day online event 
 **Watch out this space for more accounements and registration link**
 
 ---
+### Hackathon Details
 
-## 🗓️ Important Dates
+### 🗓️ Important Dates
 
 * **Hackathon Start**: May 20, 2025
 * **Submission Deadline**: May 31, 2025 (11:59 PM IST)
 * **Demo & Judging**: June 1–2, 2025
 * **Results Announcement**: June 3, 2025
 
----
-
-## 👨‍💻 Who Can Participate?
+### 👨‍💻 Who Can Participate?
 
 * Individuals or teams of **1 to 4 members**
 * Open to students from any field - anyone who loves building in JavaScript!
+
+### 🧾 Submission Rules
+
+1. All teams must **register and submit** via [hub.scribbler.live](https://hub.scribbler.live).
+2. Code must be in a **Scribbler notebook** (HTML + JS), with any external libraries loaded via `scrib.loadScript(...)` or `import()`.
+3. Each team member must **⭐ star the Scribbler GitHub repo** [here](https://github.com/scribbler-notebook/scribbler).
+4. Projects must be original and built during the hackathon period.
+
+### 🏆 Prizes
+
+* 🏅 **1st Place**: Android Tablet + Goodies + Internship Opportunity
+* 🥈 **2nd Place**: Mechanical Keyboard + Goodies
+* 🥉 **3rd Place**: Gaming Mouse + Goodies
+* 🎁 Goodies & internship interviews for notable contributors
 
 ---
 
@@ -86,23 +99,7 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 * **Face-Controlled Games**: Build simple browser games controlled by head movement or eye blink.
 
 
----
 
-## 🧾 Submission Rules
-
-1. All teams must **register and submit** via [hub.scribbler.live](https://hub.scribbler.live).
-2. Code must be in a **Scribbler notebook** (HTML + JS), with any external libraries loaded via `scrib.loadScript(...)` or `import()`.
-3. Each team member must **⭐ star the Scribbler GitHub repo** [here](https://github.com/scribbler-notebook/scribbler).
-4. Projects must be original and built during the hackathon period.
-
----
-
-## 🏆 Prizes
-
-* 🏅 **1st Place**: Android Tablet + Goodies + Internship Opportunity
-* 🥈 **2nd Place**: Mechanical Keyboard + Goodies
-* 🥉 **3rd Place**: Gaming Mouse + Goodies
-* 🎁 Goodies & internship interviews for notable contributors
 
 ---
 
