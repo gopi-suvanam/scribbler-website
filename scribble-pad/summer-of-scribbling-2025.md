@@ -4,7 +4,7 @@ description: Code. Hack. Win. Every idea starts with a Scribble.
 ---
 
 
-** 🚀  Hackathon (May 20–31, 2025) **
+**🚀  Hackathon (May 20–31, 2025)**
 
 ## Build AI, Dashboards & XR Projects Right in the Browser!
 
