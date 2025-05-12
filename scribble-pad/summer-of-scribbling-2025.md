@@ -113,7 +113,7 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 | **Innovative Idea**      | 20             | Originality and creative use of tech                  |
 | **Quality of Code**      | 20             | Clean, documented, modular                            |
 | **Working Demo**         | 20             | Smooth, bug-free, confident Q\&A                      |
-| **Deeptech Usage**       | 10             | Browser AI, WebLLM, WebGPU, WASM                      |
+| **Deeptech Usage**       | 10             | Browser AI, WebLLM, WebGPU, WASM                     |
 | **GitHub Issues Raised** | 5              | +1 per valid issue raised                             |
 | **Pull Requests Merged** | 20             | +1–10 based on impact (e.g. docs, bugfixes, features) |
 | **Social Media Shares**  | 5              | +1 per platform share (X, LinkedIn, Dev.to, etc.)     |
