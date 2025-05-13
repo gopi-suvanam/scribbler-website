@@ -113,7 +113,7 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 [QA Pilot](https://qapilot.io/) is an AI-Native testing platform for Modile Apps. With QA Pilot reimagine your testing with AI – effortless, fast, and accessible to all!
 
 
-###
+### [Sonic Linker](https://www.soniclinker.com/)
 
 <img src="../assets/images/sonic-linker.jpeg" style="height:200px;" alt="Sonic Linker">
 [Sonic Linker](https://www.soniclinker.com/) is an AI-powered unified inbox for all business leads. With Sonic Linker you can supercharge your lead conversions with AI-powered instant replies to inquiries on WhatsApp, Instagram, Phone Calls, Email, and LinkedIn.
