@@ -4,9 +4,11 @@ description: Code. Hack. Win. Every idea starts with a Scribble.
 ---
 
 
-#### **🚀  Hackathon (May 20–31, 2025)**
+
 
 We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
+
+#### **🚀  Dates: May 20–31, 2025**
 
 #### **Watch out this space for more accounements and registration link**
 
