@@ -13,7 +13,7 @@ We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day onl
 #### **Watch out this space for the registration link and more announcements**
 
 ---
-### Hackathon Details
+## Hackathon Details
 
 ### 🗓️ Important Dates
 
@@ -42,6 +42,7 @@ We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day onl
 * 🎁 Goodies & internship interviews for notable contributors
 
 ---
+
 
 ## 🎯 Themes
 
@@ -102,6 +103,7 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 
 
 ---
+
 
 ## 🧮 Scoring Criteria
 
