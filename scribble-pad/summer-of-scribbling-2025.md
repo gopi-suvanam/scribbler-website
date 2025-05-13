@@ -10,7 +10,7 @@ We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day onl
 
 #### **🚀  Dates: May 20–31, 2025**
 
-#### **Watch out this space for more accounements and registration link**
+#### **Watch out this space for the registration link and more announcements**
 
 ---
 ### Hackathon Details
