@@ -112,16 +112,22 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 <img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QA Pilot">
 [QA Pilot](https://qapilot.io/) is an AI-Native testing platform for Modile Apps. With QA Pilot reimagine your testing with AI – effortless, fast, and accessible to all!
 
+Website: [https://qapilot.io/](https://qapilot.io/)
 
-### [Sonic Linker](https://www.soniclinker.com/)
+### Sonic Linker
 
 <img src="../assets/images/sonic-linker.jpeg" style="height:200px;" alt="Sonic Linker">
 [Sonic Linker](https://www.soniclinker.com/) is an AI-powered unified inbox for all business leads. With Sonic Linker you can supercharge your lead conversions with AI-powered instant replies to inquiries on WhatsApp, Instagram, Phone Calls, Email, and LinkedIn.
+
+Website: [https://www.soniclinker.com/](https://www.soniclinker.com/)
 
 
 ### CleverNav Solutions
 <img src="../assets/images/clevernav.png" style="height:200px;" alt="ClverNav">
 [CleverNav Solutions](https://clevernav.ai/) is building AI-powered solutions to redefine insurance experience. With CleverNav harness the power of GenAI to deploy cutting-edge solutions for exceptional business outcomes and empower sales and servicing agents to redefine how insurance is bought, sold and serviced.
+
+Website:  [https://clevernav.ai/](https://clevernav.ai/)
+
 
 
 
