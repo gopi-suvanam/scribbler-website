@@ -100,40 +100,21 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 * **Face-Controlled Games**: Build simple browser games controlled by head movement or eye blink.
 
 
-
-
----
-
-
-## 🧮 Scoring Criteria
-
-| **Category**             | **Max Points** | **Notes**                                             |
-| ------------------------ | -------------- | ----------------------------------------------------- |
-| **Innovation**      | 20             | Originality and creative use of tech                  |
-| **Code Quality**      | 20             | Clean, documented, modular                            |
-| **Demo**         | 20             | Smooth, bug-free, confident Q\&A                      |
-| **Deeptech Usage**       | 10             | Browser AI, WebLLM, WebGPU, WASM                     |
-| **GitHub Issues Raised** | 5              | +1 per valid issue raised                             |
-| **Pull Requests Merged** | 20             | +1–10 based on impact (e.g. docs, bugfixes, features) |
-| **Social Media Shares**  | 5              | +1 per platform share (X, LinkedIn, Dev.to, etc.)     |
-
-> 🔥 Bonus Points for **fully browser-based AI** or **notebooks that improve Scribbler itself** or **use of advanced computing like Wasm, WebGPU**!
+#### Watch out this space for more accounements and registration link**
+#### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
 
 ---
 
-## 💡 Need Help?
+## Partners
 
-Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
+### CleverNav Solutions
 
----
+### 
 
-## ✍️ How to Get Started?
+###
 
-1. Log into [hub.scribbler.live](https://hub.scribbler.live) using github login.
-2. Form a team and start your project
-3. Explore existing notebooks or [clone a starter notebook](https://github.com/gopi-suvanam/scribbler/tree/main/examples)
-4. Submit by **May 31**
-5. **Watch out this space for more accounements and registration link**
+
+
 
 ---
 
