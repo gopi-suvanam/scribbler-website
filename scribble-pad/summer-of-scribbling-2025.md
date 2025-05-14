@@ -6,9 +6,9 @@ layout: page
 
 We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
 
-#### 🚀  Dates: May 20–31, 2025
+#### 🚀  Dates: May 20 to June 3, 2025
 
-#### Watch this space for the registration link and more announcements
+[Registration Link]!!!(https://forms.gle/5iiwMMNVSqgUf9Zg8)
 
 ---
 
@@ -16,9 +16,10 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 ### 🗓️ Important Dates
 
-* **Hackathon Start**: May 20, 2025  
-* **Submission Deadline**: May 31, 2025 (11:59 PM IST)  
-* **Demo & Judging**: June 1–2, 2025  
+* **Hackathon Start**: May 20, 2025. One hour workshop on Scribbler and Hackathon.
+* **Submission Deadline**: May 31, 2025 (11:59 PM IST)
+* **Shorlist Announcement**: June 1, 2025 12:00 Noon
+* **Demo & Judging**: June 1, 2025  (For shortlisted participants)
 * **Results Announcement**: June 3, 2025
 
 ### 👨‍💻 Who Can Participate?
