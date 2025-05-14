@@ -133,7 +133,7 @@ We are proud to present our esteemed partners — bleeding-edge startups in AI o
 
 ### CleverNav Solutions
 
-<img src="../assets/images/clevernav.png" style="height:200px;" alt="CleverNav">
+<img src="../assets/images/clevernav.jpeg" style="height:200px;" alt="CleverNav">
 
 [CleverNav Solutions](https://clevernav.ai/) builds AI-powered solutions to redefine the insurance experience. Harness the power of GenAI to deploy cutting-edge solutions for exceptional business outcomes and empower sales and service agents to reshape how insurance is bought, sold, and serviced.  
 **Website**: [https://clevernav.ai/](https://clevernav.ai/)
