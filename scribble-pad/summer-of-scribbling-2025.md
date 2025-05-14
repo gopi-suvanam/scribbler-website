@@ -103,7 +103,7 @@ Use face-api.js, TensorFlow.js, WebXR, Three.js, A-Frame, or AR.js.
 ---
 
 #### Watch this space for more announcements 
-#### [Registration Link!!!](https://forms.gle/5iiwMMNVSqgUf9Zg8)
+#### [Registration Link!!!](https://tally.so/r/nrp74L)
 
 #### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
 
