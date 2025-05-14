@@ -110,9 +110,9 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 
 We are proud to present our esteemed partners. These are bleeding edge startups working in AI. They have kindly offered to provide internship for the winning participants.
 
-### QA Pilot
-<img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QA Pilot">
-[QA Pilot](https://qapilot.io/) is an AI-Native testing platform for Modile Apps. With QA Pilot reimagine your testing with AI – effortless, fast, and accessible to all!
+### QAPilot
+<img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QAPilot">
+[QAPilot](https://qapilot.io/) is an AI-Native testing platform for Modile Apps. With QAPilot reimagine your testing with AI – effortless, fast, and accessible to all!
 
 Website: [https://qapilot.io/](https://qapilot.io/)
 
