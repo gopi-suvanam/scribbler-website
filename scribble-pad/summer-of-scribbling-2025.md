@@ -8,7 +8,7 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 #### 🚀  Dates: May 20 to June 3, 2025
 
-[Registration Link]!!!(https://forms.gle/5iiwMMNVSqgUf9Zg8)
+[Registration Link!!!](https://forms.gle/5iiwMMNVSqgUf9Zg8)
 
 ---
 
