@@ -8,7 +8,7 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 #### 🚀  Dates: May 20 to June 3, 2025
 
-### [Registration Link!!!](https://tally.so/r/nrp74L)
+#### [Registration Link!!!](https://tally.so/r/nrp74L)
 
 #### Watch this space for more announcements 
 
@@ -103,7 +103,7 @@ Use face-api.js, TensorFlow.js, WebXR, Three.js, A-Frame, or AR.js.
 ---
 
 #### Watch this space for more announcements 
-### [Registration Link!!!](https://forms.gle/5iiwMMNVSqgUf9Zg8)
+#### [Registration Link!!!](https://forms.gle/5iiwMMNVSqgUf9Zg8)
 
 #### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
 
