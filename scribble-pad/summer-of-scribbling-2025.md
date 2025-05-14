@@ -1,16 +1,17 @@
 ---
 title: Summer of Scribbling - 2025
 description: Code. Hack. Win. Every idea starts with a Scribble.
+layout: page
 ---
 
 
 
 
-We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
+We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
 
-#### **🚀  Dates: May 20–31, 2025**
+#### 🚀  Dates: May 20–31, 2025
 
-#### **Watch out this space for the registration link and more announcements**
+#### Watch out this space for the registration link and more announcements
 
 ---
 ## Hackathon Details
@@ -48,7 +49,7 @@ We’re thrilled to announce the **Summer of Scribblering - 2025**, a 15-day onl
 
 Choose any of the following themes for your submission:
 
-### 🧠 **1. AI (API or In-Browser)**
+### 🧠 1. AI (API or In-Browser)
 
 Participants can:
 
@@ -73,7 +74,7 @@ Participants can:
 Great — focusing your Scribbler hackathon on **AI**, **Dashboarding**, and **XR** plays perfectly to Scribbler's browser-native, JS-powered strengths. Here's a curated list of theme ideas under each of those three buckets:
 
 
-### 📊 **2. Dashboarding & Visualization**
+### 📊 2. Dashboarding & Visualization
 
 Use Plotly.js, D3, Chart.js, ObservablePlot, or WebGL-powered visualizations.
 
@@ -87,11 +88,11 @@ Use Plotly.js, D3, Chart.js, ObservablePlot, or WebGL-powered visualizations.
 
 
 
-### 🕶️ **3. XR (Extended Reality in Browser)**
+### 🕶️ 3. XR (Extended Reality in Browser)
 
 Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 
-#### 🔹 Ideas:
+#### 🔹 Theme Ideas:
 
 * **Try-on Filters**: Real-time face tracking with filters, masks, and effects — like Snap or Insta, but in a notebook!
 * **AR Info Cards**: Point camera at objects (e.g., books, plants) and display interactive labels or facts.
@@ -100,13 +101,14 @@ Use face-api.js, TensorFlow\.js, WebXR, Three.js, A-Frame, or AR.js.
 * **Face-Controlled Games**: Build simple browser games controlled by head movement or eye blink.
 
 
-#### Watch out this space for more accounements and registration link**
+#### Watch out this space for more accounements and registration link
 #### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
 
 ---
 
 ## Partners
 
+We are proud to present our esteemed partners. These are bleeding edge startups working in AI. They have kindly offered to provide internship for the winning participants.
 
 ### QA Pilot
 <img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QA Pilot">
