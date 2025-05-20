@@ -111,17 +111,13 @@ Use face-api.js, TensorFlow.js, WebXR, Three.js, A-Frame, or AR.js.
 ---
 ## Process
 ### Submission
-- Login to hub.scribbler.live
+- Login to [hub.scribbler.live](https://hub.scribbler.live)
 - Submit your porject there
 - We will also share a form for adding other details like social media, PRs etc
 
 ### Scoring
 
-Here’s an abridged version of your judging criteria:
-
----
-
-### 🧠 **Innovation & Execution** (20 pts)
+#### 🧠 **Innovation & Execution** (20 pts)
 
 Rewards original, creative ideas that solve problems cleverly, especially those combining AI, data, or XR in novel ways.
 
