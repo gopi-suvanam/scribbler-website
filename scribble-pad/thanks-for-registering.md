@@ -10,10 +10,10 @@ layout: page
 ## 🚀 Hackathon Details
 
 ### Improtant Links
-[Scirbbler App](https://app.scribbler.live)
-[Discord Discussion](https://discord.com/channels/1143427972469104673/1373630715228586095)
-[Scribbler Docs](https://scribbler.live/docs)
-[AMA everyday at 830PM IST/3:00PM GMT](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGQ0ODhmMDUtNTBhNi00ODMxLTk3ZWMtNjRkNDMwMjg0NTY3%40thread.v2/0?context=%7b%22Tid%22%3a%22d2c98eb7-2c26-4ea8-99ca-a4ee127d9c4e%22%2c%22Oid%22%3a%22aa619f67-89e3-42bc-82f7-58843a96f0f4%22%7d)
+- [AMA everyday at 830PM IST/3:00PM GMT](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGQ0ODhmMDUtNTBhNi00ODMxLTk3ZWMtNjRkNDMwMjg0NTY3%40thread.v2/0?context=%7b%22Tid%22%3a%22d2c98eb7-2c26-4ea8-99ca-a4ee127d9c4e%22%2c%22Oid%22%3a%22aa619f67-89e3-42bc-82f7-58843a96f0f4%22%7d)
+- [Scirbbler App](https://app.scribbler.live)
+- [Discord Discussion](https://discord.com/channels/1143427972469104673/1373630715228586095)
+- [Scribbler Docs](https://scribbler.live/docs)
 
 
 ### 🗓️ Important Dates
