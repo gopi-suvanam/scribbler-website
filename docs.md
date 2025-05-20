@@ -76,28 +76,25 @@ To keep your code organized and maintainable, it's recommended to keep function 
 
 ## Documentation and HTML
 
+### HTML and CSS
+You can write HTML and CSS also in cells using two ways. 
+1. In code cells you can start the cell with `//> html` or `//> css` or
+2. In doc cell you can directly use HTML. For css in doc cell you can use `<style></style>` tags
 
 ### Markdown Support
 
 If you prefer writing documentation in Markdown, Scribbler Notebook supports this format too! Simply prefix your Markdown text with the magic word //>md. This will render your documentation in Markdown format.
 
-### Magic Words
+### Using Magic Words in Code Cells
 
 Scribbler Notebook recognizes the following magic words:
 
-- //>md: Treat the cell content as Markdown
-- //>html: Treat the cell content as HTML
-
+- //> md: Treat the code cell content as Markdown
+- //> html: Treat the code cell content as HTML
+- //> css: Treat the code cell as css
 
 These magic words can be used in both documentation cells and code cells.
 
-
-### Using Magic Words in Code Cells
-
-You can also use the magic words in code cells to:
-
-- Render code comments or explanations in Markdown using //>md
-- Embed HTML content, such as tables, images, UI elements etc using //>html
 
 ### Example Usage
 
