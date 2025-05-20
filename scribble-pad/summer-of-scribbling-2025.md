@@ -109,6 +109,56 @@ Use face-api.js, TensorFlow.js, WebXR, Three.js, A-Frame, or AR.js.
 #### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
 
 ---
+## Process
+### Submission
+- Login to hub.scribbler.live
+- Submit your porject there
+- We will also share a form for adding other details like social media, PRs etc
+
+### Scoring
+
+Here’s an abridged version of your judging criteria:
+
+---
+
+### 🧠 **Innovation & Execution** (20 pts)
+
+Rewards original, creative ideas that solve problems cleverly, especially those combining AI, data, or XR in novel ways.
+
+#### 💻 **Code Quality** (20 pts)
+
+Points for clean, modular, well-documented code. Clarity and elegance matter as much as functionality.
+
+#### 🎥 **Demo** (20 pts)
+
+Showcase a working project in a clear, bug-free demo. Confident explanation to judges boosts your score.
+
+#### 🚀 **Deeptech Use** (10 pts)
+
+Extra credit for using cutting-edge browser tech like WebLLM, WebGPU, WASM, or other low-latency methods.
+
+#### 🐞 **GitHub Issues** (5 pts)
+
+Earn 1 point per valid issue or feature request raised on [Scribbler GitHub](https://github.com/scribbler-notebook/scribbler), up to 5 points.
+
+#### 🔧 **Pull Requests** (20 pts)
+
+Points for contributions to Scribbler’s repo:
+
+* +1 for typo fixes
+* +2–5 for docs/UI
+* +10 for major features
+  (Max 20 pts)
+
+#### 📣 **Social Media Shares** (5 pts)
+
+1 point per public, relevant post tagging Scribbler on Twitter, LinkedIn, Dev.to, or Instagram (max 5 pts).
+
+
+
+
+
+---
 
 ## 🤝 Partners
 
