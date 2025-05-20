@@ -22,9 +22,9 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 * **Hackathon Start and Workshop on Scribbler and Hackathon**: May 20, 2025
 * **Submission Deadline**: May 31, 2025 (11:59 PM IST)
-* **Shorlist Announcement**: June 1, 2025 (12:00 Noon IST)
-* **Demo & Judging**: June 1, 2025  (For shortlisted participants)
-* **Results Announcement**: June 3, 2025
+* **Shorlist Announcement**: June 3, 2025 (12:00 Noon IST)
+* **Demo & Judging**: June 7, 2025  (For shortlisted participants)
+* **Results Announcement**: June 8, 2025
 
 ### 👨‍💻 Who Can Participate?
 
