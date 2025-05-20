@@ -35,7 +35,7 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 1. All teams must **login and submit** via [hub.scribbler.live](https://hub.scribbler.live).
 2. Code must be in a **Scribbler notebook** (HTML + JS), with any external libraries loaded via `scrib.loadScript(...)` or `import()`.
-3. Each team member must **⭐ star the Scribbler GitHub repo** [here](https://github.com/scribbler/scribbler).
+3. Each team member must **⭐ star the Scribbler GitHub repo** [here](https://github.com/gopi-suvanam/scribbler).
 4. Projects must be original and built during the hackathon period.
 
 ### 🏆 Prizes
