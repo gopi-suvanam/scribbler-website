@@ -18,9 +18,9 @@ layout: page
 
 ### 🗓️ Important Dates
 
-* **Submission Deadline**: May 31, 2025 (11:59 PM IST)
-* **Shorlist Announcement**: June 2, 2025 (12:00 Noon IST)
-* **Demo & Judging**: June 2-8, 2025  (For shortlisted participants)
+* **Submission Deadline**: June 1, 2025 (11:59 PM IST)
+* **Shorlist Announcement**: June 3, 2025 (12:00 Noon IST)
+* **Demo & Judging**: June 4-8, 2025  (For shortlisted participants)
 * **Results Announcement**: June 9, 2025
 
 ### 👨‍💻 Who Can Participate?
