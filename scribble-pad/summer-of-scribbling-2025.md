@@ -4,21 +4,21 @@ description: Code. Hack. Win. Every idea starts with a Scribble.
 layout: page
 ---
 
-We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. Whether you're a data viz nerd, an AI enthusiast, or an XR dreamer, there's a theme for you.
-
+Thanks for being part of **Summer of Scribbling - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. 
 
 
 ## Submission is Live NOW!!!
 ### 🧾 Submission Guidelines
 
-🚨 Deadline: 3 June, Midnight IST
+🚨 **Deadline: 3 June, Midnight IST**
+
 Make sure to submit before the deadline to be eligible!
 
 1️⃣ Create and Upload Your Notebook
 - Build your project using Scribbler.
 - Save your file with a .jsnb extension.
 - Push the notebook to a public GitHub repository.
-- Format your notebook link like this:`https://app.scribbler.live?jsnb=github:your-username/your-repo/path-to-notebook.jsnb`
+- Format your notebook link like this: `https://app.scribbler.live?jsnb=github:your-username/your-repo/path-to-notebook.jsnb`
 
 2️⃣ Star the Scribbler GitHub Repo
 ⭐ Show your support by starring our [Github repo](https://github.com/gopi-suvanam/scribbler)
