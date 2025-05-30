@@ -8,11 +8,30 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 
 
-## Register is Live NOW!!!
-## **🔗 [Registration Link!!!](https://tally.so/r/nrp74L)**
+## Submission is Live NOW!!!
+### 🧾 Submission Guidelines
+
+🚨 Deadline: 3 June, Midnight IST
+Make sure to submit before the deadline to be eligible!
+
+1️⃣ Create and Upload Your Notebook
+- Build your project using Scribbler.
+- Save your file with a .jsnb extension.
+- Push the notebook to a public GitHub repository.
+- Format your notebook link like this:`https://app.scribbler.live?jsnb=github:your-username/your-repo/path-to-notebook.jsnb`
+
+2️⃣ Star the Scribbler GitHub Repo
+⭐ Show your support by starring our [Github repo](https://github.com/gopi-suvanam/scribbler)
+
+3️⃣ Submit to Scribbler Hub
+Share your public repo on the [Scribbler Hub](https://hub.scribbler.live/#:~:text=Ready%20to%20Submit%20Your%20Repo?)
+
+4️⃣ Fill Out the Submission Form
+Provide your notebook link and any other contributions using this [Submission Form](https://tally.so/r/wbyKV7)
+
+
 
 #### **Watch this space for more announcements**
-#### **Dates: May 20 to June 3, 2025**
 
 ---
 
@@ -20,23 +39,14 @@ We’re thrilled to announce the **Summer of Scribbling - 2025**, a 15-day onlin
 
 ### 🗓️ Important Dates
 
+#### **🔗 [Registration Link!!!](https://tally.so/r/nrp74L)**
+
 * **Hackathon Start and Workshop on Scribbler and Hackathon**: May 20, 2025
 * **Submission Deadline**: Jun 3, 2025 (11:59 PM IST)
 * **Shorlist Announcement**: June 5, 2025 (12:00 Noon IST)
 * **Demo & Judging**: June 7, 2025  (For shortlisted participants)
 * **Results Announcement**: June 8, 2025
 
-### 👨‍💻 Who Can Participate?
-
-* Individuals or teams of **upto 3 members**
-* Open to students from any field — anyone who loves building in JavaScript!
-
-### 🧾 Submission Rules
-
-1. All teams must **login and submit** via [hub.scribbler.live](https://hub.scribbler.live).
-2. Code must be in a **Scribbler notebook** (HTML + JS), with any external libraries loaded via `scrib.loadScript(...)` or `import()`.
-3. Each team member must **⭐ star the Scribbler GitHub repo** [here](https://github.com/gopi-suvanam/scribbler).
-4. Projects must be original and built during the hackathon period.
 
 ### 🏆 Prizes
 
@@ -149,7 +159,6 @@ Points for contributions to Scribbler’s repo:
 #### 📣 **Social Media Shares** (5 pts)
 
 1 point per public, relevant post tagging Scribbler on Twitter, LinkedIn, Dev.to, or Instagram (max 5 pts).
-
 
 
 
