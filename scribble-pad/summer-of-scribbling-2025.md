@@ -51,9 +51,9 @@ Provide your notebook link and any other contributions using this [Submission Fo
 ### 🏆 Prizes
 
 * 🏅 **1st Place**: Android Tablet + Goodies + Internship Opportunity  
-* 🥈 **2nd Place**: Mechanical Keyboard + Goodies  
-* 🥉 **3rd Place**: Gaming Mouse + Goodies  
-* 🎁 Goodies & internship interviews for notable contributors
+* 🥈 **2nd Place**: Mechanical Keyboard + Goodies  + Internship Opportunity  
+* 🥉 **3rd Place**: Gaming Mouse + Goodies  +  Internship Opportunity  
+* 🎁 Goodies & certificates for partciopants + internship interviews for notable contributors
 
 ---
 
