@@ -146,10 +146,22 @@ A graduate in Computer Science from **BITS Pilani**, Anvesh has over nine years 
 **Founder, Dvaita Technologies**
 Saurabh is the founder of **Dvaita Technologies**, a firm focused on building scalable, business-aligned tech architectures. A proud alumnus of **NIT Kurukshetra**, he specializes in designing robust backend systems and innovative enterprise solutions.
 
-### Gopi Suvanam
 
-**Founder, G-Square & Scribbler**
-An alumnus of **IIT Madras** and **IIM Ahmedabad**, Gopi is the founder of **G-Square Solutions**, an AI consulting and analytics firm, and **Scribbler**, the JavaScript notebook platform at the heart of this hackathon. His vision of accessible, in-browser AI tooling has inspired a new generation of developers and technologists.
+---
+
+## 🧭 Organizers
+
+### 🚀 **Bhargavi Ramadugu**
+
+**Director at Scribbler | Founder, Clevernav.ai**
+An alumnus of **ISB**, Bhargavi brings deep expertise from her leadership roles across startups and large corporations. As the **Founder of Clevernav.ai** and **Director at Scribbler**, she combines strategic foresight with executional excellence, playing a pivotal role in shaping the vision and experience of Summer of Scribbling 2025.
+
+### 🧑‍🚀 **Gopi Suvanam**
+
+**Founder, G-Square Solutions & Scribbler**
+An alumnus of **IIT Madras** and **IIM Ahmedabad**, Gopi is the creator of **Scribbler**, the browser-based JavaScript notebook platform that powered the entire hackathon. He also leads **G-Square Solutions**, an AI consulting firm. Gopi's commitment to open, accessible, and browser-native AI tooling forms the foundation of this innovative developer ecosystem.
+
+---
 
 
 
