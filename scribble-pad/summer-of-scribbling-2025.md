@@ -1,195 +1,230 @@
 ---
-title: Summer of Scribbling - 2025
-description: Code. Hack. Win. Every idea starts with a Scribble.
+title: Summer of Scribbling 2025 – Final Demos Showcase a New Era of Browser-Based Innovation
+description: Every idea starts with a Scribble.
 layout: page
 ---
 
-Thanks for being part of **Summer of Scribbling - 2025**, a 15-day online hackathon that challenges developers, students, and creators to build powerful, creative applications using **Scribbler — the JavaScript Notebook**. 
+The Summer of Scribbling 2025 concluded with a spectacular final demo evening on June 7, bringing together some of the sharpest minds in browser-based AI and web technologies. Participants, working solo or in small teams, used Scribbler—the in-browser JavaScript notebook—to build intelligent, interactive, and fully client-side apps that required no backend or external servers.
 
-
-## Submission is Live NOW!!!
-### 🧾 Submission Guidelines
-
-🚨 **Deadline: 3 June, Midnight IST**
-
-Make sure to submit before the deadline to be eligible!
-
-1️⃣ Create and Upload Your Notebook
-- Build your project using Scribbler.
-- Save your file with a .jsnb extension.
-- Push the notebook to a public GitHub repository.
-- Format your notebook link like this: `https://app.scribbler.live?jsnb=github:your-username/your-repo/path-to-notebook.jsnb`
-
-2️⃣ Star the Scribbler GitHub Repo
-⭐ Show your support by starring our [Github repo](https://github.com/gopi-suvanam/scribbler)
-
-3️⃣ Submit to Scribbler Hub
-Share your public repo on the [Scribbler Hub](https://hub.scribbler.live/#:~:text=Ready%20to%20Submit%20Your%20Repo?)
-
-4️⃣ Fill Out the Submission Form
-Provide your notebook link and any other contributions using this [Submission Form](https://tally.so/r/wbyKV7)
-
-
-
-#### **Watch this space for more announcements**
+Here’s a look at the groundbreaking projects that made it to the final demo:
 
 ---
 
-## 🚀 Hackathon Details
+### 🌟 [**Team Solo Leveling – News Bias & Credibility Analyzer**](https://app.scribbler.live/?jsnb=github:adityasingh-0803/realitycheck-news-bias-analyzer/Realitycheck.jsnb)
 
-### 🗓️ Important Dates
+**Member:** *Aditya Singh*
+**What it does:** Analyzes political bias, sentiment, and credibility in news articles.
+**Highlights:**
 
-#### **🔗 [Registration Link!!!](https://tally.so/r/nrp74L)**
+* Fully browser-based using Scribbler + Python
+* No API dependency: 100% rule-based NLP
+* Visual summaries with pie charts
+  **Impact:** Empowers readers to critically evaluate the media they consume.
+[**Team Solo Leveling – News Bias & Credibility Analyzer**](https://app.scribbler.live/?jsnb=github:adityasingh-0803/realitycheck-news-bias-analyzer/Realitycheck.jsnb)
+---
 
-* **Hackathon Start and Workshop on Scribbler and Hackathon**: May 20, 2025
-* **Submission Deadline**: Jun 3, 2025 (11:59 PM IST)
-* **Shorlist Announcement**: June 5, 2025 (12:00 Noon IST)
-* **Demo & Judging**: June 7, 2025  (For shortlisted participants)
-* **Results Announcement**: June 8, 2025
+### 🌿 [**Team Solo Innovators – Smart City Pulse Dashboard**](https://app.scribbler.live?jsnb=github:sujankowshik/Smart-City-Pulse-Dashboard/SmartCityPulseDashboard-Sujan_br_.jsnb)
 
+**Member:** *Sujan Kowshik Jilla*
+**What it does:** Real-time dashboard for AQI, weather, and environmental monitoring.
+**Highlights:**
 
-### 🏆 Prizes
+* Clean visuals with Chart.js
+* Auto-generated insights for easier interpretation
+* Alerts for environmental anomalies
+  **Impact:** Supports eco-conscious civic decision-making and urban awareness.
+[**Team Solo Innovators – Smart City Pulse Dashboard**](https://app.scribbler.live?jsnb=github:sujankowshik/Smart-City-Pulse-Dashboard/SmartCityPulseDashboard-Sujan_br_.jsnb)
+---
 
-* 🏅 **1st Place**: Android Tablet + Goodies + Internship Opportunity  
-* 🥈 **2nd Place**: Mechanical Keyboard + Goodies  + Internship Opportunity  
-* 🥉 **3rd Place**: Gaming Mouse + Goodies  +  Internship Opportunity  
-* 🎁 Goodies & certificates for partciopants + internship interviews for notable contributors
+### 🏙️ [**Team 3Genx – Smart City Dashboard**](https://app.scribbler.live?jsnb=github:vallamkon/Scribber-Hackathon--Joshitha/SmartCityDashboard.jsnb)
+
+**Member:** *Vallamkondu Joshitha*
+**What it does:** Live dashboard for traffic, energy use, and air quality.
+**Highlights:**
+
+* Real-time visualizations
+* AI-driven smart recommendations
+* Entirely open-source and Scribbler-based
+  **Impact:** A step toward data-informed and sustainable urban planning.
+[**Team 3Genx – Smart City Dashboard**](https://app.scribbler.live?jsnb=github:vallamkon/Scribber-Hackathon--Joshitha/SmartCityDashboard.jsnb)
+---
+
+### 💸 [**Team Rustrack – Expense Tracker Notebook**](https://app.scribbler.live/?jsnb=github:Avi112005/Scribble-Notebook/ExpenseTracker.jsnb_br_.jsnb)
+
+**Member:** *Avi Singh*
+**What it does:** Offline expense tracker with budget categorization.
+**Highlights:**
+
+* Zero server or cloud dependence
+* LocalStorage-powered persistence
+* Dynamic bar charts using Chart.js
+  **Impact:** A practical personal finance tool that works entirely offline.
+[**Team Rustrack – Expense Tracker Notebook**](https://app.scribbler.live/?jsnb=github:Avi112005/Scribble-Notebook/ExpenseTracker.jsnb_br_.jsnb)
+---
+Certainly! Here's the revised article with **separate, clearly listed links** to each submission **after** each team's project description:
 
 ---
 
-## 🎯 Themes
+**Summer of Scribbling 2025 – Final Demos Showcase a New Era of Browser-Based Innovation**
 
-Choose any of the following themes for your submission:
+The Summer of Scribbling 2025 concluded with a spectacular final demo evening on June 7, bringing together some of the sharpest minds in browser-based AI and web technologies. Participants, working solo or in small teams, used Scribbler—the in-browser JavaScript notebook—to build intelligent, interactive, and fully client-side apps that required no backend or external servers.
 
-### 🧠 1. AI (API or In-Browser)
-
-Participants can:
-
-* Use **AI APIs** (like OpenAI, Cohere, HuggingFace Inference API, AssemblyAI, etc.)
-* Or run models **fully in-browser** (e.g., WebLLM, TensorFlow.js, ONNX.js) for a **bonus**.
-
-#### 🔹 Theme Ideas:
-
-| **Project Idea**          | **Description**                                                                      |
-|---------------------------|--------------------------------------------------------------------------------------|
-| **EmotionCam**            | Use webcam and either an API (e.g., Affectiva) or browser ML to detect facial emotions. |
-| **Ask My Doc**            | Upload a PDF and ask questions via LLM (OpenAI API or WebLLM).                       |
-| **Smart Summarizer**      | Paste an article or video transcript → get summary + key points.                    |
-| **Voice Commands Bot**    | Use browser mic + API (e.g., Whisper) to recognize voice commands and reply via LLM. |
-| **Chat with Spreadsheet** | Upload Excel/CSV and query it using an API-backed LLM (like GPT).                   |
-| **Browser Tutor (Bonus)** | A tutor bot that runs *entirely* in the browser using WebLLM + math.js.             |
-| **In-Browser Classifier** | Use TensorFlow.js to build a working image or gesture classifier.                   |
-| **Hybrid AI Agent**       | Use both browser and API AI — e.g., do vision in-browser, NLP via API.              |
-
-#### 🎁 Bonus Points: Fully browser-based AI using WebGPU/WASM, etc.
+Here’s a look at the groundbreaking projects that made it to the final demo:
 
 ---
 
-### 📊 2. Dashboarding & Visualization
+### 🌟 Team Solo Leveling – News Bias & Credibility Analyzer
 
-Use Plotly.js, D3, Chart.js, ObservablePlot, or WebGL-powered visualizations.
+**Member:** *Aditya Singh*
+**What it does:** Analyzes political bias, sentiment, and credibility in news articles.
+**Highlights:**
 
-#### 🔹 Theme Ideas:
-
-* **Smart City Dashboard**: Combine open datasets (air quality, traffic, weather) into a live dashboard.  
-* **Crypto Tracker**: Live charts of top coins, sentiment analysis of news/Twitter, and prediction trends.  
-* **Personal Health Tracker**: Allow users to input or import fitness/health data and visualize trends.  
-* **Startup Metrics**: Simulate or import mock metrics for user growth, churn, revenue, and visualize with cohort analysis.  
-* **Election Pulse**: Build a polling dashboard with real-time visualizations and projections.
-
----
-
-### 🕶️ 3. XR (Extended Reality in Browser)
-
-Use face-api.js, TensorFlow.js, WebXR, Three.js, A-Frame, or AR.js.
-
-#### 🔹 Theme Ideas:
-
-* **Try-on Filters**: Real-time face tracking with filters, masks, and effects — like Snap or Insta, but in a notebook!  
-* **AR Info Cards**: Point camera at objects (e.g., books, plants) and display interactive labels or facts.  
-* **3D Math Visualizer**: Use A-Frame to render 3D plots or vector operations in real space.  
-* **Virtual Whiteboard**: Collaborative whiteboard inside Scribbler using Three.js and drawing APIs.  
-* **Face-Controlled Games**: Build simple browser games controlled by head movement or eye blink.
+* Fully browser-based using Scribbler + Python
+* No API dependency: 100% rule-based NLP
+* Visual summaries with pie charts
+  **Impact:** Empowers readers to critically evaluate the media they consume.
+  🔗 **Link to submission:** [https://app.scribbler.live/?jsnb=github\:adityasingh-0803/realitycheck-news-bias-analyzer/Realitycheck.jsnb](https://app.scribbler.live/?jsnb=github:adityasingh-0803/realitycheck-news-bias-analyzer/Realitycheck.jsnb)
 
 ---
 
-#### Watch this space for more announcements 
-#### [Registration Link!!!](https://tally.so/r/nrp74L)
+### 🌿 Team Solo Innovators – Smart City Pulse Dashboard
 
-#### Join the community on [Discord](https://join.scribbler.live) or check the [Scribbler Docs](https://scribbler.live/docs).
+**Member:** *Sujan Kowshik Jilla*
+**What it does:** Real-time dashboard for AQI, weather, and environmental monitoring.
+**Highlights:**
 
----
-## Process
-### Submission
-- Login to [hub.scribbler.live](https://hub.scribbler.live)
-- Submit your porject there
-- We will also share a form for adding other details like social media, PRs etc
-
-### Scoring
-
-#### 🧠 **Innovation & Execution** (20 pts)
-
-Rewards original, creative ideas that solve problems cleverly, especially those combining AI, data, or XR in novel ways.
-
-#### 💻 **Code Quality** (20 pts)
-
-Points for clean, modular, well-documented code. Clarity and elegance matter as much as functionality.
-
-#### 🎥 **Demo** (20 pts)
-
-Showcase a working project in a clear, bug-free demo. Confident explanation to judges boosts your score.
-
-#### 🚀 **Deeptech Use** (10 pts)
-
-Extra credit for using cutting-edge browser tech like WebLLM, WebGPU, WASM, or other low-latency methods.
-
-#### 🐞 **GitHub Issues** (5 pts)
-
-Earn 1 point per valid issue or feature request raised on [Scribbler GitHub](https://github.com/scribbler-notebook/scribbler), up to 5 points.
-
-#### 🔧 **Pull Requests** (20 pts)
-
-Points for contributions to Scribbler’s repo:
-
-* +1 for typo fixes
-* +2–5 for docs/UI
-* +10 for major features
-  (Max 20 pts)
-
-#### 📣 **Social Media Shares** (5 pts)
-
-1 point per public, relevant post tagging Scribbler on Twitter, LinkedIn, Dev.to, or Instagram (max 5 pts).
-
-
-
+* Clean visuals with Chart.js
+* Auto-generated insights for easier interpretation
+* Alerts for environmental anomalies
+  **Impact:** Supports eco-conscious civic decision-making and urban awareness.
+  🔗 **Link to submission:** [https://app.scribbler.live?jsnb=github\:sujankowshik/Smart-City-Pulse-Dashboard/SmartCityPulseDashboard-Sujan\_br\_.jsnb](https://app.scribbler.live?jsnb=github:sujankowshik/Smart-City-Pulse-Dashboard/SmartCityPulseDashboard-Sujan_br_.jsnb)
 
 ---
 
-## 🤝 Partners
+### 🏙️ Team 3Genx – Smart City Dashboard
 
-We are proud to present our esteemed partners — bleeding-edge startups in AI offering internships to winning participants.
+**Member:** *Vallamkondu Joshitha*
+**What it does:** Live dashboard for traffic, energy use, and air quality.
+**Highlights:**
 
-### QAPilot
-
-<img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QAPilot">
-
-[QAPilot](https://qapilot.io/) is an AI-native testing platform for Mobile Apps. Reimagine your testing with AI — effortless, fast, and accessible to all!  
-**Website**: [https://qapilot.io/](https://qapilot.io/)
-
----
-
-### Sonic Linker
-
-<img src="../assets/images/sonic-linker.jpeg" style="height:200px;" alt="Sonic Linker">
-
-[Sonic Linker](https://www.soniclinker.com/) is an AI-powered unified inbox for all business leads. Supercharge your lead conversions with AI-powered instant replies to inquiries on WhatsApp, Instagram, Phone Calls, Email, and LinkedIn.  
-**Website**: [https://www.soniclinker.com/](https://www.soniclinker.com/)
+* Real-time visualizations
+* AI-driven smart recommendations
+* Entirely open-source and Scribbler-based
+  **Impact:** A step toward data-informed and sustainable urban planning.
+  🔗 **Link to submission:** [https://app.scribbler.live?jsnb=github\:vallamkon/Scribber-Hackathon--Joshitha/SmartCityDashboard.jsnb](https://app.scribbler.live?jsnb=github:vallamkon/Scribber-Hackathon--Joshitha/SmartCityDashboard.jsnb)
 
 ---
 
-### CleverNav Solutions
+### 💸 Team Rustrack – Expense Tracker Notebook
 
-<img src="../assets/images/clevernav.jpeg" style="height:200px;" alt="CleverNav">
+**Member:** *Avi Singh*
+**What it does:** Offline expense tracker with budget categorization.
+**Highlights:**
 
-[CleverNav Solutions](https://clevernav.ai/) builds AI-powered solutions to redefine the insurance experience. Harness the power of GenAI to deploy cutting-edge solutions for exceptional business outcomes and empower sales and service agents to reshape how insurance is bought, sold, and serviced.  
-**Website**: [https://clevernav.ai/](https://clevernav.ai/)
+* Zero server or cloud dependence
+* LocalStorage-powered persistence
+* Dynamic bar charts using Chart.js
+  **Impact:** A practical personal finance tool that works entirely offline.
+  🔗 **Link to submission:** [https://app.scribbler.live/?jsnb=github\:Avi112005/Scribble-Notebook/ExpenseTracker.jsnb\_br\_.jsnb](https://app.scribbler.live/?jsnb=github:Avi112005/Scribble-Notebook/ExpenseTracker.jsnb_br_.jsnb)
+
+---
+
+### 🤖 Team ZOD – B-Bot: Emotion-Aware AI Companion
+
+**Members:** *Sudarsan Mansingh, Gaurav Singh Jethuri*
+**What it does:** Detects user emotions via webcam and responds empathetically.
+**Highlights:**
+
+* Facial expression analysis using Groq LLaMA-4 via WebLLM
+* TTS replies powered by OpenAI
+* Runs fully in-browser using Web APIs
+  **Impact:** A pioneering attempt at emotionally intelligent AI interactions.
+  🔗 **Link to submission:** [https://app.scribbler.live/?jsnb=github\:sudarsan2k5/B-Bot/B-Bot.jsnb](https://app.scribbler.live/?jsnb=github:sudarsan2k5/B-Bot/B-Bot.jsnb)
+
+---
+
+### 🧠 Team geekyAyushi – SkillSync AI
+
+**Member:** *Ayushi*
+**What it does:** AI tool to match resumes with job descriptions.
+**Highlights:**
+
+* Match scoring using Gemini + local JS logic
+* Tailwind CSS-powered interface
+* Insightful resume edit suggestions
+  **Impact:** Empowers job seekers to quickly optimize resumes for targeted roles.
+  🔗 **Link to submission:** [https://app.scribbler.live?jsnb=github\:ayushichoudhary-19/skillsync-ai/SkillSync-AI.jsnb](https://app.scribbler.live?jsnb=github:ayushichoudhary-19/skillsync-ai/SkillSync-AI.jsnb)
+
+---
+
+### 📚 Team Bit Coders – Learning Roadmap Generator
+
+**Members:** *Parth, Varun, Rishabh*
+**What it does:** Converts syllabus PDFs into interactive learning planners.
+**Highlights:**
+
+* AI-driven topic breakdown using Gemini
+* Checklist-style progress tracking
+* PDF.js and Tailwind CSS for seamless UI
+  **Impact:** A personal study coach built right into your browser.
+  🔗 **Link to submission:** [https://app.scribbler.live/?jsnb=github\:parthsidpara/summer-scribbler-hackathon/MapItFlow.jsnb](https://app.scribbler.live/?jsnb=github:parthsidpara/summer-scribbler-hackathon/MapItFlow.jsnb)
+
+---
+
+### 📐 Team Blanc – 3D Math Visualizer
+
+**Members:** *Aarav Gupta, Riyan Patel*
+**What it does:** Interactive 3D visualization of vectors and math surfaces.
+**Highlights:**
+
+* A-Frame + Math.js for 3D rendering
+* Supports multiple surface types (explicit, parametric, implicit)
+* Fully interactive environment with camera controls
+  **Impact:** Brings abstract math concepts to life for students and educators.
+  🔗 **Link to submission:** [https://app.scribbler.live?jsnb=github\:AaravG42/3d-math-visualiser/notebooks/3d.jsnb](https://app.scribbler.live?jsnb=github:AaravG42/3d-math-visualiser/notebooks/3d.jsnb)
+
+---
+
+## 👩‍⚖️ Judges & Guests
+
+A distinguished panel of tech leaders, founders, and engineers joined us to evaluate the final demos, offering valuable feedback and encouragement to all the participants. Their expertise spans cutting-edge AI, product innovation, scalable systems, and startup building:
+
+### 🧠 **Rajeev Kumar**
+
+**Co-Founder & CTO, SonicLinker**
+Rajeev brings over two decades of software engineering experience, having worked with global tech giants like **Microsoft** and **AWS**, as well as several startups in India and the US. He previously founded **Lekh App**, an intelligent whiteboarding and diagramming tool, and now leads **SonicLinker**, a startup developing an AI-powered marketing stack.
+
+### 📱 **Aditya Challa**
+
+**Founder, QAPilot**
+An alumnus of **IIT Madras** and **IIM Ahmedabad**, Aditya is the founder of **QAPilot**, an AI-native test automation platform designed specifically for mobile apps. Prior to this, he held leadership positions at **IMImobile** and other tech firms, helping streamline mobile release cycles through smarter testing.
+
+### 👨‍💻 **Anvesh Reddy**
+
+**Engineering Lead, QAPilot**
+A graduate in Computer Science from **BITS Pilani**, Anvesh has over nine years of experience in leading engineering teams across companies like **Zynga**, **IMImobile**, and **Cisco**. At QAPilot, he currently heads product engineering and is known for his strong mentorship and systems expertise.
+
+### 🧩 **Saurabh Nandedkar**
+
+**Founder, Dvaita Technologies**
+Saurabh is the founder of **Dvaita Technologies**, a firm focused on building scalable, business-aligned tech architectures. A proud alumnus of **NIT Kurukshetra**, he specializes in designing robust backend systems and innovative enterprise solutions.
+
+### 🧑‍🚀 **Gopi Suvanam**
+
+**Founder, G-Square & Scribbler**
+An alumnus of **IIT Madras** and **IIM Ahmedabad**, Gopi is the founder of **G-Square Solutions**, an AI consulting and analytics firm, and **Scribbler**, the JavaScript notebook platform at the heart of this hackathon. His vision of accessible, in-browser AI tooling has inspired a new generation of developers and technologists.
+
+
+
+These industry experts brought depth, perspective, and thoughtful critique to the demo evaluations, helping participants refine their ideas and gain real-world insights. Their involvement made Summer of Scribbling 2025 a truly impactful and rewarding experience for all involved.
+
+---
+
+## 🏁 Closing Notes
+
+The Summer of Scribbling 2025 showcased what’s possible when powerful browser-native tools meet curious and creative minds. The finalists demonstrated that with just a browser and Scribbler, one can build AI assistants, 3D visualizations, city dashboards, and personal utilities—no backend needed, no barriers in sight.
+
+This is not just the future of hackathons—it’s the future of computing.
+
+**🎉 Congratulations to all the finalists!**
+Feel free to explore the projects through the links above and experience innovation, live in your browser.
