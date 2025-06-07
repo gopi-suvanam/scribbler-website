@@ -126,27 +126,27 @@ Here’s a look at the groundbreaking projects that made it to the final demo:
 
 A distinguished panel of tech leaders, founders, and engineers joined us to evaluate the final demos, offering valuable feedback and encouragement to all the participants. Their expertise spans cutting-edge AI, product innovation, scalable systems, and startup building:
 
-### 🧠 **Rajeev Kumar**
+### Rajeev Kumar
 
 **Co-Founder & CTO, SonicLinker**
 Rajeev brings over two decades of software engineering experience, having worked with global tech giants like **Microsoft** and **AWS**, as well as several startups in India and the US. He previously founded **Lekh App**, an intelligent whiteboarding and diagramming tool, and now leads **SonicLinker**, a startup developing an AI-powered marketing stack.
 
-### 📱 **Aditya Challa**
+### Aditya Challa
 
 **Founder, QAPilot**
 An alumnus of **IIT Madras** and **IIM Ahmedabad**, Aditya is the founder of **QAPilot**, an AI-native test automation platform designed specifically for mobile apps. Prior to this, he held leadership positions at **IMImobile** and other tech firms, helping streamline mobile release cycles through smarter testing.
 
-### 👨‍💻 **Anvesh Reddy**
+### Anvesh Reddy
 
 **Engineering Lead, QAPilot**
 A graduate in Computer Science from **BITS Pilani**, Anvesh has over nine years of experience in leading engineering teams across companies like **Zynga**, **IMImobile**, and **Cisco**. At QAPilot, he currently heads product engineering and is known for his strong mentorship and systems expertise.
 
-### 🧩 **Saurabh Nandedkar**
+### Saurabh Nandedkar
 
 **Founder, Dvaita Technologies**
 Saurabh is the founder of **Dvaita Technologies**, a firm focused on building scalable, business-aligned tech architectures. A proud alumnus of **NIT Kurukshetra**, he specializes in designing robust backend systems and innovative enterprise solutions.
 
-### 🧑‍🚀 **Gopi Suvanam**
+### Gopi Suvanam
 
 **Founder, G-Square & Scribbler**
 An alumnus of **IIT Madras** and **IIM Ahmedabad**, Gopi is the founder of **G-Square Solutions**, an AI consulting and analytics firm, and **Scribbler**, the JavaScript notebook platform at the heart of this hackathon. His vision of accessible, in-browser AI tooling has inspired a new generation of developers and technologists.
@@ -157,7 +157,7 @@ These industry experts brought depth, perspective, and thoughtful critique to th
 
 ---
 
-## 🏁 Closing Notes
+## Closing Notes
 
 The Summer of Scribbling 2025 showcased what’s possible when powerful browser-native tools meet curious and creative minds. The finalists demonstrated that with just a browser and Scribbler, one can build AI assistants, 3D visualizations, city dashboards, and personal utilities—no backend needed, no barriers in sight.
 
