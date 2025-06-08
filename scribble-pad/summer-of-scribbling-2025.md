@@ -169,6 +169,38 @@ These industry experts brought depth, perspective, and thoughtful critique to th
 
 ---
 
+## 🤝 Partners
+
+We are proud to present our esteemed partners — bleeding-edge startups in AI offering internships to winning participants.
+
+### QAPilot
+
+<img src="../assets/images/qa-pilot.jpeg" style="height:200px;" alt="QAPilot">
+
+[QAPilot](https://qapilot.io/) is an AI-native testing platform for Mobile Apps. Reimagine your testing with AI — effortless, fast, and accessible to all!  
+**Website**: [https://qapilot.io/](https://qapilot.io/)
+
+---
+
+### Sonic Linker
+
+<img src="../assets/images/sonic-linker.jpeg" style="height:200px;" alt="Sonic Linker">
+
+[Sonic Linker](https://www.soniclinker.com/) is an AI-powered unified inbox for all business leads. Supercharge your lead conversions with AI-powered instant replies to inquiries on WhatsApp, Instagram, Phone Calls, Email, and LinkedIn.  
+**Website**: [https://www.soniclinker.com/](https://www.soniclinker.com/)
+
+---
+
+### CleverNav Solutions
+
+<img src="../assets/images/clevernav.jpeg" style="height:200px;" alt="CleverNav">
+
+[CleverNav Solutions](https://clevernav.ai/) builds AI-powered solutions to redefine the insurance experience. Harness the power of GenAI to deploy cutting-edge solutions for exceptional business outcomes and empower sales and service agents to reshape how insurance is bought, sold, and serviced.  
+**Website**: [https://clevernav.ai/](https://clevernav.ai/)
+
+
+---
+
 ## Closing Notes
 
 The Summer of Scribbling 2025 showcased what’s possible when powerful browser-native tools meet curious and creative minds. The finalists demonstrated that with just a browser and Scribbler, one can build AI assistants, 3D visualizations, city dashboards, and personal utilities—no backend needed, no barriers in sight.
