@@ -56,10 +56,13 @@ Once this runs, `_` becomes available in any other cell—just like in a normal 
 ```
 
 Then in another cell:
-
+```html
+<canvas id="myChart"></canvas>
+```
+And finally plot the chart:
 ```js
-const canvas = document.createElement('canvas');
-document.body.appendChild(canvas);
+const canvas = document.getElementById("myChart");
+
 
 new Chart(canvas, {
   type: 'bar',
