@@ -2,7 +2,7 @@
 title: Powering Up Scribbler Notebooks with ESM Module
 layout: post
 description: The //> module feature in Scribbler lets you import and run modern ESM libraries directly in notebook cells, unlocking powerful, modular, browser-native workflows.
-categories: JavaScript
+categories:  [Scribbler,JavaScript]
 start_link: https://app.scribbler.live/#./examples/ES-Modules.jsnb
 ---
 
