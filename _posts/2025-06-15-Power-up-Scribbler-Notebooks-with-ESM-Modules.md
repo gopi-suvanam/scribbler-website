@@ -142,56 +142,56 @@ No need to wrap this in `async` functions—thanks to module-level top-level `aw
 
 * **🔧 Lodash**
   A modern utility library for arrays, objects, strings, and more.
-  👉 `https://esm.sh/lodash`
+  [ `https://esm.sh/lodash`](https://esm.sh/lodash)
 
 
 * **📊 Chart.js**
   Simple yet flexible charting library for visualizing data with responsive charts.
-  👉 `https://esm.sh/chart.js/auto`
+  [`https://esm.sh/chart.js/auto`](https://esm.sh/chart.js/auto)
 
 * **🧱 Three.js**
   A powerful 3D graphics engine for rendering 3D scenes in the browser using WebGL.
-  👉 `https://esm.sh/three`
+  [`https://esm.sh/three`](https://esm.sh/three)
 
 * **📝 Marked**
   A fast and flexible Markdown parser and compiler that turns Markdown into HTML.
-  👉 `https://esm.sh/marked`
+  [`https://esm.sh/marked`](https://esm.sh/marked)
 
 * **➗ Math.js**
   A comprehensive math library that supports complex numbers, algebra, matrices, and more.
-  👉 `https://esm.sh/mathjs`
+  [`https://esm.sh/mathjs`](https://esm.sh/mathjs)
 
 * **🕓 Day.js**
   A minimalist alternative to Moment.js for parsing, validating, manipulating, and formatting dates.
-  👉 `https://esm.sh/dayjs`
+  [`https://esm.sh/dayjs`](https://esm.sh/dayjs)
 
 * **🆔 UUID**
   A tiny library to generate RFC4122-compliant unique identifiers.
-  👉 `https://esm.sh/uuid`
+  [`https://esm.sh/uuid`](https://esm.sh/uuid)
 
 * **🧹 Prettier**
   An opinionated code formatter that enforces a consistent style.
-  👉 `https://esm.sh/prettier`
+  [`https://esm.sh/prettier`](https://esm.sh/prettier)
 
 * **🎵 Tone.js**
   A powerful Web Audio library for building interactive music and audio experiences.
-  👉 `https://esm.sh/tone`
+  [`https://esm.sh/tone`](https://esm.sh/tone)
 
 * **🔄 RxJS**
   A reactive programming library for working with asynchronous data streams using Observables.
-  👉 `https://esm.sh/rxjs`
+  [`https://esm.sh/rxjs`](https://esm.sh/rxjs)
 
 * **🖼️ Vue (3.x)**
   A progressive JavaScript framework for building user interfaces and single-page applications.
-  👉 `https://esm.sh/vue@3`
+   [`https://esm.sh/vue@3`](https://esm.sh/vue@3)
 
 * **⚛️ React**
   A declarative UI library for building reusable, component-based user interfaces.
-  👉 `https://esm.sh/react`
+  [`https://esm.sh/react`](https://esm.sh/react)
 
 * **📦 ReactDOM**
   React’s rendering library that lets you mount components to the DOM.
-  👉 `https://esm.sh/react-dom`
+  [`https://esm.sh/react-dom`](https://esm.sh/react-dom)
 
 * **🎞️ Anime.js**
   A lightweight animation library with a simple, flexible API.
@@ -203,10 +203,10 @@ No need to wrap this in `async` functions—thanks to module-level top-level `aw
 
 * **🗜️ JSZip**
   A library for creating, reading, and editing ZIP archives in the browser.
-  👉 `https://esm.sh/jszip`
+  [`https://esm.sh/jszip`](https://esm.sh/react-dom)
 
 * **💾 FileSaver.js**
   A simple solution to trigger file downloads (e.g., blobs) in the browser.
-  👉 `https://esm.sh/file-saver`
+  [`https://esm.sh/file-saver`](https://esm.sh/react-dom)
 
 The `//> module` feature transforms Scribbler from a JavaScript scratchpad into a powerful, modular, web-native notebook environment. With seamless ESM integration, you’re no longer limited by what’s built-in—you can bring in the full power of modern JavaScript tooling, directly from the browser.
