@@ -8,7 +8,7 @@ categories: Scribbler
 
 In a world obsessed with speed and convenience, no-code platforms have become the shiny new toy of tech. With just a few clicks and some prompt engineering, you can generate apps, automate workflows, and launch landing pages. But beneath this simplicity lies a critical problem: fragility. What seems effortless at first turns into a tangled mess when things break, scale, or evolve. This is why **real builders code.**
 
-Let’s talk about why code — *and tools like Scribbler* — remain the foundation of long-term creativity and control.
+Let’s talk about why code — *and tools like [Scribbler](https://app.scribbler.live)* — remain the foundation of long-term creativity and control.
 
 ---
 
