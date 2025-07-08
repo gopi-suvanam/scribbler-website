@@ -75,7 +75,7 @@ But you don’t need to solve those until your prototype grows. Start simple in 
 
 No-code tools promise speed but trap you in their platforms. If they change pricing or shut down, your app’s gone.
 
-With [Scribbler Notebooks](https://scribbler.ink), your code stays yours. Build with open libraries, export your work anytime, no lock-in.
+With [Scribbler Notebooks](https://app.scribbler.live), your code stays yours. Build with open libraries, export your work anytime, no lock-in.
 
 ---
 
