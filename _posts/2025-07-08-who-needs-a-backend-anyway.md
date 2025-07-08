@@ -7,7 +7,7 @@ categories: JavaScript
 
 For years, developers have been obsessed with servers. Spinning up VMs, wrangling Docker containers, fine-tuning databases... all to build an app that shows some text on a page. In 2025, you can skip all that.
 
-Thanks to modern browsers and tools like [Scribbler](https://scribbler.ink), you can run a ton of your code directly in the browser — no backend, no cloud bill, no deployment headaches.
+Thanks to modern browsers and tools like [Scribbler](https://app.scribbler.live), you can run a ton of your code directly in the browser — no backend, no cloud bill, no deployment headaches.
 
 ---
 
@@ -21,7 +21,7 @@ Today’s browsers are insanely powerful:
 * Canvas & WebGL let you build rich visualizations and games.
 * Service Workers keep your app running even when offline.
 
-With [Scribbler Notebooks](https://scribbler.ink), you harness all this right from your browser — instant execution, zero setup.
+With [Scribbler Notebooks](https://app.scribbler.live), you harness all this right from your browser — instant execution, zero setup.
 
 ---
 
@@ -100,7 +100,7 @@ The winning approach? Use AI as a helper, not a crutch. Build small, test quickl
 * Teaching demos for JavaScript concepts
 * Browser games
 
-You can build all of these in [Scribbler](https://scribbler.ink) without a backend.
+You can build all of these in [Scribbler](https://app.scribbler.live) without a backend.
 
 ---
 
