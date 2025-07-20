@@ -12,13 +12,17 @@ link_description: Apply Now
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title">
+                <div class="title">
                     <h3 class="wow zoomIn" data-wow-delay=".2s">Become a Brand Advocate</h3>
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Ambassador Program</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">
+					<p class="wow fadeInUp" data-wow-delay=".6s">
                         Join our Ambassador Program and help us spread the word about our platform while enjoying exclusive perks, rewards, and recognition. If you’re passionate about community, growth, and innovation, this program is for you!
-                    </p>
-                </div>
+                    </p> 
+				</div>
+				
+
+		
+		
             </div>
         </div>
         <div class="row">
@@ -98,7 +102,7 @@ link_description: Apply Now
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="section-title">
+                <div class="title">
                     <h3 class="wow zoomIn" data-wow-delay=".2s">Your Role as an Ambassador</h3>
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">What You’ll Do</h2>
                     <p class="wow fadeInUp" data-wow-delay=".6s">Ambassadors contribute in various ways to grow our platform and foster community engagement.</p>
