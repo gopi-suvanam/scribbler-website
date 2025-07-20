@@ -1,4 +1,4 @@
---
+---
 title: Become Campus Ambassadors for Scribbler
 description: Do you love coding, open-source, and building communities?  Join Scribbler’s Campus Ambassador Program and become the face of Scribbler at your college!
 layout: landing
@@ -7,8 +7,6 @@ link_description: Apply Now
 ---
 
 
-
----
 
 ## 🚀 Why Scribbler?
 
