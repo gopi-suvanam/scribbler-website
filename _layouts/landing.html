@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Scribbler - JavaScript Notebook, Online Compiler and Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="JavaScript notebook, online compiler, and editor for interactive coding, learning, data science, scientific computing, web development, and testing. Code, collaborate, and visualize.">
+
+    <meta name="keywords" content="JavaScript, Notebook, JS Notebook, JavaScript Compiler, JavaScript Online Compiler, JavaScript Editor,Scientific Computing, JavaScript Code Editor, Interactive Coding, Web Development, Programming, Data Science, Machine Learning, AI, Data Visualization, Online Code Editor, Coding Environment, Developer Tools, Web Application Development, Front-end Development, JavaScript IDE, Online IDE">
+      <meta name="subject" content="JavaScript Notebook, JS Programming, Data Science, Scientific Computing">
+      <meta name="category" content="Web Development, Programming, Data Science, Scientific Computing, Developer Tools">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-45Z12S039Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-45Z12S039Z');
+</script>
+
+
+<!-- Mailchimp -->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6cc13bc491687fd1fd71a55ff/01cac5102c47533cd247c07a1.js");</script>
+<!-- End mailchimp -->    
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <b class="navbar-brand" href="index.html">
+                                Scribbler
+                            </b>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a href="#home" class="page-scroll active"
+                                            aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#features" class="page-scroll"
+                                            aria-label="Toggle navigation">Features</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#usecases" class="page-scroll"
+                                            aria-label="Toggle navigation">Use Cases</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/docs" aria-label="Toggle navigation">Docs</a>
+                                    </li>                                    
+
+                                    <li class="nav-item">
+                                        <a href="/samples.html" aria-label="Toggle navigation">Gallery</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/tutorials" aria-label="Toggle navigation">Tutorials</a>
+                                    </li>
+                                   <li class="nav-item">
+                                        <a href="/blog" aria-label="Toggle navigation">Blog</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a href="https://hub.scribbler.live" aria-label="Toggle navigation">Hub</a>
+                                    </li> 
+                                    <!-- <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-4">
+                                            <li class="nav-item"><a href="javascript:void(0)">Blog Grid Sidebar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single</a></li>
+                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single
+                                                    Sibebar</a></li>
+                                        </ul>
+                                    </li> -->
+                                    
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button add-list-button">
+                                <a href="https://app.scribbler.live/" target="_blank" class="btn">
+                                    <i class="lni lni-play"></i></a>
+                            </div>
+                            <div class="button add-list-button">
+                                <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="btn btn-alt">
+                                    <i class="lni lni-github-original"></i></a>
+                            </div>
+                            <div class="button add-list-button">
+                                <a href="https://join.scribbler.live" target="_blank" class="btn btn-alt">
+                                    <i class="lni lni-discord"></i></a>
+                            </div>
+                            <div class="button add-list-button">
+                                <a href="https://x.com/scribblerlive" target="_blank" class="btn btn-alt">
+                                    <i class="lni lni-twitter"></i></a>
+                            </div>
+                            
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <section id="home" class="hero-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="hero-content">
+                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">{{ page.title | default: site.name }} </h1>
+						
+						{% if page.description %}
+							<p class="wow fadeInLeft" data-wow-delay=".6s">
+								{{ page.description }}
+							</p>
+						{% endif %}
+
+
+                       
+						{% if page.start_link %}
+							<div class="mt-4 mb-0">
+								<a
+								href="{{ page.start_link }}"
+								target="_blank"
+								class="site-masthead__button mx-2 mb-2">page.link_description</a>
+							</div>
+						{% endif %}
+
+
+                       
+                                <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="btn btn-alt">
+                                    Github</a>&nbsp;•&nbsp; 
+                                <a href="https://join.scribbler.live" target="_blank" class="btn btn-alt">
+                                   Discord</a>&nbsp;•&nbsp; 
+                                <a href="https://x.com/scribblerlive" target="_blank" class="btn btn-alt">
+                                   X (twitter)</a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div class="hero-image wow fadeInRight" style="text-align:center" data-wow-delay=".4s">
+                       <a href="https://app.scribbler.live">
+                          <img style="width:40%;margin:auto" src="assets/images/hero/phone.png" alt="#">
+                       </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero Area -->
+
+    <!-- Start Content -->
+    
+    {{content}}
+    <!-- End Content -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        
+                        <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" alt="#">
+                                </a>
+                            </div>
+                            <p>Making JavaScript accessible to every one.</p>
+                            
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    
+  
+
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
