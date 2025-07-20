@@ -37,6 +37,18 @@ links:
       url: https://github.com/gopi-suvanam/scribbler/
       #https://github.com/gopi-suvanam/scribbler/
     - title: ''
+      icon: discord
+      #github
+      brand: true
+      url: https:/join.scribbler.live
+      #https://github.com/gopi-suvanam/scribbler/
+    - title: ''
+      icon: x-twitter
+      #github
+      brand: true
+      url: https://x.com/scribblerlive
+      #https://github.com/gopi-suvanam/scribbler/
+    - title: ''
       icon: download
       #github
       brand: false
