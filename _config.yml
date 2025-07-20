@@ -43,7 +43,7 @@ links:
       url: https:/join.scribbler.live
       #https://github.com/gopi-suvanam/scribbler/
     - title: ''
-      icon: x-twitter
+      icon: twitter
       #github
       brand: true
       url: https://x.com/scribblerlive
