@@ -8,7 +8,6 @@ link_description: Apply Now
 
 
 
----
 
 ## 🚀 Why Scribbler?
 
