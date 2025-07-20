@@ -1,6 +1,6 @@
 ---
-title: Become Campus Ambassadors for Scribbler
-description: Do you love coding, open-source, and building communities?  Join Scribbler’s Campus Ambassador Program and become the face of Scribbler at your college!
+title: Become a Scribbler Campus Ambassador – Lead, Inspire, and Grow
+description: Join the Scribbler Campus Ambassador Program and become the face of innovation at your college. Lead your peers, showcase your skills, and get recognized with certificates, goodies, and opportunities. Apply today and kickstart your journey as a tech influencer on campus!
 layout: landing
 start_link: some_form
 cta: Apply Now
