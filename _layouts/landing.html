@@ -166,12 +166,11 @@
 
                        
 						{% if page.start_link %}
-							<div class="mt-4 mb-0">
-								<a
-								href="{{ page.start_link }}"
-								target="_blank"
-								class="site-masthead__button mx-2 mb-2">page.link_description</a>
-							</div>
+
+							<div class="button" style="width:100%">
+                                <a href="{{ page.start_link }}" target="_blank" class="btn">{{page.cta}}</a>
+                            </div>
+							
 						{% endif %}
 
 
