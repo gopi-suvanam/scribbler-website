@@ -2,13 +2,15 @@
 layout: page
 title:  Campus Champions -  the Scribbler Campus Ambassador Program
 description: The Campus Champions - Scribbler's Campus Ambassador Program is more than a title - it’s a launchpad for tech-savvy, community-driven students who want to make a lasting impact on their campuses and careers.
-start_link: https://scribbler.live/some_form
+start_link: https://tally.so/r/wbQ47E
 cta: Apply Now
 ---
 
 Are you passionate about JavaScript, open source, and helping others learn to code? We're thrilled to announce the **Scribbler Campus Ambassador Program** — a unique opportunity for student leaders to champion innovation and learning on their campuses through **Scribbler**, our powerful browser-based JavaScript notebook.
 
 Whether you're a coding club lead, an open-source enthusiast, or just love teaching tech, this program is your gateway to **community leadership, skill-building, and exclusive rewards**!
+
+[Apply Now](https://tally.so/r/wbQ47E)
 
 ---
 
@@ -108,6 +110,5 @@ Host at least **three Scribbler events per semester**, such as:
 The Scribbler Campus Ambassador Program is more than a title — it’s a launchpad for **tech-savvy, community-driven students** who want to make a lasting impact on their campuses and careers.
 
 📅 **Stay tuned — Applications open soon!**
-💬 Questions? DM us or reach out at \[your email/Discord link].
+💬 Questions? DM us or reach out at [Discord link](https://join.scribbler.live).
 
-?
