@@ -4,7 +4,11 @@
         href="{{ page.start_link }}"
         target="_blank"
         class="site-masthead__button mx-2 mb-2">
-        {{ page.cta if page.cta else "Explore Here (No Login)" }}
+        {% if page.cta %}
+            {{ page.cta }}
+        {% else %}
+             Explore Here (No Login)
+        {% endif %}
     </a>
 </div>
 
