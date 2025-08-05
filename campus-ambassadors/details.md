@@ -11,19 +11,19 @@ Are you passionate about JavaScript, open source, and helping others learn to co
 Whether you're a coding club lead, an open-source enthusiast, or just love teaching tech, this program is your gateway to **community leadership, skill-building, and exclusive rewards**!
 
 [Apply Now](https://tally.so/r/wbQ47E)
-
+**Application dedlaine: 30 September 2025**
 ---
 
 ## 🎯 Program Overview
 
-**Duration:** One academic year (\~9–10 months)
+**Duration:** One semester (\~4–5 months)
 **Structure:**
 
 | Phase         | Duration   | Activities                                     |
 | ------------- | ---------- | ---------------------------------------------- |
 | Onboarding    | 2–3 weeks  | Training, resource access, community setup     |
-| Active Period | \~8 months | Events, content creation, community engagement |
-| Wrap-Up       | 1 month    | Final reporting, recognition, and exit process |
+| Active Period | \~4 months | Events, content creation, community engagement |
+| Wrap-Up       | 1 week     | Final reporting, recognition, and exit process |
 
 ✅ **Check-ins**: Quarterly progress reviews and a mid-year assessment to help you stay on track and supported.
 
