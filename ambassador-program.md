@@ -2,7 +2,7 @@
 title: Become a Scribbler Campus Ambassador – Lead, Inspire, and Grow
 description: Join the Scribbler Campus Ambassador Program and become the face of innovation at your college. Lead your peers, showcase your skills, and get recognized with certificates, goodies, and opportunities. Apply today and kickstart your journey as a tech influencer on campus!
 layout: landing
-start_link: some_form
+start_link: https://tally.so/r/wbQ47E
 cta: Apply Now
 ---
 
@@ -160,9 +160,13 @@ cta: Apply Now
                     <h2 class="wow fadeInUp" data-wow-delay=".2s">Ready to Join Our Ambassador Program?</h2>
                     <p class="wow fadeInUp" data-wow-delay=".4s">Apply now and take the first step toward becoming a community leader!</p>
                     <div class="button wow fadeInUp" data-wow-delay=".6s">
-                        <a href="linkt-to-form" target="_blank" class="btn">Apply Now</a>
+                        <a href="https://tally.so/r/wbQ47E" target="_blank" class="btn">Apply Now</a>
+                    </div>
+                    <div class="button wow fadeInUp" data-wow-delay=".6s">
+                        <a href="https://scribbler.live/campus-ambassadors/details" target="_blank" class="btn">Learn More</a>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
