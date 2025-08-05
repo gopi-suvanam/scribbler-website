@@ -1,10 +1,13 @@
 {% if page.start_link %}
 <div class="mt-4 mb-0">
     <a
-    href="{{ page.start_link }}"
-    target="_blank"
-    class="site-masthead__button mx-2 mb-2">Explore Here (No Login)</a>
+        href="{{ page.start_link }}"
+        target="_blank"
+        class="site-masthead__button mx-2 mb-2">
+        {{ page.cta if page.cta else "Explore Here (No Login)" }}
+    </a>
 </div>
+
 
 {% else %}
 
