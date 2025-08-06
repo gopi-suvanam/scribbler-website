@@ -48,8 +48,8 @@ button:focus,
 }
 
 .form-check-input:checked {
-  background-color: #fede02;
-  border-color: #fede02;
+  background-color: #ffe687;
+  border-color: #ffe687;
 }
 
 select {
