@@ -899,7 +899,7 @@ ol {
   padding-top: 180px;
   z-index: 2;
   text-align: left;
-  background-color: #fede02;
+  background-color: #ffe687;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1043,7 +1043,7 @@ ol {
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #fede02;
+  color: #ffe687;
   text-transform: uppercase;
 }
 
@@ -1118,7 +1118,7 @@ ol {
   bottom: -1px;
   height: 2px;
   width: 50px;
-  background: #fede02;
+  background: #ffe687;
   content: "";
 }
 
@@ -1137,7 +1137,7 @@ ol {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background: #fede02;
+  background: #ffe687;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1234,7 +1234,7 @@ ol {
 
 .pagination .pagination-list li.active a,
 .pagination .pagination-list li:hover a {
-  background: #fede02;
+  background: #ffe687;
   color: #555;
   border-color: transparent;
 }
@@ -1254,7 +1254,7 @@ ol {
   font-size: 15px;
   font-weight: 600;
   padding: 13px 30px;
-  background-color: #fede02;
+  background-color: #ffe687;
   color: #fff;
   border: none;
   -webkit-transition: 0.2s;
@@ -1291,7 +1291,7 @@ ol {
 }
 
 .button .btn:hover {
-  color: #fede02;
+  color: #ffe687;
   background-color: #081828;
   -webkit-box-shadow: 0px 4px 4px #0000000f;
           box-shadow: 0px 4px 4px #0000000f;
@@ -1318,7 +1318,7 @@ ol {
 
 .button .btn-alt:hover {
   background-color: #fff !important;
-  color: #fede02 !important;
+  color: #ffe687 !important;
 }
 
 .align-left {
@@ -1366,7 +1366,7 @@ ol {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #fede02;
+  background: #ffe687;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -1630,7 +1630,7 @@ ol {
 
 .header .button .btn:hover {
   background-color: #fff;
-  color: #fede02;
+  color: #ffe687;
 }
 
 .header .navbar-brand img {
@@ -1660,7 +1660,7 @@ ol {
 }
 
 .header.sticky .button .btn {
-  background-color: #fede02;
+  background-color: #ffe687;
   color: #555;
   border-color: transparent;
 }
@@ -1723,7 +1723,7 @@ ol {
 .navbar-area.sticky {
   position: fixed;
   z-index: 99;
-  background: #fede02;
+  background: #ffe687;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1988,7 +1988,7 @@ ol {
 .hero-area {
   position: relative;
   padding: 180px 0 120px 0;
-  background: #fede02;
+  background: #ffe687;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2071,7 +2071,7 @@ ol {
 
 .hero-area .hero-content .button .btn.btn-alt:hover {
   background-color: #fff;
-  color: #fede02;
+  color: #ffe687;
 }
 
 @media (max-width: 767px) {
@@ -2097,7 +2097,7 @@ ol {
   width: 50px;
   line-height: 50px;
   text-align: center;
-  color: #fede02;
+  color: #ffe687;
   background-color: #fff;
   border-radius: 50%;
   margin-left: 10px;
@@ -2253,7 +2253,7 @@ ol {
   line-height: 60px;
   text-align: center;
   display: inline-block;
-  background-color: #fede02;
+  background-color: #ffe687;
   color: #555;
   font-size: 20px;
   border-radius: 7px;
@@ -2276,7 +2276,7 @@ ol {
     Our Achievement CSS
 ========================================*/
 .our-achievement {
-  background-color: #fede02;
+  background-color: #ffe687;
   text-align: center;
   padding: 130px 0;
 }
@@ -2414,7 +2414,7 @@ ol {
 }
 
 .pricing-table .single-table .table-head .button .btn:hover {
-  background-color: #fede02;
+  background-color: #ffe687;
   color: #555;
 }
 
@@ -2441,7 +2441,7 @@ ol {
 }
 
 .pricing-table .single-table .table-content .table-list li i {
-  color: #fede02;
+  color: #ffe687;
   font-size: 14px;
   position: absolute;
   left: 0;
@@ -2452,7 +2452,7 @@ ol {
     Call To Action CSS
 ========================================*/
 .call-action {
-  background-color: #fede02;
+  background-color: #ffe687;
 }
 
 .call-action .cta-content {
@@ -2517,7 +2517,7 @@ ol {
 
 .call-action .cta-content .button .btn {
   background-color: #fff;
-  color: #fede02;
+  color: #ffe687;
 }
 
 .call-action .cta-content .button .btn:hover {
@@ -2557,7 +2557,7 @@ ol {
 
 .error-area .error-content h1 {
   font-size: 100px;
-  color: #fede02;
+  color: #ffe687;
   margin-bottom: 25px;
   font-weight: 800;
   line-height: 100px;
@@ -2692,7 +2692,7 @@ ol {
 }
 
 .footer .single-footer.f-about .social li a:hover {
-  color: #fede02;
+  color: #ffe687;
 }
 
 .footer .single-footer.f-about .social li:last-child {
@@ -2716,7 +2716,7 @@ ol {
 }
 
 .footer .single-footer.f-about .copyright-text a:hover {
-  color: #fede02;
+  color: #ffe687;
 }
 
 .footer .single-footer.f-link li {
@@ -2735,7 +2735,7 @@ ol {
 }
 
 .footer .single-footer.f-link li a:hover {
-  color: #fede02;
+  color: #ffe687;
 }
 
 .footer .single-footer h3 {
@@ -2836,7 +2836,7 @@ ol {
 }
 
 .footer .footer-newsletter .title p a {
-  color: #fede02;
+  color: #ffe687;
   text-decoration: underline;
 }
 
@@ -2946,7 +2946,7 @@ ol {
 
 .footer .footer-newsletter .newsletter-form .button .btn {
   display: inline-block;
-  background: #fede02;
+  background: #ffe687;
   color: #555;
   height: 48px;
   line-height: 48px;
@@ -2958,6 +2958,6 @@ ol {
 }
 
 .footer .footer-newsletter .newsletter-form .button .btn:hover {
-  color: #fede02;
+  color: #ffe687;
   background-color: #fff;
 }
