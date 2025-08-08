@@ -2,7 +2,7 @@
 title: How to Use OpenAI's GPT Models in JavaScript with Scribbler for Generative AI in the Browser
 description: Scribbler is a browser-based notebook that lets you connect with the OpenAI API (and others like Gemini and Groq) to generate content, prototype tools, and run AI experiments securely and interactively.
 layout: post
-categories: Scribbler,AI-ML
+categories: [Scribbler, AI-ML]
 ---
 
 Credits: This article is written by [Sudarsan Mansingh](#about-author)
