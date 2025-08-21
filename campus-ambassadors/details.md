@@ -11,7 +11,8 @@ Are you passionate about JavaScript, open source, and helping others learn to co
 Whether you're a coding club lead, an open-source enthusiast, or just love teaching tech, this program is your gateway to **community leadership, skill-building, and exclusive rewards**!
 
 [Apply Now](https://tally.so/r/wbQ47E)
-**Application dedlaine: 30 September 2025**
+
+**Application deadline: 30 September 2025**
 ---
 
 ## 🎯 Program Overview
@@ -109,6 +110,10 @@ Host at least **three Scribbler events per semester**, such as:
 
 The Scribbler Campus Ambassador Program is more than a title — it’s a launchpad for **tech-savvy, community-driven students** who want to make a lasting impact on their campuses and careers.
 
-📅 **Stay tuned — Applications open soon!**
+[Apply Now](https://tally.so/r/wbQ47E)
+
+
+📅 **Application deadline: 30 September 2025**
+
 💬 Questions? DM us or reach out at [Discord link](https://join.scribbler.live).
 
