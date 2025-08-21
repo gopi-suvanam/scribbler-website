@@ -54,13 +54,15 @@ cta: Apply Now
                 <!-- End Single Feature -->
             </div>
         </div>
-        <div class="row"
+        <div class="row">
+             <div class="col-12">
                     <div class="button wow fadeInUp" data-wow-delay=".6s">
                         <a href="https://tally.so/r/wbQ47E" target="_blank" class="btn">Apply Now</a>
                     </div>
                     <div class="button wow fadeInUp" data-wow-delay=".6s">
                         <a href="https://scribbler.live/campus-ambassadors/details" target="_blank" class="btn">Learn More</a>
                     </div>
+            </div>
         </div>
     </div>
 </section>
