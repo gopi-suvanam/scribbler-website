@@ -4,6 +4,7 @@ description: Explore how FEAScript brings finite element analysis (FEA) for heat
 categories: [Libraries, Scientific]
 layout: post
 start_link: https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/solidHeatTransferScript/HeatConduction2DFin.jsnb
+mathjax: true
 ---
 This is a guest blog by [Nikos Chamakos](#about-the-author).
 
