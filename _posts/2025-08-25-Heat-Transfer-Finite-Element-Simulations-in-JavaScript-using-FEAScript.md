@@ -3,6 +3,7 @@ title: Heat Transfer Finite Element Simulations in JavaScript using FEAScript
 description: Explore how FEAScript brings finite element analysis (FEA) for heat transfer problems directly into the browser with JavaScript.
 categories: [Libraries, Scientific]
 layout: post
+start_link: https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/solidHeatTransferScript/HeatConduction2DFin.jsnb
 ---
 This is a guest blog by [Nikos Chamakos](#about-the-author).
 
