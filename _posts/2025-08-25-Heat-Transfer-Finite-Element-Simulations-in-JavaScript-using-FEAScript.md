@@ -6,7 +6,7 @@ layout: post
 start_link: https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/solidHeatTransferScript/HeatConduction2DFin.jsnb
 mathjax: true
 ---
-This is a guest blog by [Nikos Chamakos](#about-the-author).
+_This is a guest post by [Nikos Chamakos](#about-the-author)._
 
 ## Introduction to Finite Element Analysis by FEAScript
 
