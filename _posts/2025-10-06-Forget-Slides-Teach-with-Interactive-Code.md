@@ -1,6 +1,6 @@
 ---
-title: Forget Slides — Teach with Interactive Code
-description: By integrating coding, visualization, and narrative into a single, interactive space, Scribbler enables educators to teach with **clarity, creativity, and impact**. Whether you are teaching computer science, AI, mathematics, engineering, or physics, interactive notebooks are your gateway to the classroom of the future.
+title: Forget Slides — Teach with Interactive Code Using Notebooks and Online Compilers
+description: By integrating coding, visualization, and narrative into a single, interactive space, Scribbler enables educators to teach with clarity, creativity, and impact. Whether you are teaching computer science, AI, mathematics, engineering, or physics, interactive notebooks and online compliers are your gateway to the classroom of the future.
 layout: post
 categories: [Scribbler]
 ---
