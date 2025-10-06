@@ -1,5 +1,5 @@
 ---
-title: The Future of Learning Code Is Notebook-Based
+title: The Future of Learning Code Is Notebook-Based (with Online Compiler)
 description: Why interactive notebooks like Scribbler (the online JavaScript notebook and compiler) are taking over tutorials and classrooms.
 layout: post
 categories: [JavaScript, Scribbler]
