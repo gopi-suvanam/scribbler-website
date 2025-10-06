@@ -1,6 +1,6 @@
 ---
 title: Coding is Creating – Scribbler is Your Canvas
-description: Use Scribbler to experiment with JavaScript code and express your creativity.
+description: Use Scribbler, the JavaScript notebook and online compiler, to experiment with JavaScript code and express your creativity.
 layout: post
 categories: Scribbler
 ---
