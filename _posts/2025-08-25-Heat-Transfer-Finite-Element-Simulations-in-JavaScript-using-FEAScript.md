@@ -78,11 +78,17 @@ To use FEAScript in Scribbler notebook, you must use the **`//> module`** direct
 
 ```javascript
 //> module
-import { FEAScriptModel } from "https://core.feascript.com/dist/feascript.esm.js";
+// Import FEAScript library
+// This example is build on FEAScript version 0.1.3
+import { FEAScriptModel } from "https://cdn.jsdelivr.net/gh/FEAScript/FEAScript-core@0.1.3/dist/feascript.esm.js";
 
-// Create and configure model
+// Create a new FEAScript model
 const model = new FEAScriptModel();
-model.setSolverConfig("solidHeatTransferScript");
+
+// Set solver configuration
+model.setSolverConfig("heatConductionScript");
+
+// Define mesh configuration
 model.setMeshConfig({
   meshDimension: "1D", // One-dimensional mesh
   elementOrder: "linear", // Linear basis functions (2 nodes per element)
@@ -90,16 +96,41 @@ model.setMeshConfig({
   maxX: 0.15, // Wall thickness in meters (0.15 m)
 });
 
-// Set solver method
-model.setSolverMethod("jacobi"); // Jacobi iterative solver
-
-// Apply boundary conditions
+// Define boundary conditions
 model.addBoundaryCondition("0", ["convection", 1, 25]); // Inside wall with convection to room at 25°C
 // The value 1 represents the ratio of the heat transfer coefficient (h) to the thermal conductivity (k), measured in m^-1
 model.addBoundaryCondition("1", ["constantTemp", 5]); // Outside wall at 5°C (winter conditions)
 
-// Solve the problem
+// Set solver method
+model.setSolverMethod("jacobi"); // Jacobi iterative solver
+
+// Solve the problem and get the solution
 const { solutionVector, nodesCoordinates } = model.solve();
+
+// Print results to console
+console.log("Node coordinates:", nodesCoordinates);
+console.log("Solution vector:", solutionVector);
+
+// Plot results using Plotly
+// Define trace
+const trace = {
+    x: nodesCoordinates,
+    y: solutionVector,
+    type: 'scatter',
+    mode: 'lines+markers',
+    marker: {color: 'blue'}
+};
+
+// Define layout
+const layout = {
+    title: 'Temperature distribution along wall thickness',
+    xaxis: {title: 'X-axis'},
+    yaxis: {title: 'Temperature (°C)'}
+};
+
+// Render plot
+scrib.show("<div style='height:500px;width:500px' id='line-chart'></div>")
+Plotly.newPlot("line-chart", [trace], layout);
 ```
 
 The results show how the temperature profile evolves through the thickness of the wall.
@@ -139,11 +170,17 @@ The FEAScript configuration for this 2D problem is demonstrated below:
 
 ```javascript
 //> module
-import { FEAScriptModel } from "https://core.feascript.com/dist/feascript.esm.js";
+// Import FEAScript library
+// This example is build on FEAScript version 0.1.3
+import { FEAScriptModel } from "https://cdn.jsdelivr.net/gh/FEAScript/FEAScript-core@0.1.3/dist/feascript.esm.js";
 
-// Create and configure model
+// Create a new FEAScript model
 const model = new FEAScriptModel();
-model.setSolverConfig("solidHeatTransferScript");
+
+// Set solver configuration
+model.setSolverConfig("heatConductionScript");
+
+// Define mesh configuration
 model.setMeshConfig({
   meshDimension: "2D", // Two-dimensional mesh
   elementOrder: "quadratic", // Quadratic basis functions (9 nodes per element)
@@ -153,15 +190,67 @@ model.setMeshConfig({
   maxY: 2, // Domain height in meters: 2 m (fin height)
 });
 
-// Set solver method
-model.setSolverMethod("jacobi"); // Jacobi iterative solver
-
-// Apply boundary conditions (boundaries numbered 0-3 counterclockwise from bottom)
+// Define boundary conditions (boundaries numbered 0-3 counterclockwise from bottom)
 model.addBoundaryCondition("0", ["constantTemp", 200]); // Bottom - hot boundary at 200°C
 model.addBoundaryCondition("1", ["symmetry"]); // Left - symmetry line (half-fin model)
 model.addBoundaryCondition("2", ["convection", 1, 20]); // Top - convection to air at 20°C
 // The value 1 represents the ratio of the heat transfer coefficient (h) to the thermal conductivity (k), measured in m^-1
 model.addBoundaryCondition("3", ["constantTemp", 200]); // Right - hot boundary at 200°C
+
+// Set solver method
+model.setSolverMethod("jacobi"); // Jacobi iterative solver
+
+// Solve the problem and get the solution
+const { solutionVector, nodesCoordinates } = model.solve();
+
+// Print results to console
+console.log("Node coordinates:", nodesCoordinates);
+console.log("Solution vector:", solutionVector);
+
+// Plot results using Plotly
+// Extract coordinates
+const xCoords = nodesCoordinates.nodesXCoordinates;
+const yCoords = nodesCoordinates.nodesYCoordinates;
+
+// Get unique sorted coordinate arrays
+const uniqueX = [...new Set(xCoords)].sort((a, b) => a - b);
+const uniqueY = [...new Set(yCoords)].sort((a, b) => a - b);
+
+// Create a 2D matrix for z values (temperature distribution)
+let z = Array.from({ length: uniqueY.length }, () => new Array(uniqueX.length).fill(0));
+
+// Fill z matrix
+for (let i = 0; i < xCoords.length; i++) {
+  const xi = uniqueX.indexOf(xCoords[i]);
+  const yi = uniqueY.indexOf(yCoords[i]);
+  z[yi][xi] = solutionVector[i]; 
+}
+
+// Build Plotly data
+const plotData = [{
+  z: z,
+  x: uniqueX,
+  y: uniqueY,
+  type: 'contour',
+  contours: {
+    coloring: 'heatmap'
+  },
+  colorbar: {
+    title: "Temperature (°C)"
+  }
+}];
+
+// Define layout
+const layout = {
+  margin: { l: 40, r: 40, b: 40, t: 40, pad: 5 },
+  title: "Temperature contour on the fin",
+  xaxis: { title: "X-axis" },
+  yaxis: { title: "Y-axis" }
+};
+
+// Render plot
+scrib.currCell().style.height = '500px';
+Plotly.newPlot(scrib.currCell(), plotData, layout, { displayModeBar: false });
 ```
 
 The resulting simulation shows the temperature distribution across the fin, highlighting how heat dissipates into the environment. While FEAScript includes its own plotting capabilities based on Plotly.js for browser visualization, when working within Scribbler notebook, we can leverage Scribbler's integrated plotting tools (which also use Plotly under the hood). This integration makes FEAScript particularly powerful for educational purposes and rapid prototyping within the Scribbler environment.
