@@ -135,8 +135,8 @@ Plotly.newPlot("line-chart", [trace], layout);
 
 The results show how the temperature profile evolves through the thickness of the wall.
 
-👉 [Full tutorial at FEAScript website](https://feascript.com/tutorials/HeatConduction1DWall.html)  
-👉 [Scribbler notebook](https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/solidHeatTransferScript/HeatConduction1DWall.jsnb)
+👉 [Full tutorial at FEAScript website](https://feascript.com/tutorials/heat-conduction-1d-wall.html)  
+👉 [Scribbler notebook](https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/heatConductionScript/heat-conduction-1d-wall.jsnb)
 
 ## Steady-State Heat Conduction in a Fin
 
@@ -255,8 +255,8 @@ Plotly.newPlot(scrib.currCell(), plotData, layout, { displayModeBar: false });
 
 The resulting simulation shows the temperature distribution across the fin, highlighting how heat dissipates into the environment. While FEAScript includes its own plotting capabilities based on Plotly.js for browser visualization, when working within Scribbler notebook, we can leverage Scribbler's integrated plotting tools (which also use Plotly under the hood). This integration makes FEAScript particularly powerful for educational purposes and rapid prototyping within the Scribbler environment.
 
-👉 [Full tutorial at FEAScript website](https://feascript.com/tutorials/HeatConduction2DFin.html)  
-👉 [Scribbler notebook](https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/solidHeatTransferScript/HeatConduction2DFin.jsnb)
+👉 [Full tutorial at FEAScript website](https://feascript.com/tutorials/heat-conduction-2d-fin.html)  
+👉 [Scribbler notebook](https://app.scribbler.live/?jsnb=github:nikoscham/FEAScript-Scribbler-examples/heatConductionScript/heat-conduction-2d-fin.jsnb)
 
 ## Conclusions
 
