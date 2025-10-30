@@ -3,7 +3,7 @@ title: The Browser-Native AI Notebook - Why the Future of Coding Runs in Your Br
 description: Browser native notebooks are open, local, shareable, and ridiculously accessible.
 layout: post
 start_link: https://app.scribbler.live/?jsnb=https://examples.scribbler.live/WebLLM-Experiments.jsnb
-categories: [Scribbler,AI]
+categories: [Scribbler,AI-ML]
 ---
 
 Every major shift in computing starts with a deceptively simple question:
