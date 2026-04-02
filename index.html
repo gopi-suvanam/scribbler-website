@@ -1,27 +1,117 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Scribbler - JavaScript Notebook, Online Compiler and Editor</title>
+    <title>Scribbler - Run and Share AI in the Browser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="JavaScript notebook, online compiler, and editor for interactive coding, learning, data science, scientific computing, web development, and testing. Code, collaborate, and visualize.">
+    <meta name="description" content="Run AI entirely in your browser. Generate images, chat with LLMs, train ML models, and visualize data — no server, no install, no login. Open source AI platform powered by WebGPU and JavaScript.">
+    <meta name="keywords" content="AI in browser, browser AI, WebGPU AI, image generation browser, LLM browser, machine learning JavaScript, TensorFlow.js, WebLLM, Stable Diffusion browser, data visualization, AI notebook, JavaScript AI, browser ML, on-device AI, private AI, open source AI">
+    <meta name="subject" content="Browser AI, On-Device Machine Learning, Image Generation, LLMs">
+    <meta name="category" content="Artificial Intelligence, Machine Learning, Data Science, Developer Tools, Browser AI">
+    <meta name="color-scheme" content="light dark">
 
-    <meta name="keywords" content="JavaScript, Notebook, JS Notebook, JavaScript Compiler, JavaScript Online Compiler, JavaScript Editor,Scientific Computing, JavaScript Code Editor, Interactive Coding, Web Development, Programming, Data Science, Machine Learning, AI, Data Visualization, Online Code Editor, Coding Environment, Developer Tools, Web Application Development, Front-end Development, JavaScript IDE, Online IDE">
-      <meta name="subject" content="JavaScript Notebook, JS Programming, Data Science, Scientific Computing">
-      <meta name="category" content="Web Development, Programming, Data Science, Scientific Computing, Developer Tools">
-    
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
-    <!-- ========================= CSS here ========================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#fede02', dark: '#e6c800', light: '#fff176' },
+            surface: { DEFAULT: '#ffffff', dark: '#0f1117' },
+            card: { DEFAULT: '#ffffff', dark: '#161822' },
+            muted: { DEFAULT: '#f5f6fa', dark: '#1a1d28' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
 
+    <style>
+      /* Animations */
+      @keyframes float { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+      @keyframes pulse-glow { 0%,100% { opacity: 0.4; } 50% { opacity: 0.8; } }
+      @keyframes fade-up { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slide-left { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes slide-right { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
+      @keyframes scale-in { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+      @keyframes gradient-shift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+      .animate-float { animation: float 6s ease-in-out infinite; }
+      .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
+      .animate-fade-up { animation: fade-up 0.8s ease-out both; }
+      .animate-fade-in { animation: fade-in 0.6s ease-out both; }
+      .animate-slide-left { animation: slide-left 0.8s ease-out both; }
+      .animate-slide-right { animation: slide-right 0.8s ease-out both; }
+      .animate-scale-in { animation: scale-in 0.6s ease-out both; }
+
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      .delay-400 { animation-delay: 0.4s; }
+      .delay-500 { animation-delay: 0.5s; }
+      .delay-600 { animation-delay: 0.6s; }
+      .delay-700 { animation-delay: 0.7s; }
+      .delay-800 { animation-delay: 0.8s; }
+
+      /* Intersection Observer reveal */
+      .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+
+      /* Hero gradient mesh */
+      .hero-mesh {
+        background-size: 200% 200%;
+        animation: gradient-shift 15s ease infinite;
+      }
+
+      /* Glow effects */
+      .glow-brand { box-shadow: 0 0 60px rgba(254, 222, 2, 0.15); }
+      @media (prefers-color-scheme: dark) {
+        .glow-brand { box-shadow: 0 0 80px rgba(254, 222, 2, 0.2); }
+      }
+
+      /* Nav active indicator */
+      .nav-link { position: relative; }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #fede02;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+      .nav-link:hover::after { width: 100%; }
+
+      /* Scroll-triggered counter */
+      .counter-value { font-variant-numeric: tabular-nums; }
+
+      /* Mailchimp overrides */
+      #mc_embed_shell, #mc_embed_signup { width: 100% !important; max-width: 100% !important; background: transparent !important; }
+      #mc_embed_signup form { width: 100% !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      #mc_embed_signup h2 { color: #d1d5db !important; font-size: 1.25rem !important; font-weight: 600 !important; font-family: 'Inter', sans-serif !important; }
+      #mc_embed_signup .indicates-required, #mc_embed_signup label { color: #9ca3af !important; font-family: 'Inter', sans-serif !important; }
+      #mc_embed_signup .mc-field-group { width: 100% !important; }
+      #mc_embed_signup input[type="email"] { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; background: rgba(255,255,255,0.06) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; border-radius: 10px !important; padding: 12px 16px !important; font-family: 'Inter', sans-serif !important; }
+      #mc_embed_signup input[type="submit"] { background: #fede02 !important; color: #1a1a2e !important; border-radius: 10px !important; font-weight: 600 !important; padding: 12px 28px !important; border: none !important; font-family: 'Inter', sans-serif !important; cursor: pointer; transition: all 0.2s ease; width: auto !important; min-width: 0 !important; white-space: nowrap !important; overflow: visible !important; height: auto !important; line-height: normal !important; }
+      #mc_embed_signup input[type="submit"]:hover { opacity: 0.9; transform: translateY(-1px); }
+      #mc_embed_signup .foot { display: flex !important; flex-wrap: wrap !important; align-items: center !important; gap: 12px !important; }
+      #mc_embed_signup .optionalParent { width: 100% !important; overflow: visible !important; }
+      #mc_embed_signup .clear.foot { overflow: visible !important; }
+    </style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-45Z12S039Z"></script>
@@ -29,609 +119,693 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-45Z12S039Z');
 </script>
 
-
 <!-- Mailchimp -->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6cc13bc491687fd1fd71a55ff/01cac5102c47533cd247c07a1.js");</script>
-<!-- End mailchimp -->    
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6cc13bc491687fd1fd71a55ff/01cac5102c47533cd247c07a1.js");</script>
 </head>
 
-<body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
+<body class="font-sans bg-white dark:bg-[#0f1117] text-gray-800 dark:text-gray-200 antialiased overflow-x-hidden transition-colors duration-300">
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- /End Preloader -->
+    <!-- ========================= HEADER ========================= -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <!-- Logo -->
+                <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                    Scribbler<span class="text-brand">.</span>
+                </a>
 
-    <!-- Start Header Area -->
-    <header class="header navbar-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <!-- Start Navbar -->
-                        <nav class="navbar navbar-expand-lg">
-                            <b class="navbar-brand" href="index.html">
-                                Scribbler
-                            </b>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a href="#home" class="page-scroll active"
-                                            aria-label="Toggle navigation">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="https://hub.scribbler.live" aria-label="Toggle navigation">Hub</a>
-                                    </li> 
-                                    <li class="nav-item">
-                                        <a href="#features" class="page-scroll"
-                                            aria-label="Toggle navigation">Features</a>
-                                    </li>
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="nav-link px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-brand transition-colors">Docs</a>
+                </div>
 
-                                    <li class="nav-item">
-                                        <a href="#usecases" class="page-scroll"
-                                            aria-label="Toggle navigation">Use Cases</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/docs" aria-label="Toggle navigation">Docs</a>
-                                    </li>                                    
+                <!-- Header Actions -->
+                <div class="flex items-center gap-2">
+                    <a href="https://app.scribbler.live/" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-brand text-gray-900 hover:bg-brand-dark transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md">
+                        <i class="lni lni-play text-xs"></i> Launch
+                    </a>
+                    <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="p-2 text-gray-600 dark:text-gray-400 hover:text-brand transition-colors" title="GitHub">
+                        <i class="lni lni-github-original text-lg"></i>
+                    </a>
+                    <a href="https://join.scribbler.live" target="_blank" class="hidden sm:block p-2 text-gray-600 dark:text-gray-400 hover:text-brand transition-colors" title="Discord">
+                        <i class="lni lni-discord text-lg"></i>
+                    </a>
+                    <a href="https://x.com/scribblerlive" target="_blank" class="hidden sm:block p-2 text-gray-600 dark:text-gray-400 hover:text-brand transition-colors" title="X/Twitter">
+                        <i class="lni lni-twitter text-lg"></i>
+                    </a>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-700 dark:text-gray-300" aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-open-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            <path id="menu-close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
 
-                                    <li class="nav-item">
-                                        <a href="/samples.html" aria-label="Toggle navigation">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/tutorials" aria-label="Toggle navigation">Tutorials</a>
-                                    </li>
-                                   <li class="nav-item">
-                                        <a href="/blog" aria-label="Toggle navigation">Blog</a>
-                                    </li> 
-
-                                    <!-- <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Blog</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-4">
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Grid Sidebar</a>
-                                            </li>
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single</a></li>
-                                            <li class="nav-item"><a href="javascript:void(0)">Blog Single
-                                                    Sibebar</a></li>
-                                        </ul>
-                                    </li> -->
-                                    
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                            <div class="button add-list-button">
-                                <a href="https://app.scribbler.live/" target="_blank" class="btn">
-                                    <i class="lni lni-play"></i></a>
-                            </div>
-                            <div class="button add-list-button">
-                                <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="btn btn-alt">
-                                    <i class="lni lni-github-original"></i></a>
-                            </div>
-                            <div class="button add-list-button">
-                                <a href="https://join.scribbler.live" target="_blank" class="btn btn-alt">
-                                    <i class="lni lni-discord"></i></a>
-                            </div>
-                            <div class="button add-list-button">
-                                <a href="https://x.com/scribblerlive" target="_blank" class="btn btn-alt">
-                                    <i class="lni lni-twitter"></i></a>
-                            </div>
-                            
-                        </nav>
-                        <!-- End Navbar -->
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col gap-1 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-2xl p-4 border border-gray-200/50 dark:border-gray-700/50 shadow-xl">
+                    <a href="/" class="px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">Home</a>
+                    <a href="/explore.html" class="px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">Explore</a>
+                    <a href="/learn.html" class="px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">Learn</a>
+                    <a href="/about.html" class="px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">About</a>
+                    <a href="/docs" class="px-4 py-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors">Docs</a>
+                    <div class="flex items-center gap-3 px-4 pt-3 border-t border-gray-200 dark:border-gray-700 mt-2">
+                        <a href="https://app.scribbler.live/" target="_blank" class="flex-1 text-center px-4 py-2.5 text-sm font-semibold rounded-xl bg-brand text-gray-900 hover:bg-brand-dark transition-colors">Launch App</a>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </header>
-    <!-- End Header Area -->
 
-    <!-- Start Hero Area -->
-    <section id="home" class="hero-area">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="hero-content">
-                        <h1 class="wow fadeInLeft" data-wow-delay=".4s">Scribbler - JavaScript Notebook, Online Compiler & Editor</h1>
-                        <p class="wow fadeInLeft" data-wow-delay=".6s">Simple Interface for Experimenting in JavaScript. Developed for Open Source using Open Source.</p>
-                       
-                        <p class="wow fadeInLeft" data-wow-delay=".6s"><strong>Learning • AI/ML • Scientific computation • Testing</strong></p>
-                        <p>Happy experimenting!</p>
-                        <div class="button" style="width:100%">
-                              <a href="https://app.scribbler.live/" target="_blank" class="btn">Start now (No login)</a>
-                            
-                            </div>
-                       
-                                <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="btn btn-alt">
-                                    Github</a>&nbsp;•&nbsp; 
-                                <a href="https://join.scribbler.live" target="_blank" class="btn btn-alt">
-                                   Discord</a>&nbsp;•&nbsp; 
-                                <a href="https://x.com/scribblerlive" target="_blank" class="btn btn-alt">
-                                   X (twitter)</a>
-                        
+    <!-- ========================= HERO ========================= -->
+    <section id="home" class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-brand dark:bg-[#0f1117]"></div>
+        <!-- Dark mode decorative blobs -->
+        <div class="absolute inset-0 hidden dark:block">
+            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand/10 rounded-full blur-[120px] animate-pulse-glow"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-brand/5 rounded-full blur-[100px] animate-pulse-glow delay-200"></div>
+        </div>
+        <!-- Light mode subtle pattern -->
+        <div class="absolute inset-0 dark:hidden opacity-[0.03]" style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.3) 1px, transparent 0); background-size: 40px 40px;"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 w-full">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Left content -->
+                <div class="text-center lg:text-left">
+                    <div class="animate-fade-up">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide uppercase bg-black/10 dark:bg-white/10 text-gray-800 dark:text-brand mb-6">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                            Open Source &amp; 100% In-Browser
+                        </div>
+                    </div>
+
+                    <h1 class="animate-slide-left delay-100 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-gray-900 dark:text-white">
+                        Run &amp; Share<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-brand dark:via-yellow-200 dark:to-brand">AI in the Browser</span>
+                        <span class="block text-lg sm:text-xl lg:text-2xl font-medium mt-3 text-gray-700 dark:text-gray-400">No Server. No Install. No Login.</span>
+                    </h1>
+
+                    <p class="animate-fade-up delay-300 mt-6 text-base sm:text-lg text-gray-700 dark:text-gray-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                        Generate images, chat with LLMs, train ML models, and visualize data — all running locally in your browser with WebGPU. Open source and completely private.
+                    </p>
+
+                    <div class="animate-fade-up delay-300 mt-4 flex flex-wrap justify-center lg:justify-start gap-3">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-black/5 dark:bg-white/5 text-gray-700 dark:text-gray-300">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Image Generation
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-black/5 dark:bg-white/5 text-gray-700 dark:text-gray-300">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand"></span> LLMs in Browser
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-black/5 dark:bg-white/5 text-gray-700 dark:text-gray-300">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Machine Learning
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-black/5 dark:bg-white/5 text-gray-700 dark:text-gray-300">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand"></span> Data Visualization
+                        </span>
+                    </div>
+
+                    <div class="animate-fade-up delay-400 mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                        <a href="https://app.scribbler.live/" target="_blank" class="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                            Launch Scribbler
+                            <span class="text-xs font-normal opacity-60">(No login)</span>
+                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                        <a href="#usecases" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl border-2 border-gray-900/20 dark:border-white/20 text-gray-800 dark:text-white hover:border-gray-900/40 dark:hover:border-white/40 hover:-translate-y-0.5 transition-all duration-300">
+                            See Use Cases
+                        </a>
+                    </div>
+
+                    <div class="animate-fade-up delay-500 mt-8 flex items-center gap-4 justify-center lg:justify-start text-sm">
+                        <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">GitHub</a>
+                        <span class="text-gray-400 dark:text-gray-600">&bull;</span>
+                        <a href="https://join.scribbler.live" target="_blank" class="text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">Discord</a>
+                        <span class="text-gray-400 dark:text-gray-600">&bull;</span>
+                        <a href="https://x.com/scribblerlive" target="_blank" class="text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors">X (Twitter)</a>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-12 col-12">
-                    <div class="hero-image wow fadeInRight" style="text-align:center" data-wow-delay=".4s">
-                       <a href="https://app.scribbler.live">
-                          <img style="width:40%;margin:auto" src="assets/images/hero/phone.png" alt="#">
-                       </a>
-                        
+
+                <!-- Right visual -->
+                <div class="animate-slide-right delay-300 relative flex justify-center">
+                    <div class="relative">
+                        <!-- Glow ring behind image -->
+                        <div class="absolute -inset-8 bg-gradient-to-tr from-brand/20 via-transparent to-brand/10 dark:from-brand/10 dark:to-brand/5 rounded-[3rem] blur-2xl"></div>
+                        <a href="https://app.scribbler.live" class="relative block animate-float">
+                            <img src="assets/images/hero/phone.png" alt="Scribbler App" class="relative w-48 sm:w-56 lg:w-64 mx-auto drop-shadow-2xl">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom wave -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 80" fill="none" class="w-full text-gray-50 dark:text-[#0f1117]">
+                <path d="M0 40L60 35C120 30 240 20 360 25C480 30 600 50 720 55C840 60 960 50 1080 40C1200 30 1320 20 1380 15L1440 10V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0V40Z" fill="currentColor"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========================= FEATURES ========================= -->
+    <section id="features" class="relative py-20 lg:py-28 bg-gray-50 dark:bg-[#0f1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section header -->
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-brand/10 dark:bg-brand/10 text-brand-dark dark:text-brand mb-4">Why Scribbler?</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">AI Without the Infrastructure</h2>
+                <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-base lg:text-lg">
+                    Scribbler runs AI models directly in your browser using WebGPU. No servers to manage, no APIs to pay for, no data leaving your device.
+                </p>
+            </div>
+
+            <!-- Feature grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Feature 1 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-lock text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">100% Private</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">All AI runs on your device. Your data never leaves the browser — no server, no tracking.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-star-filled text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Zero Setup</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">No backend, no install, no npm, no Python. Open a URL and start running AI instantly.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-bolt text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">WebGPU Accelerated</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Leverages WebGPU for near-native performance on LLMs, image generation, and ML inference.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-cloud-network text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Load Any Library</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Dynamically import TensorFlow.js, ONNX Runtime, Transformers.js, Plotly, and more from CDNs.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-share text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Share &amp; Collaborate</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Save notebooks as .jsnb files, share via URL, or push directly to GitHub.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="reveal group relative p-6 lg:p-8 rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand/10 dark:bg-brand/10 text-brand mb-5 group-hover:scale-110 transition-transform">
+                        <i class="lni lni-code text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Interactive Notebooks</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Mix JavaScript, HTML, CSS, and Markdown in live cells. See AI output as you code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= STATS ========================= -->
+    <section class="relative py-16 lg:py-24 bg-brand dark:bg-[#161822] overflow-hidden">
+        <!-- Decorative -->
+        <div class="absolute inset-0 dark:block hidden">
+            <div class="absolute top-0 left-1/3 w-96 h-96 bg-brand/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white">AI Meets the Browser</h2>
+                <p class="mt-3 text-gray-700 dark:text-gray-400 text-base lg:text-lg max-w-xl mx-auto">WebGPU and JavaScript are unlocking a new era of on-device AI — accessible to everyone, everywhere.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="reveal text-center">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-brand counter-value" data-target="100">0</div>
+                    <div class="text-xl font-bold text-gray-900 dark:text-brand">%</div>
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-400">Client-Side</p>
+                </div>
+                <div class="reveal text-center">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-brand counter-value" data-target="0">0</div>
+                    <div class="text-xl font-bold text-gray-900 dark:text-brand">servers</div>
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-400">Required</p>
+                </div>
+                <div class="reveal text-center">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-brand counter-value" data-target="50">0</div>
+                    <div class="text-xl font-bold text-gray-900 dark:text-brand">+</div>
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-400">AI Examples</p>
+                </div>
+                <div class="reveal text-center">
+                    <div class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-brand counter-value" data-target="5">0</div>
+                    <div class="text-xl font-bold text-gray-900 dark:text-brand">sec</div>
+                    <p class="mt-2 text-sm font-medium text-gray-700 dark:text-gray-400">To First Output</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= USE CASES ========================= -->
+    <section id="usecases" class="relative py-20 lg:py-28 bg-gray-50 dark:bg-[#0f1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section header -->
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-brand/10 dark:bg-brand/10 text-brand-dark dark:text-brand mb-4">What Can You Build?</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">Use Cases</h2>
+                <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-base lg:text-lg">
+                    From generating images to running LLMs to crunching data — all in the browser with no infrastructure.
+                </p>
+                <a href="https://hub.scribbler.live" target="_blank" class="inline-flex items-center gap-1 mt-3 text-brand hover:text-brand-dark dark:hover:text-yellow-300 font-medium text-sm transition-colors">
+                    See what others are building
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+
+            <!-- Use case cards -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Image Generation -->
+                <div class="reveal group flex flex-col rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5 overflow-hidden">
+                    <div class="p-6 border-b border-gray-100 dark:border-gray-800">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-pink-100 dark:bg-pink-900/30 text-pink-600 dark:text-pink-400 mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Image Generation</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Run Stable Diffusion and other diffusion models directly in the browser via WebGPU.</p>
+                        <a href="https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/Web-Stable-Diffusion.jsnb" target="_blank" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-brand hover:text-brand-dark dark:hover:text-yellow-300 transition-colors">
+                            Try It <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Highlights</p>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Text-to-image generation on-device.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>No API keys or cloud costs.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Experiment with prompts interactively.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Share generated images and notebooks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- LLMs in Browser -->
+                <div class="reveal group flex flex-col rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5 overflow-hidden">
+                    <div class="p-6 border-b border-gray-100 dark:border-gray-800">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">LLMs in Browser</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Chat with Llama, Phi, Gemma and other LLMs locally using WebLLM — fully private.</p>
+                        <a href="https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/WebLLM-Experiments.jsnb" target="_blank" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-brand hover:text-brand-dark dark:hover:text-yellow-300 transition-colors">
+                            Try It <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Highlights</p>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Run open-source LLMs on-device.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Build chat UIs and AI agents.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Text summarization and extraction.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Zero cost, zero latency to cloud.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="reveal group flex flex-col rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5 overflow-hidden">
+                    <div class="p-6 border-b border-gray-100 dark:border-gray-800">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Machine Learning</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Train and run ML models with TensorFlow.js, Brain.js, and ONNX Runtime Web.</p>
+                        <a href="https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/Tensorflow-ML-Example.jsnb" target="_blank" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-brand hover:text-brand-dark dark:hover:text-yellow-300 transition-colors">
+                            Try It <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Highlights</p>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Train neural networks in the browser.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Run pre-trained model inference.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Classification, regression, clustering.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Visualize training loss and metrics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Analysis & Visualization -->
+                <div class="reveal group flex flex-col rounded-2xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800 hover:border-brand/50 dark:hover:border-brand/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-brand/5 overflow-hidden">
+                    <div class="p-6 border-b border-gray-100 dark:border-gray-800">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Data Analysis &amp; Visualization</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Analyze datasets and create interactive charts with Plotly, D3, and built-in tools.</p>
+                        <a href="https://app.scribbler.live/?jsnb=https://examples.scribbler.live/AI-DataScience/Plotly-Example.jsnb" target="_blank" class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-brand hover:text-brand-dark dark:hover:text-yellow-300 transition-colors">
+                            Try It <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="p-6 flex-1">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-3">Highlights</p>
+                        <ul class="space-y-2.5">
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Interactive Plotly and D3 charts.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Load CSV, JSON, and API data.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Statistical analysis and transforms.</li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"><span class="mt-1 w-1.5 h-1.5 rounded-full bg-brand shrink-0"></span>Export visualizations as HTML.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hub + Examples buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-12 reveal">
+                <a href="https://hub.scribbler.live" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl bg-brand text-gray-900 hover:bg-brand-dark hover:-translate-y-0.5 transition-all shadow-sm hover:shadow-md">
+                    Scribbler Hub
+                </a>
+                <a href="https://examples.scribbler.live" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-brand hover:text-brand transition-all hover:-translate-y-0.5">
+                    Scribbler Examples
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= CTA ========================= -->
+    <section class="relative py-20 lg:py-28 bg-brand dark:bg-[#161822] overflow-hidden">
+        <div class="absolute inset-0 dark:block hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[150px]"></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                    Start running AI<br class="hidden sm:block"> in your browser now.
+                </h2>
+                <p class="mt-5 text-lg text-gray-700 dark:text-gray-400 max-w-xl mx-auto">
+                    No login, no download, no subscription. Just open the app and run LLMs, generate images, or visualize data — instantly.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://app.scribbler.live" target="_blank" class="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-bold rounded-2xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                        Launch Scribbler
+                        <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+                <p class="mt-10 text-base text-gray-700 dark:text-gray-400">
+                    <a href="https://tally.so/r/q4L7Dd" class="font-semibold underline decoration-2 underline-offset-4 decoration-gray-900/30 dark:decoration-brand/30 hover:decoration-gray-900 dark:hover:decoration-brand transition-colors">
+                        For enterprise use and partnerships reach out to us.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= OVERVIEW ========================= -->
+    <section id="overview" class="relative py-20 lg:py-28 bg-gray-50 dark:bg-[#0f1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 reveal">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">How It Works</h2>
+                <p class="mt-3 text-gray-600 dark:text-gray-400 text-base lg:text-lg">Get started in seconds. Load AI models, write code, and see results — all in interactive notebook cells.</p>
+                <div class="mt-6 h-px bg-gradient-to-r from-brand/50 via-gray-200 dark:via-gray-800 to-transparent"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Left column -->
+                <div class="reveal space-y-10">
+                    <!-- Getting Started -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            </span>
+                            Getting Started
+                        </h4>
+                        <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>No installation needed. Open <a href="https://app.scribbler.live/" class="text-brand hover:underline">app.scribbler.live</a> and start immediately.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>Or <a href="https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip" class="text-brand hover:underline">download</a> / clone the <a href="https://github.com/gopi-suvanam/scribbler/" class="text-brand hover:underline">GitHub repo</a> to self-host.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>No npm, no Python, no Docker. Just a browser with WebGPU support.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Quick Examples -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                            </span>
+                            Quick Examples
+                        </h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Load an LLM in one line:</p>
+                        <code class="block px-5 py-3 rounded-xl bg-gray-900 dark:bg-[#161822] text-brand font-mono text-sm border border-gray-800 dark:border-gray-700">await scrib.loadWebLLM("Llama-3.1-8B-q4f16")</code>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-4 mb-3">Plot a chart from data:</p>
+                        <code class="block px-5 py-3 rounded-xl bg-gray-900 dark:bg-[#161822] text-brand font-mono text-sm border border-gray-800 dark:border-gray-700">range(0,10,0.01).map(Math.sin).plot()</code>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mt-4 mb-3">Show any output inline:</p>
+                        <code class="block px-5 py-3 rounded-xl bg-gray-900 dark:bg-[#161822] text-brand font-mono text-sm border border-gray-800 dark:border-gray-700">scrib.show("Hello World")</code>
+                    </div>
+
+                    <!-- Example Notebooks -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                            </span>
+                            Example Notebooks
+                        </h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Browse 50+ AI and data examples in the <a href="samples.html" class="text-brand hover:underline">Gallery</a>,
+                            or explore the <a href="https://github.com/gopi-suvanam/scribbler/tree/main/examples" class="text-brand hover:underline">examples on GitHub</a>.
+                            Each notebook can be opened instantly in the app via URL.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="reveal space-y-10">
+                    <!-- Notebook Cells -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                            </span>
+                            Interactive Cells
+                        </h4>
+                        <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>Each notebook is made of code and doc cells. Code cells run JavaScript; doc cells render HTML/Markdown.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>AI model outputs — generated images, chat responses, charts — render inline below the cell.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-1 shrink-0">&bull;</span>Press &#9654; or Cmd/Ctrl-Enter to execute. Rearrange, add, or delete cells freely.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Loading AI Libraries -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                            </span>
+                            Load Any AI Library
+                        </h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Dynamically import libraries like TensorFlow.js, Transformers.js, WebLLM, ONNX Runtime, Plotly, and D3 from CDNs — no bundler needed. Libraries load on demand and stay cached.
+                        </p>
+                    </div>
+
+                    <!-- Share & Collaborate -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+                            </span>
+                            Share &amp; Collaborate
+                        </h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Save notebooks as .jsnb files and share via URL — anyone can open them instantly. Push to and pull from GitHub directly. Export notebooks or just the output as HTML.
+                        </p>
+                    </div>
+
+                    <!-- Self-Host -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                            <span class="w-8 h-8 flex items-center justify-center rounded-lg bg-brand/10 text-brand text-sm">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+                            </span>
+                            Self-Host Anywhere
+                        </h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                            Scribbler is pure static files — host it on any web server, S3 bucket, or GitHub Pages. No backend process, no database, no containers. Perfect for air-gapped or enterprise environments.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Hero Area -->
 
-    <!-- Start Features Area -->
-    <section id="features" class="features section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Experiment in JavaScript with Ease</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Features</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Scribbler is a browser-based tool to experiment in JavaScript for developers, engineers, and scientists. It is an online notebook/editor/compiler for JavaScript</p>
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-[#0a0c14] dark:bg-[#080a10]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Brand -->
+                <div>
+                    <a href="/" class="text-xl font-extrabold text-white">Scribbler<span class="text-brand">.</span></a>
+                    <p class="mt-3 text-sm text-gray-500 leading-relaxed max-w-xs">Run and share AI in the browser. Open source, private, and free.</p>
+                    <div class="flex items-center gap-4 mt-5">
+                        <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-github-original text-lg"></i></a>
+                        <a href="https://join.scribbler.live" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-discord text-lg"></i></a>
+                        <a href="https://x.com/scribblerlive" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-twitter text-lg"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-            	<div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-                        <i class="lni lni-unlock"></i>
-                        <h3>Open and Free</h3>
-                        <p>No login, lock-ins, or heavy deployment requirements. </p>
-                    </div>
-                    <!-- End Single Feature -->
+                <!-- Pages -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">Pages</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="/" class="text-sm text-gray-500 hover:text-brand transition-colors">Home</a></li>
+                        <li><a href="/explore.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Explore</a></li>
+                        <li><a href="/learn.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Learn</a></li>
+                        <li><a href="/about.html" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a></li>
+                        <li><a href="/docs" class="text-sm text-gray-500 hover:text-brand transition-colors">Docs</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-                        <i class="lni lni-star-filled"></i>
-                        <h3>Easy to Use</h3>
-                        <p>Runs without backend/node/npm/python. Can be loaded from a static file server.</p>
-                    </div>
-                    <!-- End Single Feature -->
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">Resources</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="https://hub.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Hub</a></li>
+                        <li><a href="/blog" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a></li>
+                        <li><a href="https://examples.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Examples</a></li>
+                        <li><a href="/samples.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Gallery</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-                        <i class="lni lni-laptop-phone"></i>
-                        <h3>Device Agnostic</h3>
-                        <p>Minimalistic UI and mobile responsive design, works on any modern browser.</p>
-                    </div>
-                    <!-- End Single Feature -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
-                        <i class="lni lni-cloud-network"></i>
-                        <h3>Extensible</h3>
-                        <p>Can load third-party ES-6 libraries dynamically from CDNs.</p>
-                    </div>
-                    <!-- End Single Feature -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".4s">
-                        <i class="lni lni-code"></i>
-                        <h3>JS+HTML Enabled</h3>
-                        <p>Supports JS, HTML, Markdown, and CSS for building dynamic notebooks.</p>
-                    </div>
-                    <!-- End Single Feature -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Feature -->
-                    <div class="single-feature wow fadeInUp" data-wow-delay=".6s">
-                        <i class="lni lni-github-original"></i>
-                        <h3>Github Friendly</h3>
-                        <p>Can push to and pull from Github directly from the tool.</p>
-                    </div>
-                    <!-- End Single Feature -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Features Area -->
-
-    <!-- Start Achievement Area -->
-    <section class="our-achievement section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
-                    <div class="title">
-                        <h2>JavaScript</h2>
-                        <p>JavaScript is the single most popular language for development on frontend and backend.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                                <h3 class="counter"><span id="secondo1" class="countup" cup-end="64">64</span>%</h3>
-                                <p>Use JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
-                                <h3 class="counter"><span id="secondo2" class="countup" cup-end="20">20</span>mln</h3>
-                                <p>Happy developers</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
-                                <h3 class="counter"><span id="secondo3" class="countup" cup-end="420">420</span>mln+</h3>
-                                <p>JS Github Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Achievement Area -->
-
-    <!-- Start Pricing Table Area -->
-    <section id="usecases" class="pricing-table section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">one tool, several uses</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Use Cases</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Whether you’re a beginner, an advanced developer, an AI/ML engineer, or a scientist, Scribbler has you covered.</p>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">
-							<a href="https://hub.scribbler.live" target="_blank">
-								See what others are building
-							</a>
-						</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".2s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">Learn</h4>
-                            <p>Learn JavaScript coding easy to use interface.</p>
-				<br>
-                            <div class="button">
-                                <a href="https://app.scribbler.live/#./examples/Hello-world.jsnb" class="btn">Sample Notebook</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">Key points </h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Use HTML and JS.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Interact with UI elements.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Plot charts.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Write functions, classes and other reusable code.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".4s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">Scientific Computation</h4>
-                            <p>Advanced computation including simulations, solving equations.</p>
-				<br>
-                            <div class="button">
-                                <a href="https://app.scribbler.live/#./examples/Dynamic-Simulation.jsnb" class="btn">Sample Notebook</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">Key Points</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Use math and scientific libraries.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Do complex simulations.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Visualize output.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Dynamically experiment with parameters and code.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".6s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">AI and ML</h4>
-                            <p>Use ML libraries like tensorflow.js and brain.js for training and inference.</p>
-			     <br>
-                            <div class="button">
-                                <a href="https://app.scribbler.live/?jsnb=https://examples.scribbler.live/WebLLM-Experiments.jsnb" class="btn">Sample Notebook</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">Key Points</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Train ML models.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Do inference of pre-trained models.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Use Plotly etc for visualization.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Build dynamic AI use-cases.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Single Table -->
-                    <div class="single-table wow fadeInUp" data-wow-delay=".8s">
-                        <!-- Table Head -->
-                        <div class="table-head">
-                            <h4 class="title">Testing</h4>
-                            <p>Test JavaScript code, libraries, and APIs with a simple UI.</p>
-                            <br>
-                            <div class="button">
-                                <a href="https://app.scribbler.live/?jsnb=examples/API-Testing.jsnb" class="btn">Sample Notebook</a>
-                            </div>
-                        </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
-                        <div class="table-content">
-                            <h4 class="middle-title">Key Points</h4>
-                            <!-- Table List -->
-                            <ul class="table-list">
-                                <li><i class="lni lni-checkmark-circle"></i> Test snippets of code.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Test APIs dynamically.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Integrate UI and JS testing.</li>
-                                <li><i class="lni lni-checkmark-circle"></i> Share test cases and results.</li>
-                            </ul>
-                            <!-- End Table List -->
-                        </div>
-                        <!-- End Table Content -->
-                    </div>
-                    <!-- End Single Table-->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-	            	<div class="section-title">
-						<div class="button add-list-button" style="margin-top:30px">
-							<a href= "https://hub.scribbler.live" target="_blank" class="btn">Scribbler Hub</a>
-						</div>
-						<div class="button add-list-button" style="margin-top:30px">
-							<a href= "https://examples.scribbler.live" target="_blank" class="btn">Scribbler Examples</a>
-						</div>
-					</div>
-	        </div>
-	    </div>
-        </div>
-
-    </section>
-    <!--/ End Pricing Table Area -->
-
-    <!-- Start Call To Action Area -->
-    <section class="section call-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="cta-content">
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Try the hosted version without login.
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Just click below and start coding away! No login, download, or subscription!</p>
-                        <div class="button wow fadeInUp" data-wow-delay=".6s">
-                            <a href="https://app.scribbler.live" target="_blank" class="btn">Start</a>
-                        </div>
-                        
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s"> <a href ="https://tally.so/r/q4L7Dd" >For enterprise use and partnerships reach out to us.</a>
-                        </h2>
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    
-    
-    <!-- Start Description Area -->
-    <section id="overview" class="pricing-table section">
-        <div class="container" style="line-height:2">
-        	<h2 class="wow fadeInUp" data-wow-delay=".2s">Overview.
-                        </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Explore and experiment with JavaScript, get instant output to text and iterate.</p>
-		<hr>
-            <div class="row wow fadeInUp">
-            
-		<div class="col-lg-6 wow fadeInLeft">
-		    
-		
-		    <h4 id="installing">Installing</h4>
-		    <ul>
-			    <li>- No specific installation is required. You can use the git-hosted version (without downloading anything) here: <a href="https://app.scribbler.live/">https://app.scribbler.live/</a>. </li>
-			    <li>- Alternatively, you can <a href="https://github.com/gopi-suvanam/scribbler/archive/refs/heads/main.zip">download</a> or clone the <a href="https://github.com/gopi-suvanam/scribbler/">Github repo</a> on any machine and host it in webserver.  </li>
-			    <li>- To host the app online, put the folder in web directory of the server and use the link to index.html. </li>
-			    <li>- That’s it. No no npm, no node, no pip install, no apt-get install.</li>
-		    </ul>
-			
-		    <h4 id="hello-world">Hello-World</h4>
-			
-		    <blockquote style="border-left:thick solid grey;margin:5px; padding-left:5px">
-		      <p>JavaScript: The only language where you can write the “Hello world” code in one line or in 1000.</p>
-		
-		      <p>~ Anonymous</p>
-		    </blockquote>
-		
-		    <p>Easy to start:</p>
-		
-		    <div class="language-plaintext highlighter-rouge"><div class="highlight">
-		    <code class="highlight">scrib.show("Hello World")</code></div>    </div>
-		    <p>Simple interface for array manipulation and charting:</p>
-		
-		    <div class="language-plaintext highlighter-rouge">
-			    <div class="highlight">
-			    <code>range(0,10,0.01).map(Math.sin).plot() </code>
-			    </div>    
-		    </div>
-		
-		    <h4 id="example-notebooks">Example Notebooks</h4>
-		    <p>A hello-world notebook: <a href="https://app.scribbler.live/#./examples/Hello-world.jsnb">https://app.scribbler.live/#./examples/Hello-world.jsnb</a>. More examples are added in the folder examples/ in <a href="https://github.com/gopi-suvanam/scribbler/tree/main/examples">Scribbler repository</a>. Check the <a href="samples.html">Samples page</a> for links.</p>
-		
-		  </div>
-		<div class="col-lg-6 wow fadeInLeft">
-		
-		    
-		
-		    <h4 id="cells">Cells</h4>
-		    <ul>
-			<li>- The notebook consists of cells. Each cell will have user inputted doc/code and an output. </li>
-			<li>- There is a menu at the top right corner of the cell (or above the cell in case of smaller screens). </li>
-			<li>- There are two types of cells: code and doc. The type of cell can be toggled using a switch in the cell menu. </li>
-			<li>- For code cells input and output are both shown. For doc cells, input is hidden and opens up if you click the output.</li>
-		    </ul>
-		    <h4 id="actions">Actions</h4>
-		    <p>To get the output of a cell press play ► button on the cell menu (or Cmd/Ctrl-Enter on keyboard after selecting the cell). The cell menu also has buttons for moving the cell up ↑, down ↓, adding a new cell ✛ and deleting the current cell ☓.</p>
-		
-		    <h4 id="saving">Saving</h4>
-		    <p>A notebook can be downloaded as json (has a default extension of .jsnb). IT can be loaded back into the app. The notebook or only the output can also be downloaded as html.</p>
-		
-		    <h4 id="loading">Loading</h4>
-		    <p>A .jsnb file can also be directly loaded into the app by suffixing the url of the file after “#” something like: https://app.scribbler.live/#link_to_file.jsnb. The url of the file should be accessible by the browser through GET method.</p>
-		  </div>
-		
-		</div>
-        </div>
-    </section>
-    <!--/ End Description Table Area -->
-    
-    
-    
-    
-    <!-- End Call To Action Area -->
-
-    <!-- Start Footer Area -->
-    <footer class="footer">
-        <!-- Start Footer Top -->
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        
-                        <!-- Single Widget -->
-                        <div class="single-footer f-about">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo.png" alt="#">
-                                </a>
-                            </div>
-                            <p>Making JavaScript accessible to every one.</p>
-                            
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-                    
-                    <!-- Start of Mailchimp -->
-                    <div class="col-lg-8 col-md-8 col-12">
-                        <div id="mc_embed_shell">
-                              <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-                          <style type="text/css">
-                                #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
-                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                        </style>
+                <!-- Subscribe -->
+                <div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-4">Subscribe</h4>
+                    <div id="mc_embed_shell">
                         <div id="mc_embed_signup">
                             <form action="https://github.us21.list-manage.com/subscribe/post?u=6cc13bc491687fd1fd71a55ff&amp;id=c9aabe22ac&amp;f_id=001e9be6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                                <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                    <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-                                <div id="mce-responses" class="clear foot">
-                                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group"><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="Your email"></div>
+                                    <div id="mce-responses" class="clear foot" style="display:none"></div>
+                                    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_6cc13bc491687fd1fd71a55ff_c9aabe22ac" tabindex="-1" value=""></div>
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
                                 </div>
-                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                                <input type="text" name="b_6cc13bc491687fd1fd71a55ff_c9aabe22ac" tabindex="-1" value="">
-                            </div>
-                                <div class="optionalParent">
-                                    <div class="clear foot">
-                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                        <p style="margin: 0px auto;"><a href="http://eepurl.com/iSe4PA" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
                         </div>
-                        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[11]='MMERGE11';ftypes[11]='text';fnames[19]='MMERGE19';ftypes[19]='text';fnames[18]='MMERGE18';ftypes[18]='address';fnames[17]='MMERGE17';ftypes[17]='text';fnames[16]='MMERGE16';ftypes[16]='text';fnames[15]='MMERGE15';ftypes[15]='text';fnames[14]='MMERGE14';ftypes[14]='text';fnames[13]='MMERGE13';ftypes[13]='text';fnames[12]='MMERGE12';ftypes[12]='text';fnames[10]='MMERGE10';ftypes[10]='text';fnames[1]='FNAME';ftypes[1]='text';fnames[9]='MMERGE9';ftypes[9]='text';fnames[8]='MMERGE8';ftypes[8]='text';fnames[7]='MMERGE7';ftypes[7]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[4]='PHONE';ftypes[4]='phone';fnames[3]='ADDRESS';ftypes[3]='address';fnames[2]='LNAME';ftypes[2]='text';fnames[20]='MMERGE20';ftypes[20]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
-
+                        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
                     </div>
-                    <!-- End of Mailchimp -->
-
                 </div>
             </div>
+            <div class="mt-10 pt-6 border-t border-gray-800 text-center">
+                <p class="text-xs text-gray-500">&copy; Scribbler. Open source under MIT License.</p>
+            </div>
         </div>
-        <!--/ End Footer Top -->
     </footer>
-    <!--/ End Footer Area -->
 
-    <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
-        <i class="lni lni-chevron-up"></i>
-    </a>
+    <!-- ========================= Scroll to top ========================= -->
+    <button id="scroll-top" class="fixed bottom-6 right-6 z-50 w-11 h-11 flex items-center justify-center rounded-xl bg-brand text-gray-900 shadow-lg shadow-brand/20 hover:-translate-y-1 transition-all duration-300 opacity-0 invisible" aria-label="Scroll to top">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    </button>
 
-    <!-- ========================= JS here ========================= -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    
+    <!-- ========================= JS ========================= -->
+    <script>
+    (function() {
+        // Sticky header
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white/80', 'dark:bg-[#0f1117]/80', 'backdrop-blur-xl', 'shadow-sm', 'shadow-black/5');
+            } else {
+                header.classList.remove('bg-white/80', 'dark:bg-[#0f1117]/80', 'backdrop-blur-xl', 'shadow-sm', 'shadow-black/5');
+            }
+        });
+
+        // Mobile menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const openIcon = document.getElementById('menu-open-icon');
+        const closeIcon = document.getElementById('menu-close-icon');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            openIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+
+        // Scroll to top
+        const scrollTopBtn = document.getElementById('scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+                scrollTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Intersection Observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Counter animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.dataset.target);
+                    let current = 0;
+                    const step = target / 60;
+                    const timer = setInterval(() => {
+                        current += step;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        el.textContent = Math.floor(current);
+                    }, 16);
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.counter-value').forEach(el => counterObserver.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+    })();
+    </script>
+
 </body>
-
 </html>
-
-
-

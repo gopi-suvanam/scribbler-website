@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <title>About - Scribbler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vision and the Team behind Scribbler — the open-source platform for running AI in the browser.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#fede02', dark: '#e6c800', light: '#fff176' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+
+    <style>
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+    </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-45Z12S039Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-45Z12S039Z');
+</script>
+</head>
+
+<body class="font-sans bg-white dark:bg-[#0b0d13] text-gray-800 dark:text-gray-200 antialiased min-h-screen">
+
+    <!-- ========================= HEADER ========================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-[#0b0d13]/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-14 lg:h-16">
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-xl font-extrabold tracking-tight text-gray-900 dark:text-white">Scribbler<span class="text-brand">.</span></a>
+                    <span class="hidden sm:block text-xs font-mono text-gray-400 dark:text-gray-600 border-l border-gray-200 dark:border-gray-700 pl-6">ABOUT</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="px-3 py-2 text-sm font-medium text-brand transition-colors">About</a>
+                    <a href="/docs" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Docs</a>
+                </div>
+                <a href="https://app.scribbler.live/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-brand text-gray-900 hover:bg-brand-dark transition-all hover:-translate-y-0.5 shadow-sm">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Launch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================= HERO / STORY ========================= -->
+    <section class="relative pt-24 pb-8 lg:pt-28 lg:pb-12">
+        <div class="absolute inset-0 hidden dark:block">
+            <div class="absolute top-10 left-1/4 w-[400px] h-[250px] bg-brand/5 rounded-full blur-[120px]"></div>
+            <div class="absolute top-40 right-1/3 w-[300px] h-[200px] bg-purple-500/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-brand/10 text-brand-dark dark:text-brand mb-4">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    Our Story
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                    AI should run where<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 dark:from-brand dark:via-yellow-200 dark:to-brand">your data lives.</span>
+                </h1>
+                <p class="mt-4 text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+                    Scribbler is an open-source platform that runs LLMs, image generation, machine learning, and scientific computation entirely in your browser — using WebGPU and JavaScript. No server. No install. No data leaves your machine.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= MISSION ========================= -->
+    <section class="relative py-16 lg:py-20 bg-gray-50 dark:bg-[#0f1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-brand/10 text-brand-dark dark:text-brand mb-4">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    Our Mission
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                    Democratize AI by making it<br class="hidden sm:block"> run on every device with a browser.
+                </h2>
+                <p class="mt-4 text-base text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
+                    We give developers, researchers, and students the tools to build and share AI applications without cloud dependencies:
+                </p>
+                <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="flex gap-3 p-4 rounded-xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800">
+                        <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-purple-100 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 shrink-0 mt-0.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">50+ Ready-to-Run Notebooks</h4>
+                            <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">LLM chat, Stable Diffusion, TensorFlow.js, Monte Carlo simulations, data visualization — one click to run.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 p-4 rounded-xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800">
+                        <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-emerald-100 dark:bg-emerald-900/20 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Every Major AI Library</h4>
+                            <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">WebLLM, TensorFlow.js, ONNX Runtime, Transformers.js, Plotly, D3 — loaded dynamically from CDNs.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 p-4 rounded-xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800">
+                        <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Deep Learning Paths</h4>
+                            <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Curated articles and tutorials on AI, scientific computing, image processing, and data science.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 p-4 rounded-xl bg-white dark:bg-[#161822] border border-gray-200/80 dark:border-gray-800">
+                        <div class="w-8 h-8 flex items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900 dark:text-white">Open Source &amp; Self-Hostable</h4>
+                            <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">MIT licensed. Pure static files. Host on any server, S3 bucket, or air-gapped network.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <a href="/explore.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-brand text-gray-900 hover:bg-brand-dark hover:-translate-y-0.5 transition-all shadow-sm">
+                        Explore Notebooks
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="/learn.html" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-brand hover:text-brand transition-all">
+                        Learning Paths
+                    </a>
+                    <a href="https://github.com/gopi-suvanam/scribbler/discussions" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-brand hover:text-brand transition-all">
+                        <i class="lni lni-github-original"></i> Join the Discussion
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= INTEL PARTNERSHIP ========================= -->
+    <section class="relative py-16 lg:py-20 bg-brand dark:bg-[#161822] overflow-hidden">
+        <div class="absolute inset-0 hidden dark:block">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[150px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal flex flex-col lg:flex-row items-start lg:items-center gap-10">
+                <div class="flex-1">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-black/10 dark:bg-white/10 text-gray-800 dark:text-brand mb-4">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                        Partnership Announcement
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                        Scribbler partners with Intel for browser-native AI.
+                    </h2>
+                    <p class="mt-4 text-base text-gray-800 dark:text-gray-400 leading-relaxed">
+                        We're working with Intel to bring hardware-accelerated AI inference to the browser using <strong class="text-gray-900 dark:text-white">WebNN</strong> and <strong class="text-gray-900 dark:text-white">ONNX Runtime Web</strong>. Faster Stable Diffusion, faster LLM inference, native GPU acceleration — all from a browser tab.
+                    </p>
+                    <a href="https://www.linkedin.com/posts/scribbler-live_its-official-were-thrilled-to-announce-activity-7354051356988502016--Fhc/" target="_blank" class="inline-flex items-center gap-2 mt-6 px-5 py-2.5 text-sm font-bold rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                        Read the Announcement
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+                <div class="shrink-0 hidden lg:flex flex-col items-center gap-4">
+                    <div class="w-28 h-28 flex items-center justify-center rounded-2xl bg-white dark:bg-[#0f1117] border border-gray-200 dark:border-gray-700 shadow-lg">
+                        <span class="text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">S<span class="text-brand">.</span></span>
+                    </div>
+                    <div class="text-2xl text-gray-400 dark:text-gray-600 font-bold">&times;</div>
+                    <div class="w-28 h-28 flex items-center justify-center rounded-2xl bg-white dark:bg-[#0f1117] border border-gray-200 dark:border-gray-700 shadow-lg">
+                        <span class="text-xl font-extrabold text-[#0071c5] tracking-tight">intel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= WHY IT MATTERS ========================= -->
+    <section class="relative py-16 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="reveal">
+                <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight mb-10">
+                    Why this matters.
+                </h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="p-6 rounded-2xl bg-gray-50 dark:bg-[#141620] border border-gray-200/80 dark:border-gray-800">
+                        <h3 class="text-base font-bold text-gray-900 dark:text-white mb-2">Privacy</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Your prompts, images, and data stay on your device. No logs. No training on your inputs. This isn't a feature — it's the architecture.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gray-50 dark:bg-[#141620] border border-gray-200/80 dark:border-gray-800">
+                        <h3 class="text-base font-bold text-gray-900 dark:text-white mb-2">Access</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">A student in Lagos and a researcher at MIT should have the same AI tools. Browser-based AI removes the server cost barrier.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gray-50 dark:bg-[#141620] border border-gray-200/80 dark:border-gray-800">
+                        <h3 class="text-base font-bold text-gray-900 dark:text-white mb-2">Speed</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">No round-trip to the cloud. No cold starts. No rate limits. WebGPU puts your local GPU to work — results in milliseconds.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-gray-50 dark:bg-[#141620] border border-gray-200/80 dark:border-gray-800">
+                        <h3 class="text-base font-bold text-gray-900 dark:text-white mb-2">Sharing</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Every notebook is a single URL. Share an AI experiment and they can run it immediately — no setup, no Docker, no dependency hell.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= TEAM ========================= -->
+    <section class="relative pb-20 lg:pb-28 bg-gray-50 dark:bg-[#0f1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-brand/10 text-brand-dark dark:text-brand mb-4">The People Behind Scribbler</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Our Team</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+                <!-- Bhargavi -->
+                <div class="reveal group text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="absolute -inset-2 bg-gradient-to-br from-brand/20 to-brand/5 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <img src="/bhargavi.jpeg" alt="Bhargavi Ramadugu" class="relative w-36 h-36 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Bhargavi Ramadugu</h3>
+                    <p class="text-sm font-medium text-brand mt-1">Strategy &amp; Operations</p>
+                    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        Bhargavi is a seasoned strategy and insurtech expert with a proven track record in scaling businesses. She specializes in strategy, consulting, digital innovation, and operations management.
+                    </p>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        She brings extensive experience from her work with large corporations, nonprofit organizations, and startups. At Scribbler, Bhargavi oversees strategy, operations, finance, and partner relationships. She holds an MBA from <a href="https://www.isb.edu/" target="_blank" class="text-brand hover:underline">ISB</a> and a BE from <a href="https://www.uceou.edu/" target="_blank" class="text-brand hover:underline">OUCE</a>.
+                    </p>
+                </div>
+
+                <!-- Gopi -->
+                <div class="reveal group text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="absolute -inset-2 bg-gradient-to-br from-brand/20 to-brand/5 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <img src="/gopi.jpeg" alt="Gopi Suvanam" class="relative w-36 h-36 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Gopi Suvanam</h3>
+                    <p class="text-sm font-medium text-brand mt-1">Technology &amp; Product</p>
+                    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        Gopi is an entrepreneur in the Fintech and AI/ML space with eighteen years of experience. He is a Co-Founder and Director of <a href="https://g-square.in" target="_blank" class="text-brand hover:underline">G-Square Solutions</a>, a fintech start-up offering AI and analytics services to financial institutions.
+                    </p>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        He holds an MBA from <a href="https://www.iima.ac.in/" target="_blank" class="text-brand hover:underline">IIM Ahmedabad</a> and a B.Tech in Computer Science from <a href="https://www.iitm.ac.in/" target="_blank" class="text-brand hover:underline">IIT Madras</a>. Before entrepreneurship, he worked at Deutsche Bank as VP in global markets in London and NYC. He authored <a href="https://vernonpress.com/book/1266" target="_blank" class="text-brand hover:underline">Liberty &amp; Prosperity</a> and is passionate about <a href="https://decentralized-intelligence.com" target="_blank" class="text-brand hover:underline">emerging technologies and decentralization</a>.
+                    </p>
+                </div>
+
+                <!-- Vinu -->
+                <div class="reveal group text-center">
+                    <div class="relative inline-block mb-6">
+                        <div class="absolute -inset-2 bg-gradient-to-br from-brand/20 to-brand/5 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <img src="/vinu.jpeg" alt="Vinukumar Ranganathan" class="relative w-36 h-36 rounded-full object-cover border-2 border-white dark:border-gray-800 shadow-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Vinukumar Ranganathan</h3>
+                    <p class="text-sm font-medium text-brand mt-1">Product Management</p>
+                    <p class="mt-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        Vinu has 10+ years of experience in Enterprise (B2B) and Consumer (B2C) spaces across multiple roles. He holds an MS from the <a href="https://www.berkeley.edu/" target="_blank" class="text-brand hover:underline">University of California, Berkeley</a> and a B.Tech from <a href="https://www.iitm.ac.in/" target="_blank" class="text-brand hover:underline">IIT Madras</a>.
+                    </p>
+                    <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-left">
+                        He has worked as a Product Manager at <a href="https://www.zynga.com/" target="_blank" class="text-brand hover:underline">Zynga Games</a> and Netcore Solutions. His expertise includes setting up pilots and streamlining for scale across internet, mobile, banking, education, and engineering. He has also spent 3 years in the nonprofit sector focusing on education.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-[#0a0c14] py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <a href="/" class="text-xl font-extrabold text-white">Scribbler<span class="text-brand">.</span></a>
+                <nav class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="/" class="text-sm text-gray-500 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="text-sm text-gray-500 hover:text-brand transition-colors">Docs</a>
+                    <a href="https://hub.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Hub</a>
+                    <a href="/blog" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a>
+                    <a href="https://examples.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Examples</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-github-original text-lg"></i></a>
+                    <a href="https://join.scribbler.live" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-discord text-lg"></i></a>
+                    <a href="https://x.com/scribblerlive" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-twitter text-lg"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-800 text-center">
+                <p class="text-xs text-gray-500">&copy; Scribbler. Open source under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    })();
+    </script>
+
+</body>
+</html>

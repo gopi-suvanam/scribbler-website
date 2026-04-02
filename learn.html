@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Learn - AI &amp; Scientific Computing in the Browser | Scribbler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn AI, machine learning, image processing, data science, and scientific computing — all running in the browser with JavaScript. Curated guides and tutorials.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#fede02', dark: '#e6c800', light: '#fff176' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+
+    <style>
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+
+      /* Track connector lines */
+      .track-line { position: relative; }
+      .track-line::before {
+        content: '';
+        position: absolute;
+        left: 19px;
+        top: 48px;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--line-color, #e5e7eb), transparent);
+      }
+      @media (prefers-color-scheme: dark) {
+        .track-line::before { --line-color: #2a2d3a; }
+      }
+
+      /* Article card hover */
+      .article-card { transition: all 0.25s ease; }
+      .article-card:hover { transform: translateX(4px); }
+
+      /* Progress dot */
+      .step-dot {
+        width: 10px; height: 10px; border-radius: 50%;
+        border: 2px solid currentColor;
+        background: transparent;
+        transition: all 0.3s ease;
+      }
+      .article-card:hover .step-dot { background: currentColor; }
+
+      /* Tab active state */
+      .track-tab { position: relative; }
+      .track-tab::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0; right: 0;
+        height: 2px;
+        background: transparent;
+        transition: background 0.3s ease;
+      }
+      .track-tab.active::after { background: #fede02; }
+      .track-tab.active { color: #fede02; }
+    </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-45Z12S039Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-45Z12S039Z');
+</script>
+</head>
+
+<body class="font-sans bg-white dark:bg-[#0b0d13] text-gray-800 dark:text-gray-200 antialiased min-h-screen">
+
+    <!-- ========================= HEADER ========================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-[#0b0d13]/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-14 lg:h-16">
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-xl font-extrabold tracking-tight text-gray-900 dark:text-white">Scribbler<span class="text-brand">.</span></a>
+                    <span class="hidden sm:block text-xs font-mono text-gray-400 dark:text-gray-600 border-l border-gray-200 dark:border-gray-700 pl-6">LEARN</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="px-3 py-2 text-sm font-medium text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Docs</a>
+                </div>
+                <a href="https://app.scribbler.live/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-brand text-gray-900 hover:bg-brand-dark transition-all hover:-translate-y-0.5 shadow-sm">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Launch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================= HERO ========================= -->
+    <section class="relative pt-24 pb-6 lg:pt-28 lg:pb-10">
+        <div class="absolute inset-0 hidden dark:block">
+            <div class="absolute top-0 right-1/4 w-[400px] h-[250px] bg-purple-500/5 rounded-full blur-[120px]"></div>
+            <div class="absolute top-20 left-1/3 w-[350px] h-[200px] bg-brand/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-brand/10 text-brand-dark dark:text-brand mb-4">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    Curated Learning Paths
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                    Learn AI &amp; Computing<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-900 via-gray-600 to-gray-900 dark:from-brand dark:via-yellow-200 dark:to-brand">in the Browser</span>
+                </h1>
+                <p class="mt-4 text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+                    Deep-dive guides organized into learning tracks. Each article teaches you how to build real AI and scientific computing workflows using JavaScript — no backend required.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= TRACK TABS ========================= -->
+    <section class="sticky top-14 lg:top-16 z-40 bg-white/90 dark:bg-[#0b0d13]/90 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex gap-1 overflow-x-auto py-0 -mb-px scrollbar-none" id="track-tabs">
+                <button data-track="ai" class="track-tab active whitespace-nowrap px-4 py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand transition-colors">AI &amp; LLMs</button>
+                <button data-track="xr" class="track-tab whitespace-nowrap px-4 py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand transition-colors">Image &amp; XR</button>
+                <button data-track="science" class="track-tab whitespace-nowrap px-4 py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand transition-colors">Scientific Computing</button>
+                <button data-track="data" class="track-tab whitespace-nowrap px-4 py-3 text-sm font-semibold text-gray-500 dark:text-gray-400 hover:text-brand transition-colors">Data Science</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= TRACK CONTENT ========================= -->
+    <main class="pb-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-14">
+
+            <!-- ========== AI & LLMs Track ========== -->
+            <div id="track-ai" class="track-panel">
+                <!-- Track intro -->
+                <div class="max-w-3xl mb-12">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-purple-100 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">AI &amp; Large Language Models</h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-500">17 articles &middot; From fundamentals to advanced browser AI</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Learn how to run LLMs, generate images with Stable Diffusion, and build ML pipelines — all locally in the browser using WebGPU, TensorFlow.js, and WebLLM. Start from the basics and work up to production-ready AI applications.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-x-12 gap-y-0">
+                    <!-- Column 1: Getting Started -->
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-6 flex items-center gap-2">
+                            <span class="w-5 h-px bg-purple-400"></span> Start Here
+                        </h3>
+                        <div class="space-y-1 track-line" style="--line-color: #c084fc;">
+                            <a href="/2023/03/08/Machine-Learning-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Machine Learning in JavaScript</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Foundational overview of ML concepts and how they translate to JavaScript in the browser.</p>
+                                </div>
+                            </a>
+                            <a href="/2023/04/11/Machine-learning-in-Javascript-using-TensorflowJS.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Machine Learning with TensorFlow.js</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Build and train your first neural network using TensorFlow.js — no Python needed.</p>
+                                </div>
+                            </a>
+                            <a href="/2023/04/30/Machine-Learning-in-JavaScript-using-Brainjs.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Using Brain.js for Machine Learning</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">A simpler alternative to TensorFlow — train neural nets with minimal code using Brain.js.</p>
+                                </div>
+                            </a>
+                            <a href="/2023/04/03/Text-Classification-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Text Classification in JavaScript</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Classify text content using NLP techniques directly in the browser.</p>
+                                </div>
+                            </a>
+                            <a href="/2024/10/14/Web-Base-Machine-Learning-Using-Tensorflow-js.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Building Web-Based ML Models with TensorFlow.js</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Deeper dive into building, training, and deploying ML models entirely in the browser.</p>
+                                </div>
+                            </a>
+                            <a href="/2024/05/08/Pretrained-Tensorflowjs-Models-in-Browser.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Pretrained TensorFlow.js Models in Browser</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Use pre-trained models for image recognition, pose detection, and toxicity classification.</p>
+                                </div>
+                            </a>
+                            <a href="/2024/06/28/Reinforcement-Learning-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Reinforcement Learning in JavaScript</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Train agents that learn from rewards — Q-learning and policy gradient methods in JS.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: LLMs & Generative AI -->
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-6 flex items-center gap-2 mt-8 lg:mt-0">
+                            <span class="w-5 h-px bg-purple-400"></span> LLMs &amp; Generative AI
+                        </h3>
+                        <div class="space-y-1 track-line" style="--line-color: #c084fc;">
+                            <a href="/2024/10/02/Large-Language-Models-in-the-Browser-with-WebLLM.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">LLMs in the Browser with WebLLM</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Run Llama, Phi, and Gemma locally using WebGPU — the core of browser-based AI chat.</p>
+                                </div>
+                            </a>
+                            <a href="/2023/06/01/ChatGPT-4-in-JavaScript-API.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Accessing ChatGPT-4 via OpenAI APIs</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Call cloud LLMs from JavaScript when you need more power than local models provide.</p>
+                                </div>
+                            </a>
+                            <a href="/2025/08/08/Using-OpenAI-APIs-in-JanaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">OpenAI GPT Models in JavaScript</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Use OpenAI's generative models directly in Scribbler notebooks for rapid prototyping.</p>
+                                </div>
+                            </a>
+                            <a href="/2024/11/29/Gemini-AI-Studio-API-in-Scribbler.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Google Gemini API in Scribbler</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Connect to Gemini AI Studio for multimodal generative AI experiments.</p>
+                                </div>
+                            </a>
+                            <a href="/2024/10/27/AI-Images-from-Prompts-in-JavaScript-using-Web-Stable-Diffusion.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">AI Image Generation with Stable Diffusion</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Generate images from text prompts using Web Stable Diffusion — entirely on-device.</p>
+                                </div>
+                            </a>
+                            <a href="/2025/10/31/stable-diffusion-in-the-browser.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Stable Diffusion in the Browser</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">The future of local AI image generation — how it works and what's possible today.</p>
+                                </div>
+                            </a>
+                            <a href="/2026/04/02/Stable-Diffusion-in-the-Browser-with-WebNN-ONNX.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Stable Diffusion with WebNN + ONNX Runtime</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Next-gen browser inference using WebNN for hardware-accelerated image generation.</p>
+                                </div>
+                            </a>
+                            <a href="/2025/10/30/browser-native-ai-notebooks.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-purple-400"></div></div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Browser-Native AI Notebooks</h4>
+                                    <p class="mt-1 text-xs text-gray-500 dark:text-gray-500 leading-relaxed">Why the future of AI coding environments runs in your browser — no cloud needed.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Image & XR Track ========== -->
+            <div id="track-xr" class="track-panel hidden">
+                <div class="max-w-3xl mb-12">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-pink-100 dark:bg-pink-900/20 text-pink-600 dark:text-pink-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">Image Processing &amp; Extended Reality</h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-500">9 articles &middot; Vision, AR/VR, and image manipulation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Process images, access the camera, build AR/VR experiences, and manipulate graphics using JavaScript. From basic Canvas operations to WebXR immersive applications.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-x-12 gap-y-0">
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400 mb-6 flex items-center gap-2"><span class="w-5 h-px bg-pink-400"></span> Image Processing</h3>
+                        <div class="space-y-1 track-line" style="--line-color: #f472b6;">
+                            <a href="/2024/04/05/HTML5-Image-Editing-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">HTML5 Image Editing with JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Core techniques for manipulating images using Canvas, pixels, and filters.</p></div>
+                            </a>
+                            <a href="/2023/06/16/JavaScript-Libraries-Image-Processing.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">JavaScript Libraries for Image Processing</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Survey of the best libraries for image manipulation, filtering, and transformation.</p></div>
+                            </a>
+                            <a href="/2024/06/09/Image-Manipulation-in-JavaScript-Fabirc-JS.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Advanced Image Manipulation with Fabric.js</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Build interactive canvas-based image editors with Fabric.js for XR applications.</p></div>
+                            </a>
+                            <a href="/2024/12/04/Top-6-Applications-of-Open-Source-JavaScript-Image-Manipulation-Libraries.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">6 Applications of Open-Source Image Libraries</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Real-world use cases for JavaScript image processing — from thumbnails to medical imaging.</p></div>
+                            </a>
+                            <a href="/2024/06/18/Accessing-Camera-for-XR.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Accessing the Camera for XR Applications</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Capture live camera feeds using getUserMedia and process frames in real-time.</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-pink-600 dark:text-pink-400 mb-6 flex items-center gap-2 mt-8 lg:mt-0"><span class="w-5 h-px bg-pink-400"></span> AR, VR &amp; WebXR</h3>
+                        <div class="space-y-1 track-line" style="--line-color: #f472b6;">
+                            <a href="/2023/04/10/AR-in-JavaScript-using-React.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Augmented Reality in JavaScript with React</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Build AR experiences that overlay digital content onto the real world.</p></div>
+                            </a>
+                            <a href="/2023/05/30/JavaScript-AR-Frameworks-Libraries.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">JavaScript AR Frameworks &amp; Libraries</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Compare AR.js, A-Frame, Three.js, and other tools for building immersive web apps.</p></div>
+                            </a>
+                            <a href="/2024/07/29/WebXR-With-Code-Examples.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">WebXR: Bridging Physical and Digital Worlds</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Deep dive into the WebXR API with hands-on code examples for VR and AR.</p></div>
+                            </a>
+                            <a href="/2024/09/05/XR-with-AI-using-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                                <div class="shrink-0 mt-1"><div class="step-dot text-pink-400"></div></div>
+                                <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Enhancing XR with AI through JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Combine AI models with XR — gesture recognition, scene understanding, and more.</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Scientific Computing Track ========== -->
+            <div id="track-science" class="track-panel hidden">
+                <div class="max-w-3xl mb-12">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-amber-100 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">Scientific Computing</h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-500">30 articles &middot; Numerical methods, simulation, and physics</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        From numerical integration to Monte Carlo simulations, from ODE solvers to agent-based models. Learn the full stack of scientific computing using JavaScript — a real alternative to MATLAB and Python.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-x-10 gap-y-0">
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-6 flex items-center gap-2"><span class="w-5 h-px bg-amber-400"></span> Foundations</h3>
+                        <div class="space-y-1 track-line" style="--line-color: #fbbf24;">
+                            <a href="/2024/06/24/Master-Article-on-Scientific-Computation-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Master Article: Scientific Computation in JS</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Comprehensive guide covering the full landscape of scientific JS.</p></div></a>
+                            <a href="/2024/10/04/Math-Functions-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Math Functions in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Built-in Math object and essential functions for computation.</p></div></a>
+                            <a href="/2024/09/05/Math-Libraries-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Exploring Math Libraries in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">math.js, numeric.js, and other libraries for advanced math.</p></div></a>
+                            <a href="/2024/04/13/JavaScript-Libraries-for-Scientific-Research.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">JS Libraries for Scientific Research</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Curated list of the most useful libraries for scientific work.</p></div></a>
+                            <a href="/2023/06/14/Numerical-Analysis-Linear-Algebra-NumericJS.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Numeric.js for Linear Algebra</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Solve linear systems, eigenvalues, and matrix operations.</p></div></a>
+                            <a href="/2024/07/08/Scribbler-As-JavaScript-Alternative-to-Matlab.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Scribbler as a MATLAB Alternative</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">How Scribbler compares to MATLAB for scientific workflows.</p></div></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-6 flex items-center gap-2 mt-8 lg:mt-0"><span class="w-5 h-px bg-amber-400"></span> Numerical Methods</h3>
+                        <div class="space-y-1 track-line" style="--line-color: #fbbf24;">
+                            <a href="/2023/06/07/Numerical-Analysis-in-JavaScript-for-Scientific-Computing.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Numerical Analysis in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Core numerical methods for scientific and mathematical computation.</p></div></a>
+                            <a href="/2024/04/06/Numerical-Integration-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Numerical Integration in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Trapezoidal, Simpson's, and Gaussian quadrature methods.</p></div></a>
+                            <a href="/2024/04/08/Newton-Raphson-with-JavaScript-Code.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Newton-Raphson Method</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Find roots of equations with this classic iterative algorithm.</p></div></a>
+                            <a href="/2023/06/08/Regula-Falsi-Method-for-Solving-Equations.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Regula Falsi for Solving Equations</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">The false position method — a bracketing root-finding technique.</p></div></a>
+                            <a href="/2024/05/11/Differential-Equations-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Solving Differential Equations</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Euler, RK4, and adaptive methods for ODEs in JavaScript.</p></div></a>
+                            <a href="/2024/05/09/Curve-Fitting-and-Interpolation.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Curve Fitting &amp; Interpolation</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Polynomial, spline, and least-squares curve fitting techniques.</p></div></a>
+                            <a href="/2024/04/17/Gradient-Descent-with-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Gradient Descent in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Understand the core optimization algorithm behind machine learning.</p></div></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-6 flex items-center gap-2 mt-8 lg:mt-0"><span class="w-5 h-px bg-amber-400"></span> Simulation &amp; Physics</h3>
+                        <div class="space-y-1 track-line" style="--line-color: #fbbf24;">
+                            <a href="/2024/04/09/Monte-Carlo-Simulation-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Monte Carlo Simulation</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Probabilistic methods for estimation, risk, and random sampling.</p></div></a>
+                            <a href="/2023/04/25/Scientific-Simulation-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Scientific Simulation in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Build dynamic simulations with real-time visualization.</p></div></a>
+                            <a href="/2024/09/11/Physics-Simulation-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Physics Simulation in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Particle systems, rigid bodies, and fluid dynamics in the browser.</p></div></a>
+                            <a href="/2024/05/23/Computational-Physics-with-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Computational Physics with JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Simulate physical phenomena from wave equations to N-body problems.</p></div></a>
+                            <a href="/2024/06/10/Agent-Based-Models-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Agent-Based Models in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Model emergent behavior from simple agent rules.</p></div></a>
+                            <a href="/2024/06/11/Sugarscape-Agent-Based-Model-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Sugarscape Model</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Classic agent-based simulation of resource distribution and society.</p></div></a>
+                            <a href="/2024/04/22/Implementing-Genetic-Algorithms-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Genetic Algorithms in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Evolutionary optimization for complex search problems.</p></div></a>
+                            <a href="/2025/08/25/Heat-Transfer-Finite-Element-Simulations-in-JavaScript-using-FEAScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors"><div class="shrink-0 mt-1"><div class="step-dot text-amber-400"></div></div><div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Finite Element Heat Transfer with FEAScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">FEM simulations running entirely in your browser.</p></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== Data Science Track ========== -->
+            <div id="track-data" class="track-panel hidden">
+                <div class="max-w-3xl mb-12">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-xl bg-blue-100 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white">Data Science &amp; Visualization</h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-500">5 articles &middot; Charts, statistics, and data analysis</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        Analyze datasets, build interactive visualizations, and perform statistical analysis — all in the browser. From Chart.js basics to time series analysis with Plotly.
+                    </p>
+                </div>
+
+                <div class="max-w-2xl">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-6 flex items-center gap-2"><span class="w-5 h-px bg-blue-400"></span> Data &amp; Visualization</h3>
+                    <div class="space-y-1 track-line" style="--line-color: #60a5fa;">
+                        <a href="/2025/10/06/Getting-Started-with-Chart-js.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                            <div class="shrink-0 mt-1"><div class="step-dot text-blue-400"></div></div>
+                            <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Getting Started with Chart.js</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Complete guide to creating beautiful, responsive charts with Chart.js — bar, line, pie, and more.</p></div>
+                        </a>
+                        <a href="/2024/04/04/Data-Visualization-Using-Plotlyjs.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                            <div class="shrink-0 mt-1"><div class="step-dot text-blue-400"></div></div>
+                            <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Data Visualization with Plotly.js</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Build interactive, publication-quality charts and 3D plots with Plotly's JavaScript library.</p></div>
+                        </a>
+                        <a href="/2024/04/25/JavaScript-Data-Visualization-for-Science.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                            <div class="shrink-0 mt-1"><div class="step-dot text-blue-400"></div></div>
+                            <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">JavaScript Data Visualization for Science</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Best practices and library choices for scientific and data-driven visualization.</p></div>
+                        </a>
+                        <a href="/2024/07/03/Statistical-Analysis-in-JavaScript.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                            <div class="shrink-0 mt-1"><div class="step-dot text-blue-400"></div></div>
+                            <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Statistical Analysis in JavaScript</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Descriptive stats, hypothesis testing, regression, and distributions in JS.</p></div>
+                        </a>
+                        <a href="/2024/05/28/Time-Series-Analysis-in-Scribbler.html" class="article-card group flex gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-[#141620] transition-colors">
+                            <div class="shrink-0 mt-1"><div class="step-dot text-blue-400"></div></div>
+                            <div><h4 class="text-sm font-bold text-gray-900 dark:text-white group-hover:text-brand transition-colors leading-snug">Time Series Analysis in Scribbler</h4><p class="mt-1 text-xs text-gray-500 leading-relaxed">Analyze temporal data — trends, seasonality, moving averages, and forecasting.</p></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ========================= BOTTOM CTA ========================= -->
+    <section class="py-16 bg-brand dark:bg-[#141620] border-t border-gray-200 dark:border-gray-800 relative overflow-hidden">
+        <div class="absolute inset-0 hidden dark:block"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[150px]"></div></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Ready to try it yourself?</h2>
+            <p class="mt-3 text-gray-700 dark:text-gray-400 max-w-lg mx-auto">Run any example from the Explore page or start a blank notebook. Everything runs in your browser.</p>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="/explore.html" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                    Explore Notebooks
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="https://app.scribbler.live/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl border-2 border-gray-900/20 dark:border-white/20 text-gray-800 dark:text-white hover:border-gray-900/40 dark:hover:border-white/40 transition-all">
+                    Open Blank Notebook
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-[#0a0c14] py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <a href="/" class="text-xl font-extrabold text-white">Scribbler<span class="text-brand">.</span></a>
+                <nav class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="/" class="text-sm text-gray-500 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="text-sm text-gray-500 hover:text-brand transition-colors">Docs</a>
+                    <a href="https://hub.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Hub</a>
+                    <a href="/blog" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a>
+                    <a href="https://examples.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Examples</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-github-original text-lg"></i></a>
+                    <a href="https://join.scribbler.live" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-discord text-lg"></i></a>
+                    <a href="https://x.com/scribblerlive" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-twitter text-lg"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-800 text-center">
+                <p class="text-xs text-gray-500">&copy; Scribbler. Open source under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================= JS ========================= -->
+    <script>
+    (function() {
+        const tabs = document.querySelectorAll('.track-tab');
+        const panels = document.querySelectorAll('.track-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const track = tab.dataset.track;
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                panels.forEach(p => p.classList.add('hidden'));
+                document.getElementById('track-' + track).classList.remove('hidden');
+                // Trigger reveal for newly visible items
+                document.querySelectorAll('#track-' + track + ' .article-card').forEach(el => el.classList.add('visible'));
+            });
+        });
+
+        // Reveal on scroll
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.05 });
+        document.querySelectorAll('.reveal, .article-card').forEach(el => obs.observe(el));
+    })();
+    </script>
+
+</body>
+</html>

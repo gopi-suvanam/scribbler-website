@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Explore - Scribbler AI in the Browser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore 50+ ready-to-run AI, data science, and scientific computing notebooks. Run LLMs, generate images, train ML models, and visualize data — all in your browser.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#fede02', dark: '#e6c800', light: '#fff176' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+          },
+        },
+      },
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+
+    <style>
+      .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.5s ease, transform 0.5s ease; }
+      .reveal.visible { opacity: 1; transform: translateY(0); }
+      @keyframes fade-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-up { animation: fade-up 0.6s ease-out both; }
+
+      /* Card glow on hover */
+      .card-glow { position: relative; }
+      .card-glow::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        border-radius: inherit;
+        background: linear-gradient(135deg, rgba(254,222,2,0), rgba(254,222,2,0));
+        transition: background 0.4s ease;
+        z-index: -1;
+      }
+      .card-glow:hover::before {
+        background: linear-gradient(135deg, rgba(254,222,2,0.15), rgba(254,222,2,0.05));
+      }
+
+      /* Filter pills */
+      .filter-pill { transition: all 0.2s ease; }
+      .filter-pill.active {
+        background-color: #fede02;
+        color: #1a1a2e;
+        border-color: #fede02;
+      }
+
+      /* Notebook card run button */
+      .run-btn {
+        opacity: 0;
+        transform: translateX(4px);
+        transition: all 0.3s ease;
+      }
+      .notebook-card:hover .run-btn {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+      /* Search input */
+      .search-input:focus { box-shadow: 0 0 0 2px rgba(254,222,2,0.3); }
+    </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-45Z12S039Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-45Z12S039Z');
+</script>
+</head>
+
+<body class="font-sans bg-gray-50 dark:bg-[#0b0d13] text-gray-800 dark:text-gray-200 antialiased min-h-screen">
+
+    <!-- ========================= HEADER ========================= -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/80 dark:bg-[#0b0d13]/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-14 lg:h-16">
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        Scribbler<span class="text-brand">.</span>
+                    </a>
+                    <span class="hidden sm:block text-xs font-mono text-gray-400 dark:text-gray-600 border-l border-gray-200 dark:border-gray-700 pl-6">EXPLORE</span>
+                </div>
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="/" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="px-3 py-2 text-sm font-medium text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="px-3 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-brand transition-colors">Docs</a>
+                </div>
+                <a href="https://app.scribbler.live/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-brand text-gray-900 hover:bg-brand-dark transition-all hover:-translate-y-0.5 shadow-sm">
+                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg> Launch
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================= HERO ========================= -->
+    <section class="relative pt-24 pb-8 lg:pt-28 lg:pb-12">
+        <div class="absolute inset-0 dark:block hidden">
+            <div class="absolute top-0 left-1/3 w-[500px] h-[300px] bg-brand/5 rounded-full blur-[120px]"></div>
+            <div class="absolute top-10 right-1/4 w-[300px] h-[200px] bg-purple-500/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="animate-fade-up text-center lg:text-left max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-brand/10 text-brand-dark dark:text-brand mb-4">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    50+ Ready-to-Run Notebooks
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white leading-tight">
+                    Explore AI in the Browser
+                </h1>
+                <p class="mt-3 text-base lg:text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
+                    Click any notebook to run it instantly. LLMs, image generation, ML training, data viz, simulations — no setup required.
+                </p>
+            </div>
+
+            <!-- Search + Filters -->
+            <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div class="relative w-full sm:w-80">
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <input id="search" type="text" placeholder="Search notebooks..." class="search-input w-full pl-10 pr-4 py-2.5 text-sm rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#141620] text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none transition-shadow">
+                </div>
+                <div class="flex flex-wrap gap-2" id="filters">
+                    <button data-filter="all" class="filter-pill active px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">All</button>
+                    <button data-filter="ai" class="filter-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">AI &amp; LLMs</button>
+                    <button data-filter="image" class="filter-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">Image &amp; Vision</button>
+                    <button data-filter="ml" class="filter-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">Machine Learning</button>
+                    <button data-filter="data" class="filter-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">Data &amp; Viz</button>
+                    <button data-filter="science" class="filter-pill px-3.5 py-1.5 text-xs font-semibold rounded-lg border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:border-brand hover:text-brand transition-all">Scientific</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= NOTEBOOK GRID ========================= -->
+    <section class="pb-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Count indicator -->
+            <div class="mb-6 flex items-center justify-between">
+                <p id="result-count" class="text-xs font-medium text-gray-400 dark:text-gray-500"></p>
+            </div>
+
+            <div id="notebook-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            </div>
+
+            <!-- Empty state -->
+            <div id="empty-state" class="hidden text-center py-20">
+                <svg class="w-12 h-12 mx-auto text-gray-300 dark:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <p class="mt-4 text-sm text-gray-400 dark:text-gray-500">No notebooks match your search.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================= BOTTOM CTA ========================= -->
+    <section class="relative py-16 bg-brand dark:bg-[#141620] border-t border-gray-200 dark:border-gray-800">
+        <div class="absolute inset-0 dark:block hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[150px]"></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white">Build Your Own Notebook</h2>
+            <p class="mt-3 text-gray-700 dark:text-gray-400 max-w-lg mx-auto">Start from scratch or fork any example above. Share your creation with a single URL.</p>
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="https://app.scribbler.live/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-bold rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                    Open Blank Notebook
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+                <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-xl border-2 border-gray-900/20 dark:border-white/20 text-gray-800 dark:text-white hover:border-gray-900/40 dark:hover:border-white/40 transition-all">
+                    <i class="lni lni-github-original"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="bg-[#0a0c14] py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                <a href="/" class="text-xl font-extrabold text-white">Scribbler<span class="text-brand">.</span></a>
+                <nav class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="/" class="text-sm text-gray-500 hover:text-brand transition-colors">Home</a>
+                    <a href="/explore.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Explore</a>
+                    <a href="/learn.html" class="text-sm text-gray-500 hover:text-brand transition-colors">Learn</a>
+                    <a href="/about.html" class="text-sm text-gray-500 hover:text-brand transition-colors">About</a>
+                    <a href="/docs" class="text-sm text-gray-500 hover:text-brand transition-colors">Docs</a>
+                    <a href="https://hub.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Hub</a>
+                    <a href="/blog" class="text-sm text-gray-500 hover:text-brand transition-colors">Blog</a>
+                    <a href="https://examples.scribbler.live" target="_blank" class="text-sm text-gray-500 hover:text-brand transition-colors">Examples</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/gopi-suvanam/scribbler" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-github-original text-lg"></i></a>
+                    <a href="https://join.scribbler.live" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-discord text-lg"></i></a>
+                    <a href="https://x.com/scribblerlive" target="_blank" class="text-gray-500 hover:text-brand transition-colors"><i class="lni lni-twitter text-lg"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-800 text-center">
+                <p class="text-xs text-gray-500">&copy; Scribbler. Open source under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================= JS ========================= -->
+    <script>
+    (function() {
+
+        // ---- Notebook Data ----
+        const notebooks = [
+            // === AI & LLMs ===
+            { name: "WebLLM Experiments", desc: "Chat with Llama, Phi, and Gemma models locally using WebLLM and WebGPU.", tags: ["ai"], icon: "chat", color: "purple", url: "https://examples.scribbler.live/AI-DataScience/WebLLM-Experiments.jsnb" },
+            { name: "ONNX Runtime LLM", desc: "Run large language models in the browser using ONNX Runtime Web.", tags: ["ai"], icon: "cpu", color: "purple", url: "https://examples.scribbler.live/AI-DataScience/onnx-llm.jsnb" },
+            { name: "Summarization with Transformers", desc: "Text summarization using Transformers.js — runs entirely client-side.", tags: ["ai"], icon: "doc", color: "purple", url: "https://examples.scribbler.live/AI-DataScience/Summarization-Transformers.jsnb" },
+            { name: "AI Podcast Generator", desc: "Generate podcast scripts using browser-based LLMs.", tags: ["ai"], icon: "mic", color: "purple", url: "https://examples.scribbler.live/AI-DataScience/AI-Podcast-Generator.jsnb" },
+            { name: "Scribbler AI Intro", desc: "Introduction to running AI workflows in Scribbler notebooks.", tags: ["ai"], icon: "sparkle", color: "purple", url: "https://examples.scribbler.live/AI-DataScience/Scribbler-AI-Intro.jsnb" },
+
+            // === Image Generation & Vision ===
+            { name: "Stable Diffusion in Browser", desc: "Generate images from text prompts using Stable Diffusion via WebGPU.", tags: ["image"], icon: "image", color: "pink", url: "https://examples.scribbler.live/AI-DataScience/Web-Stable-Diffusion.jsnb" },
+            { name: "Stable Diffusion Art", desc: "Create AI art with Stable Diffusion — experiment with styles and prompts.", tags: ["image"], icon: "palette", color: "pink", url: "https://examples.scribbler.live/AI-DataScience/Stable-Diffusion-Art.jsnb" },
+            { name: "Web SD Testing", desc: "Test and benchmark Stable Diffusion performance in the browser.", tags: ["image"], icon: "test", color: "pink", url: "https://examples.scribbler.live/AI-DataScience/Web-SD-Testing.jsnb" },
+            { name: "AI Story Illustrator", desc: "Generate story illustrations using AI image models.", tags: ["image", "ai"], icon: "book", color: "pink", url: "https://examples.scribbler.live/AI-DataScience/AI-Story-Illustrator.jsnb" },
+            { name: "HTML5 Image Processing", desc: "Image manipulation and filters using HTML5 Canvas APIs.", tags: ["image"], icon: "filter", color: "pink", url: "https://examples.scribbler.live/XR-ImageProcessing/HTML5-Image-Processing.jsnb" },
+            { name: "Image Libraries", desc: "Explore browser-based image processing libraries.", tags: ["image"], icon: "layers", color: "pink", url: "https://examples.scribbler.live/XR-ImageProcessing/Image-Libraries.jsnb" },
+            { name: "Accessing Camera", desc: "Capture and process live camera feeds in the browser.", tags: ["image"], icon: "camera", color: "pink", url: "https://examples.scribbler.live/XR-ImageProcessing/Accessing-Camera.jsnb" },
+            { name: "SVG vs Canvas", desc: "Compare SVG and Canvas rendering for graphics and visualization.", tags: ["image", "data"], icon: "shapes", color: "pink", url: "https://examples.scribbler.live/XR-ImageProcessing/SVG-vs-Canvas.jsnb" },
+            { name: "WebXR Example", desc: "Build augmented and virtual reality experiences in the browser.", tags: ["image"], icon: "vr", color: "pink", url: "https://examples.scribbler.live/XR-ImageProcessing/WebXR-Example.jsnb" },
+
+            // === Machine Learning ===
+            { name: "TensorFlow.js ML", desc: "Train a neural network in the browser using TensorFlow.js.", tags: ["ml"], icon: "brain", color: "emerald", url: "https://examples.scribbler.live/AI-DataScience/Tensorflow-ML-Example.jsnb" },
+            { name: "TensorFlow Pretrained Models", desc: "Run pre-trained TensorFlow models for image classification and more.", tags: ["ml"], icon: "model", color: "emerald", url: "https://examples.scribbler.live/AI-DataScience/Tensorflow-Pretrained.jsnb" },
+            { name: "Decision Trees", desc: "Build and visualize decision tree classifiers in JavaScript.", tags: ["ml"], icon: "tree", color: "emerald", url: "https://examples.scribbler.live/AI-DataScience/Decision-Trees.jsnb" },
+            { name: "Reinforcement Learning", desc: "Train RL agents directly in the browser.", tags: ["ml"], icon: "game", color: "emerald", url: "https://examples.scribbler.live/AI-DataScience/Reinforcement-Learning.jsnb" },
+            { name: "Decentralized ML Storage", desc: "Store and share ML models in a decentralized way.", tags: ["ml"], icon: "cloud", color: "emerald", url: "https://examples.scribbler.live/AI-DataScience/Decentralized-ML-Model-Storage.jsnb" },
+            { name: "Trees & Ensembles", desc: "Experiment with tree-based ensemble methods.", tags: ["ml", "science"], icon: "tree", color: "emerald", url: "https://examples.scribbler.live/Scientific%20Computation/Trees-Ensembles-Experiments.jsnb" },
+            { name: "Genetic Algorithm", desc: "Evolutionary optimization using genetic algorithms.", tags: ["ml", "science"], icon: "dna", color: "emerald", url: "https://examples.scribbler.live/Scientific%20Computation/Genetic-Algorithm.jsnb" },
+
+            // === Data & Visualization ===
+            { name: "Plotly Charts", desc: "Interactive charts and graphs using Plotly.js.", tags: ["data"], icon: "chart", color: "blue", url: "https://examples.scribbler.live/AI-DataScience/Plotly-Example.jsnb" },
+            { name: "DI-Libs Plots", desc: "Plotting with the DI-Libs visualization library.", tags: ["data"], icon: "chart", color: "blue", url: "https://examples.scribbler.live/AI-DataScience/DI-Lib-Plots.jsnb" },
+            { name: "Data Science Toolkit", desc: "Data manipulation, statistics, and analysis workflows.", tags: ["data"], icon: "table", color: "blue", url: "https://examples.scribbler.live/AI-DataScience/Data-Science.jsnb" },
+            { name: "Arquero Data Wrangling", desc: "Transform and query tabular data with Arquero.", tags: ["data", "science"], icon: "table", color: "blue", url: "https://examples.scribbler.live/Scientific%20Computation/Arquero.jsnb" },
+            { name: "Statistical Analysis", desc: "Descriptive and inferential statistics in JavaScript.", tags: ["data", "science"], icon: "sigma", color: "blue", url: "https://examples.scribbler.live/Scientific%20Computation/Statistical-Analysis.jsnb" },
+            { name: "Spectral Analysis", desc: "Frequency-domain signal analysis and FFT.", tags: ["data", "science"], icon: "wave", color: "blue", url: "https://examples.scribbler.live/Scientific%20Computation/spectral-analysis.jsnb" },
+
+            // === Scientific Computation ===
+            { name: "Dynamic Simulation", desc: "Simulate dynamic systems with real-time visualization.", tags: ["science"], icon: "orbit", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Dynamic-Simulation.jsnb" },
+            { name: "Monte Carlo Simulation", desc: "Probabilistic simulations using Monte Carlo methods.", tags: ["science"], icon: "dice", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Monte-Carlo-Simulation.jsnb" },
+            { name: "Black-Scholes Simulation", desc: "Option pricing using the Black-Scholes model.", tags: ["science"], icon: "trending", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Black-Scholes-Simulation.jsnb" },
+            { name: "Runge-Kutta ODE Solver", desc: "Solve differential equations with the Runge-Kutta method.", tags: ["science"], icon: "function", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Runge-Kutta-for-Differential-Equations.jsnb" },
+            { name: "Numerical Integration", desc: "Approximate integrals using numerical methods.", tags: ["science"], icon: "integral", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Numerical-Integration.jsnb" },
+            { name: "Matrix & Linear Algebra", desc: "Matrix operations, eigenvalues, and decompositions.", tags: ["science"], icon: "grid", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Matrix-Operations-Linear-Algebra.jsnb" },
+            { name: "Eigen Decomposition", desc: "Compute eigenvalues and eigenvectors of matrices.", tags: ["science"], icon: "grid", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Eigen-Decomposition.jsnb" },
+            { name: "SVD Decomposition", desc: "Singular Value Decomposition for dimensionality reduction.", tags: ["science"], icon: "grid", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Singular-Value-Decomposition.jsnb" },
+            { name: "Curve Fitting", desc: "Fit mathematical curves to data points.", tags: ["science", "data"], icon: "curve", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Curve-Fitting.jsnb" },
+            { name: "Cubic Spline Interpolation", desc: "Smooth interpolation through data points using cubic splines.", tags: ["science"], icon: "curve", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Cubic-Spline-Interpolation.jsnb" },
+            { name: "Solving ODEs", desc: "Numerical solutions for ordinary differential equations.", tags: ["science"], icon: "function", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Solving-ODEs.jsnb" },
+            { name: "Laminar Flow Simulation", desc: "Simulate fluid dynamics and laminar flow patterns.", tags: ["science"], icon: "flow", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Laminar-Flow.jsnb" },
+            { name: "Agent-Based Models", desc: "Simulate emergent behavior from simple agent rules.", tags: ["science"], icon: "users", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Agent-Based-Models.jsnb" },
+            { name: "Sugarscape", desc: "Classic agent-based model for resource distribution.", tags: ["science"], icon: "users", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Sugarscape.jsnb" },
+            { name: "Physics Visualization", desc: "Visualize physics simulations interactively.", tags: ["science"], icon: "atom", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Phsyics-Visualization.jsnb" },
+            { name: "Fibonacci & Golden Ratio", desc: "Explore the Fibonacci sequence and golden ratio.", tags: ["science"], icon: "spiral", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Fibonacci-Sequence-Golden-Ratio.jsnb" },
+            { name: "Monte Carlo Goals", desc: "Simulate soccer goal probabilities with Monte Carlo.", tags: ["science"], icon: "dice", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Monte-Carlo-Simulation-of-Goals.jsnb" },
+            { name: "Numerical Analysis Recipes", desc: "A collection of numerical analysis algorithms.", tags: ["science"], icon: "function", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Numerical-Analysis-Recipes.jsnb" },
+            { name: "Regula Falsi Method", desc: "Root-finding using the false position method.", tags: ["science"], icon: "function", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Regula-Falsi.jsnb" },
+            { name: "Option Pricing (MC)", desc: "Price financial options using Monte Carlo simulation.", tags: ["science"], icon: "trending", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Option-Pricing-MC.jsnb" },
+            { name: "Enumerating Primes", desc: "Algorithms for finding and enumerating prime numbers.", tags: ["science"], icon: "hash", color: "amber", url: "https://examples.scribbler.live/Scientific%20Computation/Enumerating_Primes.jsnb" },
+        ];
+
+        // ---- Icon map ----
+        const icons = {
+            chat: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>',
+            cpu: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3v2m6-2v2M9 19v2m6-2v2M3 9h2m-2 6h2m14-6h2m-2 6h2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>',
+            doc: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+            mic: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>',
+            sparkle: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>',
+            image: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>',
+            palette: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a6 6 0 00-6-6h-2"/>',
+            test: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+            book: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>',
+            filter: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>',
+            layers: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>',
+            camera: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/>',
+            shapes: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a2 2 0 012 2v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a2 2 0 01-2 2h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a2 2 0 01-2-2v-3a1 1 0 00-1-1H3a2 2 0 110-4h1a1 1 0 001-1V8a2 2 0 012-2h3a1 1 0 001-1V4z"/>',
+            vr: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>',
+            brain: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>',
+            model: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>',
+            tree: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/>',
+            game: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+            cloud: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>',
+            dna: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>',
+            chart: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
+            table: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>',
+            sigma: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4h16l-8 8 8 8H4"/>',
+            wave: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>',
+            orbit: '<circle cx="12" cy="12" r="3" stroke-width="1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 010 20 10 10 0 010-20"/>',
+            dice: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>',
+            trending: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>',
+            function: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7c0-1.1.9-2 2-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2V7zm10 0c0-1.1.9-2 2-2h3a2 2 0 012 2v3a2 2 0 01-2 2h-3a2 2 0 01-2-2V7zM4 17c0-1.1.9-2 2-2h3a2 2 0 012 2v3a2 2 0 01-2 2H6a2 2 0 01-2-2v-3z"/>',
+            grid: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/>',
+            curve: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 17c3-7 7-14 18-14"/>',
+            flow: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>',
+            users: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>',
+            atom: '<circle cx="12" cy="12" r="2" stroke-width="1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 010 20"/>',
+            spiral: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>',
+            integral: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>',
+            hash: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>',
+        };
+
+        const colorMap = {
+            purple: { bg: 'bg-purple-100 dark:bg-purple-900/20', text: 'text-purple-600 dark:text-purple-400', badge: 'bg-purple-500/10 text-purple-600 dark:text-purple-400' },
+            pink:   { bg: 'bg-pink-100 dark:bg-pink-900/20', text: 'text-pink-600 dark:text-pink-400', badge: 'bg-pink-500/10 text-pink-600 dark:text-pink-400' },
+            emerald:{ bg: 'bg-emerald-100 dark:bg-emerald-900/20', text: 'text-emerald-600 dark:text-emerald-400', badge: 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400' },
+            blue:   { bg: 'bg-blue-100 dark:bg-blue-900/20', text: 'text-blue-600 dark:text-blue-400', badge: 'bg-blue-500/10 text-blue-600 dark:text-blue-400' },
+            amber:  { bg: 'bg-amber-100 dark:bg-amber-900/20', text: 'text-amber-600 dark:text-amber-400', badge: 'bg-amber-500/10 text-amber-600 dark:text-amber-400' },
+        };
+
+        const tagLabels = { ai: 'AI & LLMs', image: 'Image & Vision', ml: 'Machine Learning', data: 'Data & Viz', science: 'Scientific' };
+
+        // ---- Render ----
+        const grid = document.getElementById('notebook-grid');
+        const countEl = document.getElementById('result-count');
+        const emptyEl = document.getElementById('empty-state');
+        const searchInput = document.getElementById('search');
+        let activeFilter = 'all';
+
+        function renderCards(items) {
+            grid.innerHTML = '';
+            if (items.length === 0) {
+                emptyEl.classList.remove('hidden');
+                countEl.textContent = '';
+                return;
+            }
+            emptyEl.classList.add('hidden');
+            countEl.textContent = items.length + ' notebook' + (items.length !== 1 ? 's' : '');
+
+            items.forEach((nb, i) => {
+                const c = colorMap[nb.color] || colorMap.blue;
+                const iconSvg = icons[nb.icon] || icons.sparkle;
+                const tagHtml = nb.tags.map(t => `<span class="px-1.5 py-0.5 text-[10px] font-semibold rounded ${c.badge}">${tagLabels[t] || t}</span>`).join('');
+
+                const card = document.createElement('a');
+                card.href = 'https://app.scribbler.live/?jsnb=' + nb.url;
+                card.target = '_blank';
+                card.className = 'notebook-card card-glow group flex flex-col p-5 rounded-2xl bg-white dark:bg-[#141620] border border-gray-200/80 dark:border-gray-800 hover:border-brand/40 dark:hover:border-brand/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:hover:shadow-brand/5 reveal';
+                card.dataset.tags = nb.tags.join(',');
+                card.dataset.name = nb.name.toLowerCase();
+                card.dataset.desc = nb.desc.toLowerCase();
+                card.innerHTML = `
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="w-9 h-9 flex items-center justify-center rounded-lg ${c.bg} ${c.text} shrink-0">
+                            <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">${iconSvg}</svg>
+                        </div>
+                        <div class="run-btn flex items-center gap-1 text-[11px] font-semibold text-brand">
+                            RUN <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-sm font-bold text-gray-900 dark:text-white mb-1 group-hover:text-brand transition-colors leading-snug">${nb.name}</h3>
+                    <p class="text-xs text-gray-500 dark:text-gray-500 leading-relaxed flex-1">${nb.desc}</p>
+                    <div class="mt-3 flex flex-wrap gap-1">${tagHtml}</div>
+                `;
+                grid.appendChild(card);
+            });
+
+            // Trigger reveal animation
+            requestAnimationFrame(() => {
+                document.querySelectorAll('.notebook-card.reveal').forEach((el, i) => {
+                    setTimeout(() => el.classList.add('visible'), i * 30);
+                });
+            });
+        }
+
+        function filterAndRender() {
+            const query = searchInput.value.toLowerCase().trim();
+            const filtered = notebooks.filter(nb => {
+                const matchFilter = activeFilter === 'all' || nb.tags.includes(activeFilter);
+                const matchSearch = !query || nb.name.toLowerCase().includes(query) || nb.desc.toLowerCase().includes(query);
+                return matchFilter && matchSearch;
+            });
+            renderCards(filtered);
+        }
+
+        // Initial render
+        renderCards(notebooks);
+
+        // Filter buttons
+        document.getElementById('filters').addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-filter]');
+            if (!btn) return;
+            activeFilter = btn.dataset.filter;
+            document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            filterAndRender();
+        });
+
+        // Search
+        searchInput.addEventListener('input', filterAndRender);
+
+        // Reveal on scroll (for any non-card reveals)
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    })();
+    </script>
+
+</body>
+</html>
