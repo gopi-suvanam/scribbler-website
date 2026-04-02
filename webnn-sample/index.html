@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribbler WebNN</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Load latest dev ONNX Runtime Web from CDN
+        async function loadOrt() {
+            const res = await fetch("https://data.jsdelivr.com/v1/packages/npm/onnxruntime-web");
+            const data = await res.json();
+            const version = data.tags.dev;
+            const script = document.createElement("script");
+            script.src = `https://cdn.jsdelivr.net/npm/onnxruntime-web@${version}/dist/ort.webgpu.min.js`;
+            script.onload = () => {
+                document.getElementById("ort-version").textContent = `ONNX Runtime Web ${version}`;
+                import("./app.js");
+            };
+            document.head.appendChild(script);
+        }
+        loadOrt();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Scribbler WebNN</h1>
+        <p class="tagline">AI that runs entirely in your browser</p>
+        <p class="subtitle" id="ort-version">Loading ONNX Runtime...</p>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" data-tab="image-tab">Image Generation</button>
+            <button class="tab" data-tab="tts-tab">Text to Speech</button>
+            <button class="tab" data-tab="llm-tab">LLM Chat</button>
+        </div>
+
+        <!-- ═══ Image Tab ═══ -->
+        <div id="image-tab" class="tab-content active">
+            <h2>Stable Diffusion</h2>
+            <p class="subtitle">Image generation powered by WebNN + ONNX Runtime</p>
+            <a href="https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-webnn/sample/WebNN-Stable-Diffusion.jsnb" target="_blank" class="notebook-btn">Try in a Notebook</a>
+
+            <div class="controls">
+                <div class="row">
+                    <label for="model-select">Model</label>
+                    <select id="model-select">
+                        <option value="sd-turbo">SD Turbo</option>
+                        <option value="sdxl-turbo">SDXL Turbo</option>
+                        <option value="sd-1.5">Stable Diffusion 1.5</option>
+                    </select>
+                    <button id="load-btn">Load Model</button>
+                </div>
+
+                <div class="row" id="steps-row" style="display:none">
+                    <label for="steps-select">Steps</label>
+                    <select id="steps-select">
+                        <option value="20">20</option>
+                        <option value="25" selected>25</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label for="prompt">Prompt</label>
+                    <input type="text" id="prompt" placeholder="a beautiful landscape painting" value="a beautiful landscape painting" disabled>
+                    <button id="generate-btn" disabled>Generate</button>
+                </div>
+
+                <div class="row">
+                    <label for="seed">Seed</label>
+                    <input type="number" id="seed" placeholder="random" min="0">
+                </div>
+            </div>
+
+            <div id="status" class="status"></div>
+            <div id="progress-bar-container" class="progress-bar-container hidden">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+
+            <canvas id="canvas" width="512" height="512"></canvas>
+
+            <div id="timing" class="timing hidden">
+                <table>
+                    <tr><td>Text Encode</td><td id="t-text-encode">-</td></tr>
+                    <tr><td>UNet Inference</td><td id="t-unet">-</td></tr>
+                    <tr><td>VAE Decode</td><td id="t-vae-decode">-</td></tr>
+                    <tr><td><strong>Total</strong></td><td id="t-total"><strong>-</strong></td></tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- ═══ TTS Tab ═══ -->
+        <div id="tts-tab" class="tab-content">
+            <h2>Kokoro TTS</h2>
+            <p class="subtitle">Text-to-speech powered by Kokoro 82M + ONNX Runtime</p>
+            <a href="https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-webnn/sample/WebNN-Kokoro-TTS.jsnb" target="_blank" class="notebook-btn">Try in a Notebook</a>
+
+            <div class="controls">
+                <div class="row">
+                    <label for="tts-dtype-select">Precision</label>
+                    <select id="tts-dtype-select"></select>
+                </div>
+
+                <div class="row">
+                    <label for="tts-device-select">Device</label>
+                    <select id="tts-device-select"></select>
+                    <button id="tts-load-btn">Load Model</button>
+                </div>
+
+                <div class="row">
+                    <label for="tts-voice-select">Voice</label>
+                    <select id="tts-voice-select"></select>
+                </div>
+
+                <div class="row">
+                    <label for="tts-text">Text</label>
+                    <input type="text" id="tts-text" placeholder="Hello, this is a test of the Kokoro TTS model." value="Hello, this is a test of the Kokoro TTS model." disabled>
+                    <button id="tts-generate-btn" disabled>Speak</button>
+                </div>
+            </div>
+
+            <div id="tts-status" class="status"></div>
+
+            <audio id="tts-audio" controls class="hidden audio-player"></audio>
+
+            <div id="tts-timing" class="timing hidden">
+                <table>
+                    <tr><td>Generation</td><td id="tts-t-generation">-</td></tr>
+                    <tr><td>Audio Duration</td><td id="tts-t-duration">-</td></tr>
+                </table>
+            </div>
+
+        </div>
+        <!-- ═══ LLM Tab ═══ -->
+        <div id="llm-tab" class="tab-content">
+            <h2>LLM Chat</h2>
+            <p class="subtitle">Text generation powered by Transformers.js + WebGPU</p>
+            <a href="https://app.scribbler.live/?jsnb=github:gopi-suvanam/scribbler-webnn/sample/WebNN-LLM-Chat.jsnb" target="_blank" class="notebook-btn">Try in a Notebook</a>
+
+            <div class="controls">
+                <div class="row">
+                    <label for="llm-model-select">Model</label>
+                    <select id="llm-model-select"></select>
+                </div>
+
+                <div class="row">
+                    <label for="llm-device-select">Device</label>
+                    <select id="llm-device-select"></select>
+                    <button id="llm-load-btn">Load Model</button>
+                </div>
+
+                <div class="row">
+                    <label for="llm-prompt">Prompt</label>
+                    <input type="text" id="llm-prompt" placeholder="What is WebNN?" value="What is WebNN?" disabled>
+                    <button id="llm-generate-btn" disabled>Generate</button>
+                </div>
+            </div>
+
+            <div id="llm-status" class="status"></div>
+
+            <pre id="llm-output" class="llm-output hidden"></pre>
+
+            <div id="llm-timing" class="timing hidden">
+                <table>
+                    <tr><td>Generation</td><td id="llm-t-generation">-</td></tr>
+                    <tr><td>Output</td><td id="llm-t-tokens">-</td></tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Tab switching
+        document.querySelectorAll(".tab").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+
+                // Lazy-load apps on first tab switch
+                if (btn.dataset.tab === "tts-tab" && !window._ttsLoaded) {
+                    window._ttsLoaded = true;
+                    import("./tts-app.js");
+                }
+                if (btn.dataset.tab === "llm-tab" && !window._llmLoaded) {
+                    window._llmLoaded = true;
+                    import("./llm-app.js");
+                }
+            });
+        });
+    </script>
+    <!-- app.js is loaded dynamically after ORT is ready -->
+</body>
+</html>

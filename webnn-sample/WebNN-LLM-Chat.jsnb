@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "name": "WebNN LLM Chat",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<h2>LLM Chat</h2>\n<p>Run large language models in the browser using <a href=\"https://huggingface.co/docs/transformers.js\">Transformers.js</a> with WebGPU acceleration.</p>\n<p><b>Models:</b> SmolLM2 135M/360M, Qwen 2.5 0.5B, Phi-4 Mini (3.8B, needs ~4 GB GPU)</p>\n<h3>Take the notebook out of sandbox</h3>\n<span id=\"llm-load-status\">Ready to load model.</span><br>\n<progress id=\"llm-progress\" max=\"100\" value=\"0\"></progress>",
+      "status": "",
+      "output": "",
+      "type": "html"
+    },
+    {
+      "code": "<div>\n  Model: <select id=\"model-select\">\n    <option value=\"qwen2.5-0.5b\" selected>Qwen 2.5 0.5B Instruct</option>\n  </select>\n  Device: <select id=\"device-select\">\n    <option value=\"webgpu\" selected>webgpu</option>\n    <option value=\"wasm\">wasm</option>\n  </select>\n  <button id=\"llm-load-btn\">Load Model</button>\n</div>\n<div style=\"margin-top:8px\">\n  Prompt: <input id=\"llm-prompt\" type=\"text\" value=\"What is WebNN?\" size=\"60\" disabled>\n  <button id=\"llm-generate-btn\" disabled>Generate</button>\n</div>\n<div style=\"margin-top:8px\">\n  <pre id=\"llm-output\" style=\"background:#1a1a2e; border:1px solid #333; border-radius:8px; padding:12px; min-height:60px; max-height:400px; overflow-y:auto; white-space:pre-wrap; word-wrap:break-word; font-size:14px; line-height:1.6\"></pre>\n</div>\n<div id=\"llm-timing\" style=\"margin-top:8px; font-family:monospace; font-size:13px\"></div>",
+      "status": "",
+      "output": "",
+      "type": "html"
+    },
+    {
+      "code": "// Load LLM pipeline from GitHub Pages\nconst LLM_BASE = \"https://decentralized-intelligence.com/scribbler-webnn/\";\nconst { LLMPipeline, AVAILABLE_MODELS } = await import(`${LLM_BASE}/llm.js`);\nwindow._LLMPipeline = LLMPipeline;\nwindow._AVAILABLE_MODELS = AVAILABLE_MODELS;\nwindow._llmPipeline = null;\nscrib.show(\"LLMPipeline loaded from \" + LLM_BASE);",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "// Load Model (uses AutoTokenizer + AutoModelForCausalLM under the hood)\nscrib.getDom(\"llm-load-btn\").onclick = async function() {\n  const loadBtn = document.getElementById(\"llm-load-btn\");\n  const progress = document.getElementById(\"llm-progress\");\n  const status = document.getElementById(\"llm-load-status\");\n  const modelId = document.getElementById(\"model-select\").value;\n  const device = document.getElementById(\"device-select\").value;\n  \n  loadBtn.disabled = true;\n  document.getElementById(\"llm-generate-btn\").disabled = true;\n  document.getElementById(\"llm-prompt\").disabled = true;\n  progress.value = 0;\n  \n  if (window._llmPipeline) {\n    status.textContent = \"Releasing previous model...\";\n    await window._llmPipeline.release();\n    window._llmPipeline = null;\n  }\n  \n  window._llmPipeline = new window._LLMPipeline(modelId, { device });\n  \n  try {\n    await window._llmPipeline.load(({ stage, message, progress: pct }) => {\n      status.textContent = message;\n      if (stage === \"import\") progress.value = 5;\n      else if (stage === \"download\" && pct) progress.value = 5 + pct * 0.9;\n      else if (stage === \"ready\") progress.value = 100;\n    });\n    const name = window._AVAILABLE_MODELS[modelId].name;\n    status.textContent = `${name} ready (${device}).`;\n    document.getElementById(\"llm-prompt\").disabled = false;\n    document.getElementById(\"llm-generate-btn\").disabled = false;\n  } catch (err) {\n    status.textContent = `Error: ${err.message}`;\n    console.error(err);\n  }\n  loadBtn.disabled = false;\n};",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "// Interactive generation with streaming\nscrib.getDom(\"llm-generate-btn\").onclick = async function() {\n  if (!window._llmPipeline) return;\n  const prompt = document.getElementById(\"llm-prompt\").value.trim();\n  if (!prompt) { document.getElementById(\"llm-load-status\").textContent = \"Enter a prompt.\"; return; }\n  const generateBtn = document.getElementById(\"llm-generate-btn\");\n  const outputEl = document.getElementById(\"llm-output\");\n  const timingDiv = document.getElementById(\"llm-timing\");\n  \n  generateBtn.disabled = true;\n  outputEl.textContent = \"\";\n  timingDiv.innerHTML = \"\";\n  document.getElementById(\"llm-load-status\").textContent = \"Generating...\";\n  \n  try {\n    const result = await window._llmPipeline.generate(prompt, {\n      onToken: (token) => {\n        outputEl.textContent += token;\n        outputEl.scrollTop = outputEl.scrollHeight;\n      }\n    });\n    document.getElementById(\"llm-load-status\").textContent = \"Done.\";\n    const words = result.text.trim().split(/\\s+/).length;\n    timingDiv.innerHTML = `Generation: ${result.generationTime.toFixed(0)} ms | ~${words} words`;\n  } catch (err) {\n    document.getElementById(\"llm-load-status\").textContent = `Error: ${err.message}`;\n    console.error(err);\n  }\n  generateBtn.disabled = false;\n};",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "// Batch: run multiple prompts and collect results\nconst prompts = [\n  \"Explain what WebNN is in one paragraph.\",\n  \"Write a haiku about artificial intelligence.\",\n  \"What are the benefits of running AI models in the browser?\",\n  \"Describe the difference between WebGPU and WebNN.\",\n  \"Write a short poem about the internet.\"\n];\n\nif (!window._llmPipeline) {\n  scrib.show(\"Please load a model first using the Load Model button above.\");\n} else {\n  const results = [];\n  \n  for (let i = 0; i < prompts.length; i++) {\n    scrib.show(`\\nPrompt ${i + 1}/5: \"${prompts[i]}\"`);\n    const result = await window._llmPipeline.generate(prompts[i]);\n    results.push({ prompt: prompts[i], ...result });\n    scrib.show(`Response (${result.generationTime.toFixed(0)} ms):`);\n    scrib.show(result.text);\n  }\n  \n  scrib.show(\"\\n--- Timing Summary ---\");\n  for (let i = 0; i < results.length; i++) {\n    scrib.show(`${i + 1}. ${results[i].generationTime.toFixed(0)} ms`);\n  }\n  const avg = results.reduce((s, r) => s + r.generationTime, 0) / results.length;\n  scrib.show(`Average: ${avg.toFixed(0)} ms per generation`);\n}",
+      "status": "",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "",
+      "status": "",
+      "output": "",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
