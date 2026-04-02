@@ -1,7 +1,7 @@
 ---
 title: Stable Diffusion in the Browser with WebNN + ONNX Runtime
 description: Running stable diffusion image generation models in the browser is a game changing experience for AI. This article explains how to do it using ONNX models, using WebNN and ONNX run time.
-start_link: https://app.scribbler.live/?jsnb=https://decentralized-intelligence.com/scribbler-webnn/sample/WebNN-Stable-Diffusion.jsnb](https://app.scribbler.live/?jsnb=https://decentralized-intelligence.com/scribbler-webnn/sample/WebNN-Stable-Diffusion.jsnb
+start_link: https://app.scribbler.live/?jsnb=https://decentralized-intelligence.com/scribbler-webnn/sample/WebNN-Stable-Diffusion.jsnb
 categories: [AI-ML,Scribbler,JavaScript]
 layout: post
 ---
