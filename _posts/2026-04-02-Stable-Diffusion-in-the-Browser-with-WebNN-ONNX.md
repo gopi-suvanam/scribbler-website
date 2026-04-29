@@ -116,12 +116,10 @@ All of this runs **inside the browser**.
 
 ## 🧩 An Easy Implementation using `scribbler-webnn/sd.js`
 
-Here’s a simplified version of how to generate an image:
 
 
 ### 1. Load ONNX Runtime (WebGPU/WebNN)
 
-From your notebook:
 
 ```javascript
 const ortRes = await fetch("https://data.jsdelivr.com/v1/packages/npm/onnxruntime-web");
