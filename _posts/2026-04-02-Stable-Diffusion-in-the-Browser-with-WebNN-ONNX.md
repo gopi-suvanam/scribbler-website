@@ -23,7 +23,7 @@ Today, with **WebNN + ONNX Runtime Web + WebGPU**, you can:
 
 This shift is profound. It turns every browser into an **AI runtime**, not just a UI.
 
-According to recent work in browser ML stacks, technologies like **WebGPU, WASM, and ONNX Runtime Web** now enable high-performance AI inference locally without servers. ([Scribbler][1])
+According to recent work in browser ML stacks, technologies like **WebGPU, WASM, and ONNX Runtime Web** now enable high-performance AI inference locally without servers. 
 
 
 
@@ -37,7 +37,7 @@ WebNN is a new web standard that allows models to run directly on:
 * CPU
 * NPU (AI accelerators)
 
-It exposes native acceleration without needing CUDA or platform-specific code. ([ONNX Runtime][2])
+It exposes native acceleration without needing CUDA or platform-specific code. 
 
 👉 Think of it as:
 
@@ -60,7 +60,7 @@ It supports:
 * WebNN execution provider
 * WASM fallback
 
-It can deliver **massive speedups (20x–500x vs CPU in some cases)** when GPU is used. ([ONNX Runtime][3])
+It can deliver **massive speedups (20x–500x vs CPU in some cases)** when GPU is used. 
 
 
 
@@ -144,7 +144,7 @@ const { SDPipeline, AVAILABLE_MODELS } = await import(`${SD_BASE}/sd.js`);
 
 
 
-### 3. Create Pipeline (THIS replaces my wrong `SD.load()`)
+### 3. Create Pipeline
 
 ```javascript
 const pipeline = new SDPipeline({
@@ -192,9 +192,9 @@ await pipeline.draw(result, canvas);
 ```
 
 
-# See of yourself
+# See for yourself
 
-### 🖥️ Sample Page (What It Looks Like)
+### 🖥️ Sample Page
 
 Checkout a simple sample html page that illustrates the power of WebNN:
 
@@ -206,7 +206,7 @@ Checkout a simple sample html page that illustrates the power of WebNN:
 
 
 
-### 📓 Scribbler Notebook Experience
+### 📓 Scribbler Notebook
 
 We can also use WebNN in Scribbler notebooks. This is where things get interesting:
 
@@ -404,7 +404,7 @@ When Stable Diffusion runs:
 * On **any GPU**
 * Inside a **browser tab**
 
-…it stops being “AI infrastructure” and becomes:
+_it stops being “AI infrastructure” and becomes:
 
 > **a primitive of the web itself**
 
