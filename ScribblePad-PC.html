@@ -1,0 +1,414 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<style>
+/* ── ScribblePad Brand Tokens ── */
+:root{
+  --sp-primary:#6366f1;--sp-primary-dk:#4f46e5;
+  --sp-secondary:#8b5cf6;--sp-cyan:#06b6d4;
+  --sp-accent:#fede02;--sp-dark:#0f172a;--sp-darker:#020617;
+  --sp-gradient:linear-gradient(135deg,#6366f1 0%,#8b5cf6 50%,#06b6d4 100%);
+  --sp-gradient-warm:linear-gradient(135deg,#fede02 0%,#f59e0b 50%,#ec4899 100%);
+  --sp-gradient-r:linear-gradient(135deg,#06b6d4 0%,#8b5cf6 50%,#6366f1 100%);
+  --sp-font-head:'Space Grotesk',system-ui,sans-serif;
+  --sp-font-body:'DM Sans',system-ui,sans-serif;
+  --sp-font-mono:'JetBrains Mono',monospace;
+}
+/* Typography helpers */
+.sp-head{font-family:var(--sp-font-head)}
+.sp-body{font-family:var(--sp-font-body)}
+/* Gradient text */
+.sp-gradient-text{background:var(--sp-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sp-gradient-text-warm{background:var(--sp-gradient-warm);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+/* Gradient backgrounds */
+.sp-bg-gradient{background:var(--sp-gradient)}
+.sp-bg-gradient-warm{background:var(--sp-gradient-warm)}
+/* Animated mesh background */
+.sp-bg-mesh{background:linear-gradient(-45deg,#0f172a,#1e1b4b,#0c1a2e,#130f2e);background-size:400% 400%;animation:sp-mesh 14s ease infinite}
+@keyframes sp-mesh{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+/* Glow card (for dark backgrounds) */
+.sp-card{background:rgba(255,255,255,.03);border:1px solid rgba(99,102,241,.25);border-radius:1rem;backdrop-filter:blur(12px);transition:border-color .2s,box-shadow .2s}
+.sp-card:hover{border-color:rgba(99,102,241,.55);box-shadow:0 0 24px rgba(99,102,241,.15)}
+/* Brand button */
+.sp-btn{display:inline-block;background:var(--sp-gradient);color:#fff;font-family:var(--sp-font-head);font-weight:600;padding:.75rem 1.75rem;border-radius:.75rem;border:none;cursor:pointer;transition:opacity .2s,transform .2s;text-decoration:none}
+.sp-btn:hover{opacity:.88;transform:translateY(-2px)}
+.sp-btn-outline{display:inline-block;background:transparent;color:#6366f1;font-family:var(--sp-font-head);font-weight:600;padding:.75rem 1.75rem;border-radius:.75rem;border:1.5px solid #6366f1;cursor:pointer;transition:background .2s,color .2s;text-decoration:none}
+.sp-btn-outline:hover{background:#6366f1;color:#fff}
+/* Swiper slide-deck — reliable full-height slides independent of Tailwind timing */
+.sp-deck{display:block!important;height:100vh!important;width:100%}
+.sp-deck .swiper-wrapper{height:100%!important}
+.sp-deck .swiper-slide{height:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;position:relative!important;overflow:hidden}
+/* Canvas animation wrappers */
+.sp-bg-stars,.sp-bg-network{position:relative;overflow:hidden}
+.sp-bg-stars canvas,.sp-bg-network canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.sp-bg-stars>*:not(canvas),.sp-bg-network>*:not(canvas){position:relative;z-index:1}
+</style>
+<script>
+(function(){
+  /* ── Stars ── */
+  function stars(el){
+    var cv=document.createElement('canvas');
+    el.insertBefore(cv,el.firstChild);
+    var c=cv.getContext('2d'),ss=[];
+    function sz(){var r=el.getBoundingClientRect();cv.width=Math.round(r.width)||800;cv.height=Math.round(r.height)||600}
+    function mk(){return{x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.4+.2,o:Math.random()*.7+.1,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,do:(Math.random()-.5)*.012}}
+    function init(){sz();ss=Array.from({length:140},mk)}
+    function draw(){
+      c.clearRect(0,0,cv.width,cv.height);
+      ss.forEach(function(s){
+        c.beginPath();c.arc(s.x,s.y,s.r,0,6.283);
+        c.fillStyle='rgba(255,255,255,'+s.o.toFixed(2)+')';c.fill();
+        s.x+=s.vx;s.y+=s.vy;s.o+=s.do;
+        if(s.o<.05||s.o>.9)s.do*=-1;
+        if(s.x<0||s.x>cv.width||s.y<0||s.y>cv.height)Object.assign(s,mk());
+      });
+      requestAnimationFrame(draw);
+    }
+    window.addEventListener('resize',init);
+    requestAnimationFrame(function(){init();draw();});
+  }
+  /* ── Network ── */
+  function network(el){
+    var cv=document.createElement('canvas');
+    el.insertBefore(cv,el.firstChild);
+    var c=cv.getContext('2d'),ns=[],D=130;
+    function sz(){var r=el.getBoundingClientRect();cv.width=Math.round(r.width)||800;cv.height=Math.round(r.height)||600}
+    function mk(){return{x:Math.random()*cv.width,y:Math.random()*cv.height,vx:(Math.random()-.5)*.55,vy:(Math.random()-.5)*.55}}
+    function init(){sz();ns=Array.from({length:55},mk)}
+    function draw(){
+      c.clearRect(0,0,cv.width,cv.height);
+      for(var i=0;i<ns.length;i++){
+        for(var j=i+1;j<ns.length;j++){
+          var dx=ns[i].x-ns[j].x,dy=ns[i].y-ns[j].y,d=Math.sqrt(dx*dx+dy*dy);
+          if(d<D){c.beginPath();c.moveTo(ns[i].x,ns[i].y);c.lineTo(ns[j].x,ns[j].y);
+            c.strokeStyle='rgba(99,102,241,'+(1-d/D).toFixed(2)+')';c.lineWidth=.9;c.stroke();}
+        }
+      }
+      ns.forEach(function(n){
+        c.beginPath();c.arc(n.x,n.y,2.8,0,6.283);
+        c.fillStyle='rgba(139,92,246,.85)';c.fill();
+        n.x+=n.vx;n.y+=n.vy;
+        if(n.x<0||n.x>cv.width)n.vx*=-1;
+        if(n.y<0||n.y>cv.height)n.vy*=-1;
+      });
+      requestAnimationFrame(draw);
+    }
+    window.addEventListener('resize',init);
+    requestAnimationFrame(function(){init();draw();});
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    document.querySelectorAll('.sp-bg-stars').forEach(stars);
+    document.querySelectorAll('.sp-bg-network').forEach(network);
+  });
+})();
+</script>
+</head><body>
+<div id="design">
+  <style>
+    /* Custom gradient for hero section */
+    .sp-gradient-hero {
+      background: linear-gradient(135deg, var(--sp-primary), var(--sp-secondary));
+    }
+    /* Pastel color palette for local software section */
+    .pastel-bg {
+      background-color: #f5f5f5;
+    }
+    /* Warm and trustworthy testimonials */
+    .testimonial-bg {
+      background-color: #fff9e6;
+    }
+  </style>
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://scribbler.live/logo.png" alt="Logo" class="h-8 mr-2">
+        <span class="font-['Space_Grotesk'] text-xl font-bold text-gray-900">ScribblePad</span>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#product-grid" class="text-gray-600 hover:text-indigo-600 font-medium">Products</a>
+        <a href="#use-cases" class="text-gray-600 hover:text-indigo-600 font-medium">Use Cases</a>
+        <a href="#local-software" class="text-gray-600 hover:text-indigo-600 font-medium">Software</a>
+        <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium">Testimonials</a>
+        <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium">Features</a>
+        <a href="#cta" class="text-gray-600 hover:text-indigo-600 font-medium">Order Now</a>
+      </div>
+      <button class="md:hidden text-gray-600 focus:outline-none">
+        <i class="fa-solid fa-bars text-lg"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="sp-gradient-hero min-h-screen flex flex-col items-center justify-center text-center px-4 py-16">
+    <h1 class="font-['Space_Grotesk'] text-4xl md:text-6xl font-bold text-white mb-6">
+      Power Your AI Future with ScribblePad PCs
+    </h1>
+    <p class="text-white text-lg md:text-xl mb-8 max-w-2xl">
+      High-performance AI PCs with GPUs and NPUs for coding, enterprise AI, design, and more. Built for the future.
+    </p>
+    <a href="#product-grid" class="sp-btn">Explore Our Products</a>
+  </section>
+
+  <!-- Product Grid -->
+  <section id="product-grid" class="bg-gray-50 py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Our AI PCs
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow-md p-6 transition-transform hover:scale-105 hover:shadow-lg">
+          <div class="bg-indigo-100 p-4 rounded-lg mb-4">
+            <i class="fa-solid fa-laptop text-indigo-600 text-3xl"></i>
+          </div>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Laptop</h3>
+          <p class="text-gray-600 mb-4">
+            Powerful, portable AI PC with GPU and NPU for coding, design, and AI development.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">Learn More</a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 transition-transform hover:scale-105 hover:shadow-lg">
+          <div class="bg-indigo-100 p-4 rounded-lg mb-4">
+            <i class="fa-solid fa-server text-indigo-600 text-3xl"></i>
+          </div>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Workstation</h3>
+          <p class="text-gray-600 mb-4">
+            High-end AI workstation with GPU and NPU for enterprise AI, data science, and large-scale models.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">Learn More</a>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 transition-transform hover:scale-105 hover:shadow-lg">
+          <div class="bg-indigo-100 p-4 rounded-lg mb-4">
+            <i class="fa-solid fa-chip text-indigo-600 text-3xl"></i>
+          </div>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Server</h3>
+          <p class="text-gray-600 mb-4">
+            Scalable AI server with GPU and NPU for distributed AI workloads, cloud computing, and AI infrastructure.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section id="use-cases" class="bg-white py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Use Cases
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <i class="fa-solid fa-code text-indigo-600 text-4xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Coding & Development</h3>
+          <p class="text-gray-600">
+            Build and deploy AI models with fast GPUs and NPUs for Python, TensorFlow, PyTorch, and more.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <i class="fa-solid fa-building text-indigo-600 text-4xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Enterprise AI</h3>
+          <p class="text-gray-600">
+            Deploy AI solutions for customer service, fraud detection, and predictive analytics with enterprise-grade security.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl">
+          <i class="fa-solid fa-palette text-indigo-600 text-4xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Design & Creation</h3>
+          <p class="text-gray-600">
+            Create stunning AI-generated art, video, and 3D models with powerful GPUs and creative tools.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local Software -->
+  <section id="local-software" class="bg-pastel-bg py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Local AI Software
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-lightbulb text-indigo-500 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Assistant</h3>
+          <p class="text-gray-600">
+            Your personal AI assistant for scheduling, note-taking, and task management.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium mt-4 hover:underline">Download Now</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-cog text-indigo-500 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Workflow</h3>
+          <p class="text-gray-600">
+            Streamline your AI workflows with automated data pipelines and model training tools.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium mt-4 hover:underline">Download Now</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-robot text-indigo-500 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Agent</h3>
+          <p class="text-gray-600">
+            Create and manage AI agents for automation, data analysis, and decision-making.
+          </p>
+          <a href="#" class="text-indigo-600 font-medium mt-4 hover:underline">Download Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-white py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        What Our Customers Say
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-testimonial-bg p-6 rounded-xl">
+          <div class="flex items-center mb-4">
+            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">Jane Doe</h4>
+              <p class="text-gray-600">CEO, Tech Innovators Inc.</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "ScribblePad PCs have completely transformed our AI development process. The performance and reliability are unmatched."
+          </p>
+        </div>
+        <div class="bg-testimonial-bg p-6 rounded-xl">
+          <div class="flex items-center mb-4">
+            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">John Smith</h4>
+              <p class="text-gray-600">CTO, AI Solutions Co.</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "The integration of GPUs and NPUs has made our AI models run faster and more efficiently than ever before."
+          </p>
+        </div>
+        <div class="bg-testimonial-bg p-6 rounded-xl">
+          <div class="flex items-center mb-4">
+            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">Sarah Lee</h4>
+              <p class="text-gray-600">Designer, Creative Studio</p>
+            </div>
+          </div>
+          <p class="text-gray-600">
+            "I can now create AI-generated art and 3D models in real-time. It's revolutionizing my workflow."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-gray-50 py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Key Features
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-speedometer text-indigo-600 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">High Performance</h3>
+          <p class="text-gray-600">
+            Experience lightning-fast performance with powerful GPUs and NPUs for AI workloads.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-shield text-indigo-600 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Secure & Reliable</h3>
+          <p class="text-gray-600">
+            Enterprise-grade security and reliability for all your AI projects and data.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-chart-line text-indigo-600 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Scalable Solutions</h3>
+          <p class="text-gray-600">
+            Scale your AI infrastructure with flexible and powerful server solutions.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-lightbulb text-indigo-600 text-3xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Innovative Tools</h3>
+          <p class="text-gray-600">
+            Access cutting-edge AI tools and software for development, design, and analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="bg-indigo-600 text-white py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold mb-4">
+            Ready to Power Your AI Future?
+          </h2>
+          <p class="text-indigo-100 mb-6">
+            Get started today with the most powerful AI PCs and local software for your needs.
+          </p>
+          
+        </div>
+		<iframe data-tally-src="https://tally.so/embed/Ek296N?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="723" frameborder="0" marginheight="0" marginwidth="0" title="AI PC"></iframe>
+		<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12 md:py-16 px-4 md:px-8">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center mb-6 md:mb-0">
+          <img src="https://scribbler.live/logo.png" alt="Logo" class="h-8 mr-2">
+          <span class="font-['Space_Grotesk'] text-xl font-bold text-white ml-2">ScribblePad</span>
+        </div>
+        <nav class="flex space-x-6">
+          <a href="#" class="hover:text-indigo-400">Home</a>
+          <a href="#product-grid" class="hover:text-indigo-400">Products</a>
+          <a href="#use-cases" class="hover:text-indigo-400">Use Cases</a>
+          <a href="#local-software" class="hover:text-indigo-400">Software</a>
+          <a href="#testimonials" class="hover:text-indigo-400">Testimonials</a>
+          <a href="#features" class="hover:text-indigo-400">Features</a>
+        </nav>
+      </div>
+      <div class="mt-8 border-t border-gray-800 pt-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-sm text-gray-400">
+            &copy; 2025 ScribblePad. All rights reserved.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-indigo-400">
+              <i class="fa-brands fa-facebook-f text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400">
+              <i class="fa-brands fa-twitter text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400">
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-indigo-400">
+              <i class="fa-brands fa-youtube text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body></html>
