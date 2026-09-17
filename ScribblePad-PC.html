@@ -1,6 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<base href="/">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -108,7 +109,13 @@
   });
 })();
 </script>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:32px 16px;min-height:100vh;background:#d1d5db;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+#design{background:transparent;width:100%;max-width:100%;min-height:480px;border-radius:8px;box-shadow:0 4px 32px rgba(0,0,0,.18);overflow:hidden;transition:width .25s ease}
+</style>
 </head><body>
+<div id="design"><!-- DESIGN_START -->
 <div id="design">
   <style>
     /* Custom gradient for hero section */
@@ -135,7 +142,6 @@
       <div class="hidden md:flex space-x-6">
         <a href="#product-grid" class="text-gray-600 hover:text-indigo-600 font-medium">Products</a>
         <a href="#use-cases" class="text-gray-600 hover:text-indigo-600 font-medium">Use Cases</a>
-        <a href="#local-software" class="text-gray-600 hover:text-indigo-600 font-medium">Software</a>
         <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium">Testimonials</a>
         <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium">Features</a>
         <a href="#cta" class="text-gray-600 hover:text-indigo-600 font-medium">Order Now</a>
@@ -186,7 +192,7 @@
         </div>
         <div class="bg-white rounded-xl shadow-md p-6 transition-transform hover:scale-105 hover:shadow-lg">
           <div class="bg-indigo-100 p-4 rounded-lg mb-4">
-            <i class="fa-solid fa-chip text-indigo-600 text-3xl"></i>
+            <i class="fa-solid fa-microchip text-indigo-600 text-3xl"></i>
           </div>
           <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">AI Server</h3>
           <p class="text-gray-600 mb-4">
@@ -274,7 +280,6 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-testimonial-bg p-6 rounded-xl">
           <div class="flex items-center mb-4">
-            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
             <div>
               <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">Jay R.</h4>
               <p class="text-gray-600">CEO, Legal Firm</p>
@@ -286,7 +291,6 @@
         </div>
         <div class="bg-testimonial-bg p-6 rounded-xl">
           <div class="flex items-center mb-4">
-            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
             <div>
               <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">Sriram K.S.</h4>
               <p class="text-gray-600">CTO, AI Solutions Co.</p>
@@ -298,7 +302,6 @@
         </div>
         <div class="bg-testimonial-bg p-6 rounded-xl">
           <div class="flex items-center mb-4">
-            <img src="https://via.placeholder.com/60" alt="Customer" class="h-12 w-12 rounded-full mr-4">
             <div>
               <h4 class="font-['Space_Grotesk'] text-lg font-semibold text-gray-900">Sarah P.</h4>
               <p class="text-gray-600">Designer, Creative Studio</p>
@@ -320,7 +323,7 @@
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white p-6 rounded-xl shadow-sm">
-          <i class="fa-solid fa-speedometer text-indigo-600 text-3xl mb-4"></i>
+          <i class="fa-solid fa-tachometer text-indigo-600 text-3xl mb-4"></i>
           <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">High Performance</h3>
           <p class="text-gray-600">
             Experience lightning-fast performance with powerful GPUs and NPUs for AI workloads.
@@ -351,12 +354,41 @@
     </div>
   </section>
 
-  <!-- Call to Action -->
+  <!-- Team & Experience -->
+  <section id="team" class="bg-white py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+        Built by IIT, IIM, ISB Graduates
+      </h2>
+      <p class="text-gray-700 text-center max-w-2xl mx-auto mb-8">
+        With cumulative experience of 50 years in the AI and tech space.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-graduation-cap text-indigo-600 text-4xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Elite Education</h3>
+          <p class="text-gray-600">
+            Our team is composed of graduates from top-tier institutions like IIT, IIM, and ISB.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <i class="fa-solid fa-briefcase text-indigo-600 text-4xl mb-4"></i>
+          <h3 class="font-['Space_Grotesk'] text-xl font-semibold text-gray-900 mb-2">Proven Expertise</h3>
+          <p class="text-gray-600">
+            With a combined 50 years of experience in AI and tech, we bring deep domain knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
   <section id="cta" class="bg-indigo-600 text-white py-16 md:py-24 px-4 md:px-8">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row items-center justify-between">
         <div class="md:w-1/2 mb-8 md:mb-0">
-          <h2 class="font-['Space_Grotesk'] text-3xl md:text-4xl font-bold mb-4">
+          <h2 class="font-['Space_Grotesk
+text-3xl md:text-4xl font-bold mb-4">
             Ready to Power Your AI Future?
           </h2>
           <p class="text-indigo-100 mb-6">
@@ -390,20 +422,15 @@
       <div class="mt-8 border-t border-gray-800 pt-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-sm text-gray-400">
-            &copy; 2025 ScribblePad. All rights reserved.
+            &copy; 2026 ScribblePad. All rights reserved.
           </p>
           <div class="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" class="text-gray-400 hover:text-indigo-400">
-              <i class="fa-brands fa-facebook-f text-lg"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-indigo-400">
+            
+            <a href="https://x.com/scribblerlive" class="text-gray-400 hover:text-indigo-400">
               <i class="fa-brands fa-twitter text-lg"></i>
             </a>
-            <a href="#" class="text-gray-400 hover:text-indigo-400">
+            <a href="https://www.linkedin.com/company/scribbler-live/" class="text-gray-400 hover:text-indigo-400">
               <i class="fa-brands fa-linkedin-in text-lg"></i>
-            </a>
-            <a href="#" class="text-gray-400 hover:text-indigo-400">
-              <i class="fa-brands fa-youtube text-lg"></i>
             </a>
           </div>
         </div>
@@ -411,4 +438,5 @@
     </div>
   </footer>
 </div>
+<!-- DESIGN_END --></div>
 </body></html>
