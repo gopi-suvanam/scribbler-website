@@ -1,7 +1,7 @@
-# Privacy Policy — Scribbler & ScribblePad
-
-**Effective date:** 13 October 2026  
-**Last updated:** 13 October 2026
+---
+title: Privacy Policy — Scribbler & ScribblePad
+layout: page
+---
 
 ## 1. Introduction
 
